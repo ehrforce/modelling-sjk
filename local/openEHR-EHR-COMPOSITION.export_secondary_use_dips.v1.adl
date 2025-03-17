@@ -18,6 +18,9 @@ description
 	details = <
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
+			purpose = <"Composition arketype som er satt opp som DIPS spesifikk rapport arketype (kategori 434). Det betyr at data som legges inn i denne ikke automatisk er gjenstand for gjenbruk. Det må eksplisitt settes opp til å hente fra categoru 434">
+			use = <"Benyttes for data som skal sammenstilles fra ulike deler av journalen med tanke på sekundærbruk til registre. ">
+			misuse = <"Skal ikke brukes for primære registreringer av data i pasientens journal. ">
 		>
 	>
 	other_details = <
