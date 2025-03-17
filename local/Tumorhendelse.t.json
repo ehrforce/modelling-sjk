@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "4780c7765889f0404764d781a2b021dd",
+      "MD5-CAM-1.0.1" : "6022fd166f283f20dd232fb59b49378a",
       "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73"
     },
     "details" : {
@@ -348,6 +348,36 @@
             "codeString" : "nl"
           },
           "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fr" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fr"
+          },
+          "purpose" : "Créer un cadre pour l'enregistrement des réponses à des questions de dépistage prédéfinies concernant des questions, des problèmes ou des diagnostics.",
+          "keywords" : [ "Condition", "état", "maladie", "syndrome", "questionnaire", "dépistage", "problème" ],
+          "use" : "À utiliser pour créer un cadre permettant d'enregistrer les réponses à des questions prédéfinies sur les enjeux, les problèmes ou les diagnostics. \r\nCet archétype a été délibérément modélisé de manière souple afin d'englober le plus large éventail possible de questions et de problèmes, ainsi que de diagnostics.\r\n\r\nLes cas d'utilisation les plus courants sont, entre autres, les suivants\r\n- L'interrogation systématique lors d'une consultation, par exemple :\r\n--- Diagnostic de cancer ? Oui, Non, Inconnu.\r\n--- Diagnostic de COVID 19 ou de grippe au cours des douze derniers mois ? Oui, Non, Inconnu.\r\n--- Avez-vous des inquiétudes ou des préoccupations ? Oui, Non, Inconnu.\r\n- Questions spécifiques liées à la surveillance des maladies.\r\n\r\nLa sémantique de cet archétype est volontairement floue, et l'interrogation de cet archétype ne serait normalement utile ou sûre que dans le contexte de chaque modèle spécifique. Dans un modèle, chaque élément de données est généralement renommé en fonction de la question spécifique posée. Lorsque des ensembles de valeurs ont été proposés pour des cas d'utilisation courants, ils peuvent être adaptés à un usage local en utilisant les types de données DV_TEXT ou DV_BOOLEAN pour correspondre à chaque cas d'utilisation spécifique.\r\n\r\nLa structure EVENT du modèle de référence peut être utilisée pour spécifier si les questions se rapportent à un moment donné ou à une période de temps. Utilisez une instance distincte de cet archétype pour faire la distinction entre un questionnaire enregistrant des informations sur une procédure effectuée à tout moment dans le passé et des informations sur une procédure effectuée dans un intervalle de temps spécifié - par exemple la différence entre \"Avez-vous la grippe ?\" et \"Avez-vous eu la grippe au cours des 4 dernières semaines ?\"\r\n\r\nLa source des informations contenues dans une réponse à un questionnaire peut varier selon le contexte, mais elle peut être spécifiquement identifiée à l'aide de l'élément \"Fournisseur d'informations\" du modèle de référence.\r\n\r\nCet archétype a été conçu pour être utilisé comme outil de dépistage ou pour enregistrer des données simples sous forme de questionnaire en vue d'une utilisation dans des situations telles qu'un registre des maladies. Si le questionnaire de dépistage identifie la présence d'un problème ou d'un diagnostic, il est recommandé que le système clinique enregistre et conserve les détails spécifiques du problème ou du diagnostic (tels que la date de reconnaissance clinique) en utilisant l'archétype EVALUATION.problem_diagnosis.",
+          "misuse" : "Ne doit pas être utilisé pour créer un cadre permettant d'enregistrer des réponses à des questions de dépistage prédéfinies concernant des procédures qui ont été effectuées dans le passé. Utilisez OBSERVATION.procedure_screening à cette fin.\r\n\r\nNe pas utiliser pour créer un cadre permettant d'enregistrer des réponses à des questions de sélection prédéfinies sur les effets indésirables, utiliser un archétype approprié à cet effet.\r\n\r\nNe pas utiliser pour enregistrer les détails d'une simple liste de sélection où une question peut être enregistrée comme \"présente\" ou \"indéterminée\". Utilisez OBSERVATION.selection_list à cette fin.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Crear una infraestructura per a registrar respostes a les preguntes de detecció predefinides sobre qüestions, problemes o diagnòstics.",
+          "keywords" : [ "Condició", "estat", "malaltia", "síndrome", "sondeig", "detecció", "qüestió" ],
+          "use" : "Utilitzar per a crear una infraestructura per a registrar respostes a les preguntes de detecció predefinides sobre qüestions, problemes o diagnòstics. \r\n\r\nAquest arquetip s'ha modelat deliberadament amb poca exactitud perquè incloure un rang el més ampli possible de qüestions i preguntes, així com de diagnòstics. \r\n\r\nEls casos d’ús més freqüents, però no limitats a: \r\n\r\n-Preguntar sistemàticament en qualsevol consulta. Per exemple: \r\n\r\n---Diagnosticat amb càncer? Sí, No, Desconegut. \r\n\r\n---Diagnosticat amb COVID 19o grip en els últims dotze mesos? Sí, No, Desconegut. \r\n\r\n---Té alguna preocupació? Sí, No, Desconegut. \r\n\r\n-Sondeig específic relacionat amb la vigilància de malalties. \r\n\r\nLa semàntica d’aquest arquetip és intencionalment laxa, i consultar aquest arquetip només serà útil o segur dins del context de cada plantilla específica. En una plantilla, cada element de dades normalment es tornarà a nomenar en una pregunta específica. Quan s’hagi proposat els conjunts de valors per casos d’ús comú, aquests poden adaptar-se per al seu ús local utilitzant DV_TEXT o DV_BOOLEAN per ajustar-se a cada cas d’ús específic. \r\n\r\nL'estructura EVENT del model de referència es pot utilitzar per especificar si les preguntes estan relacionades a un moment donat o a un període de temps. Utilitzar una instància separada d’aquest arquetip per a distingir entre un sondeig que registra informació sobre un procediment que s’ha realitzat en qualsevol moment del passat i la informació sobre un procediment dins d’un interval de temps específic. Per exemple, la diferència entre “Vostè té grip?” comparat amb “Vostè ha tingut grip en les últimes 4 setmanes?” \r\n\r\nLa font d’informació en una resposta al sondeig pot variar en diferents contexts, però es pot identificar utilitzant l’element “Proveïdor d’informació” del Model de Referència. \r\n\r\nAquest arquetip s’ha dissenyat per a utilitzar-lo com ferramenta de detecció o per a registrar dades senzilles en format de sondeig per al seu ús en situacions com un registre de malalties. Si el sondeig de detecció identifica la presència d’un problema o diagnòstic, es recomana que es registri el sistema clínic i continuï els detalls específics sobre el problema o diagnòstic (com la data de reconeixement clínic), utilitzant l’arquetip EVALUATION.problem_diagnosis.",
+          "misuse" : "No utilitzar per a registrar detalls sobre la presència o absència d'un problema o diagnòstic fora del context de l'objectiu de detecció. Utilitzar EVALUATION.problem_diagnosis o EVALUATION.exclusion_specific per aquest propòsit. \r\n\r\nNo utilitzar per a crear una infraestructura per a registrar respostes a les preguntes de detecció predefinides sobre els procediments que s'han realitzat en el passat. Utilitzar OBSERVATION.procedure_screening per aquest propòsit. \r\n\r\nNo utilitzar per a crear una infraestructura per a registrar respostes a les preguntes de detecció predefinides sobre reaccions adverses. Utilitzar un arquetip apropiat per aquest propòsit. \r\n\r\nNo utilitzar per a registrar dades sobre una llista de selecció simple on una pregunta es pot enregistrar tant com \"\"present\"\" o \"\"indeterminada\"\". Utilitzar OBSERVATION.selection_list per aquest propòsit.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -703,6 +733,22 @@
             "code" : "ac0.14",
             "description" : ""
           }
+        },
+        "ca" : {
+          "ac0.14" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.14",
+            "description" : ""
+          }
+        },
+        "fr" : {
+          "ac0.14" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.14",
+            "description" : ""
+          }
         }
       },
       "termBindings" : { },
@@ -827,6 +873,36 @@
       },
       "author" : { },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "fr"
+      },
+      "author" : {
+        "name" : "Vanessa Pereira",
+        "organisation" : "Luxembourg Institute of Health (LIH)",
+        "email" : "vanessapereira@protonmail.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Manuel José Zafra Doménech",
+        "organisation" : "TRADCREA, S.L.",
+        "email" : "mzafra@tradcrea.com"
+      },
+      "otherDetails" : {
+        "other_contributors" : "Servei Català de la Salut"
+      }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -1164,6 +1240,21 @@
           "misuse" : "*Not to be used to record symptoms as described by the individual - use the CLUSTER.symptom archetype, usually within the OBSERVATION.story archetype.\r\n\r\nNot to be used to record examination findings - use the family of examination-related CLUSTER archetypes, usually nested within the OBSERVATION.exam archetype.\r\n\r\nNot to be used to record laboratory test results or related diagnoses, for example pathological diagnoses - use an appropriate archetype from the laboratory family of OBSERVATION archetypes.\r\n\r\nNot to be used to record imaging examination results or imaging diagnoses - use an appropriate archetype from the imaging family of OBSERVATION archetypes.\r\n\r\nNot to be used to record 'Differential Diagnoses' - use the EVALUATION.differential_diagnosis archetype.\r\n\r\nNot to be used to record 'Reason for Encounter' or 'Presenting Complaint' - use the EVALUATION.reason_for_encounter archetype.\r\n\r\nNot to be used to record procedures - use the ACTION.procedure archetype.\r\n\r\nNot to be used to record details about pregnancy - use the EVALUATION.pregnancy_bf_status and EVALUATION.pregnancy and related archetypes.\r\n\r\nNot to be used to record statements about health risk or potential problems - use the EVALUATION.health_risk archetype.\r\n\r\nNot to be used to record statements about adverse reactions, allergies or intolerances - use the EVALUATION.adverse_reaction archetype.\r\n\r\nNot to be used for the explicit recording of an absence (or negative presence) of a problem or diagnosis, for example ‘No known problem or diagnoses’ or ‘No known diabetes’. Use the EVALUATION.exclusion-problem_diagnosis archetype to express a positive statement about exclusion of a problem or diagnosis.(en)",
           "originalResourceUri" : { },
           "otherDetails" : { }
+        },
+        "zh-cn" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "zh-cn"
+          },
+          "purpose" : "旨在用于记录关于单个已明确的健康问题或诊断的详情。\r\n\r\n在临床文档记录的背景下，健康问题故意保持了宽松的预定适用范围，以便采集任何可能对个人健康产生任何程度不利影响的真实或所感知到的担忧/关注事项（concern）。健康问题可能是由个人（患者本人）、[非正规]照护人员或医疗保健专业人员来确定。然而，诊断则另外还依据客观的临床评判标准进行了定义，且通常仅仅是由医疗保健专业人员来确定。",
+          "keywords" : [ "事宜", "事项", "情况", "健康状况", "病情", "问题", "诊断", "关注事项", "担心事项", "担忧", "损伤", "临床印象" ],
+          "use" : "旨在用于记录关于单个已明确的健康问题或诊断的详情。\r\n\r\n在实践当中，几乎不可能做出明确的定义来区分“问题”（problem）与“诊断”（diagnosis）——我们无法可靠地判断究竟何时才应该将问题视为诊断。当诊断或分类标准得以成功满足时，我们可以自信地将相应的情况/病情（condition）称为正式的诊断，但在满足此类的评判标准/条件之前，且存在可用的支持性证据之时，也可以有效合理地采用“诊断”一词。诊断标签所需支持性证据的数量并不容易定义，实际上很可能还会因情况而异。多年来，许多标准委员会一直在努力解决这个定义难题，但目前还没有明确的解决办法。\r\n\r\n对于利用本原始型的临床文档记录目的来说，在此会将问题与诊断视为统一的连续体系，且由问题到诊断，不断增加的细节水平和支持性证据通常会为“诊断”标签带来更大的权重。在本原始型当中，没有必要将情况/健康状况/病情归类为“问题”还是“诊断”。支持两者文档记录工作的数据需求完全相同，当证据变得可用之时，就需要额外的数据结构来支持收纳相应的证据。关于问题的例子包括：在没有关于肥胖的正式诊断的情况下，个人所表达的关于减肥的愿望；或者是与特定家庭成员的关系问题。关于正式诊断的示例包括拥有历史/病史信息、检查结果、组织病理学发现、放射医学发现支持并满足已知诊断标准所有要求的癌症。在实践当中，大多数的问题或诊断并不处于问题—诊断连续体系的两端，而是介于两者之间。\r\n\r\n本原始型可用于很多的上下文背景。例如，在临床就诊咨询/会诊期间对问题或临床诊断的记录；填写持续存在/更新的问题清单；或者是提供出院摘要文档之中总结性陈述。\r\n\r\n在实践当中，临床医务人员/临床医生会使用许多上下文特异性的限定词（context-specific qualifier），如过去/现在、主要/次要、现行有效/无效、入院/出院等等。上下文背景可以针对的是位置/场所、专业、服务节段（episode）或工作流，如果将此类的限定词长久存储在问题清单当中，或者是在原始上下文背景之外的文档当中加以共享，则可能会导致混淆/困惑甚至潜在的安全问题。可以单独对此类的限定词进行原始型化，并将其收纳在状态槽位'Status'之中，因为它们的用法在不同的场所环境下会有所不同。期望将此类的限定词/状态主要用于合适的上下文背景，而不是在没有清楚地了解潜在后果的情况下在相应的上下文背景之外共享。例如，一位临床医生的初步诊断可能是另一位专科医生的次要诊断；现行有效的问题可能会变为无效状态（反之亦然），而这种情况可能会影响临床决策支持（CDS）措施的安全使用。一般来说，应该在本地将这些状态应用于相应临床系统的上下文背景，而在实践当中，则应该由临床医务人员/临床医生来手动管理这些状态，以确保当前/过去、现行有效/无效或主要/次要的问题的列表在临床上是准确的。\r\n\r\n正如拉里·维德（Larry Weed）所描述的那样，在面向问题的病历（Problem Oriented Medical Record）当中，本原始型将会作为一种组件来使用。为了支持这种方法，需要开发其他原始型，以便将情况/健康状况/病情（condition）之类的临床概念表示为诊断的总体组织手段等。\r\n\r\n在某些情况下，可能会假定认为诊断的确定仅仅属于是医生的专长，但这一点并不是本原始型的意图。任何的医疗保健专业人员都可以利用本原始型来记录诊断。",
+          "misuse" : "并非旨在用于记录个人（患者本人）所描述的症状 - 对此，请采用群簇型症状原始型 CLUSTER.symptom 来记录，且通常会将后者放在观察型主观临床病史原始型 OBSERVATION.story 之中。\r\n\r\n并非旨在用于记录检查发现/所见 - 对此，请采用与检查相关的群簇型原始型系列，且通常会将后者嵌套在观察型检查原始型 OBSERVATION.exam 当中。\r\n\r\n并非旨在用于记录实验室检验结果或相关的诊断，如病理诊断 - 对此，请选用观察型实验室[检验]原始型系列之中合适的原始型。\r\n\r\n并非旨在用于记录成像检查结果或成像诊断 - 对此，请选用观察型成像/影像学原始型系列之中合适的原始型。\r\n\r\n并非旨在用于记录鉴别诊断（Differential Diagnosis） - 对此，请采用评价型鉴别诊断原始型 EVALUATION.differential_diagnosis。\r\n\r\n并非旨在用于记录就医/就诊原因（Reason for Encounter）或当前主诉（Present Complaint） - 对此，请采用评价型就医/就诊原因原始型 EVALUATION.reason_for_encounter。\r\n\r\n并非旨在用于记录操作[项目] - 对此，请采用行动型操作[项目]原始型 ACTION.procedure。\r\n\r\n并非旨在用于记录关于妊娠的详情 - 对此，请采用评价型妊娠【bf: 哺乳?】状态原始型 EVALUATION.pregnancy_bf_status 和评价型妊娠原始型 EVALUATION.pregnancy 以及相关的原始型。\r\n\r\n并非旨在用于记录关于健康风险或潜在问题的陈述 - 对此，请采用评价型健康风险原始型 EVALUATION.health_risk。\r\n\r\n并非旨在用于记录关于不良反应、过敏/变态反应或不耐的陈述 - 对此，请采用评价型不良反应原始型 EVALUATION.adverse_reaction。\r\n\r\n并非旨在用于明确记录关于并不存在（或否定存在）特定问题或诊断的情况，如“无已知问题或诊断”或“无已知糖尿病”。对此，请采用评价型除外问题/诊断原始型 EVALUATION.exclusion-problem_diagnosis 来表达关于排除特定问题或诊断的明确陈述。\r\n\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
         }
       }
     },
@@ -1376,95 +1467,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
-          },
-          "at0079" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "Variante",
-            "description" : "Variante o subtipo específico del Diagnóstico, si procede.",
-            "comment" : "Por ejemplo: \"neuropatía axonal motora aguda\" como variante del síndrome de Guillain-Barré. Siempre que sea posible, es preferible codificar el nombre de la variante con una terminología."
-          },
-          "at0003.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003",
-            "text" : "Fecha/Hora de reconocimiento del problema",
-            "description" : "Fecha/hora estimada o real en que un profesional sanitario reconoció el diagnóstico o el problema.",
-            "comment" : "Se aceptan fechas parciales. Si el sujeto atendido es menor de un año, entonces es necesaria la fecha completa o un mínimo del mes y año para permitir cálculos de edad precisos, por ejemplo, si se utiliza para impulsar el apoyo a la toma de decisiones. Los datos registrados/importados, como \"Edad en el momento del reconocimiento clínico\", deben convertirse a una fecha utilizando la fecha de nacimiento del sujeto."
-          },
-          "at0069.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0069",
-            "text" : "Comentarios",
-            "description" : "Información adicional sobre el problema o el diagnóstico no recogida en otros campos."
-          },
-          "at0046.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0046",
-            "text" : "Estado",
-            "description" : "Detalles estructurados para aspectos específicos del proceso de diagnóstico de ubicación, dominio, episodio o flujo de trabajo.",
-            "comment" : "Utilice los calificadores de estado o contexto con precaución, ya que se utilizan de forma variable en la práctica y no se puede garantizar la interoperabilidad a menos que su uso esté claramente definido con la comunidad de uso. Por ejemplo: estado activo - activo, inactivo, resuelto, en remisión; estado de evolución - inicial, provisional/en curso, final; estado temporal - actual, pasado; estado de episodicidad - primero, nuevo, en curso; estado de admisión - ingreso, alta; o estado de prioridad - primaria, secundaria."
-          },
-          "at0005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005",
-            "text" : "Severidad",
-            "description" : "Evaluación de la gravedad global del problema o diagnóstico.",
-            "comment" : "Si la gravedad está incluida dentro del nombre del problema/diagnóstico mediante códigos precoordinados, este elemento de datos se vuelve redundante. Nota: Se puede registrar una clasificación de gravedad más específica utilizando el SLOT de detalles específicos."
-          },
-          "at0046.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0046",
-            "text" : "Estado",
-            "description" : "Detalles estructurados para aspectos específicos del proceso de diagnóstico de ubicación, dominio, episodio o flujo de trabajo.",
-            "comment" : "Utilice los calificadores de estado o contexto con precaución, ya que se utilizan de forma variable en la práctica y no se puede garantizar la interoperabilidad a menos que su uso esté claramente definido con la comunidad de uso. Por ejemplo: estado activo - activo, inactivo, resuelto, en remisión; estado de evolución - inicial, provisional/en curso, final; estado temporal - actual, pasado; estado de episodicidad - primero, nuevo, en curso; estado de admisión - ingreso, alta; o estado de prioridad - primaria, secundaria."
-          },
-          "at0009.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0009",
-            "text" : "Descripción clínica",
-            "description" : "Descripción narrativa del problema o diagnóstico.",
-            "comment" : "Se utiliza para proporcionar antecedentes y contexto, incluida la evolución, los episodios o exacerbaciones, los progresos y cualquier otro detalle pertinente, sobre el problema o el diagnóstico."
-          },
-          "at0073.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0073",
-            "text" : "Certeza diagnóstica",
-            "description" : "Nivel de confianza en la identificación del diagnóstico.",
-            "comment" : "Si se necesita un conjunto de valores alternativo, estos valores pueden añadirse al tipo de datos DV_TEXT en una plantilla."
-          },
-          "at0072.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0072",
-            "text" : "Progreso",
-            "description" : "Descripción narrativa sobre la evolución del problema o diagnóstico desde su aparición."
-          },
-          "at0030.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0030",
-            "text" : "Fecha/hora de resolución",
-            "description" : "Fecha/hora estimada o real de resolución o remisión de este problema o diagnóstico, determinada por un profesional sanitario.",
-            "comment" : "Se aceptan fechas parciales. Si el sujeto atendido es menor de un año, entonces es necesaria la fecha completa o un mínimo del mes y año para permitir cálculos de edad precisos, por ejemplo, si se utiliza para impulsar el apoyo a la toma de decisiones. Los datos registrados/importados como \"Edad en el momento de la resolución\" deben convertirse a una fecha utilizando la fecha de nacimiento del sujeto."
-          },
-          "at0078.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0078",
-            "text" : "Causa",
-            "description" : "Causa, conjunto de causas o manera de causar el problema o diagnóstico.",
-            "comment" : "También denominada \"etiología\". Siempre que sea posible, es preferible codificar con una terminología."
-          },
-          "at0077.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0077",
-            "text" : "Fecha/hora de inicio",
-            "description" : "Fecha/hora estimada o real en que se observaron por primera vez los signos o síntomas del problema/diagnóstico.",
-            "comment" : "Los datos registrados/importados, como \"Edad al inicio\", deben convertirse a una fecha utilizando la fecha de nacimiento del sujeto."
-          },
-          "at0012.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0012",
-            "text" : "Zona corporal",
-            "description" : "Identificación de una zona corporal sencilla para la localización del problema o diagnóstico.",
-            "comment" : "Siempre que sea posible, es preferible codificar el nombre de la ubicación anatómica con una terminología.\r\nUtilice este elemento de datos para registrar ubicaciones anatómicas precoordinadas. Si los requisitos para registrar la ubicación anatómica los determina la aplicación en tiempo de ejecución o requieren un modelado más complejo, como ubicaciones relativas, utilice CLUSTER.anatomical_location o CLUSTER.relative_location, dentro del SLOT 'Structured anatomical location', en este arquetipo. Las ocurrencias de este elemento de datos son ilimitadas para permitir escenarios clínicos, como describir una erupción en múltiples ubicaciones pero donde todos los demás atributos son idénticos. Si la ubicación anatómica se incluye en el nombre del problema/diagnóstico mediante códigos precoordinados, este dato será redundante."
           }
         },
         "es-ar" : {
@@ -1487,13 +1489,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
-          },
-          "at0079" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "*Variant (en)",
-            "description" : "*Specific variant or subtype of the Diagnosis, if relevant. (en)",
-            "comment" : "*For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible.  (en)"
           }
         },
         "de" : {
@@ -1516,13 +1511,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
-          },
-          "at0079" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "Variante",
-            "description" : "Spezifische Variante oder Subtyp der Diagnose, falls relevant.",
-            "comment" : "Zum Beispiel: „Akute motorische axonale Neuropathie“ als Variante des Guillain-Barre-Syndroms. Wo möglich, ist die Kodierung des Namens der Variante über eine Terminologie zu bevorzugen."
           }
         },
         "en" : {
@@ -1545,13 +1533,6 @@
             "text" : "(Synthesized)",
             "code" : "ac0.2",
             "description" : ""
-          },
-          "at0079" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "Variant",
-            "description" : "Specific variant or subtype of the Diagnosis, if relevant.",
-            "comment" : "For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible. "
           }
         },
         "ar-sy" : {
@@ -1574,13 +1555,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
-          },
-          "at0079" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "*Variant (en)",
-            "description" : "*Specific variant or subtype of the Diagnosis, if relevant. (en)",
-            "comment" : "*For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible.  (en)"
           }
         },
         "pt-br" : {
@@ -1603,13 +1577,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
-          },
-          "at0079" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "*Variant (en)",
-            "description" : "*Specific variant or subtype of the Diagnosis, if relevant. (en)",
-            "comment" : "*For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible.  (en)"
           }
         },
         "nb" : {
@@ -1646,13 +1613,6 @@
             "text" : "Dato/tid for klinisk bekreftelse",
             "description" : "Anslått eller faktisk dato/tid da diagnosen ble bekreftet: prøvetakningsdato for første positiv histologi/cytologi (evt. mottaksdato så svardato for patologiprøve). Dersom det ikke er tatt vevsprøver, benyttes den dato man ved hjelp av andre undersøkelser (bildediagnostikk, blodprøve etc.) bestemmer seg for at pasienten har kreft.​",
             "comment" : "Delvise datoer er tillatt. Dersom individet er under ett år gammel, må komplett dato eller som et minimum måned og år oppgis for å muliggjøre presise beregninger av alder, f.eks. ved bruk i beslutningsstøttesystemer. Data registrert eller importert som \"alder ved tidspunkt når diagnosen stilles\" bør konverteres til en dato ved hjelp av individets fødselsdato."
-          },
-          "at0079" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "Variant",
-            "description" : "Spesifikk variant eller subtype av diagnose, hvis det er relevant.",
-            "comment" : "For eksempel \"akutt motorisk aksonal nevropati\" som en variant av Guillain-Barre Syndrom. Koding av navnet på varianten med en terminologi er foretrukket hvis mulig."
           }
         },
         "sv" : {
@@ -1675,13 +1635,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
-          },
-          "at0079" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "*Variant (en)",
-            "description" : "*Specific variant or subtype of the Diagnosis, if relevant. (en)",
-            "comment" : "*For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible.  (en)"
           }
         },
         "ko" : {
@@ -1704,13 +1657,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
-          },
-          "at0079" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "*Variant (en)",
-            "description" : "*Specific variant or subtype of the Diagnosis, if relevant. (en)",
-            "comment" : "*For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible.  (en)"
           }
         },
         "fi" : {
@@ -1733,13 +1679,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
-          },
-          "at0079" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "*Variant (en)",
-            "description" : "*Specific variant or subtype of the Diagnosis, if relevant. (en)",
-            "comment" : "*For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible.  (en)"
           }
         },
         "it" : {
@@ -1762,13 +1701,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
-          },
-          "at0079" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "*Variant (en)",
-            "description" : "*Specific variant or subtype of the Diagnosis, if relevant. (en)",
-            "comment" : "*For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible.  (en)"
           }
         },
         "nl" : {
@@ -1791,13 +1723,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
-          },
-          "at0079" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "*Variant (en)",
-            "description" : "*Specific variant or subtype of the Diagnosis, if relevant. (en)",
-            "comment" : "*For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible.  (en)"
           }
         },
         "zh" : {
@@ -1820,13 +1745,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
-          },
-          "at0079" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "*Variant (en)",
-            "description" : "*Specific variant or subtype of the Diagnosis, if relevant. (en)",
-            "comment" : "*For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible.  (en)"
           }
         },
         "ca" : {
@@ -1835,109 +1753,14 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
-          },
-          "at0079" : {
+          }
+        },
+        "zh-cn" : {
+          "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "Variant",
-            "description" : "Variant o subtipus específic del Diagnòstic, si escau.",
-            "comment" : "*For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible. (en)"
-          },
-          "at0002.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "Nom del Problema/Diagnòstic",
-            "description" : "Identificació del problema o diagnòstic, pel nom.",
-            "comment" : "*Coding of the name of the problem or diagnosis with a terminology is preferred, where possible.(en)"
-          },
-          "at0003.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003",
-            "text" : "Data/hora del diagnòstic",
-            "description" : "Data/hora estimada o real en que un professional sanitari va declarar el diagnòstic o problema.",
-            "comment" : "*Partial dates are acceptable. If the subject of care is under the age of one year, then the complete date or a minimum of the month and year is necessary to enable accurate age calculations - for example, if used to drive decision support. Data captured/imported as \"Age at time of clinical recognition\" should be converted to a date using the subject's date of birth.(en)"
-          },
-          "at0069.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0069",
-            "text" : "Comentaris",
-            "description" : "Narrativa addicional sobre el problema o diagnòstic no registrada en altres camps."
-          },
-          "at0046.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0046",
-            "text" : "Estat",
-            "description" : "Detalls estructurats per a aspectes específics d'ubicació, domini, episodi o flux de treball del procés diagnòstic.",
-            "comment" : "*Use status or context qualifiers with care, as they are variably used in practice and interoperability cannot be assured unless usage is clearly defined with the community of use. For example: active status - active, inactive, resolved, in remission; evolution status - initial, interim/working, final; temporal status - current, past; episodicity status - first, new, ongoing; admission status - admission, discharge; or priority status - primary, secondary.(en)"
-          },
-          "at0005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005",
-            "text" : "Severitat",
-            "description" : "Una avaluació de la severitat global del problema o diagnòstic.",
-            "comment" : "*If severity is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant. Note: more specific grading of severity can be recorded using the Specific details SLOT.(en)"
-          },
-          "at0046.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0046",
-            "text" : "Estat",
-            "description" : "Detalls estructurats per a aspectes específics d'ubicació, domini, episodi o flux de treball del procés diagnòstic.",
-            "comment" : "*Use status or context qualifiers with care, as they are variably used in practice and interoperability cannot be assured unless usage is clearly defined with the community of use. For example: active status - active, inactive, resolved, in remission; evolution status - initial, interim/working, final; temporal status - current, past; episodicity status - first, new, ongoing; admission status - admission, discharge; or priority status - primary, secondary.(en)"
-          },
-          "at0009.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0009",
-            "text" : "Descripció clínica",
-            "description" : "Descripció narrativa del problema o diagnòstic.",
-            "comment" : "*Use to provide background and context, including evolution, episodes or exacerbations, progress and any other relevant details, about the problem or diagnosis.(en)"
-          },
-          "at0073.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0073",
-            "text" : "Certesa diagnòstica",
-            "description" : "El nivell de confiança en la identificació del diagnòstic.",
-            "comment" : "*If an alternative valueset is required, these values can be added to the DV_TEXT data type in a template.(en)"
-          },
-          "at0072.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0072",
-            "text" : "Descripció del curs",
-            "description" : "Descripció narrativa sobre el curs del problema o diagnòstic des del inici."
-          },
-          "at0030.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0030",
-            "text" : "Data/hora de resolució",
-            "description" : "Data/hora estimada o real de resolució o remissió d'aquest problema o diagnòstic, determinada per un professional sanitari.",
-            "comment" : "*Partial dates are acceptable. If the subject of care is under the age of one year, then the complete date or a minimum of the month and year is necessary to enable accurate age calculations - for example, if used to drive decision support. Data captured/imported as \"Age at time of resolution\" should be converted to a date using the subject's date of birth.\r\n(en)"
-          },
-          "at0078.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0078",
-            "text" : "Causa",
-            "description" : "Una causa, conjunt de causes o el mecanisme causal del problema o diagnòstic.",
-            "comment" : "*Also known as 'aetiology' or 'etiology'. Coding with an external terminology is preferred, where possible.(en)"
-          },
-          "at0077.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0077",
-            "text" : "Data/hora d'inici",
-            "description" : "Data/hora estimada o real en que es van observar per primera vegada els signes o símptomes del problema/diagnòstic.",
-            "comment" : "*Data captured/imported as \"Age at onset\" should be converted to a date using the subject's date of birth.(en)"
-          },
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Problema/Diagnòstic",
-            "description" : "Detalls sobre una única condició de salut, lesió, discapacitat o qualsevol altre problema identificat que afecti al benestar físic, mental i/o social d'una persona.",
-            "comment" : "*Clear delineation between the scope of a problem versus a diagnosis is not easy to achieve in practice. For the purposes of clinical documentation with this archetype, problem and diagnosis are regarded as a continuum, with increasing levels of detail and supportive evidence usually providing weight towards the label of 'diagnosis'.(en)"
-          },
-          "at0012.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0012",
-            "text" : "Localització corporal",
-            "description" : "Identificació d'un lloc corporal per la localització del problema o diagnòstic.",
-            "comment" : "*Coding of the name of the anatomical location with a terminology is preferred, where possible.\r\nUse this data element to record precoordinated anatomical locations. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Structured anatomical location' SLOT in this archetype. Occurrences for this data element are unbounded to allow for clinical scenarios such as describing a rash in multiple locations but where all of the other attributes are identical. If the anatomical location is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant.(en)"
+            "text" : "(Synthesized)",
+            "code" : "ac0.2",
+            "description" : ""
           }
         }
       },
@@ -2101,6 +1924,20 @@
         "email" : "easensiob@clinic.cat"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "zh-cn"
+      },
+      "author" : {
+        "name" : "Lin Zhang",
+        "organisation" : "Freelancer",
+        "email" : "linforest@163.com"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -2251,6 +2088,21 @@
           "keywords" : [ "*problem(en)", "*active(en)", "*inactive(en)", "*status(en)", "*episode(en)", "*diagnosis(en)" ],
           "use" : "*Use to record a relevant context-specific or time-specific qualifier that provides additional detail which is relevant at the time of recording or within the clinical context where a problem or diagnosis is recorded. The qualifier may not be appropriate at another time or in another clinical context. \r\n\r\nThis archetype is designed to be included in Status SLOT in the EVALUATION.problem_diagnosis archetype. The intent is for the EVALUATION.problem_diagnosis archetype to hold all of the information that applies in all contexts, in contrast to this archetype describing only information that depends on the context of use.\r\n\r\nIMPORTANT NOTES FOR IMPLEMENTATION: \r\n- It is not intended or implied that any or all of these qualifiers should be used within the same context or period of time. In contrast to the usual design of archetypes, this archetype has been deliberately designed to collect a number of common qualifiers into one place in an effort to attempt some simple standardisation within a very messy area of clinical practice. It is acknowledged that the data elements contained in this archetype embrace many different, and sometimes even competing, concepts. This has been done mainly to prevent the need for multiple qualifier archetypes, each containing only one or two data elements. \r\n- Some of these data elements are potentially directly conflicting if used simultaneously within the same context, for example it would not make sense to have an 'inactive' problem together with an Episode that is 'ongoing'. As such, these status qualifiers should be used with extreme care as they are variably applied in practice and interoperability cannot be assured unless usage guidelines are clearly defined within the clinical community in which the 'Problem/Diagnosis' and 'Problem/Diagnosis qualifier' archetype pair may be shared. \r\n\r\nFull DRG coding will require the DRG-related data elements from this archetype in combination with data elements from other archetypes.(en)",
           "misuse" : "*Not to be used to represent a differential diagnosis - use the archetype EVALUATION.differential_diagnosis for this purpose.\r\n\r\nNot to be used to represent diagnostic certainty - use the 'Diagnostic certainty' data element within the EVALUATION.problem_diagnosis archetype.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "zh-cn" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "zh-cn"
+          },
+          "purpose" : "旨在记录针对指定问题或诊断的临床上下文/语境特异性或时间特异性的限定词。",
+          "keywords" : [ "问题", "诊断", "现行有效", "有效", "无效", "节段", "服务节段" ],
+          "use" : "旨在用于记录针对指定问题或诊断的临床上下文/语境特异性或时间特异性的限定词。这些限定词提供录制之时相关/贴合的其他详情，或者是在记录问题或诊断的临床上下文/语境当中相关/贴合的其他详情。对于其他的时间或其他的临床上下文/语境，这种限定词可能并不合适。\r\n\r\n本原始型在设计上预定包含在评价型问题/诊断原始型 EVALUATION.problem_diagnosis 的状态槽位 \"Status\" 当中。目的则是让评价型问题/诊断原始型 EVALUATION.problem_diagnosis 能够收纳/保存适用于所有上下文/语境的所有信息，而当前这一原始型则仅仅描述的是那些依赖于相应应用上下文/语境（context of use）的信息。\r\n\r\n针对实施工作的重要说明：\r\n\r\n- 在此，并未有意规定或暗示在同一上下文/语境或时段当中使用任何或全部这些限定词。与通常的原始型设计相反，在此故意将本原始型设计成为将很多常见的限定词收集在一处，以努力在非常混乱的临床实践领域中尝试一些简单的标准化。众所周知，本原始型之中所收纳的数据元涉及到许多不同的概念，有时甚至是相互竞争/冲突的概念。这样做主要是为了避免需要多个的限定词原始型，不然每个原始型都仅仅会收纳一个或两个数据元。\r\n\r\n- 如果在同一上下文/语境当中同时使用其中的一些数据元，它们可能会发生直接的冲突。例如，“无效”问题与“进行中/正在进行”的服务节段（Episode）的并存会讲不通/缺乏合理性。因此，应当极其小心地运用这些状态限定词，因为它们在实践当中的运用变化不定，除非在相应的临床社区内明确定义用法指南，否则无法保证互操作性；在临床社区当中，可能会共享“问题/诊断”与“问题/诊断限定词”原始型对。\r\n\r\n完整的 DRG 编码将需要当前原始型之中与 DRG 相关的数据元结合来自其他原始型的数据元。\r\n",
+          "misuse" : "并非旨在用于表达鉴别诊断 - 对此，请采用评价型鉴别诊断原始型 EVALUATION.differential_diagnosis。\r\n\r\n并非旨在用于表达诊断确定性 - 对此，请采用评价型问题/诊断原始型 EVALUATION.problem_diagnosis 之中的诊断确定性数据元 \"Diagnostic certainty\"。",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -3340,6 +3192,74 @@
             "code" : "ac0.46",
             "description" : ""
           }
+        },
+        "zh-cn" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.1",
+            "description" : ""
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.4",
+            "description" : ""
+          },
+          "ac0.16" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.16",
+            "description" : ""
+          },
+          "ac0.17" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.17",
+            "description" : ""
+          },
+          "ac0.18" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.18",
+            "description" : ""
+          },
+          "ac0.23" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.23",
+            "description" : ""
+          },
+          "ac0.32" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.32",
+            "description" : ""
+          },
+          "ac0.33" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.33",
+            "description" : ""
+          },
+          "ac0.46" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.46",
+            "description" : ""
+          }
         }
       },
       "termBindings" : {
@@ -3703,6 +3623,20 @@
         "name" : "Yexuan Cheng",
         "organisation" : "浙江大学",
         "email" : "3160100913@zju.edu.cn"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "zh-cn"
+      },
+      "author" : {
+        "name" : "Lin Zhang",
+        "organisation" : "Freelancer",
+        "email" : "linforest@163.com"
       },
       "otherDetails" : { }
     } ]
