@@ -1,0 +1,65 @@
+archetype (adl_version=1.4; uid=54614da4-8654-4a45-a509-1c0df988bcd8)
+	openEHR-EHR-COMPOSITION.export_secondary_use_dips.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["date"] = <"2024-10-29">
+		["name"] = <"Bjørn Næss">
+		["organisation"] = <"DIPS AS">
+		["email"] = <"bna@dips.no">
+	>
+	lifecycle_state = <"in_development">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"d675fb3dbc411c198c9c9264a7239033">
+		["build_uid"] = <"1140678d-2808-3167-b600-d40d2e9a9622">
+	>
+
+definition
+	COMPOSITION[at0000] matches {    -- Eksport for sekundærbruk
+		category matches {
+			DV_CODED_TEXT matches {
+				defining_code matches {
+					[openehr::434]
+				}
+			}
+		}
+		context matches {
+			EVENT_CONTEXT matches {
+				other_context matches {
+					ITEM_TREE[at0001] matches {*}    -- Item tree
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Eksport for sekundærbruk">
+					description = <"Sammendrag av data som trekkes ut for sekundærbruk. For eksempel uttrekk av data til et kvalitetsregister. ">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+			>
+		>
+	>
