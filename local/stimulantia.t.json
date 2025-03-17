@@ -8,7 +8,7 @@
       "name" : "Liv Laugen",
       "organisation" : "NRUA"
     },
-    "otherContributors" : [ ],
+    "otherContributors" : [ "Bjørn Næss<bna@dips.no>" ],
     "lifecycleState" : {
       "codeString" : "release_candidate"
     },
