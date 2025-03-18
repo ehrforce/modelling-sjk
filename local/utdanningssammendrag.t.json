@@ -247,13 +247,6 @@
     "termDefinitions" : {
       "en" : { },
       "nb" : {
-        "at0007" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0007",
-          "text" : "Kommentar",
-          "description" : "Ytterligere fritekst om utdanningssammendraget som ikke er fanget opp i andre felt.",
-          "comment" : "Kommentar er ikke i bruk i de generiske feltene. "
-        },
         "at0007.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0007.1",
