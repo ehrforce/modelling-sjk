@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "19333e752ade5bc073a8394d0a9f65ff",
+      "MD5-CAM-1.0.1" : "7d872cb1e94f6cd9b6f8967eef905f57",
       "PARENT:MD5-CAM-1.0.1" : "348ecec1323ffc041209871b8dbb4806"
     },
     "details" : {
@@ -132,6 +132,15 @@
         "attributes" : [ ],
         "attributeTuples" : [ ],
         "archetypeRef" : "problem_diagnose_tnm",
+        "referenceType" : "templateId"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "SECTION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.30",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "Behandlingsoppsummering_template",
         "referenceType" : "templateId"
       } ]
     } ],
