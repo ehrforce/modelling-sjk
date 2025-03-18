@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "b57379fead99b8dd2b1b189571860fbf",
+      "MD5-CAM-1.0.1" : "f4a72f372d4a470f352ecb0c1d4650fa",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5"
     },
     "details" : {
@@ -554,6 +554,13 @@
           "text" : "*(Synthesized) (en)",
           "code" : "ac0.2",
           "description" : ""
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Problem/diagnose",
+          "description" : "Registrering av komplikasjoner som følge av behandlingen som er gitt. ",
+          "comment" : "Primær mål med denne informasjonsmodellen er å lage en innramming av CTCAE registreringer. "
         }
       },
       "sv" : {
