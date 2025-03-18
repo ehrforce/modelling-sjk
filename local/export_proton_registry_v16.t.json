@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "7d872cb1e94f6cd9b6f8967eef905f57",
+      "MD5-CAM-1.0.1" : "a1e83da3ba9dcb1946b838575edab34d",
       "PARENT:MD5-CAM-1.0.1" : "348ecec1323ffc041209871b8dbb4806"
     },
     "details" : {
@@ -141,6 +141,15 @@
         "attributes" : [ ],
         "attributeTuples" : [ ],
         "archetypeRef" : "Behandlingsoppsummering_template",
+        "referenceType" : "templateId"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "EVALUATION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.32",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "Problem_Diagnose_Sarkom",
         "referenceType" : "templateId"
       } ]
     } ],
