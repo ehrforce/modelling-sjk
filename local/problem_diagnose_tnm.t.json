@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "cec644499dbae77fc95d33a4e68e3285",
+      "MD5-CAM-1.0.1" : "46d6008da86f9ad71986991ed4de8a38",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5"
     },
     "details" : {
@@ -552,6 +552,13 @@
           "code" : "at0069.1",
           "text" : "Kommentar diagnose/TNM",
           "description" : "Utdypende fritekst om problemet eller diagnosen, som ikke passer i andre felt."
+        },
+        "at0002.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002",
+          "text" : "Problem/diagnosenavn",
+          "description" : "Identifisering av problemet eller diagnosen ved hjelp av navn.",
+          "comment" : "Primærdiagnosen kodet som ICD-10"
         }
       },
       "sv" : {
