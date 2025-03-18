@@ -753,6 +753,13 @@ a|
 
 
 For eksempel "akutt motorisk aksonal nevropati" som en variant av Guillain-Barre Syndrom. Koding av navnet på varianten med en terminologi er foretrukket hvis mulig.
+|at0009| 0..1| DV_TEXT | Klinisk beskrivelse
+a|
+
+
+Brukes i Sarkom med endret navn til "Merknad" 
+
+Brukes til å gi bakgrunn og kontekst, inkludert utvikling, episoder eller forverringer, fremgang og alle andre relevante detaljer, om problemet eller diagnosen.
 |at0012| 0..1| DV_CODED_TEXT | Anatomisk lokalisering
 a|
 * Høyre (SNOMED-CT: 24028007)
@@ -765,6 +772,37 @@ a|
 
 Koding av navnet på den anatomiske lokaliseringen ved hjelp av en terminologi er foretrukket når dette er mulig. 
 Bruk dette dataelementet for å registrere prekoordinerte anatomiske lokaliseringer. Dersom behovene for å registrere anatomisk sted bestemmes i applikasjonen eller trenger større grad av kompleksitet som f.eks. relativ lokalisering, er det anbefalt å bruke CLUSTER.anatomical_location eller CLUSTER.relative_location innenfor SLOTet "Strukturert anatomisk lokalisering" i denne arketypen. Dette dataelementet kan ha ubegrenset antall forekomster, for å gjøre det mulig å registrere kliniske scenarier som f.eks. å beskrive et utslett som opptrer flere steder på kroppen, men der alle andre attributter er identiske. Dersom den anatomiske lokaliseringen inkluderes i feltet "Problem/diagnosenavn" via prekoordinerte koder blir dette dataelementet overflødig.
+5+a|*Anatomisk lokalisering* + 
+CLUSTER: _openEHR-EHR-CLUSTER.anatomical_location.v1_
+|at0001| 1..1| DV_TEXT | Navn på kroppssted
+a|
+|at0065| 0..*| DV_TEXT | Spesifikt sted
+a|
+
+
+Brukes tilå øke presisjonen ved spesifisering av kroppsstedet, dersom påkrevd. For eksempel den øvre høyre kvadranten eller McBurneys punkt på bukveggen, eller interfalangealleddet på stortåen. Dersom dataelementet "Navn på kroppssted" er registrert ved hjelp av prekoordinerte termer som omfatter det spesifikke stedet er dette dataelementet overflødig. I de fleste tilfeller vil dette være ett enkelt sted på kroppen. Dataelementet åpner for flere forekomster i de sjeldne tilfellene der man trenger å angi et spesifikt anatomisk sted som omfatter to eller flere sammenhengende spesifikke steder. For eksempel for å beskrive det spesifikke stedet en svulst strekker seg over andre, tredje og fjerde ribben.
+|at0002| 0..1| DV_CODED_TEXT | Kroppsside
+a|
+* Høyre (SNOMED-CT: 24028007)
+* Venstre (SNOMED-CT: 7771000)
+* Annet (SNOMED-CT: 74964007)
+
+
+Hvis den identifiserte kroppssiden ikke har noen lateralitet, bør dette datalementet stå tomt. Hvis dataelementet "Navn på kroppsted" bruker prekoordinerte termer som inkluderer lateralitet, er dette dataelementet overflødig.
+|at0023| 0..1| DV_TEXT | Beskrivelse
+a|
+
+
+B
+|at0078| 0..1| DV_TEXT | Årsak
+a|
+
+
+I Sarkom benyttes feltet kodet med mulig verdi: 
+
+SNOMED-CT::1340012009|Stråleindusert|
+
+Også kjent som 'etiologi'. Det anbefales å kode "Årsak" med en ekstern terminologi dersom det er mulig.
 |at0003| 0..1| DV_DATE_TIME | Dato/tid for klinisk bekreftelse
 |
 
@@ -962,8 +1000,915 @@ a|
 
 
 For eksempel: Tilgrensende til leppens overgang fra slimhinne til hud; en tatovering dekker nedre halvdel av dette området.
+5+a|*Klinisk grunnlag - morfologi* + 
+CLUSTER: _openEHR-EHR-CLUSTER.clinical_evidence.v1_
+|at0003| 0..1| DV_CODED_TEXT | Morfologisk diagnose
+a|
+* test (no.onk.morfologi.sarkom: 1)
+
+
+Morfologisk diagnose settes på bakgrunn av kunnskapsbasen som er utviklet for Sarkomkreft. 
+|at0004| 0..1| DV_TEXT | Merknad morfologisk diagnose
+a|
+|at0006| 0..1| DV_DATE_TIME | Diagnosedato (dato utførelse diagnostisk undersøkelse)
+|
+
+
+For eksempel: Datoen da funnet ble gjort eller gjort tilgjengelig for klinikeren.
+|at0022| 0..1| DV_CODED_TEXT | Diagnostisk metode
+a|
+* Biopsi (SNOMED-CT: 86273004)
+* Operasjonspreparat (SNOMED-CT: 387713003)
+* Radiologi (SNOMED-CT: 363679005)
+* Klinisk (SNOMED-CT: 58147004)
+
+
+BNA (18.mars 2025): Er det ikke feil terminologi id på dette feltet? Det står NORPAT, men skal vel være SNOMED-CT?
+|at0022| 0..1| DV_CODED_TEXT | Type biopsi
+a|
+* Finnålsaspirasjonscytologi (FNAC) (NORPAT: 48635004)
+* Nålebiopsi (grovnålsbiopsi/pistolbiopsi) (NORPAT: 129249002)
+* Åpen biopsi (NORPAT: 119283008)
+* Pipelle (NORPAT: 134279003)
+* Uterin abrasio (NORPAT: 1082411000202100)
+* Eksisjonsbiopsi (NORPAT: 8889005)
+* Stansebiopsi (NORPAT: 68660007)
+
+
+BNA (18.mars 2025): Er det ikke feil terminologi id på dette feltet? Det står NORPAT, men skal vel være SNOMED-CT?
+|at0001| 0..1| DV_TEXT | Merknad diagnostisk metode
+a|
+5+a|*Prøvemateriale* + 
+CLUSTER: _openEHR-EHR-CLUSTER.specimen.v1_
+
+
+For eksempel kroppsvev eller kroppsvæske.
+|at0001| 0..1| DV_TEXT | Preparatnummer
+a|
+
+
+I noen sammenhenger, som HL7 og IHE, kalt "Accession Identifier", mens et norsk synonym er "Prøvenummer". Prøvebeholdere, for eksempel vakuumglass eller vevskassetter, har egne IDer som registreres i elementet "BeholderID" i arketypen Prøvebeholder.
+5+a|*WHO histologisk grad av bensarkom* + 
+CLUSTER: _openEHR-EHR-CLUSTER.who_grade_bone_sarcoma.v1_
+|at0001| 0..1| DV_CODED_TEXT | Grad
+a|
+* at0004 -> Grad 1 (lavgradig malign) 
+* at0005 -> Grad 2 (intermediær) 
+* at0006 -> Grad 3 (høygradig malign) 
+* at0007 -> Variabel gradering 
+5+a|*FNCLCC graderingssystem* + 
+CLUSTER: _openEHR-EHR-CLUSTER.fnclcc.v1_
+
+
+FNCLCC - Fédération Nationale des Centres de Lutte Contre le Cancer.
+|at0017| 0..1| DV_CODED_TEXT | Histologisk grad
+a|
+* at0022 -> GX 
+* at0018 -> Grad 1 
+* at0019 -> Grad 2 
+* at0020 -> Grad 3 
+
+
+I klinisk praksis for bløtvevssarkomer, blir 'Histologisk grad'-resultatet fra arketypen ofte gjenbrukt for å fylle ut dataelementet 'Histopatologisk gradering (G)' i arketypene TNM-klassifikasjon klinisk (CLUSTER.tnm) og TNM-klassifikasjon patologi (CLUSTER.tnm-pathological.v1).
+
+5+a|*Modifisert NIH-kriterier for GIST* + 
+CLUSTER: _openEHR-EHR-CLUSTER.modified_nih_criteria_gist.v0_
+
+
+NIH - National Institutes of Health.
+|at0004| 0..1| DV_CODED_TEXT | Risikokategori
+a|
+* at0021 -> Meget lav 
+* at0022 -> Lav 
+* at0023 -> Intermediær 
+* at0024 -> Høy risiko 
+5+a|*Annen klassifisering sarkom* + 
+CLUSTER: _openEHR-EHR-CLUSTER.annen_klassifisering_sarkom_sjk.v1_
+|at0001| 0..1| DV_CODED_TEXT | Klassifisering
+a|
+* at0002 -> Entiteten graderes ikke 
+* at0003 -> Kan ikke graderes 
+* at0004 -> Ukjent 
+* at0005 -> Benign 
+* at0006 -> Lavgradig 
+* at0007 -> Høygradig 
+5+a|*FIGO stadium for gynekologisk kreft* + 
+CLUSTER: _openEHR-EHR-CLUSTER.figo_staging_cancer.v0_
+
+
+FIGO - The International Federation of Gynecology and Obstetrics.
+|at0002| 0..1| DV_CODED_TEXT | FIGO stadium
+a|
+* Stadium I (no.onk.figo: 1)
+* Stadium II (no.onk.figo: 2)
+* Stadium III (no.onk.figo: 3)
+* Stadium IV (no.onk.figo: 4)
+5+a|*Klinisk grunnlag - multifokal* + 
+CLUSTER: _openEHR-EHR-CLUSTER.clinical_evidence.v1_
+|at0003| 0..1| DV_CODED_TEXT | Funn
+a|
+* Growth pattern (observable entity) (SNOMED-CT: 404963005)
+
+
+Det anbefales å kode "Funn" med en terminologi, der det er mulig.
+|at0005| 0..1| DV_CODED_TEXT | Multifokal tumor
+a|
+* Multifokal tumor (SNOMED-CT: 399506006)
+
+
+For eksempel mantouxtestresultat.
+5+a|*Problem/diagnose detaljer* + 
+CLUSTER: _openEHR-EHR-CLUSTER.problem_diagnosis_dips.v1_
+
+
+Benyttes for å sette ICD10 koder for problemer hvor det er mer aktuelt å bruke overordnet kode på problem/diagnosenavn. 
+|at0001| 0..1| DV_TEXT | Diagnosenavn
+a|
+|at0003| 0..1| DV_TEXT | Beskrivelse
+a|
+|at0073| 0..1| DV_CODED_TEXT | Diagnostisk sikkerhet
+a|
+* at0074 -> Mistenkt 
+* at0076 -> Bekreftet 
+
+
+Hvis et alternativt verdisett er nødvendig, kan disse verdiene legges til DV_TEXT-datatypen i et templat.
 |at0069| 0..1| DV_TEXT | Kommentar diagnose/TNM
 a|
+|at0070| 0..1| DV_DATE_TIME | Sist oppdatert
+|
+|====
+== Behandlingsoppsummering
+== Overordnet behandlingdetaljer
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Overordnet behandlingdetaljer* + 
+EVALUATION: _openEHR-EHR-EVALUATION.intervention_summary.v0_
+|at0003| 1..1| DV_CODED_TEXT | Behandling for krefttype
+a|
+* Sarkom (no.onk.kreftgruppering: 1)
+* Kreft i hode og hals (no.onk.kreftgruppering: 2)
+* Hjernesvulst (no.onk.kreftgruppering: 3)
+* Brystkreft (no.onk.kreftgruppering: 4)
+* Lungekreft (no.onk.kreftgruppering: 5)
+* Kreft i fordøyelsessystemet (no.onk.kreftgruppering: 6)
+* Gynekologisk kreft (no.onk.kreftgruppering: 7)
+* Kreft i nyre og urinveier (no.onk.kreftgruppering: 8)
+* Benmargs- og blodkreft (no.onk.kreftgruppering: 9)
+* Lymfom (no.onk.kreftgruppering: 10)
+* Hudkreft (no.onk.kreftgruppering: 11)
+* Kreft i mannlige kjønnsorganer (no.onk.kreftgruppering: 12)
+* Kreft i endokrine kjertler (no.onk.kreftgruppering: 13)
+* Nevroendokrin kreft (no.onk.kreftgruppering: 14)
+* Barnekreft (no.onk.kreftgruppering: 15)
+* Øyekreft (no.onk.kreftgruppering: 16)
+* Svulst av ukjent opprinnelse / Annet (no.onk.kreftgruppering: 17)
+
+
+For eksempel: antibiotika, stråleterapi.
+Koding med en terminologi er foretrukket, dersom det er mulig.
+|at0058| 0..1| DV_CODED_TEXT | Intervensjonstype
+a|
+* Kreftbehandling (no.onk.behandlingstype: 1)
+
+
+18.mars 2025: Valg av kode er under arbeid. Planlagt møte med HDIR
+
+1	Kreftbehandling
+225334002	| Intervention regime (regime/therapy) |
+413737006	413737006 | Cancer hospital treatment completed (situation) |
+
+
+
+*The type of intervention.
+
+grouping of the interventions.
+supertype, her kan man ha f.eks. den overordnede grupperingen. .  (en)
+|at0028| 0..1| DV_TEXT | Beskrivelse
+a|
+|at0054| 0..1| DV_TEXT | Behandlingsprotokoll
+a|
+|at0033| 0..*| DV_CODED_TEXT | Klinisk indikasjon
+a|
+* Primær malign tumor (disorder) (no.onk.kreftgruppering: 372087000)
+* Residiv av malign tumor (disorder) (no.onk.kreftgruppering: 1259237005)
+* Metastase malign tumor (disorder) (no.onk.kreftgruppering: 128462008)
+* Komplikasjon av medisinsk behandling (disorder) (no.onk.kreftgruppering: 35688006)
+* Annen (qualifier value) (no.onk.kreftgruppering: 74964007)
+* Primærtumor (ikke malign eller beningn) (no.onk.kreftgruppering: ???)
+* Tumor (morphologic abnormality) (no.onk.kreftgruppering: 108369006)
+* Tumor, benign (morphologic abnormality) (no.onk.kreftgruppering: 3898006)
+* Tumor, malign (morphological abnormality) (no.onk.kreftgruppering: 1240414004)
+
+
+Koding av "Klinisk indikasjon" med en terminologi er foretrukket, dersom det er mulig.
+Dette dataelementet tillater flere forekomster, slik at det kan registrere en eller flere indikasjoner ved behov.
+|at0034| 0..1| DV_CODED_TEXT | Intensjon
+a|
+* Kurativt (no.onk.behandlingsintensjon: K1)
+* Aktiv overvåkning (no.onk.behandlingsintensjon: K2)
+* Livsforlengende - ikke kurativ (no.onk.behandlingsintensjon: K3)
+* Symptomlindrende - ikke kurativ (no.onk.behandlingsintensjon: K4)
+* Lokal kontroll - ikke kurativ (no.onk.behandlingsintensjon: K5)
+* Ukjent (no.onk.behandlingsintensjon: K6)
+
+
+For eksempel: kurativ, palliativ eller preventiv hensikt. 
+Koding av "intensjon med en terminologi er foretrukket, dersom det er mulig.
+Dette dataelementet tillater flere forekomster, slik at det er mulig å registrere en eller flere alternativer ved behov.
+|at0055| 0..*| DV_CODED_TEXT | Treatment line
+a|
+* First line treatment (SNOMED-CT: 708255002)
+* Second line treatment (SNOMED-CT: 708256001)
+* Third line treatment (SNOMED-CT: 708257005)
+
+
+For eksempel: neoadjuvant, concomitant (samtidig) og adjuvant.
+|at0032| 0..1| DV_DATE_TIME | Start behandlingsforløp
+|
+|at0004| 0..1| DV_DATE_TIME | Stopp behandlingsforløp
+|
+|at0005| 0..1| DV_CODED_TEXT | Fullføringsstatus
+a|
+* at0021 -> Fullført 
+* at0022 -> Ikke fullført 
+|at0007| 0..1| DV_TEXT | Årsak til ikke fullført
+a|
+
+
+Koding med en terminologi er foretrukket, dersom det er mulig.
+|at0008| 0..1| DV_TEXT | Resultatkategori
+a|
+* Vellykket i henhold til intensjon
+* Ikke vellykket i henhold til intensjon
+
+
+For eksempel: vellykket, ikke vellykket, usikkert.
+Koding med en terminologi er foretrukket, dersom det er mulig.
+|at0027| 0..1| DV_TEXT | Årsak til resultatkategori
+a|
+
+
+For eksempel: resistens mot medikament.
+|at0018| 0..1| DV_DATE_TIME | Sist oppdatert
+|
+|====
+== Hovedbehandling
+== Invasiv prosedyre
+== Intervensjonssammendrag
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Intervensjonssammendrag* + 
+EVALUATION: _openEHR-EHR-EVALUATION.intervention_summary.v0_
+|at0003| 1..1| DV_CODED_TEXT | Intervensjon navn
+a|
+* Eksisjon (reseksjon) (NKPK - liste må bearbeides: 65801008)
+* Reeksisjon (ny utskjæring) (NKPK - liste må bearbeides: 65854006)
+* Amputasjon (NKPK - liste må bearbeides: 81723002)
+* Curettage (NKPK - liste må bearbeides: 68688001)
+* Revisjon (gjentakelse av tidligere prosedyre for å korrigere eller forbedre resultat) (NKPK - liste må bearbeides: 118635009)
+* Annet (NKPK - liste må bearbeides: 74964007)
+
+
+*For example: antibiotic, radiotherapy.
+Coding with an external terminology is preferred, where possible.
+
+exact treatment, Dette er den faktiske behandlingen, navnet til denne.  (en)
+|at0058| 0..1| DV_CODED_TEXT | Intervensjonstype
+a|
+* Kirurgisk inngrep (SNOMED-CT: 387713003)
+
+
+Dette dataelementet kan brukes til å støtte organisering innenfor brukergrensesnittet.
+|at0028| 0..1| DV_TEXT | Beskrivelse
+a|
+|at0054| 0..1| DV_TEXT | Protokollnavn
+a|
+
+
+Designkommentar:
+arver fra toppnivå
+|at0033| 0..*| DV_TEXT | Indikasjon for behandling/behandlingsgrunnlag
+a|
+
+
+Koding av "Klinisk indikasjon" med en terminologi er foretrukket, dersom det er mulig.
+Dette dataelementet tillater flere forekomster, slik at det kan registrere en eller flere indikasjoner ved behov.
+|at0055| 0..*| DV_CODED_TEXT | Terapautisk rolle
+a|
+* Hovedbehandling (no.onk.behandling.kategori: 1)
+
+
+*For example: neoadjuvant, concomitant or adjuvant. main treatment, additional (en)
+|at0032| 0..1| DV_DATE_TIME | Intervensjonsdato
+|
+5+a|*Anatomisk lokalisering* + 
+CLUSTER: _openEHR-EHR-CLUSTER.anatomical_location.v1_
+|at0001| 1..1| DV_TEXT | Navn på kroppssted
+a|
+
+
+Dette dataelementet er det eneste obligatoriske dataelementet i arketypen og bør brukes som det primære dataelementet for registrering av en anatomisk lokalisering. Det er sterkt anbefalt at "Navn på kroppssted" registreres så anatomisk spesifikt som mulig. For eksempel; registrer "øvre øyelokk" heller enn "øyelokk" med "øvre" som kvalifikator; "femte ribben" heller enn "ribben" med en numerisk kvalifikator. Bruk de andre dataelementene for lateralitet, aspekt, region og anatomisk linje for å gi mer detaljer. Dette dataelementet bør kodes med en terminologi som kan assistere beslutningsstøtte dersom mulig - en passende terminologi for bruk her kunne omfatte individuelle konsepter eller lister av prekoordinerte termer. Fritekst bør kun brukes hvis det ikke finnes en passende terminologi. 
+
+Dersom navn på kroppssted er oppgitt i arketypen som denne arketypen er nøstet inn i, kan dette dataelementet være redundant. Imidlertid kan det være fornuftig å dobbeltregistrere navnet på kroppstedet for å støtte semantiske spørringer basert på denne arketypen i stedet for i arketypen den er nøstet inn i.
+|at0065| 0..*| DV_TEXT | Spesifikt sted
+a|
+
+
+Brukes til å øke presisjonen ved spesifisering av kroppsstedet, dersom påkrevd. For eksempel den øvre høyre kvadranten eller McBurneys punkt på bukveggen, eller interfalangealleddet på stortåen. Dersom dataelementet "Navn på kroppssted" er registrert ved hjelp av prekoordinerte termer som omfatter det spesifikke stedet er dette dataelementet overflødig. I de fleste tilfeller vil dette være ett enkelt sted på kroppen. Dataelementet åpner for flere forekomster i de sjeldne tilfellene der man trenger å angi et spesifikt anatomisk sted som omfatter to eller flere sammenhengende spesifikke steder. For eksempel for å beskrive det spesifikke stedet en svulst strekker seg over andre, tredje og fjerde ribben.
+|at0002| 0..1| DV_CODED_TEXT | Kroppsside
+a|
+* at0003 -> Venstre 
+* at0004 -> Høyre 
+
+
+Hvis den identifiserte kroppssiden ikke har noen lateralitet, bør dette datalementet stå tomt. Hvis dataelementet "Navn på kroppsted" bruker prekoordinerte termer som inkluderer lateralitet, er dette dataelementet overflødig.
+|at0018| 0..1| DV_DATE_TIME | Sist oppdatert
+|
+|====
+== Medikamentell
+== Templat-overskrift
+== Intervensjonssammendrag
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Intervensjonssammendrag* + 
+EVALUATION: _openEHR-EHR-EVALUATION.intervention_summary.v0_
+|at0003| 1..1| DV_CODED_TEXT | Intervensjon navn
+a|
+* Kjemoterapi - Medikamentell (SNOMED-CT: 367336001)
+* Målrettet - Medikamentell (SNOMED-CT: 347531000202105)
+* Immunterapi for kreft - Medikamentell (SNOMED-CT: 64644003)
+* Hormonterapi – Medikamentell (SNOMED-CT: 169413002)
+
+
+*For example: antibiotic, radiotherapy.
+Coding with an external terminology is preferred, where possible.
+
+exact treatment, Dette er den faktiske behandlingen, navnet til denne.  (en)
+|at0058| 0..1| DV_CODED_TEXT | Intervensjonstype
+a|
+* Medikamentell behandling (procedure) (SNOMED-CT: 416608005)
+
+
+Dette dataelementet kan brukes til å støtte organisering innenfor brukergrensesnittet.
+|at0028| 0..1| DV_TEXT | Beskrivelse
+a|
+|at0054| 0..1| DV_TEXT | Protokollnavn
+a|
+|at0055| 0..*| DV_CODED_TEXT | Terapautisk rolle
+a|
+* Hovedbehandling (no.onk.behandling.kategori: 1)
+
+
+*For example: neoadjuvant, concomitant or adjuvant. main treatment, additional (en)
+|at0032| 0..1| DV_DATE_TIME | Start dato
+|
+|at0004| 0..1| DV_DATE_TIME | Stopp dato
+|
+|at0005| 0..1| DV_CODED_TEXT | Fullføringsstatus
+a|
+* at0021 -> Fullført 
+* at0022 -> Ikke fullført 
+|at0007| 0..1| DV_TEXT | Årsak til ikke fullført
+a|
+
+
+Koding med en terminologi er foretrukket, dersom det er mulig.
+|at0018| 0..1| DV_DATE_TIME | Sist oppdatert
+|
+|====
+== Legemiddelsammendrag
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Legemiddelsammendrag* + 
+EVALUATION: _openEHR-EHR-EVALUATION.medication_summary.v1_
+|at0002| 1..1| DV_TEXT | Navn på kur/medikament
+a|
+
+
+Navn på legemiddel kan representeres som en generisk substans, handelsnavn, gruppe eller klasse av legemidler. Det anbefales å kode "Navn på legemiddel" med en terminologi om mulig, slik at det kan brukes for eksempel i beslutningsstøtte. Fritekst bør bare benyttes der det ikke finnes en passende terminologi.
+For eksempel: '"Adriamycin"; "doxorubicin" eller "anthracycliner"; "Fosamax", "alendronsyre" eller "bifosonater".
+|at0009| 0..1| DV_DATE_TIME | Startdato for bruk
+|
+
+
+Kan være en deldato, for eksempel kun årstall.
+|at0015| 0..1| DV_QUANTITY | Kumulativ mengde
+|
+
+
+For eksempel: monitorering av kumulativ mengde av doxorubicin.
+Kan regnes ut manuelt eller utledes via ulike kilder, som for eksempel kurvesystemet eller andre deler av den elektroniske pasientjournalen.
+|at0010| 0..1| DV_DATE_TIME | Sluttdato for bruk
+|
+
+
+Kan være en deldato, for eksempel kun årstall.
+|at0006| 0..1| DV_DATE_TIME | Sist oppdatert
+|
+|====
+== Stråleterapi
+== Intervensjonssammendrag
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Intervensjonssammendrag* + 
+EVALUATION: _openEHR-EHR-EVALUATION.intervention_summary.v0_
+|at0003| 1..1| DV_CODED_TEXT | Intervensjon navn
+a|
+* Stråleterapi (alle typer) (velge kodeverk: 1287742003)
+* Fotonterapi - Stråle (ekstern) (velge kodeverk: 1156506007)
+* Protonterapi -Stråle (ekstern) (velge kodeverk: 169314007)
+* Elektronterapi - Stråle (ekstern) (velge kodeverk: 45643008)
+* Brakyterapi - Stråle (intern) (velge kodeverk: 152198000)
+* Radioisotope/systemisk radionuklidebehandling - Stråle (intern) (velge kodeverk: 399315003)
+* Partikkelstråleterapi (karbon eller proton) (velge kodeverk: WEOC)
+* Karbonterapi (velge kodeverk: WEOC10)
+* Protonterapi (NKPK) (velge kodeverk: WEOC00)
+* Ekstern stråleterapi (velge kodeverk: WEOA)
+* Brakyterapi (velge kodeverk: WEOB)
+* Stråleterapi (velge kodeverk: WE)
+
+
+*For example: antibiotic, radiotherapy.
+Coding with an external terminology is preferred, where possible.
+
+exact treatment, Dette er den faktiske behandlingen, navnet til denne.  (en)
+|at0058| 0..1| DV_CODED_TEXT | Intervensjonstype
+a|
+* Radiotherapy (procedure) (SNOMED-CT: 1287742003)
+
+
+Dette dataelementet kan brukes til å støtte organisering innenfor brukergrensesnittet.
+|at0028| 0..1| DV_TEXT | Beskrivelse av stråleintervensjonen
+a|
+|at0054| 0..1| DV_TEXT | Protokollnavn
+a|
+|at0055| 0..*| DV_CODED_TEXT | Terapautisk rolle
+a|
+* Hovedbehandling (no.onk.behandling.kategori: 1)
+
+
+*For example: neoadjuvant, concomitant or adjuvant. main treatment, additional (en)
+|at0032| 0..1| DV_DATE_TIME | Dato første fraksjon
+|
+|at0004| 0..1| DV_DATE_TIME | Dato siste fraksjon
+|
+|at0005| 0..1| DV_CODED_TEXT | Fullføringsstatus
+a|
+* at0021 -> Fullført 
+* at0022 -> Ikke fullført 
+|at0007| 0..1| DV_TEXT | Årsak til ikke fullført
+a|
+
+
+Koding med en terminologi er foretrukket, dersom det er mulig.
+|at0018| 0..1| DV_DATE_TIME | Sist oppdatert
+|
+// Not supported rmType ELEMENT
+// Not supported rmType DV_IDENTIFIER
+|| 0..1| DV_TEXT | undefined
+// text_value -  /content[openEHR-EHR-SECTION.adhoc.v1,'Behandlingsoppsummering']/items[openEHR-EHR-SECTION.adhoc.v1,'Hovedbehandling']/items[openEHR-EHR-SECTION.adhoc.v1,'Stråleterapi']/items[openEHR-EHR-EVALUATION.intervention_summary.v0]/protocol[at0002]/items[at0057,'Stråleterapi course ID']/value
+a|
+|====
+== Tilleggsbehandling
+== Invasiv prosedyre
+== Intervensjonssammendrag
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Intervensjonssammendrag* + 
+EVALUATION: _openEHR-EHR-EVALUATION.intervention_summary.v0_
+|at0003| 1..1| DV_CODED_TEXT | Intervensjon navn
+a|
+* Eksisjon (reseksjon) (NKPK - liste må bearbeides: 65801008)
+* Reeksisjon (ny utskjæring) (NKPK - liste må bearbeides: 65854006)
+* Amputasjon (NKPK - liste må bearbeides: 81723002)
+* Curettage (NKPK - liste må bearbeides: 68688001)
+* Revisjon (gjentakelse av tidligere prosedyre for å korrigere eller forbedre resultat) (NKPK - liste må bearbeides: 118635009)
+* Annet (NKPK - liste må bearbeides: 74964007)
+
+
+*For example: antibiotic, radiotherapy.
+Coding with an external terminology is preferred, where possible.
+
+exact treatment, Dette er den faktiske behandlingen, navnet til denne.  (en)
+|at0058| 0..1| DV_CODED_TEXT | Intervensjonstype
+a|
+* Kirurgisk inngrep (SNOMED-CT: 387713003)
+
+
+Dette dataelementet kan brukes til å støtte organisering innenfor brukergrensesnittet.
+|at0028| 0..1| DV_TEXT | Beskrivelse
+a|
+|at0054| 0..1| DV_TEXT | Protokollnavn
+a|
+
+
+Designkommentar:
+arver fra toppnivå
+|at0055| 0..*| DV_CODED_TEXT | Terapautisk rolle
+a|
+* Adjuvant hensikt (SNOMED-CT: 373846009)
+* Neoadjuvant hensikt (SNOMED-CT: 373847000)
+* Konkomitant (adjunkt) hensikt) (SNOMED-CT: 421974008)
+
+
+*For example: neoadjuvant, concomitant or adjuvant. main treatment, additional (en)
+|at0032| 0..1| DV_DATE_TIME | Intervensjonsdato
+|
+5+a|*Anatomisk lokalisering* + 
+CLUSTER: _openEHR-EHR-CLUSTER.anatomical_location.v1_
+|at0001| 1..1| DV_TEXT | Navn på kroppssted
+a|
+
+
+Dette dataelementet er det eneste obligatoriske dataelementet i arketypen og bør brukes som det primære dataelementet for registrering av en anatomisk lokalisering. Det er sterkt anbefalt at "Navn på kroppssted" registreres så anatomisk spesifikt som mulig. For eksempel; registrer "øvre øyelokk" heller enn "øyelokk" med "øvre" som kvalifikator; "femte ribben" heller enn "ribben" med en numerisk kvalifikator. Bruk de andre dataelementene for lateralitet, aspekt, region og anatomisk linje for å gi mer detaljer. Dette dataelementet bør kodes med en terminologi som kan assistere beslutningsstøtte dersom mulig - en passende terminologi for bruk her kunne omfatte individuelle konsepter eller lister av prekoordinerte termer. Fritekst bør kun brukes hvis det ikke finnes en passende terminologi. 
+
+Dersom navn på kroppssted er oppgitt i arketypen som denne arketypen er nøstet inn i, kan dette dataelementet være redundant. Imidlertid kan det være fornuftig å dobbeltregistrere navnet på kroppstedet for å støtte semantiske spørringer basert på denne arketypen i stedet for i arketypen den er nøstet inn i.
+|at0065| 0..*| DV_TEXT | Spesifikt sted
+a|
+
+
+Brukes til å øke presisjonen ved spesifisering av kroppsstedet, dersom påkrevd. For eksempel den øvre høyre kvadranten eller McBurneys punkt på bukveggen, eller interfalangealleddet på stortåen. Dersom dataelementet "Navn på kroppssted" er registrert ved hjelp av prekoordinerte termer som omfatter det spesifikke stedet er dette dataelementet overflødig. I de fleste tilfeller vil dette være ett enkelt sted på kroppen. Dataelementet åpner for flere forekomster i de sjeldne tilfellene der man trenger å angi et spesifikt anatomisk sted som omfatter to eller flere sammenhengende spesifikke steder. For eksempel for å beskrive det spesifikke stedet en svulst strekker seg over andre, tredje og fjerde ribben.
+|at0002| 0..1| DV_CODED_TEXT | Kroppsside
+a|
+* at0003 -> Venstre 
+* at0004 -> Høyre 
+
+
+Hvis den identifiserte kroppssiden ikke har noen lateralitet, bør dette datalementet stå tomt. Hvis dataelementet "Navn på kroppsted" bruker prekoordinerte termer som inkluderer lateralitet, er dette dataelementet overflødig.
+|at0018| 0..1| DV_DATE_TIME | Sist oppdatert
+|
+|====
+== Medikamentell
+== Templat-overskrift
+== Intervensjonssammendrag
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Intervensjonssammendrag* + 
+EVALUATION: _openEHR-EHR-EVALUATION.intervention_summary.v0_
+|at0003| 1..1| DV_CODED_TEXT | Intervensjon navn
+a|
+* Kjemoterapi - Medikamentell (SNOMED-CT: 367336001)
+* Målrettet - Medikamentell (SNOMED-CT: 347531000202105)
+* Immunterapi for kreft - Medikamentell (SNOMED-CT: 64644003)
+* Hormonterapi – Medikamentell (SNOMED-CT: 169413002)
+
+
+*For example: antibiotic, radiotherapy.
+Coding with an external terminology is preferred, where possible.
+
+exact treatment, Dette er den faktiske behandlingen, navnet til denne.  (en)
+|at0058| 0..1| DV_CODED_TEXT | Intervensjonstype
+a|
+* Medikamentell behandling (procedure) (SNOMED-CT: 416608005)
+
+
+Dette dataelementet kan brukes til å støtte organisering innenfor brukergrensesnittet.
+|at0028| 0..1| DV_TEXT | Beskrivelse
+a|
+|at0054| 0..1| DV_TEXT | Protokollnavn
+a|
+|at0055| 0..*| DV_CODED_TEXT | Terapautisk rolle
+a|
+* Adjuvant hensikt (SNOMED-CT: 373846009)
+* Neoadjuvant hensikt (SNOMED-CT: 373847000)
+* Konkomitant (adjunkt) hensikt) (SNOMED-CT: 421974008)
+
+
+*For example: neoadjuvant, concomitant or adjuvant. main treatment, additional (en)
+|at0032| 0..1| DV_DATE_TIME | Start dato
+|
+|at0004| 0..1| DV_DATE_TIME | Stopp dato
+|
+|at0005| 0..1| DV_CODED_TEXT | Fullføringsstatus
+a|
+* at0021 -> Fullført 
+* at0022 -> Ikke fullført 
+|at0007| 0..1| DV_TEXT | Årsak til ikke fullført
+a|
+
+
+Koding med en terminologi er foretrukket, dersom det er mulig.
+|at0018| 0..1| DV_DATE_TIME | Sist oppdatert
+|
+|====
+== Legemiddelsammendrag
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Legemiddelsammendrag* + 
+EVALUATION: _openEHR-EHR-EVALUATION.medication_summary.v1_
+|at0002| 1..1| DV_TEXT | Navn på kur/medikament
+a|
+
+
+Navn på legemiddel kan representeres som en generisk substans, handelsnavn, gruppe eller klasse av legemidler. Det anbefales å kode "Navn på legemiddel" med en terminologi om mulig, slik at det kan brukes for eksempel i beslutningsstøtte. Fritekst bør bare benyttes der det ikke finnes en passende terminologi.
+For eksempel: '"Adriamycin"; "doxorubicin" eller "anthracycliner"; "Fosamax", "alendronsyre" eller "bifosonater".
+|at0009| 0..1| DV_DATE_TIME | Startdato for bruk
+|
+
+
+Kan være en deldato, for eksempel kun årstall.
+|at0015| 0..1| DV_QUANTITY | Kumulativ mengde
+|
+
+
+For eksempel: monitorering av kumulativ mengde av doxorubicin.
+Kan regnes ut manuelt eller utledes via ulike kilder, som for eksempel kurvesystemet eller andre deler av den elektroniske pasientjournalen.
+|at0010| 0..1| DV_DATE_TIME | Sluttdato for bruk
+|
+
+
+Kan være en deldato, for eksempel kun årstall.
+|at0006| 0..1| DV_DATE_TIME | Sist oppdatert
+|
+|====
+== Stråleterapi
+== Intervensjonssammendrag
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Intervensjonssammendrag* + 
+EVALUATION: _openEHR-EHR-EVALUATION.intervention_summary.v0_
+|at0003| 1..1| DV_CODED_TEXT | Intervensjon navn
+a|
+* Stråleterapi (alle typer) (velge kodeverk: 1287742003)
+* Fotonterapi - Stråle (ekstern) (velge kodeverk: 1156506007)
+* Protonterapi -Stråle (ekstern) (velge kodeverk: 169314007)
+* Elektronterapi - Stråle (ekstern) (velge kodeverk: 45643008)
+* Brakyterapi - Stråle (intern) (velge kodeverk: 152198000)
+* Radioisotope/systemisk radionuklidebehandling - Stråle (intern) (velge kodeverk: 399315003)
+* Partikkelstråleterapi (karbon eller proton) (velge kodeverk: WEOC)
+* Karbonterapi (velge kodeverk: WEOC10)
+* Protonterapi (NKPK) (velge kodeverk: WEOC00)
+* Ekstern stråleterapi (velge kodeverk: WEOA)
+* Brakyterapi (velge kodeverk: WEOB)
+* Stråleterapi (velge kodeverk: WE)
+
+
+*For example: antibiotic, radiotherapy.
+Coding with an external terminology is preferred, where possible.
+
+exact treatment, Dette er den faktiske behandlingen, navnet til denne.  (en)
+|at0058| 0..1| DV_CODED_TEXT | Intervensjonstype
+a|
+* Radiotherapy (procedure) (SNOMED-CT: 1287742003)
+
+
+Dette dataelementet kan brukes til å støtte organisering innenfor brukergrensesnittet.
+|at0028| 0..1| DV_TEXT | Beskrivelse av stråleintervensjonen
+a|
+|at0054| 0..1| DV_TEXT | Protokollnavn
+a|
+|at0055| 0..*| DV_CODED_TEXT | Terapautisk rolle
+a|
+* Adjuvant hensikt (SNOMED-CT: 373846009)
+* Neoadjuvant hensikt (SNOMED-CT: 373847000)
+* Konkomitant (adjunkt) hensikt) (SNOMED-CT: 421974008)
+
+
+*For example: neoadjuvant, concomitant or adjuvant. main treatment, additional (en)
+|at0032| 0..1| DV_DATE_TIME | Dato første fraksjon
+|
+|at0004| 0..1| DV_DATE_TIME | Dato siste fraksjon
+|
+|at0005| 0..1| DV_CODED_TEXT | Fullføringsstatus
+a|
+* at0021 -> Fullført 
+* at0022 -> Ikke fullført 
+|at0007| 0..1| DV_TEXT | Årsak til ikke fullført
+a|
+
+
+Koding med en terminologi er foretrukket, dersom det er mulig.
+|at0018| 0..1| DV_DATE_TIME | Sist oppdatert
+|
+// Not supported rmType ELEMENT
+// Not supported rmType DV_IDENTIFIER
+|| 0..1| DV_TEXT | undefined
+// text_value -  /content[openEHR-EHR-SECTION.adhoc.v1,'Behandlingsoppsummering']/items[openEHR-EHR-SECTION.adhoc.v1,'Tilleggsbehandling']/items[openEHR-EHR-SECTION.adhoc.v1,'Stråleterapi']/items[openEHR-EHR-EVALUATION.intervention_summary.v0]/protocol[at0002]/items[at0057,'Stråleterapi course ID']/value
+a|
+|====
+== Problem/diagnose
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Problem/diagnose* + 
+EVALUATION: _openEHR-EHR-EVALUATION.problem_diagnosis.v1_
+
+
+Det er i praksis ikke lett å oppnå et klart skille mellom et problem og en diagnose. I klinisk dokumentasjon med denne arketypen ses problem og diagnose som et kontinuum, med økende krav til detaljer og støttende evidens for å underbygge en diagnose.
+|at0002| 1..1| DV_CODED_TEXT | Problem/diagnosenavn
+a|
+* Neoplastic disease (disorder) (SNOMED-CT: 55342001)
+
+
+Koding av navnet på problemet eller diagnosen med en terminologi er foretrukket hvis mulig.
+|at0079| 0..1| DV_CODED_TEXT | Funn i utredning
+a|
+* Primærtumor (med eller uten metastase(r)) (SNOMED-CT: 372087000)
+* Lokalt residiv/progresjon (med eller uten metastase(r)) (SNOMED-CT: 1259237005)
+* Kun metastase(r) (SNOMED-CT: 128462008)
+* Annet (SNOMED-CT: 10003008)
+
+
+For eksempel "akutt motorisk aksonal nevropati" som en variant av Guillain-Barre Syndrom. Koding av navnet på varianten med en terminologi er foretrukket hvis mulig.
+|at0009| 0..1| DV_TEXT | Merknad
+a|
+
+
+Brukes til å gi bakgrunn og kontekst, inkludert utvikling, episoder eller forverringer, fremgang og alle andre relevante detaljer, om problemet eller diagnosen.
+|at0012| 0..1| DV_CODED_TEXT | Anatomisk lokalisering
+a|
+* Ben (SNOMED-CT: 306721000)
+* Bløtvev (SNOMED-CT: 87784001)
+* Organer (SNOMED-CT: 113343008)
+* Retroperitoneum og andre hulrom (SNOMED-CT: 91806002)
+* Kvinnelige genitalia (SNOMED-CT: 53065001)
+* Primærtumor ukjent (SNOMED-CT: 87100004)
+
+
+Koding av navnet på den anatomiske lokaliseringen ved hjelp av en terminologi er foretrukket når dette er mulig. 
+Bruk dette dataelementet for å registrere prekoordinerte anatomiske lokaliseringer. Dersom behovene for å registrere anatomisk sted bestemmes i applikasjonen eller trenger større grad av kompleksitet som f.eks. relativ lokalisering, er det anbefalt å bruke CLUSTER.anatomical_location eller CLUSTER.relative_location innenfor SLOTet "Strukturert anatomisk lokalisering" i denne arketypen. Dette dataelementet kan ha ubegrenset antall forekomster, for å gjøre det mulig å registrere kliniske scenarier som f.eks. å beskrive et utslett som opptrer flere steder på kroppen, men der alle andre attributter er identiske. Dersom den anatomiske lokaliseringen inkluderes i feltet "Problem/diagnosenavn" via prekoordinerte koder blir dette dataelementet overflødig.
+5+a|*Anatomisk lokalisering* + 
+CLUSTER: _openEHR-EHR-CLUSTER.anatomical_location.v1_
+|at0001| 1..1| DV_CODED_TEXT | Anatomisk lokasjon
+a|
+* test (no.onk.anatomi_spesifikk.sarkom: 1)
+
+
+Anatomisk lokalisering settes med kode som utviklet i kunnskapsbasen for Sarkomkreft. Se Excel ark med koblinger mellom morfologi, koder og anatomi. 
+|at0065| 0..*| DV_CODED_TEXT | Spesifikt sted
+a|
+* test (no.onk.anatomi.sarkom: 1)
+
+
+Spesifikt sted for anatomi er definert i eget Excel ark med kunnskapsbase for Sarkom. Filter for steder defineres av script basert på kunnskapsbasen. 
+|at0002| 0..1| DV_CODED_TEXT | Kroppsside
+a|
+* Høyre (SNOMED-CT: 24028007)
+* Venstre (SNOMED-CT: 7771000)
+* Annet (SNOMED-CT: 74964007)
+
+
+Hvis den identifiserte kroppssiden ikke har noen lateralitet, bør dette datalementet stå tomt. Hvis dataelementet "Navn på kroppsted" bruker prekoordinerte termer som inkluderer lateralitet, er dette dataelementet overflødig.
+|at0023| 0..1| DV_TEXT | Merknad anatomisk lokalisering
+a|
+
+
+For eksempel: Tilgrensende til leppens overgang fra slimhinne til hud; en tatovering dekker nedre halvdel av dette området.
+|at0078| 0..1| DV_CODED_TEXT | Årsak
+a|
+* Stråleindusert (SNOMED-CT: 1340012009)
+
+
+Også kjent som 'etiologi'. Det anbefales å kode "Årsak" med en ekstern terminologi dersom det er mulig.
+|at0003| 0..1| DV_DATE_TIME | Dato diagnosebekreftelse (dato svar diagnostisk prøve foreligger)
+|
+
+
+Delvise datoer er tillatt. Dersom individet er under ett år gammel, må komplett dato eller som et minimum måned og år oppgis for å muliggjøre presise beregninger av alder, f.eks. ved bruk i beslutningsstøttesystemer. Data registrert eller importert som "alder ved tidspunkt når diagnosen stilles" bør konverteres til en dato ved hjelp av individets fødselsdato.
+5+a|*Klinisk grunnlag - morfologi* + 
+CLUSTER: _openEHR-EHR-CLUSTER.clinical_evidence.v1_
+|at0003| 0..1| DV_CODED_TEXT | Morfologisk diagnose
+a|
+* test (no.onk.morfologi.sarkom: 1)
+
+
+Morfologisk diagnose settes på bakgrunn av kunnskapsbasen som er utviklet for Sarkomkreft. 
+|at0004| 0..1| DV_TEXT | Merknad morfologisk diagnose
+a|
+|at0006| 0..1| DV_DATE_TIME | Diagnosedato (dato utførelse diagnostisk undersøkelse)
+|
+
+
+For eksempel: Datoen da funnet ble gjort eller gjort tilgjengelig for klinikeren.
+|at0022| 0..1| DV_CODED_TEXT | Diagnostisk metode
+a|
+* Biopsi (SNOMED-CT: 86273004)
+* Operasjonspreparat (SNOMED-CT: 387713003)
+* Radiologi (SNOMED-CT: 363679005)
+* Klinisk (SNOMED-CT: 58147004)
+
+
+BNA (18.mars 2025): Er det ikke feil terminologi id på dette feltet? Det står NORPAT, men skal vel være SNOMED-CT?
+|at0022| 0..1| DV_CODED_TEXT | Type biopsi
+a|
+* Finnålsaspirasjonscytologi (FNAC) (NORPAT: 48635004)
+* Nålebiopsi (grovnålsbiopsi/pistolbiopsi) (NORPAT: 129249002)
+* Åpen biopsi (NORPAT: 119283008)
+* Pipelle (NORPAT: 134279003)
+* Uterin abrasio (NORPAT: 1082411000202100)
+* Eksisjonsbiopsi (NORPAT: 8889005)
+* Stansebiopsi (NORPAT: 68660007)
+
+
+BNA (18.mars 2025): Er det ikke feil terminologi id på dette feltet? Det står NORPAT, men skal vel være SNOMED-CT?
+|at0001| 0..1| DV_TEXT | Merknad diagnostisk metode
+a|
+5+a|*Prøvemateriale* + 
+CLUSTER: _openEHR-EHR-CLUSTER.specimen.v1_
+
+
+For eksempel kroppsvev eller kroppsvæske.
+|at0001| 0..1| DV_TEXT | Preparatnummer
+a|
+
+
+I noen sammenhenger, som HL7 og IHE, kalt "Accession Identifier", mens et norsk synonym er "Prøvenummer". Prøvebeholdere, for eksempel vakuumglass eller vevskassetter, har egne IDer som registreres i elementet "BeholderID" i arketypen Prøvebeholder.
+5+a|*WHO histologisk grad av bensarkom* + 
+CLUSTER: _openEHR-EHR-CLUSTER.who_grade_bone_sarcoma.v1_
+|at0001| 0..1| DV_CODED_TEXT | Grad
+a|
+* at0004 -> Grad 1 (lavgradig malign) 
+* at0005 -> Grad 2 (intermediær) 
+* at0006 -> Grad 3 (høygradig malign) 
+* at0007 -> Variabel gradering 
+5+a|*FNCLCC graderingssystem* + 
+CLUSTER: _openEHR-EHR-CLUSTER.fnclcc.v1_
+
+
+FNCLCC - Fédération Nationale des Centres de Lutte Contre le Cancer.
+|at0017| 0..1| DV_CODED_TEXT | Histologisk grad
+a|
+* at0022 -> GX 
+* at0018 -> Grad 1 
+* at0019 -> Grad 2 
+* at0020 -> Grad 3 
+
+
+I klinisk praksis for bløtvevssarkomer, blir 'Histologisk grad'-resultatet fra arketypen ofte gjenbrukt for å fylle ut dataelementet 'Histopatologisk gradering (G)' i arketypene TNM-klassifikasjon klinisk (CLUSTER.tnm) og TNM-klassifikasjon patologi (CLUSTER.tnm-pathological.v1).
+
+5+a|*Modifisert NIH-kriterier for GIST* + 
+CLUSTER: _openEHR-EHR-CLUSTER.modified_nih_criteria_gist.v0_
+
+
+NIH - National Institutes of Health.
+|at0004| 0..1| DV_CODED_TEXT | Risikokategori
+a|
+* at0021 -> Meget lav 
+* at0022 -> Lav 
+* at0023 -> Intermediær 
+* at0024 -> Høy risiko 
+5+a|*Annen klassifisering sarkom* + 
+CLUSTER: _openEHR-EHR-CLUSTER.annen_klassifisering_sarkom_sjk.v1_
+|at0001| 0..1| DV_CODED_TEXT | Klassifisering
+a|
+* at0002 -> Entiteten graderes ikke 
+* at0003 -> Kan ikke graderes 
+* at0004 -> Ukjent 
+* at0005 -> Benign 
+* at0006 -> Lavgradig 
+* at0007 -> Høygradig 
+5+a|*FIGO stadium for gynekologisk kreft* + 
+CLUSTER: _openEHR-EHR-CLUSTER.figo_staging_cancer.v0_
+
+
+FIGO - The International Federation of Gynecology and Obstetrics.
+|at0002| 0..1| DV_CODED_TEXT | FIGO stadium
+a|
+* Stadium I (no.onk.figo: 1)
+* Stadium II (no.onk.figo: 2)
+* Stadium III (no.onk.figo: 3)
+* Stadium IV (no.onk.figo: 4)
+5+a|*Klinisk grunnlag - multifokal* + 
+CLUSTER: _openEHR-EHR-CLUSTER.clinical_evidence.v1_
+|at0003| 0..1| DV_CODED_TEXT | Funn
+a|
+* Growth pattern (observable entity) (SNOMED-CT: 404963005)
+
+
+Det anbefales å kode "Funn" med en terminologi, der det er mulig.
+|at0005| 0..1| DV_CODED_TEXT | Multifokal tumor
+a|
+* Multifokal tumor (SNOMED-CT: 399506006)
+
+
+For eksempel mantouxtestresultat.
+5+a|*ICD-10* + 
+CLUSTER: _openEHR-EHR-CLUSTER.problem_diagnosis_dips.v1_
+|at0001| 0..1| DV_CODED_TEXT | ICD-10
+a|
+* test (sjk_sarkom_icd10: 1)
+
+
+BNA, 18.mars 2025: Her skal det vel stå ICD10 som kodeliste. Det er dette som settes/foreslås som følge av kunnskapsbasen fra Excel arket. 
+|at0003| 0..1| DV_TEXT | Merknad ICD-10
+a|
+|at0073| 0..1| DV_CODED_TEXT | Diagnostisk sikkerhet
+a|
+* at0074 -> Mistenkt 
+* at0076 -> Bekreftet 
+
+
+Hvis et alternativt verdisett er nødvendig, kan disse verdiene legges til DV_TEXT-datatypen i et templat.
 |at0070| 0..1| DV_DATE_TIME | Sist oppdatert
 |
 |====
