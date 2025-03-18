@@ -4,9 +4,12 @@
   "description" : {
     "@type" : "RESOURCE_DESCRIPTION",
     "originalAuthor" : {
-      "date" : "2024-10-31"
+      "date" : "2024-10-31",
+      "name" : "Bjørn Næss",
+      "organisation" : "DIPS AS",
+      "email" : "bna@dips.no"
     },
-    "otherContributors" : [ ],
+    "otherContributors" : [ "Liv Laugen" ],
     "lifecycleState" : {
       "codeString" : "unmanaged"
     },
@@ -175,7 +178,9 @@
           },
           "codeString" : "nb"
         },
-        "keywords" : [ ],
+        "purpose" : "Template som er utviklet for å dekke et maksimalt konsept for alle kreftdiagnoser. ",
+        "keywords" : [ "kreftdiagnose" ],
+        "use" : "Benyttes som datamodell for uttrekk av data fra SJK. \nKan også være et rammeverk for å bygge en maksimal template som kan brytes ned for en spesifikk kreftform. ",
         "originalResourceUri" : { },
         "otherDetails" : { }
       },
