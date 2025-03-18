@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "ab1c67df64d96e765df9a7aa0da99b4c",
+      "MD5-CAM-1.0.1" : "751c7a6f6fb9471227a1d269c60a9d0f",
       "PARENT:MD5-CAM-1.0.1" : "348ecec1323ffc041209871b8dbb4806"
     },
     "details" : {
@@ -231,7 +231,8 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Komplikasjoner",
-            "description" : "En generisk seksjonsoverskrift som skal gis nytt navn i en templat for å passe i en gitt klinisk kontekst."
+            "description" : "Registrering av komplikasjoner som følge av behandlingen som er gitt. ",
+            "comment" : "Lagt til som SECTION for å sikre at problem/diagnose arketypen ikke gjentas på samme nivå og skaper problemer med instsansiering av data. "
           }
         },
         "pt-br" : { },
