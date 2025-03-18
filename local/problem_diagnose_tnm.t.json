@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "cef829b7098d13ea71d8a835606a7f3d",
+      "MD5-CAM-1.0.1" : "13de3ce8137bde3be86f83897c7366d7",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5"
     },
     "details" : {
@@ -464,15 +464,6 @@
             "@type" : "C_ARCHETYPE_ROOT",
             "rmTypeName" : "CLUSTER",
             "occurrences" : "0..1",
-            "nodeId" : "at0043.4",
-            "attributes" : [ ],
-            "attributeTuples" : [ ],
-            "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-problem_diagnosis_dips-001.v1",
-            "referenceType" : "archetypeOverlay"
-          }, {
-            "@type" : "C_ARCHETYPE_ROOT",
-            "rmTypeName" : "CLUSTER",
-            "occurrences" : "0..1",
             "nodeId" : "at0043.5",
             "attributes" : [ ],
             "attributeTuples" : [ ],
@@ -482,10 +473,28 @@
             "@type" : "C_ARCHETYPE_ROOT",
             "rmTypeName" : "CLUSTER",
             "occurrences" : "0..1",
-            "nodeId" : "at0043.8",
+            "nodeId" : "at0043.5",
             "attributes" : [ ],
             "attributeTuples" : [ ],
             "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-figo_staging_cancer-001.v0",
+            "referenceType" : "archetypeOverlay"
+          }, {
+            "@type" : "C_ARCHETYPE_ROOT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..1",
+            "nodeId" : "at0043.6",
+            "attributes" : [ ],
+            "attributeTuples" : [ ],
+            "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-clinical_evidence-004.v1",
+            "referenceType" : "archetypeOverlay"
+          }, {
+            "@type" : "C_ARCHETYPE_ROOT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..1",
+            "nodeId" : "at0043.4",
+            "attributes" : [ ],
+            "attributeTuples" : [ ],
+            "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-problem_diagnosis_dips-001.v1",
             "referenceType" : "archetypeOverlay"
           }, {
             "@type" : "C_ARCHETYPE_ROOT",
@@ -495,15 +504,6 @@
             "attributes" : [ ],
             "attributeTuples" : [ ],
             "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-anatomical_location-001.v1",
-            "referenceType" : "archetypeOverlay"
-          }, {
-            "@type" : "C_ARCHETYPE_ROOT",
-            "rmTypeName" : "CLUSTER",
-            "occurrences" : "0..1",
-            "nodeId" : "at0043.9",
-            "attributes" : [ ],
-            "attributeTuples" : [ ],
-            "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-clinical_evidence-004.v1",
             "referenceType" : "archetypeOverlay"
           } ]
         } ],
