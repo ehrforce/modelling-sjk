@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "edc7e417c185ab7ea01ff3ed2f053853",
+      "MD5-CAM-1.0.1" : "4f29a16e09dd3b6545de3e1ee6c090d4",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5"
     },
     "details" : {
@@ -4609,7 +4609,15 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "nb" : { }
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Problem/diagnose detaljer",
+            "description" : "Brukes for å registrere detaljer til problem/diagnose blant annet ICD koder.",
+            "comment" : "Benyttes for å sette ICD10 koder for problemer hvor det er mer aktuelt å bruke overordnet kode på problem/diagnosenavn. "
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
