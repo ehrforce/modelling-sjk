@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "4f29a16e09dd3b6545de3e1ee6c090d4",
+      "MD5-CAM-1.0.1" : "cceb6df74b2f21ddaf94013562046769",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5"
     },
     "details" : {
@@ -4278,27 +4278,6 @@
           }
         },
         "nb" : {
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "Navn på kroppssted",
-            "description" : "Navngiving av et enkelt fysisk sted enten på eller i menneskekroppen.",
-            "comment" : "I Sarkom settes dette til kodeverk basert på kunnskapsbasen. Kodeverk: \n\nno.onk.anatomi.sarkom"
-          },
-          "at0023" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0023",
-            "text" : "Beskrivelse",
-            "description" : "Fritekstbeskrivelse som kan brukes for å ytterligere presisere og støtte \"Navn på kroppsted\".",
-            "comment" : "Benyttes i Sarkom med endret navn til \"Merknad anatomisk lokalisering\""
-          },
-          "at0065" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0065",
-            "text" : "Spesifikt sted",
-            "description" : "Ytterligere detaljer gitt ved hjelp av en spesifikk region eller et punkt på eller i det spesifiserte kroppsstedet.",
-            "comment" : "I Sarkom settes dette til kodeverk basert på kunnskapsbasen. Kodeverk: \n\nno.onk.anatomi.sarkom"
-          },
           "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
