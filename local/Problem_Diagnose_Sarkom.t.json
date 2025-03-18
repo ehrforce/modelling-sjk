@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "34ebbb0800a93a11293bb31e6aa7101b",
+      "MD5-CAM-1.0.1" : "0c0dbd3a1ac849f52adeed8b18d5408f",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5"
     },
     "details" : {
@@ -4559,7 +4559,8 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001.1",
             "text" : "ICD-10",
-            "description" : "Navnet på problem/diagnose"
+            "description" : "Navnet på problem/diagnose",
+            "comment" : "BNA, 18.mars 2025: Her skal det vel stå ICD10 som kodeliste. Det er dette som settes/foreslås som følge av kunnskapsbasen fra Excel arket. "
           }
         }
       },
