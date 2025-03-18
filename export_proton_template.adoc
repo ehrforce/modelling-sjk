@@ -499,68 +499,6 @@ a|
 |at0072| 0..1| DV_COUNT | CCI totalskår
 |
 |====
-== Problem/diagnose
-[options="header", cols="3,3,5,5,30"]
-|====
-|NodeId|Attr.|RM Type| Name |Description
-5+a|*Problem/diagnose* + 
-EVALUATION: _openEHR-EHR-EVALUATION.problem_diagnosis.v1_
-
-
-Det er i praksis ikke lett å oppnå et klart skille mellom et problem og en diagnose. I klinisk dokumentasjon med denne arketypen ses problem og diagnose som et kontinuum, med økende krav til detaljer og støttende evidens for å underbygge en diagnose.
-|at0002| 1..1| DV_CODED_TEXT | Problem/diagnosenavn
-a|
-* Complication of procedure (SNOMED-CT: 116224001)
-
-
-Koding av navnet på problemet eller diagnosen med en terminologi er foretrukket hvis mulig.
-|at0079| 0..*| DV_TEXT | Variant
-a|
-
-
-For eksempel "akutt motorisk aksonal nevropati" som en variant av Guillain-Barre Syndrom. Koding av navnet på varianten med en terminologi er foretrukket hvis mulig.
-5+a|*Common Terminology Criteria for Adverse Events (CTCAE)* + 
-CLUSTER: _openEHR-EHR-CLUSTER.ctcae.v1_
-
-
-Tidligere kjent som Common Toxicity Criteria (CTC).
-|at0001| 0..1| DV_CODED_TEXT | Kategori
-a|
-* Blood and lymphatic system disorders (MEDRA: 1001)
-
-
-Dette elementet identifiserer et anatomisk eller fysiologisk system, etiologi eller formål.
-
-
-|at0002| 1..1| DV_CODED_TEXT | Term
-a|
-* X (MEDRA: X)
-
-
-Dette elementet kan mappes til den korresponderende MedDRA-koden.
-|at0003| 1..1| DV_ORDINAL | Kategori for grad
-a|
-* 0 - Grad 0 Fravær av en uønsket hendelse eller innenfor normale verdier. Bare for CTC versjon 1 og 2.
-* 1 - Grad 1 Mild, ELLER asymptomatisk eller milde symptomer, ELLER kun kliniske eller diagnostiske observasjoner, ELLER ikke grunnlag for intervensjon.
-* 2 - Grad 2 Moderat, ELLER minimal, lokal eller indikasjon for ikke-invasiv intervensjon, ELLER begrenser alders-tilpasset ADL.
-* 3 - Grad 3 Alvorlig eller medisinsk betydningsfull, men ikke umiddelbart livstruende, ELLER indikasjon for sykehusinnleggelse eller forlengelse av sykehusopphold, ELLER invalidiserende, begrenset evne til egenomsorg og ADL.
-* 4 - Grad 4 Livstruende konsekvenser, ELLER indikasjon for øyeblikkelig intervensjon.
-* 5 - Grad 5 Død relatert til uønsket medisinsk hendelse.
-
-
-Den kliniske beskrivelsen for hver "Kategori for grad" er dokumentert i den publiserte spesifikasjonen av CTCAE v5.0. Grad 0 har ikke vært i bruk siden CTCAE v2, men er tatt med for å kunne brukes for alle versjoner av CTCAE.
-|at0020| 0..1| DV_CODED_TEXT | Beskrivelse av grad
-a|
-* A (CTCAETERM: A)
-
-
-Dette elementet er en plassholder for term eller frase som tilhører en identifisert grad. I de fleste implementasjonene vil det bli utfylt via en eksterne kilde, som en CTCAE kunnskapsbase eller en annen kilde, under kjøring av dataprogrammet (run-time).
-|at0009| 0..1| DV_TEXT | CTCAE- versjon
-a|
-* CTCAE_5.0
-|at0070| 0..1| DV_DATE_TIME | Sist oppdatert
-|
-|====
 == Målinger
 == Høyde/Lengde
 [options="header", cols="3,3,5,5,30"]
@@ -1696,6 +1634,7 @@ Koding med en terminologi er foretrukket, dersom det er mulig.
 // text_value -  /content[openEHR-EHR-SECTION.adhoc.v1,'Behandlingsoppsummering']/items[openEHR-EHR-SECTION.adhoc.v1,'Tilleggsbehandling']/items[openEHR-EHR-SECTION.adhoc.v1,'Stråleterapi']/items[openEHR-EHR-EVALUATION.intervention_summary.v0]/protocol[at0002]/items[at0057,'Stråleterapi course ID']/value
 a|
 |====
+== Komplikasjoner
 == Problem/diagnose
 [options="header", cols="3,3,5,5,30"]
 |====
@@ -1707,208 +1646,54 @@ EVALUATION: _openEHR-EHR-EVALUATION.problem_diagnosis.v1_
 Det er i praksis ikke lett å oppnå et klart skille mellom et problem og en diagnose. I klinisk dokumentasjon med denne arketypen ses problem og diagnose som et kontinuum, med økende krav til detaljer og støttende evidens for å underbygge en diagnose.
 |at0002| 1..1| DV_CODED_TEXT | Problem/diagnosenavn
 a|
-* Neoplastic disease (disorder) (SNOMED-CT: 55342001)
+* Complication of procedure (SNOMED-CT: 116224001)
 
 
 Koding av navnet på problemet eller diagnosen med en terminologi er foretrukket hvis mulig.
-|at0079| 0..1| DV_CODED_TEXT | Funn i utredning
+|at0079| 0..*| DV_TEXT | Variant
 a|
-* Primærtumor (med eller uten metastase(r)) (SNOMED-CT: 372087000)
-* Lokalt residiv/progresjon (med eller uten metastase(r)) (SNOMED-CT: 1259237005)
-* Kun metastase(r) (SNOMED-CT: 128462008)
-* Annet (SNOMED-CT: 10003008)
 
 
 For eksempel "akutt motorisk aksonal nevropati" som en variant av Guillain-Barre Syndrom. Koding av navnet på varianten med en terminologi er foretrukket hvis mulig.
-|at0009| 0..1| DV_TEXT | Merknad
+5+a|*Common Terminology Criteria for Adverse Events (CTCAE)* + 
+CLUSTER: _openEHR-EHR-CLUSTER.ctcae.v1_
+
+
+Tidligere kjent som Common Toxicity Criteria (CTC).
+|at0001| 0..1| DV_CODED_TEXT | Kategori
 a|
+* Blood and lymphatic system disorders (MEDRA: 1001)
 
 
-Brukes til å gi bakgrunn og kontekst, inkludert utvikling, episoder eller forverringer, fremgang og alle andre relevante detaljer, om problemet eller diagnosen.
-|at0012| 0..1| DV_CODED_TEXT | Anatomisk lokalisering
+Dette elementet identifiserer et anatomisk eller fysiologisk system, etiologi eller formål.
+
+
+|at0002| 1..1| DV_CODED_TEXT | Term
 a|
-* Ben (SNOMED-CT: 306721000)
-* Bløtvev (SNOMED-CT: 87784001)
-* Organer (SNOMED-CT: 113343008)
-* Retroperitoneum og andre hulrom (SNOMED-CT: 91806002)
-* Kvinnelige genitalia (SNOMED-CT: 53065001)
-* Primærtumor ukjent (SNOMED-CT: 87100004)
+* X (MEDRA: X)
 
 
-Koding av navnet på den anatomiske lokaliseringen ved hjelp av en terminologi er foretrukket når dette er mulig. 
-Bruk dette dataelementet for å registrere prekoordinerte anatomiske lokaliseringer. Dersom behovene for å registrere anatomisk sted bestemmes i applikasjonen eller trenger større grad av kompleksitet som f.eks. relativ lokalisering, er det anbefalt å bruke CLUSTER.anatomical_location eller CLUSTER.relative_location innenfor SLOTet "Strukturert anatomisk lokalisering" i denne arketypen. Dette dataelementet kan ha ubegrenset antall forekomster, for å gjøre det mulig å registrere kliniske scenarier som f.eks. å beskrive et utslett som opptrer flere steder på kroppen, men der alle andre attributter er identiske. Dersom den anatomiske lokaliseringen inkluderes i feltet "Problem/diagnosenavn" via prekoordinerte koder blir dette dataelementet overflødig.
-5+a|*Anatomisk lokalisering* + 
-CLUSTER: _openEHR-EHR-CLUSTER.anatomical_location.v1_
-|at0001| 1..1| DV_CODED_TEXT | Anatomisk lokasjon
+Dette elementet kan mappes til den korresponderende MedDRA-koden.
+|at0003| 1..1| DV_ORDINAL | Kategori for grad
 a|
-* test (no.onk.anatomi_spesifikk.sarkom: 1)
+* 0 - Grad 0 Fravær av en uønsket hendelse eller innenfor normale verdier. Bare for CTC versjon 1 og 2.
+* 1 - Grad 1 Mild, ELLER asymptomatisk eller milde symptomer, ELLER kun kliniske eller diagnostiske observasjoner, ELLER ikke grunnlag for intervensjon.
+* 2 - Grad 2 Moderat, ELLER minimal, lokal eller indikasjon for ikke-invasiv intervensjon, ELLER begrenser alders-tilpasset ADL.
+* 3 - Grad 3 Alvorlig eller medisinsk betydningsfull, men ikke umiddelbart livstruende, ELLER indikasjon for sykehusinnleggelse eller forlengelse av sykehusopphold, ELLER invalidiserende, begrenset evne til egenomsorg og ADL.
+* 4 - Grad 4 Livstruende konsekvenser, ELLER indikasjon for øyeblikkelig intervensjon.
+* 5 - Grad 5 Død relatert til uønsket medisinsk hendelse.
 
 
-Anatomisk lokalisering settes med kode som utviklet i kunnskapsbasen for Sarkomkreft. Se Excel ark med koblinger mellom morfologi, koder og anatomi. 
-|at0065| 0..*| DV_CODED_TEXT | Spesifikt sted
+Den kliniske beskrivelsen for hver "Kategori for grad" er dokumentert i den publiserte spesifikasjonen av CTCAE v5.0. Grad 0 har ikke vært i bruk siden CTCAE v2, men er tatt med for å kunne brukes for alle versjoner av CTCAE.
+|at0020| 0..1| DV_CODED_TEXT | Beskrivelse av grad
 a|
-* test (no.onk.anatomi.sarkom: 1)
+* A (CTCAETERM: A)
 
 
-Spesifikt sted for anatomi er definert i eget Excel ark med kunnskapsbase for Sarkom. Filter for steder defineres av script basert på kunnskapsbasen. 
-|at0002| 0..1| DV_CODED_TEXT | Kroppsside
+Dette elementet er en plassholder for term eller frase som tilhører en identifisert grad. I de fleste implementasjonene vil det bli utfylt via en eksterne kilde, som en CTCAE kunnskapsbase eller en annen kilde, under kjøring av dataprogrammet (run-time).
+|at0009| 0..1| DV_TEXT | CTCAE- versjon
 a|
-* Høyre (SNOMED-CT: 24028007)
-* Venstre (SNOMED-CT: 7771000)
-* Annet (SNOMED-CT: 74964007)
-
-
-Hvis den identifiserte kroppssiden ikke har noen lateralitet, bør dette datalementet stå tomt. Hvis dataelementet "Navn på kroppsted" bruker prekoordinerte termer som inkluderer lateralitet, er dette dataelementet overflødig.
-|at0023| 0..1| DV_TEXT | Merknad anatomisk lokalisering
-a|
-
-
-For eksempel: Tilgrensende til leppens overgang fra slimhinne til hud; en tatovering dekker nedre halvdel av dette området.
-|at0078| 0..1| DV_CODED_TEXT | Årsak
-a|
-* Stråleindusert (SNOMED-CT: 1340012009)
-
-
-Også kjent som 'etiologi'. Det anbefales å kode "Årsak" med en ekstern terminologi dersom det er mulig.
-|at0003| 0..1| DV_DATE_TIME | Dato diagnosebekreftelse (dato svar diagnostisk prøve foreligger)
-|
-
-
-Delvise datoer er tillatt. Dersom individet er under ett år gammel, må komplett dato eller som et minimum måned og år oppgis for å muliggjøre presise beregninger av alder, f.eks. ved bruk i beslutningsstøttesystemer. Data registrert eller importert som "alder ved tidspunkt når diagnosen stilles" bør konverteres til en dato ved hjelp av individets fødselsdato.
-5+a|*Klinisk grunnlag - morfologi* + 
-CLUSTER: _openEHR-EHR-CLUSTER.clinical_evidence.v1_
-|at0003| 0..1| DV_CODED_TEXT | Morfologisk diagnose
-a|
-* test (no.onk.morfologi.sarkom: 1)
-
-
-Morfologisk diagnose settes på bakgrunn av kunnskapsbasen som er utviklet for Sarkomkreft. 
-|at0004| 0..1| DV_TEXT | Merknad morfologisk diagnose
-a|
-|at0006| 0..1| DV_DATE_TIME | Diagnosedato (dato utførelse diagnostisk undersøkelse)
-|
-
-
-For eksempel: Datoen da funnet ble gjort eller gjort tilgjengelig for klinikeren.
-|at0022| 0..1| DV_CODED_TEXT | Diagnostisk metode
-a|
-* Biopsi (SNOMED-CT: 86273004)
-* Operasjonspreparat (SNOMED-CT: 387713003)
-* Radiologi (SNOMED-CT: 363679005)
-* Klinisk (SNOMED-CT: 58147004)
-
-
-BNA (18.mars 2025): Er det ikke feil terminologi id på dette feltet? Det står NORPAT, men skal vel være SNOMED-CT?
-|at0022| 0..1| DV_CODED_TEXT | Type biopsi
-a|
-* Finnålsaspirasjonscytologi (FNAC) (NORPAT: 48635004)
-* Nålebiopsi (grovnålsbiopsi/pistolbiopsi) (NORPAT: 129249002)
-* Åpen biopsi (NORPAT: 119283008)
-* Pipelle (NORPAT: 134279003)
-* Uterin abrasio (NORPAT: 1082411000202100)
-* Eksisjonsbiopsi (NORPAT: 8889005)
-* Stansebiopsi (NORPAT: 68660007)
-
-
-BNA (18.mars 2025): Er det ikke feil terminologi id på dette feltet? Det står NORPAT, men skal vel være SNOMED-CT?
-|at0001| 0..1| DV_TEXT | Merknad diagnostisk metode
-a|
-5+a|*Prøvemateriale* + 
-CLUSTER: _openEHR-EHR-CLUSTER.specimen.v1_
-
-
-For eksempel kroppsvev eller kroppsvæske.
-|at0001| 0..1| DV_TEXT | Preparatnummer
-a|
-
-
-I noen sammenhenger, som HL7 og IHE, kalt "Accession Identifier", mens et norsk synonym er "Prøvenummer". Prøvebeholdere, for eksempel vakuumglass eller vevskassetter, har egne IDer som registreres i elementet "BeholderID" i arketypen Prøvebeholder.
-5+a|*WHO histologisk grad av bensarkom* + 
-CLUSTER: _openEHR-EHR-CLUSTER.who_grade_bone_sarcoma.v1_
-|at0001| 0..1| DV_CODED_TEXT | Grad
-a|
-* at0004 -> Grad 1 (lavgradig malign) 
-* at0005 -> Grad 2 (intermediær) 
-* at0006 -> Grad 3 (høygradig malign) 
-* at0007 -> Variabel gradering 
-5+a|*FNCLCC graderingssystem* + 
-CLUSTER: _openEHR-EHR-CLUSTER.fnclcc.v1_
-
-
-FNCLCC - Fédération Nationale des Centres de Lutte Contre le Cancer.
-|at0017| 0..1| DV_CODED_TEXT | Histologisk grad
-a|
-* at0022 -> GX 
-* at0018 -> Grad 1 
-* at0019 -> Grad 2 
-* at0020 -> Grad 3 
-
-
-I klinisk praksis for bløtvevssarkomer, blir 'Histologisk grad'-resultatet fra arketypen ofte gjenbrukt for å fylle ut dataelementet 'Histopatologisk gradering (G)' i arketypene TNM-klassifikasjon klinisk (CLUSTER.tnm) og TNM-klassifikasjon patologi (CLUSTER.tnm-pathological.v1).
-
-5+a|*Modifisert NIH-kriterier for GIST* + 
-CLUSTER: _openEHR-EHR-CLUSTER.modified_nih_criteria_gist.v0_
-
-
-NIH - National Institutes of Health.
-|at0004| 0..1| DV_CODED_TEXT | Risikokategori
-a|
-* at0021 -> Meget lav 
-* at0022 -> Lav 
-* at0023 -> Intermediær 
-* at0024 -> Høy risiko 
-5+a|*Annen klassifisering sarkom* + 
-CLUSTER: _openEHR-EHR-CLUSTER.annen_klassifisering_sarkom_sjk.v1_
-|at0001| 0..1| DV_CODED_TEXT | Klassifisering
-a|
-* at0002 -> Entiteten graderes ikke 
-* at0003 -> Kan ikke graderes 
-* at0004 -> Ukjent 
-* at0005 -> Benign 
-* at0006 -> Lavgradig 
-* at0007 -> Høygradig 
-5+a|*FIGO stadium for gynekologisk kreft* + 
-CLUSTER: _openEHR-EHR-CLUSTER.figo_staging_cancer.v0_
-
-
-FIGO - The International Federation of Gynecology and Obstetrics.
-|at0002| 0..1| DV_CODED_TEXT | FIGO stadium
-a|
-* Stadium I (no.onk.figo: 1)
-* Stadium II (no.onk.figo: 2)
-* Stadium III (no.onk.figo: 3)
-* Stadium IV (no.onk.figo: 4)
-5+a|*Klinisk grunnlag - multifokal* + 
-CLUSTER: _openEHR-EHR-CLUSTER.clinical_evidence.v1_
-|at0003| 0..1| DV_CODED_TEXT | Funn
-a|
-* Growth pattern (observable entity) (SNOMED-CT: 404963005)
-
-
-Det anbefales å kode "Funn" med en terminologi, der det er mulig.
-|at0005| 0..1| DV_CODED_TEXT | Multifokal tumor
-a|
-* Multifokal tumor (SNOMED-CT: 399506006)
-
-
-For eksempel mantouxtestresultat.
-5+a|*ICD-10* + 
-CLUSTER: _openEHR-EHR-CLUSTER.problem_diagnosis_dips.v1_
-|at0001| 0..1| DV_CODED_TEXT | ICD-10
-a|
-* test (sjk_sarkom_icd10: 1)
-
-
-BNA, 18.mars 2025: Her skal det vel stå ICD10 som kodeliste. Det er dette som settes/foreslås som følge av kunnskapsbasen fra Excel arket. 
-|at0003| 0..1| DV_TEXT | Merknad ICD-10
-a|
-|at0073| 0..1| DV_CODED_TEXT | Diagnostisk sikkerhet
-a|
-* at0074 -> Mistenkt 
-* at0076 -> Bekreftet 
-
-
-Hvis et alternativt verdisett er nødvendig, kan disse verdiene legges til DV_TEXT-datatypen i et templat.
+* CTCAE_5.0
 |at0070| 0..1| DV_DATE_TIME | Sist oppdatert
 |
 |====
