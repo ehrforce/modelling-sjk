@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "dd92d42d71c14a93280b54a92b155511",
+      "MD5-CAM-1.0.1" : "b57379fead99b8dd2b1b189571860fbf",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5"
     },
     "details" : {
@@ -814,6 +814,21 @@
           "copyright" : "© openEHR Foundation",
           "originalResourceUri" : { },
           "otherDetails" : { }
+        },
+        "pt-pt" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-pt"
+          },
+          "purpose" : "Providenciar uma estrutura para registar a classificação CTCAE.",
+          "keywords" : [ "ctcea", "sinal", "sintoma", "doença", "adverso", "evento" ],
+          "use" : "Usar para providenciar uma estrutura para registo da classificação CTCAE, utilizando termos da hierarquia de terminologia MedDRA apropriada.\r\n\r\nÉ pretendido que este arquétipo seja colocado na SLOT 'Specific details' do arquétipo EVALUATION.problem_diagnosis ou do CLUSTER.symptom_sign, ou noutros arquétipos clinicamente relevantes.",
+          "misuse" : "Não usar para registar detalhes de eventos adversos fora da classificação CTCAE.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
         }
       }
     },
@@ -970,7 +985,8 @@
         "en" : { },
         "de" : { },
         "sv" : { },
-        "nb" : { }
+        "nb" : { },
+        "pt-pt" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -1028,6 +1044,19 @@
         "name" : "Vebjørn Arntzen, John Tore Valand",
         "organisation" : "Oslo University Hospital, Helse Bergen",
         "email" : "varntzen@ous-hf.no, john.tore.valand@helse-vest-ikt.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-pt"
+      },
+      "author" : {
+        "name" : "Joao Caixeirinho",
+        "email" : "joaorafaelcaixeirinho@gmail.com"
       },
       "otherDetails" : { }
     } ]
