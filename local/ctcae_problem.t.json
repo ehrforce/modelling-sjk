@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "978b9aec580f1ab73491269d2e060b34",
+      "MD5-CAM-1.0.1" : "187156bed2b4eaf3d8e815c2a3a15014",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5"
     },
     "details" : {
@@ -999,7 +999,15 @@
         "en" : { },
         "de" : { },
         "sv" : { },
-        "nb" : { },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Common Terminology Criteria for Adverse Events (CTCAE)",
+            "description" : "Et rammeverk for å registrere CTCAE klassifikasjon av en uønsket hendelse, symptom eller sykdomtilstand.",
+            "comment" : "Tidligere kjent som Common Toxicity Criteria (CTC).\n\nDe primære data for denne registreringen vil komme fra skjema med avansert logikk for å håndtere kategorier, termer og graderinger. "
+          }
+        },
         "pt-pt" : { }
       },
       "termBindings" : { },
