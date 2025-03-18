@@ -5,6 +5,7 @@
 
 Hovedbehandling interversjonssammendrag 
 
+```
 128303001	Kirurgisk fjerning
 64597002	Ablation
 1287742003	Stråleterapi (alle typer)
@@ -15,3 +16,4 @@ Hovedbehandling interversjonssammendrag
 438758006	Ekseptans
 257950002	Salvage av restssykdom/tumor
 74964007	Annen behandling
+```
