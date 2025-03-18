@@ -1,0 +1,972 @@
+= Eksport til protonregisteret
+
+
+== Metadata
+
+
+TemplateId:: export_proton_registry_v16
+
+
+Archetype:: openEHR-EHR-COMPOSITION.export_secondary_use_dips.v1
+
+
+
+
+:toc:
+
+
+
+
+// Not supported rmType COMPOSITION
+== EVENT_CONTEXT
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*EVENT_CONTEXT* + 
+EVENT_CONTEXT: __
+|====
+== Sosialanamnese_generell
+== Utdanningssammendrag
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Utdanningssammendrag* + 
+EVALUATION: _openEHR-EHR-EVALUATION.education_summary.v1_
+|at0002| 0..1| DV_CODED_TEXT | Høyeste fullførte utdanningsnivå
+a|
+* Ingen utdanning (no.utdanningsnivaa: 0)
+* Grunnskole (no.utdanningsnivaa: 1)
+* Videregående (no.utdanningsnivaa: 2)
+* Universitet/Høyskole <4 år (no.utdanningsnivaa: 3)
+* Universitet/Høyskole ≥4 år (no.utdanningsnivaa: 4)
+* Ukjent (no.utdanningsnivaa: 9)
+
+
+Koding av "Høyeste fullførte utdanningsnivå" med en terminologi er anbefalt der det er mulig. For eksempel med NUS 2000 eller Unescos ISCED klassifikasjon. Sistnevnte forefinnes ikke på norsk, men eksempel er "'Upper secondary vocational education"; "Post-secondary non-tertiary vocational education"; "Bachelor’s or equivalent level, professional"; "Doctoral or equivalent level, academic"; "Post-secondary non-tertiary vocational education"; or "Never attended an educational program".
+|at0028| 0..1| DV_DATE_TIME | Sist oppdatert
+|
+
+
+Ved implementering av arketypen forutsettes det at dersom en utdanning eller opplæring legges til eller oppdateres i CLUSTER.education_record (Utdanning), vil også denne datoen oppdateres.
+|====
+== Arbeidssammendrag
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Arbeidssammendrag* + 
+EVALUATION: _openEHR-EHR-EVALUATION.occupation_summary.v1_
+|at0004| 0..1| DV_CODED_TEXT | Arbeidsstatus
+a|
+* I arbeid (no.arbeidsstatus: 1)
+* Ikke i arbeid (no.arbeidsstatus: 2)
+* Alderspensjonist (no.arbeidsstatus: 3)
+* Under utdanning/studerer (no.arbeidsstatus: 4)
+* Ukjent (no.arbeidsstatus: 9)
+
+
+For eksempel: "Inntektsgivende arbeid", "Arbeidsledig", "Pensjonist". Koding med en terminologi er ønskelig, der det er mulig, for eksempel OID 8150 (Volven.no). Detaljene om hver enkel jobb/ rolle kan registreres i arketypen CLUSTER.occupation_record (Arbeidsforhold/rolle).
+5+a|*Arbeidsforhold/rolle* + 
+CLUSTER: _openEHR-EHR-CLUSTER.occupation_record.v1_
+|at0005| 0..1| DV_TEXT | Tittel/rolle
+a|
+
+
+For eksempel: Administrerende direktør, hjemmeværende eller student. Hver av disse stillingstitlene eller rollene kan omfatte flere arbeidsoppgaver.
+5+a|*Sykemelding* + 
+CLUSTER: _openEHR-EHR-CLUSTER.sick_note_ous.v1_
+|at0004| 0..1| DV_DATE_TIME | Sykemelding - fra dato
+|
+|at0001| 0..1| DV_DURATION | Varighet
+|
+|at0009| 0..1| DV_DATE_TIME | Sist oppdatert
+|
+
+
+Ved implementering av arketypen forutsettes det at dersom en arbeidsepisode legges til eller oppdateres, vil også denne datoen oppdateres.
+|====
+== Sosialt nettverk
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Sosialt nettverk* + 
+EVALUATION: _openEHR-EHR-EVALUATION.social_network.v1_
+|at0002| 0..1| DV_CODED_TEXT | Samlivsstatus
+a|
+* Ugift/enslig (no.samlivsstatus: 1)
+* Gift/samboer/registrert partner (no.samlivsstatus: 2)
+* Enke/enkemann/gjenlevende partner eller samboer (no.samlivsstatus: 3)
+* Skilt/separert (no.samlivsstatus: 4)
+* Ukjent (no.samlivsstatus: 9)
+
+
+Det anbefales å kode sivilstatus med en terminologi dersom mulig. Det er stor variasjon i verdisett som benyttes på tvers av jurisdiksjoner. Det finnes lokale, myndighetspålagte verdisett eller terminologier som for eksempel SNOMED CT eller lignende. For eksempel Ugift, Gift, Registrert partner, Samboer, Skilt, Enke, Enkemann, Enslig.
+|at0018| 0..1| DV_TEXT | Kommentar
+a|
+|at0011| 0..1| DV_DATE_TIME | Sist oppdatert
+|
+
+
+Det antas at det ved implementasjon legges til rette for at denne datoen bli oppdatert dersom en tilknyttet "Person"- eller "Organisasjons"- arketype legges til eller oppdateres.
+|====
+== Samlivsform
+== Kartleggingspørsmål om sosiale forhold samlivsform
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Kartleggingspørsmål om sosiale forhold samlivsform* + 
+OBSERVATION: _openEHR-EHR-OBSERVATION.social_context_screening.v1_
+|at0034| 0..1| DV_CODED_TEXT | Kartleggingsformål
+a|
+* Samlivsform (no.onk.sosiale_forhold: SAM)
+
+
+Dette dataelementet er ment for å sette en kontekst for samlingen av spørsmål/svar til bruk senere for å gjøre spørringer på dataene. Det er ikke forventet at dette dataelementet skal være synlig for en bruker av skjemaet, men kun tilgjengelig i de lagrede dataene. For eksempel: "Preoperativ screening" eller navnet på det faktiske spørreskjemaet.
+5+a|*Spesifikt sosialt forhold* + 
+CLUSTER: _at0022_
+|at0004| 1..1| DV_CODED_TEXT | Hvilken samlivsform har pasienten?
+a|
+* Bor alene (Inkl. alene med barn <18) (no.samlivsform: 1)
+* Bor med noen (Partner og/eller med barn >18 år, bofelleskap, venner) (no.samlivsform: 2)
+* Bor på institusjon/ sykehjem (Fast plass, ikke korttidsopphold. Gjelder også der egen bolig er døgnbemannet) (no.samlivsform: 3)
+* Ukjent (no.samlivsform: 9)
+
+
+Dette elementet tilbyr valg mellom fritekst og kodet tekst. Det er antatt at listen av kodede verdier vil vokse ettersom man identifiserer flere behov. Det er anbefalt å kode "Sosialt forhold" med en terminologi dersom det er mulig - for eksempel relevante termer innen hierarkiet til SNOMED CT's Social context finding hierarchy (SCTID: 108329005). Alternativt som fritekst, for eksempel "Forsørgelsesbyrde", "Sosial isolasjon", "Diskriminering", "Minoritetsstress".
+|====
+== Kartlegging omsorgsansvar
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Kartlegging omsorgsansvar* + 
+OBSERVATION: _openEHR-EHR-OBSERVATION.social_context_screening.v1_
+|at0034| 0..1| DV_CODED_TEXT | Kartleggingsformål
+a|
+* Kartlegging av om individet har omsorgsansvar (no.onk.sosiale_forhold: OA)
+
+
+Dette dataelementet er ment for å sette en kontekst for samlingen av spørsmål/svar til bruk senere for å gjøre spørringer på dataene. Det er ikke forventet at dette dataelementet skal være synlig for en bruker av skjemaet, men kun tilgjengelig i de lagrede dataene. For eksempel: "Preoperativ screening" eller navnet på det faktiske spørreskjemaet.
+5+a|*Omsorgsperson for barn under 18 år* + 
+CLUSTER: _at0022_
+|at0004| 1..1| DV_CODED_TEXT | Sosialt forhold
+a|
+* Ansvarlig for barn under 18 år (no.onk.sosiale_forhold: U18)
+
+
+Dette elementet tilbyr valg mellom fritekst og kodet tekst. Det er antatt at listen av kodede verdier vil vokse ettersom man identifiserer flere behov. Det er anbefalt å kode "Sosialt forhold" med en terminologi dersom det er mulig - for eksempel relevante termer innen hierarkiet til SNOMED CT's Social context finding hierarchy (SCTID: 108329005). Alternativt som fritekst, for eksempel "Forsørgelsesbyrde", "Sosial isolasjon", "Diskriminering", "Minoritetsstress".
+|at0005| 0..1| DV_CODED_TEXT | Har pasienten ansvar for barn under 18 år?
+a|
+* at0023 -> Ja 
+* at0024 -> Nei 
+* at0027 -> Ukjent 
+
+
+I templat vil navnet på dataelementet normalt omformuleres til det spesifikke spørsmålet. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN.
+5+a|*Barn som pårørende* + 
+CLUSTER: _at0022_
+|at0004| 1..1| DV_CODED_TEXT | Sosialt forhold
+a|
+* Barn som pårørende (no.onk.sosiale_forhold: BPU18)
+
+
+Dette elementet tilbyr valg mellom fritekst og kodet tekst. Det er antatt at listen av kodede verdier vil vokse ettersom man identifiserer flere behov. Det er anbefalt å kode "Sosialt forhold" med en terminologi dersom det er mulig - for eksempel relevante termer innen hierarkiet til SNOMED CT's Social context finding hierarchy (SCTID: 108329005). Alternativt som fritekst, for eksempel "Forsørgelsesbyrde", "Sosial isolasjon", "Diskriminering", "Minoritetsstress".
+|at0005| 0..1| DV_CODED_TEXT | Finnes det barn som pårørende?
+a|
+* at0023 -> Ja 
+* at0024 -> Nei 
+* at0027 -> Ukjent 
+
+
+I templat vil navnet på dataelementet normalt omformuleres til det spesifikke spørsmålet. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN.
+|at0025| 0..1| DV_TEXT | Kommentar
+a|
+5+a|*Omsorgsperson for personer over 18 år* + 
+CLUSTER: _at0022_
+|at0004| 1..1| DV_CODED_TEXT | Sosialt forhold
+a|
+* Ansvarlig for barn/andre over 18 år (no.onk.sosiale_forhold: O18)
+
+
+Dette elementet tilbyr valg mellom fritekst og kodet tekst. Det er antatt at listen av kodede verdier vil vokse ettersom man identifiserer flere behov. Det er anbefalt å kode "Sosialt forhold" med en terminologi dersom det er mulig - for eksempel relevante termer innen hierarkiet til SNOMED CT's Social context finding hierarchy (SCTID: 108329005). Alternativt som fritekst, for eksempel "Forsørgelsesbyrde", "Sosial isolasjon", "Diskriminering", "Minoritetsstress".
+|at0005| 0..1| DV_CODED_TEXT | Har pasienten ansvar for egne barn/andre over 18 år?
+a|
+* at0023 -> Ja 
+* at0024 -> Nei 
+* at0027 -> Ukjent 
+
+
+I templat vil navnet på dataelementet normalt omformuleres til det spesifikke spørsmålet. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN.
+|====
+== Fritekst relatert til sosial anamnese
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Fritekst relatert til sosial anamnese* + 
+OBSERVATION: _openEHR-EHR-OBSERVATION.progress_note.v1_
+
+
+Skal ikke være med i eksport til register. 
+|at0004| 0..1| DV_TEXT | Fritekst relatert til sosial anamnese
+a|
+5+a|*Semistrukturert metadata dips* + 
+CLUSTER: _openEHR-EHR-CLUSTER.semistrukturert_metadata_dips.v1_
+|at0001| 0..1| DV_CODED_TEXT | Klassifisering av informasjon
+a|
+* Sosial anamnese (no.dips.Freetext.Classification: 01-Oncology-Sosial-anamnese)
+|====
+== Stimulantia
+== Alkohol
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Alkohol* + 
+EVALUATION: _openEHR-EHR-EVALUATION.alcohol_consumption_summary.v1_
+|at0089| 0..1| DV_CODED_TEXT | Overordnet status
+a|
+* at0003 -> Nåværende bruker 
+* at0005 -> Tidligere bruker 
+* at0006 -> Aldri brukt 
+|at0043| 0..1| DV_TEXT | Overordnet beskrivelse
+a|
+
+
+Bruk dette elementet for å registrere en beskrivelse i fritekst om drikkevaner for dette individet, eller for å overføre til arketypeformat ustrukturert informasjon om drikkevaner fra et eksisterende eller tidligere brukt klinisk system.
+5+a|*Per episode* + 
+CLUSTER: _at0064_
+|at0023| 0..1| DV_QUANTITY | Typisk bruk (alkoholenheter)
+|
+|at0022| 0..1| DV_DATE_TIME | Sist oppdatert
+|
+|====
+== Røyk
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Røyk* + 
+EVALUATION: _openEHR-EHR-EVALUATION.tobacco_smoking_summary.v1_
+|at0089| 0..1| DV_CODED_TEXT | Overordnet status
+a|
+* at0006 -> Aldri røykt 
+* at0003 -> Røyker 
+* at0005 -> Tidligere røyker 
+|at0043| 0..1| DV_TEXT | Overordnet beskrivelse
+a|
+
+
+Bruk dette datalementet til å registrere en fritekstbeskrivelse av individets tobakksrøykevaner, eller for å overføre ustrukturert informasjon fra eksisterende eller tidligere kliniske systemer til arketypeformat.
+|at0074| 0..1| DV_COUNT | Samlet pakkeår
+|
+
+
+Definisjonen på en pakke kan registreres i protokollen av denne arketypen, ved å bruke dataelementet "Pakkedefinisjon".
+|at0022| 0..1| DV_DATE_TIME | Sist oppdatert
+|
+|====
+== Røykfri tobakk/snus
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Røykfri tobakk/snus* + 
+EVALUATION: _openEHR-EHR-EVALUATION.smokeless_tobacco_summary.v1_
+|at0089| 0..1| DV_CODED_TEXT | Overordnet status
+a|
+* at0006 -> Aldri brukt 
+* at0003 -> Nåværende bruker 
+* at0005 -> Tidligere bruker 
+|at0043| 0..1| DV_TEXT | Overordnet beskrivelse
+a|
+
+
+Bruk dette datalementet til å registrere en fritekstbeskrivelse kun der data som er registrert strukturert ikke reflekterer individets bruk av røykfri tobakk på en tilfredsstillende måte, eller for å overføre ustrukturert informasjon om bruk av røykfri tobakk fra eksisterende eller tidligere kliniske systemer til arketypeformat.
+|at0022| 0..1| DV_DATE_TIME | Sist oppdatert
+|
+|====
+== Sammendrag andre substanser
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Sammendrag andre substanser* + 
+EVALUATION: _openEHR-EHR-EVALUATION.substance_use_summary.v1_
+
+
+Tobakksrøyking, bruk av røykfri tobakk, alkoholbruk, damping (vaping) og administrasjon av medikamenter i henhold til etablerte medisinske retningslinjer og standarder er bevisst holdt utenfor konseptet, og skal registreres ved å bruke andre arketyper laget for formålet.
+|at0002| 1..1| DV_CODED_TEXT | Substansnavn
+a|
+* Annen substans (no.onk.substansbruk: osub)
+
+
+Koding med ekstern terminologi anbefales om det er mulig.
+|at0007| 0..1| DV_TEXT | Overordnet beskrivelse
+a|
+
+
+Dette elementet kan også brukes til å ta inn fritekstlige beskrivelser av substansbruk fra eksisterende eller historiske kliniske systemer.
+|at0031| 0..1| DV_DATE_TIME | Sist oppdatert
+|
+|====
+== Substansanamnese
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Substansanamnese* + 
+EVALUATION: _openEHR-EHR-EVALUATION.substance_use_summary.v1_
+
+
+Tobakksrøyking, bruk av røykfri tobakk, alkoholbruk, damping (vaping) og administrasjon av medikamenter i henhold til etablerte medisinske retningslinjer og standarder er bevisst holdt utenfor konseptet, og skal registreres ved å bruke andre arketyper laget for formålet.
+|at0002| 1..1| DV_TEXT | Substansnavn
+a|
+
+
+Koding med ekstern terminologi anbefales om det er mulig.
+|at0003| 0..1| DV_CODED_TEXT | Overordnet status
+a|
+* at0004 -> Aldri brukt 
+* at0005 -> Nåværende bruker 
+* at0006 -> Tidligere bruker 
+|at0007| 0..1| DV_TEXT | Overordnet beskrivelse
+a|
+
+
+Dette elementet kan også brukes til å ta inn fritekstlige beskrivelser av substansbruk fra eksisterende eller historiske kliniske systemer.
+|at0031| 0..1| DV_DATE_TIME | Sist oppdatert
+|
+|====
+== Komorbiditet_utredning
+== Kartlegging komorbiditet
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Kartlegging komorbiditet* + 
+OBSERVATION: _openEHR-EHR-OBSERVATION.problem_screening.v1_
+
+
+Svarene kan være selvrapporterte.
+|at0034| 0..1| DV_CODED_TEXT | Kartleggingsformål
+a|
+* Komorbiditet (no.onk.screening.problem: kom)
+
+
+Dette dataelementet er ment for å sette en kontekst for spørsmålene, dersom man senere ønsker å gjøre spørringer på dataene. Det er ikke forventet at dette dataelementet skal være synlig for en bruker av skjemaet, men kun tilgjengelig i de lagrede dataene. For eksempel: "Preoperativ screening" eller navnet på det faktiske spørreskjemaet.
+|at0028| 0..1| DV_CODED_TEXT | Har pasient kjent komorbiditet?
+a|
+* at0031 -> Ja 
+* at0032 -> Nei 
+* at0033 -> Ukjent 
+
+
+Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN.
+|at0043| 0..1| DV_TEXT | Overordnet merknad komorbiditet
+a|
+|====
+== Gruppering ICD10 kapittel
+== Forholdsregel
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Forholdsregel* + 
+EVALUATION: _openEHR-EHR-EVALUATION.precaution.v1_
+|at0002| 1..1| DV_CODED_TEXT | Tilstand: Hovedkapitler ICD-10
+a|
+* Infeksjonssykdommer og parasittsykdommer, visse sykd. (Kap.I; A00-B99) (no.icd10.kapitler: I)
+* Svulster (Kap.II; C00-D48) (no.icd10.kapitler: II)
+* Blodsykdommer og sykdom i bloddannende organer og visse tilstander som angår immunsystemet (Kap.III; D50-D89) (no.icd10.kapitler: III)
+* Endokrine sykdommer, ernæringssykdommer og metabolske forstyrrelser (Kap.IV; E00-E90) (no.icd10.kapitler: IV)
+* Psykiske lidelser og atferdsforstyrrelser (Kap.V; F00-F99) (no.icd10.kapitler: V)
+* Nervesystemet, sykdommer (Kap.VI; G00-G99) (no.icd10.kapitler: VI)
+* Øyet og øyets omgivelser, sykdommer (Kap.VII; H00-H59) (no.icd10.kapitler: VII)
+* Øre og ørebensknute (processus mastoideus), sykdommer (Kap.VIII; H60-H95) (no.icd10.kapitler: VIII)
+* Sirkulasjonssystemet, sykdommer (Kap.IX; I00-I99) (no.icd10.kapitler: IX)
+* Åndedrettssystemet, sykdommer (Kap.X; J00-J99) (no.icd10.kapitler: X)
+* Fordøyelsessystemet, sykdommer (Kap.XI; K00-K93) (no.icd10.kapitler: XI)
+* Hud og underhud, sykdommer (Kap.XII; L00-L99) (no.icd10.kapitler: XII)
+* Muskel-skjelettsystemet og bindevev, sykdommer (Kap.XIII; M00-M99) (no.icd10.kapitler: XIII)
+* Urin- og kjønnsorganer, sykdommer (Kap.XIV; N00-N99) (no.icd10.kapitler: XIV)
+* Svangerskap, fødsel og barseltid (Kap.XV; O00-O99) (no.icd10.kapitler: XV)
+* Perinatalperioden  - visse tilstander som oppstår (Kap.XVI; P00-P96) (no.icd10.kapitler: XVI)
+* Medfødte misdannelser, deformiteter og kromosomavvik (Kap.XVII; Q00-Q99) (no.icd10.kapitler: XVII)
+* Symptomer, tegn, unormale kliniske funn og laboratoriefunn, ikke klassifisert annet sted (Kap.XVIII; R00-R99) (no.icd10.kapitler: XVIII)
+* Skader, forgiftninger og visse andre konsekvenser av ytre årsaker (Kap.XIX; S00-T98) (no.icd10.kapitler: XIX)
+
+
+Koding av tilstanden med en terminologi er ønskelig, dersom mulig.
+|at0003| 0..1| DV_TEXT | Detaljer
+a|
+
+
+Dette dataelementet kan dersom ønskelig lenkes til en diagnose, testresultat eller legemiddelordinering ved hjelp av en URI (spesifisert i referansemodellen) for å oppgi rasjonalet eller evidensen for forholdsregelen. NB: Siden URI-lenken kan være utilgjengelige fra en melding eller et mottakende system, er det ønskelig at en fritekstbeskrivelse av underlaget registreres eksplisitt.
+|at0004| 0..1| DV_DATE_TIME | Sist oppdatert
+|
+|====
+== ICD10
+== Forholdsregel
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Forholdsregel* + 
+EVALUATION: _openEHR-EHR-EVALUATION.precaution.v1_
+|at0002| 1..1| DV_TEXT | Tilstand: ICD-10
+a|
+
+
+Koding av tilstanden med en terminologi er ønskelig, dersom mulig.
+|at0003| 0..1| DV_TEXT | Detaljer
+a|
+
+
+Dette dataelementet kan dersom ønskelig lenkes til en diagnose, testresultat eller legemiddelordinering ved hjelp av en URI (spesifisert i referansemodellen) for å oppgi rasjonalet eller evidensen for forholdsregelen. NB: Siden URI-lenken kan være utilgjengelige fra en melding eller et mottakende system, er det ønskelig at en fritekstbeskrivelse av underlaget registreres eksplisitt.
+|at0004| 0..1| DV_DATE_TIME | Sist oppdatert
+|
+|====
+== Charlson Comorbidity Index (CCI)
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Charlson Comorbidity Index (CCI)* + 
+OBSERVATION: _openEHR-EHR-OBSERVATION.charlson_comorbidity_index.v2_
+|at0061| 0..1| DV_ORDINAL | Aldersgruppe
+a|
+* 0 - <50 år 
+* 1 - 50-59 år 
+* 2 - 60-69 år 
+* 3 - 70-79 år 
+* 4 - ≥80 år 
+|at0012| 0..1| DV_ORDINAL | Myokardinfarkt
+a|
+* 0 - Nei 
+* 1 - Ja Tidligere diagnostisert eller sannsynlig hjerteinfarkt (EKG-forandringer og/eller enzymforandringer).
+|at0009| 0..1| DV_ORDINAL | Kronisk hjertesvikt
+a|
+* 0 - Nei 
+* 1 - Ja Anstrengelsesdyspné eller paroksysmal nattlig dyspné og har respondert symptomatisk (eller ved fysisk undersøkelse) på digitalis, diuretika eller midler som reduserer afterload.
+|at0006| 0..1| DV_ORDINAL | Perifere vaskulære sykdommer
+a|
+* 0 - Nei 
+* 1 - Ja Claudicatio intermittens, tidligere bypass på grunn av arteriell insuffisiens, tidligere gangren eller akutt arteriell insuffisiens, ubehandlet thorakalt og/eller abdominalt aneurisme (≥6 cm).
+|at0015| 0..1| DV_ORDINAL | Cerebrovaskulær hendelse
+a|
+* 0 - Nei 
+* 1 - Ja Cerebrovaskulær hendelse (CVA) eller transitorisk iskemisk anfall (TIA).
+|at0018| 0..1| DV_ORDINAL | Demens
+a|
+* 0 - Nei 
+* 1 - Ja Demens eller kronisk kognitiv svikt.
+|at0021| 0..1| DV_ORDINAL | Kronisk lungesykdom
+a|
+* 0 - Nei 
+* 1 - Ja Mild, moderat eller alvorlig kronisk lungesykdom.
+|at0024| 0..1| DV_ORDINAL | Ulcussykdom
+a|
+* 0 - Nei 
+* 1 - Ja Enhver behandling av magesårsykdom, blødende magesår, eller tidligere transfusjonskrevende behandling av gastrointestinal blødning.
+|at0027| 0..1| DV_ORDINAL | Leversykdom
+a|
+* 0 - Ingen 
+* 1 - Mild Cirrhose uten portal hypertensjon eller kronisk hepatitt.
+* 3 - Moderat til alvorlig Moderat: Cirrhose med portal hypertensjon, men uten blødning. Alvorlig: Cirrhose med portal hypertensjon og variceblødning.
+|at0030| 0..1| DV_ORDINAL | Bindevevssykdom
+a|
+* 0 - Nei 
+* 1 - Ja 
+|at0033| 0..1| DV_ORDINAL | Diabetes
+a|
+* 0 - Ingen eller diettkontrollert 
+* 1 - Ukomplisert Diabetes behandlet med insulin eller orale hypoglykemiske midler, men ikke diett alene.
+* 2 - Organskade Diabetes med endeorganskade.
+|at0036| 0..1| DV_ORDINAL | Hemiplegi
+a|
+* 0 - Nei 
+* 2 - Ja 
+|at0039| 0..1| DV_ORDINAL | Moderat til alvorlig nyresykdom
+a|
+* 0 - Nei 
+* 2 - Ja Moderat: kreatinin >3 mg/dL (0,27 mmol/L). Alvorlig: i dialyse, er transplantert, har uremi.
+|at0045| 0..1| DV_ORDINAL | Solid svulst
+a|
+* 0 - Ingen 
+* 2 - Lokalisert Solid tumor uten dokumenterte metastaser.
+* 6 - Metastatisk Metastatisk solid tumor.
+|at0047| 0..1| DV_ORDINAL | Leukemi
+a|
+* 0 - Nei 
+* 2 - Ja 
+|at0050| 0..1| DV_ORDINAL | Lymfom
+a|
+* 0 - Nei 
+* 2 - Ja 
+|at0060| 0..1| DV_ORDINAL | AIDS
+a|
+* 0 - Nei 
+* 6 - Ja Bekreftet AIDS eller sannsynlig AIDS ved for eksempel påvist AIDS-relatert tilstand.
+|at0072| 0..1| DV_COUNT | CCI totalskår
+|
+|====
+== Problem/diagnose
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Problem/diagnose* + 
+EVALUATION: _openEHR-EHR-EVALUATION.problem_diagnosis.v1_
+
+
+Det er i praksis ikke lett å oppnå et klart skille mellom et problem og en diagnose. I klinisk dokumentasjon med denne arketypen ses problem og diagnose som et kontinuum, med økende krav til detaljer og støttende evidens for å underbygge en diagnose.
+|at0002| 1..1| DV_CODED_TEXT | Problem/diagnosenavn
+a|
+* Complication of procedure (SNOMED-CT: 116224001)
+
+
+Koding av navnet på problemet eller diagnosen med en terminologi er foretrukket hvis mulig.
+|at0079| 0..*| DV_TEXT | Variant
+a|
+
+
+For eksempel "akutt motorisk aksonal nevropati" som en variant av Guillain-Barre Syndrom. Koding av navnet på varianten med en terminologi er foretrukket hvis mulig.
+5+a|*Common Terminology Criteria for Adverse Events (CTCAE)* + 
+CLUSTER: _openEHR-EHR-CLUSTER.ctcae.v1_
+
+
+Tidligere kjent som Common Toxicity Criteria (CTC).
+|at0001| 0..1| DV_CODED_TEXT | Kategori
+a|
+* Blood and lymphatic system disorders (MEDRA: 1001)
+
+
+Dette elementet identifiserer et anatomisk eller fysiologisk system, etiologi eller formål.
+
+
+|at0002| 1..1| DV_CODED_TEXT | Term
+a|
+* X (MEDRA: X)
+
+
+Dette elementet kan mappes til den korresponderende MedDRA-koden.
+|at0003| 1..1| DV_ORDINAL | Kategori for grad
+a|
+* 0 - Grad 0 Fravær av en uønsket hendelse eller innenfor normale verdier. Bare for CTC versjon 1 og 2.
+* 1 - Grad 1 Mild, ELLER asymptomatisk eller milde symptomer, ELLER kun kliniske eller diagnostiske observasjoner, ELLER ikke grunnlag for intervensjon.
+* 2 - Grad 2 Moderat, ELLER minimal, lokal eller indikasjon for ikke-invasiv intervensjon, ELLER begrenser alders-tilpasset ADL.
+* 3 - Grad 3 Alvorlig eller medisinsk betydningsfull, men ikke umiddelbart livstruende, ELLER indikasjon for sykehusinnleggelse eller forlengelse av sykehusopphold, ELLER invalidiserende, begrenset evne til egenomsorg og ADL.
+* 4 - Grad 4 Livstruende konsekvenser, ELLER indikasjon for øyeblikkelig intervensjon.
+* 5 - Grad 5 Død relatert til uønsket medisinsk hendelse.
+
+
+Den kliniske beskrivelsen for hver "Kategori for grad" er dokumentert i den publiserte spesifikasjonen av CTCAE v5.0. Grad 0 har ikke vært i bruk siden CTCAE v2, men er tatt med for å kunne brukes for alle versjoner av CTCAE.
+|at0020| 0..1| DV_CODED_TEXT | Beskrivelse av grad
+a|
+* A (CTCAETERM: A)
+
+
+Dette elementet er en plassholder for term eller frase som tilhører en identifisert grad. I de fleste implementasjonene vil det bli utfylt via en eksterne kilde, som en CTCAE kunnskapsbase eller en annen kilde, under kjøring av dataprogrammet (run-time).
+|at0009| 0..1| DV_TEXT | CTCAE- versjon
+a|
+* CTCAE_5.0
+|at0070| 0..1| DV_DATE_TIME | Sist oppdatert
+|
+|====
+== Målinger
+== Høyde/Lengde
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Høyde/Lengde* + 
+OBSERVATION: _openEHR-EHR-OBSERVATION.height.v2_
+
+
+Høyde måles stående og lengde liggende.
+|at0004| 1..1| DV_QUANTITY | Høyde/lengde
+|
+|====
+== Kroppsvekt
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Kroppsvekt* + 
+OBSERVATION: _openEHR-EHR-OBSERVATION.body_weight.v2_
+|at0004| 1..1| DV_QUANTITY | Kroppsvekt
+|
+|====
+== Kroppsmasseindeks
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Kroppsmasseindeks* + 
+OBSERVATION: _openEHR-EHR-OBSERVATION.body_mass_index.v2_
+|at0004| 1..1| DV_QUANTITY | Kroppsmasseindeks
+|
+|====
+== ECOG funksjonsstatus
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*ECOG funksjonsstatus* + 
+OBSERVATION: _openEHR-EHR-OBSERVATION.ecog.v1_
+|at0004| 1..1| DV_ORDINAL | ECOG funksjonsstatus
+a|
+* 0 - Asymptomatisk I stand til å utføre enhver normal aktivitet uten begrensning.
+* 1 - Symptomatisk, fullt oppegående Ikke i stand til fysisk krevende aktivitet, men oppegående og i stand til å utføre lett arbeid.
+* 2 - Symptomatisk, sengeliggende <50 % av våken tid Oppegående og i stand til all egenpleie, men ikke i stand til noe arbeid; oppe og i bevegelse mer enn 50% av våken tid.
+* 3 - Symptomatisk, sengeliggende > 50 % av våken tid Bare i stand til begrenset egenpleie, bundet til seng eller stol > 50 % av våken tid.
+* 4 - Helt sengeliggende Helt hjelpetrengende; klarer ikke noen egenpleie; helt bundet til seng eller stol.
+* 5 - Død Pasienten er død.
+|====
+== Karnofsky Performance Status (KPS) scale
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Karnofsky Performance Status (KPS) scale* + 
+OBSERVATION: _openEHR-EHR-OBSERVATION.karnofsky_performance_status_scale.v1_
+|at0004| 1..1| DV_ORDINAL | Karnofsky performance status
+a|
+* 100 - Normal, ingen plager eller subjektive tegn på sykdom. 
+* 90 - Klarer normal aktivitet, sykdommen gir lite symptomer. 
+* 80 - Klarer med nød normal aktivitet. Sykdommen gir en del symptomer. 
+* 70 - Klarer seg selv, ute av stand til normal aktivitet eller aktivt arbeid. 
+* 60 - Trenger noe hjelp, men klarer stort sett å tilfredsstille egne behov. 
+* 50 - Trenger betydelig hjelp og stadig medisinsk omsorg. 
+* 40 - Ufør, trenger spesiell hjelp og omsorg. 
+* 30 - Helt ufør, hospitalisering nødvendig, men fare for død er ikke overhengende. 
+* 20 - Svært syk, hospitalisering og understøttende behandling nødvendig. 
+* 10 - Moribund, dødsprosessen er i sterk frammarsj. 
+* 0 - Død. 
+|====
+== Sykdomsutvikling (tumor event)
+== Kartlegging av Sykdomsutvikling (tumor event)
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Kartlegging av Sykdomsutvikling (tumor event)* + 
+OBSERVATION: _openEHR-EHR-OBSERVATION.problem_screening.v1_
+
+
+Svarene kan være selvrapporterte.
+5+a|*Spesifikt problem eller diagnose* + 
+CLUSTER: _at0022_
+|at0004| 1..1| DV_CODED_TEXT | Problem/diagnosenavn
+a|
+* Tumorhendelse (patologisk prosess) (SNOMED-CT: 308489006)
+
+
+Koding av problem/diagnosenavnet med en terminologi foretrekkes, der det er mulig.
+|at0005| 0..1| DV_BOOLEAN | Har det skjedd sykdomsutvikling (tumor event) siden sist kontakt?
+|
+
+
+Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN.
+|at0040| 0..1| DV_DATE_TIME | Hendelsestidspunkt
+|
+
+
+Dataelementet "Tidsangivelse" er med hensikt løst modellert for å støtte ulike måter å angi tidsangivelser for bekymringen, plagen, problemet eller diagnosen i et spørreskjema. Den konkrete semantikken defineres i templatet. For eksempel: Bekymringen, plagen, problemet eller diagnosen faktiske dato og/eller klokkeslett, start- og slutttid for bekymringen, plagen, problemet eller diagnosen, et tidsintervall for når bekymringen, plagen, problemet eller diagnosen oppstod, varigheten av bekymringen, plagen, problemet eller diagnosen, individets alder på tidspunktet for bekymringen, plagen, problemet eller diagnosen, eller hvor lenge det siden det oppstod. Kan være en deldato, for eksempel bare år, ved å bruke datatypen DV_DATE_TIME.
+5+a|*Tumor hendelse dips* + 
+CLUSTER: _openEHR-EHR-CLUSTER.tumor_hendelse_dips.v1_
+|at0008| 0..1| DV_DATE_TIME | Dato for forrige sykdomsutvikling (tumor event)
+|
+|====
+== Problem/diagnose
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Problem/diagnose* + 
+EVALUATION: _openEHR-EHR-EVALUATION.problem_diagnosis.v1_
+
+
+Det er i praksis ikke lett å oppnå et klart skille mellom et problem og en diagnose. I klinisk dokumentasjon med denne arketypen ses problem og diagnose som et kontinuum, med økende krav til detaljer og støttende evidens for å underbygge en diagnose.
+|at0002| 1..1| DV_TEXT | Problem/diagnosenavn (hentet fra ander dokumenter hvis de finnes)
+a|
+
+
+Koding av navnet på problemet eller diagnosen med en terminologi er foretrukket, der det er mulig.
+|at0079| 0..*| DV_TEXT | Variant
+a|
+
+
+For eksempel "akutt motorisk aksonal nevropati" som en variant av Guillain-Barre Syndrom. Koding av navnet på varianten med en terminologi er foretrukket hvis mulig.
+5+a|*Problem/diagnose-kvalifikator* + 
+CLUSTER: _openEHR-EHR-CLUSTER.problem_qualifier.v2_
+|at0089| 0..1| DV_CODED_TEXT | Residiv eller progresjon
+a|
+* Residiv (av tumor) (SNOMED-CT: 25173007)
+* Progresjon (SNOMED-CT: 419835002)
+
+
+For eksempel status for kreft eller en hematologisk diagnose.
+5+a|*Klinisk grunnlag* + 
+CLUSTER: _openEHR-EHR-CLUSTER.clinical_evidence.v1_
+|at0003| 0..1| DV_CODED_TEXT | Funn
+a|
+* Tumorhendelse (patologisk prosess) (SNOMED-CT: 308489006)
+
+
+Det anbefales å kode "Funn" med en terminologi, der det er mulig.
+|at0005| 0..*| DV_CODED_TEXT | Resultat
+a|
+* Lokalt (no.onc.tumorevent.hendelse: 01)
+* Regionalt (no.onc.tumorevent.hendelse: 02)
+* Metastasert (no.onc.tumorevent.hendelse: 03)
+* Biokjemisk (no.onc.tumorevent.hendelse: 04)
+
+
+For eksempel mantouxtestresultat.
+|at0006| 0..1| DV_DATE_TIME | Dato
+|
+
+
+For eksempel: Datoen da funnet ble gjort eller gjort tilgjengelig for klinikeren.
+|at0022| 0..*| DV_CODED_TEXT | Metode
+a|
+* Biokjemisk test (SNOMED-CT: 41289000)
+* Klinisk (fysisk) undersøkelse (SNOMED-CT: 5880005)
+* Bildediagnostikk (SNOMED-CT: 363679005)
+* Histologisk test (SNOMED-CT: 714797009)
+
+
+Metoden bør vurderes kodet med en terminologi der dette er mulig. For eksempel fysisk undersøkelse, røntgen thorax, patologisvar, koloskopi.
+|at0001| 0..1| DV_TEXT | Beskrivelse av påvisningsmetode
+a|
+|at0023| 0..1| DV_TEXT | Kommentar
+a|
+|at0073| 0..1| DV_CODED_TEXT | Diagnostisk sikkerhet
+a|
+* at0074 -> Mistenkt 
+* at0075 -> Sannsynlig 
+* at0076 -> Bekreftet 
+
+
+Hvis et alternativt verdisett er nødvendig, kan disse verdiene legges til DV_TEXT-datatypen i et templat.
+|at0070| 0..1| DV_DATE_TIME | Sist oppdatert
+|
+|====
+== Problem/diagnose (inkl TNM)
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Problem/diagnose (inkl TNM)* + 
+EVALUATION: _openEHR-EHR-EVALUATION.problem_diagnosis.v1_
+
+
+Det er i praksis ikke lett å oppnå et klart skille mellom et problem og en diagnose. I klinisk dokumentasjon med denne arketypen ses problem og diagnose som et kontinuum, med økende krav til detaljer og støttende evidens for å underbygge en diagnose.
+|at0002| 1..1| DV_TEXT | Problem/diagnosenavn
+a|
+
+
+Primærdiagnosen kodet som ICD-10
+|at0079| 0..*| DV_TEXT | Variant
+a|
+
+
+For eksempel "akutt motorisk aksonal nevropati" som en variant av Guillain-Barre Syndrom. Koding av navnet på varianten med en terminologi er foretrukket hvis mulig.
+|at0012| 0..1| DV_CODED_TEXT | Anatomisk lokalisering
+a|
+* Høyre (SNOMED-CT: 24028007)
+* Venstre (SNOMED-CT: 7771000)
+* Begge (SNOMED-CT: 51440002)
+* Ukjent (SNOMED-CT: 261665006)
+* Midtlinje (SNOMED-CT: 399488007)
+* Ikke relevant (SNOMED-CT: 0)
+
+
+Koding av navnet på den anatomiske lokaliseringen ved hjelp av en terminologi er foretrukket når dette er mulig. 
+Bruk dette dataelementet for å registrere prekoordinerte anatomiske lokaliseringer. Dersom behovene for å registrere anatomisk sted bestemmes i applikasjonen eller trenger større grad av kompleksitet som f.eks. relativ lokalisering, er det anbefalt å bruke CLUSTER.anatomical_location eller CLUSTER.relative_location innenfor SLOTet "Strukturert anatomisk lokalisering" i denne arketypen. Dette dataelementet kan ha ubegrenset antall forekomster, for å gjøre det mulig å registrere kliniske scenarier som f.eks. å beskrive et utslett som opptrer flere steder på kroppen, men der alle andre attributter er identiske. Dersom den anatomiske lokaliseringen inkluderes i feltet "Problem/diagnosenavn" via prekoordinerte koder blir dette dataelementet overflødig.
+|at0003| 0..1| DV_DATE_TIME | Dato/tid for klinisk bekreftelse
+|
+
+
+Delvise datoer er tillatt. Dersom individet er under ett år gammel, må komplett dato eller som et minimum måned og år oppgis for å muliggjøre presise beregninger av alder, f.eks. ved bruk i beslutningsstøttesystemer. Data registrert eller importert som "alder ved tidspunkt når diagnosen stilles" bør konverteres til en dato ved hjelp av individets fødselsdato.
+5+a|*Oncology problem details dips* + 
+CLUSTER: _openEHR-EHR-CLUSTER.oncology_problem_details_dips.v1_
+|at0001| 0..1| DV_CODED_TEXT | Multiple primærtumorer
+a|
+* Multiple primærtumorer (SNOMED-CT: 109359008)
+|at0002| 0..1| DV_TEXT | Beskrivelse
+a|
+5+a|*TNM-klassifikasjon klinisk* + 
+CLUSTER: _openEHR-EHR-CLUSTER.tnm.v1_
+
+
+Betegnes som TNM eller cTNM.
+|at0003| 0..1| DV_CODED_TEXT | Primærtumor (T)
+a|
+* cT0 (SNOMED-CT: 1228882005)
+* cTis (SNOMED-CT: 1228884006)
+* cT1 (SNOMED-CT: 1228889001)
+* cT1a (SNOMED-CT: 1228893007)
+* cT1b (SNOMED-CT: 1228895000)
+* cT2 (SNOMED-CT: 1228929004)
+* cT3 (SNOMED-CT: 1228938002)
+* cT4 (SNOMED-CT: 1228944003)
+* cT4a (SNOMED-CT: 1228945002)
+* cT4b (SNOMED-CT: 1228946001)
+* cTX (SNOMED-CT: 1222604002)
+
+
+Kodes med en T-kode som passer for tumortypen og den anatomiske lokaliseringen, for eksempel "T1" eller "T3". Fremkommer i "TNM-vurdering" som "T" eller "cT".
+|at0004| 0..1| DV_CODED_TEXT | Regionale lymfeknuter (N)
+a|
+* cN0 (SNOMED-CT: 1229967007)
+* cN1 (SNOMED-CT: 1229973008)
+* cN1a (SNOMED-CT: 1229975001)
+* cN1b (SNOMED-CT: 1229976000)
+* cN2 (SNOMED-CT: 1229978004)
+* cN2a (SNOMED-CT: 1229981009)
+* cN2b (SNOMED-CT: 1229982002)
+* cN2c (SNOMED-CT: 1229983007)
+* cN3 (SNOMED-CT: 1229984001)
+* cN3a (SNOMED-CT: 1229985000)
+* cN3b (SNOMED-CT: 1229986004)
+* cNX (SNOMED-CT: 1229966003)
+
+
+Kodes med en N-kode som passer for tumortypen og den anatomiske lokaliseringen, for eksempel "NX" eller "cN2". Fremkommer i "TNM-vurdering" som "N" eller "cN".
+|at0005| 0..1| DV_CODED_TEXT | Fjernmetastase (M)
+a|
+* cM0 (SNOMED-CT: 1229901006)
+* cM1 (SNOMED-CT: 1229903009)
+* cMX (SNOMED-CT: 27167007)
+
+
+Kodes med en M-kode som passer for tumortypen og den anatomiske lokaliseringen, for eksempel "M1", "cM1a", "M1 PUL" eller or "cM0". Fremkommer i "TNM-vurdering" som "M" eller "cM".
+|at0027| 0..1| DV_BOOLEAN | Residiv (r)
+|
+
+
+Angis ved å legge til prefikset "r" i "TNM-vurdering".
+|at0030| 0..1| DV_TEXT | TNM-vurdering
+a|
+|at0032| 0..1| DV_CODED_TEXT | TNM-utgave
+a|
+* AJCC TNM Versjon 8 (AJCC-TNM-VERSION: Edition8)
+* AJCC TNM Versjon 9 (AJCC-TNM-VERSION: Edition9)
+5+a|*TNM-klassifikasjon patologi* + 
+CLUSTER: _openEHR-EHR-CLUSTER.tnm-pathological.v1_
+
+
+Betegnes som pTNM.
+|at0003.1| 0..1| DV_CODED_TEXT | Primærtumor (pT)
+a|
+* pT0 (SNOMED-CT: 1228951007)
+* pTis (SNOMED-CT: 1228953005)
+* pT1 (SNOMED-CT: 1228957006)
+* pT1a (SNOMED-CT: 1228959009)
+* pT1b (SNOMED-CT: 1228962007)
+* pT2 (SNOMED-CT: 1229852009)
+* pT3 (SNOMED-CT: 1229859000)
+* pT4 (SNOMED-CT: 1229864001)
+* pT4a (SNOMED-CT: 1229865000)
+* pT4b (SNOMED-CT: 1229866004)
+* pTX (SNOMED-CT: 1228950008)
+
+
+Kodes med en T-kode som passer for tumortypen og den anatomiske lokaliseringen, for eksempel "pT1" eller "pT3". Fremkommer i "TNM-vurdering" som "pT".
+|at0004.1| 0..1| DV_CODED_TEXT | Regionale lymfeknuter (pN)
+a|
+* pN0 (SNOMED-CT: 1229947003)
+* pN1 (SNOMED-CT: 1229951001)
+* pN1a (SNOMED-CT: 1229954009)
+* pN1b (SNOMED-CT: 1229955005)
+* pN2 (SNOMED-CT: 1229957002)
+* pN2a (SNOMED-CT: 1229959004)
+* pN2b (SNOMED-CT: 1229960009)
+* pN2c (SNOMED-CT: 1229961008)
+* pN3 (SNOMED-CT: 1229962001)
+* pN3a (SNOMED-CT: 1229963006)
+* pN3b (SNOMED-CT: 1229964000)
+* pNX (SNOMED-CT: 1229945006)
+
+
+Kodes med en N-kode som passer for tumortypen og den anatomiske lokaliseringen, for eksempel "pNX" eller "pN2". Fremkommer i "TNM-vurdering" som "pN".
+|at0005.1| 0..1| DV_CODED_TEXT | Fjernmetastase (pM)
+a|
+* pM0 (SNOMED-CT: 30893008)
+* pM1 (SNOMED-CT: 1229916009)
+* pMX (SNOMED-CT: 27167007)
+
+
+Kodes med en M-kode som passer for tumortypen og den anatomiske lokaliseringen, for eksempel "pM1. Fremkommer i "TNM-vurdering" som "pM".
+|at0027| 0..1| DV_BOOLEAN | Residiv (r)
+|
+
+
+Angis ved å legge til prefikset "r" i "TNM-vurdering".
+|at0030.1| 0..1| DV_TEXT | pTNM-vurdering
+a|
+|at0032| 0..1| DV_CODED_TEXT | TNM-utgave
+a|
+* AJCC TNM Versjon 8 (AJCC-TNM-VERSION: Edition8)
+* AJCC TNM Versjon 9 (AJCC-TNM-VERSION: Edition9)
+5+a|*Utredningsmetode regionale lymfeknutemetastaser* + 
+CLUSTER: _openEHR-EHR-CLUSTER.clinical_evidence.v1_
+|at0003| 0..1| DV_CODED_TEXT | Funn
+a|
+* Regional lymfeknutemetastase (SNOMED-CT: 399374009)
+
+
+Det anbefales å kode "Funn" med en terminologi, der det er mulig.
+|at0022| 0..*| DV_CODED_TEXT | Metode
+a|
+* Bildediagnostikk (SNOMED-CT: 363679005)
+* Cytologi (SNOMED-CT: 116147009)
+* Biopsi (SNOMED-CT: 86273004)
+* Fjerning av SN (SNOMED-CT: 443497002)
+* Reseksjon (SNOMED-CT: 65801008)
+* Annet (SNOMED-CT: 74964007)
+* Ukjent (SNOMED-CT: 69466000)
+
+
+Metoden bør vurderes kodet med en terminologi der dette er mulig. For eksempel fysisk undersøkelse, røntgen thorax, patologisvar, koloskopi.
+|at0001| 0..1| DV_TEXT | Spesifier annet
+a|
+5+a|*Utredningsmetode fjernmetastaser* + 
+CLUSTER: _openEHR-EHR-CLUSTER.clinical_evidence.v1_
+|at0003| 0..1| DV_CODED_TEXT | Funn
+a|
+* Fjernmetastase (SNOMED-CT: 399409002)
+
+
+Det anbefales å kode "Funn" med en terminologi, der det er mulig.
+5+a|*Anatomisk lokalisering* + 
+CLUSTER: _openEHR-EHR-CLUSTER.anatomical_location.v1_
+|at0001| 1..1| DV_CODED_TEXT | Navn på kroppssted
+a|
+* Skjelett (SNOMED-CT: 113192009)
+* Lever (SNOMED-CT: 10200004)
+* Lunge (SNOMED-CT: 39607008)
+* CNS (sentralnervesystemet) (SNOMED-CT: 21483005)
+
+
+Dette dataelementet er det eneste obligatoriske dataelementet i arketypen og bør brukes som det primære dataelementet for registrering av en anatomisk lokalisering. Det er sterkt anbefalt at "Navn på kroppssted" registreres så anatomisk spesifikt som mulig. For eksempel; registrer "øvre øyelokk" heller enn "øyelokk" med "øvre" som kvalifikator; "femte ribben" heller enn "ribben" med en numerisk kvalifikator. Bruk de andre dataelementene for lateralitet, aspekt, region og anatomisk linje for å gi mer detaljer. Dette dataelementet bør kodes med en terminologi som kan assistere beslutningsstøtte dersom mulig - en passende terminologi for bruk her kunne omfatte individuelle konsepter eller lister av prekoordinerte termer. Fritekst bør kun brukes hvis det ikke finnes en passende terminologi. 
+
+Dersom navn på kroppssted er oppgitt i arketypen som denne arketypen er nøstet inn i, kan dette dataelementet være redundant. Imidlertid kan det være fornuftig å dobbeltregistrere navnet på kroppstedet for å støtte semantiske spørringer basert på denne arketypen i stedet for i arketypen den er nøstet inn i.
+|at0022| 0..*| DV_CODED_TEXT | Metode
+a|
+* Palpasjon (SNOMED-CT: 113011001)
+* Bildediagnostikk (SNOMED-CT: 363679005)
+* Cytologi (SNOMED-CT: 116147009)
+* Biopsi (SNOMED-CT: 86273004)
+* Reseksjon (SNOMED-CT: 65801008)
+* Annet (SNOMED-CT: 74964007)
+* Ukjent (SNOMED-CT: 69466000)
+
+
+Metoden bør vurderes kodet med en terminologi der dette er mulig. For eksempel fysisk undersøkelse, røntgen thorax, patologisvar, koloskopi.
+|at0001| 0..1| DV_TEXT | Spesifiser annet
+a|
+5+a|*Annen anatomisk lokalisering* + 
+CLUSTER: _openEHR-EHR-CLUSTER.anatomical_location.v1_
+|at0001| 1..1| DV_TEXT | Navn på kroppssted
+a|
+
+
+Dette dataelementet er det eneste obligatoriske dataelementet i arketypen og bør brukes som det primære dataelementet for registrering av en anatomisk lokalisering. Det er sterkt anbefalt at "Navn på kroppssted" registreres så anatomisk spesifikt som mulig. For eksempel; registrer "øvre øyelokk" heller enn "øyelokk" med "øvre" som kvalifikator; "femte ribben" heller enn "ribben" med en numerisk kvalifikator. Bruk de andre dataelementene for lateralitet, aspekt, region og anatomisk linje for å gi mer detaljer. Dette dataelementet bør kodes med en terminologi som kan assistere beslutningsstøtte dersom mulig - en passende terminologi for bruk her kunne omfatte individuelle konsepter eller lister av prekoordinerte termer. Fritekst bør kun brukes hvis det ikke finnes en passende terminologi. 
+
+Dersom navn på kroppssted er oppgitt i arketypen som denne arketypen er nøstet inn i, kan dette dataelementet være redundant. Imidlertid kan det være fornuftig å dobbeltregistrere navnet på kroppstedet for å støtte semantiske spørringer basert på denne arketypen i stedet for i arketypen den er nøstet inn i.
+|at0023| 0..1| DV_TEXT | Spesifiser annet
+a|
+
+
+For eksempel: Tilgrensende til leppens overgang fra slimhinne til hud; en tatovering dekker nedre halvdel av dette området.
+|at0069| 0..1| DV_TEXT | Kommentar diagnose/TNM
+a|
+|at0070| 0..1| DV_DATE_TIME | Sist oppdatert
+|
+|====
+// Not supported rmType CODE_PHRASE
+// Not supported rmType CODE_PHRASE
+// Not supported rmType PARTY_PROXY
