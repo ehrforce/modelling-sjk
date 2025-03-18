@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "0c3710abdccf351991231e718f87ec05",
+      "MD5-CAM-1.0.1" : "dbd3a42d8638b1aa68b0cd5ad7999b5c",
       "PARENT:MD5-CAM-1.0.1" : "d675fb3dbc411c198c9c9264a7239033"
     },
     "details" : {
@@ -132,24 +132,6 @@
         "attributes" : [ ],
         "attributeTuples" : [ ],
         "archetypeRef" : "problem_diagnose_tnm",
-        "referenceType" : "templateId"
-      }, {
-        "@type" : "C_ARCHETYPE_ROOT",
-        "rmTypeName" : "EVALUATION",
-        "occurrences" : "0..1",
-        "nodeId" : "at0.12",
-        "attributes" : [ ],
-        "attributeTuples" : [ ],
-        "archetypeRef" : "lymfeknutemetastase",
-        "referenceType" : "templateId"
-      }, {
-        "@type" : "C_ARCHETYPE_ROOT",
-        "rmTypeName" : "EVALUATION",
-        "occurrences" : "0..1",
-        "nodeId" : "at0.16",
-        "attributes" : [ ],
-        "attributeTuples" : [ ],
-        "archetypeRef" : "fjernmetastase",
         "referenceType" : "templateId"
       } ]
     } ],
