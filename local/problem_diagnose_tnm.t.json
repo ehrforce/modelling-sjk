@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "974412401be69716114438cbdd63487c",
+      "MD5-CAM-1.0.1" : "49758bb996ebb2fcc17e92179f7fca09",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5"
     },
     "details" : {
@@ -234,7 +234,6 @@
           }, {
             "@type" : "C_COMPLEX_OBJECT",
             "rmTypeName" : "ELEMENT",
-            "occurrences" : "0..0",
             "nodeId" : "at0009.1",
             "attributes" : [ ],
             "attributeTuples" : [ ]
@@ -296,7 +295,7 @@
           }, {
             "@type" : "C_COMPLEX_OBJECT",
             "rmTypeName" : "ELEMENT",
-            "occurrences" : "0..0",
+            "occurrences" : "0..1",
             "nodeId" : "at0078.1",
             "attributes" : [ ],
             "attributeTuples" : [ ]
@@ -559,6 +558,20 @@
           "text" : "Problem/diagnosenavn",
           "description" : "Identifisering av problemet eller diagnosen ved hjelp av navn.",
           "comment" : "Primærdiagnosen kodet som ICD-10"
+        },
+        "at0009.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0009",
+          "text" : "Klinisk beskrivelse",
+          "description" : "Fritekstbeskrivelse av problemet eller diagnosen.",
+          "comment" : "Brukes i Sarkom med endret navn til \"Merknad\" \n\nBrukes til å gi bakgrunn og kontekst, inkludert utvikling, episoder eller forverringer, fremgang og alle andre relevante detaljer, om problemet eller diagnosen."
+        },
+        "at0078.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0078",
+          "text" : "Årsak",
+          "description" : "En årsak, kjede av årsaker til, eller hendelsesforløp forut for problemet eller diagnosen.",
+          "comment" : "I Sarkom benyttes feltet kodet med mulig verdi: \n\nSNOMED-CT::1340012009|Stråleindusert|\n\nOgså kjent som 'etiologi'. Det anbefales å kode \"Årsak\" med en ekstern terminologi dersom det er mulig."
         }
       },
       "sv" : {
