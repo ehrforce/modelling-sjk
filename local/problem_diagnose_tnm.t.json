@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "4338d70ef8e806c8160c23ef50b94855",
+      "MD5-CAM-1.0.1" : "cec644499dbae77fc95d33a4e68e3285",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5"
     },
     "details" : {
@@ -447,19 +447,19 @@
             "@type" : "C_ARCHETYPE_ROOT",
             "rmTypeName" : "CLUSTER",
             "occurrences" : "0..1",
-            "nodeId" : "at0043.4",
+            "nodeId" : "at0043.5",
             "attributes" : [ ],
             "attributeTuples" : [ ],
-            "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-clinical_evidence-002.v1",
+            "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-clinical_evidence-001.v1",
             "referenceType" : "archetypeOverlay"
           }, {
             "@type" : "C_ARCHETYPE_ROOT",
             "rmTypeName" : "CLUSTER",
             "occurrences" : "0..1",
-            "nodeId" : "at0043.5",
+            "nodeId" : "at0043.4",
             "attributes" : [ ],
             "attributeTuples" : [ ],
-            "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-clinical_evidence-001.v1",
+            "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-clinical_evidence-002.v1",
             "referenceType" : "archetypeOverlay"
           } ]
         } ],
@@ -2207,7 +2207,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "399374009",
-                    "value" : "Reginoale lymfeknutemetastase"
+                    "value" : "Regional lymfeknutemetastase"
                   } ]
                 } ]
               } ],
