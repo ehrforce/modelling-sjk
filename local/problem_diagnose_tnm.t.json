@@ -22,7 +22,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "20bc8ef17e5f4127e6af4d3ae84cae3f",
+      "MD5-CAM-1.0.1" : "29d6b88764421c6092ff6c71d73c1bf7",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5"
     },
     "details" : {
@@ -234,30 +234,25 @@
             "@type" : "C_COMPLEX_OBJECT",
             "rmTypeName" : "ELEMENT",
             "nodeId" : "at0002.1",
-            "attributes" : [ ],
-            "attributeTuples" : [ ]
-          }, {
-            "@type" : "C_COMPLEX_OBJECT",
-            "rmTypeName" : "ELEMENT",
-            "nodeId" : "at0073.1",
             "attributes" : [ {
               "@type" : "C_ATTRIBUTE",
               "rmAttributeName" : "value",
               "children" : [ {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "DV_CODED_TEXT",
+                "occurrences" : "1..1",
                 "attributes" : [ {
                   "@type" : "C_ATTRIBUTE",
                   "rmAttributeName" : "defining_code",
                   "children" : [ {
                     "@type" : "C_TERMINOLOGY_CODE",
                     "rmTypeName" : "TERMINOLOGY_CODE",
-                    "occurrences" : "1..1",
+                    "occurrences" : "0..1",
                     "terminologyId" : {
-                      "value" : "local"
+                      "value" : "ICD10"
                     },
-                    "constraint" : [ "ac0.3" ],
-                    "selectedTerminologies" : [ ]
+                    "constraint" : [ "ac0.4" ],
+                    "selectedTerminologies" : [ "ICD10" ]
                   } ]
                 } ],
                 "attributeTuples" : [ ]
@@ -296,28 +291,8 @@
                     "selectedTerminologies" : [ "SNOMED-CT" ],
                     "includedExternalTerminologyCodes" : [ {
                       "terminologyId" : "SNOMED-CT",
-                      "code" : "24028007",
-                      "value" : "Høyre"
-                    }, {
-                      "terminologyId" : "SNOMED-CT",
-                      "code" : "7771000",
-                      "value" : "Venstre"
-                    }, {
-                      "terminologyId" : "SNOMED-CT",
-                      "code" : "51440002",
-                      "value" : "Begge"
-                    }, {
-                      "terminologyId" : "SNOMED-CT",
-                      "code" : "261665006",
-                      "value" : "Ukjent"
-                    }, {
-                      "terminologyId" : "SNOMED-CT",
-                      "code" : "399488007",
-                      "value" : "Midtlinje"
-                    }, {
-                      "terminologyId" : "SNOMED-CT",
-                      "code" : "0",
-                      "value" : "Ikke relevant"
+                      "code" : "x",
+                      "value" : "Erstattes med kode fra script eller gjenbruk"
                     } ]
                   } ]
                 } ],
@@ -408,6 +383,34 @@
             "occurrences" : "0..0",
             "nodeId" : "at0030.1",
             "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0073.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "rmTypeName" : "TERMINOLOGY_CODE",
+                    "occurrences" : "1..1",
+                    "terminologyId" : {
+                      "value" : "local"
+                    },
+                    "constraint" : [ "ac0.3" ],
+                    "selectedTerminologies" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
             "attributeTuples" : [ ]
           }, {
             "@type" : "C_COMPLEX_OBJECT",
@@ -768,7 +771,11 @@
         }
       }
     },
-    "termBindings" : { },
+    "termBindings" : {
+      "ICD10" : {
+        "ac0.4" : "terminology:ICD10"
+      }
+    },
     "terminologyExtracts" : { },
     "valueSets" : {
       "ac0.1" : {
