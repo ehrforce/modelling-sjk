@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "5d6b5a9981fa067ca83ab1f055fd95b0",
+      "MD5-CAM-1.0.1" : "7b609f329358a185e60276602535e208",
       "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73"
     },
     "details" : {
@@ -348,39 +348,39 @@
                       "selectedTerminologies" : [ "no.onk.kreftgruppering" ],
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "no.onk.kreftgruppering",
-                        "code" : "1",
+                        "code" : "01",
                         "value" : "Sarkom"
                       }, {
                         "terminologyId" : "no.onk.kreftgruppering",
-                        "code" : "2",
+                        "code" : "02",
                         "value" : "Kreft i hode og hals"
                       }, {
                         "terminologyId" : "no.onk.kreftgruppering",
-                        "code" : "3",
+                        "code" : "03",
                         "value" : "Hjernesvulst"
                       }, {
                         "terminologyId" : "no.onk.kreftgruppering",
-                        "code" : "4",
+                        "code" : "04",
                         "value" : "Brystkreft"
                       }, {
                         "terminologyId" : "no.onk.kreftgruppering",
-                        "code" : "5",
+                        "code" : "05",
                         "value" : "Lungekreft"
                       }, {
                         "terminologyId" : "no.onk.kreftgruppering",
-                        "code" : "6",
+                        "code" : "06",
                         "value" : "Kreft i fordøyelsessystemet"
                       }, {
                         "terminologyId" : "no.onk.kreftgruppering",
-                        "code" : "7",
+                        "code" : "07",
                         "value" : "Gynekologisk kreft"
                       }, {
                         "terminologyId" : "no.onk.kreftgruppering",
-                        "code" : "8",
+                        "code" : "08",
                         "value" : "Kreft i nyre og urinveier"
                       }, {
                         "terminologyId" : "no.onk.kreftgruppering",
-                        "code" : "9",
+                        "code" : "09",
                         "value" : "Benmargs- og blodkreft"
                       }, {
                         "terminologyId" : "no.onk.kreftgruppering",
