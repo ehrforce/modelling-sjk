@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "84433f1f0a67ee4dc21296cd6abef234",
+      "MD5-CAM-1.0.1" : "16f6f69f1d4892b513adac9ff3adc3d8",
       "PARENT:MD5-CAM-1.0.1" : "348ecec1323ffc041209871b8dbb4806"
     },
     "details" : {
@@ -105,6 +105,15 @@
         "attributes" : [ ],
         "attributeTuples" : [ ],
         "archetypeRef" : "VitaleTegn_Maalinger",
+        "referenceType" : "templateId"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "SECTION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.41",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "Tidligere kreftbehandling",
         "referenceType" : "templateId"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
