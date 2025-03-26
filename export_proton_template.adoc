@@ -4,7 +4,7 @@
 == Metadata
 
 
-TemplateId:: export_proton_registry_v16
+TemplateId:: export_proton_registry_v17
 
 
 Archetype:: openEHR-EHR-COMPOSITION.export_secondary_use_dips.v1
@@ -565,6 +565,92 @@ a|
 * 10 - Moribund, dødsprosessen er i sterk frammarsj. 
 * 0 - Død. 
 |====
+== Tidligere kreftbehandling
+== Kartlegging om tidligere kreftbehandling
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Kartlegging om tidligere kreftbehandling* + 
+OBSERVATION: _openEHR-EHR-OBSERVATION.procedure_screening.v1_
+
+
+Svarene kan være selvrapporterte.
+|at0034| 0..1| DV_CODED_TEXT | Kartleggingsformål
+a|
+* Sarkom (no.onk.kart.tidligere_kreftbehandling: 1)
+* Kreft i hode og hals (no.onk.kart.tidligere_kreftbehandling: 2)
+* Hjernesvulst (no.onk.kart.tidligere_kreftbehandling: 3)
+* Brystkreft (no.onk.kart.tidligere_kreftbehandling: 4)
+* Lungekreft (no.onk.kart.tidligere_kreftbehandling: 5)
+* Kreft i fordøyelsessystemet (no.onk.kart.tidligere_kreftbehandling: 6)
+* Gynekologisk kreft (no.onk.kart.tidligere_kreftbehandling: 7)
+* Kreft i nyre og urinveier (no.onk.kart.tidligere_kreftbehandling: 8)
+* Benmargs- og blodkreft (no.onk.kart.tidligere_kreftbehandling: 9)
+* Lymfom (no.onk.kart.tidligere_kreftbehandling: 10)
+* Hudkreft (no.onk.kart.tidligere_kreftbehandling: 11)
+* Kreft i mannlige kjønnsorganer (no.onk.kart.tidligere_kreftbehandling: 12)
+* Kreft i endokrine kjertler (no.onk.kart.tidligere_kreftbehandling: 13)
+* Nevroendokrin kreft (no.onk.kart.tidligere_kreftbehandling: 14)
+* Barnekreft (no.onk.kart.tidligere_kreftbehandling: 15)
+* Øyekreft (no.onk.kart.tidligere_kreftbehandling: 16)
+* Svulst av ukjent opprinnelse / Annet (no.onk.kart.tidligere_kreftbehandling: 17)
+
+
+Dette dataelementet er ment for å sette en kontekst for spørsmålene, dersom man senere ønsker å gjøre spørringer på dataene. Det er ikke forventet at dette dataelementet skal være synlig for en bruker av skjemaet, men kun tilgjengelig i de lagrede dataene. For eksempel: "Preoperativ screening" eller navnet på det faktiske spørreskjemaet.
+|at0028| 0..*| DV_CODED_TEXT | Har pasienten hatt tidligere kreftbehandling?
+a|
+* at0031 -> Ja 
+* at0032 -> Nei 
+* at0038 -> Ukjent 
+
+
+Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN.
+|at0041| 0..1| DV_TEXT | Beskrivelse
+a|
+5+a|*Spesifikk prosedyre* + 
+CLUSTER: _at0022_
+|at0004| 1..1| DV_CODED_TEXT | Prosedyrenavn
+a|
+* Kirurgisk fjerning (SNOMED-CT: 128303001)
+* Ablation (SNOMED-CT: 64597002)
+* Stråleterapi (alle typer) (SNOMED-CT: 1287742003)
+* Fotonterapi - Stråle (ekstern) (SNOMED-CT: 1156506007)
+* Protonterapi -Stråle (ekstern) (SNOMED-CT: 169314007)
+* Elektronterapi - Stråle (ekstern) (SNOMED-CT: 45643008)
+* Brakyterapi - Stråle (intern) (SNOMED-CT: 152198000)
+* Radioisotope/systemisk radionuklidebehandling - Stråle (intern) (SNOMED-CT: 399315003)
+* Medikamentell behandling (alle typer) (SNOMED-CT: 416608005)
+* Kjemoterapi - Medikamentell (SNOMED-CT: 367336001)
+* Målrettet - Medikamentell (SNOMED-CT: 347531000202105)
+* Immunterapi - Medikamentell behandling (SNOMED-CT: 76334006)
+* Hormonterapi - Medikamentell (SNOMED-CT: 169413002)
+* Annen behandling (SNOMED-CT: 74964007)
+* Ingen kreftbehandling, aktiv oppfølging (SNOMED-CT: 373818007)
+* Ekseptans (SNOMED-CT: 438758006)
+
+
+Koding av "Prosedyrenavn" med en terminologi foretrekkes der det er mulig.
+|at0005| 0..1| DV_CODED_TEXT | Utført?
+a|
+* at0023 -> Ja 
+* at0024 -> Nei 
+* at0039 -> Ukjent 
+
+
+Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN.
+|at0037| 0..1| DV_DATE_TIME | Behandlingsstart
+|
+
+
+Dataelementet "Tidsangivelse" er med hensikt løst modellert for å støtte ulike måter å angi tidsangivelser for prosedyrer i et spørreskjema. Den konkrete semantikken defineres i templatet. For eksempel: Prosedyrens faktiske dato og/eller klokkeslett, start- og slutttid for prosedyren, et tidsintervall for når prosedyren ble gjort, varigheten av prosedyren, individets alder på tidspunktet for prosedyren, eller hvor lenge det siden den ble gjort. Kan være en deldato, for eksempel bare år, ved å bruke datatypen DV_DATE_TIME.
+|at0037| 0..1| DV_DATE_TIME | Behandlingsslutt
+|
+
+
+Dataelementet "Tidsangivelse" er med hensikt løst modellert for å støtte ulike måter å angi tidsangivelser for prosedyrer i et spørreskjema. Den konkrete semantikken defineres i templatet. For eksempel: Prosedyrens faktiske dato og/eller klokkeslett, start- og slutttid for prosedyren, et tidsintervall for når prosedyren ble gjort, varigheten av prosedyren, individets alder på tidspunktet for prosedyren, eller hvor lenge det siden den ble gjort. Kan være en deldato, for eksempel bare år, ved å bruke datatypen DV_DATE_TIME.
+|at0025| 0..1| DV_TEXT | Kommentar
+a|
+|====
 == Sykdomsutvikling (tumor event)
 == Kartlegging av Sykdomsutvikling (tumor event)
 [options="header", cols="3,3,5,5,30"]
@@ -681,7 +767,7 @@ EVALUATION: _openEHR-EHR-EVALUATION.problem_diagnosis.v1_
 
 
 Det er i praksis ikke lett å oppnå et klart skille mellom et problem og en diagnose. I klinisk dokumentasjon med denne arketypen ses problem og diagnose som et kontinuum, med økende krav til detaljer og støttende evidens for å underbygge en diagnose.
-|at0002| 1..1| DV_TEXT | Problem/diagnosenavn
+|at0002| 1..1| DV_CODED_TEXT | Problem/diagnosenavn
 a|
 
 
@@ -700,12 +786,7 @@ Brukes i Sarkom med endret navn til "Merknad"
 Brukes til å gi bakgrunn og kontekst, inkludert utvikling, episoder eller forverringer, fremgang og alle andre relevante detaljer, om problemet eller diagnosen.
 |at0012| 0..1| DV_CODED_TEXT | Anatomisk lokalisering
 a|
-* Høyre (SNOMED-CT: 24028007)
-* Venstre (SNOMED-CT: 7771000)
-* Begge (SNOMED-CT: 51440002)
-* Ukjent (SNOMED-CT: 261665006)
-* Midtlinje (SNOMED-CT: 399488007)
-* Ikke relevant (SNOMED-CT: 0)
+* Erstattes med kode fra script eller gjenbruk (SNOMED-CT: x)
 
 
 Koding av navnet på den anatomiske lokaliseringen ved hjelp av en terminologi er foretrukket når dette er mulig. 
@@ -1060,7 +1141,7 @@ CLUSTER: _openEHR-EHR-CLUSTER.problem_diagnosis_dips.v1_
 
 
 Benyttes for å sette ICD10 koder for problemer hvor det er mer aktuelt å bruke overordnet kode på problem/diagnosenavn. 
-|at0001| 0..1| DV_TEXT | Diagnosenavn
+|at0001| 0..1| DV_CODED_TEXT | Diagnosenavn
 a|
 |at0003| 0..1| DV_TEXT | Beskrivelse
 a|
@@ -1085,15 +1166,15 @@ a|
 EVALUATION: _openEHR-EHR-EVALUATION.intervention_summary.v0_
 |at0003| 1..1| DV_CODED_TEXT | Behandling for krefttype
 a|
-* Sarkom (no.onk.kreftgruppering: 1)
-* Kreft i hode og hals (no.onk.kreftgruppering: 2)
-* Hjernesvulst (no.onk.kreftgruppering: 3)
-* Brystkreft (no.onk.kreftgruppering: 4)
-* Lungekreft (no.onk.kreftgruppering: 5)
-* Kreft i fordøyelsessystemet (no.onk.kreftgruppering: 6)
-* Gynekologisk kreft (no.onk.kreftgruppering: 7)
-* Kreft i nyre og urinveier (no.onk.kreftgruppering: 8)
-* Benmargs- og blodkreft (no.onk.kreftgruppering: 9)
+* Sarkom (no.onk.kreftgruppering: 01)
+* Kreft i hode og hals (no.onk.kreftgruppering: 02)
+* Hjernesvulst (no.onk.kreftgruppering: 03)
+* Brystkreft (no.onk.kreftgruppering: 04)
+* Lungekreft (no.onk.kreftgruppering: 05)
+* Kreft i fordøyelsessystemet (no.onk.kreftgruppering: 06)
+* Gynekologisk kreft (no.onk.kreftgruppering: 07)
+* Kreft i nyre og urinveier (no.onk.kreftgruppering: 08)
+* Benmargs- og blodkreft (no.onk.kreftgruppering: 09)
 * Lymfom (no.onk.kreftgruppering: 10)
 * Hudkreft (no.onk.kreftgruppering: 11)
 * Kreft i mannlige kjønnsorganer (no.onk.kreftgruppering: 12)
@@ -1635,26 +1716,35 @@ Koding med en terminologi er foretrukket, dersom det er mulig.
 a|
 |====
 == Komplikasjoner
-== Problem/diagnose
+== Kartleggingsspørsmål av uønskede effekter ved behandling
 [options="header", cols="3,3,5,5,30"]
 |====
 |NodeId|Attr.|RM Type| Name |Description
-5+a|*Problem/diagnose* + 
-EVALUATION: _openEHR-EHR-EVALUATION.problem_diagnosis.v1_
+5+a|*Kartleggingsspørsmål av uønskede effekter ved behandling* + 
+OBSERVATION: _openEHR-EHR-OBSERVATION.symptom_sign_screening.v1_
 
 
-Det er i praksis ikke lett å oppnå et klart skille mellom et problem og en diagnose. I klinisk dokumentasjon med denne arketypen ses problem og diagnose som et kontinuum, med økende krav til detaljer og støttende evidens for å underbygge en diagnose.
-|at0002| 1..1| DV_CODED_TEXT | Problem/diagnosenavn
+Svarene kan være selvrapporterte.
+|at0034| 0..1| DV_CODED_TEXT | Kartleggingsformål
 a|
-* Complication of procedure (SNOMED-CT: 116224001)
+* CTCAE (no.onk.kart.tidligere_komplikasjoner_kreftbehandling: 1)
 
 
-Koding av navnet på problemet eller diagnosen med en terminologi er foretrukket hvis mulig.
-|at0079| 0..*| DV_TEXT | Variant
+Dette dataelementet er ment for å sette en kontekst for spørsmålene om man senere ønsker å gjøre spørringer på dataene. Det er ikke forventet at dette dataelementet skal være synlig for en bruker av skjemaet, men kun tilgjengelig i de lagrede dataene. 
+For eksempel: "Pre operativ screening" eller navnet på det faktiske spørreskjemaet.
+// Not supported rmType ELEMENT
+|| 0..1| DV_CODED_TEXT | undefined
+// coded_text_value -  /content[openEHR-EHR-SECTION.adhoc.v1,'Komplikasjoner']/items[openEHR-EHR-OBSERVATION.symptom_sign_screening.v1,'Kartleggingsspørsmål av uønskede effekter ved behandling']/data[at0001]/events[at0002,'Baseline']/data[at0003]/items[at0028,'Har tidligere kreftbehandling gitt noen uønskede effekter?']/value
 a|
-
-
-For eksempel "akutt motorisk aksonal nevropati" som en variant av Guillain-Barre Syndrom. Koding av navnet på varianten med en terminologi er foretrukket hvis mulig.
+* at0031 -> Ja 
+* at0032 -> Nei 
+* at0033 -> Ukjent 
+|| 0..1| DV_TEXT | undefined
+// text_value -  /content[openEHR-EHR-SECTION.adhoc.v1,'Komplikasjoner']/items[openEHR-EHR-OBSERVATION.symptom_sign_screening.v1,'Kartleggingsspørsmål av uønskede effekter ved behandling']/data[at0001]/events[at0002,'Baseline']/data[at0003]/items[at0028,'Har tidligere kreftbehandling gitt noen uønskede effekter?']/value
+a|
+|| 0..1| DV_BOOLEAN | undefined
+// boolean_value -  /content[openEHR-EHR-SECTION.adhoc.v1,'Komplikasjoner']/items[openEHR-EHR-OBSERVATION.symptom_sign_screening.v1,'Kartleggingsspørsmål av uønskede effekter ved behandling']/data[at0001]/events[at0002,'Baseline']/data[at0003]/items[at0028,'Har tidligere kreftbehandling gitt noen uønskede effekter?']/value
+|
 5+a|*Common Terminology Criteria for Adverse Events (CTCAE)* + 
 CLUSTER: _openEHR-EHR-CLUSTER.ctcae.v1_
 
@@ -1693,9 +1783,6 @@ a|
 Dette elementet er en plassholder for term eller frase som tilhører en identifisert grad. I de fleste implementasjonene vil det bli utfylt via en eksterne kilde, som en CTCAE kunnskapsbase eller en annen kilde, under kjøring av dataprogrammet (run-time).
 |at0009| 0..1| DV_TEXT | CTCAE- versjon
 a|
-* CTCAE_5.0
-|at0070| 0..1| DV_DATE_TIME | Sist oppdatert
-|
 |====
 // Not supported rmType CODE_PHRASE
 // Not supported rmType CODE_PHRASE
