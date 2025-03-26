@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "16f6f69f1d4892b513adac9ff3adc3d8",
+      "MD5-CAM-1.0.1" : "befce114e1698817a64e7f7b0e2dd32e",
       "PARENT:MD5-CAM-1.0.1" : "348ecec1323ffc041209871b8dbb4806"
     },
     "details" : {
@@ -372,11 +372,20 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "EVALUATION",
-          "occurrences" : "0..1",
+          "occurrences" : "0..0",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
           "archetypeRef" : "ctcae_problem",
+          "referenceType" : "templateId"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "OBSERVATION",
+          "occurrences" : "0..1",
+          "nodeId" : "at0.4",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "kartlegging_uonskede_effekter_behandling",
           "referenceType" : "templateId"
         } ]
       } ],
