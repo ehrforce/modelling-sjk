@@ -4,11 +4,14 @@
   "description" : {
     "@type" : "RESOURCE_DESCRIPTION",
     "originalAuthor" : {
-      "date" : "2025-03-26"
+      "date" : "2025-03-26",
+      "organisation" : "DIPS",
+      "name" : "Bjørn Næss",
+      "email" : "bna@dips.no"
     },
-    "otherContributors" : [ ],
+    "otherContributors" : [ "John Tore Valand, Liv Laugen" ],
     "lifecycleState" : {
-      "codeString" : "unmanaged"
+      "codeString" : "in_development"
     },
     "ipAcknowledgements" : { },
     "references" : { },
@@ -19,7 +22,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "3cd770be88120a973153070a051173a0",
+      "MD5-CAM-1.0.1" : "701cc1b87adbd5d29dc08f2807c4f084",
       "PARENT:MD5-CAM-1.0.1" : "2C619AEB7356EC3C65163C23789A74C1"
     },
     "details" : {
@@ -67,7 +70,10 @@
           },
           "codeString" : "nb"
         },
-        "keywords" : [ ],
+        "purpose" : "Benyttes for kartlegging av tidligere uønskede hendelser/reaksjoner ved oppstart av behandling/utredning av kreft. ",
+        "keywords" : [ "CTCAE" ],
+        "use" : "Benyttes som baseline registrering av uønskede hendelser. Det skal være hendelser som har inntruffet før behandling/utredning starter ved egen virksomhet. ",
+        "misuse" : "Benyttes ikke for registrering av uønskede hendelser som tilkommer underveis i behandling og utredning. ",
         "originalResourceUri" : { },
         "otherDetails" : { }
       },
@@ -125,7 +131,7 @@
   "differential" : true,
   "archetypeId" : {
     "@type" : "ARCHETYPE_HRID",
-    "value" : "openEHR-EHR-OBSERVATION.symptomsign screening questionnaire.v1"
+    "value" : "openEHR-EHR-OBSERVATION.symptomsign_screening_questionnaire.v1"
   },
   "definition" : {
     "@type" : "C_COMPLEX_OBJECT",
@@ -401,7 +407,7 @@
     }
   },
   "adlVersion" : "1.4",
-  "buildUid" : "6ed5a9a9-07cd-3dcf-9b84-297847d5272d",
+  "buildUid" : "8459fba6-6f60-321d-ad36-fc70754bf1c4",
   "rmName" : "openehr",
   "rmRelease" : "1.1.0",
   "generated" : true,
@@ -420,7 +426,84 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "A7617F434767BA4FB95565EE2C02CEE5"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Bereitstellung einer Rahmenstruktur für die Erfassung jeglicher ungünstiger und unbeabsichtigter Anzeichen, Symptome oder Krankheiten temporal unter Verwendung der CTCAE-Terminologie.",
+          "keywords" : [ "CTCAE", "Anzeichen", "Symptom", "Krankheit", "unerwünscht", "Ereignis" ],
+          "use" : "Verwenden Sie diesen Archetyp zur Bereitstellung einer Rahmenstruktur für die Darstellung einer CTCAE-Klassifikation unter Verwendung von Begriffen aus geeigneten MedDRA-Terminologiehierarchien.\r\n\r\nDieser Archetyp ist dafür vorgesehen, im Kontext des Archetyps EVALUATION.problem_diagnosis (SLOT \"Spezifische Angaben\") oder CLUSTER.symptom_sign oder anderer klinisch relevanter Archetypen verwendet zu werden.",
+          "misuse" : "Nicht zur Darstellung von Details über unerwünschte Ereignisse außerhalb der CTCAE-Klassifikation verwenden.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-pt" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-pt"
+          },
+          "purpose" : "Providenciar uma estrutura para registar a classificação CTCAE.",
+          "keywords" : [ "ctcea", "sinal", "sintoma", "doença", "adverso", "evento" ],
+          "use" : "Usar para providenciar uma estrutura para registo da classificação CTCAE, utilizando termos da hierarquia de terminologia MedDRA apropriada.\r\n\r\nÉ pretendido que este arquétipo seja colocado na SLOT 'Specific details' do arquétipo EVALUATION.problem_diagnosis ou do CLUSTER.symptom_sign, ou noutros arquétipos clinicamente relevantes.",
+          "misuse" : "Não usar para registar detalhes de eventos adversos fora da classificação CTCAE.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Ett ramverk för att klassificera med med hjälp av CTCAE.",
+          "keywords" : [ "CTCAE", "biverkan", "biverkningar", "tecken", "symptom", "sjukdom", "cytostatika" ],
+          "use" : "Används som ett ramverk för att CTCAE-klassificera med med hjälp av termer från lämpliga hierarkier i MedDRA-terminologin.\r\n\r\nDenna arketyp är avsedd att infogas under fältet \"Specifika detaljer\" i antingen EVALUATION.problem_diagnosis eller CLUSTER.symptom_sign arketyperna, eller andra kliniskt relevanta arketyper.",
+          "misuse" : "Får inte användas för att registrera detaljer om biverkningar på annat sätt än med CTCAE-klassificeringen.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "Et rammeverk for å registrere CTCAE-klassifisering.",
+          "keywords" : [ "ctcae", "sykdomstegn", "symptom", "sykdom", "utilsiktet", "ugunstig", "uønsket", "hendelse", "bivirkning", "toksisitet", "toxicity", "legemiddel", "kreft", "malignitet", "kjemoterapi", "stråling", "proton", "CTC", "senskade" ],
+          "use" : "Bruk som et rammeverk for å registrere CTCAE-klassifisering, ved å bruke koder fra hierarkiet av termer fra MedDRA-terminologien.\r\n\r\nDenne arketypen er tiltenkt å nøstes i CLUSTER.symptom_sign (Symptom/Sykdomstegn) eller EVALUATION.problem_diagnosis (Problem/diagnose) eller en annen klinisk relevant arketype.",
+          "misuse" : "Skal ikke brukes for å registrere uønskede hendelser utenom å klassifisere CTCAE.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To provide a framework for recording a CTCAE classification.",
+          "keywords" : [ "ctcae", "sign", "symptom", "disease", "adverse", "event" ],
+          "use" : "Use to provide a framework for recording a CTCAE classification, using terms from appropriate MedDRA terminology hierarchies.\r\n\r\nThis archetype is intended to be nested in the 'Specific details' SLOT within either the EVALUATION.problem_diagnosis or CLUSTER.symptom_sign archetypes, or other clinically relevant archetypes.",
+          "misuse" : "Not to be used for recording details about adverse events outside of the CTCAE classification.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.ctcae.v1",
     "differential" : true,
@@ -432,7 +515,132 @@
       "@type" : "C_COMPLEX_OBJECT",
       "rmTypeName" : "CLUSTER",
       "nodeId" : "at0000.1",
-      "attributes" : [ ],
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "MEDRA"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "MEDRA" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "MEDRA",
+                    "code" : "1001",
+                    "value" : "Blood and lymphatic system disorders"
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0002.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "MEDRA"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "MEDRA" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "MEDRA",
+                    "code" : "X",
+                    "value" : "X"
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0020.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "CTCAETERM"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "CTCAETERM" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "CTCAETERM",
+                    "code" : "A",
+                    "value" : "A"
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0009.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "defaultValue" : {
+                "value" : "CTCAE_5.0",
+                "@type" : "DV_TEXT"
+              },
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
       "attributeTuples" : [ ]
     },
     "terminology" : {
