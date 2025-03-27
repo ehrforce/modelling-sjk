@@ -2,15 +2,27 @@
 
 
 == Metadata
+Brukes for å registrere et individs arbeidsstatus, samt yrke og varighet på sykemelding, i forbindelse med prosjektet Strukturert kreftjournal.
 
+Verdisettet for dataelementet "Arbeidsstatus" er standardisert basert på krav utarbeidet av Helsedirektoratet. 
+
+Dette templatet vil bli brukt i prosjektet Strukturert Kreftjournal under sosialanamnese.
+
+Småtemplatet med det standardiserte verdisettet kan benyttes utenfor Strukturert kreftjournal hvor det lagres data om arbeidsstatus.
+
+Verdisettet med tilhørende forklaring i dette templatet for arbeidsstatus er:
+  - I arbeid = Alle som har jobb og identifiserer seg med at deres hovedkategori er å være i arbeid. Både fulltid og deltid.
+  - Ikke i arbeid = Alle som ikke har et arbeidsforhold: hjemmeværende, permitterte, arbeidssøkende, uføretrygdet, under rehabilitering, under attføring eller arbeidsmarkedskurs o.l., samt avtjener verneplikt, siviltjeneste. De med et arbeidsforhold, men som er midlertidig sykemeldt ansees for å være i arbeid.
+  - Alderspensjonist = Ikke uførepensjon eller andre pensjonsformer annet enn aldersrelatert. AFP er inkludert.
+  - Under utdanning/studerer = Innrullert i et studieløp og identifiserer seg som hovedsakelig student/elev. Både fulltid og deltid.
+  - Ukjent = Ukjent arbeidsstatus.
+
+I tillegg er det mulig å registrere yrket til individet samt varighet på en sykemelding.
 
 TemplateId:: arbeidsstatus_yrke
 
 
 Archetype:: openEHR-EHR-EVALUATION.occupation_summary.v1
-
-
-
 
 :toc:
 
