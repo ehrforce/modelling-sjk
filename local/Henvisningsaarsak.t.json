@@ -22,9 +22,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "0f03d2d691f2e8ba1edf00ed1e2abe61",
+      "MD5-CAM-1.0.1" : "d29ab3524c64c5129592eb5b0e3c5ef0",
       "PARENT:MD5-CAM-1.0.1" : "A0968391FAAE7AC826B3AF4B9950E1D6",
-      "sem_ver" : "0.1.0",
+      "sem_ver" : "1.0.0",
       "build_uid" : "",
       "original_language" : "ISO_639-1::nb"
     },
@@ -135,17 +135,19 @@
               "children" : [ {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "DV_CODED_TEXT",
-                "occurrences" : "0..1",
+                "occurrences" : "1..1",
                 "attributes" : [ {
                   "@type" : "C_ATTRIBUTE",
                   "rmAttributeName" : "defining_code",
-                  "existence" : "0..1",
                   "children" : [ {
                     "@type" : "C_TERMINOLOGY_CODE",
+                    "rmTypeName" : "TERMINOLOGY_CODE",
+                    "occurrences" : "0..1",
                     "terminologyId" : {
                       "value" : "no.onk.henvisningsaarsak"
                     },
                     "constraint" : [ ],
+                    "selectedTerminologies" : [ "no.onk.henvisningsaarsak" ],
                     "includedExternalTerminologyCodes" : [ {
                       "terminologyId" : "no.onk.henvisningsaarsak",
                       "code" : "1",
@@ -252,7 +254,7 @@
           "code" : "at0004.1",
           "text" : "Henvisningsårsak",
           "description" : "Klinisk eller sosial årsak til at individet oppsøker helsevesenet.",
-          "comment" : "Koding av \"Klinisk problemstilling\" med en terminologi foretrekkes når mulig. Kliniske årsaker kan omfatte helseproblemer, symptomer, eller fysiske sykdomstegn. Eksempler: Helseproblemer - ønske om å slutte å røyke eller vold i hjemmet, symptomer - magesmerter eller kortpusthet, fysiske sykdomstegn - endret bevissthetsnivå. \"Hovedproblemstilling\" kan bli benyttet som et synonym for \"Klinisk kontaktårsak\" i templater."
+          "comment" : "Henvisning/ kontaktårsak i forbindelse med prosjektet Strukturert kreftjournal."
         }
       }
     },
