@@ -2,14 +2,21 @@
 
 
 == Metadata
+Brukes få registrere henvisningsårsak i forbindelse med prosjektet Strukturert kreftjournal.
 
+Småtemplatet kan benyttes utenfor Strukturert kreftjournal hvor det lagres data om henvisningsårsak/kontaktårsak.
+
+Verdisettet: 
+
+  1 - Screening
+  2 - Symptomer
+  3 - Tilfeldig funn
+  4 - Kontroll
 
 TemplateId:: Henvisningsaarsak
 
 
 Archetype:: openEHR-EHR-EVALUATION.reason_for_encounter.v1
-
-
 
 
 :toc:
