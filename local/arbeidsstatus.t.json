@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "4.0.0",
+      "sem_ver" : "5.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "ad44ef995d74a2900f0501f315d1a76d",
+      "MD5-CAM-1.0.1" : "ff6ea45ebb6de9877e85fd0c2a831df6",
       "PARENT:MD5-CAM-1.0.1" : "37053661135B974855AAA356073EA23A",
       "original_language" : "ISO_639-1::nb"
     },
@@ -205,6 +205,12 @@
           "text" : "Kommentar",
           "description" : "Ytterligere fritekstkommentar til individets nåværende eller tidligere jobber/roller, som ikke er fanget i andre felt.",
           "comment" : "K"
+        },
+        "at0004.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0004",
+          "text" : "Arbeidsstatus",
+          "description" : "Utsagn om individets nåværende jobb/rolle."
         }
       },
       "it" : { },
@@ -804,7 +810,14 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : { },
-        "nb" : { },
+        "nb" : {
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005",
+            "text" : "Tittel/rolle",
+            "description" : "Stillingstittel eller betegnelse for dette arbeidsforholdet/rollen/vervet."
+          }
+        },
         "it" : { },
         "es" : { },
         "de" : { },
@@ -1045,7 +1058,16 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "nodeId" : "at0004.1",
-          "attributes" : [ ],
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_DATE_TIME",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -1063,6 +1085,7 @@
                 "children" : [ {
                   "@type" : "C_DURATION",
                   "rmTypeName" : "DURATION",
+                  "occurrences" : "0..1",
                   "patternedConstraint" : "PD",
                   "constraint" : [ ]
                 } ]
@@ -1092,7 +1115,15 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0004.1",
             "text" : "Sykemelding - fra dato",
-            "description" : "Startdatoen for sykemeldingen."
+            "description" : "Startdatoen for sykemeldingen.",
+            "comment" : "Startdatoen for sykemeldingen."
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Varighet",
+            "description" : "Varigheten av sykemeldinsperioden til individet.",
+            "comment" : "Varigheten av sykemeldinsperioden til individet."
           }
         }
       },
