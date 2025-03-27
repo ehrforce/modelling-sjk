@@ -1,0 +1,60 @@
+= Arbeidssammendrag
+
+
+== Metadata
+
+
+TemplateId:: arbeidsstatus_yrke
+
+
+Archetype:: openEHR-EHR-EVALUATION.occupation_summary.v1
+
+
+
+
+:toc:
+
+
+
+
+== Arbeidssammendrag
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Arbeidssammendrag* + 
+EVALUATION: _openEHR-EHR-EVALUATION.occupation_summary.v1_
+|at0004| 0..1| DV_CODED_TEXT | Arbeidsstatus
+a|
+* I arbeid (no.arbeidsstatus: 1)
+* Ikke i arbeid (no.arbeidsstatus: 2)
+* Alderspensjonist (no.arbeidsstatus: 3)
+* Under utdanning/studerer (no.arbeidsstatus: 4)
+* Ukjent (no.arbeidsstatus: 9)
+
+
+Verdisettet med tilhørende forklaring i dette templatet for arbeidsstatus er:
+- I arbeid = Alle som har jobb og identifiserer seg med at deres hovedkategori er å være i arbeid. Både fulltid og deltid.
+- Ikke i arbeid = Alle som ikke har et arbeidsforhold: hjemmeværende, permitterte, arbeidssøkende, uføretrygdet, under rehabilitering, under attføring eller arbeidsmarkedskurs o.l., samt avtjener verneplikt, siviltjeneste. De med et arbeidsforhold, men som er midlertidig sykemeldt ansees for å være i arbeid.
+- Alderspensjonist = Ikke uførepensjon eller andre pensjonsformer annet enn aldersrelatert. AFP er inkludert.
+- Under utdanning/studerer = Innrullert i et studieløp og identifiserer seg som hovedsakelig student/elev. Både fulltid og deltid.
+- Ukjent = Ukjent arbeidsstatus.
+5+a|*Yrke* + 
+CLUSTER: _openEHR-EHR-CLUSTER.occupation_record.v1_
+|at0005| 0..1| DV_TEXT | Tittel/rolle
+a|
+5+a|*Sykemelding* + 
+CLUSTER: _openEHR-EHR-CLUSTER.sick_note_ous.v1_
+|at0004| 0..1| DV_DATE_TIME | Startdato
+|
+|at0001| 0..1| DV_DURATION | Varighet
+|
+|at0005| 0..1| DV_DATE_TIME | Sluttdato
+|
+|at0006| 0..1| DV_TEXT | Kommentar
+a|
+|at0009| 0..1| DV_DATE_TIME | Sist oppdatert
+|
+
+
+Ved implementering av arketypen forutsettes det at dersom en arbeidsepisode legges til eller oppdateres, vil også denne datoen oppdateres.
+|====
