@@ -21,9 +21,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "818e0e46729fd371ac7a202f303e1b21",
+      "MD5-CAM-1.0.1" : "95d3315565e98e841b1290fcd95b0415",
       "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73",
-      "sem_ver" : "6.0.3",
+      "sem_ver" : "7.0.0",
       "build_uid" : "",
       "original_language" : "ISO_639-1::nb"
     },
@@ -502,12 +502,13 @@
                             "rmAttributeName" : "defining_code",
                             "children" : [ {
                               "@type" : "C_TERMINOLOGY_CODE",
-                              "rmTypeName" : "CODE_PHRASE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
                               "occurrences" : "1..1",
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "at0031", "at0032", "at0033" ]
+                              "constraint" : [ "ac0.1" ],
+                              "selectedTerminologies" : [ ]
                             } ]
                           } ],
                           "attributeTuples" : [ ]
@@ -564,6 +565,12 @@
             "code" : "at0043.1",
             "text" : "Overordnet merknad komorbiditet",
             "description" : "Narrative description about the history of any issues, problems or diagnoses relevant for the screening purpose."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.1",
+            "description" : ""
           }
         },
         "nb" : {
@@ -578,14 +585,26 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0028.1",
             "text" : "Har pasient kjent komorbiditet?",
-            "description" : "Finnes det noen bekymringer, plager, problemer eller diagnoser. som er innenfor kartleggingsformålet?",
-            "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
+            "description" : "Finnes det noen bekymringer, plager, problemer eller diagnoser. som er innenfor kartleggingsformålet?"
           },
           "at0043.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0043.1",
             "text" : "Overordnet merknad komorbiditet",
             "description" : "Fritekstbeskrivelse om bekymringer, plager, problemer eller diagnoser som er innenfor kartleggingsformålet."
+          },
+          "at0034.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0034",
+            "text" : "Kartleggingsformål",
+            "description" : "Konteksten eller årsaken for kartleggingen.",
+            "comment" : "I prosjektet strukturert kreftjournal er det etablert et eget kodeverk for kartleggingsformål. no.onk.screening.problem."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
           }
         },
         "de" : {
@@ -608,6 +627,12 @@
             "code" : "at0043.1",
             "text" : "Overordnet merknad komorbiditet",
             "description" : "Beschreibung der Geschichte von Beschwerden, Problemen oder Diagnosen, die für das Screening relevant sind."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
           }
         },
         "nl" : {
@@ -630,14 +655,40 @@
             "code" : "at0043.1",
             "text" : "Overordnet merknad komorbiditet",
             "description" : "*Narrative description about the history of any issues, problems or diagnoses relevant for the screening purpose. (en)"
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
           }
         },
-        "ca" : { },
-        "fr" : { }
+        "ca" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
+          }
+        },
+        "fr" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
-      "valueSets" : { }
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0031", "at0032", "at0033" ]
+        }
+      }
     },
     "adlVersion" : "1.4",
     "buildUid" : "79bbe793-41a6-4490-8316-ccc4cdd25ec4",
@@ -1591,14 +1642,13 @@
             "code" : "at0002.1",
             "text" : "Tilstand: Hovedkapitler ICD-10",
             "description" : "Navnet på tilstanden eller statusen.",
-            "comment" : "Koding av tilstanden med en terminologi er ønskelig, dersom mulig."
+            "comment" : "I prosjektet strukturert kreftjournal er det etablert et eget kodeverk for hovedkapitler i ICD-10, no.icd10.kapitler."
           },
           "at0003.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0003.1",
             "text" : "Detaljer",
-            "description" : "Beskrivelse av underlaget som understøtter forholdsregelen.",
-            "comment" : "Dette dataelementet kan dersom ønskelig lenkes til en diagnose, testresultat eller legemiddelordinering ved hjelp av en URI (spesifisert i referansemodellen) for å oppgi rasjonalet eller evidensen for forholdsregelen. NB: Siden URI-lenken kan være utilgjengelige fra en melding eller et mottakende system, er det ønskelig at en fritekstbeskrivelse av underlaget registreres eksplisitt."
+            "description" : "Beskrivelse av underlaget som understøtter forholdsregelen."
           },
           "at0013.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -2349,14 +2399,13 @@
             "code" : "at0002.1",
             "text" : "Tilstand: ICD-10",
             "description" : "Navnet på tilstanden eller statusen.",
-            "comment" : "Koding av tilstanden med en terminologi er ønskelig, dersom mulig."
+            "comment" : "I strukturert kreftjournal er dette elementet koblet til et ICD-10 søk."
           },
           "at0003.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0003.1",
             "text" : "Detaljer",
-            "description" : "Beskrivelse av underlaget som understøtter forholdsregelen.",
-            "comment" : "Dette dataelementet kan dersom ønskelig lenkes til en diagnose, testresultat eller legemiddelordinering ved hjelp av en URI (spesifisert i referansemodellen) for å oppgi rasjonalet eller evidensen for forholdsregelen. NB: Siden URI-lenken kan være utilgjengelige fra en melding eller et mottakende system, er det ønskelig at en fritekstbeskrivelse av underlaget registreres eksplisitt."
+            "description" : "Beskrivelse av underlaget som understøtter forholdsregelen."
           }
         },
         "es-ar" : { },
@@ -2520,7 +2569,7 @@
             "rmAttributeName" : "events",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "EVENT",
+              "rmTypeName" : "POINT_EVENT",
               "occurrences" : "0..1",
               "nodeId" : "at0002.1",
               "attributes" : [ {
