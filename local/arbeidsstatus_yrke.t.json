@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "12.0.0",
+      "sem_ver" : "13.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "71a1a78f452e731b9c1d3b602979601b",
+      "MD5-CAM-1.0.1" : "8cd34d72591e142364a434e0891251b4",
       "PARENT:MD5-CAM-1.0.1" : "37053661135B974855AAA356073EA23A",
       "original_language" : "ISO_639-1::nb"
     },
@@ -192,7 +192,15 @@
     "conceptCode" : "at0000",
     "termDefinitions" : {
       "en" : { },
-      "nb" : { },
+      "nb" : {
+        "at0004.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0004",
+          "text" : "Arbeidsstatus",
+          "description" : "Utsagn om individets nåværende jobb/rolle.",
+          "comment" : "Verdisettet med tilhørende forklaring i dette templatet for arbeidsstatus er:\n- I arbeid = Alle som har jobb og identifiserer seg med at deres hovedkategori er å være i arbeid. Både fulltid og deltid.\n- Ikke i arbeid = Alle som ikke har et arbeidsforhold: hjemmeværende, permitterte, arbeidssøkende, uføretrygdet, under rehabilitering, under attføring eller arbeidsmarkedskurs o.l., samt avtjener verneplikt, siviltjeneste. De med et arbeidsforhold, men som er midlertidig sykemeldt ansees for å være i arbeid.\n- Alderspensjonist = Ikke uførepensjon eller andre pensjonsformer annet enn aldersrelatert. AFP er inkludert.\n- Under utdanning/studerer = Innrullert i et studieløp og identifiserer seg som hovedsakelig student/elev. Både fulltid og deltid.\n- Ukjent = Ukjent arbeidsstatus."
+        }
+      },
       "it" : { },
       "de" : { }
     },
@@ -374,6 +382,12 @@
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
         "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0005.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
@@ -693,6 +707,18 @@
             "code" : "at0000.1",
             "text" : "Yrke",
             "description" : "En jobb eller rolle individet har, eller har hatt i en spesifisert tidsperiode."
+          },
+          "at0005" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005",
+            "text" : "Tittel/rolle",
+            "description" : "Stillingstittel eller betegnelse for dette arbeidsforholdet/rollen/vervet."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Tittel/rolle",
+            "description" : "Stillingstittel eller betegnelse for dette arbeidsforholdet/rollen/vervet."
           }
         },
         "it" : {
