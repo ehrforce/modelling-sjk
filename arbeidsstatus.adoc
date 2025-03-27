@@ -2,7 +2,21 @@
 
 
 == Metadata
+Brukes for å registrere et individs bruk av alkohol, røyk, røykfri tobakk og andre substanser i forbindelse med prosjektet Strukturert Kreftjournal.
 
+Småtemplatet kan benyttes utenfor Strukturert kreftjournal hvor det lagres data om stimulantia.
+
+I templatet benyttes arketypene:
+
+- Alkoholanamnese (EVALUATION.alcohol_consumption_summary)
+- Røykeanamnese (EVALUATION.tobacco_smoking_summary)
+- Røykfri tobakkanamnese (EVALUATION.smokeless_tobacco_summary.v1)
+- Substansanamnese (EVALUATION.substance_use_summary)
+
+
+For å si noe om bruk av andre rusmidler enn tobakk/snus/alkohol kan man velge to tilnærminger (evt. begge):
+1. Fritekstbeskrivelse av substansbruk. 
+2. Detaljerte registreringer av spesifikk substansbruk.
 
 TemplateId:: arbeidsstatus
 
