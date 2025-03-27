@@ -2,7 +2,7 @@
 
 
 == Metadata
-
+Brukes for å registrere komorbiditet i forbindelse med prosjektet Strukturert Kreftjournal. Templatet gir mulighet for registrering av komorbiditet hos en pasient, både i form av gruppering på ICD-10 kapitler (overordnet gruppering), i form av ICD-10 spesifikke koder og vha. Charlston Comorbidity Index. Småtemplatet kan benyttes utenfor Strukturert kreftjournal hvor det lagres data om komorbiditeter.
 
 TemplateId:: komorbiditet_utredning_inkl_CCI_smaatemplat
 
