@@ -3,6 +3,13 @@
 
 == Metadata
 
+Brukes for å registrere kartleggingsspørsmål om et individ har ansvar/omsorg for mindreårige barn og andre individer over 18 år i forbindelse med prosjektet Strukturert Kreftjournal. 
+
+Dette templatet vil bli brukt i prosjektet Strukturert Kreftjournal under sosialanamnese. 
+
+Arketypen Kartleggingsspørsmål om sosiale forhold (openEHR-EHR-OBSERVATION.social_context_screening.v1) er benyttet med to spørsmål, ett for om pasienten har ansvar for barn under 18 år og et spørsmål for om pasienten har ansvar for egne barn/andre over 18 år. 
+
+Småtemplatet med det standardiserte verdisettet kan benyttes utenfor Strukturert kreftjournal hvor det lagres data om kartleggingsspørsmål om omsorgsansvar.
 
 TemplateId:: omsorgsansvar_kartlegging
 
@@ -28,7 +35,7 @@ a|
 * Kartlegging av om individet har omsorgsansvar (no.onk.sosiale_forhold: OA)
 
 
-Dette dataelementet er ment for å sette en kontekst for samlingen av spørsmål/svar til bruk senere for å gjøre spørringer på dataene. Det er ikke forventet at dette dataelementet skal være synlig for en bruker av skjemaet, men kun tilgjengelig i de lagrede dataene.
+I prosjektet strukturert kreftjournal er det etablert et eget kodeverk for kartleggingsformål. no.onk.sosiale_forhold.
 5+a|*Omsorgsperson for barn under 18 år* + 
 CLUSTER: _at0022_
 |at0004| 1..1| DV_CODED_TEXT | Sosialt forhold
@@ -42,9 +49,6 @@ a|
 * at0023 -> Ja 
 * at0024 -> Nei 
 * at0027 -> Ukjent 
-
-
-I templat vil navnet på dataelementet normalt omformuleres til det spesifikke spørsmålet. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN.
 5+a|*Barn som pårørende* + 
 CLUSTER: _at0022_
 |at0004| 1..1| DV_CODED_TEXT | Sosialt forhold
@@ -58,9 +62,6 @@ a|
 * at0023 -> Ja 
 * at0024 -> Nei 
 * at0027 -> Ukjent 
-
-
-I templat vil navnet på dataelementet normalt omformuleres til det spesifikke spørsmålet. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN.
 |at0025| 0..1| DV_TEXT | Kommentar
 a|
 5+a|*Omsorgsperson for personer over 18 år* + 
@@ -76,7 +77,4 @@ a|
 * at0023 -> Ja 
 * at0024 -> Nei 
 * at0027 -> Ukjent 
-
-
-I templat vil navnet på dataelementet normalt omformuleres til det spesifikke spørsmålet. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN.
 |====
