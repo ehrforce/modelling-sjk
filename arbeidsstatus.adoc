@@ -1,0 +1,54 @@
+= Arbeidssammendrag
+
+
+== Metadata
+
+
+TemplateId:: arbeidsstatus
+
+
+Archetype:: openEHR-EHR-EVALUATION.occupation_summary.v1
+
+
+
+
+:toc:
+
+
+
+
+== Arbeidssammendrag
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Arbeidssammendrag* + 
+EVALUATION: _openEHR-EHR-EVALUATION.occupation_summary.v1_
+|at0004| 0..1| DV_CODED_TEXT | Arbeidsstatus
+a|
+* I arbeid (no.arbeidsstatus: 1)
+* Ikke i arbeid (no.arbeidsstatus: 2)
+* Alderspensjonist (no.arbeidsstatus: 3)
+* Under utdanning/studerer (no.arbeidsstatus: 4)
+* Ukjent (no.arbeidsstatus: 9)
+5+a|*Arbeidsforhold/rolle* + 
+CLUSTER: _openEHR-EHR-CLUSTER.occupation_record.v1_
+|at0005| 0..1| DV_TEXT | Tittel/rolle
+a|
+5+a|*Sykemelding* + 
+CLUSTER: _openEHR-EHR-CLUSTER.sick_note_ous.v1_
+|at0004| 0..1| DV_DATE_TIME | Sykemelding - fra dato
+|
+
+
+Startdatoen for sykemeldingen.
+|at0001| 0..1| DV_DURATION | Varighet
+|
+
+
+Varigheten av sykemeldinsperioden til individet.
+|at0009| 0..1| DV_DATE_TIME | Sist oppdatert
+|
+
+
+Ved implementering av arketypen forutsettes det at dersom en arbeidsepisode legges til eller oppdateres, vil også denne datoen oppdateres.
+|====
