@@ -1,4 +1,4 @@
-archetype (adl_version=1.4; uid=69d2930f-2a17-4c69-b472-785d142d9744)
+archetype (adl_version=1.4; uid=8bf00e22-21a9-4441-9c5d-62ccbbdb6b8c)
 	openEHR-EHR-OBSERVATION.investigation_screening.v1
 
 concept
@@ -18,9 +18,9 @@ language
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			author = <
-				["name"] = <"Kanika Kuwelker, John Tore Valand, Vebjørn Arntzen">
-				["organisation"] = <"Helse Vest IKT, Helse Bergen, Oslo University Hospital">
-				["email"] = <"kanika.kuwelker@helse-vest-ikt.no, john.tore.valand@helse-vest-ikt.no, varntzen@ous-hf.no">
+				["name"] = <"Kanika Kuwelker, John Tore Valand, Vebjørn Arntzen, Liv Laugen">
+				["organisation"] = <"Helse Vest IKT, Helse Bergen, Oslo University Hospital, Oslo universitetssykehus">
+				["email"] = <"kanika.kuwelker@helse-vest-ikt.no, john.tore.valand@helse-vest-ikt.no, varntzen@ous-hf.no, liv.laugen@ous-hf.no">
 			>
 		>
 		["es"] = <
@@ -225,10 +225,10 @@ No debe utilizarse para registrar resultados de pruebas de diagnóstico formales
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"767B1520D7B5972C9905F1E02CA10CC1">
-		["build_uid"] = <"a408f256-acb2-46c7-ac32-861a47ec1736">
+		["MD5-CAM-1.0.1"] = <"8B02F2D7FC54D282E09D2F23B3E67F05">
+		["build_uid"] = <"4d25329a-645b-4c04-9a2a-fc22c6aa33d1">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
-		["revision"] = <"1.2.0">
+		["revision"] = <"1.0.3">
 	>
 
 definition
@@ -604,7 +604,7 @@ Die Kodierung des \"Untersuchungsnamens\" mit einer Terminologie wird, wenn mög
 					description = <"@ internal @">
 				>
 				["at0023"] = <
-					text = <"Uspesifikk hendelse">
+					text = <"Uspesifisert hendelse">
 					description = <"Standard, uspesifisert tidspunkt eller tidsintervall som kan defineres mer eksplisitt i et templat eller i en applikasjon.">
 				>
 				["at0024"] = <
