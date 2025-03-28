@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "33a43a92bbc64597413768c83f67e01d",
+      "MD5-CAM-1.0.1" : "f6fdcb2f5d221dde401235cfc5e42b49",
       "PARENT:MD5-CAM-1.0.1" : "DB7D4B698449B0D99CB352CDB935B693",
-      "sem_ver" : "5.0.0",
+      "sem_ver" : "6.0.0",
       "build_uid" : "",
       "original_language" : "ISO_639-1::nb"
     },
@@ -224,19 +224,12 @@
           "description" : "Enkeltord eller frase som beskriver et individs nåværende forhold til en livspartner.",
           "comment" : "Verdisettet for dataelementet \"Samlivsstatus\" er standardisert med bakgrunn i variabler fra SSB (https://www.ssb.no/klass/klassifikasjoner/19).\n"
         },
-        "at0011" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0011",
-          "text" : "Sist oppdatert",
-          "description" : "Datoen da det sosiale nettverket siste ble oppdatert.",
-          "comment" : "Datoen da samlivsstatus sist ble oppdatert."
-        },
         "at0011.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0011.1",
           "text" : "Sist oppdatert",
           "description" : "Datoen da det sosiale nettverket siste ble oppdatert.",
-          "comment" : "Datoen da det sosiale nettverket siste ble oppdatert."
+          "comment" : "Datoen da samlivsstatus sist ble oppdatert."
         }
       },
       "de" : {
