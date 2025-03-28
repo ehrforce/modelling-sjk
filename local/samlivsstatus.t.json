@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "9aab3857b80d8e85cca37ebcefc57f10",
+      "MD5-CAM-1.0.1" : "33a43a92bbc64597413768c83f67e01d",
       "PARENT:MD5-CAM-1.0.1" : "DB7D4B698449B0D99CB352CDB935B693",
-      "sem_ver" : "4.0.0",
+      "sem_ver" : "5.0.0",
       "build_uid" : "",
       "original_language" : "ISO_639-1::nb"
     },
@@ -162,6 +162,35 @@
         } ],
         "attributeTuples" : [ ]
       } ]
+    }, {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "protocol",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ITEM_TREE",
+        "nodeId" : "at0010",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "items",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0011.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_DATE_TIME",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
     } ],
     "attributeTuples" : [ ]
   },
@@ -193,7 +222,21 @@
           "code" : "at0002.1",
           "text" : "Samlivsstatus",
           "description" : "Enkeltord eller frase som beskriver et individs nåværende forhold til en livspartner.",
-          "comment" : "Det anbefales å kode sivilstatus med en terminologi dersom mulig. Det er stor variasjon i verdisett som benyttes på tvers av jurisdiksjoner. Det finnes lokale, myndighetspålagte verdisett eller terminologier som for eksempel SNOMED CT eller lignende. For eksempel Ugift, Gift, Registrert partner, Samboer, Skilt, Enke, Enkemann, Enslig."
+          "comment" : "Verdisettet for dataelementet \"Samlivsstatus\" er standardisert med bakgrunn i variabler fra SSB (https://www.ssb.no/klass/klassifikasjoner/19).\n"
+        },
+        "at0011" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0011",
+          "text" : "Sist oppdatert",
+          "description" : "Datoen da det sosiale nettverket siste ble oppdatert.",
+          "comment" : "Datoen da samlivsstatus sist ble oppdatert."
+        },
+        "at0011.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0011.1",
+          "text" : "Sist oppdatert",
+          "description" : "Datoen da det sosiale nettverket siste ble oppdatert.",
+          "comment" : "Datoen da det sosiale nettverket siste ble oppdatert."
         }
       },
       "de" : {
