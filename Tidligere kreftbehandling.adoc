@@ -2,7 +2,9 @@
 
 
 == Metadata
+Brukes for å registrere tidligere kreftbehandling i forbindelse med prosjektet Strukturert kreftjournal.
 
+Småtemplatet kan benyttes utenfor Strukturert kreftjournal hvor det lagres data om tidligere kreftbehandling.
 
 TemplateId:: Tidligere kreftbehandling
 
