@@ -1,0 +1,70 @@
+= Tidligere kreft
+
+
+== Metadata
+
+
+TemplateId:: Tidligere kreft
+
+
+Archetype:: openEHR-EHR-SECTION.adhoc.v1
+
+
+
+
+:toc:
+
+
+
+
+== Tidligere kreft
+== Tidligere kreft
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Tidligere kreft* + 
+OBSERVATION: _openEHR-EHR-OBSERVATION.problem_screening.v1_
+|at0034| 0..1| DV_CODED_TEXT | Kartleggingsformål
+a|
+* Sarkom (no.onk.kart.tidligere_kreft: 1)
+* Kreft i hode og hals (no.onk.kart.tidligere_kreft: 2)
+* Hjernesvulst (no.onk.kart.tidligere_kreft: 3)
+* Brystkreft (no.onk.kart.tidligere_kreft: 4)
+* Lungekreft (no.onk.kart.tidligere_kreft: 5)
+* Kreft i fordøyelsessystemet (no.onk.kart.tidligere_kreft: 6)
+* Gynekologisk kreft (no.onk.kart.tidligere_kreft: 7)
+* Kreft i nyre og urinveier (no.onk.kart.tidligere_kreft: 8)
+* Benmargs- og blodkreft (no.onk.kart.tidligere_kreft: 9)
+* Lymfom (no.onk.kart.tidligere_kreft: 10)
+* Hudkreft (no.onk.kart.tidligere_kreft: 11)
+* Kreft i mannlige kjønnsorganer (no.onk.kart.tidligere_kreft: 12)
+* Kreft i endokrine kjertler (no.onk.kart.tidligere_kreft: 13)
+* Nevroendokrin kreft (no.onk.kart.tidligere_kreft: 14)
+* Barnekreft (no.onk.kart.tidligere_kreft: 15)
+* Øyekreft (no.onk.kart.tidligere_kreft: 16)
+* Svulst av ukjent opprinnelse / Annet (no.onk.kart.tidligere_kreft: 17)
+
+
+I prosjektet strukturert kreftjournal er det etablert et eget kodeverk for kartleggingsformålet no.onk.kart.tidligere_kreft.
+|at0028| 0..1| DV_CODED_TEXT | Har pasient hatt kreft tidligere?
+a|
+* at0031 -> Ja 
+* at0032 -> Nei 
+* at0033 -> Ukjent 
+5+a|*Spesifikt problem eller diagnose* + 
+CLUSTER: _at0022_
+|at0004| 1..1| DV_TEXT | Kreftdiagnose
+a|
+
+
+Koding av problem/diagnosenavnet med en terminologi foretrekkes, der det er mulig.
+|at0005| 0..1| DV_CODED_TEXT | Tilstede?
+a|
+* at0023 -> Ja 
+* at0024 -> Nei 
+* at0027 -> Ukjent 
+|at0040| 0..1| DV_DATE_TIME | Dato bekreftet
+|
+|at0025| 0..1| DV_TEXT | Merknad
+a|
+|====
