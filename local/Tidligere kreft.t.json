@@ -1,0 +1,1214 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "dc24cd31-c5fb-4311-afe9-161f84414784",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "date" : "2023-11-23"
+    },
+    "otherContributors" : [ ],
+    "lifecycleState" : {
+      "codeString" : "unmanaged"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "licence" : "This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.",
+      "custodian_organisation" : "openEHR Foundation",
+      "original_namespace" : "org.openehr",
+      "original_publisher" : "openEHR Foundation",
+      "custodian_namespace" : "org.openehr",
+      "MD5-CAM-1.0.1" : "0b6a61b0d22600cd545766d1748969cb",
+      "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73",
+      "original_language" : "ISO_639-1::nb",
+      "sem_ver" : "1.0.0",
+      "build_uid" : ""
+    },
+    "details" : {
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "purpose" : "For å registrere tidligere kreft i forbindelse med prosjektet Strukturert kreftjournal.",
+        "keywords" : [ "kreft, onkologi" ],
+        "use" : "Brukes for å registrere tidligere kreft i forbindelse med prosjektet Strukturert kreftjournal.\n\nSmåtemplatet kan benyttes utenfor Strukturert kreftjournal hvor det lagres data om tidligere kreft.",
+        "misuse" : "",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "en" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "en"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "de" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "de"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "ru" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ru"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "sv" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "sv"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "es-ar" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es-ar"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "pt-br" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "pt-br"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "sl" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "sl"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "it" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "it"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "fr" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "fr"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-SECTION.adhoc.v1",
+  "differential" : true,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-SECTION.t_adhoc.v1"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "SECTION",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "items",
+      "existence" : "0..1",
+      "children" : [ {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "OBSERVATION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.1",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-problem_screening-000.v1",
+        "referenceType" : "archetypeOverlay"
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "en" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Tidligere kreft",
+          "description" : "A generic section header which should be renamed in a template to suit a specific clinical context."
+        }
+      },
+      "ru" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Tidligere kreft",
+          "description" : "Образец заголовка раздела"
+        }
+      },
+      "es-ar" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Tidligere kreft",
+          "description" : "Un encabezado de sección de tipo genérico que será renombrado en una plantilla para su empleo en un contexto clínico específico."
+        }
+      },
+      "sl" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Tidligere kreft",
+          "description" : "Naslov sekcije"
+        }
+      },
+      "nb" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Tidligere kreft",
+          "description" : "En generisk seksjonsoverskrift som skal gis nytt navn i en templat for å passe i en gitt klinisk kontekst."
+        }
+      },
+      "pt-br" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Tidligere kreft",
+          "description" : "Um cabeçalho de sessão genérico que deve ser renomeado no template para adequar-se a um contexto clínico específico."
+        }
+      },
+      "sv" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Tidligere kreft",
+          "description" : "En allmän avsnittsrubrik som döps om i en openEHR-mall för att passa in i en specifik klinisk kontext."
+        }
+      },
+      "de" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Tidligere kreft",
+          "description" : "Eine generische Abschnittsüberschrift eines Templates, welche entsprechend dem spezifischen klinischen Kontext umbenannt werden sollte."
+        }
+      },
+      "it" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Tidligere kreft",
+          "description" : "Un'intestazione di sezione generica che dovrebbe essere rinominata in un template per adattarsi ad uno specifico contesto clinico."
+        }
+      },
+      "fr" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Tidligere kreft",
+          "description" : "Un en-tête de section générique qui doit être renommé dans un modèle pour s'adapter à un contexte clinique spécifique."
+        }
+      }
+    },
+    "termBindings" : { },
+    "terminologyExtracts" : { },
+    "valueSets" : { }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "39362cc3-819c-3737-b760-e9759995aa8d",
+  "rmName" : "openehr",
+  "rmRelease" : "1.1.0",
+  "generated" : true,
+  "templateId" : "Tidligere kreft",
+  "otherMetaData" : { },
+  "templateOverlays" : [ {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "0b3c1c52-b958-452c-aa36-a7ab17d309a2",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "D208D25865EF6A8590CAC3E4299A25F4"
+      },
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Schaffung von Rahmenbedingungen für die Darstellung von Antworten auf vordefinierte Screening-Fragen zu Beschwerden, Problemen oder Diagnosen.",
+          "keywords" : [ "Erkrankung, Zustand, Krankheit, Syndrom, Fragebogen, Befragung, Screening, Problem" ],
+          "use" : "Verwendung als Rahmenbedingung für die Darstellung von Antworten auf vordefinierte Screening-Fragen zu Beschwerden, Problemen oder Diagnosen.\r\n\r\nHäufige Anwendungsfälle umfassen, sind aber nicht beschränkt auf:\r\nSystematische Befragung in jedem Beratungsgespräch, zum Beispiel:\r\n--- Wurde eine Krebserkrankung diagnostiziert? Ja, Nein, Unbekannt.\r\n--- Wurde COVID 19 oder Influenza in den vergangenen zwölf Monaten diagnostiziert? Ja, Nein, Unbekannt.\r\n--- Haben Sie irgendwelche Sorgen oder Problemen? Ja, Nein, Unbekannt.\r\n- Spezifische Befragungen in Bezug auf Krankheitsüberwachung.\r\n\r\nDie Semantiken dieses Archetyps sind mit Absicht vage und diesen Archetyp abzufragen würde üblicherweise nur sinnvoll und sicher im Kontext vom einzelnen spezifischen Template sein. In einem Template würde jedes Daten Element in eine der spezifisch gestellten Fragen umbenannt werden. Wenn Gruppen an Werten für übliche Anwendungsfälle bereits vorgeschlagen wurden, können diese für den lokalen Gebrauch mit Hilfe der \"Text\"- Auswahl an den jeweiligen spezifischen Anwendungsfall angepasst werden.\r\n\r\nÜber die EVENT-Struktur aus dem Referenzmodell kann festgelegt werden, ob sich die Fragen auf einen Zeitpunkt oder einen Zeitraum beziehen. Verwenden Sie eine separate Instanz dieses Archetyps, um zwischen einer Befragung zu unterscheiden, der Informationen über eine Diagnose enthält, die zu einem beliebigen Zeitpunkt in der Vergangenheit aufgetreten war, und Informationen über eine Diagnose, die innerhalb eines bestimmten Zeitintervalls auftrat - zum Beispiel den Unterschied zwischen \"Hatten Sie Influenza?\" und \"Hatten Sie in den vergangenen 4 Wochen Influenza?\".\r\n\r\nDie Quelle der Informationen in einer Fragebogenantwort kann in verschiedenen Kontexten variieren, kann jedoch mithilfe des Elements „Information provider“ im Referenzmodell spezifisch identifiziert werden.\r\n\r\nDieser Archetyp wurde entwickelt, um als Screening-Tool oder zur Darstellung einfacher Daten im Fragebogenformat zur Verwendung in Situationen wie einem Krankheitsregister verwendet zu werden. Wenn der Screening-Fragebogen das Vorhandensein eines Problems oder einer Diagnose identifiziert, wird empfohlen, dass das klinische System die spezifischen Details über das Problem oder die Diagnose (wie z. B. das Datum der klinischen Feststellung) unter Verwendung des Archetyps EVALUATION.problem_diagnosis darstellt und beibehält.",
+          "misuse" : "Darf nicht verwendet werden, um Details zum Vorhanden oder Nicht-Vorhanden eines Problems oder einer Diagnose außerhalb eines Screening-Kontexts darzustellen. Dafür EVALUATION.problem_diagnosis oder EVALUATION.exclusion_specific benutzen.\r\n\r\nDarf nicht verwendet werden, um ein Framework für die Darstellung von Antworten auf vordefinierte Screening-Fragen zu Prozeduren, die in der Vergangenheit durchgeführt wurden, zu erstellen. Dafür OBSERVATION.procedure_screening benutzen.\r\n\r\nDarf nicht verwendet werden, um ein Framework für die Darstellung von Antworten auf vordefinierte Screening-Fragen zu Nebenwirkungen (Adverse Reactions) zu erstellen. Dafür einen angemessenen Archetyp benutzen.\r\n\r\nDarf nicht verwendet werden, um Details zu einer einfachen Auswahlliste darzustellen, in der eine Frage entweder als \"vorhanden\" oder \"unbestimmt\" aufgezeichnet werden kann. Verwenden Sie dazu OBSERVATION.selection_list.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å lage et rammeverk for registrering av svar på forhåndsdefinerte spørsmål om bekymringer, plager, problemer eller diagnoser.",
+          "keywords" : [ "tilstand, sykdom, syndrom, spørreskjema, kartlegging, bekymring, plage" ],
+          "use" : "Brukes for å lage et rammeverk for registrering av svar på forhåndsdefinerte spørsmål om bekymringer, plager, problemer eller diagnoser.\r\nArketypen er løst modellert for å inkludere det bredeste spekteret av bekymringer, plager og problemer, samt diagnoser.\r\n\r\nVanlige bruksområder inkluderer, men er ikke begrenset til:\r\n- Systematiske spørsmål ved konsultasjoner, for eksempel:\r\n--- Diagnostisert med kreft? Ja, Nei, Ukjent.\r\n--- Diagnostisert med Covid 19 eller influensa de siste tolv månedene? Ja, Nei, Ukjent.\r\n- Spesifikke spørsmål relatert til overvåkning av sykdommer.\r\n\r\nSemantikken til denne arketypen er med vilje løst definert, og spørringer etter data i denne arketypen vil normalt bare være hensiktsmessig eller sikkert i konteksten av det spesifikke templatet. I et templat vil hvert dataelement vanligvis døpes om til det (spesifikke) spørsmålet man ønsker svar på. Flere steder er det foreslått verdisett som passer til de vanligste bruksområder, men det er allikevel mulig å tilpasse/endre verdisett for lokal bruk ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN for å harmonere verdisettet til hvert enkelt brukstilfelle.\r\n\r\nEVENT-strukturen fra arketypens referansemodell kan brukes for å spesifisere om spørsmålene relateres til et tidspunkt eller til et tidsintervall.\r\nBruk egne instanser av denne arketypen for å skille mellom spørsmål om prosedyrer som er gjennomførte på et hvilket som helst tidspunkt og spørsmål om prosedyrer som er gjennomført i et tidsintervall. For eksempel; \"Har du influensa?\" sammenlignet med \"Har du hatt influensa de siste 4 ukene?\".\r\n\r\nKilden til informasjonen i et spørreskjema kan variere i ulike kontekster, men kan identifiseres spesifikt ved å benytte \"Information provider\" elementet i openEHR referansemodellen.\r\n\r\nDenne arketypen er laget for å bli brukt i et spørreskjema eller for å registrere enkle strukturerte data til for eksempel et sykdomsregister. Dersom det i kartleggingen identifiseres at et problem eller en diagnose er tilstede, anbefales det at spesifikke detaljer om problemet eller diagnosen (som for eksempel diagnosedato) registreres og lagres i pasientjournalen i arketypen EVALUATION.problem_diagnosis (Problem/diagnose).",
+          "misuse" : "Brukes ikke for å registrere detaljer om tilstedeværelse eller fravær av et problem eller en diagnose utenfor konteksten av kartleggingen. Bruk arketypen EVALUATION.problem_diagnosis eller EVALUATION.exclusion_specific for dette formålet.\r\n\r\nBrukes ikke for å lage et rammeverk for registrering av svar på forhåndsdefinerte spørsmål om gjennomførte prosedyrer, bruk arketypen OBSERVATION.procedure_screening for dette formålet.\r\n\r\nBrukes ikke for å lage et rammeverk for registrering av svar på forhåndsdefinerte spørsmål om overfølsomhetsreaksjoner, bruk arketypen OBSERVATION.adverse_reaction_screening for dette formålet.\r\n\r\nBrukes ikke for å registrere detaljer om en enkel utvalgsliste der et spørsmål kan registreres som enten \"Tilstede\" eller \"Ubestemt\". Bruk arketypen OBSERVATION.selection_list for dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To create a framework for recording answers to pre-defined screening questions about issues, problems or diagnoses.",
+          "keywords" : [ "Condition, state, illness, syndrome, questionnaire, screening, issue" ],
+          "use" : "Use to create a framework for recording answers to pre-defined screening questions about issues, problems or diagnoses. \r\nThis archeype has deliberately been loosely modelled to be inclusive of the broadest range of issues and problems, as well as diagnoses.\r\n\r\nCommon use cases include, but are not limited to:\r\n- Systematic questioning in any consultation, for example:\r\n--- Diagnosed with cancer? Yes, No, Unknown.\r\n--- Diagnosed with COVID 19 or Influenza in the past twelve months? Yes, No, Unknown.\r\n--- Do you have any worries or concerns? Yes, No, Unknown.\r\n- Specific questioning related to disease surveillance.\r\n\r\nThe semantics of this archetype are intentionally loose, and querying this archetype would normally only be useful or safe within the context of each specific template. In a template, each data element would usually be renamed to the specific question asked. Where value sets have been proposed for common use cases, these can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case.\r\n\r\nThe EVENT structure from the reference model can be used to specify whether the questions relate to point in time or over a period of time. Use a separate instance of this archetype to distinguish between a questionnaire recording information about a procedure that has been performed at any time in the past and information about a procedure performed within a specified time interval - for example the difference between \"Do you have influenza?\" compared to \"Have you had influenza in the past 4 weeks?\"\r\n\r\nThe source of the information in a questionnaire response may vary in different contexts but can be specifically identified using the 'Information provider' element in the Reference Model.\r\n\r\nThis archetype has been designed to be used as a screening tool or to record simple questionnaire-format data for use in situations such as a disease registry. If the screening questionnaire identifies the presence of a problem or diagnosis, it is recommended that clinical system record and persist the specific details about the problem or diagnosis (such as the date of clinical recognition) using the EVALUATION.problem_diagnosis archetype.",
+          "misuse" : "Not to be used to record details about the presence or absence of a problem or diagnosis, outside of a screening context. Use EVALUATION.problem_diagnosis or EVALUATION.exclusion_specific for these purposes.\r\n\r\nNot to be used to to create a framework for recording answers to pre-defined screening questions about procedures that has been carried out in the past. Use the OBSERVATION.procedure_screening for this purpose.\r\n\r\nNot to be used to to create a framework for recording answers to pre-defined screening questions about adverse reactions, use an appropriate archetype for this purpose.\r\n\r\nNot to be used to record details about a simple selection list where a question may be recorded as either \"present\" or \"indeterminate\". Use OBSERVATION.selection_list for this purpose.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fr" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fr"
+          },
+          "purpose" : "Créer un cadre pour l'enregistrement des réponses à des questions de dépistage prédéfinies concernant des questions, des problèmes ou des diagnostics.",
+          "keywords" : [ "Condition", "état", "maladie", "syndrome", "questionnaire", "dépistage", "problème" ],
+          "use" : "À utiliser pour créer un cadre permettant d'enregistrer les réponses à des questions prédéfinies sur les enjeux, les problèmes ou les diagnostics. \r\nCet archétype a été délibérément modélisé de manière souple afin d'englober le plus large éventail possible de questions et de problèmes, ainsi que de diagnostics.\r\n\r\nLes cas d'utilisation les plus courants sont, entre autres, les suivants\r\n- L'interrogation systématique lors d'une consultation, par exemple :\r\n--- Diagnostic de cancer ? Oui, Non, Inconnu.\r\n--- Diagnostic de COVID 19 ou de grippe au cours des douze derniers mois ? Oui, Non, Inconnu.\r\n--- Avez-vous des inquiétudes ou des préoccupations ? Oui, Non, Inconnu.\r\n- Questions spécifiques liées à la surveillance des maladies.\r\n\r\nLa sémantique de cet archétype est volontairement floue, et l'interrogation de cet archétype ne serait normalement utile ou sûre que dans le contexte de chaque modèle spécifique. Dans un modèle, chaque élément de données est généralement renommé en fonction de la question spécifique posée. Lorsque des ensembles de valeurs ont été proposés pour des cas d'utilisation courants, ils peuvent être adaptés à un usage local en utilisant les types de données DV_TEXT ou DV_BOOLEAN pour correspondre à chaque cas d'utilisation spécifique.\r\n\r\nLa structure EVENT du modèle de référence peut être utilisée pour spécifier si les questions se rapportent à un moment donné ou à une période de temps. Utilisez une instance distincte de cet archétype pour faire la distinction entre un questionnaire enregistrant des informations sur une procédure effectuée à tout moment dans le passé et des informations sur une procédure effectuée dans un intervalle de temps spécifié - par exemple la différence entre \"Avez-vous la grippe ?\" et \"Avez-vous eu la grippe au cours des 4 dernières semaines ?\"\r\n\r\nLa source des informations contenues dans une réponse à un questionnaire peut varier selon le contexte, mais elle peut être spécifiquement identifiée à l'aide de l'élément \"Fournisseur d'informations\" du modèle de référence.\r\n\r\nCet archétype a été conçu pour être utilisé comme outil de dépistage ou pour enregistrer des données simples sous forme de questionnaire en vue d'une utilisation dans des situations telles qu'un registre des maladies. Si le questionnaire de dépistage identifie la présence d'un problème ou d'un diagnostic, il est recommandé que le système clinique enregistre et conserve les détails spécifiques du problème ou du diagnostic (tels que la date de reconnaissance clinique) en utilisant l'archétype EVALUATION.problem_diagnosis.",
+          "misuse" : "Ne doit pas être utilisé pour créer un cadre permettant d'enregistrer des réponses à des questions de dépistage prédéfinies concernant des procédures qui ont été effectuées dans le passé. Utilisez OBSERVATION.procedure_screening à cette fin.\r\n\r\nNe pas utiliser pour créer un cadre permettant d'enregistrer des réponses à des questions de sélection prédéfinies sur les effets indésirables, utiliser un archétype approprié à cet effet.\r\n\r\nNe pas utiliser pour enregistrer les détails d'une simple liste de sélection où une question peut être enregistrée comme \"présente\" ou \"indéterminée\". Utilisez OBSERVATION.selection_list à cette fin.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Crear una infraestructura per a registrar respostes a les preguntes de detecció predefinides sobre qüestions, problemes o diagnòstics.",
+          "keywords" : [ "Condició", "estat", "malaltia", "síndrome", "sondeig", "detecció", "qüestió" ],
+          "use" : "Utilitzar per a crear una infraestructura per a registrar respostes a les preguntes de detecció predefinides sobre qüestions, problemes o diagnòstics. \r\n\r\nAquest arquetip s'ha modelat deliberadament amb poca exactitud perquè incloure un rang el més ampli possible de qüestions i preguntes, així com de diagnòstics. \r\n\r\nEls casos d’ús més freqüents, però no limitats a: \r\n\r\n-Preguntar sistemàticament en qualsevol consulta. Per exemple: \r\n\r\n---Diagnosticat amb càncer? Sí, No, Desconegut. \r\n\r\n---Diagnosticat amb COVID 19o grip en els últims dotze mesos? Sí, No, Desconegut. \r\n\r\n---Té alguna preocupació? Sí, No, Desconegut. \r\n\r\n-Sondeig específic relacionat amb la vigilància de malalties. \r\n\r\nLa semàntica d’aquest arquetip és intencionalment laxa, i consultar aquest arquetip només serà útil o segur dins del context de cada plantilla específica. En una plantilla, cada element de dades normalment es tornarà a nomenar en una pregunta específica. Quan s’hagi proposat els conjunts de valors per casos d’ús comú, aquests poden adaptar-se per al seu ús local utilitzant DV_TEXT o DV_BOOLEAN per ajustar-se a cada cas d’ús específic. \r\n\r\nL'estructura EVENT del model de referència es pot utilitzar per especificar si les preguntes estan relacionades a un moment donat o a un període de temps. Utilitzar una instància separada d’aquest arquetip per a distingir entre un sondeig que registra informació sobre un procediment que s’ha realitzat en qualsevol moment del passat i la informació sobre un procediment dins d’un interval de temps específic. Per exemple, la diferència entre “Vostè té grip?” comparat amb “Vostè ha tingut grip en les últimes 4 setmanes?” \r\n\r\nLa font d’informació en una resposta al sondeig pot variar en diferents contexts, però es pot identificar utilitzant l’element “Proveïdor d’informació” del Model de Referència. \r\n\r\nAquest arquetip s’ha dissenyat per a utilitzar-lo com ferramenta de detecció o per a registrar dades senzilles en format de sondeig per al seu ús en situacions com un registre de malalties. Si el sondeig de detecció identifica la presència d’un problema o diagnòstic, es recomana que es registri el sistema clínic i continuï els detalls específics sobre el problema o diagnòstic (com la data de reconeixement clínic), utilitzant l’arquetip EVALUATION.problem_diagnosis.",
+          "misuse" : "No utilitzar per a registrar detalls sobre la presència o absència d'un problema o diagnòstic fora del context de l'objectiu de detecció. Utilitzar EVALUATION.problem_diagnosis o EVALUATION.exclusion_specific per aquest propòsit. \r\n\r\nNo utilitzar per a crear una infraestructura per a registrar respostes a les preguntes de detecció predefinides sobre els procediments que s'han realitzat en el passat. Utilitzar OBSERVATION.procedure_screening per aquest propòsit. \r\n\r\nNo utilitzar per a crear una infraestructura per a registrar respostes a les preguntes de detecció predefinides sobre reaccions adverses. Utilitzar un arquetip apropiat per aquest propòsit. \r\n\r\nNo utilitzar per a registrar dades sobre una llista de selecció simple on una pregunta es pot enregistrar tant com \"\"present\"\" o \"\"indeterminada\"\". Utilitzar OBSERVATION.selection_list per aquest propòsit.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nl"
+          },
+          "purpose" : "*To create a framework for recording answers to pre-defined screening questions about problems or diagnoses.(en)",
+          "keywords" : [ "*Condition, state, illness, syndrome, questionnaire, screening, issue (en)" ],
+          "use" : "*Use to create a framework for recording answers to pre-defined screening questions about issues, problems or diagnoses. \r\nThis archeype has deliberately been loosely modelled to be inclusive of the broadest range of issues and problems, as well as diagnoses.\r\n\r\nCommon use cases include, but are not limited to:\r\n- Systematic questioning in any consultation, for example:\r\n--- Diagnosed with cancer? Yes, No, Unknown.\r\n--- Diagnosed with COVID 19 or Influenza in the past twelve months? Yes, No, Unknown.\r\n--- Do you have any worries or concerns? Yes, No, Unknown.\r\n- Specific questioning related to disease surveillance.\r\n\r\nThe semantics of this archetype are intentionally loose, and querying this archetype would normally only be useful or safe within the context of each specific template. In a template, each data element would usually be renamed to the specific question asked. Where value sets have been proposed for common use cases, these can be adapted for local use by using the 'text' choice to match each specific use case.\r\n\r\nThe EVENT structure from the reference model can be used to specify whether the questions relate to point in time or over a period of time. Use a separate instance of this archetype to distinguish between a questionnaire recording information about a procedure that has been performed at any time in the past and information about a procedure performed within a specified time interval - for example the difference between \"Do you have influenza?\" compared to \"Have you had influenza in the past 4 weeks?\"\r\n\r\nThe source of the information in a questionnaire response may vary in different contexts but can be specifically identified using the 'Information provider' element in the Reference Model.\r\n\r\nThis archetype has been designed to be used as a screening tool or to record simple questionnaire-format data for use in situations such as a disease registry. If the screening questionnaire identifies the presence of a problem or diagnosis, it is recommended that clinical system record and persist the specific details about the problem or diagnosis (such as the date of clinical recognition) using the EVALUATION.problem_diagnosis archetype. (en)",
+          "misuse" : "*Not to be used to record details about the presence or absence of a problem or diagnosis, outside of a screening context. Use EVALUATION.problem_diagnosis or EVALUATION.exclusion_specific for these purposes.\r\n\r\nNot to be used to to create a framework for recording answers to pre-defined screening questions about procedures that has been carried out in the past. Use the OBSERVATION.procedure_screening for this purpose.\r\n\r\nNot to be used to to create a framework for recording answers to pre-defined screening questions about adverse reactions, use an appropriate archetype for this purpose.\r\n\r\nNot to be used to record details about a simple selection list where a question may be recorded as either \"present\" or \"indeterminate\". Use OBSERVATION.selection_list for this purpose. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-OBSERVATION.problem_screening.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-OBSERVATION.ovl-problem_screening-000.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "OBSERVATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "HISTORY",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "events",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "POINT_EVENT",
+              "occurrences" : "0..1",
+              "nodeId" : "at0002.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "data",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "nodeId" : "at0003",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0034.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "0..1",
+                              "terminologyId" : {
+                                "value" : "no.onk.kart.tidligere_kreft"
+                              },
+                              "constraint" : [ ],
+                              "selectedTerminologies" : [ "no.onk.kart.tidligere_kreft" ],
+                              "includedExternalTerminologyCodes" : [ {
+                                "terminologyId" : "no.onk.kart.tidligere_kreft",
+                                "code" : "1",
+                                "value" : "Sarkom"
+                              }, {
+                                "terminologyId" : "no.onk.kart.tidligere_kreft",
+                                "code" : "2",
+                                "value" : "Kreft i hode og hals"
+                              }, {
+                                "terminologyId" : "no.onk.kart.tidligere_kreft",
+                                "code" : "3",
+                                "value" : "Hjernesvulst"
+                              }, {
+                                "terminologyId" : "no.onk.kart.tidligere_kreft",
+                                "code" : "4",
+                                "value" : "Brystkreft"
+                              }, {
+                                "terminologyId" : "no.onk.kart.tidligere_kreft",
+                                "code" : "5",
+                                "value" : "Lungekreft"
+                              }, {
+                                "terminologyId" : "no.onk.kart.tidligere_kreft",
+                                "code" : "6",
+                                "value" : "Kreft i fordøyelsessystemet"
+                              }, {
+                                "terminologyId" : "no.onk.kart.tidligere_kreft",
+                                "code" : "7",
+                                "value" : "Gynekologisk kreft"
+                              }, {
+                                "terminologyId" : "no.onk.kart.tidligere_kreft",
+                                "code" : "8",
+                                "value" : "Kreft i nyre og urinveier"
+                              }, {
+                                "terminologyId" : "no.onk.kart.tidligere_kreft",
+                                "code" : "9",
+                                "value" : "Benmargs- og blodkreft"
+                              }, {
+                                "terminologyId" : "no.onk.kart.tidligere_kreft",
+                                "code" : "10",
+                                "value" : "Lymfom"
+                              }, {
+                                "terminologyId" : "no.onk.kart.tidligere_kreft",
+                                "code" : "11",
+                                "value" : "Hudkreft"
+                              }, {
+                                "terminologyId" : "no.onk.kart.tidligere_kreft",
+                                "code" : "12",
+                                "value" : "Kreft i mannlige kjønnsorganer"
+                              }, {
+                                "terminologyId" : "no.onk.kart.tidligere_kreft",
+                                "code" : "13",
+                                "value" : "Kreft i endokrine kjertler"
+                              }, {
+                                "terminologyId" : "no.onk.kart.tidligere_kreft",
+                                "code" : "14",
+                                "value" : "Nevroendokrin kreft"
+                              }, {
+                                "terminologyId" : "no.onk.kart.tidligere_kreft",
+                                "code" : "15",
+                                "value" : "Barnekreft"
+                              }, {
+                                "terminologyId" : "no.onk.kart.tidligere_kreft",
+                                "code" : "16",
+                                "value" : "Øyekreft"
+                              }, {
+                                "terminologyId" : "no.onk.kart.tidligere_kreft",
+                                "code" : "17",
+                                "value" : "Svulst av ukjent opprinnelse / Annet"
+                              } ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..1",
+                      "nodeId" : "at0028.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "1..1",
+                              "terminologyId" : {
+                                "value" : "local"
+                              },
+                              "constraint" : [ "ac0.9" ],
+                              "selectedTerminologies" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0043.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "nodeId" : "at0022",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0004.1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0005.1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "1..1",
+                                  "terminologyId" : {
+                                    "value" : "local"
+                                  },
+                                  "constraint" : [ "ac0.10" ],
+                                  "selectedTerminologies" : [ ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..1",
+                          "nodeId" : "at0040.1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_DATE_TIME",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0025.1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Tidligere kreft",
+            "description" : "Series of questions and associated answers used to screen for issues, problems or diagnoses.",
+            "comment" : "The answers may be self-reported."
+          },
+          "at0028.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028.1",
+            "text" : "Har pasient hatt kreft tidligere?",
+            "description" : "Is there a history of any issues, problems or diagnoses relevant for the screening purpose?",
+            "comment" : "In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Kreftdiagnose",
+            "description" : "Identification of an issue, problem or diagnosis, or grouping of issues, problems or diagnoses, by name.",
+            "comment" : "Coding of the 'Problem/diagnosis name' with a terminology is preferred, where possible."
+          },
+          "at0040.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0040.1",
+            "text" : "Dato bekreftet",
+            "description" : "Indication of timing related to the issue, problem or diagnosis.",
+            "comment" : "The 'Timing' data element has deliberately been loosely modelled to support the myriad of ways that it can be used in questionnaires to capture when an issue, problem or diagnosis occured. The specific and intended semantics can be further clarified in a template. For example: the actual date and/or time; the start and stop time for when the issue, problem or diagnosis occured; the interval of time during which the issue, problem or diagnosis occured; the duration of the issue, problem or diagnosis; the age of the individual at the time of the issue, problem or diagnosis; or the duration of time since it occurred. A partial date is valid, using the DV_DATE_TIME data type, to record only a year."
+          },
+          "at0025.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025.1",
+            "text" : "Merknad",
+            "description" : "Additional narrative about the specific issue, problem or diagnosis question, not captured in other fields."
+          },
+          "ac0.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.9",
+            "description" : ""
+          },
+          "ac0.10" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.10",
+            "description" : ""
+          }
+        },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Tidligere kreft",
+            "description" : "Spørsmål og tilhørende svar som brukes til å kartlegge bekymringer, plager, problemer eller diagnoser."
+          },
+          "at0028.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028.1",
+            "text" : "Har pasient hatt kreft tidligere?",
+            "description" : "Finnes det noen bekymringer, plager, problemer eller diagnoser. som er innenfor kartleggingsformålet?"
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Kreftdiagnose",
+            "description" : "Navnet på en bekymring, plage, problem eller diagnose, eller grupper av bekymringer, plager, problemer eller diagnoser.",
+            "comment" : "Koding av problem/diagnosenavnet med en terminologi foretrekkes, der det er mulig."
+          },
+          "at0040.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0040.1",
+            "text" : "Dato bekreftet",
+            "description" : "Tidsangivelsen for bekymringen, plagen, problemet eller diagnosen."
+          },
+          "at0025.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025.1",
+            "text" : "Merknad",
+            "description" : "Ytterligere fritekst om det spesifikke problem- eller diagnosespørsmålet som ikke er omfattet av andre felt."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005",
+            "text" : "Tilstede?",
+            "description" : "Har den spesifikke bekymring, plage, problem eller diagnose noen gang vært til stede?"
+          },
+          "at0034.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0034",
+            "text" : "Kartleggingsformål",
+            "description" : "Konteksten eller årsaken for kartleggingen.",
+            "comment" : "I prosjektet strukturert kreftjournal er det etablert et eget kodeverk for kartleggingsformålet no.onk.kart.tidligere_kreft."
+          },
+          "ac0.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.9",
+            "description" : ""
+          },
+          "ac0.10" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.10",
+            "description" : ""
+          }
+        },
+        "de" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Tidligere kreft",
+            "description" : "Eine Reihe von Fragen und zugehörigen Antworten, die zum Screening auf Vorhandensein von Beschwerden, Problemen oder Diagnosen verwendet werden.",
+            "comment" : "Die Antworten können selbst berichtet werden."
+          },
+          "at0028.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028.1",
+            "text" : "Har pasient hatt kreft tidligere?",
+            "description" : "Gibt es eine Vorgeschichte an Beschwerden, Problemen oder Diagnosen im Zusammenhang mit dem Screening-Zweck?",
+            "comment" : "In einem Template würde das Datenelement normalerweise in die spezifische gestellte Frage umbenannt. Der vorgeschlagene Wertesatz kann für die lokale Verwendung angepasst werden, indem die Datentypauswahl DV_TEXT oder DV_BOOLEAN verwendet wird, um jedem spezifischen Anwendungsfall zu entsprechen."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Kreftdiagnose",
+            "description" : "Identifizierung einer Beschwerde, eines Problems, einer Diagnose oder einer Gruppe von Beschwerden, Problemen, Beschwerden, namentlich.",
+            "comment" : "Kodierung von \"Name des Problems/ der Diagnose\" mit einer Terminologie wird nach Möglichkeit bevorzugt."
+          },
+          "at0040.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0040.1",
+            "text" : "Dato bekreftet",
+            "description" : "Angabe des Zeitpunkts im Zusammenhang mit der Frage, dem Problem oder der Diagnose.",
+            "comment" : "Das Datenelement \"Zeitpunkt\" wurde bewusst locker modelliert, um die unzähligen Möglichkeiten zu unterstützen, mit denen es in Fragebögen verwendet werden kann, um zu erfassen, wann eine Frage, ein Problem oder eine Diagnose aufgetreten ist. Die spezifische und beabsichtigte Semantik kann in einer Vorlage weiter geklärt werden. Zum Beispiel: das tatsächliche Datum und/oder die Uhrzeit; die Start- und Endzeit, zu der das Problem oder die Diagnose auftrat; der Zeitraum, in dem das Problem oder die Diagnose auftrat; die Dauer des Problems oder der Diagnose; das Alter der Person zum Zeitpunkt des Problems oder der Diagnose; oder die Zeitdauer seit dem Auftreten des Problems. Unter Verwendung des Datentyps DV_DATE_TIME ist ein Teildatum zulässig, um nur ein Jahr zu erfassen."
+          },
+          "at0025.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025.1",
+            "text" : "Merknad",
+            "description" : "Zusätzliche Beschreibung zur zu konkretem Problem, konkreter Beschwerde oder Diagnose, die nicht in den übrigen Feldern abgedeckt wurde."
+          },
+          "ac0.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.9",
+            "description" : ""
+          },
+          "ac0.10" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.10",
+            "description" : ""
+          }
+        },
+        "nl" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Tidligere kreft",
+            "description" : "*Series of questions and associated answers used to screen for issues, problems or diagnoses. (en)",
+            "comment" : "*The answers may be self-reported.(en)"
+          },
+          "at0028.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028.1",
+            "text" : "Har pasient hatt kreft tidligere?",
+            "description" : "*Is there a history of any issues, problems or diagnoses relevant for the screening purpose? (en)",
+            "comment" : "*In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the 'text' choice to match each specific use case. (en)"
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Kreftdiagnose",
+            "description" : "Name of a problem or diagnosis; or grouping of problems or diagnoses.(en)",
+            "comment" : "*Coding of the Problem/Diagnosis name with a terminology is preferred, where possible.(en)"
+          },
+          "at0040.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0040.1",
+            "text" : "Dato bekreftet",
+            "description" : "*Indication of timing related to the issue, problem or diagnosis. (en)",
+            "comment" : "*The 'Timing' data element has deliberately been loosely modelled to support the myriad of ways that it can be used in questionnaires to capture when an issue, problem or diagnosis occured. The specific and intended semantics can be further clarified in a template. For example: the actual date and/or time; the start and stop time for when the issue, problem or diagnosis occured; the interval of time during which the issue, problem or diagnosis occured; the duration of the issue, problem or diagnosis; the age of the individual at the time of the issue, problem or diagnosis; or the duration of time since it occurred. A partial date is valid, using the DV_DATE_TIME data type, to record only a year. (en)"
+          },
+          "at0025.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025.1",
+            "text" : "Merknad",
+            "description" : "Additional narrative about the specified problem or diagnosis, not captured in other fields.(en)"
+          },
+          "ac0.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.9",
+            "description" : ""
+          },
+          "ac0.10" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.10",
+            "description" : ""
+          }
+        },
+        "ca" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Tidligere kreft",
+            "description" : "Sèrie de preguntes i respostes relacionades, utilitzades per a detectar qüestions, problemes o diagnòstics.",
+            "comment" : "Les respostes poden ser autodiagnosticades."
+          },
+          "at0028.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028.1",
+            "text" : "Har pasient hatt kreft tidligere?",
+            "description" : "Hi ha un historial amb qualsevol qüestió, problema o diagnòstic rellevant per a un objectiu de detecció?",
+            "comment" : "En una plantilla, l'element de dades normalment es tornaria a nomenar a la pregunta específica formulada. El conjunt de valors proposats es poden adaptar per a l'ús local utilitzant l'elecció del tipus de dades DV_TEXT o DV_BOOLEAN per ajustar-se a cada cas d'ús específic."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Kreftdiagnose",
+            "description" : "Identificació d'una qüestió, problema o diagnòstic, o grup de qüestions, problemes o diagnòstics, pel seu nom.",
+            "comment" : "Es recomana programar el \"Nom del problema/diagnòstic\" amb una terminologia, sempre que sigui possible."
+          },
+          "at0040.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0040.1",
+            "text" : "Dato bekreftet",
+            "description" : "Indicació de la data/hora relacionada amb la qüestió, problema o diagnòstic.",
+            "comment" : "L'element de dades \"Moment\" s'ha modelat deliberadament de manera imprecisa per donar suport a diverses formes en què els sondejos poden utilitzar-se per a registrar quan va ocórrer una qüestió, problema o diagnòstic. La semàntica específica i prevista es pot aclarir en una plantilla. Per exemple: la data/hora actual; la data d'inici i fi de quan va ocórrer la qüestió, problema o diagnòstic; la duració de la qüestió, problema o diagnòstic; l'interval de temps durant el qual es va produir la qüestió, problema o diagnòstic; l'edat de la persona en el moment de la qüestió, problema o diagnòstic; o la duració de temps des que va ocórrer. Una dada parcial és vàlida, utilitzant el tipus de dada DV_DATA_TIME per registrar només un any."
+          },
+          "at0025.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025.1",
+            "text" : "Merknad",
+            "description" : "Informació addicional sobre una qüestió específica, problema o pregunta de diagnòstic, no recollida en altres caselles."
+          },
+          "ac0.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.9",
+            "description" : ""
+          },
+          "ac0.10" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.10",
+            "description" : ""
+          }
+        },
+        "fr" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Tidligere kreft",
+            "description" : "Série de questions et de réponses associées utilisées pour dépister des questions, des problèmes ou des diagnostics.",
+            "comment" : "Les réponses peuvent être autodéclarées."
+          },
+          "at0028.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028.1",
+            "text" : "Har pasient hatt kreft tidligere?",
+            "description" : "Existe-t-il des antécédents de questions, de problèmes ou de diagnostics en rapport avec l'objectif du dépistage ?",
+            "comment" : "Dans un modèle, l'élément de données est généralement renommé en fonction de la question spécifique posée. L'ensemble de valeurs proposé peut être adapté à un usage local en utilisant les types de données DV_TEXT ou DV_BOOLEAN pour répondre à chaque cas d'utilisation spécifique."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Kreftdiagnose",
+            "description" : "Identification d'une question, d'un problème ou d'un diagnostic, ou d'un groupe de questions, de problèmes ou de diagnostics, par leur nom.",
+            "comment" : "Le codage du \"nom du problème/diagnostic\" à l'aide d'une terminologie est préférable, dans la mesure du possible."
+          },
+          "at0040.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0040.1",
+            "text" : "Dato bekreftet",
+            "description" : "Indication du moment où la question, le problème ou le diagnostic se pose.",
+            "comment" : "L'élément de données \"Moment\" a été délibérément modélisé de manière lâche afin de prendre en charge la myriade de façons dont il peut être utilisé dans les questionnaires pour saisir le moment où une question, un problème ou un diagnostic s'est produit. La sémantique spécifique et prévue peut être précisée dans un modèle. Par exemple : la date et/ou l'heure réelle ; l'heure de début et de fin de la question, du problème ou du diagnostic ; l'intervalle de temps pendant lequel la question, le problème ou le diagnostic s'est produit ; la durée de la question, du problème ou du diagnostic ; l'âge de la personne au moment de la question, du problème ou du diagnostic ; ou la durée écoulée depuis la survenue de la question, du problème ou du diagnostic. Une date partielle est valable, en utilisant le type de données DV_DATE_TIME, pour enregistrer seulement une année."
+          },
+          "at0025.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025.1",
+            "text" : "Merknad",
+            "description" : "Description supplémentaire de la question spécifique, du problème ou de la question de diagnostic, qui n'a pas été saisie dans d'autres champs."
+          },
+          "ac0.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.9",
+            "description" : ""
+          },
+          "ac0.10" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.10",
+            "description" : ""
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0031", "at0032", "at0033" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0023", "at0024", "at0027", "at0045" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
+          "members" : [ "at0023", "at0024", "at0027", "at0045" ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
+          "members" : [ "at0023", "at0027", "at0045" ]
+        },
+        "ac0.5" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.5",
+          "members" : [ "at0023", "at0045" ]
+        },
+        "ac0.6" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.6",
+          "members" : [ "at0023" ]
+        },
+        "ac0.7" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.7",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.8" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.8",
+          "members" : [ "at0023", "at0024", "at0027" ]
+        },
+        "ac0.9" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.9",
+          "members" : [ "at0031", "at0032", "at0033" ]
+        },
+        "ac0.10" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.10",
+          "members" : [ "at0023", "at0024", "at0027" ]
+        }
+      }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "693fe4dd-eb77-416f-a3ed-6b4b0d6ac4de",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Natalia Strauch, Darin Leonhardt",
+        "organisation" : "Medizinische Hochschule Hannover, PLRI für medizinische Informatik/ Medizinische Hochschule",
+        "email" : "Strauch.Natalia@mh-hannover.de, leonhardt.darin@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Marit Alice Venheim, Silje Ljosland Bakke, John Tore Valand",
+        "organisation" : "Helse Vest IKT, Helse Vest IKT AS, Helse Bergen",
+        "email" : "marit.alice.venheim@helse-vest-ikt.no, silje.ljosland.bakke@helse-vest-ikt.no, john.tore.valand@helse-bergen.no, john.tore.valand@helse-vest-ikt.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "fr"
+      },
+      "author" : {
+        "name" : "Vanessa Pereira",
+        "organisation" : "Luxembourg Institute of Health (LIH)",
+        "email" : "vanessapereira@protonmail.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nl"
+      },
+      "author" : {
+        "name" : "Martijn van Eenennaam",
+        "organisation" : "Nedap Healthcare",
+        "email" : "martijn.vaneenennaam@nedap.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Manuel José Zafra Doménech",
+        "organisation" : "TRADCREA, S.L.",
+        "email" : "mzafra@tradcrea.com"
+      },
+      "otherDetails" : {
+        "other_contributors" : "Servei Català de la Salut"
+      }
+    } ]
+  } ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "en"
+  },
+  "translations" : [ {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "de"
+    },
+    "author" : {
+      "name" : "Ramona Wellmann",
+      "organisation" : "Medizinische Hochschule Hannover",
+      "email" : "wellmann.ramona@mh-hannover.de"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ru"
+    },
+    "author" : {
+      "name" : "Art Latyp Латыпов Артур Шамилевич",
+      "organisation" : "RusBITech РусБИТех, Москва"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "sv"
+    },
+    "author" : {
+      "name" : "Daniel Hall",
+      "organisation" : "Region Östergötland",
+      "email" : "daniel.hall@regionostergotland.se"
+    },
+    "accreditation" : "Åsa Skagerhult, Lisa Axelsson",
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "es-ar"
+    },
+    "author" : {
+      "name" : "Alan March",
+      "organisation" : "Hospital Universitario Austral, Buenos Aires, Argentina"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "author" : {
+      "einar.fosse@unn.no" : "einar.fosse@unn.no",
+      "name" : "Einar Fosse",
+      "organisation" : "Norwegian Centre for Integrated Care and Telemedicine, Tromsø, Norway"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "pt-br"
+    },
+    "author" : {
+      "name" : "Vladimir Pizzo",
+      "organisation" : "Hospital Sírio Libanês, São Paulo, Brazil",
+      "email" : "vladimir.pizzo@hsl.org.br"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "sl"
+    },
+    "author" : {
+      "name" : "?"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "it"
+    },
+    "author" : {
+      "name" : "Paolo Anedda",
+      "organisation" : "Inpeco",
+      "email" : "paolo.anedda@inpeco.com"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "fr"
+    },
+    "author" : {
+      "name" : "Vanessa Pereira",
+      "organisation" : "Better - Pathfinder",
+      "email" : "vanessapereira@protonmail.com"
+    },
+    "otherDetails" : { }
+  } ]
+}

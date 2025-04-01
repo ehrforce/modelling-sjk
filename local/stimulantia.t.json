@@ -21,9 +21,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "849892ea2ce005ae8c4a643f378b283a",
+      "MD5-CAM-1.0.1" : "94376c78dee9e9ac58b8fdc251c40ff0",
       "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73",
-      "sem_ver" : "21.0.0",
+      "sem_ver" : "22.0.0",
       "build_uid" : "",
       "original_language" : "ISO_639-1::nb"
     },
@@ -448,6 +448,12 @@
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
             "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0043.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
@@ -1013,6 +1019,20 @@
             "code" : "at0000.1",
             "text" : "Alkohol",
             "description" : "Sammendrag eller detaljer om et individs tidligere og nåværende bruk av alkohol."
+          },
+          "at0043" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0043",
+            "text" : "Overordnet beskrivelse",
+            "description" : "Oppsummering i fritekst om et individs overordnede mønster og historie knyttet til alkoholinntak.",
+            "comment" : "Bruk dette elementet for å registrere en beskrivelse i fritekst om drikkevaner for dette individet."
+          },
+          "at0043.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0043.1",
+            "text" : "Overordnet beskrivelse",
+            "description" : "Oppsummering i fritekst om et individs overordnede mønster og historie knyttet til alkoholinntak.",
+            "comment" : "Bruk dette elementet for å registrere en beskrivelse i fritekst om drikkevaner for dette individet."
           }
         },
         "sv" : {
@@ -1266,6 +1286,12 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0043.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0015.1",
               "attributes" : [ ],
@@ -1351,6 +1377,36 @@
                     "children" : [ {
                       "@type" : "C_INTEGER",
                       "rmTypeName" : "Integer",
+                      "occurrences" : "1..1",
+                      "constraint" : [ {
+                        "lower" : 0,
+                        "lowerIncluded" : true,
+                        "upperIncluded" : false,
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0074.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_COUNT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "magnitude",
+                    "children" : [ {
+                      "@type" : "C_INTEGER",
+                      "rmTypeName" : "INTEGER",
                       "occurrences" : "1..1",
                       "constraint" : [ {
                         "lower" : 0,
@@ -1558,6 +1614,34 @@
             "code" : "at0000.1",
             "text" : "Røyk",
             "description" : "Sammendrag eller detaljer om et individs tidligere og nåværende tobakksrøykevaner."
+          },
+          "at0043" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0043",
+            "text" : "Overordnet beskrivelse",
+            "description" : "Fritekstsammendrag om individets overordnede røykemønster og historikk.",
+            "comment" : "Bruk dette datalementet til å registrere en fritekstbeskrivelse av individets tobakksrøykevaner."
+          },
+          "at0074" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0074",
+            "text" : "Samlet pakkeår",
+            "description" : "Anslått kumulativ mengde av alle tobakkstyper som er røykt.",
+            "comment" : "Anslått kumulativ mengde av alle tobakkstyper som er røykt."
+          },
+          "at0043.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0043.1",
+            "text" : "Overordnet beskrivelse",
+            "description" : "Fritekstsammendrag om individets overordnede røykemønster og historikk.",
+            "comment" : "Bruk dette datalementet til å registrere en fritekstbeskrivelse av individets tobakksrøykevaner."
+          },
+          "at0074.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0074.1",
+            "text" : "Samlet pakkeår",
+            "description" : "Anslått kumulativ mengde av alle tobakkstyper som er røykt.",
+            "comment" : "Anslått kumulativ mengde av alle tobakkstyper som er røykt."
           }
         },
         "sv" : {
@@ -1763,6 +1847,12 @@
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
             "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0043.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
@@ -1992,6 +2082,20 @@
             "code" : "at0000.1",
             "text" : "Røykfri tobakk/snus",
             "description" : "Sammendrag eller varig (persistent) informasjon om individets bruk av røykfri tobakk."
+          },
+          "at0043" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0043",
+            "text" : "Overordnet beskrivelse",
+            "description" : "Fritekstsammendrag om individets overordnede bruksmønster og historikk for røykfri tobakk.",
+            "comment" : "Bruk dette datalementet til å registrere en fritekstbeskrivelse av individets bruk av røykfri tobakk.\n"
+          },
+          "at0043.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0043.1",
+            "text" : "Overordnet beskrivelse",
+            "description" : "Fritekstsammendrag om individets overordnede bruksmønster og historikk for røykfri tobakk.",
+            "comment" : "Bruk dette datalementet til å registrere en fritekstbeskrivelse av individets bruk av røykrfri tobakk."
           }
         },
         "sv" : {
@@ -2177,6 +2281,12 @@
                   "attributeTuples" : [ ]
                 } ]
               } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0007.1",
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
@@ -2657,8 +2767,21 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Sammendrag andre substanser",
-            "description" : "Sammendrag eller varig (persistent) informasjon om bruksmønsteret individet vanligvis har av en spesifikk substans eller klasse av substanser som kan ha skadelige effekter på individets helse eller sosiale velferd.",
-            "comment" : "Tobakksrøyking, bruk av røykfri tobakk, alkoholbruk, damping (vaping) og administrasjon av medikamenter i henhold til etablerte medisinske retningslinjer og standarder er bevisst holdt utenfor konseptet, og skal registreres ved å bruke andre arketyper laget for formålet."
+            "description" : "Sammendrag eller varig (persistent) informasjon om bruksmønsteret individet vanligvis har av en spesifikk substans eller klasse av substanser som kan ha skadelige effekter på individets helse eller sosiale velferd."
+          },
+          "at0007" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007",
+            "text" : "Overordnet beskrivelse",
+            "description" : "Fritekstsammendrag om bruk av substansen gjennom individets livsløp.",
+            "comment" : "Bruk dette elementet for å registrere en beskrivelse i fritekst om drikkevaner for dette individet."
+          },
+          "at0007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007.1",
+            "text" : "Overordnet beskrivelse",
+            "description" : "Fritekstsammendrag om bruk av substansen gjennom individets livsløp.",
+            "comment" : "Bruk dette datalementet til å registrere en fritekstbeskrivelse av individets bruk av andre substanser."
           }
         }
       },
@@ -2761,6 +2884,12 @@
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
             "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0007.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
@@ -3226,7 +3355,28 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : { },
-        "nb" : { }
+        "nb" : {
+          "at0007" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007",
+            "text" : "Overordnet beskrivelse",
+            "description" : "Fritekstsammendrag om bruk av substansen gjennom individets livsløp.",
+            "comment" : "Bruk dette datalementet til å registrere en fritekstbeskrivelse av individets bruk av en spesifikk substans."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Substansanamnese",
+            "description" : "Sammendrag eller varig (persistent) informasjon om bruksmønsteret individet vanligvis har av en spesifikk substans eller klasse av substanser som kan ha skadelige effekter på individets helse eller sosiale velferd."
+          },
+          "at0007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007.1",
+            "text" : "Overordnet beskrivelse",
+            "description" : "Fritekstsammendrag om bruk av substansen gjennom individets livsløp.",
+            "comment" : "Bruk dette datalementet til å registrere en fritekstbeskrivelse av individets bruk av andre substanser."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },

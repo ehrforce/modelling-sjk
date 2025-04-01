@@ -1,0 +1,92 @@
+= Tidligere kreftbehandling
+
+
+== Metadata
+Brukes for å registrere tidligere kreftbehandling i forbindelse med prosjektet Strukturert kreftjournal.
+
+Småtemplatet kan benyttes utenfor Strukturert kreftjournal hvor det lagres data om tidligere kreftbehandling.
+
+TemplateId:: Tidligere kreftbehandling
+
+
+Archetype:: openEHR-EHR-SECTION.adhoc.v1
+
+
+
+
+:toc:
+
+
+
+
+== Tidligere kreftbehandling
+== Kartlegging om tidligere kreftbehandling
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Kartlegging om tidligere kreftbehandling* + 
+OBSERVATION: _openEHR-EHR-OBSERVATION.procedure_screening.v1_
+
+
+Svarene kan være selvrapporterte.
+|at0034| 0..1| DV_CODED_TEXT | Kartleggingsformål
+a|
+* Sarkom (no.onk.kart.tidligere_kreftbehandling: 1)
+* Kreft i hode og hals (no.onk.kart.tidligere_kreftbehandling: 2)
+* Hjernesvulst (no.onk.kart.tidligere_kreftbehandling: 3)
+* Brystkreft (no.onk.kart.tidligere_kreftbehandling: 4)
+* Lungekreft (no.onk.kart.tidligere_kreftbehandling: 5)
+* Kreft i fordøyelsessystemet (no.onk.kart.tidligere_kreftbehandling: 6)
+* Gynekologisk kreft (no.onk.kart.tidligere_kreftbehandling: 7)
+* Kreft i nyre og urinveier (no.onk.kart.tidligere_kreftbehandling: 8)
+* Benmargs- og blodkreft (no.onk.kart.tidligere_kreftbehandling: 9)
+* Lymfom (no.onk.kart.tidligere_kreftbehandling: 10)
+* Hudkreft (no.onk.kart.tidligere_kreftbehandling: 11)
+* Kreft i mannlige kjønnsorganer (no.onk.kart.tidligere_kreftbehandling: 12)
+* Kreft i endokrine kjertler (no.onk.kart.tidligere_kreftbehandling: 13)
+* Nevroendokrin kreft (no.onk.kart.tidligere_kreftbehandling: 14)
+* Barnekreft (no.onk.kart.tidligere_kreftbehandling: 15)
+* Øyekreft (no.onk.kart.tidligere_kreftbehandling: 16)
+* Svulst av ukjent opprinnelse / Annet (no.onk.kart.tidligere_kreftbehandling: 17)
+
+
+I prosjektet strukturert kreftjournal er det etablert et eget kodeverk for kartleggingsformålet no.onk.kart.tidligere_kreftbehandling.
+|at0028| 0..*| DV_CODED_TEXT | Har pasienten hatt tidligere kreftbehandling?
+a|
+* at0031 -> Ja 
+* at0032 -> Nei 
+* at0038 -> Ukjent 
+|at0041| 0..1| DV_TEXT | Beskrivelse
+a|
+5+a|*Spesifikk prosedyre* + 
+CLUSTER: _at0022_
+|at0004| 1..1| DV_CODED_TEXT | Prosedyrenavn
+a|
+* Kirurgisk fjerning (SNOMED-CT: 128303001)
+* Ablation (SNOMED-CT: 64597002)
+* Stråleterapi (alle typer) (SNOMED-CT: 1287742003)
+* Fotonterapi - Stråle (ekstern) (SNOMED-CT: 1156506007)
+* Protonterapi -Stråle (ekstern) (SNOMED-CT: 169314007)
+* Elektronterapi - Stråle (ekstern) (SNOMED-CT: 45643008)
+* Brakyterapi - Stråle (intern) (SNOMED-CT: 152198000)
+* Radioisotope/systemisk radionuklidebehandling - Stråle (intern) (SNOMED-CT: 399315003)
+* Medikamentell behandling (alle typer) (SNOMED-CT: 416608005)
+* Kjemoterapi - Medikamentell (SNOMED-CT: 367336001)
+* Målrettet - Medikamentell (SNOMED-CT: 347531000202105)
+* Immunterapi - Medikamentell behandling (SNOMED-CT: 76334006)
+* Hormonterapi - Medikamentell (SNOMED-CT: 169413002)
+* Annen behandling (SNOMED-CT: 74964007)
+* Ingen kreftbehandling, aktiv oppfølging (SNOMED-CT: 373818007)
+* Ekseptans (SNOMED-CT: 438758006)
+|at0005| 0..1| DV_CODED_TEXT | Utført?
+a|
+* at0023 -> Ja 
+* at0024 -> Nei 
+* at0039 -> Ukjent 
+|at0037| 0..1| DV_DATE_TIME | Behandlingsstart
+|
+|at0037| 0..1| DV_DATE_TIME | Behandlingsslutt
+|
+|at0025| 0..1| DV_TEXT | Kommentar
+a|
+|====
