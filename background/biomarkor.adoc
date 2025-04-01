@@ -14,6 +14,7 @@ Helsedirektoratet skriver om biomarkører i handlingsprogrammet for prostatakref
 
 > Biomarkører kan anvendes alene eller i kombinasjon på forskjellige tidspunkter under utredning og behandling av prostatakreft. Ett eksempel er risikostratifsering basert på PSA, ISUP-grad gruppe og TNM-stadium.
 
+Se mer her: https://www.helsedirektoratet.no/retningslinjer/prostatakreft-handlingsprogram/markorer/biomarkorer-blod-urin-vev 
 
 == Hvordan modellere biomarkører? 
 Som det kommer frem av det overnevnte kan det sies at biomarkører er en veldig generell definisjon. Datateknisk vil det være stor variasjon i hvordan en biomarkør defineres. Likevel må vi gjøre et forsøk på å gruppere dette. Flere modeller kan være aktuelle. Her prøves følgende metodikk ut: 
