@@ -1,0 +1,29 @@
+= Biomarkør 
+
+Biomarkører er utpekt som viktige datapunkt ved oppfølging av kreftpasientene. Disse skal hentes ut og sendes over til protonregisteret. I det følgnende beskrives nærmere hva som menes med biomarkører. 
+
+== Hva er en biomarkør? 
+I følge Store Norske Leksikon er biomarkører _stoffer eller molekyler som kan måles eller påvises i en kropp eller celle, og som forteller noe om en underliggende tilstand._. 
+
+En genetisk markør defineres som _gen eller en DNA-sekvens med kjent posisjon på et kromosom som brukes til å identifisere et individ eller en art_. Videre er det slik at genetiske markører kan benyttes i diagnostikk. 
+
+
+Helsedirektoratet skriver om biomarkører i handlingsprogrammet for prostatakreft. Der står det: 
+
+> En biomarkør er et stoff eller et molekyl som kan analyseres en kroppsvæske eller vev, og som ut fra markørens tilstedeværelse sier noe om en tilstand i kroppen. I praksis kombineres ofte to eller flere markører før viktige valg om utredning og/eller behandling. Det er utviklet nomogrammer og kalkulatorer som kan være til hjelp for å estimere individuell risiko i en konkret situasjon.
+
+> Biomarkører kan anvendes alene eller i kombinasjon på forskjellige tidspunkter under utredning og behandling av prostatakreft. Ett eksempel er risikostratifsering basert på PSA, ISUP-grad gruppe og TNM-stadium.
+
+
+== Hvordan modellere biomarkører? 
+Som det kommer frem av det overnevnte kan det sies at biomarkører er en veldig generell definisjon. Datateknisk vil det være stor variasjon i hvordan en biomarkør defineres. Likevel må vi gjøre et forsøk på å gruppere dette. Flere modeller kan være aktuelle. Her prøves følgende metodikk ut: 
+
+Kategorier av biomarkører: 
+
+Biokjemiske:: Det vil si tradisjonelle biokjemiske marører (som PSA) som måles på en lab og typisk er representert i lab-arket i journalen 
+
+Genetiske:: Det vil angivelse av definerte genetiske forekomster og hvor resultatet er _Ja - den finnes_  eller _Nei - den finnes ikke_. 
+
+Graderinger/stratifiseringer:: Som f.eks. TNM stadium, ISUP gradering eller annen gradert skala. 
+
+
