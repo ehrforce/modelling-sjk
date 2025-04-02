@@ -27,6 +27,11 @@ Genetiske:: Det vil angivelse av definerte genetiske forekomster og hvor resulta
 
 Graderinger/stratifiseringer:: Som f.eks. TNM stadium, ISUP gradering eller annen gradert skala. 
 
+
+== Biokjemiske 
+
+Analysenavn
+
 == Liste med markører fra OUS 
 Denne listen er generert av ChatGpt frs Ous webside 
 
