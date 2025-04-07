@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "12.0.0",
+      "sem_ver" : "13.0.0",
       "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "419d03fad8cf993c804c4d77e49d5ded"
+      "MD5-CAM-1.0.1" : "b861022ad75a05c9d83613f848606842"
     },
     "details" : {
       "de" : {
@@ -453,76 +453,76 @@
                               "rmTypeName" : "TERMINOLOGY_CODE",
                               "occurrences" : "0..1",
                               "terminologyId" : {
-                                "value" : "no.onk.lab.cns"
+                                "value" : "no.onk.biomarkor"
                               },
                               "constraint" : [ ],
-                              "selectedTerminologies" : [ "no.onk.lab.cns" ],
+                              "selectedTerminologies" : [ "no.onk.biomarkor" ],
                               "includedExternalTerminologyCodes" : [ {
-                                "terminologyId" : "no.onk.lab.cns",
+                                "terminologyId" : "no.onk.biomarkor",
                                 "code" : "1",
                                 "value" : "Sarkom"
                               }, {
-                                "terminologyId" : "no.onk.lab.cns",
+                                "terminologyId" : "no.onk.biomarkor",
                                 "code" : "2",
                                 "value" : "Kreft i hode og hals"
                               }, {
-                                "terminologyId" : "no.onk.lab.cns",
+                                "terminologyId" : "no.onk.biomarkor",
                                 "code" : "3",
                                 "value" : "Hjernesvulst"
                               }, {
-                                "terminologyId" : "no.onk.lab.cns",
+                                "terminologyId" : "no.onk.biomarkor",
                                 "code" : "4",
                                 "value" : "Brystkreft"
                               }, {
-                                "terminologyId" : "no.onk.lab.cns",
+                                "terminologyId" : "no.onk.biomarkor",
                                 "code" : "5",
                                 "value" : "Lungekreft"
                               }, {
-                                "terminologyId" : "no.onk.lab.cns",
+                                "terminologyId" : "no.onk.biomarkor",
                                 "code" : "6",
                                 "value" : "Kreft i fordøyelsessystemet"
                               }, {
-                                "terminologyId" : "no.onk.lab.cns",
+                                "terminologyId" : "no.onk.biomarkor",
                                 "code" : "7",
                                 "value" : "Gynekologisk kreft"
                               }, {
-                                "terminologyId" : "no.onk.lab.cns",
+                                "terminologyId" : "no.onk.biomarkor",
                                 "code" : "8",
                                 "value" : "Kreft i nyre og urinveier"
                               }, {
-                                "terminologyId" : "no.onk.lab.cns",
+                                "terminologyId" : "no.onk.biomarkor",
                                 "code" : "9",
                                 "value" : "Benmargs- og blodkreft"
                               }, {
-                                "terminologyId" : "no.onk.lab.cns",
+                                "terminologyId" : "no.onk.biomarkor",
                                 "code" : "10",
                                 "value" : "Lymfom"
                               }, {
-                                "terminologyId" : "no.onk.lab.cns",
+                                "terminologyId" : "no.onk.biomarkor",
                                 "code" : "11",
                                 "value" : "Hudkreft"
                               }, {
-                                "terminologyId" : "no.onk.lab.cns",
+                                "terminologyId" : "no.onk.biomarkor",
                                 "code" : "12",
                                 "value" : "Kreft i mannlige kjønnsorganer"
                               }, {
-                                "terminologyId" : "no.onk.lab.cns",
+                                "terminologyId" : "no.onk.biomarkor",
                                 "code" : "13",
                                 "value" : "Kreft i endokrine kjertler"
                               }, {
-                                "terminologyId" : "no.onk.lab.cns",
+                                "terminologyId" : "no.onk.biomarkor",
                                 "code" : "14",
                                 "value" : "Nevroendokrin kreft"
                               }, {
-                                "terminologyId" : "no.onk.lab.cns",
+                                "terminologyId" : "no.onk.biomarkor",
                                 "code" : "15",
                                 "value" : "Barnekreft"
                               }, {
-                                "terminologyId" : "no.onk.lab.cns",
+                                "terminologyId" : "no.onk.biomarkor",
                                 "code" : "16",
                                 "value" : "Øyekreft"
                               }, {
-                                "terminologyId" : "no.onk.lab.cns",
+                                "terminologyId" : "no.onk.biomarkor",
                                 "code" : "17",
                                 "value" : "Svulst av ukjent opprinnelse / Annet"
                               } ]
@@ -1603,11 +1603,11 @@
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "119376003",
-                    "value" : "Vev"
+                    "value" : "Vevsprøve"
                   }, {
                     "terminologyId" : "SNOMED-CT",
-                    "code" : "?",
-                    "value" : "Benmarg"
+                    "code" : "119359002",
+                    "value" : "Benmargsprøve"
                   } ]
                 } ]
               } ],
@@ -1983,7 +1983,7 @@
             "code" : "at0029",
             "text" : "Type prøvemateriale",
             "description" : "Type prøvemateriale.",
-            "comment" : "skrive hva som brukes av code i snomed-ct. \n\n413679007 |Bone marrow fluid (substance)|\n\n\nher vil det bare være blod eller vev. "
+            "comment" : "Designkommentar:\nHer er det brukt Specimen koden i SNOMED-CT \n*119297000\tBlodprøve\n*258450006\tSpinalvæskeprøve\n*119376003\tVevsprøve\n*119359002\tBenmargsprøve\n\n\n"
           },
           "at0007.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -2586,16 +2586,8 @@
                   "selectedTerminologies" : [ "HGNC" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "HGNC",
-                    "code" : "1100",
-                    "value" : "BGC1"
-                  }, {
-                    "terminologyId" : "HGNC",
                     "code" : "HGNC:1100",
-                    "value" : "bgc1"
-                  }, {
-                    "terminologyId" : "HGNC",
-                    "code" : "gen:1100",
-                    "value" : "kromosom8"
+                    "value" : "BRCA1"
                   } ]
                 } ]
               } ],
@@ -2629,16 +2621,12 @@
                   "selectedTerminologies" : [ "SNOMED-CT" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
-                    "code" : "260385009",
-                    "value" : "Negativt"
+                    "code" : "52101004",
+                    "value" : "Påvist (tilstede)"
                   }, {
                     "terminologyId" : "SNOMED-CT",
-                    "code" : "10828004",
-                    "value" : "Positivt"
-                  }, {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "64957009",
-                    "value" : "Usikker"
+                    "code" : "2667000",
+                    "value" : "Ikke påvist (ikke tilstede)"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "385660001",
@@ -2913,7 +2901,7 @@
             "code" : "at0001.1",
             "text" : "Analyseresultat",
             "description" : "Verdien av analyseresultatet.",
-            "comment" : "260373001 | påvist | \n  en   Detected (qualifier value) \n\n2667000 | fraværende| \n   en   Absent (qualifier value) \n \n82334004 | Indeterminate | \n  en   Indeterminate (qualifier value) \n\n419984006 | Inconclusive |  \n  en   Inconclusive (qualifier value) \n\n\nPresent [The target variant is present.]\n[LOINC(2.65)::LA9633-4]\nAbsent [The target variant is absent.]\n[LOINC(2.65)::LA9634-2]\nNo call [No data are available to confirm the presence/absence of the variant.]\n[LOINC(2.65)::LA18198-4]\nIndeterminate [The result is indeterminate.]\n[LOINC(2.65)::LA11884-6]",
+            "comment" : "Vanlig svar fra LOINC\n*Present [The target variant is present.]\n[LOINC(2.65)::LA9633-4]\n*Absent [The target variant is absent.]\n[LOINC(2.65)::LA9634-2]\n*No call [No data are available to confirm the presence/absence of the variant.]\n[LOINC(2.65)::LA18198-4]\n*Indeterminate [The result is indeterminate.]\n[LOINC(2.65)::LA11884-6]\n\nSvar/verdier på norsk (brukt i lab sammenheng)\n*52101004 Påvist (tilstede)\n*2667000 Ikke påvist (ikke tilstede) \n*82334004 Ubestemt (indeterminate) = Variant av usikker begydning \n*?? No call (ingen avlesning) (finnes ingen SNOMED-CT kode)\n\n \n\n\n\n",
             "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
             "fhir_mapping" : "Observation.value[x]"
           },
@@ -2922,7 +2910,7 @@
             "code" : "at0024.1",
             "text" : "Analysenavn",
             "description" : "Navnet på analyseresultatet.",
-            "comment" : "Kodes med HGNC (hugo)",
+            "comment" : "Kodes med HUGO Gene Nomenclature Committee Gene Names (HGNC)\nhttps://www.genenames.org/\nKoden skal være med HGNC:nummer, eks: HGNC:1100 (=BRCA1)",
             "hl7v2_mapping" : "OBX.3",
             "fhir_mapping" : "Observation.code"
           }
@@ -3747,7 +3735,7 @@
             "code" : "at0000",
             "text" : "Anatomisk lokalisering",
             "description" : "Et fysisk sted på eller inne i menneskekroppen.",
-            "comment" : "Hvis du trenger å si hvor du har tatt prøven fra."
+            "comment" : "Designkommentar:\nHvis man ønsker å legge inn hvor prøvematerialet ble tatt fra. Dette gjelder spesielt hvis man ønsker å angi hvilken/hvor en lesjon er anatomisk lokalisert hvis man skal undersøke denne for biokjemiske markører."
           },
           "ac0.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -3761,23 +3749,12 @@
             "code" : "ac0.2",
             "description" : ""
           },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "Navn på kroppssted",
-            "description" : "Navngiving av et enkelt fysisk sted enten på eller i menneskekroppen."
-          },
-          "at0002" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "Kroppsside",
-            "description" : "Den identifiserte kroppssiden."
-          },
           "at0001.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001.1",
             "text" : "Navn på kroppssted",
-            "description" : "Navngiving av et enkelt fysisk sted enten på eller i menneskekroppen."
+            "description" : "Navn på kroppsdelen prøven ble tatt fra.",
+            "comment" : "Designkommentar:\nHvis man ønsker å legge inn hvor prøvematerialet ble tatt fra. Dette gjelder spesielt hvis man ønsker å angi hvilken/hvor en lesjon er anatomisk lokalisert hvis man skal undersøke denne for biokjemiske markører."
           },
           "at0002.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -4630,7 +4607,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0063.1",
             "text" : "Rekvisisjonsnummer",
-            "description" : "Bestillingens/rekvisisjonens lokale identifikator/referansenummer tildelt av tjenesteyter/mottaker, som regel av LIMS."
+            "description" : "Bestillingens/rekvisisjonens ID."
           },
           "at0057.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -4655,7 +4632,8 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005",
             "text" : "Undersøkelsesnavn",
-            "description" : "Navn på laboratorieundersøkelsen som er utført på prøvematerialet."
+            "description" : "Navn på laboratorieundersøkelsen som er utført på prøvematerialet.",
+            "comment" : "Designkommentar:\nHer er det satt genetisk testing som undersøkelsesnavn. \n405824009 - Genetic test (procedure)\n"
           }
         },
         "zh-cn" : {
@@ -6343,8 +6321,12 @@
                     "value" : "Spinalvæskeprøve"
                   }, {
                     "terminologyId" : "SNOMED-CT",
-                    "code" : "?",
-                    "value" : "Benmarg"
+                    "code" : "119376003",
+                    "value" : "Vevsprøve"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "119359002",
+                    "value" : "Benmargsprøve"
                   } ]
                 } ]
               } ],
@@ -6454,12 +6436,20 @@
                   "selectedTerminologies" : [ "SMOMED-CT" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SMOMED-CT",
-                    "code" : "1",
-                    "value" : "blodprøve"
+                    "code" : "82078001",
+                    "value" : "Blodprøvetaking"
                   }, {
                     "terminologyId" : "SMOMED-CT",
-                    "code" : "2",
-                    "value" : "spinalprøve"
+                    "code" : "277762005",
+                    "value" : "Spinalpunksjon"
+                  }, {
+                    "terminologyId" : "SMOMED-CT",
+                    "code" : "86273004",
+                    "value" : "Biopsi"
+                  }, {
+                    "terminologyId" : "SMOMED-CT",
+                    "code" : "14766002",
+                    "value" : "Aspirasjon"
                   } ]
                 } ]
               } ],
@@ -6696,14 +6686,21 @@
             "code" : "at0029",
             "text" : "Type prøvemateriale",
             "description" : "Type prøvemateriale.",
-            "comment" : "skrive hva som brukes av code i snomed-ct. \n\n413679007 |Bone marrow fluid (substance)|\n\n\nher vil det bare være blod eller vev. "
+            "comment" : "Designkommentar:\nHer er det brukt Specimen koden i SNOMED-CT \n*119297000\tBlodprøve\n*258450006\tSpinalvæskeprøve\n*119376003\tVevsprøve\n*119359002\tBenmargsprøve\n"
           },
           "at0007.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0007",
             "text" : "Prøvetakingsmetode",
             "description" : "Prøvetakingsmetoden som er brukt.",
-            "comment" : "Her må man legge inn type biopsier. \nkan ha biopsi på overordnet nivå. Finne kode for dette. \n\nLegge inn type prøvetakning: blodprøve"
+            "comment" : "Designkommentar:\nProsedyrekoder for prøvetakningsmetode:\n*82078001\tBlodprøvetaking\n*277762005\tSpinalpunksjon\n*86273004\tBiopsi\n*14766002\tAspirasjon\n"
+          },
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Strukturert anatomisk lokalisering",
+            "description" : "En strukturert anatomisk lokalisering der prøvematerialet ble tatt fra.",
+            "comment" : "Designkommentar:\nHvis man ønsker å legge inn hvor prøvematerialet ble tatt fra. Dette gjelder spesielt hvis man ønsker å angi hvilken/hvor en lesjon er anatomisk lokalisert hvis man skal undersøke denne for biokjemiske markører."
           }
         },
         "de" : { },
@@ -7354,8 +7351,8 @@
                     "value" : "Positivt"
                   }, {
                     "terminologyId" : "SNOMED-CT",
-                    "code" : "64957009",
-                    "value" : "Usikker"
+                    "code" : "419984006",
+                    "value" : "Inkonklusiv"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "385660001",
@@ -7647,7 +7644,7 @@
             "code" : "at0004",
             "text" : "Veileder for referanseområde",
             "description" : "Veileder for å finne ut om referanseverdien er relevant for dette resultatet. Kan inneholde tekst eller kodet tekstlig råd for om resultatet ligger innenfor normalområdet.",
-            "comment" : "hvis to resultater og man har en verdi som er positive/negativ ut i fra kvantitative mål, kan man bruke dette elementet. "
+            "comment" : "Designkommentar:\nHvis det finnes to resultater og man har en verdi som er positive/negativ ut i fra kvantitative mål, kan man bruke dette elementet. \n\n*For eksempel Rubella IgG: 20 IU/mL   Positiv.\nFørste resultat vil vanligvis være numerisk. Andre resultat en tekststreng. Annet resultat skal kunne utledes av det første ved hjelp av algoritme.\n\n\n"
           }
         },
         "pt-br" : {
@@ -8322,6 +8319,7 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "POINT_EVENT",
+              "occurrences" : "0..1",
               "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -8358,8 +8356,12 @@
                               "selectedTerminologies" : [ "SNOMED-CT" ],
                               "includedExternalTerminologyCodes" : [ {
                                 "terminologyId" : "SNOMED-CT",
-                                "code" : "??",
-                                "value" : "laboratorietest"
+                                "code" : "15220000",
+                                "value" : "Laboratorietest"
+                              }, {
+                                "terminologyId" : "SNOMED-CT",
+                                "code" : "9336009",
+                                "value" : "Kjemisk analyse (kvalitativ og kvantativ)"
                               } ]
                             } ]
                           } ],
@@ -8714,13 +8716,14 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Biomarkør biokjemisk markør",
-            "description" : "Resultat, inkludert funn og laboratoriets tolkning, av en laboratorieundersøkelse utført på prøvemateriale fra et individ eller relatert til individet."
+            "description" : "Biokjemisk biomarkør, vanligvis kalt biokjemisk tumormarkør."
           },
           "at0005.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005",
             "text" : "Undersøkelsesnavn",
-            "description" : "Navn på laboratorieundersøkelsen som er utført på prøvematerialet."
+            "description" : "Navn på laboratorieundersøkelsen som er utført på prøvematerialet.",
+            "comment" : "15220000\t15220000 | Laboratory test |\n116147009\t116147009 | cytologisk test |\n405824009\t405824009 | Genetic test |\n714797009\t714797009 | Histologic test |\n9336009\t9336009 | Chemical test, qualitative and quantitative |\n"
           },
           "at0094.1" : {
             "@type" : "ARCHETYPE_TERM",
