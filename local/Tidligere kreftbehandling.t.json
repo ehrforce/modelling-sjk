@@ -22,10 +22,10 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "8fa4176980e4a0a4710af140b83596a8",
+      "MD5-CAM-1.0.1" : "b26facfacf1c5f9603b691a13ba60015",
       "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73",
       "original_language" : "ISO_639-1::nb",
-      "sem_ver" : "4.0.0",
+      "sem_ver" : "5.0.0",
       "build_uid" : ""
     },
     "details" : {
@@ -38,7 +38,7 @@
           "codeString" : "nb"
         },
         "purpose" : "For å registrere tidligere kreftbehandling i forbindelse med prosjektet Strukturert kreftjournal.\n",
-        "use" : "Brukes for å registrere tidligere kreftbehandling i forbindelse med prosjektet Strukturert kreftjournal.\n\nSmåtemplatet kan benyttes utenfor Strukturert kreftjournal hvor det lagres data om tidligere kreftbehandling.",
+        "use" : "Brukes for å registrere tidligere kreftbehandling i forbindelse med prosjektet Strukturert kreftjournal.\n\nSmåtemplatet kan benyttes utenfor Strukturert kreftjournal hvor det lagres data om tidligere kreftbehandling.\n\nMønsteret må gås igjennom igjen når intervensjonssammendraget er ferdig og publisert",
         "originalResourceUri" : { },
         "otherDetails" : { }
       },
@@ -787,8 +787,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Kartlegging om tidligere kreftbehandling",
-            "description" : "Spørsmål og tilhørende svar som brukes til å kartlegge prosedyrer som er utført.",
-            "comment" : "Svarene kan være selvrapporterte."
+            "description" : "Spørsmål og tilhørende svar som brukes til å kartlegge prosedyrer som er utført."
           },
           "at0028.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -800,13 +799,15 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0037.1",
             "text" : "Behandlingsstart",
-            "description" : "Tidsangivelse for prosedyren."
+            "description" : "Tidsangivelse for prosedyren.",
+            "comment" : "Designkommentar :\nNB! Må ikke endre navn på dette elementet.\nDette pga. uttrekk til sekundærdata"
           },
           "at0037.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0037.2",
             "text" : "Behandlingsslutt",
-            "description" : "Tidsangivelse for prosedyren."
+            "description" : "Tidsangivelse for prosedyren.",
+            "comment" : "Designkommentar :\nNB! Må ikke endre navn på dette elementet.\nDette pga. uttrekk til sekundærdata"
           },
           "at0004.1" : {
             "@type" : "ARCHETYPE_TERM",
