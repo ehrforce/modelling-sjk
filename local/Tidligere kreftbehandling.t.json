@@ -22,10 +22,10 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "84561656a939c329b3bca1a571721731",
+      "MD5-CAM-1.0.1" : "5b5d0925edaae4f84982270c29a2f91b",
       "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73",
       "original_language" : "ISO_639-1::nb",
-      "sem_ver" : "8.0.2",
+      "sem_ver" : "8.0.3",
       "build_uid" : ""
     },
     "details" : {
@@ -844,7 +844,7 @@
           "at0025.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0025.1",
-            "text" : "Kommentar",
+            "text" : "Merknad",
             "description" : "Ytterligere fritekst om den spesifikke behandlingen."
           },
           "at0041.1" : {
