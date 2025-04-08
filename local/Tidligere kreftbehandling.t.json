@@ -22,10 +22,10 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "b26facfacf1c5f9603b691a13ba60015",
+      "MD5-CAM-1.0.1" : "105daa5c48c6eaaaa6161f51fda6fe38",
       "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73",
       "original_language" : "ISO_639-1::nb",
-      "sem_ver" : "7.0.0",
+      "sem_ver" : "8.0.0",
       "build_uid" : ""
     },
     "details" : {
@@ -561,6 +561,12 @@
                       "attributeTuples" : [ ]
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0041.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "CLUSTER",
                       "nodeId" : "at0022",
                       "attributes" : [ {
@@ -720,6 +726,12 @@
                             } ]
                           } ],
                           "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0025.1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
                         } ]
                       } ],
                       "attributeTuples" : [ ]
@@ -799,21 +811,21 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0037.1",
             "text" : "Behandlingsstart",
-            "description" : "Tidsangivelse for prosedyren.",
+            "description" : "Tidsangivelse for når behandlingen startet.",
             "comment" : "Designkommentar :\nNB! Må ikke endre navn på dette elementet.\nDette pga. uttrekk til sekundærdata"
           },
           "at0037.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0037.2",
             "text" : "Behandlingsslutt",
-            "description" : "Tidsangivelse for prosedyren.",
+            "description" : "Tidsangivelse for når behandlingen stoppet.",
             "comment" : "Designkommentar :\nNB! Må ikke endre navn på dette elementet.\nDette pga. uttrekk til sekundærdata"
           },
           "at0004.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0004",
             "text" : "Prosedyrenavn",
-            "description" : "Navnet på en prosedyre eller gruppe av prosedyrer."
+            "description" : "Navnet på behandlingen som er utført."
           },
           "at0005.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -839,6 +851,30 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.8",
             "description" : ""
+          },
+          "at0025" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025",
+            "text" : "Kommentar",
+            "description" : "Eventuell tilleggsinformasjon om den spesifikke behandlingen kan legges til her."
+          },
+          "at0041" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0041",
+            "text" : "Beskrivelse",
+            "description" : "Overordnet "
+          },
+          "at0025.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025.1",
+            "text" : "Kommentar",
+            "description" : "Ytterligere fritekst om d"
+          },
+          "at0041.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0041.1",
+            "text" : "Beskrivelse",
+            "description" : "F"
           }
         },
         "de" : {
