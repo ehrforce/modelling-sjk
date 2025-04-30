@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0",
+      "sem_ver" : "2.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "480d7eef849156b24138c9d1827cf25b",
+      "MD5-CAM-1.0.1" : "b2f4708a471f87ffb8344548f1ff29f2",
       "PARENT:MD5-CAM-1.0.1" : "2805a49bf0fdfa1f033dddff91994ab8"
     },
     "details" : {
@@ -58,7 +58,8 @@
       "children" : [ {
         "@type" : "C_COMPLEX_OBJECT",
         "rmTypeName" : "SECTION",
-        "nodeId" : "at0019",
+        "occurrences" : "0..0",
+        "nodeId" : "at0019.1",
         "attributes" : [ {
           "@type" : "C_ATTRIBUTE",
           "rmAttributeName" : "items",
@@ -72,7 +73,7 @@
           "children" : [ {
             "@type" : "C_ARCHETYPE_ROOT",
             "rmTypeName" : "EVALUATION",
-            "occurrences" : "0..1",
+            "occurrences" : "0..0",
             "nodeId" : "at0.6",
             "attributes" : [ ],
             "attributeTuples" : [ ],
