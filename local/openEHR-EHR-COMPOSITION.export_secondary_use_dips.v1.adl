@@ -31,7 +31,10 @@ description
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
+			purpose = <"Composition archetype that is set up as a DIPS specific report archetype (category 434). This means that data entered into this is not automatically subject to reuse. It must be explicitly set up to retrieve from category 434.">
 			copyright = <"© openEHR Foundation">
+			use = <" Used for data that is to be compiled from different parts of the medical record with a view to secondary use for registers.">
+			misuse = <" Not to be used for primary recording of data in the patient's medical record.">
 		>
 	>
 	other_details = <
@@ -40,7 +43,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"c4bf1f196be5741d76fe9922b9cd7d46">
+		["MD5-CAM-1.0.1"] = <"7992b64110455bb88760d5f0dd3a9006">
 		["build_uid"] = <"1140678d-2808-3167-b600-d40d2e9a9622">
 	>
 
@@ -90,15 +93,15 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"*Eksport for sekundærbruk (nb)">
-					description = <"*Sammendrag av data som trekkes ut for sekundærbruk. For eksempel uttrekk av data til et kvalitetsregister.  (nb)">
+					text = <"Export for secondary use">
+					description = <" Summary of data extracted for secondary use. For example, extraction of data for a quality register.">
 				>
 				["at0001"] = <
 					text = <"Item tree">
 					description = <"@ internal @">
 				>
 				["at0002"] = <
-					text = <"*Tilleggsinformasjon (nb)">
+					text = <"Additional information">
 					description = <"">
 				>
 			>
