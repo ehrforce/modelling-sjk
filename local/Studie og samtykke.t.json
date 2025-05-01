@@ -4,9 +4,12 @@
   "description" : {
     "@type" : "RESOURCE_DESCRIPTION",
     "originalAuthor" : {
-      "date" : "2025-04-29"
+      "date" : "2025-04-29",
+      "name" : "Morten Hørthe",
+      "organisation" : "DIPS AS",
+      "email" : "mho@dips.no"
     },
-    "otherContributors" : [ ],
+    "otherContributors" : [ "Bjørn Næss <bna@dips.no>" ],
     "lifecycleState" : {
       "codeString" : "release_candidate"
     },
@@ -83,6 +86,7 @@
         },
         "purpose" : "Brukes til å angi pasientens status om samtykker og reservasjonsrett, og deltakelse i studier. ",
         "keywords" : [ ],
+        "use" : "Brukes i strukturert journal for kreft. ",
         "originalResourceUri" : { },
         "otherDetails" : { }
       },
