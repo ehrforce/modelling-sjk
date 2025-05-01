@@ -1,15 +1,12 @@
 {
   "@type" : "TEMPLATE",
-  "uid" : "8c333154-a2c3-49af-8f4f-24f037c14c35",
+  "uid" : "753f0ddb-6894-4c79-8c23-e7449f0a2e00",
   "description" : {
     "@type" : "RESOURCE_DESCRIPTION",
     "originalAuthor" : {
-      "date" : "2025-03-26",
-      "organisation" : "DIPS",
-      "name" : "Bjørn Næss",
-      "email" : "bna@dips.no"
+      "date" : "2025-04-23"
     },
-    "otherContributors" : [ "John Tore Valand, Liv Laugen" ],
+    "otherContributors" : [ ],
     "lifecycleState" : {
       "codeString" : "rejected"
     },
@@ -22,8 +19,8 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "96c79121da107ddb88150dd88cf6270e",
-      "PARENT:MD5-CAM-1.0.1" : "2C619AEB7356EC3C65163C23789A74C1",
+      "MD5-CAM-1.0.1" : "638bc9c4b9c2e25072de4a080a440ec9",
+      "PARENT:MD5-CAM-1.0.1" : "D208D25865EF6A8590CAC3E4299A25F4",
       "sem_ver" : "0.1.0",
       "build_uid" : ""
     },
@@ -40,30 +37,6 @@
         "originalResourceUri" : { },
         "otherDetails" : { }
       },
-      "fi" : {
-        "@type" : "RESOURCE_DESCRIPTION_ITEM",
-        "language" : {
-          "terminologyId" : {
-            "value" : "ISO_639-1"
-          },
-          "codeString" : "fi"
-        },
-        "keywords" : [ ],
-        "originalResourceUri" : { },
-        "otherDetails" : { }
-      },
-      "sv" : {
-        "@type" : "RESOURCE_DESCRIPTION_ITEM",
-        "language" : {
-          "terminologyId" : {
-            "value" : "ISO_639-1"
-          },
-          "codeString" : "sv"
-        },
-        "keywords" : [ ],
-        "originalResourceUri" : { },
-        "otherDetails" : { }
-      },
       "nb" : {
         "@type" : "RESOURCE_DESCRIPTION_ITEM",
         "language" : {
@@ -72,10 +45,7 @@
           },
           "codeString" : "nb"
         },
-        "purpose" : "Benyttes for kartlegging av tidligere uønskede hendelser/reaksjoner ved oppstart av behandling/utredning av kreft. ",
-        "keywords" : [ "CTCAE" ],
-        "use" : "Benyttes som baseline registrering av uønskede hendelser. Det skal være hendelser som har inntruffet før behandling/utredning starter ved egen virksomhet. ",
-        "misuse" : "Benyttes ikke for registrering av uønskede hendelser som tilkommer underveis i behandling og utredning. ",
+        "keywords" : [ ],
         "originalResourceUri" : { },
         "otherDetails" : { }
       },
@@ -86,18 +56,6 @@
             "value" : "ISO_639-1"
           },
           "codeString" : "en"
-        },
-        "keywords" : [ ],
-        "originalResourceUri" : { },
-        "otherDetails" : { }
-      },
-      "it" : {
-        "@type" : "RESOURCE_DESCRIPTION_ITEM",
-        "language" : {
-          "terminologyId" : {
-            "value" : "ISO_639-1"
-          },
-          "codeString" : "it"
         },
         "keywords" : [ ],
         "originalResourceUri" : { },
@@ -115,13 +73,25 @@
         "originalResourceUri" : { },
         "otherDetails" : { }
       },
-      "zh-cn" : {
+      "ca" : {
         "@type" : "RESOURCE_DESCRIPTION_ITEM",
         "language" : {
           "terminologyId" : {
             "value" : "ISO_639-1"
           },
-          "codeString" : "zh-cn"
+          "codeString" : "ca"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "nl" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nl"
         },
         "keywords" : [ ],
         "originalResourceUri" : { },
@@ -129,11 +99,11 @@
       }
     }
   },
-  "parentArchetypeId" : "openEHR-EHR-OBSERVATION.symptom_sign_screening.v1",
+  "parentArchetypeId" : "openEHR-EHR-OBSERVATION.problem_screening.v1",
   "differential" : true,
   "archetypeId" : {
     "@type" : "ARCHETYPE_HRID",
-    "value" : "openEHR-EHR-OBSERVATION.symptomsign_screening_questionnaire.v1"
+    "value" : "openEHR-EHR-OBSERVATION.problemdiagnosis_screening_questionnaire.v1"
   },
   "definition" : {
     "@type" : "C_COMPLEX_OBJECT",
@@ -152,7 +122,7 @@
           "children" : [ {
             "@type" : "C_COMPLEX_OBJECT",
             "rmTypeName" : "POINT_EVENT",
-            "occurrences" : "1..1",
+            "occurrences" : "0..1",
             "nodeId" : "at0002.1",
             "attributes" : [ {
               "@type" : "C_ATTRIBUTE",
@@ -201,6 +171,7 @@
                   }, {
                     "@type" : "C_COMPLEX_OBJECT",
                     "rmTypeName" : "ELEMENT",
+                    "occurrences" : "0..1",
                     "nodeId" : "at0028.1",
                     "attributes" : [ {
                       "@type" : "C_ATTRIBUTE",
@@ -218,21 +189,11 @@
                             "terminologyId" : {
                               "value" : "local"
                             },
-                            "constraint" : [ "ac0.1" ],
+                            "constraint" : [ "ac0.7" ],
                             "selectedTerminologies" : [ ]
                           } ]
                         } ],
                         "attributeTuples" : [ ]
-                      }, {
-                        "@type" : "C_COMPLEX_OBJECT",
-                        "rmTypeName" : "DV_TEXT",
-                        "attributes" : [ ],
-                        "attributeTuples" : [ ]
-                      }, {
-                        "@type" : "C_COMPLEX_OBJECT",
-                        "rmTypeName" : "DV_BOOLEAN",
-                        "attributes" : [ ],
-                        "attributeTuples" : [ ]
                       } ]
                     } ],
                     "attributeTuples" : [ ]
@@ -240,43 +201,7 @@
                     "@type" : "C_COMPLEX_OBJECT",
                     "rmTypeName" : "ELEMENT",
                     "occurrences" : "0..0",
-                    "nodeId" : "at0029.1",
-                    "attributes" : [ {
-                      "@type" : "C_ATTRIBUTE",
-                      "rmAttributeName" : "value",
-                      "children" : [ {
-                        "@type" : "C_COMPLEX_OBJECT",
-                        "rmTypeName" : "DV_DATE_TIME",
-                        "attributes" : [ ],
-                        "attributeTuples" : [ ]
-                      }, {
-                        "@type" : "C_COMPLEX_OBJECT",
-                        "rmTypeName" : "DV_INTERVAL<DV_DATE_TIME>",
-                        "attributes" : [ ],
-                        "attributeTuples" : [ ]
-                      }, {
-                        "@type" : "C_COMPLEX_OBJECT",
-                        "rmTypeName" : "DV_TEXT",
-                        "attributes" : [ ],
-                        "attributeTuples" : [ ]
-                      }, {
-                        "@type" : "C_COMPLEX_OBJECT",
-                        "rmTypeName" : "DV_DURATION",
-                        "attributes" : [ ],
-                        "attributeTuples" : [ ]
-                      }, {
-                        "@type" : "C_COMPLEX_OBJECT",
-                        "rmTypeName" : "DV_INTERVAL<DV_DURATION>",
-                        "attributes" : [ ],
-                        "attributeTuples" : [ ]
-                      } ]
-                    } ],
-                    "attributeTuples" : [ ]
-                  }, {
-                    "@type" : "C_COMPLEX_OBJECT",
-                    "rmTypeName" : "ELEMENT",
-                    "occurrences" : "0..0",
-                    "nodeId" : "at0036.1",
+                    "nodeId" : "at0043.1",
                     "attributes" : [ ],
                     "attributeTuples" : [ ]
                   }, {
@@ -284,13 +209,98 @@
                     "rmTypeName" : "CLUSTER",
                     "occurrences" : "0..0",
                     "nodeId" : "at0022.1",
-                    "attributes" : [ ],
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "items",
+                      "children" : [ {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "occurrences" : "0..0",
+                        "nodeId" : "at0005.1",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_CODED_TEXT",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "defining_code",
+                              "children" : [ {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "rmTypeName" : "CODE_PHRASE",
+                                "occurrences" : "1..1",
+                                "terminologyId" : {
+                                  "value" : "local"
+                                },
+                                "constraint" : [ "at0023", "at0024", "at0027", "at0045" ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          }, {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_TEXT",
+                            "attributes" : [ ],
+                            "attributeTuples" : [ ]
+                          }, {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_BOOLEAN",
+                            "attributes" : [ ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "occurrences" : "0..0",
+                        "nodeId" : "at0040.1",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_TEXT",
+                            "attributes" : [ ],
+                            "attributeTuples" : [ ]
+                          }, {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_INTERVAL<DV_DURATION>",
+                            "attributes" : [ ],
+                            "attributeTuples" : [ ]
+                          }, {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_DURATION",
+                            "attributes" : [ ],
+                            "attributeTuples" : [ ]
+                          }, {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_DATE_TIME",
+                            "attributes" : [ ],
+                            "attributeTuples" : [ ]
+                          }, {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_INTERVAL<DV_DATE_TIME>",
+                            "attributes" : [ ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "occurrences" : "0..0",
+                        "nodeId" : "at0025.1",
+                        "attributes" : [ ],
+                        "attributeTuples" : [ ]
+                      } ]
+                    } ],
                     "attributeTuples" : [ ]
                   }, {
                     "@type" : "C_ARCHETYPE_ROOT",
                     "rmTypeName" : "CLUSTER",
-                    "occurrences" : "0..*",
-                    "nodeId" : "at0039.1",
+                    "occurrences" : "0..1",
+                    "nodeId" : "at0042.1",
                     "attributes" : [ ],
                     "attributeTuples" : [ ],
                     "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-ctcae-001.v1",
@@ -313,18 +323,10 @@
     "conceptCode" : "at0000",
     "termDefinitions" : {
       "en" : {
-        "ac0.1" : {
+        "ac0.7" : {
           "@type" : "ARCHETYPE_TERM",
           "text" : "(Synthesized)",
-          "code" : "ac0.1",
-          "description" : ""
-        }
-      },
-      "fi" : {
-        "ac0.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "text" : "*(Synthesized) (en)",
-          "code" : "ac0.1",
+          "code" : "ac0.7",
           "description" : ""
         }
       },
@@ -332,68 +334,59 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "Kartleggingsspørsmål av uønskede effekter ved behandling",
-          "description" : "Spørsmål og tilhørende svar som brukes til å kartlegge symptomer eller sykdomstegn.",
+          "text" : "ctcae_kartlegging_uonskede_effekter_behandling",
+          "description" : "Spørsmål og tilhørende svar som brukes til å kartlegge bekymringer, plager, problemer eller diagnoser.",
           "comment" : "Svarene kan være selvrapporterte."
-        },
-        "at0002.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002.1",
-          "text" : "Baseline",
-          "description" : "Standard, uspesifisert tidspunkt eller tidsintervall som kan defineres mer eksplisitt i et templat eller i en applikasjon.",
-          "comment" : "Ved baseline "
         },
         "at0028.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0028.1",
           "text" : "Har tidligere kreftbehandling gitt noen uønskede effekter?",
-          "description" : "Finnes det noen tidligere symptomer eller sykdomstegn som er innenfor kartleggingsformålet?",
+          "description" : "Finnes det noen bekymringer, plager, problemer eller diagnoser. som er innenfor kartleggingsformålet?",
           "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
         },
-        "ac0.1" : {
+        "at0002.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002.1",
+          "text" : "Baseline",
+          "description" : "Standard, uspesifisert tidspunkt eller tidsintervall som kan defineres mer eksplisitt i et templat eller i en applikasjon."
+        },
+        "ac0.7" : {
           "@type" : "ARCHETYPE_TERM",
           "text" : "*(Synthesized) (en)",
-          "code" : "ac0.1",
+          "code" : "ac0.7",
           "description" : ""
         }
       },
       "de" : {
-        "ac0.1" : {
+        "ac0.7" : {
           "@type" : "ARCHETYPE_TERM",
           "text" : "*(Synthesized) (en)",
-          "code" : "ac0.1",
+          "code" : "ac0.7",
           "description" : ""
         }
       },
-      "it" : {
-        "ac0.1" : {
+      "nl" : {
+        "ac0.7" : {
           "@type" : "ARCHETYPE_TERM",
           "text" : "*(Synthesized) (en)",
-          "code" : "ac0.1",
+          "code" : "ac0.7",
           "description" : ""
         }
       },
-      "sv" : {
-        "ac0.1" : {
+      "ca" : {
+        "ac0.7" : {
           "@type" : "ARCHETYPE_TERM",
           "text" : "*(Synthesized) (en)",
-          "code" : "ac0.1",
+          "code" : "ac0.7",
           "description" : ""
         }
       },
       "fr" : {
-        "ac0.1" : {
+        "ac0.7" : {
           "@type" : "ARCHETYPE_TERM",
           "text" : "*(Synthesized) (en)",
-          "code" : "ac0.1",
-          "description" : ""
-        }
-      },
-      "zh-cn" : {
-        "ac0.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "text" : "*(Synthesized) (en)",
-          "code" : "ac0.1",
+          "code" : "ac0.7",
           "description" : ""
         }
       }
@@ -404,20 +397,50 @@
       "ac0.1" : {
         "@type" : "VALUE_SET",
         "id" : "ac0.1",
+        "members" : [ "at0031", "at0032", "at0033", "at0044" ]
+      },
+      "ac0.2" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.2",
+        "members" : [ "at0031", "at0032", "at0033", "at0044" ]
+      },
+      "ac0.3" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.3",
+        "members" : [ "at0031", "at0032", "at0033", "at0044" ]
+      },
+      "ac0.4" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.4",
+        "members" : [ "at0031", "at0032", "at0033", "at0044" ]
+      },
+      "ac0.5" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.5",
+        "members" : [ "at0031", "at0032", "at0033", "at0044" ]
+      },
+      "ac0.6" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.6",
+        "members" : [ "at0031", "at0032", "at0033", "at0044" ]
+      },
+      "ac0.7" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.7",
         "members" : [ "at0031", "at0032", "at0033" ]
       }
     }
   },
   "adlVersion" : "1.4",
-  "buildUid" : "4bd86a5d-c4bb-3105-82cd-f12055bb5a6d",
+  "buildUid" : "3a1cd202-0553-3273-b54b-8a003bc95be4",
   "rmName" : "openehr",
   "rmRelease" : "1.1.0",
   "generated" : true,
-  "templateId" : "kartlegging_uonskede_effekter_behandling",
+  "templateId" : "kartlegging_uonskede_effekter_behandling_ctcae",
   "otherMetaData" : { },
   "templateOverlays" : [ {
     "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "a3068a62-6dc7-4a6e-9120-c6a394c827d0",
+    "uid" : "863ff86c-e130-494b-ae5b-95f7d2ce8f11",
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
       "originalAuthor" : { },
@@ -636,7 +659,15 @@
                 "value" : "CTCAE_5.0",
                 "@type" : "DV_TEXT"
               },
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_STRING",
+                  "rmTypeName" : "STRING",
+                  "constraint" : [ "CTCAE_5.0" ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -750,37 +781,7 @@
       "terminologyId" : {
         "value" : "ISO_639-1"
       },
-      "codeString" : "fi"
-    },
-    "author" : { },
-    "otherDetails" : { }
-  }, {
-    "@type" : "TRANSLATION_DETAILS",
-    "language" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "sv"
-    },
-    "author" : { },
-    "otherDetails" : { }
-  }, {
-    "@type" : "TRANSLATION_DETAILS",
-    "language" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
       "codeString" : "nb"
-    },
-    "author" : { },
-    "otherDetails" : { }
-  }, {
-    "@type" : "TRANSLATION_DETAILS",
-    "language" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "it"
     },
     "author" : { },
     "otherDetails" : { }
@@ -800,7 +801,17 @@
       "terminologyId" : {
         "value" : "ISO_639-1"
       },
-      "codeString" : "zh-cn"
+      "codeString" : "nl"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ca"
     },
     "author" : { },
     "otherDetails" : { }

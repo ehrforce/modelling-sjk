@@ -14,6 +14,7 @@ Helsedirektoratet skriver om biomarkører i handlingsprogrammet for prostatakref
 
 > Biomarkører kan anvendes alene eller i kombinasjon på forskjellige tidspunkter under utredning og behandling av prostatakreft. Ett eksempel er risikostratifsering basert på PSA, ISUP-grad gruppe og TNM-stadium.
 
+Se mer her: https://www.helsedirektoratet.no/retningslinjer/prostatakreft-handlingsprogram/markorer/biomarkorer-blod-urin-vev 
 
 == Hvordan modellere biomarkører? 
 Som det kommer frem av det overnevnte kan det sies at biomarkører er en veldig generell definisjon. Datateknisk vil det være stor variasjon i hvordan en biomarkør defineres. Likevel må vi gjøre et forsøk på å gruppere dette. Flere modeller kan være aktuelle. Her prøves følgende metodikk ut: 
@@ -25,5 +26,49 @@ Biokjemiske:: Det vil si tradisjonelle biokjemiske marører (som PSA) som måles
 Genetiske:: Det vil angivelse av definerte genetiske forekomster og hvor resultatet er _Ja - den finnes_  eller _Nei - den finnes ikke_. 
 
 Graderinger/stratifiseringer:: Som f.eks. TNM stadium, ISUP gradering eller annen gradert skala. 
+
+
+== Biokjemiske 
+
+Analysenavn
+
+== Liste med markører fra OUS 
+Denne listen er generert av ChatGpt frs Ous webside 
+
+
+[options="header"]
+|===
+| Gen-ID | Gen-navn
+| APC    | ADENOMATOUS POLYPOSIS COLI
+| ATM    | ATAXIA-TELANGIECTASIA MUTATED
+| BAP1   | BRCA1 ASSOCIATED PROTEIN 1
+| BMPR1A | BONE MORPHOGENETIC PROTEIN RECEPTOR TYPE 1A
+| BRCA1  | BREAST CANCER GENE 1
+| BRCA2  | BREAST CANCER GENE 2
+| CDH1   | CADHERIN 1
+| CDKN2A | CYCLIN-DEPENDENT KINASE INHIBITOR 2A
+| CHEK2  | CHECKPOINT KINASE 2
+| EPCAM  | EPITHELIAL CELL ADHESION MOLECULE
+| FH     | FUMARATE HYDRATASE
+| FLCN   | FOLLICULIN
+| MEN1   | MULTIPLE ENDOCRINE NEOPLASIA TYPE 1
+| MLH1   | MUTL HOMOLOG 1
+| MSH2   | MUTS HOMOLOG 2
+| MSH6   | MUTS HOMOLOG 6
+| MUTYH  | MUTY DNA GLYCOSYLASE
+| NBN    | NIBRIN
+| NF1    | NEUROFIBROMIN 1
+| PALB2  | PARTNER AND LOCALIZER OF BRCA2
+| PMS2   | PMS1 HOMOLOG 2
+| PTEN   | PHOSPHATASE AND TENSIN HOMOLOG
+| RAD51C | RAD51 PARALOG C
+| RAD51D | RAD51 PARALOG D
+| RB1    | RETINOBLASTOMA 1
+| RET    | RET PROTO-ONCOGENE
+| SDHB   | SUCCINATE DEHYDROGENASE COMPLEX SUBUNIT B
+| SDHD   | SUCCINATE DEHYDROGENASE COMPLEX SUBUNIT D
+| SMAD4  | SMAD FAMILY MEMBER 4
+| TP53   | TUMOR PROTEIN P53
+|===
 
 
