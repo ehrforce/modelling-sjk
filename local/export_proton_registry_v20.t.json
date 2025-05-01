@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "87a208d845c2c211b760745678c8d204",
+      "MD5-CAM-1.0.1" : "fd59210f8389f2cbf7362621a37529d1",
       "PARENT:MD5-CAM-1.0.1" : "7992b64110455bb88760d5f0dd3a9006"
     },
     "details" : {
@@ -117,10 +117,10 @@
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.45",
+        "nodeId" : "at0.55",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "Bivirkningsregistrering_kartlegging_CTCAE",
+        "archetypeRef" : "bivirkning_kartlegging_ctcae_10",
         "referenceType" : "templateId"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
