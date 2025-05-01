@@ -6,6 +6,13 @@ concept
 
 language
 	original_language = <[ISO_639-1::nb]>
+	translations = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
@@ -22,6 +29,10 @@ description
 			use = <"Benyttes for data som skal sammenstilles fra ulike deler av journalen med tanke på sekundærbruk til registre. ">
 			misuse = <"Skal ikke brukes for primære registreringer av data i pasientens journal. ">
 		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			copyright = <"© openEHR Foundation">
+		>
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
@@ -29,7 +40,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"348ecec1323ffc041209871b8dbb4806">
+		["MD5-CAM-1.0.1"] = <"c4bf1f196be5741d76fe9922b9cd7d46">
 		["build_uid"] = <"1140678d-2808-3167-b600-d40d2e9a9622">
 	>
 
@@ -72,6 +83,22 @@ ontology
 				>
 				["at0002"] = <
 					text = <"Tilleggsinformasjon">
+					description = <"">
+				>
+			>
+		>
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Eksport for sekundærbruk (nb)">
+					description = <"*Sammendrag av data som trekkes ut for sekundærbruk. For eksempel uttrekk av data til et kvalitetsregister.  (nb)">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"*Tilleggsinformasjon (nb)">
 					description = <"">
 				>
 			>
