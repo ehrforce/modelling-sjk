@@ -158,7 +158,7 @@
         },
         "purpose" : "For å registrere bivirkninger i form av Common Terminology Criteria for Adverse Events (CTCAE) samt subjektiv hørselstap i forbindelse med prosjektet Strukturert Kreftjournal.",
         "keywords" : [ "bivirkninger, CTCAE, hearing impairment, problemer" ],
-        "use" : "Brukes for å registrere bivirkninger i form av Common Terminology Criteria for Adverse Events (CTCAE), samt subjektiv hørselstap i forbindelse med prosjektet Strukturert Kreftjournal. \n\nSmåtemplatet kan benyttes utenfor Strukturert kreftjournal hvor det lagres data om bivirkninger vha. CTCAE.",
+        "use" : "Brukes for å registrere bivirkninger i form av Common Terminology Criteria for Adverse Events (CTCAE), samt subjektiv hørselstap i forbindelse med prosjektet Strukturert Kreftjournal. \n\nSmåtemplatet kan benyttes utenfor Strukturert kreftjournal hvor det lagres data om bivirkninger vha. CTCAE.\n\nMERK: Subjektivt hørseltap er ikke dekket av CTCAE kodene og er derfor modellert inn som egen struktur. ",
         "originalResourceUri" : { },
         "otherDetails" : { }
       },
