@@ -4,9 +4,10 @@
   "description" : {
     "@type" : "RESOURCE_DESCRIPTION",
     "originalAuthor" : {
-      "date" : "2025-04-22",
-      "name" : "Liv Laugen",
-      "organisation" : "Felles kreftjournal"
+      "date" : "2023-04-22",
+      "name" : "Bjørn Næss",
+      "organisation" : "Felles kreftjournal",
+      "email" : "bna@dips.no"
     },
     "otherContributors" : [ ],
     "lifecycleState" : {
