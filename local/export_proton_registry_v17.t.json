@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "befce114e1698817a64e7f7b0e2dd32e",
+      "MD5-CAM-1.0.1" : "14a5aa82157e4445a3391a1a79104881",
       "PARENT:MD5-CAM-1.0.1" : "348ecec1323ffc041209871b8dbb4806"
     },
     "details" : {
@@ -127,11 +127,20 @@
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "EVALUATION",
-        "occurrences" : "0..1",
+        "occurrences" : "0..0",
         "nodeId" : "at0.14",
         "attributes" : [ ],
         "attributeTuples" : [ ],
         "archetypeRef" : "problem_diagnose_tnm",
+        "referenceType" : "templateId"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "SECTION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.43",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "kreftdiagnose",
         "referenceType" : "templateId"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
