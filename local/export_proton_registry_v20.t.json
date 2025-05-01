@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "23adf54808d1d1cadbeb5478dd9b3a03",
+      "MD5-CAM-1.0.1" : "96ab59cb9615c7b5aa274de3a52c31de",
       "PARENT:MD5-CAM-1.0.1" : "7992b64110455bb88760d5f0dd3a9006"
     },
     "details" : {
@@ -135,28 +135,28 @@
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.41",
+        "nodeId" : "at0.59",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "Tidligere kreftbehandling",
+        "archetypeRef" : "tidligere_kreftbehandling_10",
         "referenceType" : "templateId"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.43",
+        "nodeId" : "at0.61",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "kreftdiagnose",
+        "archetypeRef" : "kreftdiagnose_01",
         "referenceType" : "templateId"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.28",
+        "nodeId" : "at0.63",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "Tumorhendelse",
+        "archetypeRef" : "tumorhendelse_10",
         "referenceType" : "templateId"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
