@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "47298b64d9e29267f16efc4f651e3313",
+      "MD5-CAM-1.0.1" : "87a208d845c2c211b760745678c8d204",
       "PARENT:MD5-CAM-1.0.1" : "7992b64110455bb88760d5f0dd3a9006"
     },
     "details" : {
@@ -36,6 +36,22 @@
         },
         "purpose" : "Samler de ulike variablene som skal trekkes ut og overføres til protonregisteret. ",
         "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "en" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "en"
+        },
+        "purpose" : "Composition archetype that is set up as a DIPS specific report archetype (category 434). This means that data entered into this is not automatically subject to reuse. It must be explicitly set up to retrieve from category 434.",
+        "keywords" : [ ],
+        "use" : " Used for data that is to be compiled from different parts of the medical record with a view to secondary use for registers.",
+        "misuse" : " Not to be used for primary recording of data in the patient's medical record.",
+        "copyright" : "© openEHR Foundation",
         "originalResourceUri" : { },
         "otherDetails" : { }
       }
@@ -74,28 +90,28 @@
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.2",
+        "nodeId" : "at0.49",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "Sosialanamnese_generell",
+        "archetypeRef" : "sosialanamnese_10",
         "referenceType" : "templateId"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.18",
+        "nodeId" : "at0.51",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "stimulantia",
+        "archetypeRef" : "stimulantia_10",
         "referenceType" : "templateId"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.20",
+        "nodeId" : "at0.53",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "komorbiditet_utredning_inkl_CCI_smaatemplat",
+        "archetypeRef" : "komorbiditet_10",
         "referenceType" : "templateId"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
@@ -128,15 +144,6 @@
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.28",
-        "attributes" : [ ],
-        "attributeTuples" : [ ],
-        "archetypeRef" : "Tumorhendelse",
-        "referenceType" : "templateId"
-      }, {
-        "@type" : "C_ARCHETYPE_ROOT",
-        "rmTypeName" : "SECTION",
-        "occurrences" : "0..1",
         "nodeId" : "at0.43",
         "attributes" : [ ],
         "attributeTuples" : [ ],
@@ -146,10 +153,19 @@
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.30",
+        "nodeId" : "at0.28",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "Behandlingsoppsummering_template",
+        "archetypeRef" : "Tumorhendelse",
+        "referenceType" : "templateId"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "SECTION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.47",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "behandlingsoppsummering_10",
         "referenceType" : "templateId"
       } ]
     } ],
@@ -166,7 +182,8 @@
           "text" : "Eksport til protonregisteret",
           "description" : "Sammendrag av data som trekkes ut for sekundærbruk. For eksempel uttrekk av data til et kvalitetsregister. "
         }
-      }
+      },
+      "en" : { }
     },
     "termBindings" : { },
     "terminologyExtracts" : { },
@@ -186,5 +203,15 @@
     },
     "codeString" : "nb"
   },
-  "translations" : [ ]
+  "translations" : [ {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  } ]
 }
