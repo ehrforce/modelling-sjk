@@ -9,7 +9,7 @@
       "organisation" : "Felles kreftjournal",
       "email" : "bna@dips.no"
     },
-    "otherContributors" : [ ],
+    "otherContributors" : [ "Liv Laugen, OUS" ],
     "lifecycleState" : {
       "codeString" : "release_candidate"
     },
