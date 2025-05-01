@@ -21,7 +21,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "94376c78dee9e9ac58b8fdc251c40ff0",
+      "MD5-CAM-1.0.1" : "eaf09b6d641749c8296dd7c983fe232e",
       "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73",
       "sem_ver" : "22.0.0",
       "build_uid" : "",
@@ -539,8 +539,8 @@
                             "lower" : 1,
                             "lowerIncluded" : true,
                             "upperIncluded" : false,
-                            "lowerUnbounded" : false,
-                            "upperUnbounded" : true
+                            "upperUnbounded" : true,
+                            "lowerUnbounded" : false
                           } ]
                         } ]
                       } ],
@@ -615,8 +615,8 @@
                               "upper" : 365.0,
                               "lowerIncluded" : true,
                               "upperIncluded" : true,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : false
+                              "upperUnbounded" : false,
+                              "lowerUnbounded" : false
                             } ]
                           }, {
                             "@type" : "C_STRING",
@@ -631,8 +631,8 @@
                               "upper" : 7.0,
                               "lowerIncluded" : true,
                               "upperIncluded" : true,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : false
+                              "upperUnbounded" : false,
+                              "lowerUnbounded" : false
                             } ]
                           }, {
                             "@type" : "C_STRING",
@@ -647,8 +647,8 @@
                               "upper" : 31.0,
                               "lowerIncluded" : true,
                               "upperIncluded" : true,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : false
+                              "upperUnbounded" : false,
+                              "lowerUnbounded" : false
                             } ]
                           }, {
                             "@type" : "C_STRING",
@@ -708,8 +708,8 @@
                               "upper" : 7.0,
                               "lowerIncluded" : true,
                               "upperIncluded" : false,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : false
+                              "upperUnbounded" : false,
+                              "lowerUnbounded" : false
                             } ]
                           }, {
                             "@type" : "C_STRING",
@@ -724,8 +724,8 @@
                               "upper" : 31.0,
                               "lowerIncluded" : true,
                               "upperIncluded" : false,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : false
+                              "upperUnbounded" : false,
+                              "lowerUnbounded" : false
                             } ]
                           }, {
                             "@type" : "C_STRING",
@@ -766,8 +766,8 @@
                               "lower" : 0.0,
                               "lowerIncluded" : true,
                               "upperIncluded" : false,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : true
+                              "upperUnbounded" : true,
+                              "lowerUnbounded" : false
                             } ]
                           }, {
                             "@type" : "C_STRING",
@@ -781,8 +781,8 @@
                               "lower" : 0.0,
                               "lowerIncluded" : true,
                               "upperIncluded" : false,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : true
+                              "upperUnbounded" : true,
+                              "lowerUnbounded" : false
                             } ]
                           }, {
                             "@type" : "C_STRING",
@@ -796,8 +796,8 @@
                               "lower" : 0.0,
                               "lowerIncluded" : true,
                               "upperIncluded" : false,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : true
+                              "upperUnbounded" : true,
+                              "lowerUnbounded" : false
                             } ]
                           }, {
                             "@type" : "C_STRING",
@@ -837,8 +837,8 @@
                             "lower" : 0,
                             "lowerIncluded" : true,
                             "upperIncluded" : false,
-                            "lowerUnbounded" : false,
-                            "upperUnbounded" : true
+                            "upperUnbounded" : true,
+                            "lowerUnbounded" : false
                           } ]
                         } ]
                       } ],
@@ -967,8 +967,8 @@
                           "lower" : 0.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : false,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : true
+                          "upperUnbounded" : true,
+                          "lowerUnbounded" : false
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -982,8 +982,8 @@
                           "lower" : 0.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : false,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : true
+                          "upperUnbounded" : true,
+                          "lowerUnbounded" : false
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -1019,13 +1019,6 @@
             "code" : "at0000.1",
             "text" : "Alkohol",
             "description" : "Sammendrag eller detaljer om et individs tidligere og nåværende bruk av alkohol."
-          },
-          "at0043" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0043",
-            "text" : "Overordnet beskrivelse",
-            "description" : "Oppsummering i fritekst om et individs overordnede mønster og historie knyttet til alkoholinntak.",
-            "comment" : "Bruk dette elementet for å registrere en beskrivelse i fritekst om drikkevaner for dette individet."
           },
           "at0043.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -1348,8 +1341,8 @@
                           "lower" : 0.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : false,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : true
+                          "upperUnbounded" : true,
+                          "lowerUnbounded" : false
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -1382,8 +1375,8 @@
                         "lower" : 0,
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : true
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -1412,8 +1405,8 @@
                         "lower" : 0,
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : true
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -1499,8 +1492,8 @@
                         "lower" : 0,
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : true
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -1542,8 +1535,8 @@
                           "lower" : 0.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : false,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : true
+                          "upperUnbounded" : true,
+                          "lowerUnbounded" : false
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -1555,8 +1548,8 @@
                           "upper" : 0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : false
+                          "upperUnbounded" : false,
+                          "lowerUnbounded" : false
                         } ]
                       } ]
                     }, {
@@ -1567,8 +1560,8 @@
                           "lower" : 0.0,
                           "lowerIncluded" : true,
                           "upperIncluded" : false,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : true
+                          "upperUnbounded" : true,
+                          "lowerUnbounded" : false
                         } ]
                       }, {
                         "@type" : "C_STRING",
@@ -1580,8 +1573,8 @@
                           "upper" : 0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : false
+                          "upperUnbounded" : false,
+                          "lowerUnbounded" : false
                         } ]
                       } ]
                     } ]
@@ -1614,20 +1607,6 @@
             "code" : "at0000.1",
             "text" : "Røyk",
             "description" : "Sammendrag eller detaljer om et individs tidligere og nåværende tobakksrøykevaner."
-          },
-          "at0043" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0043",
-            "text" : "Overordnet beskrivelse",
-            "description" : "Fritekstsammendrag om individets overordnede røykemønster og historikk.",
-            "comment" : "Bruk dette datalementet til å registrere en fritekstbeskrivelse av individets tobakksrøykevaner."
-          },
-          "at0074" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0074",
-            "text" : "Samlet pakkeår",
-            "description" : "Anslått kumulativ mengde av alle tobakkstyper som er røykt.",
-            "comment" : "Anslått kumulativ mengde av alle tobakkstyper som er røykt."
           },
           "at0043.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -1902,8 +1881,8 @@
                         "lower" : 0,
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : true
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -1989,8 +1968,8 @@
                         "lower" : 0,
                         "lowerIncluded" : true,
                         "upperIncluded" : false,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : true
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : false
                       } ]
                     } ]
                   } ],
@@ -2032,8 +2011,8 @@
                           "upper" : 0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : false
+                          "upperUnbounded" : false,
+                          "lowerUnbounded" : false
                         } ]
                       } ]
                     }, {
@@ -2048,8 +2027,8 @@
                           "upper" : 0,
                           "lowerIncluded" : true,
                           "upperIncluded" : true,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : false
+                          "upperUnbounded" : false,
+                          "lowerUnbounded" : false
                         } ]
                       } ]
                     } ]
@@ -2082,13 +2061,6 @@
             "code" : "at0000.1",
             "text" : "Røykfri tobakk/snus",
             "description" : "Sammendrag eller varig (persistent) informasjon om individets bruk av røykfri tobakk."
-          },
-          "at0043" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0043",
-            "text" : "Overordnet beskrivelse",
-            "description" : "Fritekstsammendrag om individets overordnede bruksmønster og historikk for røykfri tobakk.",
-            "comment" : "Bruk dette datalementet til å registrere en fritekstbeskrivelse av individets bruk av røykfri tobakk.\n"
           },
           "at0043.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -2339,8 +2311,8 @@
                             "lower" : 0,
                             "lowerIncluded" : true,
                             "upperIncluded" : false,
-                            "lowerUnbounded" : false,
-                            "upperUnbounded" : true
+                            "upperUnbounded" : true,
+                            "lowerUnbounded" : false
                           } ]
                         } ]
                       } ],
@@ -2455,8 +2427,8 @@
                               "lower" : 0.0,
                               "lowerIncluded" : true,
                               "upperIncluded" : false,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : true
+                              "upperUnbounded" : true,
+                              "lowerUnbounded" : false
                             } ]
                           }, {
                             "@type" : "C_STRING",
@@ -2470,8 +2442,8 @@
                               "lower" : 0.0,
                               "lowerIncluded" : true,
                               "upperIncluded" : false,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : true
+                              "upperUnbounded" : true,
+                              "lowerUnbounded" : false
                             } ]
                           }, {
                             "@type" : "C_STRING",
@@ -2485,8 +2457,8 @@
                               "lower" : 0.0,
                               "lowerIncluded" : true,
                               "upperIncluded" : false,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : true
+                              "upperUnbounded" : true,
+                              "lowerUnbounded" : false
                             } ]
                           }, {
                             "@type" : "C_STRING",
@@ -2500,8 +2472,8 @@
                               "lower" : 0.0,
                               "lowerIncluded" : true,
                               "upperIncluded" : false,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : true
+                              "upperUnbounded" : true,
+                              "lowerUnbounded" : false
                             } ]
                           }, {
                             "@type" : "C_STRING",
@@ -2543,8 +2515,8 @@
                               "lower" : 0.0,
                               "lowerIncluded" : true,
                               "upperIncluded" : false,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : true
+                              "upperUnbounded" : true,
+                              "lowerUnbounded" : false
                             } ]
                           }, {
                             "@type" : "C_STRING",
@@ -2558,8 +2530,8 @@
                               "lower" : 0.0,
                               "lowerIncluded" : true,
                               "upperIncluded" : false,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : true
+                              "upperUnbounded" : true,
+                              "lowerUnbounded" : false
                             } ]
                           }, {
                             "@type" : "C_STRING",
@@ -2573,8 +2545,8 @@
                               "lower" : 0.0,
                               "lowerIncluded" : true,
                               "upperIncluded" : false,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : true
+                              "upperUnbounded" : true,
+                              "lowerUnbounded" : false
                             } ]
                           }, {
                             "@type" : "C_STRING",
@@ -2588,8 +2560,8 @@
                               "lower" : 0.0,
                               "lowerIncluded" : true,
                               "upperIncluded" : false,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : true
+                              "upperUnbounded" : true,
+                              "lowerUnbounded" : false
                             } ]
                           }, {
                             "@type" : "C_STRING",
@@ -2603,8 +2575,8 @@
                               "lower" : 0.0,
                               "lowerIncluded" : true,
                               "upperIncluded" : false,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : true
+                              "upperUnbounded" : true,
+                              "lowerUnbounded" : false
                             } ]
                           }, {
                             "@type" : "C_STRING",
@@ -2618,8 +2590,8 @@
                               "lower" : 0.0,
                               "lowerIncluded" : true,
                               "upperIncluded" : false,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : true
+                              "upperUnbounded" : true,
+                              "lowerUnbounded" : false
                             } ]
                           }, {
                             "@type" : "C_STRING",
@@ -2633,8 +2605,8 @@
                               "lower" : 0.0,
                               "lowerIncluded" : true,
                               "upperIncluded" : false,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : true
+                              "upperUnbounded" : true,
+                              "lowerUnbounded" : false
                             } ]
                           }, {
                             "@type" : "C_STRING",
@@ -2648,8 +2620,8 @@
                               "lower" : 0.0,
                               "lowerIncluded" : true,
                               "upperIncluded" : false,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : true
+                              "upperUnbounded" : true,
+                              "lowerUnbounded" : false
                             } ]
                           }, {
                             "@type" : "C_STRING",
@@ -2663,8 +2635,8 @@
                               "lower" : 0.0,
                               "lowerIncluded" : true,
                               "upperIncluded" : false,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : true
+                              "upperUnbounded" : true,
+                              "lowerUnbounded" : false
                             } ]
                           }, {
                             "@type" : "C_STRING",
@@ -2709,8 +2681,8 @@
                             "lower" : 0,
                             "lowerIncluded" : true,
                             "upperIncluded" : false,
-                            "lowerUnbounded" : false,
-                            "upperUnbounded" : true
+                            "upperUnbounded" : true,
+                            "lowerUnbounded" : false
                           } ]
                         } ]
                       } ],
@@ -2768,13 +2740,6 @@
             "code" : "at0000.1",
             "text" : "Sammendrag andre substanser",
             "description" : "Sammendrag eller varig (persistent) informasjon om bruksmønsteret individet vanligvis har av en spesifikk substans eller klasse av substanser som kan ha skadelige effekter på individets helse eller sosiale velferd."
-          },
-          "at0007" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0007",
-            "text" : "Overordnet beskrivelse",
-            "description" : "Fritekstsammendrag om bruk av substansen gjennom individets livsløp.",
-            "comment" : "Bruk dette elementet for å registrere en beskrivelse i fritekst om drikkevaner for dette individet."
           },
           "at0007.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -2940,8 +2905,8 @@
                             "lower" : 0,
                             "lowerIncluded" : true,
                             "upperIncluded" : false,
-                            "lowerUnbounded" : false,
-                            "upperUnbounded" : true
+                            "upperUnbounded" : true,
+                            "lowerUnbounded" : false
                           } ]
                         } ]
                       } ],
@@ -3056,8 +3021,8 @@
                               "lower" : 0.0,
                               "lowerIncluded" : true,
                               "upperIncluded" : false,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : true
+                              "upperUnbounded" : true,
+                              "lowerUnbounded" : false
                             } ]
                           }, {
                             "@type" : "C_STRING",
@@ -3071,8 +3036,8 @@
                               "lower" : 0.0,
                               "lowerIncluded" : true,
                               "upperIncluded" : false,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : true
+                              "upperUnbounded" : true,
+                              "lowerUnbounded" : false
                             } ]
                           }, {
                             "@type" : "C_STRING",
@@ -3086,8 +3051,8 @@
                               "lower" : 0.0,
                               "lowerIncluded" : true,
                               "upperIncluded" : false,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : true
+                              "upperUnbounded" : true,
+                              "lowerUnbounded" : false
                             } ]
                           }, {
                             "@type" : "C_STRING",
@@ -3101,8 +3066,8 @@
                               "lower" : 0.0,
                               "lowerIncluded" : true,
                               "upperIncluded" : false,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : true
+                              "upperUnbounded" : true,
+                              "lowerUnbounded" : false
                             } ]
                           }, {
                             "@type" : "C_STRING",
@@ -3144,8 +3109,8 @@
                               "lower" : 0.0,
                               "lowerIncluded" : true,
                               "upperIncluded" : false,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : true
+                              "upperUnbounded" : true,
+                              "lowerUnbounded" : false
                             } ]
                           }, {
                             "@type" : "C_STRING",
@@ -3159,8 +3124,8 @@
                               "lower" : 0.0,
                               "lowerIncluded" : true,
                               "upperIncluded" : false,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : true
+                              "upperUnbounded" : true,
+                              "lowerUnbounded" : false
                             } ]
                           }, {
                             "@type" : "C_STRING",
@@ -3174,8 +3139,8 @@
                               "lower" : 0.0,
                               "lowerIncluded" : true,
                               "upperIncluded" : false,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : true
+                              "upperUnbounded" : true,
+                              "lowerUnbounded" : false
                             } ]
                           }, {
                             "@type" : "C_STRING",
@@ -3189,8 +3154,8 @@
                               "lower" : 0.0,
                               "lowerIncluded" : true,
                               "upperIncluded" : false,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : true
+                              "upperUnbounded" : true,
+                              "lowerUnbounded" : false
                             } ]
                           }, {
                             "@type" : "C_STRING",
@@ -3204,8 +3169,8 @@
                               "lower" : 0.0,
                               "lowerIncluded" : true,
                               "upperIncluded" : false,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : true
+                              "upperUnbounded" : true,
+                              "lowerUnbounded" : false
                             } ]
                           }, {
                             "@type" : "C_STRING",
@@ -3219,8 +3184,8 @@
                               "lower" : 0.0,
                               "lowerIncluded" : true,
                               "upperIncluded" : false,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : true
+                              "upperUnbounded" : true,
+                              "lowerUnbounded" : false
                             } ]
                           }, {
                             "@type" : "C_STRING",
@@ -3234,8 +3199,8 @@
                               "lower" : 0.0,
                               "lowerIncluded" : true,
                               "upperIncluded" : false,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : true
+                              "upperUnbounded" : true,
+                              "lowerUnbounded" : false
                             } ]
                           }, {
                             "@type" : "C_STRING",
@@ -3249,8 +3214,8 @@
                               "lower" : 0.0,
                               "lowerIncluded" : true,
                               "upperIncluded" : false,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : true
+                              "upperUnbounded" : true,
+                              "lowerUnbounded" : false
                             } ]
                           }, {
                             "@type" : "C_STRING",
@@ -3264,8 +3229,8 @@
                               "lower" : 0.0,
                               "lowerIncluded" : true,
                               "upperIncluded" : false,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : true
+                              "upperUnbounded" : true,
+                              "lowerUnbounded" : false
                             } ]
                           }, {
                             "@type" : "C_STRING",
@@ -3310,8 +3275,8 @@
                             "lower" : 0,
                             "lowerIncluded" : true,
                             "upperIncluded" : false,
-                            "lowerUnbounded" : false,
-                            "upperUnbounded" : true
+                            "upperUnbounded" : true,
+                            "lowerUnbounded" : false
                           } ]
                         } ]
                       } ],
@@ -3356,13 +3321,6 @@
       "termDefinitions" : {
         "en" : { },
         "nb" : {
-          "at0007" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0007",
-            "text" : "Overordnet beskrivelse",
-            "description" : "Fritekstsammendrag om bruk av substansen gjennom individets livsløp.",
-            "comment" : "Bruk dette datalementet til å registrere en fritekstbeskrivelse av individets bruk av en spesifikk substans."
-          },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000",
