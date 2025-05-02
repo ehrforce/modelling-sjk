@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "cac6981be45a6b7bb27c257e87c9ded1",
+      "MD5-CAM-1.0.1" : "55bfa4f0595579f4e8865eecbeab0364",
       "PARENT:MD5-CAM-1.0.1" : "7992b64110455bb88760d5f0dd3a9006"
     },
     "details" : {
@@ -207,6 +207,15 @@
         "attributes" : [ ],
         "attributeTuples" : [ ],
         "archetypeRef" : "behandlingsoppsummering_10",
+        "referenceType" : "templateId"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "SECTION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.69",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "studie_samtykke_10",
         "referenceType" : "templateId"
       } ]
     } ],
