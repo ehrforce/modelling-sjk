@@ -22,7 +22,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "d31d47cf051e512ed5e3b3beac391271",
+      "MD5-CAM-1.0.1" : "5b72d0f408dc6176a1897e5c60d85500",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5"
     },
     "details" : {
@@ -5929,7 +5929,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0102.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -5947,7 +5946,40 @@
                   "terminologyId" : {
                     "value" : "local"
                   },
-                  "constraint" : [ "ac0.12" ],
+                  "constraint" : [ "ac0.16" ],
+                  "selectedTerminologies" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0083.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "ac0.24" ],
                   "selectedTerminologies" : [ ]
                 } ]
               } ],
@@ -5964,38 +5996,6 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
-          "nodeId" : "at0083.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "CODE_PHRASE",
-                  "occurrences" : "1..1",
-                  "terminologyId" : {
-                    "value" : "local"
-                  },
-                  "constraint" : [ "at0086", "at0085", "at0084", "at0087", "at0097" ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_TEXT",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
           "nodeId" : "at0089.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -6009,21 +6009,12 @@
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "0..1",
+                  "occurrences" : "1..1",
                   "terminologyId" : {
-                    "value" : "SNOMED-CT"
+                    "value" : "local"
                   },
-                  "constraint" : [ ],
-                  "selectedTerminologies" : [ "SNOMED-CT" ],
-                  "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "25173007",
-                    "value" : "Residiv (av tumor)"
-                  }, {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "419835002",
-                    "value" : "Progresjon"
-                  } ]
+                  "constraint" : [ "ac0.25" ],
+                  "selectedTerminologies" : [ ]
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -6239,26 +6230,62 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
-          "ac0.12" : {
+          "ac0.16" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.12",
+            "code" : "ac0.16",
+            "description" : ""
+          },
+          "ac0.24" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.24",
+            "description" : ""
+          },
+          "ac0.25" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.25",
             "description" : ""
           }
         },
         "sl" : {
-          "ac0.12" : {
+          "ac0.16" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.12",
+            "code" : "ac0.16",
+            "description" : ""
+          },
+          "ac0.24" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.24",
+            "description" : ""
+          },
+          "ac0.25" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.25",
             "description" : ""
           }
         },
         "pt-br" : {
-          "ac0.12" : {
+          "ac0.16" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.12",
+            "code" : "ac0.16",
+            "description" : ""
+          },
+          "ac0.24" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.24",
+            "description" : ""
+          },
+          "ac0.25" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.25",
             "description" : ""
           }
         },
@@ -6268,7 +6295,7 @@
             "code" : "at0000.1",
             "text" : "Problem/diagnose-kvalifikator",
             "description" : "Brukes for å angi progresjon eller recidiv",
-            "comment" : "NB! \nStrukturen er hentet fra tumor hendelse template. Er lagt inn her for å vurdere om vi kan bruke denne template (kreftdiagnose) som grunnlag også for tumor hendelser. "
+            "comment" : "2.mai 2025 \nUtkast til struktur for å angi progresjon og residiv knyttet til hhv. lokalt, regionalt og metastase. \nVi bruker feltene i arketypen for progresjon og bedringsfase for å uttrykke hhv. progresjon og residiv. \nI tillegg legges manifisteringen (lokalt, metastase, etc.) inn i feltet forekomst. \n\nDet ser ut til å være en struktur som følger arketypen godt. "
           },
           "at0102.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -6277,58 +6304,149 @@
             "description" : "Hvilken sykdomsutvikling (engelsk: tumor-event) i form av residiv eller progresjon er tilstede?",
             "comment" : "For eksempel status for kreft eller en hematologisk diagnose."
           },
-          "ac0.12" : {
+          "at0083.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0083.1",
+            "text" : "Residiv",
+            "description" : "Fase av bedring eller tilheling for et akutt problem eller diagnose.",
+            "comment" : "For eksempel for å spore tilhelingen av en mellomørebetennelse."
+          },
+          "ac0.16" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.12",
+            "code" : "ac0.16",
+            "description" : ""
+          },
+          "ac0.24" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.24",
+            "description" : ""
+          },
+          "ac0.25" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.25",
             "description" : ""
           }
         },
         "ko" : {
-          "ac0.12" : {
+          "ac0.16" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.12",
+            "code" : "ac0.16",
+            "description" : ""
+          },
+          "ac0.24" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.24",
+            "description" : ""
+          },
+          "ac0.25" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.25",
             "description" : ""
           }
         },
         "de" : {
-          "ac0.12" : {
+          "ac0.16" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.12",
+            "code" : "ac0.16",
+            "description" : ""
+          },
+          "ac0.24" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.24",
+            "description" : ""
+          },
+          "ac0.25" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.25",
             "description" : ""
           }
         },
         "it" : {
-          "ac0.12" : {
+          "ac0.16" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.12",
+            "code" : "ac0.16",
+            "description" : ""
+          },
+          "ac0.24" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.24",
+            "description" : ""
+          },
+          "ac0.25" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.25",
             "description" : ""
           }
         },
         "sv" : {
-          "ac0.12" : {
+          "ac0.16" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.12",
+            "code" : "ac0.16",
+            "description" : ""
+          },
+          "ac0.24" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.24",
+            "description" : ""
+          },
+          "ac0.25" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.25",
             "description" : ""
           }
         },
         "zh" : {
-          "ac0.12" : {
+          "ac0.16" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.12",
+            "code" : "ac0.16",
+            "description" : ""
+          },
+          "ac0.24" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.24",
+            "description" : ""
+          },
+          "ac0.25" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.25",
             "description" : ""
           }
         },
         "zh-cn" : {
-          "ac0.12" : {
+          "ac0.16" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.12",
+            "code" : "ac0.16",
+            "description" : ""
+          },
+          "ac0.24" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.24",
+            "description" : ""
+          },
+          "ac0.25" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.25",
             "description" : ""
           }
         }
@@ -6392,6 +6510,66 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.12",
           "members" : [ "at0103", "at0104", "at0105", "at0106" ]
+        },
+        "ac0.13" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.13",
+          "members" : [ "at0103", "at0104", "at0105", "at0106" ]
+        },
+        "ac0.14" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.14",
+          "members" : [ "at0104", "at0105", "at0106" ]
+        },
+        "ac0.15" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.15",
+          "members" : [ "at0105", "at0106" ]
+        },
+        "ac0.16" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.16",
+          "members" : [ "at0105" ]
+        },
+        "ac0.18" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.18",
+          "members" : [ "at0090", "at0092", "at0093" ]
+        },
+        "ac0.19" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.19",
+          "members" : [ "at0090", "at0092", "at0093" ]
+        },
+        "ac0.20" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.20",
+          "members" : [ "at0085", "at0084", "at0087", "at0097" ]
+        },
+        "ac0.21" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.21",
+          "members" : [ "at0084", "at0087", "at0097" ]
+        },
+        "ac0.22" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.22",
+          "members" : [ "at0087", "at0097" ]
+        },
+        "ac0.23" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.23",
+          "members" : [ "at0097" ]
+        },
+        "ac0.24" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.24",
+          "members" : [ "at0097" ]
+        },
+        "ac0.25" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.25",
+          "members" : [ "at0090", "at0092", "at0093" ]
         }
       }
     },
