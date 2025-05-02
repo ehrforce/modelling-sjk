@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "b00ce44d91780ce3f03241cdd9758abf",
+      "MD5-CAM-1.0.1" : "5a99c9eecf6eaddce43d823264617dd8",
       "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73"
     },
     "details" : {
@@ -2410,7 +2410,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0071.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -2424,19 +2423,31 @@
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "1..1",
+                  "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "local"
+                    "value" : "no.onc.tumorevent.hendelse"
                   },
-                  "constraint" : [ "ac0.32" ],
-                  "selectedTerminologies" : [ ]
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "no.onc.tumorevent.hendelse" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "no.onc.tumorevent.hendelse",
+                    "code" : "01",
+                    "value" : "Lokalt"
+                  }, {
+                    "terminologyId" : "no.onc.tumorevent.hendelse",
+                    "code" : "02",
+                    "value" : "Regionalt"
+                  }, {
+                    "terminologyId" : "no.onc.tumorevent.hendelse",
+                    "code" : "03",
+                    "value" : "Metastasert"
+                  }, {
+                    "terminologyId" : "no.onc.tumorevent.hendelse",
+                    "code" : "04",
+                    "value" : "Biokjemisk"
+                  } ]
                 } ]
               } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_TEXT",
-              "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -2616,12 +2627,6 @@
             "code" : "ac0.23",
             "description" : ""
           },
-          "ac0.32" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.32",
-            "description" : ""
-          },
           "ac0.33" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
@@ -2684,12 +2689,6 @@
             "code" : "ac0.23",
             "description" : ""
           },
-          "ac0.32" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.32",
-            "description" : ""
-          },
           "ac0.33" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -2750,12 +2749,6 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.23",
-            "description" : ""
-          },
-          "ac0.32" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.32",
             "description" : ""
           },
           "ac0.33" : {
@@ -2827,12 +2820,6 @@
             "code" : "ac0.23",
             "description" : ""
           },
-          "ac0.32" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.32",
-            "description" : ""
-          },
           "ac0.33" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -2902,12 +2889,6 @@
             "code" : "ac0.23",
             "description" : ""
           },
-          "ac0.32" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.32",
-            "description" : ""
-          },
           "ac0.33" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -2968,12 +2949,6 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.23",
-            "description" : ""
-          },
-          "ac0.32" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.32",
             "description" : ""
           },
           "ac0.33" : {
@@ -3038,12 +3013,6 @@
             "code" : "ac0.23",
             "description" : ""
           },
-          "ac0.32" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.32",
-            "description" : ""
-          },
           "ac0.33" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -3104,12 +3073,6 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.23",
-            "description" : ""
-          },
-          "ac0.32" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.32",
             "description" : ""
           },
           "ac0.33" : {
@@ -3174,12 +3137,6 @@
             "code" : "ac0.23",
             "description" : ""
           },
-          "ac0.32" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.32",
-            "description" : ""
-          },
           "ac0.33" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -3240,12 +3197,6 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
             "code" : "ac0.23",
-            "description" : ""
-          },
-          "ac0.32" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.32",
             "description" : ""
           },
           "ac0.33" : {
@@ -3496,6 +3447,16 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.46",
           "members" : [ "at0097" ]
+        },
+        "ac0.47" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.47",
+          "members" : [ ]
+        },
+        "ac0.48" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.48",
+          "members" : [ ]
         }
       }
     },
