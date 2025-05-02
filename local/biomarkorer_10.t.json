@@ -22,7 +22,7 @@
       "sem_ver" : "13.0.0",
       "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "77c230ec31c392637f9721241482dd85"
+      "MD5-CAM-1.0.1" : "1b6e0daedcdc1159d900ebcd59a333b8"
     },
     "details" : {
       "de" : {
@@ -1711,40 +1711,40 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "SMOMED-CT"
+                    "value" : "SNOMED-CT"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "SMOMED-CT" ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "SMOMED-CT",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "122548005",
                     "value" : "Sylinder-, grovnål-, pistol-, tru-cut-, eller stansebiopsi av mamma"
                   }, {
-                    "terminologyId" : "SMOMED-CT",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "771625002",
                     "value" : "Vakuumbiopsi av lesjon i mamma"
                   }, {
-                    "terminologyId" : "SMOMED-CT",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "274331003",
                     "value" : "Kirurgisk biopsi av mamma"
                   }, {
-                    "terminologyId" : "SMOMED-CT",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "10940003",
                     "value" : "Eksisjonsbiopsi av mamma med preoperativ lokalisering (Diagnostisk kirurgisk merkebiopsi)"
                   }, {
-                    "terminologyId" : "SMOMED-CT",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "234271004",
                     "value" : "Biopsi av aksillær lymfeknute (grovnål)"
                   }, {
-                    "terminologyId" : "SMOMED-CT",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "58347006",
                     "value" : "Kirurgisk eksisjon av lymfeknute (tilfeldig funn av lymfeknute) (lymfadenektomi)"
                   }, {
-                    "terminologyId" : "SMOMED-CT",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "387736007",
                     "value" : "FNAC (finnålsaspirasjon) av mamma"
                   }, {
-                    "terminologyId" : "SMOMED-CT",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "234282007",
                     "value" : "FNAC (finnålsaspirasjon) av lymfeknute i aksille"
                   } ]
@@ -6430,24 +6430,24 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "SMOMED-CT"
+                    "value" : "SNOMED-CT"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "SMOMED-CT" ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "SMOMED-CT",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "82078001",
                     "value" : "Blodprøvetaking"
                   }, {
-                    "terminologyId" : "SMOMED-CT",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "277762005",
                     "value" : "Spinalpunksjon"
                   }, {
-                    "terminologyId" : "SMOMED-CT",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "86273004",
                     "value" : "Biopsi"
                   }, {
-                    "terminologyId" : "SMOMED-CT",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "14766002",
                     "value" : "Aspirasjon"
                   } ]
