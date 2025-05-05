@@ -20,7 +20,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "bdd3eec0f6fd438805cd41b7c6fc95c5",
+      "MD5-CAM-1.0.1" : "b7e2cf0e590c7633318cc6b6d8d18c10",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5"
     },
     "details" : {
@@ -255,7 +255,7 @@
                     "includedExternalTerminologyCodes" : [ {
                       "terminologyId" : "SNOMED-CT",
                       "code" : "399374009",
-                      "value" : "Reginoale lymfeknutemetastase"
+                      "value" : "Regionale lymfeknutemetastaser"
                     } ]
                   } ]
                 } ],
