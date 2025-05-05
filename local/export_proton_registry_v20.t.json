@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "55bfa4f0595579f4e8865eecbeab0364",
+      "MD5-CAM-1.0.1" : "c1b99aed37f2d3cb491021afb22c887e",
       "PARENT:MD5-CAM-1.0.1" : "7992b64110455bb88760d5f0dd3a9006"
     },
     "details" : {
@@ -176,15 +176,6 @@
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.65",
-        "attributes" : [ ],
-        "attributeTuples" : [ ],
-        "archetypeRef" : "biomarkorer_10",
-        "referenceType" : "templateId"
-      }, {
-        "@type" : "C_ARCHETYPE_ROOT",
-        "rmTypeName" : "SECTION",
-        "occurrences" : "0..1",
         "nodeId" : "at0.61",
         "attributes" : [ ],
         "attributeTuples" : [ ],
@@ -194,19 +185,10 @@
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.63",
+        "nodeId" : "at0.75",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "tumorhendelse_10",
-        "referenceType" : "templateId"
-      }, {
-        "@type" : "C_ARCHETYPE_ROOT",
-        "rmTypeName" : "SECTION",
-        "occurrences" : "0..1",
-        "nodeId" : "at0.47",
-        "attributes" : [ ],
-        "attributeTuples" : [ ],
-        "archetypeRef" : "behandlingsoppsummering_10",
+        "archetypeRef" : "tumorhendelse_01",
         "referenceType" : "templateId"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
@@ -216,6 +198,24 @@
         "attributes" : [ ],
         "attributeTuples" : [ ],
         "archetypeRef" : "studie_samtykke_10",
+        "referenceType" : "templateId"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "SECTION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.71",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "biomarkorer_01",
+        "referenceType" : "templateId"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "SECTION",
+        "occurrences" : "0..0",
+        "nodeId" : "at0.73",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "behandlingsoppsummering_01",
         "referenceType" : "templateId"
       } ]
     } ],
