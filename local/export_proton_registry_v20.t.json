@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "65e668e0a1a98a2fd1c281074fa5c1b3",
+      "MD5-CAM-1.0.1" : "a541338ce3e0feb47520cdd6b1d338c1",
       "PARENT:MD5-CAM-1.0.1" : "7992b64110455bb88760d5f0dd3a9006"
     },
     "details" : {
@@ -538,7 +538,15 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "nb" : { }
+        "nb" : {
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Forløpstype",
+            "description" : "Feltet angir konteksten for registreringer i dette dokumentet. Type forløp vil samsvar med en av kreftformene støttet i strukturert journal for kreft. ",
+            "comment" : "Feltet vil typisk være skjult for bruker og settes med gjenbruk fra andre felter. "
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
