@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "22855d275dcc6d6d3c094aba072ee1b9",
+      "MD5-CAM-1.0.1" : "43d52d85aa13b53c65d9842434eb36c9",
       "PARENT:MD5-CAM-1.0.1" : "7992b64110455bb88760d5f0dd3a9006"
     },
     "details" : {
@@ -175,7 +175,7 @@
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
-        "occurrences" : "0..1",
+        "occurrences" : "0..0",
         "nodeId" : "at0.61",
         "attributes" : [ ],
         "attributeTuples" : [ ],
