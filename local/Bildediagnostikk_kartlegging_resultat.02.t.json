@@ -21,7 +21,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "35e9deda37818295717ab32edd095178",
+      "MD5-CAM-1.0.1" : "2c163284098170154d7dbb01f9523257",
       "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73",
       "sem_ver" : "10.1.0",
       "build_uid" : ""
@@ -640,6 +640,15 @@
                         } ]
                       } ],
                       "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_ARCHETYPE_ROOT",
+                      "rmTypeName" : "CLUSTER",
+                      "occurrences" : "0..*",
+                      "nodeId" : "at0044.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ],
+                      "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-imaging_examination_screening-001.v0",
+                      "referenceType" : "archetypeOverlay"
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -883,12 +892,6 @@
             "text" : "Resymé",
             "description" : "Kort beskrivelse, oppsummering eller tolkning av funnene på undersøkelsen.",
             "comment" : "For eksempel \"Alle resultater innenfor normalverdier\", \"Normal\", \"Ytterligere undersøkelser nødvendig\". Dette dataelementet er ikke tenkt å representere det faktiske resultatet eller funnet. Er det nødvendig, nøst (sett inn) en passende CLUSTER-arketype i det etterfølgende SLOT'et \"Ytterligere detaljer\"."
-          },
-          "at0023" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0023",
-            "text" : "Uspesifisert hendelse",
-            "description" : "Standard, uspesifisert tidspunkt eller tidsintervall som kan defineres mer eksplisitt i et templat eller i en applikasjon."
           },
           "ac0.201" : {
             "@type" : "ARCHETYPE_TERM",
@@ -3131,15 +3134,6 @@
                       } ],
                       "attributeTuples" : [ ]
                     }, {
-                      "@type" : "C_ARCHETYPE_ROOT",
-                      "rmTypeName" : "CLUSTER",
-                      "occurrences" : "0..0",
-                      "nodeId" : "at0006.1",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ],
-                      "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-anatomical_location-001.v1",
-                      "referenceType" : "archetypeOverlay"
-                    }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
                       "nodeId" : "at0070.1",
@@ -3354,6 +3348,15 @@
                       "nodeId" : "at0023.1",
                       "attributes" : [ ],
                       "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_ARCHETYPE_ROOT",
+                      "rmTypeName" : "CLUSTER",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0006.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ],
+                      "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-anatomical_location-001.v1",
+                      "referenceType" : "archetypeOverlay"
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -3780,6 +3783,131 @@
       "author" : { },
       "otherDetails" : { }
     } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "555bb219-8666-4c09-ac6e-18c831fbe5b4",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "86b51da54909c6ca32d932e81da34dfb"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.imaging_examination_screening.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-imaging_examination_screening-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "DICOM_modality"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "DICOM_modality" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "DICOM_modality",
+                    "code" : "RG",
+                    "value" : "Røntgen"
+                  }, {
+                    "terminologyId" : "DICOM_modality",
+                    "code" : "MG",
+                    "value" : "Mammografi"
+                  }, {
+                    "terminologyId" : "DICOM_modality",
+                    "code" : "US",
+                    "value" : "Ultralyd"
+                  }, {
+                    "terminologyId" : "DICOM_modality",
+                    "code" : "CT",
+                    "value" : "CT"
+                  }, {
+                    "terminologyId" : "DICOM_modality",
+                    "code" : "MR",
+                    "value" : "MR"
+                  }, {
+                    "terminologyId" : "DICOM_modality",
+                    "code" : "NM",
+                    "value" : "Nukleærmedisin"
+                  }, {
+                    "terminologyId" : "DICOM_modality",
+                    "code" : "PT",
+                    "value" : "PET"
+                  }, {
+                    "terminologyId" : "DICOM_modality",
+                    "code" : "PTCT",
+                    "value" : "PET-CT"
+                  }, {
+                    "terminologyId" : "DICOM_modality",
+                    "code" : "PTMR",
+                    "value" : "PET-MR"
+                  }, {
+                    "terminologyId" : "DICOM_modality",
+                    "code" : "OT",
+                    "value" : "Annen modalitet"
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "nb" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "c6618cb2-47f1-3c54-9f08-dcd6de818188",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "translations" : [ ]
   } ],
   "originalLanguage" : {
     "terminologyId" : {
