@@ -22,10 +22,10 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "0dc1fe64c78818e72814f55cec22f7fa",
+      "MD5-CAM-1.0.1" : "9f24d7e92e4c34ee6213a6b893cee6ae",
       "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73",
       "original_language" : "ISO_639-1::nb",
-      "sem_ver" : "8.0.3",
+      "sem_ver" : "9.0.0",
       "build_uid" : ""
     },
     "details" : {
@@ -452,78 +452,14 @@
                               "rmTypeName" : "TERMINOLOGY_CODE",
                               "occurrences" : "0..1",
                               "terminologyId" : {
-                                "value" : "no.onk.kart.tidligere_kreftbehandling"
+                                "value" : "no.onk.kartlegging"
                               },
                               "constraint" : [ ],
-                              "selectedTerminologies" : [ "no.onk.kart.tidligere_kreftbehandling" ],
+                              "selectedTerminologies" : [ "no.onk.kartlegging" ],
                               "includedExternalTerminologyCodes" : [ {
-                                "terminologyId" : "no.onk.kart.tidligere_kreftbehandling",
-                                "code" : "1",
-                                "value" : "Sarkom"
-                              }, {
-                                "terminologyId" : "no.onk.kart.tidligere_kreftbehandling",
-                                "code" : "2",
-                                "value" : "Kreft i hode og hals"
-                              }, {
-                                "terminologyId" : "no.onk.kart.tidligere_kreftbehandling",
-                                "code" : "3",
-                                "value" : "Hjernesvulst"
-                              }, {
-                                "terminologyId" : "no.onk.kart.tidligere_kreftbehandling",
-                                "code" : "4",
-                                "value" : "Brystkreft"
-                              }, {
-                                "terminologyId" : "no.onk.kart.tidligere_kreftbehandling",
-                                "code" : "5",
-                                "value" : "Lungekreft"
-                              }, {
-                                "terminologyId" : "no.onk.kart.tidligere_kreftbehandling",
-                                "code" : "6",
-                                "value" : "Kreft i fordøyelsessystemet"
-                              }, {
-                                "terminologyId" : "no.onk.kart.tidligere_kreftbehandling",
-                                "code" : "7",
-                                "value" : "Gynekologisk kreft"
-                              }, {
-                                "terminologyId" : "no.onk.kart.tidligere_kreftbehandling",
-                                "code" : "8",
-                                "value" : "Kreft i nyre og urinveier"
-                              }, {
-                                "terminologyId" : "no.onk.kart.tidligere_kreftbehandling",
-                                "code" : "9",
-                                "value" : "Benmargs- og blodkreft"
-                              }, {
-                                "terminologyId" : "no.onk.kart.tidligere_kreftbehandling",
-                                "code" : "10",
-                                "value" : "Lymfom"
-                              }, {
-                                "terminologyId" : "no.onk.kart.tidligere_kreftbehandling",
-                                "code" : "11",
-                                "value" : "Hudkreft"
-                              }, {
-                                "terminologyId" : "no.onk.kart.tidligere_kreftbehandling",
-                                "code" : "12",
-                                "value" : "Kreft i mannlige kjønnsorganer"
-                              }, {
-                                "terminologyId" : "no.onk.kart.tidligere_kreftbehandling",
-                                "code" : "13",
-                                "value" : "Kreft i endokrine kjertler"
-                              }, {
-                                "terminologyId" : "no.onk.kart.tidligere_kreftbehandling",
-                                "code" : "14",
-                                "value" : "Nevroendokrin kreft"
-                              }, {
-                                "terminologyId" : "no.onk.kart.tidligere_kreftbehandling",
-                                "code" : "15",
-                                "value" : "Barnekreft"
-                              }, {
-                                "terminologyId" : "no.onk.kart.tidligere_kreftbehandling",
-                                "code" : "16",
-                                "value" : "Øyekreft"
-                              }, {
-                                "terminologyId" : "no.onk.kart.tidligere_kreftbehandling",
-                                "code" : "17",
-                                "value" : "Svulst av ukjent opprinnelse / Annet"
+                                "terminologyId" : "no.onk.kartlegging",
+                                "code" : "01",
+                                "value" : "Tidligere_kreftbehandling"
                               } ]
                             } ]
                           } ],
