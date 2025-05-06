@@ -1,0 +1,131 @@
+archetype (adl_version=1.4; uid=825138bc-f675-46d0-bcc4-658d5a93057b)
+	openEHR-EHR-CLUSTER.imaging_examination_screening.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["date"] = <"2025-05-06">
+		["name"] = <"Bjørn Næss">
+		["organisation"] = <"DIPS AS">
+		["email"] = <"bna@dips.no">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"86b51da54909c6ca32d932e81da34dfb">
+		["build_uid"] = <"c6618cb2-47f1-3c54-9f08-dcd6de818188">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Kartlegging av bildeundersøkelse
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Modalitet
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Er modalitet utført?
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0004,    -- Ja
+							at0005,    -- Nei
+							at0006]    -- Ukjent
+						}
+					}
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..*} matches {    -- Undersøkelsesnavn
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0007] occurrences matches {0..1} matches {    -- Kroppsdel
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0008] occurrences matches {0..1} matches {    -- Undersøkelsesdato
+				value matches {
+					DV_DATE matches {*}
+				}
+			}
+			ELEMENT[at0009] occurrences matches {0..1} matches {    -- Resyme
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0010] occurrences matches {0..1} matches {    -- Teknikk
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Kartlegging av bildeundersøkelse">
+					description = <"imaging_examination_screening">
+				>
+				["at0001"] = <
+					text = <"Modalitet">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Undersøkelsesnavn">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Er modalitet utført?">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Nei">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Ukjent">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Kroppsdel">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Undersøkelsesdato">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Resyme">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Teknikk">
+					description = <"">
+				>
+			>
+		>
+	>
