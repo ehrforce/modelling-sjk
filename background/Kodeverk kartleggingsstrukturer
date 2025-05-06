@@ -1,0 +1,16 @@
+Samlivsform	No.onk.sosiale_forhold	SAM	Samlivsform
+Omsorgsansvar	no.onk.sosiale_forhold	OA	Kartlegging av om individet har omsorgsansvar
+Kartlegging komorbiditet	no.onk.screening.problem	Kom	Komorbiditet
+Bivirkningsregistrering	no.onk.kart.tidligere_komplikasjoner_kreftbehandling	1	Baseline
+		2	Under behandling
+
+no.onk.kartlegging	01	Tidligere_kreftbehandling
+no.onk.kartlegging	2	Bildediagnostikk
+no.onk.kartlegging	3	Tumorhendelse
+no.onk.kartlegging	4	Biomarkor
+no.onk.kartlegging	5	Symptom_onk
+no.onk.kartlegging	6	Henvist_fra
+no.onk.kartlegging	7	Predisponerende_tilstand
+no.onk.kartlegging	8	Tidligere_kreft
+no.onk.kartlegging	9	Urort_primaertumor
+
