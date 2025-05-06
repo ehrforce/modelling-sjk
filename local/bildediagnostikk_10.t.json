@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "e5223ecd947e0fa7dda52ad6be6ac1ba",
+      "MD5-CAM-1.0.1" : "dc28ff87984ade6af9ee4d1fa75962bc",
       "PARENT:MD5-CAM-1.0.1" : "dd9eb4bbddba032d835d00b77665b264",
       "sem_ver" : "1.0.0",
       "build_uid" : ""
@@ -1159,7 +1159,6 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0003.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
@@ -1507,6 +1506,13 @@
             "text" : "Resyme per modalitet",
             "description" : "Måling eller verdi knyttet til funnet.",
             "comment" : "Designkommentar:\nResyme for den spesifikke undersøkelsen/modaliteten som helhet. \nHer kan man legge inn resyme for hele MR undersøkelse. Ønsker man å legge inn resyme for hver kroppsdel man har tatt MR på må man bruke resyme i CLUSTERet Klinisk grunnlag modalitet per kroppsdel (CLUSTER 2) som er slottet inn i Ytterligere detaljer. Da kan dette elementet være overflødig."
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "Grunnlag",
+            "description" : "Identifisering av en forekomst av et klinisk grunnlag, enten ved navn eller type, som et enkelt resultat eller en gruppe av resultater.",
+            "comment" : "NB! Dette feltet brukes aktivt i bryst med en SNOMED-CT kode som angir f.eks. Mammografi (nå norsk) med en SNOMED-CT kode "
           }
         },
         "de" : {
