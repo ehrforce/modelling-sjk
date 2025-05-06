@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "dc28ff87984ade6af9ee4d1fa75962bc",
+      "MD5-CAM-1.0.1" : "67aa1047ded3232bfe55b6aaf86ee080",
       "PARENT:MD5-CAM-1.0.1" : "dd9eb4bbddba032d835d00b77665b264",
       "sem_ver" : "1.0.0",
       "build_uid" : ""
@@ -1484,7 +1484,7 @@
             "code" : "at0022.1",
             "text" : "Bildeprosedyre/bildemodalitet navn",
             "description" : "Typen undersøkelse eller utredning som er utført for å komme fram til funnet.",
-            "comment" : "Designkommentar:\nHer skal man kopiere den samme koden som man i Bildeprosedyre/bildemodalitet navn under det interne CLUSTERet Spesifikk underesøkelse/bildemodalitet. \nDette kan f.eks. være en SNOMED-CT kode eller DICOM modalitetkode. "
+            "comment" : "Designkommentar:\n\nNB! Kodelisten heter DICOM-modality i Bryst og DICOM her. Det skaper problemer. \n\nHer skal man kopiere den samme koden som man i Bildeprosedyre/bildemodalitet navn under det interne CLUSTERet Spesifikk underesøkelse/bildemodalitet. \nDette kan f.eks. være en SNOMED-CT kode eller DICOM modalitetkode. "
           },
           "at0006.1" : {
             "@type" : "ARCHETYPE_TERM",
