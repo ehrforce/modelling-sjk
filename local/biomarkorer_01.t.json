@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "13.0.0",
+      "sem_ver" : "14.0.0",
       "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "57fdd6fcaaa12e0d89aa8c44b07d133d"
+      "MD5-CAM-1.0.1" : "5a6df5717d65f47f73b49dc83c887fb6"
     },
     "details" : {
       "de" : {
@@ -433,18 +433,6 @@
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "DV_CODED_TEXT",
                           "occurrences" : "1..1",
-                          "defaultValue" : {
-                            "defining_code" : {
-                              "terminology_id" : {
-                                "value" : "gruppering_kreft",
-                                "@type" : "TERMINOLOGY_ID"
-                              },
-                              "code_string" : "3",
-                              "@type" : "CODE_PHRASE"
-                            },
-                            "value" : "Hjernesvulst",
-                            "@type" : "DV_CODED_TEXT"
-                          },
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
                             "rmAttributeName" : "defining_code",
@@ -453,78 +441,14 @@
                               "rmTypeName" : "TERMINOLOGY_CODE",
                               "occurrences" : "0..1",
                               "terminologyId" : {
-                                "value" : "no.onk.biomarkor"
+                                "value" : "no.onk.kartlegging"
                               },
                               "constraint" : [ ],
-                              "selectedTerminologies" : [ "no.onk.biomarkor" ],
+                              "selectedTerminologies" : [ "no.onk.kartlegging" ],
                               "includedExternalTerminologyCodes" : [ {
-                                "terminologyId" : "no.onk.biomarkor",
-                                "code" : "1",
-                                "value" : "Sarkom"
-                              }, {
-                                "terminologyId" : "no.onk.biomarkor",
-                                "code" : "2",
-                                "value" : "Kreft i hode og hals"
-                              }, {
-                                "terminologyId" : "no.onk.biomarkor",
-                                "code" : "3",
-                                "value" : "Hjernesvulst"
-                              }, {
-                                "terminologyId" : "no.onk.biomarkor",
-                                "code" : "4",
-                                "value" : "Brystkreft"
-                              }, {
-                                "terminologyId" : "no.onk.biomarkor",
-                                "code" : "5",
-                                "value" : "Lungekreft"
-                              }, {
-                                "terminologyId" : "no.onk.biomarkor",
-                                "code" : "6",
-                                "value" : "Kreft i fordøyelsessystemet"
-                              }, {
-                                "terminologyId" : "no.onk.biomarkor",
-                                "code" : "7",
-                                "value" : "Gynekologisk kreft"
-                              }, {
-                                "terminologyId" : "no.onk.biomarkor",
-                                "code" : "8",
-                                "value" : "Kreft i nyre og urinveier"
-                              }, {
-                                "terminologyId" : "no.onk.biomarkor",
-                                "code" : "9",
-                                "value" : "Benmargs- og blodkreft"
-                              }, {
-                                "terminologyId" : "no.onk.biomarkor",
-                                "code" : "10",
-                                "value" : "Lymfom"
-                              }, {
-                                "terminologyId" : "no.onk.biomarkor",
-                                "code" : "11",
-                                "value" : "Hudkreft"
-                              }, {
-                                "terminologyId" : "no.onk.biomarkor",
-                                "code" : "12",
-                                "value" : "Kreft i mannlige kjønnsorganer"
-                              }, {
-                                "terminologyId" : "no.onk.biomarkor",
-                                "code" : "13",
-                                "value" : "Kreft i endokrine kjertler"
-                              }, {
-                                "terminologyId" : "no.onk.biomarkor",
-                                "code" : "14",
-                                "value" : "Nevroendokrin kreft"
-                              }, {
-                                "terminologyId" : "no.onk.biomarkor",
-                                "code" : "15",
-                                "value" : "Barnekreft"
-                              }, {
-                                "terminologyId" : "no.onk.biomarkor",
-                                "code" : "16",
-                                "value" : "Øyekreft"
-                              }, {
-                                "terminologyId" : "no.onk.biomarkor",
-                                "code" : "17",
-                                "value" : "Svulst av ukjent opprinnelse / Annet"
+                                "terminologyId" : "no.onk.kartlegging",
+                                "code" : "04",
+                                "value" : "Biomarkor"
                               } ]
                             } ]
                           } ],
