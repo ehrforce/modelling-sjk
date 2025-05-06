@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"86b51da54909c6ca32d932e81da34dfb">
+		["MD5-CAM-1.0.1"] = <"d43bc080eba8f4d788876829bc02140a">
 		["build_uid"] = <"c6618cb2-47f1-3c54-9f08-dcd6de818188">
 	>
 
@@ -55,7 +55,7 @@ definition
 					DV_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0007] occurrences matches {0..1} matches {    -- Kroppsdel
+			ELEMENT[at0007] occurrences matches {0..*} matches {    -- Kroppsdel
 				value matches {
 					DV_TEXT matches {*}
 				}
@@ -70,7 +70,7 @@ definition
 					DV_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0010] occurrences matches {0..1} matches {    -- Teknikk
+			ELEMENT[at0010] occurrences matches {0..*} matches {    -- Teknikk
 				value matches {
 					DV_TEXT matches {*}
 				}
