@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "6f18eb03aad3414d074fce705a52fe2e",
+      "MD5-CAM-1.0.1" : "f2d9a5c02d57ee6f6ccbd6bcd46e7495",
       "PARENT:MD5-CAM-1.0.1" : "dd9eb4bbddba032d835d00b77665b264",
       "sem_ver" : "1.0.0",
       "build_uid" : ""
@@ -118,7 +118,7 @@
         "original_publisher" : "openEHR Foundation",
         "custodian_namespace" : "org.openehr",
         "MD5-CAM-1.0.1" : "ae57da1d8de4f04a22bf31941d446c83",
-        "PARENT:MD5-CAM-1.0.1" : "b3ee92e1be3d7933994c39e12c4ad61d",
+        "PARENT:MD5-CAM-1.0.1" : "4303915A919C8B6D98E44B6105250000",
         "sem_ver" : "57.0.0",
         "build_uid" : "",
         "original_language" : "ISO_639-1::nb",
@@ -402,48 +402,6 @@
                         }, {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "ELEMENT",
-                          "nodeId" : "at0046.1",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "value",
-                            "children" : [ {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_CODED_TEXT",
-                              "occurrences" : "1..1",
-                              "attributes" : [ {
-                                "@type" : "C_ATTRIBUTE",
-                                "rmAttributeName" : "defining_code",
-                                "children" : [ {
-                                  "@type" : "C_TERMINOLOGY_CODE",
-                                  "rmTypeName" : "TERMINOLOGY_CODE",
-                                  "occurrences" : "0..1",
-                                  "terminologyId" : {
-                                    "value" : "SNOMED-CT"
-                                  },
-                                  "constraint" : [ ],
-                                  "selectedTerminologies" : [ "SNOMED-CT" ],
-                                  "includedExternalTerminologyCodes" : [ {
-                                    "terminologyId" : "SNOMED-CT",
-                                    "code" : "726551006",
-                                    "value" : "Kontrast mammografi"
-                                  }, {
-                                    "terminologyId" : "SNOMED-CT",
-                                    "code" : "241058008",
-                                    "value" : "Forstørrelsesmammografi"
-                                  }, {
-                                    "terminologyId" : "SNOMED-CT",
-                                    "code" : "450566007",
-                                    "value" : "Tomosyntese (DBT) av mamma"
-                                  } ]
-                                } ]
-                              } ],
-                              "attributeTuples" : [ ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        }, {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
                           "nodeId" : "at0024.1",
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
@@ -489,16 +447,7 @@
                           "rmTypeName" : "ELEMENT",
                           "occurrences" : "0..1",
                           "nodeId" : "at0002.1",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "value",
-                            "children" : [ {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_TEXT",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
-                            } ]
-                          } ],
+                          "attributes" : [ ],
                           "attributeTuples" : [ ]
                         }, {
                           "@type" : "C_COMPLEX_OBJECT",
