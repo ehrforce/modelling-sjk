@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "2bf745745b3357d0d49aa4d42ab4ea3e",
+      "MD5-CAM-1.0.1" : "37d301a3913ebbfbf83d495f72739ab9",
       "PARENT:MD5-CAM-1.0.1" : "dd9eb4bbddba032d835d00b77665b264",
       "sem_ver" : "1.0.0",
       "build_uid" : ""
@@ -637,53 +637,6 @@
             "text" : "Overordnet beskrivelse bildediagnostiske undersøkelse",
             "description" : "Descripción narrativa sobre la historia de cualquier investigación relevante para el propósito del screening."
           },
-          "at0002" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "*Result (en)",
-            "description" : "*The test result or findings of the screening investigation. (en)",
-            "comment" : "*For example: positive/negative. (en)"
-          },
-          "at0003" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003",
-            "text" : "*Date (en)",
-            "description" : "*The date and/or time of the most recent test. (en)",
-            "comment" : "*Can be a partial date, for example, only a year. (en)"
-          },
-          "at0021" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0021",
-            "text" : "*Test name (en)",
-            "description" : "*Name of the imaging examination or laboratory test or grouping. (en)",
-            "comment" : "*For example: 'Urea and electrolytes', or 'HIV screening panel'.\r\nCoding of the 'Investigation name' with a terminology is preferred, where possible. (en)"
-          },
-          "at0024" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0024",
-            "text" : "*Carried out? (en)",
-            "description" : "*Is there a history of the investigation being carried out? (en)",
-            "comment" : "*In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)"
-          },
-          "at0025" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0025",
-            "text" : "*Comment (en)",
-            "description" : ""
-          },
-          "at0026" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0026",
-            "text" : "*Specific investigation (en)",
-            "description" : "*Details about a specified investigation or grouping of investigations relevant for the screening purpose. (en)",
-            "comment" : "*Use separate instances of this CLUSTER to differentiate between specific investigations or groupings of investigations. (en)"
-          },
-          "at0041" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0041",
-            "text" : "*Additional details (en)",
-            "description" : "*Structured details or questions about the specific investigation or grouping of investigations. (en)"
-          },
           "at0021.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0021.1",
@@ -743,53 +696,6 @@
             "code" : "at0043.2",
             "text" : "Overordnet beskrivelse bildediagnostiske undersøkelse",
             "description" : "Descripció narrativa sobre la història de qualsevol investigació rellevant per al propòsit de l'screening."
-          },
-          "at0002" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "*Result (en)",
-            "description" : "*The test result or findings of the screening investigation. (en)",
-            "comment" : "*For example: positive/negative. (en)"
-          },
-          "at0003" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003",
-            "text" : "*Date (en)",
-            "description" : "*The date and/or time of the most recent test. (en)",
-            "comment" : "*Can be a partial date, for example, only a year. (en)"
-          },
-          "at0021" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0021",
-            "text" : "*Test name (en)",
-            "description" : "*Name of the imaging examination or laboratory test or grouping. (en)",
-            "comment" : "*For example: 'Urea and electrolytes', or 'HIV screening panel'.\r\nCoding of the 'Investigation name' with a terminology is preferred, where possible. (en)"
-          },
-          "at0024" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0024",
-            "text" : "*Carried out? (en)",
-            "description" : "*Is there a history of the investigation being carried out? (en)",
-            "comment" : "*In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)"
-          },
-          "at0025" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0025",
-            "text" : "*Comment (en)",
-            "description" : ""
-          },
-          "at0026" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0026",
-            "text" : "*Specific investigation (en)",
-            "description" : "*Details about a specified investigation or grouping of investigations relevant for the screening purpose. (en)",
-            "comment" : "*Use separate instances of this CLUSTER to differentiate between specific investigations or groupings of investigations. (en)"
-          },
-          "at0041" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0041",
-            "text" : "*Additional details (en)",
-            "description" : "*Structured details or questions about the specific investigation or grouping of investigations. (en)"
           },
           "at0021.1" : {
             "@type" : "ARCHETYPE_TERM",
