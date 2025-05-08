@@ -9,7 +9,7 @@
       "organisation" : "DIPS AS",
       "email" : "bna@dips.no"
     },
-    "otherContributors" : [ ],
+    "otherContributors" : [ "Liv Laugen, John Tore Valand" ],
     "lifecycleState" : {
       "codeString" : "unmanaged"
     },
@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "baf6fcdf1cd16159487e58bcc129aca7",
+      "MD5-CAM-1.0.1" : "2bf745745b3357d0d49aa4d42ab4ea3e",
       "PARENT:MD5-CAM-1.0.1" : "dd9eb4bbddba032d835d00b77665b264",
       "sem_ver" : "1.0.0",
       "build_uid" : ""
@@ -36,7 +36,9 @@
           },
           "codeString" : "nb"
         },
+        "purpose" : "Danner en basis struktur for å kartlegge om det er gjort bildediagnostikk av pasienten. Registreringene vil danne et sammendrag av bildediagnostiske undersøkelser og gir med det en oversikt for den enkelte pasient. ",
         "keywords" : [ ],
+        "misuse" : "",
         "originalResourceUri" : { },
         "otherDetails" : { }
       }
@@ -270,78 +272,14 @@
                               "rmTypeName" : "TERMINOLOGY_CODE",
                               "occurrences" : "0..1",
                               "terminologyId" : {
-                                "value" : "no.onk.bildediagnostikk"
+                                "value" : "no.onk.kartlegging"
                               },
                               "constraint" : [ ],
-                              "selectedTerminologies" : [ "no.onk.bildediagnostikk" ],
+                              "selectedTerminologies" : [ "no.onk.kartlegging" ],
                               "includedExternalTerminologyCodes" : [ {
-                                "terminologyId" : "no.onk.bildediagnostikk",
-                                "code" : "1",
-                                "value" : "Sarkom"
-                              }, {
-                                "terminologyId" : "no.onk.bildediagnostikk",
-                                "code" : "2",
-                                "value" : "Kreft i hode og hals"
-                              }, {
-                                "terminologyId" : "no.onk.bildediagnostikk",
-                                "code" : "3",
-                                "value" : "Hjernesvulst"
-                              }, {
-                                "terminologyId" : "no.onk.bildediagnostikk",
-                                "code" : "4",
-                                "value" : "Brystkreft"
-                              }, {
-                                "terminologyId" : "no.onk.bildediagnostikk",
-                                "code" : "5",
-                                "value" : "Lungekreft"
-                              }, {
-                                "terminologyId" : "no.onk.bildediagnostikk",
-                                "code" : "6",
-                                "value" : "Kreft i fordøyelsessystemet"
-                              }, {
-                                "terminologyId" : "no.onk.bildediagnostikk",
-                                "code" : "7",
-                                "value" : "Gynekologisk kreft"
-                              }, {
-                                "terminologyId" : "no.onk.bildediagnostikk",
-                                "code" : "8",
-                                "value" : "Kreft i nyre og urinveier"
-                              }, {
-                                "terminologyId" : "no.onk.bildediagnostikk",
-                                "code" : "9",
-                                "value" : "Benmargs- og blodkreft"
-                              }, {
-                                "terminologyId" : "no.onk.bildediagnostikk",
-                                "code" : "10",
-                                "value" : "Lymfom"
-                              }, {
-                                "terminologyId" : "no.onk.bildediagnostikk",
-                                "code" : "11",
-                                "value" : "Hudkreft"
-                              }, {
-                                "terminologyId" : "no.onk.bildediagnostikk",
-                                "code" : "12",
-                                "value" : "Kreft i mannlige kjønnsorganer"
-                              }, {
-                                "terminologyId" : "no.onk.bildediagnostikk",
-                                "code" : "13",
-                                "value" : "Kreft i endokrine kjertler"
-                              }, {
-                                "terminologyId" : "no.onk.bildediagnostikk",
-                                "code" : "14",
-                                "value" : "Nevroendokrin kreft"
-                              }, {
-                                "terminologyId" : "no.onk.bildediagnostikk",
-                                "code" : "15",
-                                "value" : "Barnekreft"
-                              }, {
-                                "terminologyId" : "no.onk.bildediagnostikk",
-                                "code" : "16",
-                                "value" : "Øyekreft"
-                              }, {
-                                "terminologyId" : "no.onk.bildediagnostikk",
-                                "code" : "17",
-                                "value" : "Svulst av ukjent opprinnelse / Annet"
+                                "terminologyId" : "no.onk.kartlegging",
+                                "code" : "02",
+                                "value" : "Bildediagnostikk"
                               } ]
                             } ]
                           } ],
@@ -370,7 +308,7 @@
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "ac0.11" ],
+                              "constraint" : [ "ac0.122" ],
                               "selectedTerminologies" : [ ]
                             } ]
                           } ],
@@ -461,6 +399,79 @@
                             } ]
                           } ],
                           "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0046.1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "occurrences" : "1..1",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "0..1",
+                                  "terminologyId" : {
+                                    "value" : "SNOMED-CT"
+                                  },
+                                  "constraint" : [ ],
+                                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                                  "includedExternalTerminologyCodes" : [ {
+                                    "terminologyId" : "SNOMED-CT",
+                                    "code" : "726551006",
+                                    "value" : "Kontrast mammografi"
+                                  }, {
+                                    "terminologyId" : "SNOMED-CT",
+                                    "code" : "241058008",
+                                    "value" : "Forstørrelsesmammografi"
+                                  }, {
+                                    "terminologyId" : "SNOMED-CT",
+                                    "code" : "450566007",
+                                    "value" : "Tomosyntese (DBT) av mamma"
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0002.1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_TEXT",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0025.1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_ARCHETYPE_ROOT",
+                          "rmTypeName" : "CLUSTER",
+                          "occurrences" : "0..1",
+                          "nodeId" : "at0041.1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ],
+                          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-imaging_exam-002.v1",
+                          "referenceType" : "archetypeOverlay"
                         } ]
                       } ],
                       "attributeTuples" : [ ]
@@ -508,10 +519,10 @@
             "text" : "Overordnet beskrivelse bildediagnostiske undersøkelse",
             "description" : "Narrative description about the history of any investigations relevant for the screening purpose."
           },
-          "ac0.11" : {
+          "ac0.122" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.11",
+            "code" : "ac0.122",
             "description" : ""
           }
         },
@@ -542,10 +553,10 @@
             "text" : "Overordnet beskrivelse bildediagnostiske undersøkelse",
             "description" : "Beschreibung über die Geschichte der Durchführung von Untersuchungen, die für das Screening relevant sind."
           },
-          "ac0.11" : {
+          "ac0.122" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.11",
+            "code" : "ac0.122",
             "description" : ""
           }
         },
@@ -568,7 +579,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0027.2",
             "text" : "Er bildediagnostiske undersøkelser gjennomført?",
-            "description" : "Er det gjort noen diagnostiske undersøkelser tidligere som er innenfor kartleggingsformålet?",
+            "description" : "Innledende spørsmål med tanke på om det er gjort noen form for bildediagnostikk. ",
             "comment" : "Designkommentar:\nDette er inngangsspørsmålet om det i det hele tatt er gjort noe bildediagnostikk. \nDette har man med for å få en avkreftelse om det faktisk er tatt stilling til spm. mao. egentlig for å få med alternativet nei. "
           },
           "at0043.2" : {
@@ -582,14 +593,8 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0040",
             "text" : "Kartleggingsformål",
-            "description" : "Konteksten eller årsaken for kartleggingen.",
-            "comment" : "Designkommentar:\nDette feltet er navnet no.onk.bildediagnostikk for å si at kartleggingsformålet er om det er gjort noe bildediagnostikk innenfor onkoloki (felles kreftjournalprosjektet). \nSelve valglisten er hvilke gruppe av krefttyper som er det er kartlagt for. Dette er et internt kodesett. "
-          },
-          "ac0.11" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.11",
-            "description" : ""
+            "description" : "Angir hva som var årsaken til at bildediagnostikk ble kartlagt. ",
+            "comment" : "Design kommentar: Benytter den spesifikk kodeliste for kartlegging innenfor SJK "
           },
           "at0021.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -597,6 +602,12 @@
             "text" : "Modalitet",
             "description" : "Navnet på en undersøkelse eller gruppe av undersøkelser.",
             "comment" : "For eksempel: \"Urea og elektrolytter\" eller \"HIV screeningpanel\".\r\nKoding av \"Undersøkelsesnavn\" med en terminologi foretrekkes der det er mulig."
+          },
+          "ac0.122" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.122",
+            "description" : ""
           }
         },
         "es" : {
@@ -626,12 +637,6 @@
             "text" : "Overordnet beskrivelse bildediagnostiske undersøkelse",
             "description" : "Descripción narrativa sobre la historia de cualquier investigación relevante para el propósito del screening."
           },
-          "ac0.11" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.11",
-            "description" : ""
-          },
           "at0002" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002",
@@ -685,6 +690,31 @@
             "text" : "*Test name (en)",
             "description" : "*Name of the imaging examination or laboratory test or grouping. (en)",
             "comment" : "*For example: 'Urea and electrolytes', or 'HIV screening panel'.\r\nCoding of the 'Investigation name' with a terminology is preferred, where possible. (en)"
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "*Result (en)",
+            "description" : "*The test result or findings of the screening investigation. (en)",
+            "comment" : "*For example: positive/negative. (en)"
+          },
+          "at0041.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0041.1",
+            "text" : "*Additional details (en)",
+            "description" : "*Structured details or questions about the specific investigation or grouping of investigations. (en)"
+          },
+          "at0025.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025.1",
+            "text" : "*Comment (en)",
+            "description" : ""
+          },
+          "ac0.122" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.122",
+            "description" : ""
           }
         },
         "ca" : {
@@ -714,12 +744,6 @@
             "text" : "Overordnet beskrivelse bildediagnostiske undersøkelse",
             "description" : "Descripció narrativa sobre la història de qualsevol investigació rellevant per al propòsit de l'screening."
           },
-          "ac0.11" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.11",
-            "description" : ""
-          },
           "at0002" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002",
@@ -773,6 +797,31 @@
             "text" : "*Test name (en)",
             "description" : "*Name of the imaging examination or laboratory test or grouping. (en)",
             "comment" : "*For example: 'Urea and electrolytes', or 'HIV screening panel'.\r\nCoding of the 'Investigation name' with a terminology is preferred, where possible. (en)"
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "*Result (en)",
+            "description" : "*The test result or findings of the screening investigation. (en)",
+            "comment" : "*For example: positive/negative. (en)"
+          },
+          "at0041.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0041.1",
+            "text" : "*Additional details (en)",
+            "description" : "*Structured details or questions about the specific investigation or grouping of investigations. (en)"
+          },
+          "at0025.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025.1",
+            "text" : "*Comment (en)",
+            "description" : ""
+          },
+          "ac0.122" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.122",
+            "description" : ""
           }
         }
       },
@@ -863,6 +912,531 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.17",
           "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.18" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.18",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.19" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.19",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.20" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.20",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.21" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.21",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.22" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.22",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.23" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.23",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.24" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.24",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.25" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.25",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.26" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.26",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.27" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.27",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.28" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.28",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.29" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.29",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.30" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.30",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.31" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.31",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.32" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.32",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.33" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.33",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.34" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.34",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.35" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.35",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.36" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.36",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.37" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.37",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.38" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.38",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.39" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.39",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.40" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.40",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.41" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.41",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.42" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.42",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.43" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.43",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.44" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.44",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.45" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.45",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.46" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.46",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.47" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.47",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.48" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.48",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.49" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.49",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.50" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.50",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.51" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.51",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.52" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.52",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.53" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.53",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.54" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.54",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.55" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.55",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.56" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.56",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.57" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.57",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.58" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.58",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.59" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.59",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.60" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.60",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.61" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.61",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.62" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.62",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.63" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.63",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.64" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.64",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.65" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.65",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.66" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.66",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.67" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.67",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.68" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.68",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.69" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.69",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.70" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.70",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.71" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.71",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.72" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.72",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.73" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.73",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.74" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.74",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.75" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.75",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.76" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.76",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.77" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.77",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.78" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.78",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.79" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.79",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.80" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.80",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.81" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.81",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.82" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.82",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.83" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.83",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.84" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.84",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.85" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.85",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.86" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.86",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.87" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.87",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.88" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.88",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.89" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.89",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.90" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.90",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.91" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.91",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.92" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.92",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.93" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.93",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.94" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.94",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.95" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.95",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.96" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.96",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.97" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.97",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.98" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.98",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.99" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.99",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.100" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.100",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.101" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.101",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.102" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.102",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.103" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.103",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.104" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.104",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.105" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.105",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.106" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.106",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.107" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.107",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.108" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.108",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.109" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.109",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.110" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.110",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.111" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.111",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.112" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.112",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.113" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.113",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.114" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.114",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.115" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.115",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.116" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.116",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.117" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.117",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.118" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.118",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.119" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.119",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.120" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.120",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.121" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.121",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.122" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.122",
+          "members" : [ "at0028", "at0029", "at0030" ]
         }
       }
     },
@@ -1080,6 +1654,201 @@
             "text" : "Bildediagnostisk undersøkelse - kroppsstruktur",
             "description" : "Funn eller observasjoner ved radiologisk undersøkelse av et definert organ eller en kroppsdel.",
             "comment" : "Repeteres for hver kroppsdel/organ som er undersøkt med de bildediagnostiske modaliteten "
+          }
+        },
+        "de" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "3677e97d-c5d0-483c-a291-474e45b3b4eb",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Natalia Strauch, Darin Leonhardt",
+        "organisation" : "Medizinische Hochschule Hannover, PLRI für medizinische Informatik/ Medizinische Hochschule",
+        "email" : "Strauch.Natalia@mh-hannover.de, leonhardt.darin@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Vebjørn Arntzen",
+        "organisation" : "Oslo University Hospital",
+        "email" : "varntzen@ous-hf.no"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "a55f66a2-39d9-43fb-b962-c47e875bcec4",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "DD19B53EA9A429417A10AB0F1AA8FE56"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.imaging_exam.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-imaging_exam-002.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "SNOMED-CT"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "69536005",
+                    "value" : "Caput (hode)"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "421060004",
+                    "value" : "Columna vertebralis (ryggrad)"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "51185008",
+                    "value" : "Thorax (brystkasse)"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "76752008",
+                    "value" : "Mamma (bryst)"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "91470000",
+                    "value" : "Aksille"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "39607008",
+                    "value" : "Lunge"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "818983003",
+                    "value" : "Abdomen"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "10200004",
+                    "value" : "Lever"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "3120008",
+                    "value" : "Pleura"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "12921003",
+                    "value" : "Pelvis (bekken)"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "113192009",
+                    "value" : "Skjelett"
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0002.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0004.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0006.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0007.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "nb" : {
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Kroppsstruktur",
+            "description" : "Angir om det foreligger bildediagnostikk for valgt kroppsdel innenfor samme modalitet. ",
+            "comment" : "Bruker et utvalg av kroppsdeler basert på SNOMED-CT koder. "
           }
         },
         "de" : { }
