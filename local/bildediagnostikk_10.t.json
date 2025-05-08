@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "c60cb6af487116d5137c06b8f820e8bc",
+      "MD5-CAM-1.0.1" : "6f18eb03aad3414d074fce705a52fe2e",
       "PARENT:MD5-CAM-1.0.1" : "dd9eb4bbddba032d835d00b77665b264",
       "sem_ver" : "1.0.0",
       "build_uid" : ""
@@ -651,13 +651,6 @@
             "text" : "Kartleggingsformål",
             "description" : "Angir hva som var årsaken til at bildediagnostikk ble kartlagt. ",
             "comment" : "Design kommentar: Benytter den spesifikk kodeliste for kartlegging innenfor SJK "
-          },
-          "at0021.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0021.1",
-            "text" : "Modalitet",
-            "description" : "Navnet på en undersøkelse eller gruppe av undersøkelser.",
-            "comment" : "For eksempel: \"Urea og elektrolytter\" eller \"HIV screeningpanel\".\r\nKoding av \"Undersøkelsesnavn\" med en terminologi foretrekkes der det er mulig."
           },
           "ac0.122" : {
             "@type" : "ARCHETYPE_TERM",
