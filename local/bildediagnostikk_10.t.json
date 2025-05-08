@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "c6fe2ee422e43efcb7deb8cc9efe1bb6",
+      "MD5-CAM-1.0.1" : "baf6fcdf1cd16159487e58bcc129aca7",
       "PARENT:MD5-CAM-1.0.1" : "dd9eb4bbddba032d835d00b77665b264",
       "sem_ver" : "1.0.0",
       "build_uid" : ""
@@ -94,1546 +94,6 @@
   "otherMetaData" : { },
   "templateOverlays" : [ {
     "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "2fe9e9f8-adfd-4406-878a-82b38ef498a9",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "430B520EC4563F96465173ED840F7A4A",
-        "ip_acknowledgements" : "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org."
-      },
-      "details" : {
-        "de" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "de"
-          },
-          "purpose" : "Zur Identifikation und Dokumentation von strukturierten Daten bezüglich einer bestimmten Körperstelle oder innerhalb des menschlichen Körpers, unter Verwendung makroskopischer anatomischer Fachbegriffe.",
-          "keywords" : [ "Lokalisation", "Stelle", "anatomisch", "anatomischer Bereich", "topographische Anatomie", "makroskopisch", "Anatomie" ],
-          "use" : "Zur Dokumentation von strukturierten und konsistenten Details eines einzelnen bestimmten physischen Bereich innerhalb des menschlichen Körpers verwenden.\r\n\r\nDieser Archetyp wurde speziell für die Verwendung im Rahmen von allen geeigneten ENTRY- oder CLUSTER-Archetypen entwickelt, die den Kontext des anatomischen Fundortes liefern.\r\n\r\nAls grundlegender Bestandteil der klinischen Praxis, können Mediziner anatomische Lokalisationen auf einer Vielzahl von komplexen und variablen Wegen definieren. In der Praxis tragen einige Archetypen ein einziges Datenelement für eine einfache Beschreibung der Körperstelle - zum Beispiel OBSERVATION.blood_pressure und CLUSTER.symptom bei der Beschreibung von Ohrenschmerzen. In dieser Situation, in der die Wertemenge berechenbar und simpel zu definieren ist, ist dieses einzelne Datenelement eine sehr genaue und pragmatische Möglichkeit, die Stelle im Körper zu protokollieren und zu einem späteren Zeitpunkt abzufragen. In der Situation, in der die anatomische Lage nicht genau definiert ist oder zur Laufzeit bestimmt werden muss, kann es flexibler sein, diesen strukturierten Archetyp zu verwenden. Wenn zum Beispiel jedes Symptom ohne einen vordefinierten Umfang der Symptomatik aufgezeichnet werden kann, dann ist es sinnvoll, diesen Archetyp zu verwenden, um eine spezifische anatomische Lokalisation im Körper zu definieren. In diesem Fall trägt der CLUSTER.symptom Archetyp auch einen SLOT für 'Detaillierte anatomische Lokalisation', der diesen Archetyp enthalten kann, um maximale Flexibilität bei der Erfassung der Daten zur anatomischen Lage zu gewährleisten.\r\n\r\nDieser Archetyp unterstützt die Aufnahme von komplex strukturierten anatomischen Stellen. Beispielsweise findet sich der Scheitelpunkt des Herzens typischerweise am fünften linken Interkostalraum in der Mittelklavikularlinie, Schmerzempfindlichkeit am McBurney-Punkt an der Bauchdecke oder eine Risswunde an der Handflächeninnenseite des proximalen rechten Daumens.\r\n\r\nEine Kombination der Datenelemente in diesem Archetyp kann verwendet werden, um jede Komponente eines postkoordinierten Terminologieausdrucks, der den anatomischen Bereich repräsentiert, individuell zu dokumentieren.\r\n\r\nDer SLOT \"Alternative Struktur\" erlaubt die Aufnahme zusätzlicher Archetypen, die eine alternative Struktur zur Beschreibung derselben Körperstelle bieten, wie z.B. CLUSTER.anatomical_location_relative oder CLUSTER.anatomical_location_clock, falls dies benötigt wird. Wenn dieser Archetyp nur zur Benennung eines großen und/oder unspezifischen Körperteils verwendet werden kann, unterstützt die zusätzliche Verwendung des Archetyps CLUSTER.anatomical_location_relative die Aufnahme einer genaueren Position - zum Beispiel 2 cm vor der kubitalen Fossa des linken Unterarms oder 4 cm unter dem Rippenrand an der Brustwand in der Mittelklavikularlinie.\r\n\r\nWenn dieser Archetyp in anderen Archetypen verwendet wird, in denen das angegebene Thema nicht die Person ist, für die der Datensatz erstellt wird, z.B. ein Fötus in-utero, dann wird der anatomische Ort eine Körperstelle auf oder innerhalb des Fötus identifizieren.\"\r\n",
-          "misuse" : "Nicht zur Angabe von unilateralen/bilateralen Vorkommen eines anatomischen Merkmals verwenden.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "sv" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "sv"
-          },
-          "purpose" : "Att identifiera och registrera strukturerade detaljer om ett enskilt fysiskt ställe, på eller i människokroppen genom att använda makroskopiska anatomiska termer.",
-          "keywords" : [ "lokalisation", "ställe", "anatomisk", "anatomiskt område", "topografisk anatomi", "makroskopisk", "anatomi" ],
-          "use" : "Används för att strukturerat och konsekvent registrera detaljer om ett enskilt fysiskt ställe på eller i människokroppen.\r\n\r\nArketypen är specifikt utformad för att användas i lämpliga ENTRY- och CLUSTER-arketyper som sätter den anatomiska lokalisationen i ett sammanhang.\r\n\r\nSom en grundläggande del av klinisk praxis kan kliniker beskriva anatomiska platser på en mängd olika sätt. Vissa arketyper innehåller ett enskilt dataelement för beskrivning av en anatomisk plats - till exempel OBSERVATION.blood_pressure och CLUSTER.symptoms när man beskriver smärta i örat. I situationer, där urvalet är förutsägbart och lätt att definiera, är detta enkla dataelement ett mycket exakt och praktiskt sätt att registrera en anatomisk plats och söka efter den vid ett senare tillfälle. När den anatomiska platsen inte är väldefinierad eller behöver genereras automatiskt av IT- system, kan det vara mer flexibelt att använda denna strukturerade arketyp. Till exempel, i en situation där symptom ska registreras utan fördefinierad omfattning om vilka typer av symptom det kan vara, kan denna arketyp vara användbar för att definiera en anatomisk plats i kroppen. I det här fallet har CLUSTER.symptom-arketypen en SLOT för detaljerad anatomisk lokalisation som kan innehålla denna arketyp för att stödja maximal flexibilitet vid registrering av anatomisk lokalisation.\r\n\r\nArketypen stöder registrering av komplexa strukturerade anatomiska platser. Till exempel finns hjärtspetsstöten typiskt i mitralområdet, ömhet vid McBurneys punkt på bukväggen eller sårskada på handflatan av den proximala högra tummen.\r\n\r\nEn kombination av dataelement i den här arketypen kan användas för att registrera varje komponent i ett postkoordinerat terminologiskt uttryck som representerar den anatomiska platsen. \r\n\r\nSLOT ‘Alternativt struktur’ möjliggör inkludering av ytterligare arketyper som ger en alternativ struktur för att beskriva samma anatomisk plats, så som CLUSTER.anatomical_location_relative eller CLUSTER.anatomical_location_clock, om detta skulle krävas. I situationen där denna arketyp kan användas endast för att namnge en stor och/eller ej specifik kroppsdel, kan användning av CLUSTER.anatomical_location_relative arketyp stödja registrering av mer exakt anatomisk plats – till exempel , 2cm anteriort från fossa cubitalis på vänster arm eller 4 cm under revbensbågen i medioklavikularlinjen på bröstväggen.\r\n\r\nOm denna arketyp används inom andra arketyper där patienten inte är den individen för vilken dokumentation skapas, till exempel ett foster i livmodern, används denna arketyp för att identifiera en anatomisk plats på eller i fostret.",
-          "misuse" : "Används inte för att specificera unilaterala/bilaterala förekomster av ett anatomiskt särdrag",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "nb" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "nb"
-          },
-          "purpose" : "For registering av strukturerte detaljer om én enkelt makroskopisk fysisk lokalisering på eller i menneskekroppen.",
-          "keywords" : [ "sted", "lokalisering", "lokalisasjon", "anatomisk", "kroppssted", "anatomisk region", "topografisk anatomi", "makroskopisk", "anatomi", "kroppsdel", "dermatom", "legemsdel" ],
-          "use" : "Brukes for å dokumentere strukturerte og ensartede detaljer om et enkelt identifisert fysisk sted på eller i menneskekroppen.\r\n\r\nDenne arketypen er spesifikt designet for bruk i ENTRY og CLUSTER-arketyper som gir konteksten for den anatomiske lokaliseringen.\r\n\r\nSom en grunnleggende del av klinisk praksis kan klinikere beskrive anatomiske lokaliseringer på et utall forskjellige måter. Noen arketyper inneholder et enkelt dataelement for enkel beskrivelse av en kroppslig lokalisering - for eksempel OBSERVATION.blood_pressure, og CLUSTER.symptom når man beskriver øresmerter. I denne situasjonen, hvor verdisettet er forutsigbart og enkelt å definere, er dette enkle dataelementet en meget nøyaktig og praktisk måte for å registrere et anatomisk sted på eller i kroppen og søke på det på et senere tidspunkt. Når den anatomiske lokaliseringen derimot ikke er veldefinert eller må defineres fortløpende, kan det være mer fleksibelt å bruke denne strukturerte arketypen. For eksempel i en situasjon hvor et hvilket som helst symptom kan bli registrert uten noen forkunnskaper om hvilke typer symptomer det kan være, så vil muligheten for å bruke denne arketypen være nyttig. I dette tilfellet har CLUSTER.symptom-arketypen et SLOT for \"Strukturert anatomisk lokalisering\" som kan inneholde denne arketypen for å støtte maksimal fleksibilitet i registrering av data om den anatomiske lokaliseringen.\r\n\r\nArketypen støtter registrering av komplekse strukturerte anatomiske steder. For eksempel finnes hjertespisstøt typisk i femte venstre intercostalrom i midtclaviculære linjen, ømhet ved McBurney's punkt på abdomen eller laserasjon på den palmare siden av den proksimale høyre tommelen.\r\n\r\nEn kombinasjon av dataelementer i denne arketypen kan brukes for individuell registrering av hver komponent av et postkoordinert terminologiuttrykk for anatomisk sted.\r\n\r\nArketypen inneholder et \"Alternativ struktur\" SLOT som tillater inklusjon av ytterligere arketyper som gir en alternativ struktur for beskrivelse av det samme kroppssted, som CLUSTER.anatomical_location_relative eller CLUSTER.anatomical_location_clock om dette er nødvendig. I en situasjon hvor denne arketypen bare brukes til å navngi en større og/eller ikke-spesifikk kroppsdel, kan ytterligere bruk av CLUSTER.anatomical_location_relative-arketypen understøtte registrering av en mer presis lokasjon - for eksempel 2 cm anteriort for venstre arms cubitalfossa eller 4 cm under høyre costamargin på brystveggen i midtclaviculærlinjen.\r\n\r\nHvis denne arketypen brukes i andre arketyper hvor pasienten/klienten ikke er den som dokumentasjonen omhandler, for eksempel foetus-in-utero, så vil den anatomiske lokaliseringen bli identifisert som en lokalisering på eller i kroppen til fosteret.",
-          "misuse" : "Brukes ikke for spesifisering av unilateral/bilateral forekomst av et anatomisk kjennetegn.",
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "pt-br" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "pt-br"
-          },
-          "purpose" : "Para identificar e anotar informações estruturadas sobre um único local físico do corpo humano usando termos anatômicos macroscópicos.",
-          "keywords" : [ "localização", "local", "anatômico", "região anatômica", "topografia anatômica", "macroscópico", "anatomia" ],
-          "use" : "Use para gravar detalhes estruturados e consistentes sobre um único local físico identificado do corpo humano.\r\n\r\nEste arquétipo foi projetado especificamente para ser utilizado dentro do contexto de qualquer entrada ou CLUSTER arquétipo que forneça o contexto da localização anatômica.\r\n\r\nComo uma parte fundamental da prática clínica, os médicos podem descrever localizações anatômicas em uma miríade de formas complexas e variáveis. Na prática, alguns arquétipos carregam um elemento de dados único para o transporte de uma simples descrição do local do corpo - por exemplo, OBSERVATION.blood_pressure e CLUSTER.symptom quando descrevem a dor de ouvido. Nesta situação, onde o valor definido é previsível e simples de definir, este elemento de dados único é uma maneira muito precisa e pragmática para gravar o local no corpo e a consulta em uma data posterior. No entanto na situação onde a localização anatômica não é bem definida ou precisa ser determinada em tempo de execução, pode ser mais flexível para usar este arquétipo estruturado. Por exemplo, na situação onde qualquer sintoma pode ser gravado sem qualquer escopo predefinido do tipo, em seguida, permitindo o uso deste arquétipo especificamente, definir uma localização anatômica do corpo pode ser útil. Neste caso, o arquétipo CLUSTER.symptom carrega também um SLOT para localização anatômica detalhada que inclui este arquétipo para oferecer suporte a máxima flexibilidade na gravação de dados da localização anatômica.\r\n\r\nEste arquétipo suporta gravação de locais anatômicos estruturados complexos. Por exemplo, a batida do ápice do coração é normalmente encontrada no quinto espaço intercostal esquerdo na linha médio-clavicular, ou a sensibilidade em ponto de McBurneys na parede abdominal ou laceração na face palmar do polegar direito proximal.\r\n\r\nUma combinação de elementos de dados neste arquétipo pode ser usado para gravar individualmente cada componente de uma expressão de terminologia coordenada que representa o site anatômico.\r\n\r\nA estrutura alternativa SLOT permite a inclusão de arquétipos adicionais que fornecem uma estrutura alternativa para descrever o mesmo local do corpo, como CLUSTER.anatomical_location_relative ou CLUSTER.anatomical_location_clock, esta deve ser exigida. Na situação onde este arquétipo só pode ser usado para nomear uma parte do corpo e/ou não-específica, o uso adicional do arquétipo CLUSTER.anatomical_location_relative oferecerá suporte a gravação de uma localização mais precisa - por exemplo, 2 cm anterior da fossa cubital do antebraço esquerdo ou 4 cm abaixo da margem costal de R na parede torácica na linha médio-clavicular.\r\n\r\nSe este arquétipo é usado dentro de outros arquétipos onde o assunto especificado de cuidados não é o indivíduo para quem o registro está sendo criado, por exemplo um feto em útero, então a localização anatômica vai estar realizada identificando um local do corpo ou com o feto.",
-          "misuse" : "Não deve ser usado para especificar as ocorrências unilateral/bilateral de uma característica anatômica.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "ar-sy" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "ar-sy"
-          },
-          "purpose" : "تسجيل المكان التشريحي بالتفصيل",
-          "keywords" : [ "الموقع", "المكان", "تشريحي" ],
-          "misuse" : "لا يستخدم لتحديد حالات الحدوث في جانب واحد أو في الجانبين - حيث إن ذلك متعلق بتقييم قد يتضمن العديد من الأماكن",
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "sl" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "sl"
-          },
-          "purpose" : "*To record details about anatomical location.(en)",
-          "keywords" : [ "*location(en)", "*site(en)", "*anatomical(en)" ],
-          "misuse" : "*Not for specifiying unilateral/bilateral occurence - this is related to an evaluation which perhaps includes multiple locations.(en)",
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "purpose" : "To identify and record structured details about a single physical site on, or within, the human body using macroscopic anatomical terms.",
-          "keywords" : [ "location", "site", "anatomical", "anatomic region", "topographic anatomy", "macroscopic", "anatomic", "anatomy" ],
-          "use" : "Use to record structured and consistent details about a single identified physical site on, or within, the human body. \r\n\r\nThis archetype is specifically designed to be used within the context of any appropriate ENTRY or CLUSTER archetypes which supply the context of the anatomical location. \r\n\r\nAs a fundamental part of clinical practice, clinicians can describe anatomical locations in a myriad of complex and variable ways. In practice, some archetypes carry a single data element for carrying a simple description of body site - for example, OBSERVATION.blood_pressure and CLUSTER.symptom when describing ear pain. In this situation, where the value set is predictable and simple to define, this single data element is a very accurate and pragmatic way to record the site in the body and to query at a later date. However in the situation where the anatomical location is not well defined or needs to be determined at run-time, it may be more flexible to use this structured archetype. For example, in the situation where any symptom can be recorded without any predefined scope of the type of symptom, then allowing the use of this archetype to specifically define an anatomical location in the body may be useful. In this case the CLUSTER.symptom archetype also carries a SLOT for 'Detailed anatomical location' which can include this archetype to support maximal flexibility in recording anatomical location data.\r\n\r\nThis archetype supports recording complex structured anatomical sites. For example, the apex beat of the heart is typically found at the fifth left intercostal space in the mid-clavicular line, tenderness at McBurney's point on the abdominal wall or a laceration on the palmar aspect of the proximal right thumb.\r\n\r\nA combination of the data elements in this archetype can be used to individually record each component of a postcoordinated terminology expression that represents the anatomical site.\r\n\r\nThe 'Alternative structure' SLOT allows inclusion of additional archetypes that provide an alternative structure for describing the same body site, such as CLUSTER.anatomical_location_relative or CLUSTER.anatomical_location_clock, should this be required. In the situation where this archetype can only be used to name a large and/or non-specific body part, the additional use of the CLUSTER.anatomical_location_relative archetype will support recording of a more precise location - for example, 2 cm anterior to the cubital fossa of the left forearm or 4 cm below R costal margin on the chest wall in the mid-clavicular line.\r\n\r\nIf this archetype is used within other archetypes where the specified subject of care is not the individual for whom the record is being created, for example a fetus in-utero, then the anatomical location will be identifying a body site on or within the fetus.",
-          "misuse" : "Not to be used for specifiying unilateral/bilateral occurrences of an anatomical feature.",
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "fr" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "fr"
-          },
-          "purpose" : "Identifier et enregistrer des détails structurés concernant un site physique unique sur ou dans le corps humain en utilisant des termes anatomiques macroscopiques.",
-          "keywords" : [ "emplacement", "site", "anatomique", "région anatomique", "anatomie topographique", "macroscopique", "anatomique", "anatomie" ],
-          "use" : "À utiliser pour enregistrer des détails structurés et cohérents sur un seul site physique identifié sur ou dans le corps humain. \r\n\r\nCet archétype est spécifiquement conçu pour être utilisé dans le contexte des archétypes ENTRY ou CLUSTER appropriés qui fournissent le contexte de la localisation anatomique. \r\n\r\nEn tant qu'élément fondamental de la pratique clinique, les cliniciens peuvent décrire les localisations anatomiques d'une myriade de façons complexes et variables. Dans la pratique, certains archétypes contiennent un seul élément de données pour une simple description du site corporel - par exemple, OBSERVATION.blood_pressure et CLUSTER.symptom pour la description d'une douleur à l'oreille. Dans cette situation, où l'ensemble des valeurs est prévisible et simple à définir, cet élément de données unique est un moyen très précis et pragmatique d'enregistrer le site dans le corps et de l'interroger à une date ultérieure. Toutefois, lorsque l'emplacement anatomique n'est pas bien défini ou doit être déterminé au moment de l'exécution, il peut être plus souple d'utiliser cet archétype structuré. Par exemple, lorsque n'importe quel symptôme peut être enregistré sans que le type de symptôme soit prédéfini, il peut être utile d'autoriser l'utilisation de cet archétype pour définir spécifiquement une localisation anatomique dans le corps. Dans ce cas, l'archétype CLUSTER.symptom comporte également un SLOT pour \"Localisation anatomique détaillée\", qui peut inclure cet archétype afin d'assurer une flexibilité maximale dans l'enregistrement des données relatives à la localisation anatomique.\r\n\r\nCet archétype permet d'enregistrer des sites anatomiques complexes et structurés. Par exemple, le battement de l'apex du cœur se trouve généralement au cinquième espace intercostal gauche sur la ligne médio-claviculaire, la sensibilité au point de McBurney sur la paroi abdominale ou une lacération sur la face palmaire de la partie proximale du pouce droit.\r\n\r\nUne combinaison des éléments de données de cet archétype peut être utilisée pour enregistrer individuellement chaque composante d'une expression terminologique postcoordonnée représentant le site anatomique.\r\n\r\nLe SLOT \"Structure alternative\" permet d'inclure des archétypes supplémentaires qui fournissent une structure alternative pour décrire le même site corporel, comme CLUSTER.anatomical_location_relative ou CLUSTER.anatomical_location_clock, si cela s'avère nécessaire. Dans le cas où cet archétype ne peut être utilisé que pour nommer une partie du corps importante et/ou non spécifique, l'utilisation supplémentaire de l'archétype CLUSTER.anatomical_location_relative permettra d'enregistrer une localisation plus précise - par exemple, 2 cm en avant de la fosse cubitale de l'avant-bras gauche ou 4 cm en dessous du rebord costal R sur la paroi thoracique, au niveau de la ligne claviculaire médiane.\r\n\r\nSi cet archétype est utilisé dans d'autres archétypes où le sujet de soins spécifié n'est pas la personne pour laquelle le dossier est créé, par exemple un fœtus in-utero, la localisation anatomique identifiera alors un site corporel sur ou dans le fœtus.",
-          "misuse" : "Ne pas utiliser pour spécifier les occurrences unilatérales/bilatérales d'une caractéristique anatomique.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "nl" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "nl"
-          },
-          "purpose" : "Om gestructureerde details over een structuur op of in het menselijk lichaam te identificeren en vast te leggen, in macroscopische anatomische termen.",
-          "keywords" : [ "locatie", "structuur", "anatomisch", "anatomische regio", "topografische anatomie", "macroscopisch" ],
-          "use" : "Gebruik om gestructureerde details over een structuur op of in het menselijk lichaam te identificeren en vast te leggen.",
-          "misuse" : "Niet gebruiken om meerdere unilaterale/bilaterale structuren vast te leggen.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
-    },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.anatomical_location.v1",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-anatomical_location-001.v1"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "CLUSTER",
-      "nodeId" : "at0000.1",
-      "attributes" : [ {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "items",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0001.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "0..1",
-                  "terminologyId" : {
-                    "value" : "SNOMED-CT"
-                  },
-                  "constraint" : [ ],
-                  "selectedTerminologies" : [ "SNOMED-CT" ],
-                  "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "69536005",
-                    "value" : "Caput (hode)"
-                  }, {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "421060004",
-                    "value" : "Columna vertebralis (ryggrad)"
-                  }, {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "51185008",
-                    "value" : "Thorax (brystkasse)"
-                  }, {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "76752008",
-                    "value" : "Mamma (bryst)"
-                  }, {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "91470000",
-                    "value" : "Aksille"
-                  }, {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "39607008",
-                    "value" : "Lunge"
-                  }, {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "818983003",
-                    "value" : "Abdomen"
-                  }, {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "10200004",
-                    "value" : "Lever"
-                  }, {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "3120008",
-                    "value" : "Pleura"
-                  }, {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "12921003",
-                    "value" : "Pelvis (bekken)"
-                  }, {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "113192009",
-                    "value" : "Skjelett"
-                  } ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0065.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0002.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "CODE_PHRASE",
-                  "occurrences" : "1..1",
-                  "terminologyId" : {
-                    "value" : "local"
-                  },
-                  "constraint" : [ "at0003", "at0004" ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0064.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "CODE_PHRASE",
-                  "occurrences" : "1..1",
-                  "terminologyId" : {
-                    "value" : "local"
-                  },
-                  "constraint" : [ "at0067", "at0068", "at0069", "at0070", "at0071", "at0072", "at0073", "at0074", "at0080", "at0081", "at0075", "at0076", "at0082", "at0077", "at0078", "at0079" ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_TEXT",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0055.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "CODE_PHRASE",
-                  "occurrences" : "1..1",
-                  "terminologyId" : {
-                    "value" : "local"
-                  },
-                  "constraint" : [ "at0062", "at0056", "at0057", "at0058", "at0059", "at0060", "at0063" ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_TEXT",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0023.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        } ]
-      } ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "ar-sy" : { },
-        "sl" : { },
-        "en" : { },
-        "nb" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Anatomisk lokalisering",
-            "description" : "Et fysisk sted på eller inne i menneskekroppen.",
-            "comment" : "Designkommentar:\nHer kan man legge inn hvilke kroppsdel man har tatt bilde av. \nHvis man ikke trenger å ha med resyme og dato for hver anatomisk sted man har tatt bilde kan kun dette CLUSTERet gjentas for hver kroppsdel. "
-          },
-          "at0001.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "Navn på kroppssted",
-            "description" : "Navngiving av et enkelt fysisk sted enten på eller i menneskekroppen.",
-            "comment" : "Designkommentar:\nNavn på kroppsdel, her bør man bruke et kodeverk, f.eks. SNOMED-CT. Listen bygges ut etter hvert som behov oppstår."
-          }
-        },
-        "pt-br" : { },
-        "de" : { },
-        "nl" : { },
-        "sv" : { },
-        "fr" : { }
-      },
-      "termBindings" : {
-        "SNOMED-CT" : {
-          "at0002.1" : "term:SNOMED-CT::272741003"
-        }
-      },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "ea61672c-ecdd-4874-bb87-3320ccab2a43",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "de"
-      },
-      "author" : {
-        "name" : "Sarah Ballout, Darin Leonhardt",
-        "organisation" : "PLRI für medizinische Informatik/ Medizinische Hochschule",
-        "email" : "ballout.sarah@mh-hannover.de, leonhardt.darin@mh-hannover.de"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "sv"
-      },
-      "author" : {
-        "name" : "Åsa Skagerhult, Linda Aulin, Romi Shweta Pathak, Henna Haapa Hybinette, sofia Lång Janstad, Sajjad Saffari Miandoab",
-        "organisation" : "Region Östergötland, Region Stockholm, Karolinska universitetssjukhuset, Karolinska University Hospital",
-        "email" : "asa.skagerhult@regionostergotland.se, linda.aulin@sll.se, romi.pathak@regionstockholm.se, henna.haapa-hybinette@regionstockholm.se, sofia.lang-janstad@regionstockholm.se, sajjad.saffari-miandoab@regionstockholm.se"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "nb"
-      },
-      "author" : {
-        "name" : "Lars Bitsch-Larsen, Vebjørn Arntzen",
-        "organisation" : "Haukeland University Hospital of Bergen, Norway, Oslo University Hospital",
-        "email" : "varntzen@ous-hf.no"
-      },
-      "accreditation" : "MD, DEAA, MBA, spec in anesthesia, spec in tropical medicine.",
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "pt-br"
-      },
-      "author" : {
-        "name" : "Osmeire Chamelette Sanzovo",
-        "organisation" : "Hospital Sírio Libanês - SP",
-        "email" : "osmeire.acsanzovo@hsl.org.br"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "ar-sy"
-      },
-      "author" : {
-        "name" : "Mona Saleh"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "sl"
-      },
-      "author" : {
-        "name" : "Biljana Princic"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "fr"
-      },
-      "author" : {
-        "name" : "Vanessa Pereira",
-        "organisation" : "Luxembourg Institute of Health (LIH)",
-        "email" : "vanessapereira@protonmail.com"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "nl"
-      },
-      "author" : {
-        "name" : "Michiel Klitsie",
-        "organisation" : "Nedap Healthcare",
-        "email" : "michiel.klitsie@nedap.com"
-      },
-      "otherDetails" : { }
-    } ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "8d9cba91-c081-4b58-888b-da8e02c56ee8",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "9CA673C44D07EB44E7473631D0F97DD4"
-      },
-      "details" : {
-        "de" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "de"
-          },
-          "purpose" : "Zur Dokumentation eines expliziten Befundes zur Unterstützung einer klinischen Behauptung, wie z.B. eines Problems/einer Diagnose, eines Nebenwirkungsrisikos, einer Gesundheitsrisikobewertung oder einer Kontraindikation.",
-          "keywords" : [ "Diagnose", "Beweis", "Bedingung", "Krankheit", "Problem", "Feststellung", "Befund", "Beobachtung" ],
-          "use" : "Zur Dokumentationn von Details zu Befunden, die eine klinische Feststellung unterstützen, entweder als Zusammenfassung von Daten, die in anderen (oft der Klasse OBSERVATION) Archetypen verfügbar sind, oder wenn die ursprünglichen Beobachtungsdaten nicht verfügbar sind.\r\n\r\nDiesen Archetypen innerhalb eines SLOTS Archetypen wie EVALUATION.problem_diagnose, EVALUATION.adverse_reaction_risk, EVALUATION.health_risk, EVALUATION.contraindication oder ähnlichen zusammenfassenden Archetypen verwenden, bei denen der Name der Feststellung bereits in der EVALUATION angegeben wurde, verschachtelt wird, um den Inhalt um diesen zusätzlichen und optionalen Datensatz zu erweitern. Während LINKs innerhalb des openEHR-Referenzmodells eine Verknüpfung mit Daten ermöglichen, die an anderer Stelle in der Gesundheitsakte gespeichert sind, wurde dieser Archetyp entwickelt, um diese Funktionalität explizit zu machen und um die klinische Sichtbarkeit und Überprüfung dieser Daten zu ermöglichen, wo sie in einer Vorlage oder Spezifikation relevant sein können.\r\n\r\nDer klinische Beweis kann direkt in diesen Archetyp als \"Finding\" eingegeben werden, oder es kann ein Zitat verwendet werden, um explizit auf Daten innerhalb der Gesundheitsakte zu verweisen.\r\n\r\n",
-          "misuse" : "Nicht zur Dokumentation von zusammenfassende Details zu einem identifizierten Problem oder einer Diagnose verwenden - verwenden Sie dazu die EVALUATION.problem_diagnosis.\r\n\r\nNicht zur Dokumentation von zusammenfassenden Details über ein identifiziertes Nebenwirkungsrisiko verwenden - verwenden Sie dazu die Datei EVALUATION.adverse_reaction_risk.\r\n\r\nNicht zur Dokumentation von zusammenfassenden Details über ein identifiziertes Gesundheitsrisiko zu verwenden - verwenden Sie zu diesem Zweck die Datei EVALUATION.health_risk.\r\n\r\nNicht zur Dokumentation von zusammenfassende Einzelheiten über eine identifizierte Kontraindikation verwenden - verwenden Sie dazu die Datei EVALUATION.contraindication.\r\n",
-          "copyright" : "*© openEHR Foundation, Nasjonal IKT HF (en)",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "sv" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "sv"
-          },
-          "purpose" : "Att registrera ett uttryckligt resultat till stöd för ett kliniskt påstående, såsom ett problem / diagnos, biverkningsrisk, hälsoriskbedömning eller kontraindikation.",
-          "keywords" : [ "diagnos", "bevis", "tillstånd", "sjukdom", "problem", "påstående", "fynd", "observation" ],
-          "use" : "Används för att registrera detaljer om fynd som stöder ett kliniskt påstående, antingen som en sammanfattning av data som finns tillgängliga i andra (ofta OBSERVATION-klass) arketyper, eller när de ursprungliga observationsdata inte är tillgängliga.\r\n\r\nDenna arketyp är utformad för att kapslas in i en SLOT i EVALUATION.problem_diagnosis, EVALUATION.adverse_reaction_risk, EVALUATION.health_risk, EVALUATION.contraindication, eller liknande sammanfattande arketyper, där namnet på påståendet redan har specificerats i EVALUATIONEN, för att utöka innehållet med denna extra och valfria dataset. Medan LÄNKAR inom openEHR-referensmodellen möjliggör koppling till data som hålls någon annanstans inom hälsojournalen har denna arketyp utvecklats för att göra denna funktion tydlig och för att möjliggöra klinisk synlighet och granskning av dessa data, där det kan vara relevant i en template eller specifikation.\r\n\r\nDe kliniska bevisen kan matas in direkt i denna arketyp som en \"Finding\", eller en citering kan användas för att uttryckligen peka på data i hälsojournalen.",
-          "misuse" : "Är inte utformad för att registrera sammanfattade detaljer om ett identifierat problem eller diagnos - använd EVALUATION.problem_diagnosis för detta ändamål.\r\n\r\nÄr inte utformad för att registrera sammanfattande detaljer om en identifierad biverkningsrisk - använd EVALUATION.adverse_reaction_risk för detta ändamål.\r\n\r\nÄr inte utformad för att registrera sammanfattande detaljer om en identifierad hälsorisk - använd EVALUATION.health_risk för detta ändamål.\r\n\r\nÄr inte utformad för att registrera sammanfattande detaljer om en identifierad kontraindikation - använd EVALUATION.-kontraindikationen för detta ändamål.",
-          "copyright" : "*© openEHR Foundation, Nasjonal IKT HF (en)",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "nb" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "nb"
-          },
-          "purpose" : "For å registrere eksplisitte detaljer om grunnlaget for et klinisk utsagn, for eksempel en problem/diagnose, risiko for overfølsomhetsreaksjon, helserisiko, eller kontraindikasjon.",
-          "keywords" : [ "diagnose", "evidens", "tilstand", "sykdom", "problem", "observasjon", "begrunnelse" ],
-          "use" : "Brukes for å registrere eksplisitte detaljer om grunnlaget for et klinisk utsagn, enten som en oppsummering av data som er tilgjengelig i andre arketyper (ofte av OBSERVATION-klassen), eller når de opprinnelige dataene ikke er tilgjengelige for applikasjonen.\r\n\r\nDenne arketypen er ment å legges i et SLOT i arketypene EVALUATION.problem_diagnosis, EVALUATION.adverse_reaction_risk, EVALUATION.health_risk, EVALUATION.contraindication eller lignende oppsummerende arketyper, der utsagnet allerede er spesifisert i EVALUATION-arketypen. Den fungerer der som en valgfri utvidelse av datasettet i EVALUATION-arketypen.\r\n\r\nSom spesifisert i openEHR referansemodellen kan det benyttes lenker for å lenke til data som ligger andre steder i journalen, mens denne arketypen er laget for å gjøre dette eksplisitt, og for å gjøre det mulig å vise og gjennomgå disse dataene klinisk der dette er relevant.\r\n\r\nGrunnlaget kan legges direkte i denne i arketypen som et \"Funn\", eller referansen kan benyttes for å peke direkte til dataene som ligger et annet sted i journalen.",
-          "misuse" : "Skal ikke brukes til å registrere sammendrag om et problem eller en diagnose. For dette brukes arketypen EVALUATION.problem_diagnosis.\r\n\r\nSkal ikke brukes til å registrere sammendrag om risiko for overfølsomhetsreaksjoner. For dette brukes arketypen EVALUATION.adverse_reaction_risk.\r\n\r\nSkal ikke brukes til å registrere sammendrag om en helserisiko. For dette brukes arketypen EVALUATION.health_risk.\r\n\r\nSkal ikke brukes til å registrere sammendrag om en kontraindikasjon. For dette brukes arketypen EVALUATION.contraindication.",
-          "copyright" : "© openEHR Foundation, Nasjonal IKT HF",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "purpose" : "To record an explicit finding in support of a clinical assertion, such as a problem/diagnosis, adverse reaction risk, health risk assessment, or contraindication.",
-          "keywords" : [ "diagnosis", "evidence", "condition", "disease", "problem", "assertion", "finding", "observation" ],
-          "use" : "Use to record details about findings that support a clinical assertion, either as a summary of data available in other (often OBSERVATION class) archetypes, or when the original observational data is not available.\r\n\r\nThis archetype is designed to be nested within a SLOT in the EVALUATION.problem_diagnosis, EVALUATION.adverse_reaction_risk, EVALUATION.health_risk, EVALUATION.contraindication, or similar summary archetypes, where the name of the assertion has already been specified in the EVALUATION, in order to extend its content with this additional and optional dataset. While LINKs within the openEHR Reference Model allow for linkage to data held elsewhere within the health record, this archetype has been developed to make this functionality explicit, and to enable clinical visibility and review of this data, where it may be relevant in a template or specification.\r\n\r\nThe clinical evidence can be entered directly into this archetype as a 'Finding', or a citation can be used to explicitly point to data within the health record.",
-          "misuse" : "Not to be used to record summary details about an identified problem or diagnosis - use the EVALUATION.problem_diagnosis for this purpose.\r\n\r\nNot to be used to record summary details about an identified adverse reaction risk - use the EVALUATION.adverse_reaction_risk for this purpose.\r\n\r\nNot to be used to record summary details about an identified health risk - use the EVALUATION.health_risk for this purpose.\r\n\r\nNot to be used to record summary details about an identified contraindication - use the EVALUATION.contraindication for this purpose.",
-          "copyright" : "© openEHR Foundation, Nasjonal IKT HF",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
-    },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.clinical_evidence.v1",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-clinical_evidence-002.v1"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "CLUSTER",
-      "nodeId" : "at0000.1",
-      "attributes" : [ {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "items",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0003.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "0..1",
-                  "terminologyId" : {
-                    "value" : "SNOMED-CT"
-                  },
-                  "constraint" : [ ],
-                  "selectedTerminologies" : [ "SNOMED-CT" ],
-                  "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "???",
-                    "value" : "MR"
-                  } ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0004.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0005.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "existence" : "0..1",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_TEXT",
-              "occurrences" : "1..1",
-              "nodeId" : "at0.14",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0006.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0026.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "1..1",
-          "nodeId" : "at0022.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "0..1",
-                  "terminologyId" : {
-                    "value" : "DICOM"
-                  },
-                  "constraint" : [ ],
-                  "selectedTerminologies" : [ "DICOM" ],
-                  "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "DICOM",
-                    "code" : "MR",
-                    "value" : "MR"
-                  } ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0022.2",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0001.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0023.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..*",
-          "nodeId" : "at0024.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-anatomical_location-001.v1",
-          "referenceType" : "archetypeOverlay"
-        } ]
-      } ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Bildeundersøkelse kroppsdel (gjentas for hver kroppsdel)",
-            "description" : "Details about findings that support a clinical assertion."
-          },
-          "at0004.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004.1",
-            "text" : "Resyme for kroppsdel",
-            "description" : "Narrative description of the finding."
-          },
-          "at0005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "Resyme?",
-            "description" : "Measurement or value associated with the finding.",
-            "comment" : "For example: Mantoux test result."
-          },
-          "at0022.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "DICOM modalitet",
-            "description" : "Type of examination or investigation used to identify the evidence.",
-            "comment" : "Consider coding 'Method' with a terminology, where possible. For example: Physical examination, Chest x-ray, Histopathology result, Colonoscopy."
-          },
-          "at0022.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.2",
-            "text" : "Metode (mer spesifikk metode, kontrast mm)",
-            "description" : "Type of examination or investigation used to identify the evidence.",
-            "comment" : "Consider coding 'Method' with a terminology, where possible. For example: Physical examination, Chest x-ray, Histopathology result, Colonoscopy."
-          }
-        },
-        "nb" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Klinisk grunnlag modalitet per kroppsdel",
-            "description" : "Grunnlaget for et klinisk utsagn.",
-            "comment" : "Designkommentar:\nHvis man ønsker å legge til hvilke kroppsdel man har gjort den bildediagnostiske undersøkelsen på. \nHvis man ønsker kun å ramse opp hvilke kroppsdel man har tatt undersøkelsen på uten å ha med resyme og dato, er alle elementer bortsett fra Anatomisk lokalisering overflødig. Da kan man ha en instans av denne Klinisk grunnlag modalitet per kroppsdel (CLUSTER 2) og kun gjenta CLUSTERet Anatomisk lokalisering i Ytterligere detaljer. \n\nHvis man ønsker å ha med Resyme og dato per kroppsdel, samt tilleggsmetode per kroppsdel, kan dette Klinisk grunnlag modalitet per kroppsdel (CLUSTER 2) gjentas per kroppsdel. \n\nSelve modaliteten settes i Klinisk grunnlag prosedyre/modalitet (CLUSTER 1). "
-          },
-          "at0004.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004.1",
-            "text" : "Resyme",
-            "description" : "Fritekstbeskrivelse av funnet.",
-            "comment" : "Designkommentar:\nDette resymeet er for hele den spesifikke undersøkelsen inkludert anatomisk lokalisering, f.eks. MR-thorax resyme. \nDa er det valgt MR på bildeprosedyre/bildemodalitet i Spesifikke undersøkelse/blidemodalitet navn i det interne kartleggingCLUSTER=>  da vil MR automatisk bli satt til Bildeprosedyre/bildenodalitet navn i Klinisk grunnlag prosedyre/modalitet CLUSTER 1).  I tillegg velger man Thorax  i Anatomisk lokalisering i CLUSTERet Anatomisk lokalisering i SLOTet Ytterligere detaljer i Klinisk grunnlag modalitet per kroppsdel (CLUSTER 2). "
-          },
-          "at0005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "Resyme?",
-            "description" : "Måling eller verdi knyttet til funnet.",
-            "comment" : "Designkommentar:\nDette resymeet er for hele den spesifikke undersøkelsen inkludert anatomisk lokalisering, f.eks. MR-thorax resyme. \nDa er det valgt MR på bildeprosedyre/bildemodalitet i Spesifikke undersøkelse/blidemodalitet navn i det interne kartleggingCLUSTER=>  da vil MR automatisk bli satt til Bildeprosedyre/bildenodalitet navn i Klinisk grunnlag prosedyre/modalitet CLUSTER 1).  I tillegg velger man Thorax  i Anatomisk lokalisering i CLUSTERet Anatomisk lokalisering i SLOTet Ytterligere detaljer i Klinisk grunnlag modalitet per kroppsdel (CLUSTER 2). "
-          },
-          "at0022.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Bildeprosedyre/bildemodalitet navn",
-            "description" : "Typen undersøkelse eller utredning som er utført for å komme fram til funnet.",
-            "comment" : "Designkommentar:\nI prosjektet Strukturert kreftjournal bruker bruker vi DICOM modalitet kodesett."
-          },
-          "at0022.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.2",
-            "text" : "Spesifikk metode/tilleggsmetode",
-            "description" : "Typen undersøkelse eller utredning som er utført for å komme fram til funnet.",
-            "comment" : "Designkommentar:\nHer kan man legge inn mer spesifikk prosedyre som er gjennomført for hver enkelt kroppsdel/anatomisk lokalisasjon, for eksempel om det er gjort med kontrast (kontrastmammografi), eller forstørrelsesmammografi, tomosyntese av mamma (DBT), Cone beam CT.\nEksempler:\n726551006\tKontrast mammografi\n241058008\tForstørrelsesmammografi\n450566007\tTomosyntese (DBT)\n1331946003\tCT med kontrast\n765172009\tDoppler ultrasound (procedure)\n443631006\tUltrasonography with contrast (procedure)\n433231002\tContrast echocardiography (procedure)\n"
-          },
-          "at0006.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0006.1",
-            "text" : "Dato",
-            "description" : "Datoen da funnet ble klinisk anerkjent."
-          }
-        },
-        "de" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Bildeundersøkelse kroppsdel (gjentas for hver kroppsdel)",
-            "description" : "Details über Befunde, die eine klinische Feststellung stützen."
-          },
-          "at0004.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004.1",
-            "text" : "Resyme for kroppsdel",
-            "description" : "Narrative Beschreibung des Befundes."
-          },
-          "at0005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "Resyme?",
-            "description" : "Messung oder Wert, der mit dem Befund verbunden ist.",
-            "comment" : "Zum Beispiel: Mantoux-Testergebnis."
-          },
-          "at0022.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "DICOM modalitet",
-            "description" : "Art der Untersuchung oder Recherche, die zur Feststellung der Evidenz verwendet wird.",
-            "comment" : "Erwägen Sie 'Methode' mit einer Terminologie zu kodieren, wenn möglich. Zum Beispiel: Körperliche Untersuchung, Röntgenaufnahme der Brust, Ergebnis der Histopathologie, Koloskopie."
-          },
-          "at0022.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.2",
-            "text" : "Metode (mer spesifikk metode, kontrast mm)",
-            "description" : "Art der Untersuchung oder Recherche, die zur Feststellung der Evidenz verwendet wird.",
-            "comment" : "Erwägen Sie 'Methode' mit einer Terminologie zu kodieren, wenn möglich. Zum Beispiel: Körperliche Untersuchung, Röntgenaufnahme der Brust, Ergebnis der Histopathologie, Koloskopie."
-          }
-        },
-        "sv" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Bildeundersøkelse kroppsdel (gjentas for hver kroppsdel)",
-            "description" : "Detaljer om resultat som stöder ett kliniskt påstående."
-          },
-          "at0004.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004.1",
-            "text" : "Resyme for kroppsdel",
-            "description" : "Berättande beskrivning av fynd."
-          },
-          "at0005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "Resyme?",
-            "description" : "Mätning eller värde associerat med fyndet.",
-            "comment" : "Till exempel: Mantoux-testresultat."
-          },
-          "at0022.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "DICOM modalitet",
-            "description" : "Typ av undersökning eller utredning som används för att identifiera bevisen.",
-            "comment" : "Överväg att koda 'Metod' med en terminologi, där det är möjligt. Till exempel: Fysisk undersökning, bröströntgen, resultat av histopatologi, koloskopi."
-          },
-          "at0022.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.2",
-            "text" : "Metode (mer spesifikk metode, kontrast mm)",
-            "description" : "Typ av undersökning eller utredning som används för att identifiera bevisen.",
-            "comment" : "Överväg att koda 'Metod' med en terminologi, där det är möjligt. Till exempel: Fysisk undersökning, bröströntgen, resultat av histopatologi, koloskopi."
-          }
-        }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "ab15a511-40fb-4064-9426-7ad76bb98dd8",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "de"
-      },
-      "author" : {
-        "name" : "Alina Rehberg",
-        "organisation" : "Medizinische Hochschule Hannover",
-        "email" : "rehberg.alina@mh-hannover.de"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "sv"
-      },
-      "author" : {
-        "name" : "Therese Lindberg",
-        "organisation" : "Cambio CDS",
-        "email" : "therese.lindberg@cambio.se"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "nb"
-      },
-      "author" : {
-        "name" : "Silje Ljosland Bakke, Liv Laugen",
-        "organisation" : "Nasjonal IKT HF, ​Oslo University Hospital, Norway",
-        "email" : "silje.ljosland.bakke@nasjonalikt.no, liv.laugen@ous-hf.no"
-      },
-      "otherDetails" : { }
-    } ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "8d9cba91-c081-4b58-888b-da8e02c56ee8",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "9CA673C44D07EB44E7473631D0F97DD4"
-      },
-      "details" : {
-        "de" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "de"
-          },
-          "purpose" : "Zur Dokumentation eines expliziten Befundes zur Unterstützung einer klinischen Behauptung, wie z.B. eines Problems/einer Diagnose, eines Nebenwirkungsrisikos, einer Gesundheitsrisikobewertung oder einer Kontraindikation.",
-          "keywords" : [ "Diagnose", "Beweis", "Bedingung", "Krankheit", "Problem", "Feststellung", "Befund", "Beobachtung" ],
-          "use" : "Zur Dokumentationn von Details zu Befunden, die eine klinische Feststellung unterstützen, entweder als Zusammenfassung von Daten, die in anderen (oft der Klasse OBSERVATION) Archetypen verfügbar sind, oder wenn die ursprünglichen Beobachtungsdaten nicht verfügbar sind.\r\n\r\nDiesen Archetypen innerhalb eines SLOTS Archetypen wie EVALUATION.problem_diagnose, EVALUATION.adverse_reaction_risk, EVALUATION.health_risk, EVALUATION.contraindication oder ähnlichen zusammenfassenden Archetypen verwenden, bei denen der Name der Feststellung bereits in der EVALUATION angegeben wurde, verschachtelt wird, um den Inhalt um diesen zusätzlichen und optionalen Datensatz zu erweitern. Während LINKs innerhalb des openEHR-Referenzmodells eine Verknüpfung mit Daten ermöglichen, die an anderer Stelle in der Gesundheitsakte gespeichert sind, wurde dieser Archetyp entwickelt, um diese Funktionalität explizit zu machen und um die klinische Sichtbarkeit und Überprüfung dieser Daten zu ermöglichen, wo sie in einer Vorlage oder Spezifikation relevant sein können.\r\n\r\nDer klinische Beweis kann direkt in diesen Archetyp als \"Finding\" eingegeben werden, oder es kann ein Zitat verwendet werden, um explizit auf Daten innerhalb der Gesundheitsakte zu verweisen.\r\n\r\n",
-          "misuse" : "Nicht zur Dokumentation von zusammenfassende Details zu einem identifizierten Problem oder einer Diagnose verwenden - verwenden Sie dazu die EVALUATION.problem_diagnosis.\r\n\r\nNicht zur Dokumentation von zusammenfassenden Details über ein identifiziertes Nebenwirkungsrisiko verwenden - verwenden Sie dazu die Datei EVALUATION.adverse_reaction_risk.\r\n\r\nNicht zur Dokumentation von zusammenfassenden Details über ein identifiziertes Gesundheitsrisiko zu verwenden - verwenden Sie zu diesem Zweck die Datei EVALUATION.health_risk.\r\n\r\nNicht zur Dokumentation von zusammenfassende Einzelheiten über eine identifizierte Kontraindikation verwenden - verwenden Sie dazu die Datei EVALUATION.contraindication.\r\n",
-          "copyright" : "*© openEHR Foundation, Nasjonal IKT HF (en)",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "sv" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "sv"
-          },
-          "purpose" : "Att registrera ett uttryckligt resultat till stöd för ett kliniskt påstående, såsom ett problem / diagnos, biverkningsrisk, hälsoriskbedömning eller kontraindikation.",
-          "keywords" : [ "diagnos", "bevis", "tillstånd", "sjukdom", "problem", "påstående", "fynd", "observation" ],
-          "use" : "Används för att registrera detaljer om fynd som stöder ett kliniskt påstående, antingen som en sammanfattning av data som finns tillgängliga i andra (ofta OBSERVATION-klass) arketyper, eller när de ursprungliga observationsdata inte är tillgängliga.\r\n\r\nDenna arketyp är utformad för att kapslas in i en SLOT i EVALUATION.problem_diagnosis, EVALUATION.adverse_reaction_risk, EVALUATION.health_risk, EVALUATION.contraindication, eller liknande sammanfattande arketyper, där namnet på påståendet redan har specificerats i EVALUATIONEN, för att utöka innehållet med denna extra och valfria dataset. Medan LÄNKAR inom openEHR-referensmodellen möjliggör koppling till data som hålls någon annanstans inom hälsojournalen har denna arketyp utvecklats för att göra denna funktion tydlig och för att möjliggöra klinisk synlighet och granskning av dessa data, där det kan vara relevant i en template eller specifikation.\r\n\r\nDe kliniska bevisen kan matas in direkt i denna arketyp som en \"Finding\", eller en citering kan användas för att uttryckligen peka på data i hälsojournalen.",
-          "misuse" : "Är inte utformad för att registrera sammanfattade detaljer om ett identifierat problem eller diagnos - använd EVALUATION.problem_diagnosis för detta ändamål.\r\n\r\nÄr inte utformad för att registrera sammanfattande detaljer om en identifierad biverkningsrisk - använd EVALUATION.adverse_reaction_risk för detta ändamål.\r\n\r\nÄr inte utformad för att registrera sammanfattande detaljer om en identifierad hälsorisk - använd EVALUATION.health_risk för detta ändamål.\r\n\r\nÄr inte utformad för att registrera sammanfattande detaljer om en identifierad kontraindikation - använd EVALUATION.-kontraindikationen för detta ändamål.",
-          "copyright" : "*© openEHR Foundation, Nasjonal IKT HF (en)",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "nb" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "nb"
-          },
-          "purpose" : "For å registrere eksplisitte detaljer om grunnlaget for et klinisk utsagn, for eksempel en problem/diagnose, risiko for overfølsomhetsreaksjon, helserisiko, eller kontraindikasjon.",
-          "keywords" : [ "diagnose", "evidens", "tilstand", "sykdom", "problem", "observasjon", "begrunnelse" ],
-          "use" : "Brukes for å registrere eksplisitte detaljer om grunnlaget for et klinisk utsagn, enten som en oppsummering av data som er tilgjengelig i andre arketyper (ofte av OBSERVATION-klassen), eller når de opprinnelige dataene ikke er tilgjengelige for applikasjonen.\r\n\r\nDenne arketypen er ment å legges i et SLOT i arketypene EVALUATION.problem_diagnosis, EVALUATION.adverse_reaction_risk, EVALUATION.health_risk, EVALUATION.contraindication eller lignende oppsummerende arketyper, der utsagnet allerede er spesifisert i EVALUATION-arketypen. Den fungerer der som en valgfri utvidelse av datasettet i EVALUATION-arketypen.\r\n\r\nSom spesifisert i openEHR referansemodellen kan det benyttes lenker for å lenke til data som ligger andre steder i journalen, mens denne arketypen er laget for å gjøre dette eksplisitt, og for å gjøre det mulig å vise og gjennomgå disse dataene klinisk der dette er relevant.\r\n\r\nGrunnlaget kan legges direkte i denne i arketypen som et \"Funn\", eller referansen kan benyttes for å peke direkte til dataene som ligger et annet sted i journalen.",
-          "misuse" : "Skal ikke brukes til å registrere sammendrag om et problem eller en diagnose. For dette brukes arketypen EVALUATION.problem_diagnosis.\r\n\r\nSkal ikke brukes til å registrere sammendrag om risiko for overfølsomhetsreaksjoner. For dette brukes arketypen EVALUATION.adverse_reaction_risk.\r\n\r\nSkal ikke brukes til å registrere sammendrag om en helserisiko. For dette brukes arketypen EVALUATION.health_risk.\r\n\r\nSkal ikke brukes til å registrere sammendrag om en kontraindikasjon. For dette brukes arketypen EVALUATION.contraindication.",
-          "copyright" : "© openEHR Foundation, Nasjonal IKT HF",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "purpose" : "To record an explicit finding in support of a clinical assertion, such as a problem/diagnosis, adverse reaction risk, health risk assessment, or contraindication.",
-          "keywords" : [ "diagnosis", "evidence", "condition", "disease", "problem", "assertion", "finding", "observation" ],
-          "use" : "Use to record details about findings that support a clinical assertion, either as a summary of data available in other (often OBSERVATION class) archetypes, or when the original observational data is not available.\r\n\r\nThis archetype is designed to be nested within a SLOT in the EVALUATION.problem_diagnosis, EVALUATION.adverse_reaction_risk, EVALUATION.health_risk, EVALUATION.contraindication, or similar summary archetypes, where the name of the assertion has already been specified in the EVALUATION, in order to extend its content with this additional and optional dataset. While LINKs within the openEHR Reference Model allow for linkage to data held elsewhere within the health record, this archetype has been developed to make this functionality explicit, and to enable clinical visibility and review of this data, where it may be relevant in a template or specification.\r\n\r\nThe clinical evidence can be entered directly into this archetype as a 'Finding', or a citation can be used to explicitly point to data within the health record.",
-          "misuse" : "Not to be used to record summary details about an identified problem or diagnosis - use the EVALUATION.problem_diagnosis for this purpose.\r\n\r\nNot to be used to record summary details about an identified adverse reaction risk - use the EVALUATION.adverse_reaction_risk for this purpose.\r\n\r\nNot to be used to record summary details about an identified health risk - use the EVALUATION.health_risk for this purpose.\r\n\r\nNot to be used to record summary details about an identified contraindication - use the EVALUATION.contraindication for this purpose.",
-          "copyright" : "© openEHR Foundation, Nasjonal IKT HF",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
-    },
-    "annotations" : {
-      "@type" : "RESOURCE_ANNOTATIONS",
-      "documentation" : {
-        "nb" : {
-          "/items[at0022.1]" : {
-            "Designkommentar" : "Her skal man kopiere den samme koden som man i Bildeprosedyre/bildemodalitet navn under det interne CLUSTERet Spesifikk underesøkelse/bildemodalitet.  Dette kan f.eks. være en SNOMED-CT kode eller DICOM modalitetkode. "
-          },
-          "/items[at0022.2]" : {
-            "Designkommentar" : "Her skal man kopiere den samme koden som man i Bildeprosedyre/bildemodalitet navn under det interne CLUSTERet Spesifikk underesøkelse/bildemodalitet.  Dette kan f.eks. være en SNOMED-CT kode eller DICOM modalitetkode. "
-          }
-        }
-      }
-    },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.clinical_evidence.v1",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-clinical_evidence-001.v1"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "CLUSTER",
-      "nodeId" : "at0000.1",
-      "attributes" : [ {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "items",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0003.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0004.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0005.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "existence" : "0..1",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_TEXT",
-              "occurrences" : "1..1",
-              "nodeId" : "at0.14",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0006.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0026.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "1..1",
-          "nodeId" : "at0022.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "0..1",
-                  "terminologyId" : {
-                    "value" : "DICOM"
-                  },
-                  "constraint" : [ ],
-                  "selectedTerminologies" : [ "DICOM" ],
-                  "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "DICOM",
-                    "code" : "BI",
-                    "value" : "Biomagnetic Imaging"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "BMD",
-                    "value" : "Bone Mineral Densitometry"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "CR",
-                    "value" : "Computed Radiography"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "CT",
-                    "value" : "Computed Tomography"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "CFM",
-                    "value" : "Confocal Microscopy"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "DMS",
-                    "value" : "Dermoscopy"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "DG",
-                    "value" : "Diaphanography"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "DX",
-                    "value" : "Digital Radiography"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "ES",
-                    "value" : "Endoscopy"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "XC",
-                    "value" : "External-camera Photography"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "GM",
-                    "value" : "General Microscopy"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "IO",
-                    "value" : "Intra-oral Radiography"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "IVOCT",
-                    "value" : "Intravascular Optical Coherence Tomography"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "IVUS",
-                    "value" : "Intravascular Ultrasound"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "KER",
-                    "value" : "Keratometry"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "LS",
-                    "value" : "Laser Scan"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "LEN",
-                    "value" : "Lensometry"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "MR",
-                    "value" : "Magnetic Resonance"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "MG",
-                    "value" : "Mammography"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "NM",
-                    "value" : "Nuclear Medicine"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "OAM",
-                    "value" : "Ophthalmic Axial Measurements"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "OPM",
-                    "value" : "Ophthalmic Mapping"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "OP",
-                    "value" : "Ophthalmic Photography"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "OPT",
-                    "value" : "Ophthalmic Tomography"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "OPTBSV",
-                    "value" : "Ophthalmic Tomography B-scan Volume Analysis"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "OPTENF",
-                    "value" : "Ophthalmic Tomography En Face"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "OPV",
-                    "value" : "Ophthalmic Visual Field"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "OCT",
-                    "value" : "Optical Coherence Tomography"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "OSS",
-                    "value" : "Optical Surface Scanner"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "PX",
-                    "value" : "Panoramic X-Ray"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "PA",
-                    "value" : "Photoacoustic"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "PT",
-                    "value" : "Positron emission tomography"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "RF",
-                    "value" : "Radiofluoroscopy"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "RG",
-                    "value" : "Radiographic imaging"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "RTIMAGE",
-                    "value" : "RT Image"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "SM",
-                    "value" : "Slide Microscopy"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "SRF",
-                    "value" : "Subjective Refraction"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "TG",
-                    "value" : "Thermography"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "US",
-                    "value" : "Ultrasound"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "BDUS",
-                    "value" : "Ultrasound Bone Densitometry"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "VA",
-                    "value" : "Visual Acuity"
-                  }, {
-                    "terminologyId" : "DICOM",
-                    "code" : "XA",
-                    "value" : "X-Ray Angiography"
-                  } ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0022.2",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0001.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0023.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..*",
-          "nodeId" : "at0024.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-clinical_evidence-002.v1",
-          "referenceType" : "archetypeOverlay"
-        } ]
-      } ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Klinisk grunnlag Bildeprosedyre",
-            "description" : "Details about findings that support a clinical assertion."
-          },
-          "at0004.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004.1",
-            "text" : "Resyme",
-            "description" : "Narrative description of the finding."
-          },
-          "at0022.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Metode (arv fra Bildeprosedyre over)",
-            "description" : "Type of examination or investigation used to identify the evidence.",
-            "comment" : "Consider coding 'Method' with a terminology, where possible. For example: Physical examination, Chest x-ray, Histopathology result, Colonoscopy."
-          },
-          "at0022.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Metode (arv fra Bildeprosedyre over) (2)",
-            "description" : "Type of examination or investigation used to identify the evidence.",
-            "comment" : "Consider coding 'Method' with a terminology, where possible. For example: Physical examination, Chest x-ray, Histopathology result, Colonoscopy."
-          }
-        },
-        "nb" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Klinisk grunnlag prosedyre/modalitet",
-            "description" : "Grunnlaget for et klinisk utsagn.",
-            "comment" : "Designkommentar:\nHvis dette CLUSTERet brukes må man alltid sette inn Bildeprosedyre/bildemodalitet navn. \n\nHer kan man skrive inn dato og resyme for hver modalitet hvis man ikke trenger dette for hver kroppsdel man har tatt bilde av. \n\nHvis man ønsker å ha resyme og dato for hver kroppsdel man har tatt ved hjelp av denne modaliteten må man gjenta Klinisk grunnlag modalitet per kroppsdel (Klinisk grunnlag CLUSTER 2) som er slottet inn i Yttligere detaljer i Klinisk grunnlag CLUSTER 1. Da vil også resyme og dato i den overordnede Klinisk grunnlag (CLUSTER 1) være overflødig. Kanskje også Spesifikk metode/tilleggsmetode hvis dette er spesifisert per kroppsdel. \n\nHvis man ønsker å skrive dato og resyme for flere kroppsdeler kan man gjenta Klinisk grunnlag modalitet per kroppsdel (CLUSTER 2) per anatomisk lokalisasjon. \n\n"
-          },
-          "at0004.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004.1",
-            "text" : "Resyme per modalitet",
-            "description" : "Fritekstbeskrivelse av funnet.",
-            "comment" : "Designkommentar:\nResyme for den spesifikke undersøkelsen/modaliteten som helhet. \nHer kan man legge inn resyme for hele MR undersøkelse. Ønsker man å legge inn resyme for hver kroppsdel man har tatt MR på må man bruke resyme i CLUSTERet Klinisk grunnlag modalitet per kroppsdel (CLUSTER 2) som er slottet inn i Ytterligere detaljer. Da kan dette elementet være overflødig."
-          },
-          "at0022.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Bildeprosedyre/bildemodalitet navn",
-            "description" : "Typen undersøkelse eller utredning som er utført for å komme fram til funnet.",
-            "comment" : "Designkommentar:\n\nNB! Kodelisten heter DICOM-modality i Bryst og DICOM her. Det skaper problemer. \n\nHer skal man kopiere den samme koden som man i Bildeprosedyre/bildemodalitet navn under det interne CLUSTERet Spesifikk underesøkelse/bildemodalitet. \nDette kan f.eks. være en SNOMED-CT kode eller DICOM modalitetkode. "
-          },
-          "at0006.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0006.1",
-            "text" : "Dato per modalitet",
-            "description" : "Datoen da funnet ble klinisk anerkjent.",
-            "comment" : "Designkommentar:\nDato for den spesifikke undersøkelsen/modaliteten som helhet. \nHer kan man legge inn dato for at en MR undersøkelse er tatt. Ønsker man å legge inn dato for hver kroppsdel man har tatt MR på (hvis disse avviker fra hverandre), må man bruke dato i CLUSTERet Klinisk grunnlag modalitet per kroppsdel (CLUSTER 2) som er slottet inn i Ytterligere detaljer. Da kan dette elementet være overflødig.\n"
-          },
-          "at0022.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.2",
-            "text" : "Tilleggsmetode",
-            "description" : "Typen undersøkelse eller utredning som er utført for å komme fram til funnet.",
-            "comment" : "Designkommentar:\nHer skal man kopiere den samme koden som man i Bildeprosedyre/bildemodalitet navn under det interne CLUSTERet Spesifikk underesøkelse/bildemodalitet. \nDette kan f.eks. være en SNOMED-CT kode eller DICOM modalitetkode. \nEksempler:\n726551006\tKontrast mammografi\n241058008\tForstørrelsesmammografi\n450566007\tTomosyntese (DBT)\n1331946003\tCT med kontrast\n765172009\tDoppler ultrasound (procedure)\n443631006\tUltrasonography with contrast (procedure)\n433231002\tContrast echocardiography (procedure)\n"
-          },
-          "at0005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "Resyme per modalitet",
-            "description" : "Måling eller verdi knyttet til funnet.",
-            "comment" : "Designkommentar:\nResyme for den spesifikke undersøkelsen/modaliteten som helhet. \nHer kan man legge inn resyme for hele MR undersøkelse. Ønsker man å legge inn resyme for hver kroppsdel man har tatt MR på må man bruke resyme i CLUSTERet Klinisk grunnlag modalitet per kroppsdel (CLUSTER 2) som er slottet inn i Ytterligere detaljer. Da kan dette elementet være overflødig."
-          },
-          "at0003.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003",
-            "text" : "Grunnlag",
-            "description" : "Identifisering av en forekomst av et klinisk grunnlag, enten ved navn eller type, som et enkelt resultat eller en gruppe av resultater.",
-            "comment" : "NB! Dette feltet brukes aktivt i bryst med en SNOMED-CT kode som angir f.eks. Mammografi (nå norsk) med en SNOMED-CT kode "
-          }
-        },
-        "de" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Klinisk grunnlag Bildeprosedyre",
-            "description" : "Details über Befunde, die eine klinische Feststellung stützen."
-          },
-          "at0004.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004.1",
-            "text" : "Resyme",
-            "description" : "Narrative Beschreibung des Befundes."
-          },
-          "at0022.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Metode (arv fra Bildeprosedyre over)",
-            "description" : "Art der Untersuchung oder Recherche, die zur Feststellung der Evidenz verwendet wird.",
-            "comment" : "Erwägen Sie 'Methode' mit einer Terminologie zu kodieren, wenn möglich. Zum Beispiel: Körperliche Untersuchung, Röntgenaufnahme der Brust, Ergebnis der Histopathologie, Koloskopie."
-          },
-          "at0022.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Metode (arv fra Bildeprosedyre over) (2)",
-            "description" : "Art der Untersuchung oder Recherche, die zur Feststellung der Evidenz verwendet wird.",
-            "comment" : "Erwägen Sie 'Methode' mit einer Terminologie zu kodieren, wenn möglich. Zum Beispiel: Körperliche Untersuchung, Röntgenaufnahme der Brust, Ergebnis der Histopathologie, Koloskopie."
-          }
-        },
-        "sv" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Klinisk grunnlag Bildeprosedyre",
-            "description" : "Detaljer om resultat som stöder ett kliniskt påstående."
-          },
-          "at0004.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004.1",
-            "text" : "Resyme",
-            "description" : "Berättande beskrivning av fynd."
-          },
-          "at0022.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Metode (arv fra Bildeprosedyre over)",
-            "description" : "Typ av undersökning eller utredning som används för att identifiera bevisen.",
-            "comment" : "Överväg att koda 'Metod' med en terminologi, där det är möjligt. Till exempel: Fysisk undersökning, bröströntgen, resultat av histopatologi, koloskopi."
-          },
-          "at0022.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Metode (arv fra Bildeprosedyre over) (2)",
-            "description" : "Typ av undersökning eller utredning som används för att identifiera bevisen.",
-            "comment" : "Överväg att koda 'Metod' med en terminologi, där det är möjligt. Till exempel: Fysisk undersökning, bröströntgen, resultat av histopatologi, koloskopi."
-          }
-        }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "ab15a511-40fb-4064-9426-7ad76bb98dd8",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "de"
-      },
-      "author" : {
-        "name" : "Alina Rehberg",
-        "organisation" : "Medizinische Hochschule Hannover",
-        "email" : "rehberg.alina@mh-hannover.de"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "sv"
-      },
-      "author" : {
-        "name" : "Therese Lindberg",
-        "organisation" : "Cambio CDS",
-        "email" : "therese.lindberg@cambio.se"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "nb"
-      },
-      "author" : {
-        "name" : "Silje Ljosland Bakke, Liv Laugen",
-        "organisation" : "Nasjonal IKT HF, ​Oslo University Hospital, Norway",
-        "email" : "silje.ljosland.bakke@nasjonalikt.no, liv.laugen@ous-hf.no"
-      },
-      "otherDetails" : { }
-    } ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
     "uid" : "39ddf0b7-9126-47e9-b705-4875d7efe577",
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
@@ -1656,7 +116,7 @@
         "original_publisher" : "openEHR Foundation",
         "custodian_namespace" : "org.openehr",
         "MD5-CAM-1.0.1" : "ae57da1d8de4f04a22bf31941d446c83",
-        "PARENT:MD5-CAM-1.0.1" : "767B1520D7B5972C9905F1E02CA10CC1",
+        "PARENT:MD5-CAM-1.0.1" : "b3ee92e1be3d7933994c39e12c4ad61d",
         "sem_ver" : "57.0.0",
         "build_uid" : "",
         "original_language" : "ISO_639-1::nb",
@@ -1927,14 +387,14 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "CLUSTER",
-                      "nodeId" : "at0026.2",
+                      "nodeId" : "at0026",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
                         "rmAttributeName" : "items",
                         "children" : [ {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "ELEMENT",
-                          "nodeId" : "at0021.2",
+                          "nodeId" : "at0021.1",
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
                             "rmAttributeName" : "value",
@@ -1956,172 +416,44 @@
                                   "selectedTerminologies" : [ "DICOM_modality" ],
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "DICOM_modality",
-                                    "code" : "BI",
-                                    "value" : "Biomagnetic Imaging"
-                                  }, {
-                                    "terminologyId" : "DICOM_modality",
-                                    "code" : "BMD",
-                                    "value" : "Bone Mineral Densitometry"
-                                  }, {
-                                    "terminologyId" : "DICOM_modality",
-                                    "code" : "CR",
-                                    "value" : "Computed Radiography"
-                                  }, {
-                                    "terminologyId" : "DICOM_modality",
-                                    "code" : "CT",
-                                    "value" : "Computed Tomography"
-                                  }, {
-                                    "terminologyId" : "DICOM_modality",
-                                    "code" : "CFM",
-                                    "value" : "Confocal Microscopy"
-                                  }, {
-                                    "terminologyId" : "DICOM_modality",
-                                    "code" : "DMS",
-                                    "value" : "Dermoscopy"
-                                  }, {
-                                    "terminologyId" : "DICOM_modality",
-                                    "code" : "DG",
-                                    "value" : "Diaphanography"
-                                  }, {
-                                    "terminologyId" : "DICOM_modality",
-                                    "code" : "DX",
-                                    "value" : "Digital Radiography"
-                                  }, {
-                                    "terminologyId" : "DICOM_modality",
-                                    "code" : "ES",
-                                    "value" : "Endoscopy"
-                                  }, {
-                                    "terminologyId" : "DICOM_modality",
-                                    "code" : "XC",
-                                    "value" : "External-camera Photography"
-                                  }, {
-                                    "terminologyId" : "DICOM_modality",
-                                    "code" : "GM",
-                                    "value" : "General Microscopy"
-                                  }, {
-                                    "terminologyId" : "DICOM_modality",
-                                    "code" : "IO",
-                                    "value" : "Intra-oral Radiography"
-                                  }, {
-                                    "terminologyId" : "DICOM_modality",
-                                    "code" : "IVOCT",
-                                    "value" : "Intravascular Optical Coherence Tomography"
-                                  }, {
-                                    "terminologyId" : "DICOM_modality",
-                                    "code" : "IVUS",
-                                    "value" : "Intravascular Ultrasound"
-                                  }, {
-                                    "terminologyId" : "DICOM_modality",
-                                    "code" : "KER",
-                                    "value" : "Keratometry"
-                                  }, {
-                                    "terminologyId" : "DICOM_modality",
-                                    "code" : "LS",
-                                    "value" : "Laser Scan"
-                                  }, {
-                                    "terminologyId" : "DICOM_modality",
-                                    "code" : "LEN",
-                                    "value" : "Lensometry"
-                                  }, {
-                                    "terminologyId" : "DICOM_modality",
-                                    "code" : "MR",
-                                    "value" : "Magnetic Resonance"
+                                    "code" : "RG",
+                                    "value" : "Røntgen"
                                   }, {
                                     "terminologyId" : "DICOM_modality",
                                     "code" : "MG",
-                                    "value" : "Mammography"
-                                  }, {
-                                    "terminologyId" : "DICOM_modality",
-                                    "code" : "NM",
-                                    "value" : "Nuclear Medicine"
-                                  }, {
-                                    "terminologyId" : "DICOM_modality",
-                                    "code" : "OAM",
-                                    "value" : "Ophthalmic Axial Measurements"
-                                  }, {
-                                    "terminologyId" : "DICOM_modality",
-                                    "code" : "OPM",
-                                    "value" : "Ophthalmic Mapping"
-                                  }, {
-                                    "terminologyId" : "DICOM_modality",
-                                    "code" : "OP",
-                                    "value" : "Ophthalmic Photography"
-                                  }, {
-                                    "terminologyId" : "DICOM_modality",
-                                    "code" : "OPT",
-                                    "value" : "Ophthalmic Tomography"
-                                  }, {
-                                    "terminologyId" : "DICOM_modality",
-                                    "code" : "OPTBSV",
-                                    "value" : "Ophthalmic Tomography B-scan Volume Analysis"
-                                  }, {
-                                    "terminologyId" : "DICOM_modality",
-                                    "code" : "OPTENF",
-                                    "value" : "Ophthalmic Tomography En Face"
-                                  }, {
-                                    "terminologyId" : "DICOM_modality",
-                                    "code" : "OPV",
-                                    "value" : "Ophthalmic Visual Field"
-                                  }, {
-                                    "terminologyId" : "DICOM_modality",
-                                    "code" : "OCT",
-                                    "value" : "Optical Coherence Tomography"
-                                  }, {
-                                    "terminologyId" : "DICOM_modality",
-                                    "code" : "OSS",
-                                    "value" : "Optical Surface Scanner"
-                                  }, {
-                                    "terminologyId" : "DICOM_modality",
-                                    "code" : "PX",
-                                    "value" : "Panoramic X-Ray"
-                                  }, {
-                                    "terminologyId" : "DICOM_modality",
-                                    "code" : "PA",
-                                    "value" : "Photoacoustic"
-                                  }, {
-                                    "terminologyId" : "DICOM_modality",
-                                    "code" : "PT",
-                                    "value" : "Positron emission tomography"
-                                  }, {
-                                    "terminologyId" : "DICOM_modality",
-                                    "code" : "RF",
-                                    "value" : "Radiofluoroscopy"
-                                  }, {
-                                    "terminologyId" : "DICOM_modality",
-                                    "code" : "RG",
-                                    "value" : "Radiographic imaging"
-                                  }, {
-                                    "terminologyId" : "DICOM_modality",
-                                    "code" : "RTIMAGE",
-                                    "value" : "RT Image"
-                                  }, {
-                                    "terminologyId" : "DICOM_modality",
-                                    "code" : "SM",
-                                    "value" : "Slide Microscopy"
-                                  }, {
-                                    "terminologyId" : "DICOM_modality",
-                                    "code" : "SRF",
-                                    "value" : "Subjective Refraction"
-                                  }, {
-                                    "terminologyId" : "DICOM_modality",
-                                    "code" : "TG",
-                                    "value" : "Thermography"
+                                    "value" : "Mammografi"
                                   }, {
                                     "terminologyId" : "DICOM_modality",
                                     "code" : "US",
-                                    "value" : "Ultrasound"
+                                    "value" : "Ultralyd"
                                   }, {
                                     "terminologyId" : "DICOM_modality",
-                                    "code" : "BDUS",
-                                    "value" : "Ultrasound Bone Densitometry"
+                                    "code" : "CT",
+                                    "value" : "CT"
                                   }, {
                                     "terminologyId" : "DICOM_modality",
-                                    "code" : "VA",
-                                    "value" : "Visual Acuity"
+                                    "code" : "MR",
+                                    "value" : "MR"
                                   }, {
                                     "terminologyId" : "DICOM_modality",
-                                    "code" : "XA",
-                                    "value" : "X-Ray Angiography"
+                                    "code" : "NM",
+                                    "value" : "Nukleærmedisin"
+                                  }, {
+                                    "terminologyId" : "DICOM_modality",
+                                    "code" : "PT",
+                                    "value" : "PET"
+                                  }, {
+                                    "terminologyId" : "DICOM_modality",
+                                    "code" : "PTCT",
+                                    "value" : "PET-CT"
+                                  }, {
+                                    "terminologyId" : "DICOM_modality",
+                                    "code" : "PTMR",
+                                    "value" : "PET-MR"
+                                  }, {
+                                    "terminologyId" : "DICOM_modality",
+                                    "code" : "OT",
+                                    "value" : "Annen modalitet"
                                   } ]
                                 } ]
                               } ],
@@ -2129,73 +461,6 @@
                             } ]
                           } ],
                           "attributeTuples" : [ ]
-                        }, {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "nodeId" : "at0024.2",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "value",
-                            "children" : [ {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_CODED_TEXT",
-                              "attributes" : [ {
-                                "@type" : "C_ATTRIBUTE",
-                                "rmAttributeName" : "defining_code",
-                                "children" : [ {
-                                  "@type" : "C_TERMINOLOGY_CODE",
-                                  "rmTypeName" : "TERMINOLOGY_CODE",
-                                  "occurrences" : "1..1",
-                                  "terminologyId" : {
-                                    "value" : "local"
-                                  },
-                                  "constraint" : [ "ac0.15" ],
-                                  "selectedTerminologies" : [ ]
-                                } ]
-                              } ],
-                              "attributeTuples" : [ ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        }, {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "occurrences" : "0..0",
-                          "nodeId" : "at0003.2",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "value",
-                            "children" : [ {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_DATE_TIME",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        }, {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "occurrences" : "0..0",
-                          "nodeId" : "at0002.2",
-                          "attributes" : [ ],
-                          "attributeTuples" : [ ]
-                        }, {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "occurrences" : "0..0",
-                          "nodeId" : "at0025.2",
-                          "attributes" : [ ],
-                          "attributeTuples" : [ ]
-                        }, {
-                          "@type" : "C_ARCHETYPE_ROOT",
-                          "rmTypeName" : "CLUSTER",
-                          "occurrences" : "0..1",
-                          "nodeId" : "at0041.2",
-                          "attributes" : [ ],
-                          "attributeTuples" : [ ],
-                          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-clinical_evidence-001.v1",
-                          "referenceType" : "archetypeOverlay"
                         } ]
                       } ],
                       "attributeTuples" : [ ]
@@ -2243,51 +508,10 @@
             "text" : "Overordnet beskrivelse bildediagnostiske undersøkelse",
             "description" : "Narrative description about the history of any investigations relevant for the screening purpose."
           },
-          "at0026.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0026.2",
-            "text" : "MR undersøkelse",
-            "description" : "Details about a specified investigation or grouping of investigations relevant for the screening purpose.",
-            "comment" : "Use separate instances of this CLUSTER to differentiate between specific investigations or groupings of investigations."
-          },
-          "at0021.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0021.2",
-            "text" : "Bildeprosedyre",
-            "description" : "Name of the diagnostic investigation or grouping of investigations.",
-            "comment" : "For example: 'Blood gas', Chest Xray', 'ECG'; or 'Hearing test'.\r\nCoding of the 'Investigation name' with a terminology is preferred, where possible."
-          },
-          "at0024.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0024.2",
-            "text" : "Er denne undersøkelsen utført?",
-            "description" : "Is there a history of the investigation being carried out?",
-            "comment" : "In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
-          },
-          "at0003.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003.2",
-            "text" : "Dato",
-            "description" : "Indication of timing related to the investigation.",
-            "comment" : "The 'Timing' data element has deliberately been loosely modelled to support the myriad of ways that it can be used in questionnaires to capture when an investigation was carried out. The specific and intended semantics can be further clarified in a template. For example: the actual date and/or time; the start and stop time for the investigation; the interval of time during which the investigation was carried out; the duration of the investigation; the age of the individual at the time of the investigation; or the duration of time since it occurred. A partial date is valid, using the DV_DATE_TIME data type, to record only a year."
-          },
-          "at0002.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002.2",
-            "text" : "Resymé",
-            "description" : "Brief description, summary or interpretation of the investigation outcome.",
-            "comment" : "For example: 'All results within normal range', 'Normal', 'Further investigations needed'. This data element is not to contain a representation of the actual results or findings. In that situation, nest an appropriate CLUSTER archetype within the following 'Additional details' SLOT."
-          },
           "ac0.11" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
             "code" : "ac0.11",
-            "description" : ""
-          },
-          "ac0.15" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.15",
             "description" : ""
           }
         },
@@ -2318,51 +542,10 @@
             "text" : "Overordnet beskrivelse bildediagnostiske undersøkelse",
             "description" : "Beschreibung über die Geschichte der Durchführung von Untersuchungen, die für das Screening relevant sind."
           },
-          "at0026.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0026.2",
-            "text" : "MR undersøkelse",
-            "description" : "Angaben zu einer bestimmten Untersuchung oder einer Gruppe von Untersuchungen, die für den Zweck des Screenings relevant sind.",
-            "comment" : "Verwenden Sie separate Instanzen von diesem CLUSTER, um zwischen bestimmten Untersuchungen oder Gruppierungen von Untersuchungen zu unterscheiden."
-          },
-          "at0021.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0021.2",
-            "text" : "Bildeprosedyre",
-            "description" : "Name der diagnostischen Untersuchung oder der Gruppe von Untersuchungen.",
-            "comment" : "Zum Beispiel: \" Blutgas\", \" Brust-Röntgen\", \"EKG\"; oder \"Hörtest\".\r\nDie Kodierung des \"Untersuchungsnamens\" mit einer Terminologie wird, wenn möglich, bevorzugt."
-          },
-          "at0024.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0024.2",
-            "text" : "Er denne undersøkelsen utført?",
-            "description" : "Gibt es eine Vorgeschichte der durchgeführten Untersuchungen?",
-            "comment" : "In einem Template würde das Datenelement normalerweise in die spezifische gestellte Frage umbenannt. Der vorgeschlagene Wertesatz kann für die lokale Verwendung angepasst werden, indem die Datentypauswahl DV_TEXT oder DV_BOOLEAN verwendet wird, um jedem spezifischen Anwendungsfall zu entsprechen."
-          },
-          "at0003.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003.2",
-            "text" : "Dato",
-            "description" : "Angabe des Zeitpunktes für die Untersuchung.",
-            "comment" : "Das Datenelement \"Zeitpunkt\" wurde bewusst offen modelliert, um die unzähligen Möglichkeiten zu unterstützen, mit denen es in Fragebögen verwendet werden kann, um zu erfassen, wann eine Untersuchung durchgeführt wurde. Die spezifische und beabsichtigte Semantik kann in einer Vorlage weiter geklärt werden. Zum Beispiel: das tatsächliche Datum und/oder die Uhrzeit; die Start- und Endzeit der Untersuchung; das Zeitintervall, in dem die Untersuchung durchgeführt wurde; die Dauer der Untersuchung; das Alter der Person zum Zeitpunkt der Untersuchung; oder die Zeitdauer seit dem Ereignis. Bei Verwendung des Datentyps DV_DATE_TIME ist ein Teildatum zulässig, um nur ein Jahr zu erfassen."
-          },
-          "at0002.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002.2",
-            "text" : "Resymé",
-            "description" : "Kurze Beschreibung, Zusammenfassung oder Interpretation der Untersuchungsergebnisse.",
-            "comment" : "Zum Beispiel: \"Alle Ergebnisse im Normalbereich\", \"Normal\", \"Weitere Untersuchungen erforderlich\". Dieses Datenelement darf keine Darstellung der tatsächlichen Ergebnisse oder Befunde enthalten. In diesem Fall ist ein geeigneter CLUSTER-Archetyp in den folgenden SLOT \"Zusätzliche Angaben\" einzufügen."
-          },
           "ac0.11" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.11",
-            "description" : ""
-          },
-          "ac0.15" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.15",
             "description" : ""
           }
         },
@@ -2395,41 +578,6 @@
             "description" : "Fritekstbeskrivelse om undersøkelser som er tidligere utført og som er innenfor kartleggingsformålet.",
             "comment" : "Designkommentar:\nHer kan man skrive et resyme for alle bildediagnostiske undersøkelser uten å spesifisere nærmere hvilken modalitet man faktisk har utført. "
           },
-          "at0026.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0026.2",
-            "text" : "Spesifikk undersøkelse/bildemodalitet",
-            "description" : "Detaljer om en spesifikk undersøkelse eller gruppe av undersøkelser som er innenfor kartleggingsformålet.",
-            "comment" : "Designkommentar:\nBruk separate instanser av dette CLUSTER'et for å skille mellom spesifikke undersøkelser/modaliteter eller gruppering av undersøkelser/modaliteter,\nHer kan man legge inn forskjellige modaliteter eller spesifikke undersøkelser man har gjort. \nF.eks. hvis man vil ha en instans av UL, MR og CT - da må dette clusteret gjentas for hver hovedgruppe/modalitet. \nDato og Resyme  i dette interne CLUSTERet er fjernet, og hvis det er svart   bekreftende på at den er utført (ja) så vil detaljene (dato og resyme samt kroppsdel) bli dokumentert i Klinisk grunnlag arketypen SLOTet inn i ytterligere detaljer i dette interne CLUSTERET."
-          },
-          "at0021.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0021.2",
-            "text" : "Bildeprosedyre/bildemodalitet navn",
-            "description" : "Navnet på en undersøkelse eller gruppe av undersøkelser.",
-            "comment" : "Designkommentar:\nHer tenker man å legge inn undersøkelsesnavnet til bildeundersøkelsen. \nHer kan man f.eks. enten bruke SNOMED-CT koder for undersøkelsesprosedyren (113091000 | Magnetic resonance imaging (procedure) |) eller eventuelt DICOM kodesett for modalitet (MR -\tMagnetic Resonance). "
-          },
-          "at0024.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0024.2",
-            "text" : "Er denne undersøkelsen utført?",
-            "description" : "Er den spesifikke undersøkelsen noen gang blitt gjennomført?",
-            "comment" : "Designkommentar:\nHer er det gjort mulighet for at man kan svare på om den spesifikke bildeprosedyren/modolaiteten er gjennomført ved å svare ja/nei. \nHvis man ønsker bare å krysse av at den er gjort, kan dette feltet skjules i bukegrensesnittet. \n"
-          },
-          "at0003.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003.2",
-            "text" : "Dato",
-            "description" : "Tidsangivelse for undersøkelsen.",
-            "comment" : "Elementet \"Tidsangivelse\" er med hensikt løst modellert for å legge til rette for myriadene av mulighetene det kan brukes i spørreskjemaer for å fange når en undersøkelse ble utført. Den spesifikke og tiltenkte semantikken kan bli ytterligere klargjort i et templat. For eksempel: Undersøkelsens faktiske dato og/eller klokkeslett, start- og slutttid for undersøkelsen, et tidsintervall for når undersøkelsen ble gjort, varigheten av en undersøkelse, individets alder på tidspunktet for undersøkelsen, eller hvor lenge det siden den ble gjort. Kan være en delvis dato, for eksempel bare år, ved å bruke datatypen DV_DATE_TIME."
-          },
-          "at0002.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002.2",
-            "text" : "Resymé",
-            "description" : "Kort beskrivelse, oppsummering eller tolkning av funnene på undersøkelsen.",
-            "comment" : "For eksempel \"Alle resultater innenfor normalverdier\", \"Normal\", \"Ytterligere undersøkelser nødvendig\". Dette dataelementet er ikke tenkt å representere det faktiske resultatet eller funnet. Er det nødvendig, nøst (sett inn) en passende CLUSTER-arketype i det etterfølgende SLOT'et \"Ytterligere detaljer\"."
-          },
           "at0040.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0040",
@@ -2443,11 +591,12 @@
             "code" : "ac0.11",
             "description" : ""
           },
-          "ac0.15" : {
+          "at0021.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.15",
-            "description" : ""
+            "code" : "at0021.1",
+            "text" : "Modalitet",
+            "description" : "Navnet på en undersøkelse eller gruppe av undersøkelser.",
+            "comment" : "For eksempel: \"Urea og elektrolytter\" eller \"HIV screeningpanel\".\r\nKoding av \"Undersøkelsesnavn\" med en terminologi foretrekkes der det er mulig."
           }
         },
         "es" : {
@@ -2477,52 +626,65 @@
             "text" : "Overordnet beskrivelse bildediagnostiske undersøkelse",
             "description" : "Descripción narrativa sobre la historia de cualquier investigación relevante para el propósito del screening."
           },
-          "at0026.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0026.2",
-            "text" : "MR undersøkelse",
-            "description" : "Detalles sobre una investigación o grupo de investigaciones relevantes para el propósito del screening.",
-            "comment" : "Utilice instancias separadas de este CLUSTER para diferenciar entre investigaciones específicas o grupo de investigaciones."
-          },
-          "at0021.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0021.2",
-            "text" : "Bildeprosedyre",
-            "description" : "Nombre de la investigación diagnóstica o grupo de investigaciones.",
-            "comment" : "Por ejemplo: 'Gas en sangre', Radiografía de tórax', 'ECG'; o 'Audiometría'.\r\nSiempre que sea posible, se prefiere codificar el 'nombre de la investigación' con una terminología."
-          },
-          "at0024.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0024.2",
-            "text" : "Er denne undersøkelsen utført?",
-            "description" : "¿Existen antecedentes de que se haya llevado a cabo la investigación?",
-            "comment" : "En un template, el nombre del elemento de datos normalmente se cambiaría según la pregunta específica formulada. El conjunto de valores propuesto se puede adaptar para uso local utilizando la opción de tipos de datos DV_TEXT o DV_BOOLEAN para que coincida con cada caso de uso específico."
-          },
-          "at0003.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003.2",
-            "text" : "Dato",
-            "description" : "Indicación del momento relacionado con la investigación.",
-            "comment" : "El elemento de datos 'Tiempo' se ha modelado deliberadamente de manera flexible para permitir la infinidad de formas en que se puede utilizar en cuestionarios, con el fin de registrar cuándo se llevó a cabo una investigación. La semántica específica y prevista se puede aclarar aún más en una template. Por ejemplo: la fecha y/u hora real; la hora de inicio y finalización de la investigación; el intervalo de tiempo durante el cual se llevó a cabo la investigación; la duración de la investigación; la edad del individuo al momento de la investigación; o el tiempo transcurrido desde que ocurrió. Una fecha parcial es válida, utilizando el tipo de datos DV_DATE_TIME, para registrar solo un año."
-          },
-          "at0002.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002.2",
-            "text" : "Resymé",
-            "description" : "Breve descripción, resumen o interpretación del resultado de la investigación.",
-            "comment" : "Por ejemplo: \"Todos los resultados dentro del rango normal\", \"Normal\", \"Se necesitan más investigaciones\". Este elemento de datos no debe contener una representación de los resultados o hallazgos reales. En esa situación, se anidaría un arquetipo de tipo CLUSTER apropiado dentro del SLOT 'Detalles adicionales'."
-          },
           "ac0.11" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.11",
             "description" : ""
           },
-          "ac0.15" : {
+          "at0002" : {
             "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.15",
+            "code" : "at0002",
+            "text" : "*Result (en)",
+            "description" : "*The test result or findings of the screening investigation. (en)",
+            "comment" : "*For example: positive/negative. (en)"
+          },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "*Date (en)",
+            "description" : "*The date and/or time of the most recent test. (en)",
+            "comment" : "*Can be a partial date, for example, only a year. (en)"
+          },
+          "at0021" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021",
+            "text" : "*Test name (en)",
+            "description" : "*Name of the imaging examination or laboratory test or grouping. (en)",
+            "comment" : "*For example: 'Urea and electrolytes', or 'HIV screening panel'.\r\nCoding of the 'Investigation name' with a terminology is preferred, where possible. (en)"
+          },
+          "at0024" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024",
+            "text" : "*Carried out? (en)",
+            "description" : "*Is there a history of the investigation being carried out? (en)",
+            "comment" : "*In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)"
+          },
+          "at0025" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025",
+            "text" : "*Comment (en)",
             "description" : ""
+          },
+          "at0026" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0026",
+            "text" : "*Specific investigation (en)",
+            "description" : "*Details about a specified investigation or grouping of investigations relevant for the screening purpose. (en)",
+            "comment" : "*Use separate instances of this CLUSTER to differentiate between specific investigations or groupings of investigations. (en)"
+          },
+          "at0041" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0041",
+            "text" : "*Additional details (en)",
+            "description" : "*Structured details or questions about the specific investigation or grouping of investigations. (en)"
+          },
+          "at0021.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021.1",
+            "text" : "*Test name (en)",
+            "description" : "*Name of the imaging examination or laboratory test or grouping. (en)",
+            "comment" : "*For example: 'Urea and electrolytes', or 'HIV screening panel'.\r\nCoding of the 'Investigation name' with a terminology is preferred, where possible. (en)"
           }
         },
         "ca" : {
@@ -2552,52 +714,65 @@
             "text" : "Overordnet beskrivelse bildediagnostiske undersøkelse",
             "description" : "Descripció narrativa sobre la història de qualsevol investigació rellevant per al propòsit de l'screening."
           },
-          "at0026.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0026.2",
-            "text" : "MR undersøkelse",
-            "description" : "Detalls sobre una investigació o grup d'investigacions rellevants per al propòsit de l'screening.",
-            "comment" : "Utilitzeu instàncies separades d'aquest CLUSTER per diferenciar entre investigacions específiques o grup de recerca."
-          },
-          "at0021.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0021.2",
-            "text" : "Bildeprosedyre",
-            "description" : "Nom de la investigació diagnòstica o grup de recerca.",
-            "comment" : "Per exemple: 'Gas en sang', Radiografia de tòrax', 'ECG'; o 'Audiometria'.\r\nSempre que sigui possible, es prefereix codificar el 'nom de la investigació' amb una terminologia."
-          },
-          "at0024.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0024.2",
-            "text" : "Er denne undersøkelsen utført?",
-            "description" : "Hi ha antecedents que s'hagi dut a terme la investigació?",
-            "comment" : "En un template, el nom de l'element de dades normalment es canviaria segons la pregunta específica formulada. El conjunt de valors proposat es pot adaptar per a ús local utilitzant lopció de tipus de dades DV_TEXT o DV_BOOLEAN perquè coincideixi amb cada cas dús específic."
-          },
-          "at0003.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003.2",
-            "text" : "Dato",
-            "description" : "Indicació del moment relacionat amb la investigació.",
-            "comment" : "L'element de dades 'Temps' s'ha modelat deliberadament de manera flexible per permetre la infinitat de formes en què es pot utilitzar en qüestionaris, per tal de registrar quan es va dur a terme una investigació. La semàntica específica i prevista es pot aclarir encara més en una template. Per exemple: la data i/o hora real; l'hora d'inici i de finalització de la investigació; l'interval de temps durant el qual es va dur a terme la investigació; la durada de la investigació; l'edat de l'individu al moment de la investigació; o el temps transcorregut des que va passar. Una data parcial és vàlida, utilitzant el tipus de dades DV_DATE_TIME, per registrar només un any."
-          },
-          "at0002.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002.2",
-            "text" : "Resymé",
-            "description" : "Breu descripció, resum o interpretació del resultat de la investigació.",
-            "comment" : "Per exemple: \"Tots els resultats dins del rang normal\", \"Normal\", \"Es necessiten més investigacions\". Aquest element de dades no ha de contenir una representació dels resultats o les troballes reals. En aquesta situació, s'hi aniria un arquetip de tipus CLUSTER apropiat dins del SLOT 'Detalls addicionals'."
-          },
           "ac0.11" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.11",
             "description" : ""
           },
-          "ac0.15" : {
+          "at0002" : {
             "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.15",
+            "code" : "at0002",
+            "text" : "*Result (en)",
+            "description" : "*The test result or findings of the screening investigation. (en)",
+            "comment" : "*For example: positive/negative. (en)"
+          },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "*Date (en)",
+            "description" : "*The date and/or time of the most recent test. (en)",
+            "comment" : "*Can be a partial date, for example, only a year. (en)"
+          },
+          "at0021" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021",
+            "text" : "*Test name (en)",
+            "description" : "*Name of the imaging examination or laboratory test or grouping. (en)",
+            "comment" : "*For example: 'Urea and electrolytes', or 'HIV screening panel'.\r\nCoding of the 'Investigation name' with a terminology is preferred, where possible. (en)"
+          },
+          "at0024" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024",
+            "text" : "*Carried out? (en)",
+            "description" : "*Is there a history of the investigation being carried out? (en)",
+            "comment" : "*In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)"
+          },
+          "at0025" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025",
+            "text" : "*Comment (en)",
             "description" : ""
+          },
+          "at0026" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0026",
+            "text" : "*Specific investigation (en)",
+            "description" : "*Details about a specified investigation or grouping of investigations relevant for the screening purpose. (en)",
+            "comment" : "*Use separate instances of this CLUSTER to differentiate between specific investigations or groupings of investigations. (en)"
+          },
+          "at0041" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0041",
+            "text" : "*Additional details (en)",
+            "description" : "*Structured details or questions about the specific investigation or grouping of investigations. (en)"
+          },
+          "at0021.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021.1",
+            "text" : "*Test name (en)",
+            "description" : "*Name of the imaging examination or laboratory test or grouping. (en)",
+            "comment" : "*For example: 'Urea and electrolytes', or 'HIV screening panel'.\r\nCoding of the 'Investigation name' with a terminology is preferred, where possible. (en)"
           }
         }
       },
@@ -2757,6 +932,200 @@
         "name" : "Julio de Sosa",
         "organisation" : "Servei Català de la Salut",
         "email" : "juliodesosa@catsalut.cat"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "dca3683f-e56a-44dc-b12b-2732030057ac",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "DD19B53EA9A429417A10AB0F1AA8FE56"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.imaging_exam.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-imaging_exam-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "SNOMED-CT"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "69536005",
+                    "value" : "Caput (hode)"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "421060004",
+                    "value" : "Columna vertebralis (ryggrad)"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "51185008",
+                    "value" : "Thorax (brystkasse)"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "76752008",
+                    "value" : "Mamma (bryst)"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "91470000",
+                    "value" : "Aksille"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "39607008",
+                    "value" : "Lunge"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "818983003",
+                    "value" : "Abdomen"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "10200004",
+                    "value" : "Lever"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "3120008",
+                    "value" : "Pleura"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "12921003",
+                    "value" : "Pelvis (bekken)"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "113192009",
+                    "value" : "Skjelett"
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0002.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0004.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0006.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0007.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Bildediagnostisk undersøkelse - kroppsstruktur",
+            "description" : "Funn eller observasjoner ved radiologisk undersøkelse av et definert organ eller en kroppsdel.",
+            "comment" : "Repeteres for hver kroppsdel/organ som er undersøkt med de bildediagnostiske modaliteten "
+          }
+        },
+        "de" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "3677e97d-c5d0-483c-a291-474e45b3b4eb",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Natalia Strauch, Darin Leonhardt",
+        "organisation" : "Medizinische Hochschule Hannover, PLRI für medizinische Informatik/ Medizinische Hochschule",
+        "email" : "Strauch.Natalia@mh-hannover.de, leonhardt.darin@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Vebjørn Arntzen",
+        "organisation" : "Oslo University Hospital",
+        "email" : "varntzen@ous-hf.no"
       },
       "otherDetails" : { }
     } ]
