@@ -22,10 +22,10 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "9f24d7e92e4c34ee6213a6b893cee6ae",
+      "MD5-CAM-1.0.1" : "520b56afa8e86af0f112bbc5b0c3034c",
       "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73",
       "original_language" : "ISO_639-1::nb",
-      "sem_ver" : "9.0.0",
+      "sem_ver" : "10.0.0",
       "build_uid" : ""
     },
     "details" : {
@@ -549,7 +549,7 @@
                                     "value" : "Fotonterapi - Stråle (ekstern)"
                                   }, {
                                     "terminologyId" : "SNOMED-CT",
-                                    "code" : "169314007",
+                                    "code" : "10611004",
                                     "value" : "Protonterapi -Stråle (ekstern)"
                                   }, {
                                     "terminologyId" : "SNOMED-CT",
