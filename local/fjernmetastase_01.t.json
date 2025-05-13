@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "4565ca65eb6bc9d5c6d788c058eb9c67",
+      "MD5-CAM-1.0.1" : "4e42a4e5193a2bf45aff10af2f18c05d",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5",
       "sem_ver" : "1.0.0",
       "build_uid" : ""
@@ -649,6 +649,13 @@
           "text" : "Variant",
           "description" : "Anatomisk lokalisering av fjernmetastasen.",
           "comment" : "Designkommentar:\nAnatomisk lokalisering av fjernmetastasen. Lagrer direktelokalisasjon av fjernmetastasen. Hvis ikke koden ligger her må man skrive det inn i fritekst."
+        },
+        "at0012.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0012",
+          "text" : "Anatomisk lokalisering",
+          "description" : "Angir at fjernmestastase er tilstede. ",
+          "comment" : "Klassifiserer fjernmetastase med SNOMED-CT koden  399409002 | Distant metastasis present (finding) |\n\nDen er fast for alle fjernmetastase oppføringer for å klassifisere problemet til å omhandle fjernmestastase. \n\nFeltet vil være skjult for bruker. "
         }
       },
       "sv" : {
