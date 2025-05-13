@@ -24,8 +24,8 @@
       "custodian_namespace" : "",
       "sem_ver" : "3.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "1a7e246c15b9dad2065157e59ecaa49e",
-      "PARENT:MD5-CAM-1.0.1" : "2805a49bf0fdfa1f033dddff91994ab8"
+      "MD5-CAM-1.0.1" : "f9a93f039f427c03e8ba6675e2222d17",
+      "PARENT:MD5-CAM-1.0.1" : "ce281964c2211c542f3ddb3faa9d8b7f"
     },
     "details" : {
       "nb" : {
@@ -72,54 +72,23 @@
       }, {
         "@type" : "C_COMPLEX_OBJECT",
         "rmTypeName" : "SECTION",
-        "nodeId" : "at0007",
-        "attributes" : [ {
-          "@type" : "C_ATTRIBUTE",
-          "rmAttributeName" : "items",
-          "existence" : "0..1",
-          "cardinality" : {
-            "@type" : "CARDINALITY",
-            "interval" : "1..*",
-            "ordered" : false,
-            "unique" : false
-          },
-          "children" : [ {
-            "@type" : "C_ARCHETYPE_ROOT",
-            "rmTypeName" : "EVALUATION",
-            "occurrences" : "0..1",
-            "nodeId" : "at0.16",
-            "attributes" : [ ],
-            "attributeTuples" : [ ],
-            "archetypeRef" : "lymfeknutemetastaser_01",
-            "referenceType" : "templateId"
-          } ]
-        } ],
+        "occurrences" : "0..0",
+        "nodeId" : "at0007.1",
+        "attributes" : [ ],
         "attributeTuples" : [ ]
       }, {
         "@type" : "C_COMPLEX_OBJECT",
         "rmTypeName" : "SECTION",
-        "nodeId" : "at0009",
-        "attributes" : [ {
-          "@type" : "C_ATTRIBUTE",
-          "rmAttributeName" : "items",
-          "existence" : "0..1",
-          "cardinality" : {
-            "@type" : "CARDINALITY",
-            "interval" : "1..*",
-            "ordered" : false,
-            "unique" : false
-          },
-          "children" : [ {
-            "@type" : "C_ARCHETYPE_ROOT",
-            "rmTypeName" : "EVALUATION",
-            "occurrences" : "0..1",
-            "nodeId" : "at0.14",
-            "attributes" : [ ],
-            "attributeTuples" : [ ],
-            "archetypeRef" : "fjernmetastase_01",
-            "referenceType" : "templateId"
-          } ]
-        } ],
+        "occurrences" : "0..0",
+        "nodeId" : "at0008.1",
+        "attributes" : [ ],
+        "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "SECTION",
+        "occurrences" : "0..0",
+        "nodeId" : "at0009.1",
+        "attributes" : [ ],
         "attributeTuples" : [ ]
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
@@ -130,6 +99,24 @@
         "attributeTuples" : [ ],
         "archetypeRef" : "problem_diagnose_tnm",
         "referenceType" : "templateId"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "SECTION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0022.1",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-SECTION.ovl-lymfeknutemetastase_no-001.v1",
+        "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "SECTION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0022.2",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-SECTION.ovl-fjernmetastase_no-001.v1",
+        "referenceType" : "archetypeOverlay"
       } ]
     } ],
     "attributeTuples" : [ ]
@@ -144,6 +131,18 @@
           "code" : "at0000.1",
           "text" : "kreftdiagnose",
           "description" : "Kreftdiagnose"
+        },
+        "at0007.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0007.1",
+          "text" : "Lymfeknutemetastase",
+          "description" : ""
+        },
+        "at0009.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0009.1",
+          "text" : "Fjernmetastase",
+          "description" : ""
         }
       }
     },
@@ -158,7 +157,149 @@
   "generated" : true,
   "templateId" : "kreftdiagnose_01",
   "otherMetaData" : { },
-  "templateOverlays" : [ ],
+  "templateOverlays" : [ {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "96107235-b02c-438f-98f5-d91ba2927475",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "80b4c6201c72d2b60fc2b8cb0acdbbb8"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-SECTION.lymfeknutemetastase_no.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-SECTION.ovl-lymfeknutemetastase_no-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "SECTION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "existence" : "0..1",
+        "cardinality" : {
+          "@type" : "CARDINALITY",
+          "interval" : "1..*",
+          "ordered" : false,
+          "unique" : false
+        },
+        "children" : [ {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "EVALUATION",
+          "occurrences" : "0..1",
+          "nodeId" : "at0.4",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "lymfeknutemetastaser_01",
+          "referenceType" : "templateId"
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "nb" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "a6ac3597-10ef-31bb-a219-f71a22e579cc",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "translations" : [ ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "a87aa82b-ac5e-425b-bff8-9d58e09c96b1",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "4fd3935622c83c9cb347e86cc9216c58"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-SECTION.fjernmetastase_no.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-SECTION.ovl-fjernmetastase_no-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "SECTION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "existence" : "0..1",
+        "cardinality" : {
+          "@type" : "CARDINALITY",
+          "interval" : "1..*",
+          "ordered" : false,
+          "unique" : false
+        },
+        "children" : [ {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "EVALUATION",
+          "occurrences" : "0..1",
+          "nodeId" : "at0.2",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "fjernmetastase_01",
+          "referenceType" : "templateId"
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "nb" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "d53b0240-9cd5-3551-8d1c-7654ec28b010",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "translations" : [ ]
+  } ],
   "originalLanguage" : {
     "terminologyId" : {
       "value" : "ISO_639-1"
