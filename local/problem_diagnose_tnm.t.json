@@ -22,7 +22,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "28d7c63f4f34d7eec0c0a013e5814d75",
+      "MD5-CAM-1.0.1" : "a84c8ac859527bd68b81a9dc9abce91b",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5",
       "sem_ver" : "2.0.0",
       "build_uid" : ""
@@ -954,6 +954,13 @@
             "text" : "Multiple primærtumorer",
             "description" : "Indikasjon på at det finnes flere primære maligniteter.",
             "comment" : "Benyttes for hode/halskreft for å angi forekomst av multiple tumorer med forskjellig morfologi, dvs. at histologien er forskjellig. "
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Oncology problem details dips",
+            "description" : "En indikasjon på at det finnes flere primære maligniteter og/eller multifokal tumor. ",
+            "comment" : "Benyttes inntil videre da det det kan være at SJK prosjektet har avdekket en mangel av de eksisterende arketypene for kreftområdet. F.eks. kunne det vært aktuelt å benytte TNM arketypen. "
           }
         }
       },
