@@ -22,9 +22,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "bff19b33b76a3b7624f460309cb0eb4e",
+      "MD5-CAM-1.0.1" : "eb6d0df9669a5b2cb1dca4ac62ec7a06",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5",
-      "sem_ver" : "3.0.0",
+      "sem_ver" : "4.0.0",
       "build_uid" : ""
     },
     "details" : {
@@ -509,7 +509,7 @@
           }, {
             "@type" : "C_ARCHETYPE_ROOT",
             "rmTypeName" : "CLUSTER",
-            "occurrences" : "0..1",
+            "occurrences" : "0..0",
             "nodeId" : "at0043.5",
             "attributes" : [ ],
             "attributeTuples" : [ ],
@@ -2231,18 +2231,18 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "AJCC-TNM-VERSION"
+                    "value" : "UICC-TNM-VERSION"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "AJCC-TNM-VERSION" ],
+                  "selectedTerminologies" : [ "UICC-TNM-VERSION" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "AJCC-TNM-VERSION",
+                    "terminologyId" : "UICC-TNM-VERSION",
                     "code" : "Edition8",
-                    "value" : "AJCC TNM Versjon 8"
+                    "value" : "UICC TNM Versjon 8"
                   }, {
-                    "terminologyId" : "AJCC-TNM-VERSION",
+                    "terminologyId" : "UICC-TNM-VERSION",
                     "code" : "Edition9",
-                    "value" : "AJCC TNM Versjon 9"
+                    "value" : "UICC TNM Versjon 9"
                   } ]
                 } ]
               } ],
