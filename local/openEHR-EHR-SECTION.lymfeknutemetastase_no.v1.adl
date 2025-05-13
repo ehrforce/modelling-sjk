@@ -1,0 +1,46 @@
+archetype (adl_version=1.4; uid=798294eb-3da9-47c2-8b27-e2afa8f8545c)
+	openEHR-EHR-SECTION.lymfeknutemetastase_no.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["date"] = <"2025-05-14">
+		["name"] = <"Bjørn Næss">
+		["organisation"] = <"DIPS AS">
+		["email"] = <"bna@dips.no">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"a14cb65146b2d8087eaefc94d9b48463">
+		["build_uid"] = <"a6ac3597-10ef-31bb-a219-f71a22e579cc">
+	>
+
+definition
+	SECTION[at0000] matches {*}    -- Lymfeknutemetastase_no
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Lymfeknutemetastase_no">
+					description = <"Lymfeknutemetastase_no">
+				>
+			>
+		>
+	>
