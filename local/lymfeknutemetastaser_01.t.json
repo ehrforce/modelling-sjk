@@ -20,7 +20,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "069096a094783ca5155d9ba892403646",
+      "MD5-CAM-1.0.1" : "066cbe823ff3f213d967a9c5130cc017",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5",
       "sem_ver" : "1.1.0",
       "build_uid" : ""
@@ -617,8 +617,8 @@
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0002.1",
           "text" : "Regional lymfeknutemetastase",
-          "description" : "Identifisering av problemet eller diagnosen ved hjelp av navn.",
-          "comment" : "Koding av navnet på problemet eller diagnosen med en terminologi er foretrukket, der det er mulig."
+          "description" : "Angir at det er regionale lymfeknutemetastaser tilstede. ",
+          "comment" : "Bruker SNOMED-CT koden 399374009 | Regional lymph node metastasis present (finding) | for å klassifisisere problemet. "
         }
       },
       "sv" : {
