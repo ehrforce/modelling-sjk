@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "436327ad9b3a88a64056decc6498c924",
+      "MD5-CAM-1.0.1" : "4565ca65eb6bc9d5c6d788c058eb9c67",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5",
       "sem_ver" : "1.0.0",
       "build_uid" : ""
@@ -378,7 +378,7 @@
                     "selectedTerminologies" : [ "SNOMED-CT" ],
                     "includedExternalTerminologyCodes" : [ {
                       "terminologyId" : "SNOMED-CT",
-                      "code" : "371497001",
+                      "code" : "399409002",
                       "value" : "Fjernmetastase"
                     } ]
                   } ]
