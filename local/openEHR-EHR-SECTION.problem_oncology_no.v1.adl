@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"ce281964c2211c542f3ddb3faa9d8b7f">
+		["MD5-CAM-1.0.1"] = <"f2104da4cf8d728fd980c8a35e1ce386">
 		["build_uid"] = <"fa3fd3ae-e110-3be2-943a-544095567374">
 	>
 
@@ -37,11 +37,6 @@ definition
 				include
 					archetype_id/value matches {/.*/}
 			}
-			SECTION[at0018] occurrences matches {0..1} matches {*}    -- Primærtumor
-			SECTION[at0019] occurrences matches {0..1} matches {*}    -- Lokalt residiv
-			SECTION[at0007] occurrences matches {0..1} matches {*}    -- Lymfeknutemetastase
-			SECTION[at0008] occurrences matches {0..1} matches {*}    -- Annen regional metastase
-			SECTION[at0009] occurrences matches {0..1} matches {*}    -- Fjernmetastase
 			allow_archetype SECTION[at0022] occurrences matches {0..*} matches {    -- Seksjonsinndeling
 				include
 					archetype_id/value matches {/.*/}
@@ -56,26 +51,6 @@ ontology
 				["at0000"] = <
 					text = <"problem_oncology_no">
 					description = <"Kreftdiagnose">
-				>
-				["at0007"] = <
-					text = <"Lymfeknutemetastase">
-					description = <"">
-				>
-				["at0008"] = <
-					text = <"Annen regional metastase">
-					description = <"">
-				>
-				["at0009"] = <
-					text = <"Fjernmetastase">
-					description = <"">
-				>
-				["at0018"] = <
-					text = <"Primærtumor">
-					description = <"">
-				>
-				["at0019"] = <
-					text = <"Lokalt residiv">
-					description = <"">
 				>
 				["at0021"] = <
 					text = <"Overordnet diagnostisk informasjon">
