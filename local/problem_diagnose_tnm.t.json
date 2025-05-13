@@ -22,7 +22,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "eb6d0df9669a5b2cb1dca4ac62ec7a06",
+      "MD5-CAM-1.0.1" : "6ccd21824ef928aaaff27724e91bea81",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5",
       "sem_ver" : "4.0.0",
       "build_uid" : ""
@@ -1124,48 +1124,68 @@
                   "selectedTerminologies" : [ "no.onk.tmn" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "no.onk.tmn",
+                    "code" : "TX",
+                    "value" : "cTX"
+                  }, {
+                    "terminologyId" : "no.onk.tmn",
                     "code" : "T0",
                     "value" : "cT0"
                   }, {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "1228884006",
-                    "value" : "cTis"
+                    "code" : "Tis(DIS)",
+                    "value" : "cTis(DCIS)"
                   }, {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "1228889001",
+                    "code" : "Tis(Paget)",
+                    "value" : "cTis(Paget)"
+                  }, {
+                    "terminologyId" : "no.onk.tmn",
+                    "code" : "T1",
                     "value" : "cT1"
                   }, {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "1228893007",
+                    "code" : "T1mi",
+                    "value" : "cT1mi"
+                  }, {
+                    "terminologyId" : "no.onk.tmn",
+                    "code" : "T1a",
                     "value" : "cT1a"
                   }, {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "1228895000",
+                    "code" : "T1b",
                     "value" : "cT1b"
                   }, {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "1228929004",
+                    "code" : "T1",
+                    "value" : "cT1c"
+                  }, {
+                    "terminologyId" : "no.onk.tmn",
+                    "code" : "T2",
                     "value" : "cT2"
                   }, {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "1228938002",
+                    "code" : "T3",
                     "value" : "cT3"
                   }, {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "1228944003",
+                    "code" : "T4",
                     "value" : "cT4"
                   }, {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "1228945002",
+                    "code" : "T4a",
                     "value" : "cT4a"
                   }, {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "1228946001",
+                    "code" : "T4b",
                     "value" : "cT4b"
                   }, {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "1222604002",
-                    "value" : "cTX"
+                    "code" : "T4",
+                    "value" : "cT4c"
+                  }, {
+                    "terminologyId" : "no.onk.tmn",
+                    "code" : "T4d",
+                    "value" : "cT4d"
                   } ]
                 } ]
               } ],
@@ -1198,52 +1218,24 @@
                   "selectedTerminologies" : [ "no.onk.tmn" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "1229967007",
+                    "code" : "NX",
+                    "value" : "cNX"
+                  }, {
+                    "terminologyId" : "no.onk.tmn",
+                    "code" : "N0",
                     "value" : "cN0"
                   }, {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "1229973008",
+                    "code" : "N1",
                     "value" : "cN1"
                   }, {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "1229975001",
-                    "value" : "cN1a"
-                  }, {
-                    "terminologyId" : "no.onk.tmn",
-                    "code" : "1229976000",
-                    "value" : "cN1b"
-                  }, {
-                    "terminologyId" : "no.onk.tmn",
-                    "code" : "1229978004",
+                    "code" : "N2",
                     "value" : "cN2"
                   }, {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "1229981009",
-                    "value" : "cN2a"
-                  }, {
-                    "terminologyId" : "no.onk.tmn",
-                    "code" : "1229982002",
-                    "value" : "cN2b"
-                  }, {
-                    "terminologyId" : "no.onk.tmn",
-                    "code" : "1229983007",
-                    "value" : "cN2c"
-                  }, {
-                    "terminologyId" : "no.onk.tmn",
-                    "code" : "1229984001",
+                    "code" : "N3",
                     "value" : "cN3"
-                  }, {
-                    "terminologyId" : "no.onk.tmn",
-                    "code" : "1229985000",
-                    "value" : "cN3a"
-                  }, {
-                    "terminologyId" : "no.onk.tmn",
-                    "code" : "1229986004",
-                    "value" : "cN3b"
-                  }, {
-                    "terminologyId" : "no.onk.tmn",
-                    "code" : "1229966003",
-                    "value" : "cNX"
                   } ]
                 } ]
               } ],
@@ -1276,16 +1268,20 @@
                   "selectedTerminologies" : [ "no.onk.tmn" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "1229901006",
+                    "code" : "M0",
                     "value" : "cM0"
                   }, {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "1229903009",
+                    "code" : "M0(i+)",
+                    "value" : "cM0(i+)"
+                  }, {
+                    "terminologyId" : "no.onk.tmn",
+                    "code" : "M1",
                     "value" : "cM1"
                   }, {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "27167007",
-                    "value" : "cMX"
+                    "code" : "MX",
+                    "value" : "MX"
                   } ]
                 } ]
               } ],
@@ -1552,32 +1548,32 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "no.onk.tmn"
+                    "value" : "no.onk.tmn.stadium"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "no.onk.tmn" ],
+                  "selectedTerminologies" : [ "no.onk.tmn.stadium" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "no.onk.tmn",
+                    "terminologyId" : "no.onk.tmn.stadium",
                     "code" : "0",
                     "value" : "Stadium 0"
                   }, {
-                    "terminologyId" : "no.onk.tmn",
+                    "terminologyId" : "no.onk.tmn.stadium",
                     "code" : "l",
                     "value" : "Stadium l"
                   }, {
-                    "terminologyId" : "no.onk.tmn",
+                    "terminologyId" : "no.onk.tmn.stadium",
                     "code" : "ll",
                     "value" : "Stadium ll"
                   }, {
-                    "terminologyId" : "no.onk.tmn",
+                    "terminologyId" : "no.onk.tmn.stadium",
                     "code" : "lll",
                     "value" : "Stadium lll"
                   }, {
-                    "terminologyId" : "no.onk.tmn",
+                    "terminologyId" : "no.onk.tmn.stadium",
                     "code" : "lV",
                     "value" : "Stadium lV"
                   }, {
-                    "terminologyId" : "no.onk.tmn",
+                    "terminologyId" : "no.onk.tmn.stadium",
                     "code" : "V",
                     "value" : "Stadium V"
                   } ]
@@ -1797,48 +1793,68 @@
                   "selectedTerminologies" : [ "no.onk.tmn" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "1228951007",
+                    "code" : "TX",
+                    "value" : "pTX"
+                  }, {
+                    "terminologyId" : "no.onk.tmn",
+                    "code" : "T0",
                     "value" : "pT0"
                   }, {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "1228953005",
-                    "value" : "pTis"
+                    "code" : "Tis(DCIS)",
+                    "value" : "pTis(DCIS)"
                   }, {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "1228957006",
+                    "code" : "Tis(aget)",
+                    "value" : "pTis(Paget)"
+                  }, {
+                    "terminologyId" : "no.onk.tmn",
+                    "code" : "T1",
                     "value" : "pT1"
                   }, {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "1228959009",
+                    "code" : "T1mi",
+                    "value" : "pT1mi"
+                  }, {
+                    "terminologyId" : "no.onk.tmn",
+                    "code" : "T1a",
                     "value" : "pT1a"
                   }, {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "1228962007",
+                    "code" : "T1b",
                     "value" : "pT1b"
                   }, {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "1229852009",
+                    "code" : "T1c",
+                    "value" : "pT1c"
+                  }, {
+                    "terminologyId" : "no.onk.tmn",
+                    "code" : "T2",
                     "value" : "pT2"
                   }, {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "1229859000",
+                    "code" : "T3",
                     "value" : "pT3"
                   }, {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "1229864001",
+                    "code" : "T4",
                     "value" : "pT4"
                   }, {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "1229865000",
+                    "code" : "T4a",
                     "value" : "pT4a"
                   }, {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "1229866004",
+                    "code" : "T4b",
                     "value" : "pT4b"
                   }, {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "1228950008",
-                    "value" : "pTX"
+                    "code" : "T4c",
+                    "value" : "pT4c"
+                  }, {
+                    "terminologyId" : "no.onk.tmn",
+                    "code" : "T4d",
+                    "value" : "pT4d"
                   } ]
                 } ]
               } ],
@@ -1871,52 +1887,76 @@
                   "selectedTerminologies" : [ "no.onk.tmn" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "1229947003",
+                    "code" : "NX",
+                    "value" : "pNX"
+                  }, {
+                    "terminologyId" : "no.onk.tmn",
+                    "code" : "N0",
                     "value" : "pN0"
                   }, {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "1229951001",
+                    "code" : "N0(i-)",
+                    "value" : "pN0(i-)"
+                  }, {
+                    "terminologyId" : "no.onk.tmn",
+                    "code" : "N0(i+)",
+                    "value" : "pN0(i+)"
+                  }, {
+                    "terminologyId" : "no.onk.tmn",
+                    "code" : "N0(mol-)",
+                    "value" : "pN0(mol-)"
+                  }, {
+                    "terminologyId" : "no.onk.tmn",
+                    "code" : "N0(mol+)",
+                    "value" : "pN0(mol+)"
+                  }, {
+                    "terminologyId" : "no.onk.tmn",
+                    "code" : "N1mi",
+                    "value" : "pN1mi"
+                  }, {
+                    "terminologyId" : "no.onk.tmn",
+                    "code" : "N1",
                     "value" : "pN1"
                   }, {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "1229954009",
+                    "code" : "N1a",
                     "value" : "pN1a"
                   }, {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "1229955005",
+                    "code" : "N1b",
                     "value" : "pN1b"
                   }, {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "1229957002",
+                    "code" : "N1c",
+                    "value" : "pN1c"
+                  }, {
+                    "terminologyId" : "no.onk.tmn",
+                    "code" : "N2",
                     "value" : "pN2"
                   }, {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "1229959004",
+                    "code" : "N2a",
                     "value" : "pN2a"
                   }, {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "1229960009",
+                    "code" : "N2b",
                     "value" : "pN2b"
                   }, {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "1229961008",
-                    "value" : "pN2c"
-                  }, {
-                    "terminologyId" : "no.onk.tmn",
-                    "code" : "1229962001",
+                    "code" : "N3",
                     "value" : "pN3"
                   }, {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "1229963006",
+                    "code" : "N3a",
                     "value" : "pN3a"
                   }, {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "1229964000",
+                    "code" : "N3b",
                     "value" : "pN3b"
                   }, {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "1229945006",
-                    "value" : "pNX"
+                    "code" : "N3c",
+                    "value" : "pN3c"
                   } ]
                 } ]
               } ],
@@ -1949,15 +1989,15 @@
                   "selectedTerminologies" : [ "no.onk.tmn" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "30893008",
+                    "code" : "M0",
                     "value" : "pM0"
                   }, {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "1229916009",
+                    "code" : "M1",
                     "value" : "pM1"
                   }, {
                     "terminologyId" : "no.onk.tmn",
-                    "code" : "27167007",
+                    "code" : "MX",
                     "value" : "pMX"
                   } ]
                 } ]
