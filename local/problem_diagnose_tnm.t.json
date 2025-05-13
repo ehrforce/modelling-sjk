@@ -22,7 +22,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "a6cc57d99d99445bb15c7ba49ec52d5d",
+      "MD5-CAM-1.0.1" : "28d7c63f4f34d7eec0c0a013e5814d75",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5",
       "sem_ver" : "2.0.0",
       "build_uid" : ""
@@ -251,15 +251,27 @@
                     "rmTypeName" : "TERMINOLOGY_CODE",
                     "occurrences" : "0..1",
                     "terminologyId" : {
-                      "value" : "ICD10"
+                      "value" : "SNOMED-CT"
                     },
-                    "constraint" : [ "ac0.4" ],
-                    "selectedTerminologies" : [ "ICD10" ]
+                    "constraint" : [ ],
+                    "selectedTerminologies" : [ "SNOMED-CT" ],
+                    "includedExternalTerminologyCodes" : [ {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "55342001",
+                      "value" : "Neoplastisk sykdom"
+                    } ]
                   } ]
                 } ],
                 "attributeTuples" : [ ]
               } ]
             } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..1",
+            "nodeId" : "at0079.1",
+            "attributes" : [ ],
             "attributeTuples" : [ ]
           }, {
             "@type" : "C_COMPLEX_OBJECT",
@@ -653,7 +665,7 @@
           "code" : "at0002",
           "text" : "Problem/diagnosenavn",
           "description" : "Identifisering av problemet eller diagnosen ved hjelp av navn.",
-          "comment" : "Primærdiagnosen kodet som ICD-10"
+          "comment" : "Klassifiserer primærtumor som en neoplastisk sykdom for gruppering på tvers av kreftformene. 55342001 | neoplastisk sykdom |"
         },
         "at0009.1" : {
           "@type" : "ARCHETYPE_TERM",
@@ -674,6 +686,13 @@
           "text" : "*(Synthesized) (en)",
           "code" : "ac0.3",
           "description" : ""
+        },
+        "at0079.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0079.1",
+          "text" : "Variant",
+          "description" : "Spesifikk variant eller subtype av diagnose, hvis det er relevant.",
+          "comment" : "Bryst: tumorutbredelse og multifokalitet. Feltet endres til tumorutbredelsesmønster \nBak denne ligger SNOMED-CT koden for multifokalitet. Den samme som brukes i SARKOM: 399506006 Multifokal tumor"
         }
       },
       "sv" : {
@@ -783,11 +802,7 @@
         }
       }
     },
-    "termBindings" : {
-      "ICD10" : {
-        "ac0.4" : "terminology:ICD10"
-      }
-    },
+    "termBindings" : { },
     "terminologyExtracts" : { },
     "valueSets" : {
       "ac0.1" : {
@@ -825,7 +840,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "e1556ce56f9c5f3ed079b737b70efeb1"
+        "PARENT:MD5-CAM-1.0.1" : "b607029396c4b6befd9a467560f63fbe"
       },
       "details" : {
         "nb" : {
@@ -866,6 +881,7 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
@@ -889,6 +905,40 @@
             } ]
           } ],
           "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0003.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "SNOMED-CT"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "399506006",
+                    "value" : "Multifokal tumor"
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
         } ]
       } ],
       "attributeTuples" : [ ]
@@ -897,7 +947,15 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "nb" : { }
+        "nb" : {
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Multiple primærtumorer",
+            "description" : "Indikasjon på at det finnes flere primære maligniteter.",
+            "comment" : "Benyttes for hode/halskreft for å angi forekomst av multiple tumorer med forskjellig morfologi, dvs. at histologien er forskjellig. "
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
