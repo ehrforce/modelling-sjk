@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "588e1ea612fdb48b1b60955907b5db97",
+      "MD5-CAM-1.0.1" : "a7d0b1f412074d7ddef25332598ba6a8",
       "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73",
       "original_language" : "ISO_639-1::nb",
       "sem_ver" : "2.0.0",
@@ -479,7 +479,7 @@
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "ac0.104" ],
+                              "constraint" : [ "ac0.284" ],
                               "selectedTerminologies" : [ ]
                             } ]
                           } ],
@@ -611,16 +611,16 @@
             "text" : "Merknad",
             "description" : "Additional narrative about the specific issue, problem or diagnosis question, not captured in other fields."
           },
-          "ac0.104" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.104",
-            "description" : ""
-          },
           "ac0.282" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
             "code" : "ac0.282",
+            "description" : ""
+          },
+          "ac0.284" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.284",
             "description" : ""
           }
         },
@@ -676,16 +676,16 @@
             "text" : "Merknad om tidligere kreft",
             "description" : "Fritekstbeskrivelse om bekymringer, plager, problemer eller diagnoser som er innenfor kartleggingsformålet."
           },
-          "ac0.104" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.104",
-            "description" : ""
-          },
           "ac0.282" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.282",
+            "description" : ""
+          },
+          "ac0.284" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.284",
             "description" : ""
           }
         },
@@ -724,16 +724,16 @@
             "text" : "Merknad",
             "description" : "Zusätzliche Beschreibung zur zu konkretem Problem, konkreter Beschwerde oder Diagnose, die nicht in den übrigen Feldern abgedeckt wurde."
           },
-          "ac0.104" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.104",
-            "description" : ""
-          },
           "ac0.282" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.282",
+            "description" : ""
+          },
+          "ac0.284" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.284",
             "description" : ""
           }
         },
@@ -772,16 +772,16 @@
             "text" : "Merknad",
             "description" : "Additional narrative about the specified problem or diagnosis, not captured in other fields.(en)"
           },
-          "ac0.104" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.104",
-            "description" : ""
-          },
           "ac0.282" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.282",
+            "description" : ""
+          },
+          "ac0.284" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.284",
             "description" : ""
           }
         },
@@ -820,16 +820,16 @@
             "text" : "Merknad",
             "description" : "Informació addicional sobre una qüestió específica, problema o pregunta de diagnòstic, no recollida en altres caselles."
           },
-          "ac0.104" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.104",
-            "description" : ""
-          },
           "ac0.282" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.282",
+            "description" : ""
+          },
+          "ac0.284" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.284",
             "description" : ""
           }
         },
@@ -868,16 +868,16 @@
             "text" : "Merknad",
             "description" : "Description supplémentaire de la question spécifique, du problème ou de la question de diagnostic, qui n'a pas été saisie dans d'autres champs."
           },
-          "ac0.104" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.104",
-            "description" : ""
-          },
           "ac0.282" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.282",
+            "description" : ""
+          },
+          "ac0.284" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.284",
             "description" : ""
           }
         }
@@ -2294,6 +2294,16 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.282",
           "members" : [ "at0023", "at0024", "at0027" ]
+        },
+        "ac0.283" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.283",
+          "members" : [ "at0031", "at0032" ]
+        },
+        "ac0.284" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.284",
+          "members" : [ "at0031", "at0032", "at0033" ]
         }
       }
     },
