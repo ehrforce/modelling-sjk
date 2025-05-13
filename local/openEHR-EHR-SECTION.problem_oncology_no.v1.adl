@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"2805a49bf0fdfa1f033dddff91994ab8">
+		["MD5-CAM-1.0.1"] = <"ce281964c2211c542f3ddb3faa9d8b7f">
 		["build_uid"] = <"fa3fd3ae-e110-3be2-943a-544095567374">
 	>
 
@@ -42,6 +42,10 @@ definition
 			SECTION[at0007] occurrences matches {0..1} matches {*}    -- Lymfeknutemetastase
 			SECTION[at0008] occurrences matches {0..1} matches {*}    -- Annen regional metastase
 			SECTION[at0009] occurrences matches {0..1} matches {*}    -- Fjernmetastase
+			allow_archetype SECTION[at0022] occurrences matches {0..*} matches {    -- Seksjonsinndeling
+				include
+					archetype_id/value matches {/.*/}
+			}
 		}
 	}
 
@@ -75,6 +79,10 @@ ontology
 				>
 				["at0021"] = <
 					text = <"Overordnet diagnostisk informasjon">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Seksjonsinndeling">
 					description = <"">
 				>
 			>
