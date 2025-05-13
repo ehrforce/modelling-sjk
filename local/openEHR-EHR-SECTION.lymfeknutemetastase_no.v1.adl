@@ -26,19 +26,19 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"a14cb65146b2d8087eaefc94d9b48463">
+		["MD5-CAM-1.0.1"] = <"80b4c6201c72d2b60fc2b8cb0acdbbb8">
 		["build_uid"] = <"a6ac3597-10ef-31bb-a219-f71a22e579cc">
 	>
 
 definition
-	SECTION[at0000] matches {*}    -- Lymfeknutemetastase_no
+	SECTION[at0000] matches {*}    -- Lymfeknutemetastase
 
 ontology
 	term_definitions = <
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"Lymfeknutemetastase_no">
+					text = <"Lymfeknutemetastase">
 					description = <"Lymfeknutemetastase_no">
 				>
 			>
