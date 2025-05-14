@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "a7f5191dd46c910f56f0604fe5970760",
+      "MD5-CAM-1.0.1" : "d176e6737e6f49f572bf5e34877bfa60",
       "PARENT:MD5-CAM-1.0.1" : "9CA673C44D07EB44E7473631D0F97DD4",
       "sem_ver" : "1.0.0",
       "build_uid" : ""
@@ -360,8 +360,16 @@
                   "selectedTerminologies" : [ "SNOMED-CT" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
-                    "code" : "x",
-                    "value" : "Erstattes med spesifikke koder i kreftformen"
+                    "code" : "59441001",
+                    "value" : "lymfeknute (fjerne)"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "68171009",
+                    "value" : "Aksillær lymfeknute"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "74964007",
+                    "value" : "Annet kroppsted (speisfiser)"
                   } ]
                 } ]
               } ],
@@ -447,7 +455,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0023.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
