@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "90a09de6974c3a551461ea7779067d98",
+      "MD5-CAM-1.0.1" : "db0e8b71cea7201d8410c69fe9dad5d3",
       "PARENT:MD5-CAM-1.0.1" : "9CA673C44D07EB44E7473631D0F97DD4"
     },
     "details" : {
@@ -172,6 +172,10 @@
                 "constraint" : [ ],
                 "selectedTerminologies" : [ "SNOMED-CT" ],
                 "includedExternalTerminologyCodes" : [ {
+                  "terminologyId" : "SNOMED-CT",
+                  "code" : "58147004",
+                  "value" : "Klinisk vurdering"
+                }, {
                   "terminologyId" : "SNOMED-CT",
                   "code" : "113011001",
                   "value" : "Palpasjon"
@@ -509,24 +513,60 @@
                   "selectedTerminologies" : [ "SNOMED-CT" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
-                    "code" : "12738006",
-                    "value" : "Hjerne"
-                  }, {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "59441001",
-                    "value" : "lymfeknute (fjerne)"
+                    "code" : "39607008",
+                    "value" : "Lunge"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "113192009",
                     "value" : "Skjelett"
                   }, {
                     "terminologyId" : "SNOMED-CT",
-                    "code" : "94222008",
-                    "value" : "Skjelettmetastase"
+                    "code" : "21483005",
+                    "value" : "CNS (sentralnervesystemet)"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "59441001",
+                    "value" : "Lymfeknuter"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "68171009",
+                    "value" : "Aksillær lymfeknute"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "10200004",
+                    "value" : "Lever"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "87784001",
                     "value" : "Bløtvev"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "82849001",
+                    "value" : "Retroperitoneum"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "15425007",
+                    "value" : "Peritoneum"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "33840008",
+                    "value" : "Periosteum"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "699602007",
+                    "value" : "Abdominale organer annet enn lever"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "12738006",
+                    "value" : "Hjerne"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "14016003",
+                    "value" : "Benmarg"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "12738006",
+                    "value" : "Hjerne"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "39937001",
@@ -535,22 +575,6 @@
                     "terminologyId" : "SNOMED-CT",
                     "code" : "71616004",
                     "value" : "Muskulatur"
-                  }, {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "39607008",
-                    "value" : "Lunge"
-                  }, {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "94391008",
-                    "value" : "Lungemetastase (disorder)"
-                  }, {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "10200004",
-                    "value" : "Lever"
-                  }, {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "94381002",
-                    "value" : "Levermetastase (disorder)"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "3120008",
@@ -569,12 +593,8 @@
                     "value" : "Urinveier"
                   }, {
                     "terminologyId" : "SNOMED-CT",
-                    "code" : "68171009",
-                    "value" : "Aksillær lymfeknute"
-                  }, {
-                    "terminologyId" : "SNOMED-CT",
                     "code" : "74964007",
-                    "value" : "Annet kroppsted (speisfiser)"
+                    "value" : "Annet"
                   } ]
                 } ]
               } ],
