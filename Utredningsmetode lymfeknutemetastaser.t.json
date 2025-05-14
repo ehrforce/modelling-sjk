@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "d1ffb0bf7f77dc4095ae802bbeec3d3c",
+      "MD5-CAM-1.0.1" : "82f8016ff012f337c20a525618e95915",
       "PARENT:MD5-CAM-1.0.1" : "9CA673C44D07EB44E7473631D0F97DD4",
       "sem_ver" : "1.0.0",
       "build_uid" : ""
@@ -244,7 +244,7 @@
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "CLUSTER",
-        "occurrences" : "0..1",
+        "occurrences" : "0..*",
         "nodeId" : "at0024.1",
         "attributes" : [ ],
         "attributeTuples" : [ ],
