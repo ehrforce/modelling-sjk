@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "38e4aa425bdbeec613ae8192a53fcaa1",
+      "MD5-CAM-1.0.1" : "9e514262a3872b1698695c0a2997e636",
       "PARENT:MD5-CAM-1.0.1" : "9CA673C44D07EB44E7473631D0F97DD4",
       "sem_ver" : "1.0.0",
       "build_uid" : ""
@@ -361,15 +361,15 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "59441001",
-                    "value" : "lymfeknute (fjerne)"
+                    "value" : "Lymfeknute"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "68171009",
                     "value" : "Aksillær lymfeknute"
                   }, {
                     "terminologyId" : "SNOMED-CT",
-                    "code" : "385421009",
-                    "value" : "Annet kroppsted (spesifiser)"
+                    "code" : "74964007",
+                    "value" : "Annet kroppsted"
                   } ]
                 } ]
               } ],
@@ -521,7 +521,7 @@
             "code" : "at0001.1",
             "text" : "Navn på kroppssted",
             "description" : "Navngiving av et enkelt fysisk sted enten på eller i menneskekroppen.",
-            "comment" : "Angir hvor den regionale lymfeknutemetastasen ble funnet. \nBrystkreft bruker p.t ingen anatomisk lokalisering. Den er da implisitt til aksille. \n\nKoden for annet kroppsted er  385421009 | Anatomic location of metastatic spread of malignant neoplasm (observable entity) |"
+            "comment" : "Angir hvor den regionale lymfeknutemetastasen ble funnet. \nBrystkreft bruker p.t ingen anatomisk lokalisering. Den er da implisitt til aksille. \n\nKoden for annet kroppsted er  enten \n\n385421009 | Anatomic location of metastatic spread of malignant neoplasm (observable entity) |\n\neller \n\n74964007 | annen | (qualifier value) "
           },
           "ac0.1" : {
             "@type" : "ARCHETYPE_TERM",
