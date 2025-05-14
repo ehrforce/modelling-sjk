@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "d176e6737e6f49f572bf5e34877bfa60",
+      "MD5-CAM-1.0.1" : "d1ffb0bf7f77dc4095ae802bbeec3d3c",
       "PARENT:MD5-CAM-1.0.1" : "9CA673C44D07EB44E7473631D0F97DD4",
       "sem_ver" : "1.0.0",
       "build_uid" : ""
@@ -515,6 +515,13 @@
             "text" : "Anatomisk lokalisering",
             "description" : "Et fysisk sted på eller inne i menneskekroppen.",
             "comment" : "Bryst benytter ikke anatomi på denne registreringen. Sarkom har anatomisk lokalisering. Da er det en anatomi per regionale lymfeknutemetastaser. "
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Navn på kroppssted",
+            "description" : "Navngiving av et enkelt fysisk sted enten på eller i menneskekroppen.",
+            "comment" : "Angir hvor den regionale lymfeknutemetastasen ble funnet. \nBrystkreft bruker p.t ingen anatomisk lokalisering. Den er da implisitt til aksille. "
           },
           "ac0.1" : {
             "@type" : "ARCHETYPE_TERM",
