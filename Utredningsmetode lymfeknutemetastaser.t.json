@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "105395258d3391b6835f3c43a87e9967",
+      "MD5-CAM-1.0.1" : "38e4aa425bdbeec613ae8192a53fcaa1",
       "PARENT:MD5-CAM-1.0.1" : "9CA673C44D07EB44E7473631D0F97DD4",
       "sem_ver" : "1.0.0",
       "build_uid" : ""
@@ -368,8 +368,8 @@
                     "value" : "Aksillær lymfeknute"
                   }, {
                     "terminologyId" : "SNOMED-CT",
-                    "code" : "74964007",
-                    "value" : "Annet kroppsted (speisfiser)"
+                    "code" : "385421009",
+                    "value" : "Annet kroppsted (spesifiser)"
                   } ]
                 } ]
               } ],
@@ -521,7 +521,7 @@
             "code" : "at0001.1",
             "text" : "Navn på kroppssted",
             "description" : "Navngiving av et enkelt fysisk sted enten på eller i menneskekroppen.",
-            "comment" : "Angir hvor den regionale lymfeknutemetastasen ble funnet. \nBrystkreft bruker p.t ingen anatomisk lokalisering. Den er da implisitt til aksille. "
+            "comment" : "Angir hvor den regionale lymfeknutemetastasen ble funnet. \nBrystkreft bruker p.t ingen anatomisk lokalisering. Den er da implisitt til aksille. \n\nKoden for annet kroppsted er  385421009 | Anatomic location of metastatic spread of malignant neoplasm (observable entity) |"
           },
           "ac0.1" : {
             "@type" : "ARCHETYPE_TERM",
