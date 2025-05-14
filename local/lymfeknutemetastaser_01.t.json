@@ -20,7 +20,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "cc39d7bfcdc43851ce6e26afd101b720",
+      "MD5-CAM-1.0.1" : "059119f36a57bae15f953c15f460a39a",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5",
       "sem_ver" : "1.1.0",
       "build_uid" : ""
@@ -603,7 +603,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "Lymfeknutemetastase",
+          "text" : "Regional lymfeknutemetastase",
           "description" : "Detaljer om funn av lymfeknutemetastase.",
           "comment" : "Det er i praksis ikke lett å oppnå et klart skille mellom et problem og en diagnose. I klinisk dokumentasjon med denne arketypen ses problem og diagnose som et kontinuum, med økende krav til detaljer og støttende evidens for å underbygge en diagnose."
         },
