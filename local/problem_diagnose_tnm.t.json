@@ -22,7 +22,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "f12c28d6fdfbeff49868261af4d112b1",
+      "MD5-CAM-1.0.1" : "2a2b88b9d5b43aca866c9be116e6227a",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5",
       "sem_ver" : "4.0.0",
       "build_uid" : ""
@@ -491,24 +491,6 @@
           }, {
             "@type" : "C_ARCHETYPE_ROOT",
             "rmTypeName" : "CLUSTER",
-            "occurrences" : "0..*",
-            "nodeId" : "at0043.2",
-            "attributes" : [ ],
-            "attributeTuples" : [ ],
-            "archetypeRef" : "Utredningsmetode lymfeknutemetastaser",
-            "referenceType" : "templateId"
-          }, {
-            "@type" : "C_ARCHETYPE_ROOT",
-            "rmTypeName" : "CLUSTER",
-            "occurrences" : "0..*",
-            "nodeId" : "at0043.3",
-            "attributes" : [ ],
-            "attributeTuples" : [ ],
-            "archetypeRef" : "Utredningsmetode fjernmetastaser",
-            "referenceType" : "templateId"
-          }, {
-            "@type" : "C_ARCHETYPE_ROOT",
-            "rmTypeName" : "CLUSTER",
             "occurrences" : "0..0",
             "nodeId" : "at0043.5",
             "attributes" : [ ],
@@ -721,13 +703,6 @@
           "text" : "Variant",
           "description" : "Spesifikk variant eller subtype av diagnose, hvis det er relevant.",
           "comment" : "Bryst: tumorutbredelse og multifokalitet. Feltet endres til tumorutbredelsesmønster \nBak denne ligger SNOMED-CT koden for multifokalitet. Den samme som brukes i SARKOM: 399506006 Multifokal tumor"
-        },
-        "at0043.2" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0043",
-          "text" : "Spesifikke detaljer",
-          "description" : "Detaljer som er nødvendige for å registrere det aktuelle problemet eller diagnosens unike egenskaper.",
-          "comment" : "Definerer strukturen for regionale lymfeknutemetastaser. For brystkreft er det 0..1, men det er lagt inn åpning for å kunne repetere for flere ulike regionale lymfeknutemetastaser for andre kreftformer som kommer til. "
         }
       },
       "sv" : {
