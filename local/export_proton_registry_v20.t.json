@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "4f8c7c1ac834998f54e87fc4597efdc0",
+      "MD5-CAM-1.0.1" : "d9caf6c9522d3eedf1166d97d498fd10",
       "PARENT:MD5-CAM-1.0.1" : "7992b64110455bb88760d5f0dd3a9006"
     },
     "details" : {
@@ -131,19 +131,19 @@
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.51",
+        "nodeId" : "at0.53",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "stimulantia_10",
+        "archetypeRef" : "komorbiditet_10",
         "referenceType" : "templateId"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.53",
+        "nodeId" : "at0.77",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "komorbiditet_10",
+        "archetypeRef" : "stimulantia_20",
         "referenceType" : "templateId"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
