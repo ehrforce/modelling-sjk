@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "504d711e0b78cba85b5a3ba328f13e21",
+      "MD5-CAM-1.0.1" : "c3adb61d1197569d8438248c9e54dfdd",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5",
-      "sem_ver" : "5.0.0",
+      "sem_ver" : "6.0.0",
       "build_uid" : ""
     },
     "details" : {
@@ -735,7 +735,7 @@
           "code" : "at0079",
           "text" : "Variant",
           "description" : "Om det er regional- eller fjernmetastaser.",
-          "comment" : "Designkommentar:\nKan kvalifisere det som enten fjernmetastase eller regional metastase ut i fra primærtumor.\n\nBryst har brukt denne til ICD-10 koder for regional metastase.\n\nSpørsmål: Hvor skal vi legge regional og fjern metastse - her eller i klinisk grunnlag.\nKan den kanskje ligge i klinisk beskrivelse i denne problem/diagnosen. \n\nKanskje bruke lokalt kodesett i Variant: no.onk.metastase \n1:Fjernmetastase, \n2:Regional lymfeknutemetastase, \n3:Regional metastase\n "
+          "comment" : "Designkommentar:\nKan kvalifisere det som enten fjernmetastase eller regional metastase ut i fra primærtumor.\n\nBryst har brukt denne til ICD-10 koder for regional metastase.\n\nSpørsmål: Hvor skal vi legge regional og fjern metastse - her eller i klinisk grunnlag.\nKan den kanskje ligge i klinisk beskrivelse i denne problem/diagnosen. \n\nKanskje bruke lokalt kodesett i Variant: no.onk.metastase \n1:Fjernmetastase, \n2:Regional lymfeknutemetastase, \n3:Regional metastase\n\net annet alternativ er å legge dette kodesettet på problem/diagnosenavn - øverste nivå.\n "
         },
         "at0012.1" : {
           "@type" : "ARCHETYPE_TERM",
