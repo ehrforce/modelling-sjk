@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "c3adb61d1197569d8438248c9e54dfdd",
+      "MD5-CAM-1.0.1" : "a7717eaad9d0c89e9cf55e71afb7e8cb",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5",
-      "sem_ver" : "6.0.0",
+      "sem_ver" : "7.0.0",
       "build_uid" : ""
     },
     "details" : {
@@ -728,7 +728,7 @@
           "code" : "at0002.1",
           "text" : "Metastase",
           "description" : "Funn av fjernmetastaser.",
-          "comment" : "Designkommentar:\nHer skal det stå at det er en metastase eller om det er spesifikk regional lymfeknutemetastase."
+          "comment" : "Designkommentar:\nHer skal det stå at det er en metastase eller om det er spesifikk regional lymfeknutemetastase.\n\nSpm: \nKanskje bruke lokalt kodesett: no.onk.metastase \n1:Fjernmetastase, \n2:Regional lymfeknutemetastase, \n3:Regional metastase"
         },
         "at0079.1" : {
           "@type" : "ARCHETYPE_TERM",
