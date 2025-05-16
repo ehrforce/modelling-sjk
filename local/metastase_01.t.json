@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "a7717eaad9d0c89e9cf55e71afb7e8cb",
+      "MD5-CAM-1.0.1" : "c327b668698ba67afd96c03fc0d0fd2c",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5",
-      "sem_ver" : "7.0.0",
+      "sem_ver" : "8.0.0",
       "build_uid" : ""
     },
     "details" : {
@@ -721,7 +721,7 @@
           "code" : "at0000.1",
           "text" : "Metastase",
           "description" : "Detaljer om funnet av fjernmetastase(r) (cM).",
-          "comment" : "Designkommentar:\nDet skal være en innstans av problem/diagnose for hver metastase. Da kan man si noe om dato og tid, hvor og metode for hver metastase.\n\n\n\n"
+          "comment" : "Designkommentar:\nDet skal være en innstans av problem/diagnose for hver metastase. Da kan man si noe om dato og tid, hvor og metode for hver metastase.\n\n\nNB! gjør templatoverskrift for metastaser 0..*\n"
         },
         "at0002.1" : {
           "@type" : "ARCHETYPE_TERM",
