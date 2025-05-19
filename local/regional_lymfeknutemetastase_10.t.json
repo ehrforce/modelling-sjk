@@ -20,9 +20,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "fd4c905c811f41c20f76412ab3c398e3",
+      "MD5-CAM-1.0.1" : "d38d95b7e7084f4f0499713a600eb537",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5",
-      "sem_ver" : "1.1.1",
+      "sem_ver" : "1.1.0",
       "build_uid" : ""
     },
     "details" : {
@@ -1059,7 +1059,7 @@
             "code" : "at0001.1",
             "text" : "Navn på kroppssted",
             "description" : "Navngiving av et enkelt fysisk sted enten på eller i menneskekroppen.",
-            "comment" : "Angir hvor den regionale lymfeknutemetastasen ble funnet. \nBrystkreft bruker p.t ingen anatomisk lokalisering. Den er da implisitt til aksille. "
+            "comment" : "Angir hvor den regionale lymfeknutemetastasen ble funnet. \nBrystkreft bruker p.t ingen anatomisk lokalisering. Den er da implisitt til aksille. \n\nKoden for annet kroppsted er  enten \n\n385421009 | Anatomic location of metastatic spread of malignant neoplasm (observable entity) |\n\neller \n\n74964007 | annen | (qualifier value) "
           },
           "ac0.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -1078,7 +1078,7 @@
             "code" : "at0065.1",
             "text" : "Spesifikt sted",
             "description" : "Ytterligere detaljer gitt ved hjelp av en spesifikk region eller et punkt på eller i det spesifiserte kroppsstedet.",
-            "comment" : "Spesifikt sted kan f.eks. benyttes for å kode at bryst har fått lymfeknutemetastase til begge bryst. \n\nHvis man ønsker å legge inn fritekst for regional lymfeknute så kan man sette anatomisk lokalisasjon \"Annet\" og legg inn hvilke kroppsdel det gjelder i beskrivelse. "
+            "comment" : "Spesifikt sted kan f.eks. benyttes for å kode at bryst har fått lymfeknutemetastase til begge bryst. "
           }
         },
         "pt-br" : {
