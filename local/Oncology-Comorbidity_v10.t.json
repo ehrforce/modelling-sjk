@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "0b832f3c88845eef32952eebe46bc7ef",
+      "MD5-CAM-1.0.1" : "c77c1271474849f8f3f201d545372fb8",
       "PARENT:MD5-CAM-1.0.1" : "E51B66549F2C04336B514E1DAE9B93C8",
       "sem_ver" : "10.0.0",
       "build_uid" : "",
@@ -406,7 +406,88 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
               "occurrences" : "1..1",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "terminologyId" : {
+                    "value" : "no.onk.kreftgruppering"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "no.onk.kreftgruppering" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "no.onk.kreftgruppering",
+                    "code" : "01",
+                    "value" : "Sarkom"
+                  }, {
+                    "terminologyId" : "no.onk.kreftgruppering",
+                    "code" : "02",
+                    "value" : "Hode og halskreft"
+                  }, {
+                    "terminologyId" : "no.onk.kreftgruppering",
+                    "code" : "03",
+                    "value" : "Hjernesvulst"
+                  }, {
+                    "terminologyId" : "no.onk.kreftgruppering",
+                    "code" : "04",
+                    "value" : "Brystkreft"
+                  }, {
+                    "terminologyId" : "no.onk.kreftgruppering",
+                    "code" : "05",
+                    "value" : "Lungekreft"
+                  }, {
+                    "terminologyId" : "no.onk.kreftgruppering",
+                    "code" : "06",
+                    "value" : "Kreft i fordøyelsessystemet"
+                  }, {
+                    "terminologyId" : "no.onk.kreftgruppering",
+                    "code" : "07",
+                    "value" : "Gynekologisk kreft"
+                  }, {
+                    "terminologyId" : "no.onk.kreftgruppering",
+                    "code" : "08",
+                    "value" : "Kreft i nyre og urinveier"
+                  }, {
+                    "terminologyId" : "no.onk.kreftgruppering",
+                    "code" : "09",
+                    "value" : "Benmargs- og blodkreft"
+                  }, {
+                    "terminologyId" : "no.onk.kreftgruppering",
+                    "code" : "10",
+                    "value" : "Lymfom"
+                  }, {
+                    "terminologyId" : "no.onk.kreftgruppering",
+                    "code" : "11",
+                    "value" : "Hudkreft"
+                  }, {
+                    "terminologyId" : "no.onk.kreftgruppering",
+                    "code" : "12",
+                    "value" : "Kreft i mannlige kjønnsorganer"
+                  }, {
+                    "terminologyId" : "no.onk.kreftgruppering",
+                    "code" : "13",
+                    "value" : "Kreft i endokrine kjertler"
+                  }, {
+                    "terminologyId" : "no.onk.kreftgruppering",
+                    "code" : "14",
+                    "value" : "Nevroendokrin kreft"
+                  }, {
+                    "terminologyId" : "no.onk.kreftgruppering",
+                    "code" : "15",
+                    "value" : "Barnekreft"
+                  }, {
+                    "terminologyId" : "no.onk.kreftgruppering",
+                    "code" : "16",
+                    "value" : "Øyekreft"
+                  }, {
+                    "terminologyId" : "no.onk.kreftgruppering",
+                    "code" : "17",
+                    "value" : "Svulst av ukjent opprinnelse / Annet kreft"
+                  } ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
