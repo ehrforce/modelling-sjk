@@ -29,7 +29,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "21dd38cecd01007797d5d1a8a64a14a2",
+      "MD5-CAM-1.0.1" : "3e105f94cd7f5a56ecef24e0757783a8",
       "PARENT:MD5-CAM-1.0.1" : "E51B66549F2C04336B514E1DAE9B93C8",
       "sem_ver" : "14.0.0",
       "build_uid" : "",
@@ -639,7 +639,8 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "EVENT",
-              "nodeId" : "at0002",
+              "occurrences" : "0..1",
+              "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "data",
