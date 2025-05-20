@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"c0a5b6b9c03ce016e0975e124d98e8bf">
+		["MD5-CAM-1.0.1"] = <"9964368375cb70af3343d2ebdffc4121">
 		["build_uid"] = <"3aaadc10-42f4-3835-9702-db6bebef7684">
 	>
 
@@ -74,7 +74,8 @@ ontology
 				>
 				["at0001"] = <
 					text = <"Samlivsform">
-					description = <"">
+					description = <"Angivelse av hvilken samlivsform pasientens har. ">
+					comment = <"I Norge benyttes gjerne kodelisten no.samlivsform ">
 				>
 			>
 		>
