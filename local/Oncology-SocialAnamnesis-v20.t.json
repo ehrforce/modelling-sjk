@@ -29,7 +29,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "f0962fe4887b6f2a28be360b4286a3a3",
+      "MD5-CAM-1.0.1" : "ea7bfc5a2d55527e0ffaf64baa13f601",
       "PARENT:MD5-CAM-1.0.1" : "E51B66549F2C04336B514E1DAE9B93C8",
       "sem_ver" : "14.0.0",
       "build_uid" : "",
@@ -703,7 +703,8 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Sammendrag av strukturerte elementer relatert til sosial anamnese",
-            "description" : "Fritekstbeskrivelse av et individs helserelaterte hendelser på et spesifikt tidspunkt, sett fra helsepersonellets synsvinkel."
+            "description" : "Brukes for å generere en samlet tekstlig representasjon av hele sosialanamnesen. ",
+            "comment" : "Denne modellen styres av skript i skjema. "
           },
           "at0004.1" : {
             "@type" : "ARCHETYPE_TERM",
