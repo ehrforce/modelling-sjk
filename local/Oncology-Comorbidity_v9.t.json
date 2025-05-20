@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "8d01f8e8d6ca5500daa4c64a15e03313",
+      "MD5-CAM-1.0.1" : "944650143cc39674a58e00e632e67742",
       "PARENT:MD5-CAM-1.0.1" : "E51B66549F2C04336B514E1DAE9B93C8",
       "sem_ver" : "10.0.0",
       "build_uid" : "",
@@ -305,10 +305,10 @@
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.6",
+        "nodeId" : "at0.8",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "komorbiditet_utredning_inkl_CCI_smaatemplat",
+        "archetypeRef" : "komorbiditet_10",
         "referenceType" : "templateId"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
