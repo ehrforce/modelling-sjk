@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "4c4ce07cb86facac5140f557c55c3e2e",
+      "MD5-CAM-1.0.1" : "27b41ea009332952dc78ec37872c5c85",
       "PARENT:MD5-CAM-1.0.1" : "DB7D4B698449B0D99CB352CDB935B693",
       "sem_ver" : "6.0.0",
       "build_uid" : "",
@@ -264,7 +264,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "c0a5b6b9c03ce016e0975e124d98e8bf"
+        "PARENT:MD5-CAM-1.0.1" : "9964368375cb70af3343d2ebdffc4121"
       },
       "details" : { }
     },
@@ -336,7 +336,20 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : { },
-        "nb" : { }
+        "nb" : {
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Samlivsform",
+            "description" : ""
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Samlivsform",
+            "description" : ""
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
