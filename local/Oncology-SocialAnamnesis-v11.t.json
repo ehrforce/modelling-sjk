@@ -6,7 +6,7 @@
     "originalAuthor" : { },
     "otherContributors" : [ ],
     "lifecycleState" : {
-      "codeString" : "Initial"
+      "codeString" : "release_candidate"
     },
     "ipAcknowledgements" : { },
     "references" : { },
@@ -39,7 +39,7 @@
           },
           "codeString" : "nb"
         },
-        "purpose" : "",
+        "purpose" : "Utviklet for bruk i persistent dokument i kreftjournalen. Basert på arbeidet gjort i hode/hals og tilpasset småtemplate fra SJK",
         "use" : "",
         "misuse" : "",
         "originalResourceUri" : { },
@@ -342,7 +342,7 @@
     "valueSets" : { }
   },
   "adlVersion" : "1.4",
-  "buildUid" : "f7dc9bde-d493-38c4-b931-2a5e82b46220",
+  "buildUid" : "234f7014-c2ad-3e95-a55e-d9df42c42d64",
   "rmName" : "openehr",
   "rmRelease" : "1.1.0",
   "generated" : true,
