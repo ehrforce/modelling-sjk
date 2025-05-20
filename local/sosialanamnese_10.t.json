@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "1a06773c54751be4e331512521c0cc21",
+      "MD5-CAM-1.0.1" : "3a557e922ff8a8b1329e09c5a1e3b890",
       "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73"
     },
     "details" : {
@@ -509,14 +509,14 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Fritekst relatert til sosial anamnese",
-            "description" : "Fritekstbeskrivelse av et individs helserelaterte hendelser på et spesifikt tidspunkt, sett fra helsepersonellets synsvinkel.",
+            "description" : "Brukes for å skape et sammendrag av de strukturerte elementene knyttet til sosialanamnese. ",
             "comment" : "Skal ikke være med i eksport til register. "
           },
           "at0004.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0004.1",
             "text" : "Fritekst relatert til sosial anamnese",
-            "description" : "Fritekstbeskrivelse av helserelaterte hendelser, status, funn eller oppfatninger på et spesifikt tidspunkt."
+            "description" : "Fritekst oppsummering av sosialanamnese. "
           }
         },
         "es-ar" : {
@@ -647,7 +647,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "5779BD381D047A909CCCF5E3E716A8E6"
+        "PARENT:MD5-CAM-1.0.1" : "10090b3513a0d6cf6f8dc94773c1c018"
       },
       "details" : {
         "nb" : {
