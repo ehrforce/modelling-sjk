@@ -1,0 +1,891 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "225c8bcc-cd2c-480b-b7fd-fa8cede65b58",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : { },
+    "otherContributors" : [ ],
+    "lifecycleState" : {
+      "codeString" : "Initial"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "MetaDataSet:Sample Set " : "Template metadata sample set ",
+      "Acknowledgements" : "",
+      "Business Process Level" : "",
+      "Care setting" : "",
+      "Client group" : "",
+      "Clinical Record Element" : "",
+      "Copyright" : "",
+      "Issues" : "",
+      "Owner" : "",
+      "Sign off" : "",
+      "Speciality" : "",
+      "User roles" : "",
+      "MD5-CAM-1.0.1" : "b0186cf1e09c74328b8cf21e48d7870f",
+      "PARENT:MD5-CAM-1.0.1" : "E51B66549F2C04336B514E1DAE9B93C8",
+      "sem_ver" : "10.0.0",
+      "build_uid" : "",
+      "original_language" : "ISO_639-1::nb"
+    },
+    "details" : {
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "en" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "en"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "ko" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ko"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "es-ar" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es-ar"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "ar-sy" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ar-sy"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-COMPOSITION.encounter.v1",
+  "differential" : true,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-COMPOSITION.t_encounter.v1"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "COMPOSITION",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "context",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "EVENT_CONTEXT",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "other_context",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ITEM_TREE",
+            "nodeId" : "at0001",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "children" : [ {
+                "@type" : "C_ARCHETYPE_ROOT",
+                "rmTypeName" : "CLUSTER",
+                "occurrences" : "0..*",
+                "nodeId" : "at0002.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ],
+                "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-oncology_aql_support_dips-000.v1",
+                "referenceType" : "archetypeOverlay"
+              }, {
+                "@type" : "C_ARCHETYPE_ROOT",
+                "rmTypeName" : "CLUSTER",
+                "occurrences" : "0..1",
+                "nodeId" : "at0002.2",
+                "attributes" : [ ],
+                "attributeTuples" : [ ],
+                "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-template_semver_dips-001.v1",
+                "referenceType" : "archetypeOverlay"
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
+    }, {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "content",
+      "existence" : "0..1",
+      "children" : [ {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "SECTION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.6",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "komorbiditet_utredning_inkl_CCI_smaatemplat",
+        "referenceType" : "templateId"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "OBSERVATION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.2",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-progress_note-008.v1",
+        "referenceType" : "archetypeOverlay"
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "ar-sy" : { },
+      "es-ar" : { },
+      "en" : { },
+      "ko" : { },
+      "nb" : { }
+    },
+    "termBindings" : { },
+    "terminologyExtracts" : { },
+    "valueSets" : { }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "f7dc9bde-d493-38c4-b931-2a5e82b46220",
+  "rmName" : "openehr",
+  "rmRelease" : "1.1.0",
+  "generated" : true,
+  "templateId" : "Oncology-Comorbidity_v9",
+  "otherMetaData" : { },
+  "templateOverlays" : [ {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "bea9bae8-e2d7-3b68-8257-e9efadbfd602",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "04CDC10BFAD46C8343A0A7B3467DE652"
+      },
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.oncology_aql_support_dips.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-oncology_aql_support_dips-000.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "nb" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "604502b3-d3e7-3dfe-9298-dbe0258bee2b",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "translations" : [ ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "02a8959a-9d17-36c1-943c-c15d70a0e313",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "DA38D7FDB467BD8746408BF41D8C608D"
+      },
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "Definerer semantiske egenskaper ved templaten. ",
+          "keywords" : [ ],
+          "use" : "Benyttes for å angi en semantisk versjonering av templaten. ",
+          "misuse" : "Skal ikke benyttes for noen form for klinisk innhold.",
+          "copyright" : "DIPS AS",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "Defining some metadata variable to be added to a composition. The main purpose is to be able to query for data cross-composition.",
+          "keywords" : [ ],
+          "use" : "Define data which is not related to the clinical content, but only to be used for application or system specific metadata.",
+          "misuse" : "*Do not enter clinical data in this archetype.(nb)",
+          "copyright" : "DIPS AS",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.template_semver_dips.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-template_semver_dips-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "no.dips.oncology"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "no.dips.oncology" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "no.dips.oncology",
+                    "code" : "TM3",
+                    "value" : "Onkologi komorbiditet"
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "CLUSTER",
+          "nodeId" : "at0003",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0004.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_COUNT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "magnitude",
+                    "children" : [ {
+                      "@type" : "C_INTEGER",
+                      "rmTypeName" : "Integer",
+                      "occurrences" : "1..1",
+                      "constraint" : [ {
+                        "lower" : 1,
+                        "upper" : 1,
+                        "lowerIncluded" : true,
+                        "upperIncluded" : true,
+                        "upperUnbounded" : false,
+                        "lowerUnbounded" : false
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0005.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_COUNT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "magnitude",
+                    "children" : [ {
+                      "@type" : "C_INTEGER",
+                      "rmTypeName" : "Integer",
+                      "occurrences" : "1..1",
+                      "constraint" : [ {
+                        "lower" : 0,
+                        "lowerIncluded" : true,
+                        "upperIncluded" : false,
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : false
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0006.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_COUNT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "magnitude",
+                    "children" : [ {
+                      "@type" : "C_INTEGER",
+                      "rmTypeName" : "Integer",
+                      "occurrences" : "1..1",
+                      "constraint" : [ {
+                        "lower" : 0,
+                        "lowerIncluded" : true,
+                        "upperIncluded" : false,
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : false
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0008.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "nb" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "e3962933-26b5-3094-82dd-06a00a506308",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "?"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "efec5af9-4958-4dea-9249-335660962230",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "0DC26E43DE454A2B3FE00A7AEA553E2A"
+      },
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Repräsentation eines manuellen Zusammenfassen von gesundheitsbezogenen Ereignissen, die aus Sicht eines Gesundheitsdienstleisters zum Zeitpunkt der Aufzeichnung aktuell sind.",
+          "keywords" : [ "Kommentar", "Notiz", "Anmerkung", "Fortschritt", "Ablauf" ],
+          "use" : "Verwenden Sie diesen Archetyp, um eine Beschreibung über aktuelle gesundheitsbezogene Ereignisse und Aktivitäten aus der Sicht eines Gesundheitsdienstleisters manuell zu synthetisieren und aufzuzeichnen. \r\n\r\nDiese unstrukturierte Beschreibung kann den Gesundheitszustand und die Befunde des Patienten enthalten, die zum Zeitpunkt der Aufzeichnung aktuell sind. Am häufigsten bezieht sich diese Beschreibung wahrscheinlich auf Notizen zur Krankenpflege am Ende einer Schicht oder auf die täglichen Notizen von Gesundheitsdienstleistern wie einem Arzt oder einem Physiotherapeuten. In der Praxis ist Fortschrittbericht eine Meta-Beobachtung, die die vorhandene strukturierte Patientenakte ergänzt und es ermöglicht, subtile, subjektive oder interpretative Informationen über den Patienten auszudrücken, die ansonsten möglicherweise nicht allein durch strukturierte Daten offensichtlich sind, und der EHR-Aufzeichnung Ausgewogenheit und Sinnzusammenhang verleiht. In vielen Situationen wird dieser Archetyp zusammen mit anderen strukturierteren Archetypen in einer einzigen COMPOSITION zusammengefasst. \r\n\r\nDieser Archetyp kann auch verwendet werden, wenn keine strukturierten Archetypen verfügbar sind oder um Fortschrittberichte aufzuzeichnen, die aus alten Systemen importiert wurden.",
+          "misuse" : "Nicht zur Repräsentation bestimmter strukturierter oder semistrukturierter Gesundheitsinformationen verwenden. Beispielsweise sollten detaillierte Informationen zu Problemen / Diagnosen, Testergebnissen und Vitalzeichen, Untersuchungsergebnissen und Patientengeschichte / -anamnese unter Verwendung der spezifischen relevanten EVALUATION- oder OBSERVATION-Archetypen dargestellt werden.\r\n\r\nDarf nicht verwendet werden, um eine beschreibende, zusammenfassende Ansicht des Gesundheitszustands des Patienten darzustellen, beispielsweise um eine kurze Zusammenfassung der stationären Aufnahme des Patienten als Bestandteil eines umfassenden und strukturierten Entlassungsberichtes zu übermitteln. Verwenden Sie zu diesem Zweck den Archetyp EVALUATION.clinical_synopsis.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "Para la síntesis y registro manuales de la descripción narrativa de eventos actuales relacionados con la salud, desde la perspectiva del proveedor de cuidados de la salud.",
+          "keywords" : [ "comentario", "nota", "evolución" ],
+          "use" : "utilizado para la síntesis y registro manuales de la descripción narrativa de eventos y actividades actuales relacionados con la salud, desde la perspectiva del proveedor de cuidados de la salud.\r\nEsta descripción no estructurada puede incluir el estado de salud y hallazgos propios del sujeto que corresponden al momento del registro. El caso mas común probablemente se relacione con las notas de enfermería al final de un turno o las notas diarias del proveedor de cuidados de la salud, como es el caso de un médico o un fisioterapeuta. En la práctica, la Nota de Evolución es una meta observación que complementará el registro estructurado, permitiendo la expresión de información sutil, subjetiva o interpretativa acerca del paciente que de otro modo podría no resultar obvia a partir de los datos estructurados solamente, proveyendo así balance y contexto al registro clínico. En muchas situaciones, este arquetipo puede usarse en combinación con otros arquetipos mas estructurados dentro de una misma COMPOSITION.\r\n\r\nEste arquetipo también puede ser utilizado si no existe un arquetipo estructurado disponible para un dato determinado, o para importar notas de evolución de sistemas legados.",
+          "misuse" : "No debe utilizarse para registrar información específica de salud estructurada o semiestructurada. Por ejemplo, la información detallada acerca de problemas o diagnósticos, resultados de exámenes y signos vitales, hallazgos del examen y la enfermedad actual descrita por el paciente deben ser registrada utilizando los arquetipos específicos relevantes del tipo EVALUATION u OBSERVATION.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For at helsepersonell skal kunne lage og lagre en oppsummering i fritekst om helserelaterte hendelser eller status som er gyldig på tidspunktet det registreres.",
+          "keywords" : [ "kommentar", "notat", "løpende" ],
+          "use" : "Brukes for at helsepersonell skal kunne lage en oppsummering i fritekst om helserelaterte hendelser eller status som er gyldig på tidspunktet det registreres. Denne ustrukturerte beskrivelsen kan inkludere individets helsestatus og funn som er gyldige på registreringstidspunktet. Dette kan sammenlignes med et fritekst journalnotat, som et sykepleiernotat ved vaktskifte, eller et daglig notat fra lege, fysioterapeut eller annet helsepersonell. I praksis vil \"Tidsfestet fritekst\" være observasjoner på overordnet nivå som vil komplettere eksisterende strukturert informasjon, og dermed tillate mer subtile, subjektive eller tolkende informasjon om et individ. Det vil være naturlig å kombinere denne arketypen med strukturerte arketyper i en COMPOSITION.\r\n\r\nArketypen kan også benyttes når det ikke finnes strukturerte arketyper tilgjengelig, eller til å lagre journaltekst som blir konvertert fra et annet journalsystem.",
+          "misuse" : "Skal ikke brukes for å registrere spesifikk strukturert eller semistrukturert helseinformasjon, for eksempel detaljert informasjon om problem/diagnose, laboratoriesvar og vitale tegn, undersøkelsesfunn og anamneseinformasjon. Denne type data skal registreres i de spesifikke relevante EVALUATION- eller OBSERVATION-arketypene.\r\n\r\nBrukes ikke for registrere en fritekstoppsummering av en pasients helse, for eksempel for å gi en konkret oppsummering av en sykehusinnleggelse som en del av en strukturert epikrise eller en sykepleiesammenfatning. Bruk arketypen EVALUATION.clinical_synopsis (Klinisk sammendrag) for dette formålet.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To manually synthesise and record a narrative description about health related events that are current at the time of recording, from the perspective of a healthcare provider.",
+          "keywords" : [ "comment", "note", "progress" ],
+          "use" : "Use to manually synthesise and record a narrative description about contemporary health-related events and activities from the perspective of a healthcare provider.\r\n \r\nThis unstructured description may include the subject's health status and findings, that are current at the time of recording. Most commonly this description is likely to be related to nursing notes at the end of a shift, or the daily notes from healthcare providers such as a physician or a physiotherapist. In practice, Progress note is a meta observation that will complement the existing structured clinical record, allowing for expression of subtle, subjective or interpretive information about the patient that might not otherwise be obvious through structured data alone, providing balance and context to the EHR record. In many situations, this archetype will be combined alongside other more structured archetypes within a single COMPOSITION.\r\n\r\nThis archetype may also be used if there are no structured archetypes available, or to record progress notes imported from legacy systems.",
+          "misuse" : "Not to be used to record specific structured or semi-structured health information. For example, detailed information about problems/diagnoses, test results and vital signs, examination findings and patient story/history should be recorded using the specific relevant archetypes EVALUATION or OBSERVATION archetypes.\r\n\r\nNot to be used to record a narrative, summary view of the patient's health, for example to communicate a succinct summary of the patient's hospital admission as one component of a comprehensive and structured Discharge Summary document. Use the EVALUATION.clinical_synopsis archetype for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nl"
+          },
+          "purpose" : "*To manually synthesise and record a narrative description about health related events that are current at the time of recording, from the perspective of a healthcare provider.(en)",
+          "keywords" : [ "*comment(en)", "*note(en)", "*progress(en)" ],
+          "use" : "*Use to manually synthesise and record a narrative description about contemporary health-related events and activities from the perspective of a healthcare provider. \r\nThis unstructured description may include the subject's health status and findings, that are current at the time of recording. Most commonly this description is likely to be related to nursing notes at the end of a shift, or the daily notes from healthcare providers such as a physician or a physioterapist. In practice, Progress note is a meta observation that will complement the existing structured clinical record, allowing for expression of subtle, subjective or interpretive information about the patient that might not otherwise be obvious through structured data alone, providing balance and context to the EHR record. In many situations, this archetype will be combined alongside other more structured archetypes within a single COMPOSITION.\r\n\r\nThis archetype may also be used if there are no structured archetypes available, or to record progress notes imported from legacy systems.(en)",
+          "misuse" : "*Not to be used to record specific structured or semistructured health information. For example, detailed information about problems/diagnoses, test results and vital signs, examination findings and patient story/history should be recorded using the specific relevant archetypes EVALUATION or OBSERVATION archetypes.\r\n\r\nNot to be used to record a narrative, summary view of the patient's health, for example to communicate a succinct summary of the patient's hospital admission as one component of a comprehensive and structured Discharge Summary document. Use the EVALUATION.clinical_synopsis archetype for this purpose.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-OBSERVATION.progress_note.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-OBSERVATION.ovl-progress_note-008.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "OBSERVATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "protocol",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0005",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0006.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-semistrukturert_metadata_dips-009.v1",
+              "referenceType" : "archetypeOverlay"
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "nb" : { },
+        "es-ar" : { },
+        "nl" : { },
+        "de" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "c62d2fa3-aea8-4723-8584-b55b87fdffcb",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Natalia Strauch",
+        "organisation" : "Medizinische Hochschule Hannover",
+        "email" : "Strauch.Natalia@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Vebjørn Arntzen",
+        "organisation" : "Oslo universitetssykehus HF, Norway"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es-ar"
+      },
+      "author" : {
+        "name" : "Alan March",
+        "organisation" : "Hospital Universitario Austral",
+        "email" : "amarch@cas.austral.edu.ar"
+      },
+      "accreditation" : "MD",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nl"
+      },
+      "author" : {
+        "name" : "Joost Holslag",
+        "organisation" : "Nedap",
+        "email" : "joost.holslag@nedap.com"
+      },
+      "accreditation" : "MD",
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "7def7c0b-f1d7-3d80-a384-f202aaad09b0",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "5779BD381D047A909CCCF5E3E716A8E6"
+      },
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "Brukes for å kunne definere semistrukturerte elementer.",
+          "keywords" : [ ],
+          "use" : "Brukes for å kunne definere semistrukturerte elementer. Graden av granulering er opp til behovet. Kodeverket kan brukes i mange DIPS løsninger og kodeverket vil da være svært variert utfra behov.",
+          "misuse" : "skal ikke brukes til noe annet enn beskrevet over og bør ikke brukes uten avtale med DIPS.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.semistrukturert_metadata_dips.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-semistrukturert_metadata_dips-009.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "no.dips.Freetext.Classification"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "no.dips.Freetext.Classification" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "no.dips.Freetext.Classification",
+                    "code" : "10-SammendragAvKomorbiditet",
+                    "value" : "Sammendrag av komorbiditet"
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "nb" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "6db52731-16b8-343c-9191-b3d5030819bd",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "translations" : [ ]
+  } ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "en"
+  },
+  "translations" : [ {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "author" : {
+      "name" : "Lars Bitsch-Larsen",
+      "organisation" : "Haukeland University Hospital of Bergen, Norway",
+      "email" : "lbla@helse-bergen.no"
+    },
+    "accreditation" : "MD, DEAA, MBA, spec in anesthesia, spec in tropical medicine.",
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ko"
+    },
+    "author" : {
+      "name" : "Seung-Jong Yu",
+      "organisation" : "NOUSCO Co.,Ltd.",
+      "email" : "seungjong.yu@gmail.com"
+    },
+    "accreditation" : "Certified Board of Family Medicine in South Korea",
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "es-ar"
+    },
+    "author" : {
+      "name" : "Edgardo Vazquez",
+      "organisation" : "VinculoMedico"
+    },
+    "accreditation" : "Medical Doctor",
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ar-sy"
+    },
+    "author" : {
+      "name" : "Mona Saleh"
+    },
+    "otherDetails" : { }
+  } ]
+}
