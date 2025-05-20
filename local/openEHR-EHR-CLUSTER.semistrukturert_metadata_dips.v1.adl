@@ -9,7 +9,10 @@ language
 
 description
 	original_author = <
-		["name"] = <"">
+		["name"] = <"Morten Hørthe">
+		["organisation"] = <"DIPS AS">
+		["email"] = <"mho@dips.no">
+		["date"] = <"2023-01-20">
 	>
 	lifecycle_state = <"0">
 	details = <
@@ -17,11 +20,11 @@ description
 			language = <[ISO_639-1::nb]>
 			purpose = <"Brukes for å kunne definere semistrukturerte elementer.">
 			use = <"Brukes for å kunne definere semistrukturerte elementer. Graden av granulering er opp til behovet. Kodeverket kan brukes i mange DIPS løsninger og kodeverket vil da være svært variert utfra behov.">
-			misuse = <"skal ikke brukes til noe annet enn beskrevet over og bør ikke brukes uten avtale med DIPS.">
+			misuse = <"Skal ikke brukes til noe annet enn beskrevet over og bør ikke brukes uten avtale med DIPS.">
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"5779BD381D047A909CCCF5E3E716A8E6">
+		["MD5-CAM-1.0.1"] = <"10090b3513a0d6cf6f8dc94773c1c018">
 		["build_uid"] = <"6db52731-16b8-343c-9191-b3d5030819bd">
 	>
 
