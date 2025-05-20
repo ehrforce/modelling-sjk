@@ -14,7 +14,8 @@ description
 		["email"] = <"mho@dips.no">
 		["date"] = <"2023-01-20">
 	>
-	lifecycle_state = <"0">
+	lifecycle_state = <"release_candidate">
+	other_contributors = <"Bjørn Næss <bna@dips.no>", ...>
 	details = <
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
