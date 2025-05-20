@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "3a557e922ff8a8b1329e09c5a1e3b890",
+      "MD5-CAM-1.0.1" : "835f3f689f81af6c1bfb9a0cadd9baf3",
       "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73"
     },
     "details" : {
@@ -1465,6 +1465,13 @@
             "text" : "Kommentar",
             "description" : "Ytterligere fritekst om det spesifikke sosiale forholdet som ikke er omfattet av andre felt.",
             "comment" : "B"
+          },
+          "at0034.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0034",
+            "text" : "Kartleggingsformål",
+            "description" : "Kontekst for kartleggingen er samlivsform i forbindelse med kreftoppfølging. ",
+            "comment" : "Fast verdi som er skjult for bruker. "
           }
         },
         "it" : {
