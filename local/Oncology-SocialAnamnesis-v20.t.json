@@ -3,8 +3,13 @@
   "uid" : "6bf6d7f3-81ee-4ad6-b58e-f78e9f84f2f6",
   "description" : {
     "@type" : "RESOURCE_DESCRIPTION",
-    "originalAuthor" : { },
-    "otherContributors" : [ ],
+    "originalAuthor" : {
+      "name" : "Bjørn Næss",
+      "organisation" : "DIPS AS",
+      "email" : "bna@dips.no",
+      "date" : "2025-05-20"
+    },
+    "otherContributors" : [ "Liv Laugen, Morten Hørthe <mho@dips.no>, Runar Kristiansen <rkr@dips.no>" ],
     "lifecycleState" : {
       "codeString" : "release_candidate"
     },
