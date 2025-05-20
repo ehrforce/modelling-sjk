@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"9964368375cb70af3343d2ebdffc4121">
+		["MD5-CAM-1.0.1"] = <"c773985dc35fce99f8fcd5acf95184dc">
 		["build_uid"] = <"3aaadc10-42f4-3835-9702-db6bebef7684">
 	>
 
@@ -47,6 +47,21 @@ definition
 			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Form of living
 				value matches {
 					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- DV_CODED_TEXT
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0003] occurrences matches {0..1} matches {    -- DV_CODED_TEXT
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0004] occurrences matches {0..1} matches {    -- DV_CODED_TEXT
+				value matches {
+					DV_CODED_TEXT matches {*}
 				}
 			}
 		}
@@ -64,6 +79,18 @@ ontology
 					text = <"Form of living">
 					description = <"">
 				>
+				["at0002"] = <
+					text = <"DV_CODED_TEXT">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"DV_CODED_TEXT">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"DV_CODED_TEXT">
+					description = <"">
+				>
 			>
 		>
 		["nb"] = <
@@ -76,6 +103,18 @@ ontology
 					text = <"Samlivsform">
 					description = <"Angivelse av hvilken samlivsform pasientens har. ">
 					comment = <"I Norge benyttes gjerne kodelisten no.samlivsform ">
+				>
+				["at0002"] = <
+					text = <"Ansvar for barn under 18 år">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Barn som pårørende">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Ansvar for egne barn/andre over 18 år">
+					description = <"">
 				>
 			>
 		>
