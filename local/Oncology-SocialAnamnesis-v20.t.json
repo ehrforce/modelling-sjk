@@ -45,6 +45,7 @@
           "codeString" : "nb"
         },
         "purpose" : "Utviklet for bruk i persistent dokument i kreftjournalen. Basert på arbeidet gjort i hode/hals og tilpasset småtemplate fra SJK",
+        "keywords" : [ "sosial anamnses, samlivsform" ],
         "use" : "",
         "misuse" : "",
         "originalResourceUri" : { },
