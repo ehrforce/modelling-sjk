@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "c327b668698ba67afd96c03fc0d0fd2c",
+      "MD5-CAM-1.0.1" : "2476f1f0fde7f6e9e584441655426144",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5",
-      "sem_ver" : "8.0.0",
+      "sem_ver" : "9.0.0",
       "build_uid" : ""
     },
     "details" : {
@@ -253,12 +253,8 @@
                     "selectedTerminologies" : [ "SNOMED-CT" ],
                     "includedExternalTerminologyCodes" : [ {
                       "terminologyId" : "SNOMED-CT",
-                      "code" : "399409002",
-                      "value" : "Metastase"
-                    }, {
-                      "terminologyId" : "SNOMED-CT",
-                      "code" : "399374009",
-                      "value" : "Regionale lymfeknutemetastaser"
+                      "code" : "128462008",
+                      "value" : "Metastatic malignant neoplasm (disorder)"
                     } ]
                   } ]
                 } ],
@@ -475,16 +471,7 @@
             "@type" : "C_COMPLEX_OBJECT",
             "rmTypeName" : "ELEMENT",
             "nodeId" : "at0003.1",
-            "attributes" : [ {
-              "@type" : "C_ATTRIBUTE",
-              "rmAttributeName" : "value",
-              "children" : [ {
-                "@type" : "C_COMPLEX_OBJECT",
-                "rmTypeName" : "DV_DATE_TIME",
-                "attributes" : [ ],
-                "attributeTuples" : [ ]
-              } ]
-            } ],
+            "attributes" : [ ],
             "attributeTuples" : [ ]
           }, {
             "@type" : "C_COMPLEX_OBJECT",
