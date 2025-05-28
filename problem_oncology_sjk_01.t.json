@@ -19,8 +19,10 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "870a87fe73b2d38634ede8af539b6317",
-      "PARENT:MD5-CAM-1.0.1" : "d8a487416523ad110a45b56a105de768"
+      "MD5-CAM-1.0.1" : "8f733a0fc074b829aa4538b935b476ca",
+      "PARENT:MD5-CAM-1.0.1" : "d8a487416523ad110a45b56a105de768",
+      "sem_ver" : "0.1.0",
+      "build_uid" : ""
     },
     "details" : {
       "nb" : {
@@ -111,7 +113,20 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "a7f43e9b48b7ba1634b2e92ccb3de441"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-SECTION.problem_oncology_lymph_node_sjk.v1",
     "differential" : true,
@@ -182,7 +197,20 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "9a41eee1848e690df0c323292062ebd4"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-SECTION.problem_oncology_metastasis_sjk.v1",
     "differential" : true,
