@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "2476f1f0fde7f6e9e584441655426144",
+      "MD5-CAM-1.0.1" : "9056b5eba3ff940ea530075b90ff94db",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5",
-      "sem_ver" : "9.0.0",
+      "sem_ver" : "10.0.0",
       "build_uid" : ""
     },
     "details" : {
@@ -253,8 +253,8 @@
                     "selectedTerminologies" : [ "SNOMED-CT" ],
                     "includedExternalTerminologyCodes" : [ {
                       "terminologyId" : "SNOMED-CT",
-                      "code" : "128462008",
-                      "value" : "Metastatic malignant neoplasm (disorder)"
+                      "code" : "399409002",
+                      "value" : "Distant metastasis present (finding)"
                     } ]
                   } ]
                 } ],
