@@ -22,9 +22,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "5cdd55de2864bdc655baa5b8da1d8619",
+      "MD5-CAM-1.0.1" : "1f546ba9f147dbca29fbde5dc70b2129",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5",
-      "sem_ver" : "7.0.0",
+      "sem_ver" : "7.0.1",
       "build_uid" : ""
     },
     "details" : {
@@ -638,7 +638,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "Problem/diagnose (inkl TNM)",
+          "text" : "Problem/diagnose (inkl TNM)_01",
           "description" : "Diagnosen til pasienten i form av ICD10 kode samt mulighet til å registrere både cTNM og pTNM.",
           "comment" : "Det er i praksis ikke lett å oppnå et klart skille mellom et problem og en diagnose. I klinisk dokumentasjon med denne arketypen ses problem og diagnose som et kontinuum, med økende krav til detaljer og støttende evidens for å underbygge en diagnose."
         },
