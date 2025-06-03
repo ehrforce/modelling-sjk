@@ -8,7 +8,7 @@
     },
     "otherContributors" : [ ],
     "lifecycleState" : {
-      "codeString" : "unmanaged"
+      "codeString" : "rejected"
     },
     "ipAcknowledgements" : { },
     "references" : { },
@@ -858,7 +858,7 @@
     "valueSets" : { }
   },
   "adlVersion" : "1.4",
-  "buildUid" : "eb582891-ce09-3a7c-be49-509c850c83cb",
+  "buildUid" : "34beee0a-5ee6-354d-9778-dbe7f49ddd89",
   "rmName" : "openehr",
   "rmRelease" : "1.1.0",
   "generated" : true,
