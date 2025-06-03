@@ -20,7 +20,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "0ca66b4ec7277ac212022d8b68031be0",
+      "MD5-CAM-1.0.1" : "3e9299f6c5eb20efc04140739cfbacc3",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5",
       "sem_ver" : "1.1.1",
       "build_uid" : ""
@@ -1675,7 +1675,7 @@
           "at0001.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001.1",
-            "text" : "Spesifier annet",
+            "text" : "Spesifiser annen metode",
             "description" : "Fritekstbeskrivelse av annen metode som ble brukt for å komme fram til funnet."
           },
           "at0006.1" : {
