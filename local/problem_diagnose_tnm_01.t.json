@@ -22,7 +22,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "6aca71b089b131e7a6b53a88ddf37a09",
+      "MD5-CAM-1.0.1" : "44d9862292d7922f4b4d8f5128881601",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5",
       "sem_ver" : "7.0.1",
       "build_uid" : ""
@@ -954,7 +954,7 @@
             "code" : "at0001",
             "text" : "Multiple primærtumorer",
             "description" : "Indikasjon på at det finnes flere primære maligniteter.",
-            "comment" : "Benyttes for hode/halskreft for å angi forekomst av multiple tumorer med forskjellig morfologi, dvs. at histologien er forskjellig. "
+            "comment" : "Benyttes for hode/halskreft for å angi forekomst av multiple tumorer med forskjellig morfologi, dvs. at histologien er forskjellig. \n\nBruker koden \n109359008 Primary malignant neoplasm of independent multiple sites (disorder) "
           },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -962,6 +962,13 @@
             "text" : "Oncology problem details dips",
             "description" : "En indikasjon på at det finnes flere primære maligniteter og/eller multifokal tumor. ",
             "comment" : "Benyttes inntil videre da det det kan være at SJK prosjektet har avdekket en mangel av de eksisterende arketypene for kreftområdet. F.eks. kunne det vært aktuelt å benytte TNM arketypen. "
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "Multifokal tumor",
+            "description" : "Angir at det forekommer flere primærtumor med samme morforlogi. ",
+            "comment" : "Designkommentar:\nVi bruker koden 399506006  Multifocal tumor (finding) "
           }
         }
       },
