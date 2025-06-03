@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "740a02d74f50e30f24c8bd6fce4988af",
+      "MD5-CAM-1.0.1" : "1a2715a37825b731f8474e9be342cf94",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5",
       "sem_ver" : "1.0.0",
       "build_uid" : ""
@@ -253,8 +253,8 @@
                     "selectedTerminologies" : [ "SNOMED-CT" ],
                     "includedExternalTerminologyCodes" : [ {
                       "terminologyId" : "SNOMED-CT",
-                      "code" : "399409002",
-                      "value" : "Fjernmetastase"
+                      "code" : "128462008",
+                      "value" : "Metastatic malignant neoplasm (disorder)"
                     } ]
                   } ]
                 } ],
@@ -265,7 +265,7 @@
           }, {
             "@type" : "C_COMPLEX_OBJECT",
             "rmTypeName" : "ELEMENT",
-            "occurrences" : "0..0",
+            "occurrences" : "0..1",
             "nodeId" : "at0079.1",
             "attributes" : [ {
               "@type" : "C_ATTRIBUTE",
@@ -288,56 +288,12 @@
                     "selectedTerminologies" : [ "SNOMED-CT" ],
                     "includedExternalTerminologyCodes" : [ {
                       "terminologyId" : "SNOMED-CT",
-                      "code" : "94381002",
-                      "value" : "levermetastase"
+                      "code" : "410674003",
+                      "value" : "Regional"
                     }, {
                       "terminologyId" : "SNOMED-CT",
-                      "code" : "94222008",
-                      "value" : "skjelettmetastase"
-                    }, {
-                      "terminologyId" : "SNOMED-CT",
-                      "code" : "94493005",
-                      "value" : "pleurametastase"
-                    }, {
-                      "terminologyId" : "SNOMED-CT",
-                      "code" : "94225005",
-                      "value" : "hjernemetastase"
-                    }, {
-                      "terminologyId" : "SNOMED-CT",
-                      "code" : "94579000",
-                      "value" : "hudmetastase"
-                    }, {
-                      "terminologyId" : "SNOMED-CT",
-                      "code" : "94392001",
-                      "value" : "lymfeknutemetastase"
-                    }, {
-                      "terminologyId" : "SNOMED-CT",
-                      "code" : "94181007",
-                      "value" : "metastase i aksillære lymfeknuter"
-                    }, {
-                      "terminologyId" : "SNOMED-CT",
-                      "code" : "94391008",
-                      "value" : "lungemetastase"
-                    }, {
-                      "terminologyId" : "SNOMED-CT",
-                      "code" : "94346004",
-                      "value" : "metastase i tarm"
-                    }, {
-                      "terminologyId" : "SNOMED-CT",
-                      "code" : "94606003",
-                      "value" : "metastase i magesekk"
-                    }, {
-                      "terminologyId" : "SNOMED-CT",
-                      "code" : "94663008",
-                      "value" : "metastase i urinveissystem"
-                    }, {
-                      "terminologyId" : "SNOMED-CT",
-                      "code" : "94432003",
-                      "value" : "metastase i muskulatur"
-                    }, {
-                      "terminologyId" : "SNOMED-CT",
-                      "code" : "278433008",
-                      "value" : "metastase i bløtvev"
+                      "code" : "261007001",
+                      "value" : "Fjern"
                     } ]
                   } ]
                 } ],
@@ -584,7 +540,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "Fjernmetastaser (M)",
+          "text" : "Metastase",
           "description" : "Details about a single identified health condition, injury, disability or any other issue which impacts on the physical, mental and/or social well-being of an individual.",
           "comment" : "Clear delineation between the scope of a problem versus a diagnosis is not easy to achieve in practice. For the purposes of clinical documentation with this archetype, problem and diagnosis are regarded as a continuum, with increasing levels of detail and supportive evidence usually providing weight towards the label of 'diagnosis'."
         },
@@ -632,23 +588,23 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "Fjernmetastaser (M)",
+          "text" : "Metastase",
           "description" : "Detaljer om funnet av fjernmetastase(r) (cM).",
           "comment" : "Detaljer om funnet av regional lymfeknutemetastase (cN). \nDesignkommentar:\nDukker opp om M er annet enn 0 eller X"
         },
         "at0002.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0002.1",
-          "text" : "Fjernmetastaser",
+          "text" : "Metastase",
           "description" : "Funn av fjernmetastaser.",
-          "comment" : "Designkommentar:\nDenne vises ikke i skjermbildet. "
+          "comment" : "Designkommentar:\nDenne vises ikke i skjermbildet. \nBruker disorder kode for metastase. \nSetter i variant om det er regional eller fjernmetastase."
         },
         "at0079.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0079",
           "text" : "Variant",
           "description" : "Anatomisk lokalisering av fjernmetastasen.",
-          "comment" : "Designkommentar:\nAnatomisk lokalisering av fjernmetastasen. Lagrer direktelokalisasjon av fjernmetastasen. Hvis ikke koden ligger her må man skrive det inn i fritekst."
+          "comment" : "Designkommentar:\nAnatomisk lokalisering av fjernmetastasen. Lagrer direktelokalisasjon av fjernmetastasen. Hvis ikke koden ligger her må man skrive det inn i fritekst.\nKoden for disse er:\n*Distant (qualifier value)\n*Regional (qualifier value)"
         },
         "at0012.1" : {
           "@type" : "ARCHETYPE_TERM",
@@ -1074,7 +1030,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0002.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1092,7 +1047,7 @@
                   "terminologyId" : {
                     "value" : "local"
                   },
-                  "constraint" : [ "ac0.1" ],
+                  "constraint" : [ "ac0.4" ],
                   "selectedTerminologies" : [ ]
                 } ]
               } ],
@@ -1183,12 +1138,6 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "ar-sy" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
           "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -1199,16 +1148,16 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
             "description" : ""
           }
         },
         "sl" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
           "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -1219,16 +1168,16 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
             "description" : ""
           }
         },
         "en" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
           "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
@@ -1240,15 +1189,15 @@
             "text" : "(Synthesized)",
             "code" : "ac0.3",
             "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.4",
+            "description" : ""
           }
         },
         "nb" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
           "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -1265,17 +1214,29 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0023.1",
             "text" : "Beskrivelse",
-            "description" : "Fritekstbeskrivelse som kan brukes for å ytterligere presisere og støtte \"Navn på kroppsted\".",
-            "comment" : "S"
+            "description" : "Fritekstbeskrivelse som kan brukes for å ytterligere presisere og støtte \"Navn på kroppsted\"."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Anatomisk lokalisering",
+            "description" : "Et fysisk sted på eller inne i menneskekroppen.",
+            "comment" : "Designkommentar:\nDette clusteret må gjentas for hver kroppssted metastasen befinner seg."
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Navn på kroppssted",
+            "description" : "Navngiving av et enkelt fysisk sted enten på eller i menneskekroppen."
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : ""
           }
         },
         "pt-br" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
           "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -1286,16 +1247,16 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
             "description" : ""
           }
         },
         "de" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
           "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -1306,16 +1267,16 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
             "description" : ""
           }
         },
         "nl" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
           "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -1326,16 +1287,16 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
             "description" : ""
           }
         },
         "sv" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
           "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -1346,16 +1307,16 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
             "description" : ""
           }
         },
         "fr" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
           "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -1366,6 +1327,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
             "description" : ""
           }
         }
@@ -1391,6 +1358,11 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.3",
           "members" : [ "at0062", "at0056", "at0057", "at0058", "at0059", "at0060", "at0063" ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
+          "members" : [ "at0003", "at0004" ]
         }
       }
     },
@@ -1629,8 +1601,8 @@
                   "selectedTerminologies" : [ "SNOMED-CT" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
-                    "code" : "399409002",
-                    "value" : "Fjernmetastase"
+                    "code" : "128462008",
+                    "value" : "Metastatic malignant neoplasm (disorder)"
                   } ]
                 } ]
               } ],
@@ -1655,9 +1627,17 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0006.1",
-          "attributes" : [ ],
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_DATE_TIME",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -1744,7 +1724,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..1",
+          "occurrences" : "0..*",
           "nodeId" : "at0024.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -1776,7 +1756,8 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Utredningsmetode fjernmetastaser",
+            "text" : "Utredning metastase",
+            "comment" : "Designkommentar:\nHvis det skal beskrives metode og dato per kroppsdel metastasen befinner seg må denne gjentas.",
             "description" : ""
           },
           "at0001.1" : {
@@ -1790,7 +1771,7 @@
             "code" : "at0022",
             "text" : "Metode",
             "description" : "Typen undersøkelse eller utredning som er utført for å komme fram til funn av fjernmetastasen.",
-            "comment" : "Typen undersøkelse eller utredning som er utført for å komme fram til funn av fjernmetastasen."
+            "comment" : "Designkommentar:\nTypen undersøkelse eller utredning som er utført for å komme fram til funn av fjernmetastasen."
           },
           "at0003.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -1798,6 +1779,13 @@
             "text" : "Grunnlag",
             "description" : "Funn av fjernmetastase(r)\n",
             "comment" : "Designkommentar:\nDenne visis ikke i skjermbildet. "
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Dato",
+            "description" : "Dato/tid til resultatet eller funnet.",
+            "comment" : "Designkommentar:\nDato for funn av metastase"
           }
         },
         "de" : {
