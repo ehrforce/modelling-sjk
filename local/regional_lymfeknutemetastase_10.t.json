@@ -20,7 +20,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "d375b58d678cff839dc6b83f28ffc8dc",
+      "MD5-CAM-1.0.1" : "9dda95a4c58aa38fa8d9c204c0b9cfb4",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5",
       "sem_ver" : "1.1.1",
       "build_uid" : ""
@@ -257,7 +257,7 @@
                     "includedExternalTerminologyCodes" : [ {
                       "terminologyId" : "SNOMED-CT",
                       "code" : "399374009",
-                      "value" : "Regionale lymfeknutemetastaser"
+                      "value" : "Regional lymph node metastasis present (finding)"
                     } ]
                   } ]
                 } ],
@@ -1417,7 +1417,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "399374009",
-                    "value" : "Regional lymfeknutemetastase"
+                    "value" : "Regional lymph node metastasis present (finding)"
                   } ]
                 } ]
               } ],
