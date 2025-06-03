@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "1a2715a37825b731f8474e9be342cf94",
+      "MD5-CAM-1.0.1" : "b41bb244efdc44677dd39b37a45578fc",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5",
       "sem_ver" : "1.0.0",
       "build_uid" : ""
@@ -1771,7 +1771,7 @@
             "code" : "at0022",
             "text" : "Metode",
             "description" : "Typen undersøkelse eller utredning som er utført for å komme fram til funn av fjernmetastasen.",
-            "comment" : "Designkommentar:\nTypen undersøkelse eller utredning som er utført for å komme fram til funn av fjernmetastasen."
+            "comment" : "Designkommentar:\nTypen undersøkelse eller utredning som er utført for å komme fram til funn av fjernmetastasen.\nHer er det tenkt at man kan ha flere utredningsmetoder. "
           },
           "at0003.1" : {
             "@type" : "ARCHETYPE_TERM",
