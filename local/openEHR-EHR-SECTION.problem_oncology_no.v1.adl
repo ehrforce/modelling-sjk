@@ -1,4 +1,4 @@
-archetype (adl_version=1.4; uid=95c09ba2-9c4a-4d18-8621-abcbe440df37)
+archetype (adl_version=1.4; uid=ff78135e-e4a0-4167-ae46-3318f3d27e90)
 	openEHR-EHR-SECTION.problem_oncology_no.v1
 
 concept
@@ -9,10 +9,10 @@ language
 
 description
 	original_author = <
-		["date"] = <"2025-06-03">
-		["name"] = <"Bjørn Næss">
-		["organisation"] = <"DIPS AS">
-		["email"] = <"bna@dips.no">
+		["date"] = <"2025-04-25">
+		["name"] = <"Kanika Kuwelker">
+		["organisation"] = <"Helse Vest IKT">
+		["email"] = <"kanika.kuwelker@helse-vest-ikt.no">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
@@ -26,12 +26,23 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"bcac252b97b5781719f8cb3658ce6d79">
-		["build_uid"] = <"b6a051c0-a503-3cfe-9df4-5fcccc9a6d56">
+		["MD5-CAM-1.0.1"] = <"5d98ed99cda6cf206f976ad44b8b4a2b">
+		["build_uid"] = <"fa3fd3ae-e110-3be2-943a-544095567374">
 	>
 
 definition
-	SECTION[at0000] matches {*}    -- problem_oncology_no
+	SECTION[at0000] matches {    -- problem_oncology_no
+		items cardinality matches {1..*; unordered} matches {
+			allow_archetype ENTRY[at0021] occurrences matches {0..*} matches {    -- Overordnet diagnostisk informasjon
+				include
+					archetype_id/value matches {/.*/}
+			}
+			allow_archetype SECTION[at0022] occurrences matches {0..*} matches {    -- Seksjonsinndeling
+				include
+					archetype_id/value matches {/.*/}
+			}
+		}
+	}
 
 ontology
 	term_definitions = <
@@ -39,7 +50,15 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"problem_oncology_no">
-					description = <"problem_oncology_no">
+					description = <"Kreftdiagnose">
+				>
+				["at0021"] = <
+					text = <"Overordnet diagnostisk informasjon">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Seksjonsinndeling">
+					description = <"">
 				>
 			>
 		>
