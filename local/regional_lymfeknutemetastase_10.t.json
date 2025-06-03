@@ -20,7 +20,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "afb45cf05a2f026a550fb3ebfe38c9eb",
+      "MD5-CAM-1.0.1" : "c9b202ce066df4a5dadada77887dc4e0",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5",
       "sem_ver" : "1.1.1",
       "build_uid" : ""
@@ -612,7 +612,7 @@
           "code" : "at0002.1",
           "text" : "Regional lymfeknutemetastase",
           "description" : "Angir at det er regionale lymfeknutemetastaser tilstede. ",
-          "comment" : "Bruker SNOMED-CT koden 399374009 | Regional lymph node metastasis present (finding) | for å klassifisisere problemet. "
+          "comment" : "Bruker SNOMED-CT koden 399374009 - Regional lymph node metastasis present (finding), for å klassifisisere problemet. "
         },
         "at0079.1" : {
           "@type" : "ARCHETYPE_TERM",
@@ -1113,7 +1113,7 @@
             "code" : "at0001.1",
             "text" : "Navn på kroppssted",
             "description" : "Navngiving av et enkelt fysisk sted enten på eller i menneskekroppen.",
-            "comment" : "Angir hvor den regionale lymfeknutemetastasen ble funnet. \nBrystkreft bruker p.t ingen anatomisk lokalisering. Den er da implisitt til aksille. \n\nKoden for annet kroppsted er \n74964007 - annen | (qualifier value) "
+            "comment" : "Angir hvor den regionale lymfeknutemetastasen ble funnet. \nBrystkreft bruker p.t ingen anatomisk lokalisering. Den er da implisitt til aksille. \n\nKoden for annet kroppsted er \n74964007 - annen (qualifier value) "
           },
           "ac0.1" : {
             "@type" : "ARCHETYPE_TERM",
