@@ -20,7 +20,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "3e9299f6c5eb20efc04140739cfbacc3",
+      "MD5-CAM-1.0.1" : "afb45cf05a2f026a550fb3ebfe38c9eb",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5",
       "sem_ver" : "1.1.1",
       "build_uid" : ""
@@ -1113,7 +1113,7 @@
             "code" : "at0001.1",
             "text" : "Navn på kroppssted",
             "description" : "Navngiving av et enkelt fysisk sted enten på eller i menneskekroppen.",
-            "comment" : "Angir hvor den regionale lymfeknutemetastasen ble funnet. \nBrystkreft bruker p.t ingen anatomisk lokalisering. Den er da implisitt til aksille. \n\nKoden for annet kroppsted er  enten \n\n385421009 | Anatomic location of metastatic spread of malignant neoplasm (observable entity) |\n\neller \n\n74964007 | annen | (qualifier value) "
+            "comment" : "Angir hvor den regionale lymfeknutemetastasen ble funnet. \nBrystkreft bruker p.t ingen anatomisk lokalisering. Den er da implisitt til aksille. \n\nKoden for annet kroppsted er \n74964007 - annen | (qualifier value) "
           },
           "ac0.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -1133,12 +1133,6 @@
             "text" : "Spesifikt sted",
             "description" : "Ytterligere detaljer gitt ved hjelp av en spesifikk region eller et punkt på eller i det spesifiserte kroppsstedet.",
             "comment" : "Spesifikt sted kan f.eks. benyttes for å kode at bryst har fått lymfeknutemetastase til begge bryst. "
-          },
-          "at0002" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "Kroppsside",
-            "description" : "Den identifiserte kroppssiden."
           },
           "at0002.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -1554,7 +1548,16 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "nodeId" : "at0006.1",
-          "attributes" : [ ],
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_DATE_TIME",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -1683,7 +1686,13 @@
             "code" : "at0006",
             "text" : "Dato",
             "description" : "Dato/tid til resultatet eller funnet.",
-            "comment" : "Benyttes i Sarkom for dato den regionale lymfeknutemetastasen ble påvist. \n\n\nFor eksempel når en klinisk undersøkelse ble gjort. For laboratorieanalyser eller bildediagnostikk er dette dato/tid for når prøven eller bildet ble tatt."
+            "comment" : "Benyttes i Sarkom for dato den regionale lymfeknutemetastasen ble påvist. \n\nFor eksempel når en klinisk undersøkelse ble gjort. For laboratorieanalyser eller bildediagnostikk er dette dato/tid for når prøven eller bildet ble tatt."
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "Grunnlag",
+            "description" : "Identifisering av en forekomst av et klinisk grunnlag, enten ved navn eller type, som et enkelt resultat eller en gruppe av resultater."
           }
         },
         "de" : { },
