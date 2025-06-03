@@ -22,7 +22,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "44d9862292d7922f4b4d8f5128881601",
+      "MD5-CAM-1.0.1" : "ba84fe6575961385ec2a098a992245be",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5",
       "sem_ver" : "7.0.1",
       "build_uid" : ""
@@ -666,7 +666,7 @@
           "code" : "at0002",
           "text" : "Problem/diagnosenavn",
           "description" : "Identifisering av problemet eller diagnosen ved hjelp av navn.",
-          "comment" : "Klassifiserer primærtumor som en neoplastisk sykdom for gruppering på tvers av kreftformene. 55342001 | neoplastisk sykdom |"
+          "comment" : "Klassifiserer primærtumor som en neoplastisk sykdom for gruppering på tvers av kreftformene. 55342001 - neoplastisk sykdom "
         },
         "at0009.1" : {
           "@type" : "ARCHETYPE_TERM",
@@ -680,7 +680,7 @@
           "code" : "at0078",
           "text" : "Årsak",
           "description" : "En årsak, kjede av årsaker til, eller hendelsesforløp forut for problemet eller diagnosen.",
-          "comment" : "I Sarkom benyttes feltet kodet med mulig verdi: \n\nSNOMED-CT::1340012009|Stråleindusert|\n\nOgså kjent som 'etiologi'. Det anbefales å kode \"Årsak\" med en ekstern terminologi dersom det er mulig."
+          "comment" : "I Sarkom benyttes feltet kodet med mulig verdi: \n\nSNOMED-CT::1340012009- Stråleindusert\n\nOgså kjent som 'etiologi'. Det anbefales å kode \"Årsak\" med en ekstern terminologi dersom det er mulig."
         },
         "ac0.3" : {
           "@type" : "ARCHETYPE_TERM",
@@ -694,6 +694,12 @@
           "text" : "Variant",
           "description" : "Spesifikk variant eller subtype av diagnose, hvis det er relevant.",
           "comment" : "Bryst: tumorutbredelse og multifokalitet. Feltet endres til tumorutbredelsesmønster \nBak denne ligger SNOMED-CT koden for multifokalitet. Den samme som brukes i SARKOM: 399506006 Multifokal tumor"
+        },
+        "at0012.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0012",
+          "text" : "Anatomisk lokalisering",
+          "description" : "Registrering av et enkelt og usammensatt anatomisk sted der problemet eller diagnosen er lokalisert."
         }
       },
       "sv" : {
@@ -3031,7 +3037,7 @@
                   "terminologyId" : {
                     "value" : "local"
                   },
-                  "constraint" : [ "ac0.8" ],
+                  "constraint" : [ "ac0.9" ],
                   "selectedTerminologies" : [ ]
                 } ]
               } ],
@@ -3134,10 +3140,10 @@
             "code" : "ac0.6",
             "description" : ""
           },
-          "ac0.8" : {
+          "ac0.9" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
+            "code" : "ac0.9",
             "description" : ""
           }
         },
@@ -3154,10 +3160,10 @@
             "code" : "ac0.6",
             "description" : ""
           },
-          "ac0.8" : {
+          "ac0.9" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
+            "code" : "ac0.9",
             "description" : ""
           }
         },
@@ -3174,10 +3180,10 @@
             "code" : "ac0.6",
             "description" : ""
           },
-          "ac0.8" : {
+          "ac0.9" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.8",
+            "code" : "ac0.9",
             "description" : ""
           }
         },
@@ -3198,15 +3204,13 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0023.1",
             "text" : "Beskrivelse",
-            "description" : "Fritekstbeskrivelse som kan brukes for å ytterligere presisere og støtte \"Navn på kroppsted\".",
-            "comment" : "B"
+            "description" : "Fritekstbeskrivelse som kan brukes for å ytterligere presisere og støtte \"Navn på kroppsted\"."
           },
           "at0065.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0065.1",
             "text" : "Spesifikt sted",
-            "description" : "Ytterligere detaljer gitt ved hjelp av en spesifikk region eller et punkt på eller i det spesifiserte kroppsstedet.",
-            "comment" : "Brukes tilå øke presisjonen ved spesifisering av kroppsstedet, dersom påkrevd. For eksempel den øvre høyre kvadranten eller McBurneys punkt på bukveggen, eller interfalangealleddet på stortåen. Dersom dataelementet \"Navn på kroppssted\" er registrert ved hjelp av prekoordinerte termer som omfatter det spesifikke stedet er dette dataelementet overflødig. I de fleste tilfeller vil dette være ett enkelt sted på kroppen. Dataelementet åpner for flere forekomster i de sjeldne tilfellene der man trenger å angi et spesifikt anatomisk sted som omfatter to eller flere sammenhengende spesifikke steder. For eksempel for å beskrive det spesifikke stedet en svulst strekker seg over andre, tredje og fjerde ribben."
+            "description" : "Ytterligere detaljer gitt ved hjelp av en spesifikk region eller et punkt på eller i det spesifiserte kroppsstedet."
           },
           "at0001.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -3214,10 +3218,16 @@
             "text" : "Navn på kroppssted",
             "description" : "Navngiving av et enkelt fysisk sted enten på eller i menneskekroppen."
           },
-          "ac0.8" : {
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Kroppsside",
+            "description" : "Den identifiserte kroppssiden."
+          },
+          "ac0.9" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
+            "code" : "ac0.9",
             "description" : ""
           }
         },
@@ -3234,10 +3244,10 @@
             "code" : "ac0.6",
             "description" : ""
           },
-          "ac0.8" : {
+          "ac0.9" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
+            "code" : "ac0.9",
             "description" : ""
           }
         },
@@ -3254,10 +3264,10 @@
             "code" : "ac0.6",
             "description" : ""
           },
-          "ac0.8" : {
+          "ac0.9" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
+            "code" : "ac0.9",
             "description" : ""
           }
         },
@@ -3274,10 +3284,10 @@
             "code" : "ac0.6",
             "description" : ""
           },
-          "ac0.8" : {
+          "ac0.9" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
+            "code" : "ac0.9",
             "description" : ""
           }
         },
@@ -3294,10 +3304,10 @@
             "code" : "ac0.6",
             "description" : ""
           },
-          "ac0.8" : {
+          "ac0.9" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
+            "code" : "ac0.9",
             "description" : ""
           }
         },
@@ -3314,10 +3324,10 @@
             "code" : "ac0.6",
             "description" : ""
           },
-          "ac0.8" : {
+          "ac0.9" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
+            "code" : "ac0.9",
             "description" : ""
           }
         }
@@ -3357,6 +3367,11 @@
         "ac0.8" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.8",
+          "members" : [ "at0003", "at0004" ]
+        },
+        "ac0.9" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.9",
           "members" : [ "at0003", "at0004" ]
         }
       }
