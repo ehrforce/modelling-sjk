@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "d9caf6c9522d3eedf1166d97d498fd10",
+      "MD5-CAM-1.0.1" : "f20384424448864ce304cbd3fabc4ae0",
       "PARENT:MD5-CAM-1.0.1" : "7992b64110455bb88760d5f0dd3a9006"
     },
     "details" : {
@@ -176,19 +176,19 @@
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.67",
+        "nodeId" : "at0.81",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "bildediagnostikk_10",
+        "archetypeRef" : "problem_oncology_sjk_01",
         "referenceType" : "templateId"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.61",
+        "nodeId" : "at0.67",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "kreftdiagnose_01",
+        "archetypeRef" : "bildediagnostikk_10",
         "referenceType" : "templateId"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
