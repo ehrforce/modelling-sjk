@@ -1,0 +1,199 @@
+= Sosialanamnese_generell
+
+
+== Metadata
+
+
+TemplateId:: sosialanamnese_10
+
+
+Archetype:: openEHR-EHR-SECTION.adhoc.v1
+
+
+
+
+:toc:
+
+
+
+
+== Sosialanamnese_generell
+== Utdanningssammendrag
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Utdanningssammendrag* + 
+EVALUATION: _openEHR-EHR-EVALUATION.education_summary.v1_
+|at0002| 0..1| DV_CODED_TEXT | Høyeste fullførte utdanningsnivå
+a|
+* Ingen utdanning (no.utdanningsnivaa: 0)
+* Grunnskole (no.utdanningsnivaa: 1)
+* Videregående (no.utdanningsnivaa: 2)
+* Universitet/Høyskole <4 år (no.utdanningsnivaa: 3)
+* Universitet/Høyskole ≥4 år (no.utdanningsnivaa: 4)
+* Ukjent (no.utdanningsnivaa: 9)
+
+
+Koding av "Høyeste fullførte utdanningsnivå" med en terminologi er anbefalt der det er mulig. For eksempel med NUS 2000 eller Unescos ISCED klassifikasjon. Sistnevnte forefinnes ikke på norsk, men eksempel er "'Upper secondary vocational education"; "Post-secondary non-tertiary vocational education"; "Bachelor’s or equivalent level, professional"; "Doctoral or equivalent level, academic"; "Post-secondary non-tertiary vocational education"; or "Never attended an educational program".
+|at0028| 0..1| DV_DATE_TIME | Sist oppdatert
+|
+
+
+Ved implementering av arketypen forutsettes det at dersom en utdanning eller opplæring legges til eller oppdateres i CLUSTER.education_record (Utdanning), vil også denne datoen oppdateres.
+|====
+== Arbeidssammendrag
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Arbeidssammendrag* + 
+EVALUATION: _openEHR-EHR-EVALUATION.occupation_summary.v1_
+|at0004| 0..1| DV_CODED_TEXT | Arbeidsstatus
+a|
+* I arbeid (no.arbeidsstatus: 1)
+* Ikke i arbeid (no.arbeidsstatus: 2)
+* Alderspensjonist (no.arbeidsstatus: 3)
+* Under utdanning/studerer (no.arbeidsstatus: 4)
+* Ukjent (no.arbeidsstatus: 9)
+5+a|*Arbeidsforhold/rolle* + 
+CLUSTER: _openEHR-EHR-CLUSTER.occupation_record.v1_
+|at0005| 0..1| DV_TEXT | Tittel/rolle
+a|
+5+a|*Sykemelding* + 
+CLUSTER: _openEHR-EHR-CLUSTER.sick_note_ous.v1_
+|at0004| 0..1| DV_DATE_TIME | Sykemelding - fra dato
+|
+
+
+Startdatoen for sykemeldingen.
+|at0001| 0..1| DV_DURATION | Varighet
+|
+
+
+Varigheten av sykemeldinsperioden til individet.
+|at0009| 0..1| DV_DATE_TIME | Sist oppdatert
+|
+
+
+Ved implementering av arketypen forutsettes det at dersom en arbeidsepisode legges til eller oppdateres, vil også denne datoen oppdateres.
+|====
+== Sosialt nettverk
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Sosialt nettverk* + 
+EVALUATION: _openEHR-EHR-EVALUATION.social_network.v1_
+|at0002| 0..1| DV_CODED_TEXT | Samlivsstatus
+a|
+* Ugift/enslig (no.samlivsstatus: 1)
+* Gift/samboer/registrert partner (no.samlivsstatus: 2)
+* Enke/enkemann/gjenlevende partner eller samboer (no.samlivsstatus: 3)
+* Skilt/separert (no.samlivsstatus: 4)
+* Ukjent (no.samlivsstatus: 9)
+
+
+Verdisettet for dataelementet "Samlivsstatus" er standardisert med bakgrunn i variabler fra SSB (https://www.ssb.no/klass/klassifikasjoner/19).
+
+|at0018| 0..1| DV_TEXT | Kommentar
+a|
+|at0011| 0..1| DV_DATE_TIME | Sist oppdatert
+|
+
+
+Datoen da samlivsstatus sist ble oppdatert.
+|====
+== Samlivsform
+== Kartleggingspørsmål om sosiale forhold samlivsform
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Kartleggingspørsmål om sosiale forhold samlivsform* + 
+OBSERVATION: _openEHR-EHR-OBSERVATION.social_context_screening.v1_
+|at0034| 0..1| DV_CODED_TEXT | Kartleggingsformål
+a|
+* Samlivsform (no.onk.sosiale_forhold: SAM)
+
+
+Fast verdi som er skjult for bruker. 
+5+a|*Spesifikt sosialt forhold* + 
+CLUSTER: _at0022_
+|at0004| 1..1| DV_CODED_TEXT | Hvilken samlivsform har pasienten?
+a|
+* Bor alene (Inkl. alene med barn <18) (no.samlivsform: 1)
+* Bor med noen (Partner og/eller med barn >18 år, bofelleskap, venner) (no.samlivsform: 2)
+* Bor på institusjon/ sykehjem (Fast plass, ikke korttidsopphold. Gjelder også der egen bolig er døgnbemannet) (no.samlivsform: 3)
+* Ukjent (no.samlivsform: 9)
+
+
+Dette elementet tilbyr valg mellom fritekst og kodet tekst. Det er antatt at listen av kodede verdier vil vokse ettersom man identifiserer flere behov. Det er anbefalt å kode "Sosialt forhold" med en terminologi dersom det er mulig - for eksempel relevante termer innen hierarkiet til SNOMED CT's Social context finding hierarchy (SCTID: 108329005). Alternativt som fritekst, for eksempel "Forsørgelsesbyrde", "Sosial isolasjon", "Diskriminering", "Minoritetsstress".
+|====
+== Kartlegging omsorgsansvar
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Kartlegging omsorgsansvar* + 
+OBSERVATION: _openEHR-EHR-OBSERVATION.social_context_screening.v1_
+|at0034| 0..1| DV_CODED_TEXT | Kartleggingsformål
+a|
+* Kartlegging av om individet har omsorgsansvar (no.onk.sosiale_forhold: OA)
+
+
+I prosjektet strukturert kreftjournal er det etablert et eget kodeverk for kartleggingsformål. no.onk.sosiale_forhold.
+5+a|*Omsorgsperson for barn under 18 år* + 
+CLUSTER: _at0022_
+|at0004| 1..1| DV_CODED_TEXT | Sosialt forhold
+a|
+* Ansvarlig for barn under 18 år (no.onk.sosiale_forhold: U18)
+
+
+Navngiving av et spesifikt sosialt forhold.
+|at0005| 0..1| DV_CODED_TEXT | Har pasienten ansvar for barn under 18 år?
+a|
+* at0023 -> Ja 
+* at0024 -> Nei 
+* at0027 -> Ukjent 
+5+a|*Barn som pårørende* + 
+CLUSTER: _at0022_
+|at0004| 1..1| DV_CODED_TEXT | Sosialt forhold
+a|
+* Barn som pårørende (no.onk.sosiale_forhold: BPU18)
+
+
+Navngiving av et spesifikt sosialt forhold.
+|at0005| 0..1| DV_CODED_TEXT | Finnes det barn som pårørende?
+a|
+* at0023 -> Ja 
+* at0024 -> Nei 
+* at0027 -> Ukjent 
+|at0025| 0..1| DV_TEXT | Kommentar
+a|
+5+a|*Omsorgsperson for personer over 18 år* + 
+CLUSTER: _at0022_
+|at0004| 1..1| DV_CODED_TEXT | Sosialt forhold
+a|
+* Ansvarlig for barn/andre over 18 år (no.onk.sosiale_forhold: O18)
+
+
+Navngiving av et spesifikt sosialt forhold.
+|at0005| 0..1| DV_CODED_TEXT | Har pasienten ansvar for egne barn/andre over 18 år?
+a|
+* at0023 -> Ja 
+* at0024 -> Nei 
+* at0027 -> Ukjent 
+|====
+== Fritekst relatert til sosial anamnese
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Fritekst relatert til sosial anamnese* + 
+OBSERVATION: _openEHR-EHR-OBSERVATION.progress_note.v1_
+
+
+Skal ikke være med i eksport til register. 
+|at0004| 0..1| DV_TEXT | Fritekst relatert til sosial anamnese
+a|
+5+a|*Semistrukturert metadata dips* + 
+CLUSTER: _openEHR-EHR-CLUSTER.semistrukturert_metadata_dips.v1_
+|at0001| 0..1| DV_CODED_TEXT | Klassifisering av informasjon
+a|
+* Sosial anamnese (no.dips.Freetext.Classification: 01-Oncology-Sosial-anamnese)
+|====
