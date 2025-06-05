@@ -1,4 +1,4 @@
-= Sosialanamnese_generell
+= Sosialanamnese_10
 
 
 == Metadata
@@ -9,38 +9,58 @@ TemplateId:: sosialanamnese_10
 
 Archetype:: openEHR-EHR-SECTION.adhoc.v1
 
-
+I Strukturert kreftjournal er det utviklet et standardisert templat for opptak av sosialanamnese.
+Templatet består av:
 
 
 :toc:
 
 
-
-
-== Sosialanamnese_generell
 == Utdanningssammendrag
-[options="header", cols="3,3,5,5,30"]
-|====
-|NodeId|Attr.|RM Type| Name |Description
-5+a|*Utdanningssammendrag* + 
+
+Brukes for å registrere et individs utdanningsnivå i forbindelse med prosjektet Strukturert Kreftjournal.  
+
+Verdisettet for dataelementet *"Høyeste fullførte utdanningsnivå"* er standardisert basert på krav utarbeidet av Helsedirektoratet.  
+
+Dette templatet vil bli brukt i prosjektet Strukturert Kreftjournal under sosialanamnese.
+
+Småtemplatet med det standardiserte verdisettet kan benyttes utenfor Strukturert kreftjournal, hvor det lagres data om arbeidsstatus.
+
+=== Modellering
+Informasjonsmodell for registrering av utdanningssammendrag baserer seg på arketypen:  
+https://arketyper.no/ckm/archetypes/1078.36.2192[Utdanningssammendrag – arketyper.no]
+
+.Overordnet beskrivelse av arketyper og felter som brukes
+[cols="1,5,5", options="header"]
+
+
+[cols="1,1,2,2,6", options="header"]
+|===
+|NodeId |Attr. |RM Type |Name |Description
+
+.5+|*Utdanningssammendrag* +
 EVALUATION: _openEHR-EHR-EVALUATION.education_summary.v1_
-|at0002| 0..1| DV_CODED_TEXT | Høyeste fullførte utdanningsnivå
-a|
-* Ingen utdanning (no.utdanningsnivaa: 0)
-* Grunnskole (no.utdanningsnivaa: 1)
-* Videregående (no.utdanningsnivaa: 2)
-* Universitet/Høyskole <4 år (no.utdanningsnivaa: 3)
-* Universitet/Høyskole ≥4 år (no.utdanningsnivaa: 4)
-* Ukjent (no.utdanningsnivaa: 9)
+
+|at0002
+|0..1
+|DV_CODED_TEXT
+|Høyeste fullførte utdanningsnivå +
+* Ingen utdanning (`no.utdanningsnivaa: 0`) +
+* Grunnskole (`no.utdanningsnivaa: 1`) +
+* Videregående (`no.utdanningsnivaa: 2`) +
+* Universitet/Høyskole < 4 år (`no.utdanningsnivaa: 3`) +
+* Universitet/Høyskole ≥ 4 år (`no.utdanningsnivaa: 4`) +
+* Ukjent (`no.utdanningsnivaa: 9`) +
 
 
-Koding av "Høyeste fullførte utdanningsnivå" med en terminologi er anbefalt der det er mulig. For eksempel med NUS 2000 eller Unescos ISCED klassifikasjon. Sistnevnte forefinnes ikke på norsk, men eksempel er "'Upper secondary vocational education"; "Post-secondary non-tertiary vocational education"; "Bachelor’s or equivalent level, professional"; "Doctoral or equivalent level, academic"; "Post-secondary non-tertiary vocational education"; or "Never attended an educational program".
-|at0028| 0..1| DV_DATE_TIME | Sist oppdatert
-|
+|at0028
+|0..1
+|DV_DATE_TIME
+|Sist oppdatert +
+Oppdateres når utdanning registreres eller endres i `CLUSTER.education_record` (Utdanning).
+|===
 
 
-Ved implementering av arketypen forutsettes det at dersom en utdanning eller opplæring legges til eller oppdateres i CLUSTER.education_record (Utdanning), vil også denne datoen oppdateres.
-|====
 == Arbeidssammendrag
 [options="header", cols="3,3,5,5,30"]
 |====
