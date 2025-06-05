@@ -1,4 +1,4 @@
-= Sosialanamnese_10
+= Sosialanamnese_generell
 
 
 == Metadata
@@ -6,8 +6,6 @@
 
 TemplateId:: sosialanamnese_10
 
-
-Archetype:: openEHR-EHR-SECTION.adhoc.v1
 
 I Strukturert kreftjournal er det utviklet et standardisert templat for opptak av sosialanamnese.
 Templatet består av:
@@ -61,19 +59,40 @@ Oppdateres når utdanning registreres eller endres i `CLUSTER.education_record` 
 |===
 
 
-== Arbeidssammendrag
-[options="header", cols="3,3,5,5,30"]
+== Arbeidsstatus
+Brukes for å registrere et individs arbeidsstatus i forbindelse med prosjektet Strukturert kreftjournal.
+
+Verdisettet for dataelementet "Arbeidsstatus" er standardisert basert på krav utarbeidet av Helsedirektoratet. 
+
+Dette templatet vil bli brukt i prosjektet Strukturert Kreftjournal under sosialanamnese.
+
+Småtemplatet med det standardiserte verdisettet kan benyttes utenfor Strukturert kreftjournal hvor det lagres data om arbeidsstatus.
+
+
+=== Modellering
+
+Informasjonsmodell for registrering av arbeidssammendrag baserer seg på arketypen:  
+https://arketyper.no/ckm/archetypes/1078.36.1945[Arbeidssammendrag – arketyper.no]
+
+.Overordnet beskrivelse av arketyper og felter som brukes
+[cols="1,5,5", options="header"]
+
+
+
+[cols="1,1,2,2,6", options="header"]
 |====
 |NodeId|Attr.|RM Type| Name |Description
-5+a|*Arbeidssammendrag* + 
+.5+a|*Arbeidssammendrag* + 
 EVALUATION: _openEHR-EHR-EVALUATION.occupation_summary.v1_
-|at0004| 0..1| DV_CODED_TEXT | Arbeidsstatus
-a|
-* I arbeid (no.arbeidsstatus: 1)
-* Ikke i arbeid (no.arbeidsstatus: 2)
-* Alderspensjonist (no.arbeidsstatus: 3)
-* Under utdanning/studerer (no.arbeidsstatus: 4)
-* Ukjent (no.arbeidsstatus: 9)
+|at0004
+|0..1
+|DV_CODED_TEXT 
+|Arbeidsstatus +
+* I arbeid (no.arbeidsstatus: 1) +
+* Ikke i arbeid (no.arbeidsstatus: 2) +
+* Alderspensjonist (no.arbeidsstatus: 3) +
+* Under utdanning/studerer (no.arbeidsstatus: 4) +
+* Ukjent (no.arbeidsstatus: 9) +
 5+a|*Arbeidsforhold/rolle* + 
 CLUSTER: _openEHR-EHR-CLUSTER.occupation_record.v1_
 |at0005| 0..1| DV_TEXT | Tittel/rolle
