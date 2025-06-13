@@ -8,7 +8,7 @@
     },
     "otherContributors" : [ ],
     "lifecycleState" : {
-      "codeString" : "unmanaged"
+      "codeString" : "release_candidate"
     },
     "ipAcknowledgements" : { },
     "references" : { },
@@ -21,7 +21,9 @@
       "custodian_namespace" : "org.openehr",
       "MD5-CAM-1.0.1" : "1309f96139cd48912e55a1899ef5f5a0",
       "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73",
-      "original_language" : "ISO_639-1::nb"
+      "original_language" : "ISO_639-1::nb",
+      "sem_ver" : "0.1.0",
+      "build_uid" : ""
     },
     "details" : {
       "nb" : {
@@ -32,6 +34,7 @@
           },
           "codeString" : "nb"
         },
+        "purpose" : "Brukes for å registrere en behandlingsoppsummering i forbindelse med prosjektet Strukturert kreftjournal.",
         "originalResourceUri" : { },
         "otherDetails" : { }
       },
@@ -280,7 +283,7 @@
     "valueSets" : { }
   },
   "adlVersion" : "1.4",
-  "buildUid" : "39362cc3-819c-3737-b760-e9759995aa8d",
+  "buildUid" : "09242fd5-2732-3004-81b5-2db228f6c33c",
   "rmName" : "openehr",
   "rmRelease" : "1.1.0",
   "generated" : true,
