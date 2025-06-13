@@ -1,4 +1,4 @@
-archetype (adl_version=1.4; uid=994727ed-a0d5-4a7c-9502-360770c6ad2c)
+archetype (adl_version=1.4; uid=6b1a011c-b352-4c2d-a261-36bf9466c0f9)
 	openEHR-EHR-EVALUATION.intervention_summary_onk_no.v1
 
 concept
@@ -86,8 +86,8 @@ Not to be used in cases where there are more specific summary archetypes availab
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"DA9F997D06B41748F48318104A31CC39">
-		["build_uid"] = <"fdd4a99c-2e53-4ea6-a354-6ba99dc0d588">
+		["MD5-CAM-1.0.1"] = <"7B944C19F59356AB4A5115D40AC9ED24">
+		["build_uid"] = <"368d2a7e-c2f5-4577-917d-537435d720d2">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
 	>
