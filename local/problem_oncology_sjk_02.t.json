@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "373b1de8c26a5640c37888c7a7539f92",
+      "MD5-CAM-1.0.1" : "476215a7f64c76b58d2f111f5978927b",
       "PARENT:MD5-CAM-1.0.1" : "d8a487416523ad110a45b56a105de768",
       "sem_ver" : "0.1.0",
       "build_uid" : ""
@@ -161,7 +161,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Metastaser",
-            "description" : "Fjernmetastase_no"
+            "description" : "Inndeling for å gruppere metastaser som registreres. "
           }
         }
       },
