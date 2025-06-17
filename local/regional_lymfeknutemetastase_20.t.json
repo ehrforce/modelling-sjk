@@ -20,7 +20,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "d7c2ed2162610603384f0f9b0e6080a4",
+      "MD5-CAM-1.0.1" : "84c1e9eef765cee67fd9e9af9a69974d",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5",
       "sem_ver" : "1.1.1",
       "build_uid" : ""
@@ -282,7 +282,7 @@
           }, {
             "@type" : "C_COMPLEX_OBJECT",
             "rmTypeName" : "ELEMENT",
-            "occurrences" : "0..0",
+            "occurrences" : "0..1",
             "nodeId" : "at0012.1",
             "attributes" : [ {
               "@type" : "C_ATTRIBUTE",
@@ -305,24 +305,8 @@
                     "selectedTerminologies" : [ "SNOMED-CT" ],
                     "includedExternalTerminologyCodes" : [ {
                       "terminologyId" : "SNOMED-CT",
-                      "code" : "24028007",
-                      "value" : "Høyre"
-                    }, {
-                      "terminologyId" : "SNOMED-CT",
-                      "code" : "7771000",
-                      "value" : "Venstre"
-                    }, {
-                      "terminologyId" : "SNOMED-CT",
-                      "code" : "51440002",
-                      "value" : "Begge"
-                    }, {
-                      "terminologyId" : "SNOMED-CT",
-                      "code" : "261665006",
-                      "value" : "Ukjent"
-                    }, {
-                      "terminologyId" : "SNOMED-CT",
-                      "code" : "0",
-                      "value" : "Ikke relevant"
+                      "code" : "59441001",
+                      "value" : "Lymfeknute"
                     } ]
                   } ]
                 } ],
@@ -347,9 +331,17 @@
           }, {
             "@type" : "C_COMPLEX_OBJECT",
             "rmTypeName" : "ELEMENT",
-            "occurrences" : "0..0",
             "nodeId" : "at0003.1",
-            "attributes" : [ ],
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_DATE_TIME",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
             "attributeTuples" : [ ]
           }, {
             "@type" : "C_COMPLEX_OBJECT",
@@ -463,6 +455,15 @@
             "attributes" : [ ],
             "attributeTuples" : [ ],
             "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-clinical_evidence-001.v1",
+            "referenceType" : "archetypeOverlay"
+          }, {
+            "@type" : "C_ARCHETYPE_ROOT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..1",
+            "nodeId" : "at0043.2",
+            "attributes" : [ ],
+            "attributeTuples" : [ ],
+            "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-anatomical_location-001.v1",
             "referenceType" : "archetypeOverlay"
           } ]
         } ],
@@ -1628,15 +1629,6 @@
           "nodeId" : "at0023.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..1",
-          "nodeId" : "at0024.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-anatomical_location-001.v1",
-          "referenceType" : "archetypeOverlay"
         } ]
       } ],
       "attributeTuples" : [ ]
