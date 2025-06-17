@@ -22,7 +22,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "db5efa92a4b998f2a09c3456445ecbd5",
+      "MD5-CAM-1.0.1" : "20debc822fcc9458769b761a9a9a34d0",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5",
       "sem_ver" : "7.0.1",
       "build_uid" : ""
@@ -3586,6 +3586,13 @@
             "text" : "Problem/diagnose detaljer",
             "description" : "Brukes for å registrere detaljer til problem/diagnose blant annet ICD koder.",
             "comment" : "Benyttes for å sette ICD10 koder for problemer hvor det er mer aktuelt å bruke overordnet kode på problem/diagnosenavn. "
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Diagnosenavn",
+            "description" : "Navnet på problem/diagnose",
+            "comment" : "Benyttes for ICD-10 koding av primærtumor. "
           }
         }
       },
