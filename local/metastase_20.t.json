@@ -169,7 +169,7 @@
           "codeString" : "nb"
         },
         "purpose" : "Datamodell for metastaser. Modellen dekker alle former for sekundærtumor, dvs. både regionale lymfeknutemetastaser og øvrige metastaser. ",
-        "keywords" : [ ],
+        "keywords" : [ "SJK, metastaser" ],
         "originalResourceUri" : { },
         "otherDetails" : { }
       },
