@@ -11,7 +11,7 @@
     },
     "otherContributors" : [ "Liv Laugen" ],
     "lifecycleState" : {
-      "codeString" : "unmanaged"
+      "codeString" : "release_candidate"
     },
     "ipAcknowledgements" : { },
     "references" : { },
@@ -833,7 +833,7 @@
     }
   },
   "adlVersion" : "1.4",
-  "buildUid" : "fbb29be4-2ca0-323d-98a5-625ed3970135",
+  "buildUid" : "53dd7fd1-320f-3c86-8f20-e8fef30fd2de",
   "rmName" : "openehr",
   "rmRelease" : "1.1.0",
   "generated" : true,
