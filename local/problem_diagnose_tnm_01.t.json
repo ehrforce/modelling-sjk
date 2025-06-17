@@ -22,7 +22,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "eda2283eb9e671042b2cc6171e9c718d",
+      "MD5-CAM-1.0.1" : "db5efa92a4b998f2a09c3456445ecbd5",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5",
       "sem_ver" : "7.0.1",
       "build_uid" : ""
@@ -7326,8 +7326,8 @@
           },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Klinisk grunnlag",
+            "code" : "at0000.1",
+            "text" : "Utredningsmetode",
             "description" : "Spesifisering av utredningsmetode for primærtumor"
           },
           "at0001.1" : {
