@@ -22,7 +22,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "f0eab6ca92aeda0f28f32e6a1bcbc584",
+      "MD5-CAM-1.0.1" : "eda2283eb9e671042b2cc6171e9c718d",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5",
       "sem_ver" : "7.0.1",
       "build_uid" : ""
@@ -7290,6 +7290,12 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
           "nodeId" : "at0023.1",
           "attributes" : [ ],
@@ -7323,6 +7329,12 @@
             "code" : "at0000",
             "text" : "Klinisk grunnlag",
             "description" : "Spesifisering av utredningsmetode for primærtumor"
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Spesifiser annen metode",
+            "description" : "Fritekstlig beskrivelse av typen undersøkelse eller utredning som er utført for å komme fram til grunnlaget."
           }
         },
         "de" : {
