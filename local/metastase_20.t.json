@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "0c36760a3072740b5504b1f519d04dcf",
+      "MD5-CAM-1.0.1" : "e81f8c081de8a51a91b263482cb07b15",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5",
       "sem_ver" : "1.0.0",
       "build_uid" : ""
@@ -334,8 +334,88 @@
                     "selectedTerminologies" : [ "SNOMED-CT" ],
                     "includedExternalTerminologyCodes" : [ {
                       "terminologyId" : "SNOMED-CT",
-                      "code" : "399409002",
-                      "value" : "Fjernmetastase"
+                      "code" : "39607008",
+                      "value" : "Lunge"
+                    }, {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "113192009",
+                      "value" : "Skjelett"
+                    }, {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "21483005",
+                      "value" : "CNS (sentralnervesystemet)"
+                    }, {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "59441001",
+                      "value" : "Lymfeknuter"
+                    }, {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "68171009",
+                      "value" : "Aksillær lymfeknute"
+                    }, {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "10200004",
+                      "value" : "Lever"
+                    }, {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "87784001",
+                      "value" : "Bløtvev"
+                    }, {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "82849001",
+                      "value" : "Retroperitoneum"
+                    }, {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "15425007",
+                      "value" : "Peritoneum"
+                    }, {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "33840008",
+                      "value" : "Periosteum"
+                    }, {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "699602007",
+                      "value" : "Abdominale organer annet enn lever"
+                    }, {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "12738006",
+                      "value" : "Hjerne"
+                    }, {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "14016003",
+                      "value" : "Benmarg"
+                    }, {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "12738006",
+                      "value" : "Hjerne"
+                    }, {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "39937001",
+                      "value" : "Hud"
+                    }, {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "71616004",
+                      "value" : "Muskulatur"
+                    }, {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "3120008",
+                      "value" : "Pleura"
+                    }, {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "113276009",
+                      "value" : "Tarm"
+                    }, {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "69695003",
+                      "value" : "Magesekk"
+                    }, {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "431938005",
+                      "value" : "Urinveier"
+                    }, {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "74964007",
+                      "value" : "Annet"
                     } ]
                   } ]
                 } ],
@@ -360,9 +440,17 @@
           }, {
             "@type" : "C_COMPLEX_OBJECT",
             "rmTypeName" : "ELEMENT",
-            "occurrences" : "0..0",
             "nodeId" : "at0003.1",
-            "attributes" : [ ],
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_DATE_TIME",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
             "attributeTuples" : [ ]
           }, {
             "@type" : "C_COMPLEX_OBJECT",
@@ -431,7 +519,6 @@
           }, {
             "@type" : "C_COMPLEX_OBJECT",
             "rmTypeName" : "ELEMENT",
-            "occurrences" : "0..0",
             "nodeId" : "at0073.1",
             "attributes" : [ {
               "@type" : "C_ATTRIBUTE",
@@ -444,19 +531,15 @@
                   "rmAttributeName" : "defining_code",
                   "children" : [ {
                     "@type" : "C_TERMINOLOGY_CODE",
-                    "rmTypeName" : "CODE_PHRASE",
+                    "rmTypeName" : "TERMINOLOGY_CODE",
                     "occurrences" : "1..1",
                     "terminologyId" : {
                       "value" : "local"
                     },
-                    "constraint" : [ "at0074", "at0075", "at0076" ]
+                    "constraint" : [ "ac0.2" ],
+                    "selectedTerminologies" : [ ]
                   } ]
                 } ],
-                "attributeTuples" : [ ]
-              }, {
-                "@type" : "C_COMPLEX_OBJECT",
-                "rmTypeName" : "DV_TEXT",
-                "attributes" : [ ],
                 "attributeTuples" : [ ]
               } ]
             } ],
@@ -471,20 +554,20 @@
           }, {
             "@type" : "C_ARCHETYPE_ROOT",
             "rmTypeName" : "CLUSTER",
-            "occurrences" : "0..*",
-            "nodeId" : "at0043.1",
+            "occurrences" : "0..0",
+            "nodeId" : "at0043.2",
             "attributes" : [ ],
             "attributeTuples" : [ ],
-            "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-clinical_evidence-001.v1",
+            "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-anatomical_location-001.v1",
             "referenceType" : "archetypeOverlay"
           }, {
             "@type" : "C_ARCHETYPE_ROOT",
             "rmTypeName" : "CLUSTER",
             "occurrences" : "0..*",
-            "nodeId" : "at0043.2",
+            "nodeId" : "at0043.1",
             "attributes" : [ ],
             "attributeTuples" : [ ],
-            "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-anatomical_location-001.v1",
+            "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-clinical_evidence-001.v1",
             "referenceType" : "archetypeOverlay"
           }, {
             "@type" : "C_ARCHETYPE_ROOT",
@@ -520,6 +603,12 @@
           "text" : "Fjernmetastaser",
           "description" : "Identificación del problema o diagnóstico, por nombre.",
           "comment" : "Siempre que sea posible, es preferible codificar el nombre del problema o diagnóstico con una terminología."
+        },
+        "ac0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.2",
+          "description" : ""
         }
       },
       "es-ar" : {
@@ -536,6 +625,12 @@
           "text" : "Fjernmetastaser",
           "description" : "Identificación del problema o diagnóstico, por nombre.",
           "comment" : "Se prefiere la codificación del nombre del problema o diagnóstico mediante una terminología cuando esto sea posible."
+        },
+        "ac0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.2",
+          "description" : ""
         }
       },
       "de" : {
@@ -552,6 +647,12 @@
           "text" : "Fjernmetastaser",
           "description" : "Namentliche Identifikation des Problems oder der Diagnose.",
           "comment" : "Wo möglich, ist die Kodierung des Problems oder der Diagnose über eine Terminologie zu bevorzugen."
+        },
+        "ac0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.2",
+          "description" : ""
         }
       },
       "en" : {
@@ -568,6 +669,12 @@
           "text" : "Fjernmetastaser",
           "description" : "Identification of the problem or diagnosis, by name.",
           "comment" : "Coding of the name of the problem or diagnosis with a terminology is preferred, where possible."
+        },
+        "ac0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.2",
+          "description" : ""
         }
       },
       "ar-sy" : {
@@ -584,6 +691,12 @@
           "text" : "Fjernmetastaser",
           "description" : "*Identification of the problem or diagnosis, by name.(en)",
           "comment" : "*Coding of the name of the problem or diagnosis with a terminology is preferred, where possible.(en)"
+        },
+        "ac0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.2",
+          "description" : ""
         }
       },
       "pt-br" : {
@@ -600,6 +713,12 @@
           "text" : "Fjernmetastaser",
           "description" : "Identificação do problema ou diagnóstico, por nome.",
           "comment" : "Quando possível, é preferível usar a codificação do nome do problema ou diagnóstico com uma terminologia."
+        },
+        "ac0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.2",
+          "description" : ""
         }
       },
       "nb" : {
@@ -630,6 +749,12 @@
           "text" : "Anatomisk lokalisering",
           "description" : "Angir at fjernmestastase er tilstede. ",
           "comment" : "Klassifiserer fjernmetastase med SNOMED-CT koden  399409002 | Distant metastasis present (finding) |\n\nDen er fast for alle fjernmetastase oppføringer for å klassifisere problemet til å omhandle fjernmestastase. \n\nFeltet vil være skjult for bruker. "
+        },
+        "ac0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.2",
+          "description" : ""
         }
       },
       "sv" : {
@@ -646,6 +771,12 @@
           "text" : "Fjernmetastaser",
           "description" : "Identifiering av problemet eller diagnosen efter namn.",
           "comment" : "Kodning av namnet på problemet eller diagnosen med en terminologi är att föredra, om det är tillämpligt."
+        },
+        "ac0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.2",
+          "description" : ""
         }
       },
       "ko" : {
@@ -662,6 +793,12 @@
           "text" : "Fjernmetastaser",
           "description" : "명칭으로 문제 또는 진단의 식별.",
           "comment" : "가능하다면, 용어체계를 통한 문제 또는 진단의 명칭을 코딩하는 것이 좋음."
+        },
+        "ac0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.2",
+          "description" : ""
         }
       },
       "fi" : {
@@ -678,6 +815,12 @@
           "text" : "Fjernmetastaser",
           "description" : "Ongelman tai diagnoosin tunnistaminen nimellä.",
           "comment" : "*Coding of the name of the problem or diagnosis with a terminology is preferred, where possible.(en)"
+        },
+        "ac0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.2",
+          "description" : ""
         }
       },
       "it" : {
@@ -694,6 +837,12 @@
           "text" : "Fjernmetastaser",
           "description" : "Nome/identificativo del problema o della diagnosi.",
           "comment" : "Si preferisce, ove possibile, la codifica del problema o diagnosi con una terminologia."
+        },
+        "ac0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.2",
+          "description" : ""
         }
       },
       "nl" : {
@@ -710,6 +859,12 @@
           "text" : "Fjernmetastaser",
           "description" : "Identificatie van het probleem of de diagnose bij naam.\r\n                            ",
           "comment" : "*Coding of the name of the problem or diagnosis with a terminology is preferred, where possible.(en)"
+        },
+        "ac0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.2",
+          "description" : ""
         }
       },
       "zh" : {
@@ -726,6 +881,12 @@
           "text" : "Fjernmetastaser",
           "description" : "*Identification of the problem or diagnosis, by name.(en)",
           "comment" : "*Coding of the name of the problem or diagnosis with a terminology is preferred, where possible.(en)"
+        },
+        "ac0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.2",
+          "description" : ""
         }
       },
       "ca" : {
@@ -742,13 +903,37 @@
           "text" : "Fjernmetastaser",
           "description" : "Identificació del problema o diagnòstic, pel nom.",
           "comment" : "*Coding of the name of the problem or diagnosis with a terminology is preferred, where possible.(en)"
+        },
+        "ac0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.2",
+          "description" : ""
         }
       },
-      "zh-cn" : { }
+      "zh-cn" : {
+        "ac0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.2",
+          "description" : ""
+        }
+      }
     },
     "termBindings" : { },
     "terminologyExtracts" : { },
-    "valueSets" : { }
+    "valueSets" : {
+      "ac0.1" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.1",
+        "members" : [ "at0074", "at0075", "at0076" ]
+      },
+      "ac0.2" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.2",
+        "members" : [ "at0074", "at0075", "at0076" ]
+      }
+    }
   },
   "adlVersion" : "1.4",
   "buildUid" : "f6840141-29fd-35ac-9909-a36dd1fc9197",
