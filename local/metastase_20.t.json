@@ -22,7 +22,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "1a25359546d64ef5aa2a1806c4db783a",
+      "MD5-CAM-1.0.1" : "addabd793f174ec98f915cf7df9ca920",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5",
       "sem_ver" : "1.0.0",
       "build_uid" : ""
@@ -448,16 +448,7 @@
             "@type" : "C_COMPLEX_OBJECT",
             "rmTypeName" : "ELEMENT",
             "nodeId" : "at0003.1",
-            "attributes" : [ {
-              "@type" : "C_ATTRIBUTE",
-              "rmAttributeName" : "value",
-              "children" : [ {
-                "@type" : "C_COMPLEX_OBJECT",
-                "rmTypeName" : "DV_DATE_TIME",
-                "attributes" : [ ],
-                "attributeTuples" : [ ]
-              } ]
-            } ],
+            "attributes" : [ ],
             "attributeTuples" : [ ]
           }, {
             "@type" : "C_COMPLEX_OBJECT",
@@ -2084,7 +2075,22 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "3838F1F72D72B92D05C24EBA84A50482"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "Angir detaljert informasjon som supplement til arketypen probelm/diagnose.",
+          "keywords" : [ ],
+          "use" : "Angir detaljert informasjon som supplement til arketypen problem/diagnose. Kan benyttes for å sette spesifikke medisinske koder (terminologier) f.eks. ICD, SnomedCT.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.problem_diagnosis_dips.v1",
     "differential" : true,
