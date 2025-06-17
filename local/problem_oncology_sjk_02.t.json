@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "476215a7f64c76b58d2f111f5978927b",
+      "MD5-CAM-1.0.1" : "79988236d4c4a278ab8253c0aee9f60e",
       "PARENT:MD5-CAM-1.0.1" : "d8a487416523ad110a45b56a105de768",
       "sem_ver" : "0.1.0",
       "build_uid" : ""
@@ -161,7 +161,8 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Metastaser",
-            "description" : "Inndeling for å gruppere metastaser som registreres. "
+            "description" : "Inndeling for å gruppere metastaser som registreres. ",
+            "comment" : "Det er nå innført ett nivå for metastaser. Denne inndelingen er designet som felles datamodell for sekundærtumor (spredning/metastaser). \n\nDersom det er behov for enkelte kreftformer kan det splittes opp til spesifikk template for regionale lymfeknutemetastaser og øvrige metastaser. "
           }
         }
       },
