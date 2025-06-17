@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "610bb22716677eaaa2339b348fda9233",
+      "MD5-CAM-1.0.1" : "1a25359546d64ef5aa2a1806c4db783a",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5",
       "sem_ver" : "1.0.0",
       "build_uid" : ""
@@ -1820,6 +1820,10 @@
                     "terminologyId" : "SNOMED-CT",
                     "code" : "128462008",
                     "value" : "Metastatic malignant neoplasm (disorder)"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "399374009",
+                    "value" : "Regional lymph node metastasis present (finding)"
                   } ]
                 } ]
               } ],
