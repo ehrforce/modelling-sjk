@@ -22,7 +22,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "92b8d4e10415e48ac5129274877c7d91",
+      "MD5-CAM-1.0.1" : "f0eab6ca92aeda0f28f32e6a1bcbc584",
       "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5",
       "sem_ver" : "7.0.1",
       "build_uid" : ""
@@ -7039,6 +7039,10 @@
                   "selectedTerminologies" : [ "SNOMED-CT" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
+                    "code" : "55342001",
+                    "value" : "Neoplastisk sykdom"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "128462008",
                     "value" : "Metastatic malignant neoplasm (disorder)"
                   }, {
@@ -7307,6 +7311,13 @@
           }
         },
         "nb" : {
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "Grunnlag",
+            "description" : "Identifisering av en forekomst av et klinisk grunnlag, enten ved navn eller type, som et enkelt resultat eller en gruppe av resultater.",
+            "comment" : "Settes fast til neplastisk sykdom for primærtumor, men det er jo et spørsmål om denne er relevant å  ha med "
+          },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000",
