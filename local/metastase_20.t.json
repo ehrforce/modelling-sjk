@@ -4,7 +4,10 @@
   "description" : {
     "@type" : "RESOURCE_DESCRIPTION",
     "originalAuthor" : {
-      "date" : "2025-04-29"
+      "date" : "2025-06-17",
+      "name" : "Bjørn Næss",
+      "organisation" : "DIPS AS",
+      "email" : "bna@dips.no"
     },
     "otherContributors" : [ ],
     "lifecycleState" : {
@@ -165,6 +168,7 @@
           },
           "codeString" : "nb"
         },
+        "purpose" : "Datamodell for metastaser. Modellen dekker alle former for sekundærtumor, dvs. både regionale lymfeknutemetastaser og øvrige metastaser. ",
         "keywords" : [ ],
         "originalResourceUri" : { },
         "otherDetails" : { }
