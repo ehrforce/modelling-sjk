@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "60ce13cc30a670a9a4acfb4c4af83d02",
+      "MD5-CAM-1.0.1" : "8fd9a934b3e3a04993aa557160eaac51",
       "PARENT:MD5-CAM-1.0.1" : "9D358EB1048EA1401802C3E1FDFB9A29",
       "sem_ver" : "0.2.0",
       "build_uid" : ""
@@ -1984,32 +1984,32 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "local_terms"
+                        "value" : "SNOMED-CT"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "local_terms" ],
+                      "selectedTerminologies" : [ "SNOMED-CT" ],
                       "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "SNOMED-CT",
                         "code" : "65801008",
                         "value" : "Eksisjon (reseksjon)"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "SNOMED-CT",
                         "code" : "65854006",
                         "value" : "Reeksisjon (ny utskjæring)"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "SNOMED-CT",
                         "code" : "81723002",
                         "value" : "Amputasjon"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "SNOMED-CT",
                         "code" : "68688001",
                         "value" : "Curettage"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "SNOMED-CT",
                         "code" : "118635009",
                         "value" : "Revisjon (gjentakelse av tidligere prosedyre for å korrigere eller forbedre resultat)"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "SNOMED-CT",
                         "code" : "74964007",
                         "value" : "Annet"
                       } ]
@@ -5154,36 +5154,20 @@
                         "value" : "Radioisotope/systemisk radionuklidebehandling - Stråle (intern)"
                       }, {
                         "terminologyId" : "SNOMED-CT",
-                        "code" : "WEOC",
+                        "code" : "113117004",
                         "value" : "Partikkelstråleterapi (karbon eller proton)"
                       }, {
                         "terminologyId" : "SNOMED-CT",
-                        "code" : "WEOC10",
+                        "code" : "1156505006",
                         "value" : "Karbonterapi"
                       }, {
                         "terminologyId" : "SNOMED-CT",
-                        "code" : "WEOC00",
-                        "value" : "Protonterapi (NKPK)"
-                      }, {
-                        "terminologyId" : "SNOMED-CT",
-                        "code" : "WEOA",
+                        "code" : "33195004",
                         "value" : "Ekstern stråleterapi"
                       }, {
                         "terminologyId" : "SNOMED-CT",
-                        "code" : "WEOB",
-                        "value" : "Brakyterapi"
-                      }, {
-                        "terminologyId" : "SNOMED-CT",
-                        "code" : "WE",
-                        "value" : "Stråleterapi"
-                      }, {
-                        "terminologyId" : "SNOMED-CT",
-                        "code" : "113117004",
-                        "value" : "External beam radiation therapy particulate radiation (procedure)"
-                      }, {
-                        "terminologyId" : "SNOMED-CT",
-                        "code" : "1156505006",
-                        "value" : "External beam radiation therapy using carbon ions (procedure)"
+                        "code" : "1287742003",
+                        "value" : "Stråleterapi (alle typer)"
                       } ]
                     } ]
                   } ],
