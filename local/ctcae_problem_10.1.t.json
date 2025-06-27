@@ -1,0 +1,1835 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "c5ad3651-8ac8-4b80-9224-0a45f76ed53d",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "date" : "2023-04-22",
+      "name" : "Bjørn Næss",
+      "organisation" : "Felles kreftjournal",
+      "email" : "bna@dips.no"
+    },
+    "otherContributors" : [ "Liv Laugen, OUS" ],
+    "lifecycleState" : {
+      "codeString" : "release_candidate"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "licence" : "This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.",
+      "custodian_organisation" : "openEHR Foundation",
+      "original_namespace" : "org.openehr",
+      "original_publisher" : "openEHR Foundation",
+      "custodian_namespace" : "org.openehr",
+      "MD5-CAM-1.0.1" : "ef57301dfca3bd6aa79c27fda183728c",
+      "PARENT:MD5-CAM-1.0.1" : "F3BA1A6809F466FF10AB50CC86EC78C5",
+      "sem_ver" : "0.2.0",
+      "build_uid" : ""
+    },
+    "details" : {
+      "de" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "de"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "fi" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "fi"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "sv" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "sv"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "ko" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ko"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "pt-br" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "pt-br"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "en" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "en"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "ar-sy" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ar-sy"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "it" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "it"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "es" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "zh" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "zh"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "purpose" : "For å registrere bivirkninger i form av Common Terminology Criteria for Adverse Events (CTCAE) samt subjektiv hørselstap i forbindelse med prosjektet Strukturert Kreftjournal.",
+        "keywords" : [ "bivirkninger, CTCAE, hearing impairment, problemer" ],
+        "use" : "Brukes for å registrere bivirkninger i form av Common Terminology Criteria for Adverse Events (CTCAE), samt subjektiv hørselstap i forbindelse med prosjektet Strukturert Kreftjournal. \n\nSmåtemplatet kan benyttes utenfor Strukturert kreftjournal hvor det lagres data om bivirkninger vha. CTCAE.\n\nMERK: Subjektivt hørseltap er ikke dekket av CTCAE kodene og er derfor modellert inn som egen struktur. ",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "es-ar" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es-ar"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "nl" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nl"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "ca" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ca"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "zh-cn" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "zh-cn"
+        },
+        "purpose" : "旨在用于记录关于单个已明确的健康问题或诊断的详情。\r\n\r\n在临床文档记录的背景下，健康问题故意保持了宽松的预定适用范围，以便采集任何可能对个人健康产生任何程度不利影响的真实或所感知到的担忧/关注事项（concern）。健康问题可能是由个人（患者本人）、[非正规]照护人员或医疗保健专业人员来确定。然而，诊断则另外还依据客观的临床评判标准进行了定义，且通常仅仅是由医疗保健专业人员来确定。",
+        "keywords" : [ "事宜", "事项", "情况", "健康状况", "病情", "问题", "诊断", "关注事项", "担心事项", "担忧", "损伤", "临床印象" ],
+        "use" : "旨在用于记录关于单个已明确的健康问题或诊断的详情。\r\n\r\n在实践当中，几乎不可能做出明确的定义来区分“问题”（problem）与“诊断”（diagnosis）——我们无法可靠地判断究竟何时才应该将问题视为诊断。当诊断或分类标准得以成功满足时，我们可以自信地将相应的情况/病情（condition）称为正式的诊断，但在满足此类的评判标准/条件之前，且存在可用的支持性证据之时，也可以有效合理地采用“诊断”一词。诊断标签所需支持性证据的数量并不容易定义，实际上很可能还会因情况而异。多年来，许多标准委员会一直在努力解决这个定义难题，但目前还没有明确的解决办法。\r\n\r\n对于利用本原始型的临床文档记录目的来说，在此会将问题与诊断视为统一的连续体系，且由问题到诊断，不断增加的细节水平和支持性证据通常会为“诊断”标签带来更大的权重。在本原始型当中，没有必要将情况/健康状况/病情归类为“问题”还是“诊断”。支持两者文档记录工作的数据需求完全相同，当证据变得可用之时，就需要额外的数据结构来支持收纳相应的证据。关于问题的例子包括：在没有关于肥胖的正式诊断的情况下，个人所表达的关于减肥的愿望；或者是与特定家庭成员的关系问题。关于正式诊断的示例包括拥有历史/病史信息、检查结果、组织病理学发现、放射医学发现支持并满足已知诊断标准所有要求的癌症。在实践当中，大多数的问题或诊断并不处于问题—诊断连续体系的两端，而是介于两者之间。\r\n\r\n本原始型可用于很多的上下文背景。例如，在临床就诊咨询/会诊期间对问题或临床诊断的记录；填写持续存在/更新的问题清单；或者是提供出院摘要文档之中总结性陈述。\r\n\r\n在实践当中，临床医务人员/临床医生会使用许多上下文特异性的限定词（context-specific qualifier），如过去/现在、主要/次要、现行有效/无效、入院/出院等等。上下文背景可以针对的是位置/场所、专业、服务节段（episode）或工作流，如果将此类的限定词长久存储在问题清单当中，或者是在原始上下文背景之外的文档当中加以共享，则可能会导致混淆/困惑甚至潜在的安全问题。可以单独对此类的限定词进行原始型化，并将其收纳在状态槽位'Status'之中，因为它们的用法在不同的场所环境下会有所不同。期望将此类的限定词/状态主要用于合适的上下文背景，而不是在没有清楚地了解潜在后果的情况下在相应的上下文背景之外共享。例如，一位临床医生的初步诊断可能是另一位专科医生的次要诊断；现行有效的问题可能会变为无效状态（反之亦然），而这种情况可能会影响临床决策支持（CDS）措施的安全使用。一般来说，应该在本地将这些状态应用于相应临床系统的上下文背景，而在实践当中，则应该由临床医务人员/临床医生来手动管理这些状态，以确保当前/过去、现行有效/无效或主要/次要的问题的列表在临床上是准确的。\r\n\r\n正如拉里·维德（Larry Weed）所描述的那样，在面向问题的病历（Problem Oriented Medical Record）当中，本原始型将会作为一种组件来使用。为了支持这种方法，需要开发其他原始型，以便将情况/健康状况/病情（condition）之类的临床概念表示为诊断的总体组织手段等。\r\n\r\n在某些情况下，可能会假定认为诊断的确定仅仅属于是医生的专长，但这一点并不是本原始型的意图。任何的医疗保健专业人员都可以利用本原始型来记录诊断。",
+        "misuse" : "并非旨在用于记录个人（患者本人）所描述的症状 - 对此，请采用群簇型症状原始型 CLUSTER.symptom 来记录，且通常会将后者放在观察型主观临床病史原始型 OBSERVATION.story 之中。\r\n\r\n并非旨在用于记录检查发现/所见 - 对此，请采用与检查相关的群簇型原始型系列，且通常会将后者嵌套在观察型检查原始型 OBSERVATION.exam 当中。\r\n\r\n并非旨在用于记录实验室检验结果或相关的诊断，如病理诊断 - 对此，请选用观察型实验室[检验]原始型系列之中合适的原始型。\r\n\r\n并非旨在用于记录成像检查结果或成像诊断 - 对此，请选用观察型成像/影像学原始型系列之中合适的原始型。\r\n\r\n并非旨在用于记录鉴别诊断（Differential Diagnosis） - 对此，请采用评价型鉴别诊断原始型 EVALUATION.differential_diagnosis。\r\n\r\n并非旨在用于记录就医/就诊原因（Reason for Encounter）或当前主诉（Present Complaint） - 对此，请采用评价型就医/就诊原因原始型 EVALUATION.reason_for_encounter。\r\n\r\n并非旨在用于记录操作[项目] - 对此，请采用行动型操作[项目]原始型 ACTION.procedure。\r\n\r\n并非旨在用于记录关于妊娠的详情 - 对此，请采用评价型妊娠【bf: 哺乳?】状态原始型 EVALUATION.pregnancy_bf_status 和评价型妊娠原始型 EVALUATION.pregnancy 以及相关的原始型。\r\n\r\n并非旨在用于记录关于健康风险或潜在问题的陈述 - 对此，请采用评价型健康风险原始型 EVALUATION.health_risk。\r\n\r\n并非旨在用于记录关于不良反应、过敏/变态反应或不耐的陈述 - 对此，请采用评价型不良反应原始型 EVALUATION.adverse_reaction。\r\n\r\n并非旨在用于明确记录关于并不存在（或否定存在）特定问题或诊断的情况，如“无已知问题或诊断”或“无已知糖尿病”。对此，请采用评价型除外问题/诊断原始型 EVALUATION.exclusion-problem_diagnosis 来表达关于排除特定问题或诊断的明确陈述。\r\n\r\n",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-EVALUATION.problem_diagnosis.v1",
+  "differential" : true,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-EVALUATION.problemdiagnosis.v1"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "EVALUATION",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "data",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ITEM_TREE",
+        "nodeId" : "at0001",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "items",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0002.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "occurrences" : "1..1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "rmTypeName" : "TERMINOLOGY_CODE",
+                    "occurrences" : "0..1",
+                    "terminologyId" : {
+                      "value" : "SNOMED-CT"
+                    },
+                    "constraint" : [ ],
+                    "selectedTerminologies" : [ "SNOMED-CT" ],
+                    "includedExternalTerminologyCodes" : [ {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "116224001",
+                      "value" : "Complication of procedure"
+                    } ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0079.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0009.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0012.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0078.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0077.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0003.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0005.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "rmTypeName" : "CODE_PHRASE",
+                    "occurrences" : "1..1",
+                    "terminologyId" : {
+                      "value" : "local"
+                    },
+                    "constraint" : [ "at0047", "at0048", "at0049" ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_TEXT",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0072.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0030.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0073.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "rmTypeName" : "CODE_PHRASE",
+                    "occurrences" : "1..1",
+                    "terminologyId" : {
+                      "value" : "local"
+                    },
+                    "constraint" : [ "at0074", "at0075", "at0076" ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_TEXT",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0069.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_ARCHETYPE_ROOT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..*",
+            "nodeId" : "at0043.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ],
+            "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-ctcae-001.v1",
+            "referenceType" : "archetypeOverlay"
+          }, {
+            "@type" : "C_ARCHETYPE_ROOT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..1",
+            "nodeId" : "at0043.2",
+            "attributes" : [ ],
+            "attributeTuples" : [ ],
+            "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-symptom_sign-001.v2",
+            "referenceType" : "archetypeOverlay"
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "es" : { },
+      "es-ar" : { },
+      "de" : { },
+      "en" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "CTCAE bivirkning",
+          "description" : "Details about a single identified health condition, injury, disability or any other issue which impacts on the physical, mental and/or social well-being of an individual.",
+          "comment" : "Clear delineation between the scope of a problem versus a diagnosis is not easy to achieve in practice. For the purposes of clinical documentation with this archetype, problem and diagnosis are regarded as a continuum, with increasing levels of detail and supportive evidence usually providing weight towards the label of 'diagnosis'."
+        }
+      },
+      "ar-sy" : { },
+      "pt-br" : { },
+      "nb" : {
+        "at0009.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0009.1",
+          "text" : "Overordnet beskrivelse av bivirkning/komplikasjon",
+          "description" : "Fritekstbeskrivelse av problemet eller diagnosen.",
+          "comment" : "Brukes til å gi bakgrunn og kontekst, inkludert utvikling, episoder eller forverringer, fremgang og alle andre relevante detaljer, om problemet eller diagnosen."
+        }
+      },
+      "sv" : { },
+      "ko" : { },
+      "fi" : { },
+      "it" : { },
+      "nl" : { },
+      "zh" : { },
+      "ca" : { },
+      "zh-cn" : { }
+    },
+    "termBindings" : { },
+    "terminologyExtracts" : { },
+    "valueSets" : { }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "6bd6a34a-d8b9-3567-bec2-af9b84301b2b",
+  "rmName" : "openehr",
+  "rmRelease" : "1.1.0",
+  "generated" : true,
+  "templateId" : "ctcae_problem_10.1",
+  "otherMetaData" : { },
+  "templateOverlays" : [ {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "3bd6f60f-08ef-420c-bd69-e05aeca94796",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "A7617F434767BA4FB95565EE2C02CEE5"
+      },
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "*To provide a framework for recording any unfavourable and unintended sign, symptom or disease temporally using the CTCAE terminology.\r\nTo provide a framework for recording a CTCAE classification. (en)",
+          "keywords" : [ "ctcae", "Symptom", "Krankheit", "unerwünscht", "Ereignis" ],
+          "use" : "*Use to provide a framework for recording a CTCAE classification, using terms from appropriate MedDRA terminology hierarchies.\r\n\r\nThis archetype is intended to be nested in the 'Specific details' SLOT within either the EVALUATION.problem_diagnosis or CLUSTER.symptom_sign archetypes, or other clinically relevant archetypes. (en)",
+          "misuse" : "*Not to be used for recording details about adverse events outside of the CTCAE classification. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "*To provide a framework for recording any unfavourable and unintended sign, symptom or disease temporally using the CTCAE terminology.\r\nTo provide a framework for recording a CTCAE classification. (en)",
+          "keywords" : [ "CTCAE", "biverkan", "biverkningar", "tecken", "symptom", "sjukdom", "cytostatika" ],
+          "use" : "*Use to provide a framework for recording a CTCAE classification, using terms from appropriate MedDRA terminology hierarchies.\r\n\r\nThis archetype is intended to be nested in the 'Specific details' SLOT within either the EVALUATION.problem_diagnosis or CLUSTER.symptom_sign archetypes, or other clinically relevant archetypes. (en)",
+          "misuse" : "*Not to be used for recording details about adverse events outside of the CTCAE classification. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "Et rammeverk for å registrere CTCAE-klassifisering.",
+          "keywords" : [ "ctcae", "sykdomstegn", "symptom", "sykdom", "utilsiktet", "ugunstig", "uønsket", "hendelse", "bivirkning", "toksisitet", "toxicity", "legemiddel", "kreft", "malignitet", "kjemoterapi", "stråling", "proton", "CTC", "senskade" ],
+          "use" : "Bruk som et rammeverk for å registrere CTCAE-klassifisering, ved å bruke koder fra hierarkiet av termer fra MedDRA-terminologien.\r\n\r\nDenne arketypen er tiltenkt å nøstes i CLUSTER.symptom_sign (Symptom/Sykdomstegn) eller EVALUATION.problem_diagnosis (Problem/diagnose) eller en annen klinisk relevant arketype.",
+          "misuse" : "Skal ikke brukes for å registrere uønskede hendelser utenom å klassifisere CTCAE.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To provide a framework for recording a CTCAE classification.",
+          "keywords" : [ "ctcae", "sign", "symptom", "disease", "adverse", "event" ],
+          "use" : "Use to provide a framework for recording a CTCAE classification, using terms from appropriate MedDRA terminology hierarchies.\r\n\r\nThis archetype is intended to be nested in the 'Specific details' SLOT within either the EVALUATION.problem_diagnosis or CLUSTER.symptom_sign archetypes, or other clinically relevant archetypes.",
+          "misuse" : "Not to be used for recording details about adverse events outside of the CTCAE classification.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-pt" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-pt"
+          },
+          "purpose" : "Providenciar uma estrutura para registar a classificação CTCAE.",
+          "keywords" : [ "ctcea", "sinal", "sintoma", "doença", "adverso", "evento" ],
+          "use" : "Usar para providenciar uma estrutura para registo da classificação CTCAE, utilizando termos da hierarquia de terminologia MedDRA apropriada.\r\n\r\nÉ pretendido que este arquétipo seja colocado na SLOT 'Specific details' do arquétipo EVALUATION.problem_diagnosis ou do CLUSTER.symptom_sign, ou noutros arquétipos clinicamente relevantes.",
+          "misuse" : "Não usar para registar detalhes de eventos adversos fora da classificação CTCAE.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.ctcae.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-ctcae-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "MEDRA"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "MEDRA" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "MEDRA",
+                    "code" : "1001",
+                    "value" : "Blood and lymphatic system disorders"
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0002.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "MEDRA"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "MEDRA" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "MEDRA",
+                    "code" : "X",
+                    "value" : "X"
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0020.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "CTCAETERM"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "CTCAETERM" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "CTCAETERM",
+                    "code" : "A",
+                    "value" : "A"
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0009.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "defaultValue" : {
+                "@type" : "DV_TEXT",
+                "value" : "CTCAE_5.0"
+              },
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "existence" : "0..1",
+                "children" : [ {
+                  "@type" : "C_STRING",
+                  "constraint" : [ "CTCAE_5.0" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "de" : {
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Terme",
+            "description" : "*The name of the sign, symptom or disease observed, recorded as a MedDRA Lowest Level Term (LLT). (en)",
+            "comment" : "*This element can be mapped to the corresponding MedDRA code. (en)"
+          },
+          "at0009.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009",
+            "text" : "CTCAE Version",
+            "description" : "Die verwendete Version der CTCAE-Terminologie."
+          },
+          "at0020.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0020",
+            "text" : "*Grade description (en)",
+            "description" : "*The observed term or phrase representing the severity of the  adverse event.  (en)",
+            "comment" : "*This element is a placeholder for the term or phrase associated with an identified grade. In most implementations it will be sourced from an external CTCAE knowledge base or resource at run-time. (en)"
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Common Terminology Criteria of Adverse Events (CTCAE)",
+            "description" : "*A framework for recording the CTCAE classification for an unfavourable and unintended sign, symptom or disease. (en)"
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "*Category (en)",
+            "description" : "*The MedDRA System Organ Class (SOC) category corresponding to the CTCAE 'Term' (LLT). (en)",
+            "comment" : "*This element identifies the anatomical or physiological system, aetiology or purpose. (en)"
+          }
+        },
+        "sv" : {
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Term",
+            "description" : "*The name of the sign, symptom or disease observed, recorded as a MedDRA Lowest Level Term (LLT). (en)",
+            "comment" : "*This element can be mapped to the corresponding MedDRA code. (en)"
+          },
+          "at0020.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0020",
+            "text" : "*Grade description (en)",
+            "description" : "*The observed term or phrase representing the severity of the  adverse event.  (en)",
+            "comment" : "*This element is a placeholder for the term or phrase associated with an identified grade. In most implementations it will be sourced from an external CTCAE knowledge base or resource at run-time. (en)"
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Common Terminology Criteria for Adverse Events (CTCAE)",
+            "description" : "*A framework for recording the CTCAE classification for an unfavourable and unintended sign, symptom or disease. (en)"
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "*Category (en)",
+            "description" : "*The MedDRA System Organ Class (SOC) category corresponding to the CTCAE 'Term' (LLT). (en)",
+            "comment" : "*This element identifies the anatomical or physiological system, aetiology or purpose. (en)"
+          }
+        },
+        "nb" : { },
+        "pt-pt" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "3136e0c7-5850-4a19-abb7-24742e3f657e",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Alina Rehberg",
+        "organisation" : "Medizinische Hochschule Hannover",
+        "email" : "rehberg.alina@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Erik Sundvall, Vebjørn Arntzen",
+        "organisation" : "Karolinska Institutet + Karolinska University Hospital, Region Stockholm + Linköping University, Oslo University Hospital",
+        "email" : "erik.sundvall@regionstockholm.se, varntzen@ous-hf.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Vebjørn Arntzen, John Tore Valand",
+        "organisation" : "Oslo University Hospital, Helse Bergen",
+        "email" : "varntzen@ous-hf.no, john.tore.valand@helse-vest-ikt.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-pt"
+      },
+      "author" : {
+        "name" : "Joao Caixeirinho",
+        "email" : "joaorafaelcaixeirinho@gmail.com"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "53dd1e58-9d92-443c-acd7-ea6eaba47b55",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "BE1FF729C2FD4185A0A51FDE33A48A52"
+      },
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Darstellung von Details über eine einzelne Episode eines berichteten Symptoms oder Krankheitsanzeichens einschließlich des Kontexts. Details zu früheren Episoden sollen, wenn angemessen, nicht aufgeführt werden.",
+          "keywords" : [ "Beschwerde", "Symptom", "Störung", "Problem", "vorlegende Beschwerde", "vorlegendes Symptom", "Zeichen", "Anzeichen", "Krankheitsanzeichen" ],
+          "use" : "Zu Verwenden, um Details über eine einzelne Episode eines Symptoms oder eines berichteten Krankheitsanzeichens einer Person zu dokumentieren, wie es von der Person, dem Elternteil, dem Betreuer oder einer anderen Partei berichtet wurde. Es kann von einem Arzt als Teil einer Krankengeschichte dokumentiert werden, oder wie es dem Arzt berichtet wurde/wie er es beobachtet hat, oder als Teil eines selbst aufgezeichneten klinischen Fragebogens oder einer persönlichen Gesundheitsakte. Eine vollständige Kranken- oder Patientengeschichet kann mehrere Episoden eines identifizierten Symptoms/Krankheitsanzeichens, mit variierendem Detaillierungsgrad, sowie mehrere Symptome/Krankheitsanzeichen beinhalten.\r\n\r\nDieser Archetyp wurde entwickelt, um das positive Vorhandensein des Symptoms oder Krankheitsanzeichens als Teil der Anamneseerhebung mit OBSERVATION.story oder in Verbindung mit einer positiven Reaktion auf OBSERVATION.symptom_sign_screening darzustellen.\r\n\r\nIm reinsten Sinne sind Symptome subjektive Beobachtungen einer körperlichen oder geistigen Störung und Krankheitsanzeichen sind objektive Beobachtungen dieser Störung, wie sie von einer Person erlebt und dem Dokumentierenden von derselben Person oder einer anderen Partei berichtet werden. Aus dieser Logik folgt, dass zwei Archetypen benötigt werden, um die Krankengeschichte aufzuzeichnen - einen für berichtete Symptome und einen weiteren für berichtete Krankheitsanzeichen. Für die Praxis ist dies ungeeignet, da es die Eingabe klinischer Daten in eines der beiden Modelle erfordert, was den Modellierern und denen, die die Daten eingeben, erheblichen Mehraufwand verursacht. Darüber hinaus gibt es oft Überschneidungen von klinischen Konzepten - z.B. ist vorangegangenes Erbrechen oder sind Blutungen als Symptom oder berichtetes Krankheitsanzeichen zu kategorisieren? Als Antwort darauf wurde dieser Archetyp speziell entwickelt, um ein einziges Informationsmodell zu erproben, das es ermöglicht, das gesamte Spektrum von klar identifizierbaren Symptomen bis hin zu berichteten Krankheitsanzeichen bei der Dokumentation einer Krankengeschichte zu erfassen.\r\n\r\nDieser Archetyp wurde als generisches Muster für alle Symptome und Krankheitsanzeichen entwickelt. Der Slot \"Spezifische Details\" kann verwendet werden, um den Archetyp um zusätzliche, spezifische Datenelemente für komplexere Symptome oder Krankheitsanzeichen zu erweitern. \r\n\r\nDieser Archetyp wurde speziell für die Verwendung im Slot \"Strukturiertes Detail\" innerhalb des Archetyps OBSERVATION.story entwickelt, kann aber auch in anderen OBSERVATION- oder CLUSTER-Archetypen und in den Slots \"Assoziierte Symptome/Krankheitsanzeichen\" oder \"Vorangegangene Episoden\" in anderen Instanzen dieses CLUSTER.symptom_sign Archetyps verwendet werden.",
+          "misuse" : "Den Archetyp nicht verwenden, um Antworten auf Screening-Fragebögen über das Vorhandensein oder Nichtvorhandensein bestimmter Symptome abzufragen – verwenden Sie für diesen Zweck den Archetyp OBSERVATION.symptom_sign_screening. Dieser CLUSTER.symptom_sign kann jedoch im SLOT „Screening-Details“ im Archetyp OBSERVATION.symptom_sign_screening verschachtelt werden, wenn es notwendig ist, den Fragebogen zu erweitern, indem Details zu Symptomen oder Anzeichen aufgezeichnet werden.\r\n\r\nDen Archetyp nicht verwenden, um darzustellen, dass ein Symptom oder Anzeichen explizit als nicht vorhanden gemeldet wurde – verwenden Sie CLUSTER.exclusion_symptom_sign mit Bedacht für bestimmte Zwecke, bei denen der Overhead der Aufzeichnung auf diese Weise die zusätzliche Komplexität rechtfertigt.\r\n\r\nNicht zur Erfassung objektiver Befunde im Rahmen einer körperlichen Untersuchung verwenden - verwenden Sie zu diesem Zweck OBSERVATION.exam und mit Untersuchung verwandte CLUSTER-Archetypen.\r\n\r\nNicht für Diagnosen und Probleme, die Teil einer bestehenden Problemliste sind, verwenden - verwenden Sie EVALUATION.problem_diagnosis.\r\n\r\nNicht zur Darstellung einer formalen und wiederholbaren Schweregradskala wie VAS oder NRS verwenden. Verwenden Sie zu diesem Zweck geeignete OBSERVATION-Archetypen.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Att registrera ett uppvisat symtom eller tecken ifrån en enskild episod, inklusive kontext, men inte detaljer om tidigare episoder, om det är tillämpligt.",
+          "keywords" : [ "besvär", "symtom", "symptom", "störning", "besvär", "problem", "obehag", "uppvisar besvär", "uppvisar symtom", "tecken" ],
+          "use" : "*Use to record details about a single episode of a symptom or reported sign in an individual, as reported by the individual, parent, care-giver or other party. It may be recorded by a clinician as part of a clinical history record as reported to them, observed by the clinician or self-recorded as part of a clinical questionnaire or personal health record. A complete clinical history or patient story may include varying level of details about multiple episodes of an identified symptom or reported sign, as well as multiple symptoms/signs.\r\n\r\nThis archetype has been designed to record the positive presence of the symptom or sign as part of history taking using OBSERVATION.story, or in conjunction with a positive response to OBSERVATION.symptom_sign_screening.\r\n\r\nIn the purest sense, symptoms are subjective observations of a physical or mental disturbance and signs are objective observations of the same, as experienced by an individual and reported to the history taker by the same individual or another party. From this logic it follows that we will need two archetypes to record clinical history - one for reported symptoms and another for reported signs. In reality this is impractical as it will require clinical data entry into either one of these models which adds signficant overheads to modellers and those entering data. In addition, there is often overlap in clinical concepts - for example, is previous vomiting or bleeding to be categorised as a symptom or reported sign? In response, this archetype has been specifically designed to provide a single information model that allows for recording of the entire continuum between clearly identifiable symptoms and reported signs.\r\n\r\nThis archetype has been intended to be used as a generic pattern for all symptoms and reported signs. The 'Specific details' SLOT can be used to extend the archetype to include additional, specific data elements for more complex symptoms or signs. \r\n\r\nThis archetype has been specifically designed to be used in the 'Structured detail' SLOT within the OBSERVATION.story archetype, but can also be used within other OBSERVATION or CLUSTER archetypes and in the 'Associated symptom/sign' or 'Previous episode' SLOT within other instances of this CLUSTER.symptom_sign archetype. (en)",
+          "misuse" : "*Not to be used to record screening questionnaire responses about the presence or absence of specific symptoms - use the OBSERVATION.symptom_sign_screening archetype for this purpose. However, this CLUSTER.symptom_sign archetype may be nested within the 'Screening details' SLOT in the OBSERVATION.symptom_sign_screening archetype if it is necessary to extend the questionnaire by recording details about symptom or sign.\r\n\r\nNot to be used to record that a symptom or sign was explicitly reported as not present - use CLUSTER.exclusion_symptom_sign carefully for specific purposes where the overheads of recording in this way warrant the additional complexity.\r\n\r\nNot to be used for recording objective findings as part of a physical examination - use OBSERVATION.exam and related examination CLUSTER archetypes for this purpose.\r\n\r\nNot to be used for diagnoses and problems that form part of a persisting Problem List - use EVALUATION.problem_diagnosis.\r\n\r\nNot to be used to record a formal and repeatable severity scale such as VAS or NRS. Use appropriate OBSERVATION archetypes for this purpose. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fi" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fi"
+          },
+          "purpose" : "*To record details about a single episode of a reported symptom or sign including context, but not details, of previous episodes if appropriate.(en)",
+          "keywords" : [ "*complaint(en)", "*symptom(en)", "*disturbance(en)", "*problem(en)", "*discomfort(en)", "*presenting complaint(en)", "*presenting symptom(en)", "*sign(en)" ],
+          "use" : "*Use to record details about a single episode of a symptom or reported sign in an individual, as reported by the individual, parent, care-giver or other party. It may be recorded by a clinician as part of a clinical history record as reported to them, observed by the clinician or self-recorded as part of a clinical questionnaire or personal health record. A complete clinical history or patient story may include varying level of details about multiple episodes of an identified symptom or reported sign, as well as multiple symptoms/signs.\r\n\r\nThis archetype has been designed to record the positive presence of the symptom or sign as part of history taking using OBSERVATION.story, or in conjunction with a positive response to OBSERVATION.symptom_sign_screening.\r\n\r\nIn the purest sense, symptoms are subjective observations of a physical or mental disturbance and signs are objective observations of the same, as experienced by an individual and reported to the history taker by the same individual or another party. From this logic it follows that we will need two archetypes to record clinical history - one for reported symptoms and another for reported signs. In reality this is impractical as it will require clinical data entry into either one of these models which adds signficant overheads to modellers and those entering data. In addition, there is often overlap in clinical concepts - for example, is previous vomiting or bleeding to be categorised as a symptom or reported sign? In response, this archetype has been specifically designed to provide a single information model that allows for recording of the entire continuum between clearly identifiable symptoms and reported signs.\r\n\r\nThis archetype has been intended to be used as a generic pattern for all symptoms and reported signs. The 'Specific details' SLOT can be used to extend the archetype to include additional, specific data elements for more complex symptoms or signs. \r\n\r\nThis archetype has been specifically designed to be used in the 'Structured detail' SLOT within the OBSERVATION.story archetype, but can also be used within other OBSERVATION or CLUSTER archetypes and in the 'Associated symptom/sign' or 'Previous episode' SLOT within other instances of this CLUSTER.symptom_sign archetype. (en)",
+          "misuse" : "*Not to be used to record screening questionnaire responses about the presence or absence of specific symptoms - use the OBSERVATION.symptom_sign_screening archetype for this purpose. However, this CLUSTER.symptom_sign archetype may be nested within the 'Screening details' SLOT in the OBSERVATION.symptom_sign_screening archetype if it is necessary to extend the questionnaire by recording details about symptom or sign.\r\n\r\nNot to be used to record that a symptom or sign was explicitly reported as not present - use CLUSTER.exclusion_symptom_sign carefully for specific purposes where the overheads of recording in this way warrant the additional complexity.\r\n\r\nNot to be used for recording objective findings as part of a physical examination - use OBSERVATION.exam and related examination CLUSTER archetypes for this purpose.\r\n\r\nNot to be used for diagnoses and problems that form part of a persisting Problem List - use EVALUATION.problem_diagnosis.\r\n\r\nNot to be used to record a formal and repeatable severity scale such as VAS or NRS. Use appropriate OBSERVATION archetypes for this purpose. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere detaljer om en enkeltepisode av et rapportert symptom eller sykdomstegn. Dette kan omfatte kontekst, men ikke detaljer, om tidligere episoder av symptomet/sykdomstegnet.",
+          "keywords" : [ "lidelse", "plage", "problem", "ubehag", "symptom", "sykdomstegn", "lyte", "skavank" ],
+          "use" : "\t\r\nFor å registrere detaljer om en enkeltepisode av et rapportert symptom eller sykdomstegn hos et individ, som redegjort av personen selv, foreldre, omsorgsperson eller andre parter. Registrering kan skje i forbindelse med opptak av anamnese, eller som en selvregistrering som en del av et klinisk spørreskjema eller personlig journal. En fullstendig klinisk anamnese eller pasientanamnese kan inneholde beskrivelser med ulikt detaljnivå om flere episoder knyttet til samme symptom eller sykdomstegn, og vil også kunne inneholde flere ulike symptomer eller sykdomstegn.\r\n\r\nDenne arketypen er laget for å registrere positiv tilstedeværelse av et symptom eller sykdomstegn som en del av anamneseopptak ved å bruke OBSERVATION.story-arketypen, eller i sammenheng med et positivt svar i arketypen OBSERVATION.symptom_sign_screening.\r\n\r\nI egentlig forstand er symptomer subjektive opplevelser av en fysisk eller mental forstyrrelse mens sykdomstegn er objektive observasjoner av det samme, som er erfart av et individ og rapportert til en kliniker av individet eller av andre. Fra denne logikken følger at det burde være to arketyper til å registrere klinisk anamnese; en for rapporterte symptomer og en for rapporterte sykdomstegn. I virkeligheten er dette upraktisk og vil kreve registrering av kliniske data i enten den ene eller den andre av disse modellene. I praksis vil dette øke kompleksitet og tidsbruk knyttet til modellering og registrering av data. I tillegg overlapper ofte de kliniske konseptene, for eksempel: Vil tidligere oppkast eller blødning kategoriseres som et symptom eller som et rapportert sykdomstegn?\r\nSom svar på dette er arketypen laget for å tillate registrering av hele kontinuumet mellom tydelig definerte symptomer og rapporterte sykdomstegn.\r\n\r\nArketypen er designet for å gi et generisk rammeverk for alle symptomer og rapporterte sykdomstegn. SLOTet \"Spesifikke detaljer\" kan brukes for å utvide arketypen med ytterligere spesifikke dataelementer for komplekse symptomer eller sykdomstegn.\r\n\r\nArketypen skal settes inn i \"Detaljer\"-SLOTet i OBSERVATION.story-arketypen men kan også brukes i en hvilken som helst OBSERVATION eller CLUSTER-arketype. Arketypen kan også gjenbrukes i andre instanser av CLUSTER.symptom_sign-arketypen i SLOTene \"Assosierte symptomer\" eller \"Tidligere detaljer\".",
+          "misuse" : "Brukes ikke for å registrere spørreskjema-spørsmål om tilstedeværelsen eller fraværet av spesifikke symptomer eller sykdomstegn. Bruk OBSERVATION.symptom_sign_screening til dette formålet. Imidlertid kan denne CLUSTER.symptom_sign arketypen brukes i SLOTet \"Ytterligere detaljer\" i OBSERVATION.symptom_sign_screening dersom man ønsker å utvide spørreskjemaet med detaljer om et symptom eller sykdomstegn.\r\n\r\nBrukes ikke til eksplisitt registrering av at et symptom eller sykdomstegn ikke er tilstede. Bruk CLUSTER.exclusion_symptom_sign varsomt da det øker tidsbruk ved registrering og tilfører økt kompleksitet.\r\n\r\nBrukes ikke til registrering av objektive funn som en del av en fysisk undersøkelse. Bruk OBSERVATION.exam og relaterte CLUSTER.exam-arketyper for dette formålet.\r\n\r\nBrukes ikke til registrering av problemer og diagnoser som en del av en persistent problemliste, til dette brukes EVALUATION.problem_diagnosis.\r\n\r\nBrukes ikke til å registrere en formell og repeterbar alvorlighetsgradering som VAS eller NRS. Bruk passende OBSERVATION-arketyper til dette formålet.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Registrar detalhes sobre um episódio único de um sinal ou sintoma relatado incluindo contexto, mas não detalhes, de episódios prévios se apropriado.",
+          "keywords" : [ "queixa", "sintoma", "distúrbio", "problema", "desconforto", "queixa atual", "sintoma atual", "sinal" ],
+          "use" : "*Use to record details about a single episode of a symptom or reported sign in an individual, as reported by the individual, parent, care-giver or other party. It may be recorded by a clinician as part of a clinical history record as reported to them, observed by the clinician or self-recorded as part of a clinical questionnaire or personal health record. A complete clinical history or patient story may include varying level of details about multiple episodes of an identified symptom or reported sign, as well as multiple symptoms/signs.\r\n\r\nThis archetype has been designed to record the positive presence of the symptom or sign as part of history taking using OBSERVATION.story, or in conjunction with a positive response to OBSERVATION.symptom_sign_screening.\r\n\r\nIn the purest sense, symptoms are subjective observations of a physical or mental disturbance and signs are objective observations of the same, as experienced by an individual and reported to the history taker by the same individual or another party. From this logic it follows that we will need two archetypes to record clinical history - one for reported symptoms and another for reported signs. In reality this is impractical as it will require clinical data entry into either one of these models which adds signficant overheads to modellers and those entering data. In addition, there is often overlap in clinical concepts - for example, is previous vomiting or bleeding to be categorised as a symptom or reported sign? In response, this archetype has been specifically designed to provide a single information model that allows for recording of the entire continuum between clearly identifiable symptoms and reported signs.\r\n\r\nThis archetype has been intended to be used as a generic pattern for all symptoms and reported signs. The 'Specific details' SLOT can be used to extend the archetype to include additional, specific data elements for more complex symptoms or signs. \r\n\r\nThis archetype has been specifically designed to be used in the 'Structured detail' SLOT within the OBSERVATION.story archetype, but can also be used within other OBSERVATION or CLUSTER archetypes and in the 'Associated symptom/sign' or 'Previous episode' SLOT within other instances of this CLUSTER.symptom_sign archetype. (en)",
+          "misuse" : "*Not to be used to record screening questionnaire responses about the presence or absence of specific symptoms - use the OBSERVATION.symptom_sign_screening archetype for this purpose. However, this CLUSTER.symptom_sign archetype may be nested within the 'Screening details' SLOT in the OBSERVATION.symptom_sign_screening archetype if it is necessary to extend the questionnaire by recording details about symptom or sign.\r\n\r\nNot to be used to record that a symptom or sign was explicitly reported as not present - use CLUSTER.exclusion_symptom_sign carefully for specific purposes where the overheads of recording in this way warrant the additional complexity.\r\n\r\nNot to be used for recording objective findings as part of a physical examination - use OBSERVATION.exam and related examination CLUSTER archetypes for this purpose.\r\n\r\nNot to be used for diagnoses and problems that form part of a persisting Problem List - use EVALUATION.problem_diagnosis.\r\n\r\nNot to be used to record a formal and repeatable severity scale such as VAS or NRS. Use appropriate OBSERVATION archetypes for this purpose. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record details about a single episode of a reported symptom or sign including context, but not details, of previous episodes if appropriate.",
+          "keywords" : [ "complaint", "symptom", "disturbance", "problem", "discomfort", "presenting complaint", "presenting symptom", "sign" ],
+          "use" : "Use to record details about a single episode of a symptom or reported sign in an individual, as reported by the individual, parent, care-giver or other party. It may be recorded by a clinician as part of a clinical history record as reported to them, observed by the clinician or self-recorded as part of a clinical questionnaire or personal health record. A complete clinical history or patient story may include varying level of details about multiple episodes of an identified symptom or reported sign, as well as multiple symptoms/signs.\r\n\r\nThis archetype has been designed to record the positive presence of the symptom or sign as part of history taking using OBSERVATION.story, or in conjunction with a positive response to OBSERVATION.symptom_sign_screening.\r\n\r\nIn the purest sense, symptoms are subjective observations of a physical or mental disturbance and signs are objective observations of the same, as experienced by an individual and reported to the history taker by the same individual or another party. From this logic it follows that we will need two archetypes to record clinical history - one for reported symptoms and another for reported signs. In reality this is impractical as it will require clinical data entry into either one of these models which adds signficant overheads to modellers and those entering data. In addition, there is often overlap in clinical concepts - for example, is previous vomiting or bleeding to be categorised as a symptom or reported sign? In response, this archetype has been specifically designed to provide a single information model that allows for recording of the entire continuum between clearly identifiable symptoms and reported signs.\r\n\r\nThis archetype has been intended to be used as a generic pattern for all symptoms and reported signs. The 'Specific details' SLOT can be used to extend the archetype to include additional, specific data elements for more complex symptoms or signs. \r\n\r\nThis archetype has been specifically designed to be used in the 'Structured detail' SLOT within the OBSERVATION.story archetype, but can also be used within other OBSERVATION or CLUSTER archetypes and in the 'Associated symptom/sign' or 'Previous episode' SLOT within other instances of this CLUSTER.symptom_sign archetype.",
+          "misuse" : "Not to be used to record screening questionnaire responses about the presence or absence of specific symptoms - use the OBSERVATION.symptom_sign_screening archetype for this purpose. However, this CLUSTER.symptom_sign archetype may be nested within the 'Screening details' SLOT in the OBSERVATION.symptom_sign_screening archetype if it is necessary to extend the questionnaire by recording details about symptom or sign.\r\n\r\nNot to be used to record that a symptom or sign was explicitly reported as not present - use CLUSTER.exclusion_symptom_sign carefully for specific purposes where the overheads of recording in this way warrant the additional complexity.\r\n\r\nNot to be used for recording objective findings as part of a physical examination - use OBSERVATION.exam and related examination CLUSTER archetypes for this purpose.\r\n\r\nNot to be used for diagnoses and problems that form part of a persisting Problem List - use EVALUATION.problem_diagnosis.\r\n\r\nNot to be used to record a formal and repeatable severity scale such as VAS or NRS. Use appropriate OBSERVATION archetypes for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "*To record detail about a symptom - either self-recorded by an individual or recorded on the behalf of a patient by a clinician. A complete patient history may include varying level of details about a variety of symptoms.(en)",
+          "keywords" : [ ],
+          "use" : "*Use to record details about a single episode of a symptom or reported sign in an individual, as reported by the individual, parent, care-giver or other party. It may be recorded by a clinician as part of a clinical history record as reported to them, observed by the clinician or self-recorded as part of a clinical questionnaire or personal health record. A complete clinical history or patient story may include varying level of details about multiple episodes of an identified symptom or reported sign, as well as multiple symptoms/signs.\r\n\r\nThis archetype has been designed to record the positive presence of the symptom or sign as part of history taking using OBSERVATION.story, or in conjunction with a positive response to OBSERVATION.symptom_sign_screening.\r\n\r\nIn the purest sense, symptoms are subjective observations of a physical or mental disturbance and signs are objective observations of the same, as experienced by an individual and reported to the history taker by the same individual or another party. From this logic it follows that we will need two archetypes to record clinical history - one for reported symptoms and another for reported signs. In reality this is impractical as it will require clinical data entry into either one of these models which adds signficant overheads to modellers and those entering data. In addition, there is often overlap in clinical concepts - for example, is previous vomiting or bleeding to be categorised as a symptom or reported sign? In response, this archetype has been specifically designed to provide a single information model that allows for recording of the entire continuum between clearly identifiable symptoms and reported signs.\r\n\r\nThis archetype has been intended to be used as a generic pattern for all symptoms and reported signs. The 'Specific details' SLOT can be used to extend the archetype to include additional, specific data elements for more complex symptoms or signs. \r\n\r\nThis archetype has been specifically designed to be used in the 'Structured detail' SLOT within the OBSERVATION.story archetype, but can also be used within other OBSERVATION or CLUSTER archetypes and in the 'Associated symptom/sign' or 'Previous episode' SLOT within other instances of this CLUSTER.symptom_sign archetype. (en)",
+          "misuse" : "*Not to be used to record screening questionnaire responses about the presence or absence of specific symptoms - use the OBSERVATION.symptom_sign_screening archetype for this purpose. However, this CLUSTER.symptom_sign archetype may be nested within the 'Screening details' SLOT in the OBSERVATION.symptom_sign_screening archetype if it is necessary to extend the questionnaire by recording details about symptom or sign.\r\n\r\nNot to be used to record that a symptom or sign was explicitly reported as not present - use CLUSTER.exclusion_symptom_sign carefully for specific purposes where the overheads of recording in this way warrant the additional complexity.\r\n\r\nNot to be used for recording objective findings as part of a physical examination - use OBSERVATION.exam and related examination CLUSTER archetypes for this purpose.\r\n\r\nNot to be used for diagnoses and problems that form part of a persisting Problem List - use EVALUATION.problem_diagnosis.\r\n\r\nNot to be used to record a formal and repeatable severity scale such as VAS or NRS. Use appropriate OBSERVATION archetypes for this purpose. (en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nl"
+          },
+          "purpose" : "*To record details about a single episode of a reported symptom or sign including context, but not details, of previous episodes if appropriate.(en)",
+          "keywords" : [ ],
+          "use" : "*Use to record details about a single episode of a symptom or reported sign in an individual, as reported by the individual, parent, care-giver or other party. It may be recorded by a clinician as part of a clinical history record as reported to them, observed by the clinician or self-recorded as part of a clinical questionnaire or personal health record. A complete clinical history or patient story may include varying level of details about multiple episodes of an identified symptom or reported sign, as well as multiple symptoms/signs.\r\n\r\nThis archetype has been designed to record the positive presence of the symptom or sign as part of history taking using OBSERVATION.story, or in conjunction with a positive response to OBSERVATION.symptom_sign_screening.\r\n\r\nIn the purest sense, symptoms are subjective observations of a physical or mental disturbance and signs are objective observations of the same, as experienced by an individual and reported to the history taker by the same individual or another party. From this logic it follows that we will need two archetypes to record clinical history - one for reported symptoms and another for reported signs. In reality this is impractical as it will require clinical data entry into either one of these models which adds signficant overheads to modellers and those entering data. In addition, there is often overlap in clinical concepts - for example, is previous vomiting or bleeding to be categorised as a symptom or reported sign? In response, this archetype has been specifically designed to provide a single information model that allows for recording of the entire continuum between clearly identifiable symptoms and reported signs.\r\n\r\nThis archetype has been intended to be used as a generic pattern for all symptoms and reported signs. The 'Specific details' SLOT can be used to extend the archetype to include additional, specific data elements for more complex symptoms or signs. \r\n\r\nThis archetype has been specifically designed to be used in the 'Structured detail' SLOT within the OBSERVATION.story archetype, but can also be used within other OBSERVATION or CLUSTER archetypes and in the 'Associated symptom/sign' or 'Previous episode' SLOT within other instances of this CLUSTER.symptom_sign archetype. (en)",
+          "misuse" : "*Not to be used to record screening questionnaire responses about the presence or absence of specific symptoms - use the OBSERVATION.symptom_sign_screening archetype for this purpose. However, this CLUSTER.symptom_sign archetype may be nested within the 'Screening details' SLOT in the OBSERVATION.symptom_sign_screening archetype if it is necessary to extend the questionnaire by recording details about symptom or sign.\r\n\r\nNot to be used to record that a symptom or sign was explicitly reported as not present - use CLUSTER.exclusion_symptom_sign carefully for specific purposes where the overheads of recording in this way warrant the additional complexity.\r\n\r\nNot to be used for recording objective findings as part of a physical examination - use OBSERVATION.exam and related examination CLUSTER archetypes for this purpose.\r\n\r\nNot to be used for diagnoses and problems that form part of a persisting Problem List - use EVALUATION.problem_diagnosis.\r\n\r\nNot to be used to record a formal and repeatable severity scale such as VAS or NRS. Use appropriate OBSERVATION archetypes for this purpose. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.symptom_sign.v2",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-symptom_sign-001.v2"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "SNOMED-CT"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "15188001",
+                    "value" : "hørselstap"
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0151.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0002.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0175.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0176", "at0178", "at0177" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0186.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0187", "at0188" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0152.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_DATE_TIME",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_INTERVAL<DV_DATE_TIME>",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0164.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_DURATION",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_INTERVAL<DV_DURATION>",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0028.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_DURATION",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_DURATION",
+                  "rmTypeName" : "DURATION",
+                  "occurrences" : "1..1",
+                  "constraint" : [ {
+                    "lower" : "PT0S",
+                    "lowerIncluded" : true,
+                    "upperIncluded" : false,
+                    "upperUnbounded" : true,
+                    "lowerUnbounded" : false
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_INTERVAL<DV_DURATION>",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "lower",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DURATION",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_DURATION",
+                      "rmTypeName" : "DURATION",
+                      "occurrences" : "1..1",
+                      "constraint" : [ {
+                        "lower" : "PT0S",
+                        "lowerIncluded" : true,
+                        "upperIncluded" : false,
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : false
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "upper",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DURATION",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_DURATION",
+                      "rmTypeName" : "DURATION",
+                      "occurrences" : "1..1",
+                      "constraint" : [ {
+                        "lower" : "PT0S",
+                        "lowerIncluded" : true,
+                        "upperIncluded" : false,
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : false
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0021.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0023", "at0024", "at0025" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..1",
+          "nodeId" : "at0189.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "SNOMED-CT"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "255362007",
+                    "value" : "Subjective observation (qualifier value)"
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0180.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0183", "at0182", "at0181", "at0184" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0003.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..0",
+          "nodeId" : "at0018.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0019.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0017.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "CODE_PHRASE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "at0159", "at0156", "at0158" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0056.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..0",
+          "nodeId" : "at0165.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0170.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0171.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0185.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..0",
+          "nodeId" : "at0190.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0193.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0195.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0196.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0155.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0037.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0161.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0057.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0031.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_COUNT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "magnitude",
+                "children" : [ {
+                  "@type" : "C_INTEGER",
+                  "rmTypeName" : "Integer",
+                  "occurrences" : "1..1",
+                  "constraint" : [ {
+                    "lower" : 0,
+                    "lowerIncluded" : true,
+                    "upperIncluded" : false,
+                    "upperUnbounded" : true,
+                    "lowerUnbounded" : false
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0163.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "ar-sy" : { },
+        "en" : { },
+        "de" : { },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Subjektiv hørselstap",
+            "description" : "Rapportert observasjon av fysiske tegn eller beskrivelse av unormale eller ubehagelige fornemmelser i kropp og/eller sinn."
+          }
+        },
+        "fi" : { },
+        "sv" : { },
+        "pt-br" : { },
+        "nl" : { }
+      },
+      "termBindings" : {
+        "SNOMED-CT" : {
+          "at0152.1" : "term:SNOMED-CT::405795006",
+          "at0028.1" : "term:SNOMED-CT::162434008",
+          "at0021.1" : "term:SNOMED-CT::405162009"
+        }
+      },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "89a08ac0-a0d8-4826-9aad-0477321c26fc",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Sebastian Garde, Kim Sommer, Natalia Strauch",
+        "organisation" : "University of Heidelberg, Central Queensland University, Medizinische Hochschule Hannover",
+        "email" : "Strauch.Natalia@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "fi"
+      },
+      "author" : {
+        "name" : "Kalle Vuorinen",
+        "organisation" : "Tieto Healthcare & Welfare Oy",
+        "email" : "kalle.vuorinen@tieto.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Kirsi Poikela; Erik Sundvall",
+        "organisation" : "Tieto Sweden AB; Karolinska Institutet, Karolinska University Hospital, Region Stockholm + Linköping University, Karolinska Institutet + Karolinska University Hospital, Region Stockholm + Linköping University",
+        "email" : "ext.kirsi.poikela@tieto.com, erik.sundvall@regionstockholm.se"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Lars Bitsch-Larsen, Silje Ljosland Bakke",
+        "organisation" : "Haukeland University Hospital of Bergen, Norway, Helse Vest IKT AS",
+        "email" : "lbla@helse-bergen.no, silje.ljosland.bakke@helse-vest-ikt.no"
+      },
+      "accreditation" : "MD, DEAA, MBA, spec in anesthesia, spec in tropical medicine.",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Vladimir Pizzo",
+        "organisation" : "Hospital Sirio Libanes - Brazil",
+        "email" : "vladimir.pizzo@hsl.org.br"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ar-sy"
+      },
+      "author" : {
+        "name" : "Mona Saleh"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nl"
+      },
+      "author" : {
+        "name" : "Joost Holslag",
+        "organisation" : "Nedap",
+        "email" : "joost.holslag@nedap.com"
+      },
+      "accreditation" : "MD",
+      "otherDetails" : { }
+    } ]
+  } ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "en"
+  },
+  "translations" : [ {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "de"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "sv"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "fi"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "es-ar"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ko"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "pt-br"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ar-sy"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "it"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "es"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nl"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "zh"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ca"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "zh-cn"
+    },
+    "author" : {
+      "name" : "Lin Zhang",
+      "organisation" : "Freelancer",
+      "email" : "linforest@163.com"
+    },
+    "otherDetails" : { }
+  } ]
+}
