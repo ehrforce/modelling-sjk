@@ -21,7 +21,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "c73017c10fe2556e4d8cc5d079b4e181",
+      "MD5-CAM-1.0.1" : "dc7c2f2000fed522a06b1c535dd7089a",
       "PARENT:MD5-CAM-1.0.1" : "9D358EB1048EA1401802C3E1FDFB9A29",
       "sem_ver" : "1.0.0",
       "build_uid" : ""
@@ -594,6 +594,7 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "CLUSTER",
+                      "occurrences" : "0..1",
                       "nodeId" : "at0022.2",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
@@ -821,6 +822,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.400",
             "description" : ""
+          },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Komplikasjon/bivirkning",
+            "description" : "Detaljer om en spesifikt bekymring, plage, problem eller diagnose eller gruppe av bekymringer, plager, problemer eller diagnoser som er innenfor kartleggingsformålet."
           }
         },
         "de" : {
