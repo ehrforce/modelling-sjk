@@ -145,32 +145,6 @@ Zur Darstellung der Gewichtsänderung, d.h. entweder Gewichtsverlust oder Gewich
 
 Nicht zur Darstellung eines Objekts oder eines Teils des Körpers.">
 		>
-		["fi"] = <
-			language = <[ISO_639-1::fi]>
-			purpose = <"Yksilön painon kirjaamista varten - sekä mitatun että arvioidun.">
-			keywords = <"paino, massa, kasvu, arvio", ...>
-			use = <"Käytetään todellisen painon mittaamiseen, myös silloin, kun yksilöstä puuttuu kehonosa synnynnäisen syyn tai kirurgisen poiston jälkeen. Huomautus, joka identifioi kehon fyysisen epätäydellisyyden, voidaan tallentaa tarvittaessa \"Sekoittavat tekijätr\" -dataelementtiin. Tämä on tavanomainen arkkityyppi, jota käytetään tyypilliseen painon mittaamiseen, esimerkiksi yksilön itsensä mittaamana kotona tai kliinikon mittaus klinikalla / sairaalassa.
-
-Voidaan käyttää myös kehon painonmittauksen arvioimiseen kliinisessä skenaariossa, jossa ei ole mahdollista mitata tarkasti painoa - esimerkiksi yhteistyökyvyttömän lapsen painon mittaaminen tai arvioimalla syntymättömän sikiön painoa (sikiön painon tallennus tapahtuu äidin terveystietoihin). Tätä ei mallinneta nimenomaisesti arkkityypissä, koska openEHR-referenssimalli mahdollistaa likiarvot minkä tahansa määrällisen datatyypin määrittämiseksi määrittelemällä attribuutin Magnitude_status arvoon '~'. Sovelluksen käyttöliittymä voisi antaa lääkäreille mahdollisuuden valita asianmukaisesti merkitty valintaruutu Paino-datakentän viereen osoittaakseen, että tallennettu paino on likiarvio eikä todellinen.
-
-Käytetään painonmuutoksen tallentamiseen eli painonpudotukseen tai painonnousuun. Tätä voidaan nykyisin mallinnuttaa rajoittamalla \"mikä tahansa tapahtuma\" väliajoin, johon liittyy matemaattinen funktion lisäys tai pieneneminen.">
-			misuse = <"Ei saa käyttää säädetyn painotiedon tallentamiseen, esim. laskemalla raajan amputointia suorittavan henkilön koko kehon paino muiden kehon osien mittausten ja algoritmin perusteella - käytä OBSERVATION.body_weight-adjusted tähän tarkoitukseen.
-
-Ei saa käyttää ruumiinosan painon tallentamiseen.">
-		>
-		["sv"] = <
-			language = <[ISO_639-1::sv]>
-			purpose = <"Att registrera en individs kroppsvikt - både den faktiska och den uppskattade.">
-			keywords = <"vikt","uppgång","viktuppgång","ökning","viktökning","minskning","viktminskning","massa","uppskattning","faktisk">
-			use = <"Används för att registrera den faktiska kroppsvikten, även när individen saknar en kroppsdel på grund av medfödda orsaker eller till följd av kirurgiskt avlägsnande. En redogörelse av kroppens fysiska ofullständighet kan vid behov registreras i fältet \"Möjliga felkällor\". Det här är den vanliga arketypen som ska användas för en typisk vägning, exempelvis när individen väger sig själv hemma, vägs av en kliniker på en klinik eller ett sjukhus, eller vägs av en instruktör på ett gym. 
-
-Används även för att registrera en uppskattning av kroppsvikten i ett kliniskt scenario där det inte är möjligt att mäta exakt kroppsvikt, exempelvis vid vägning av ett icke samarbetsvilligt barn eller vid uppskattning av ett ofött fosters vikt (där objektet för mätningen är fostret och registreringen sker i moderns patientjournal). Detta modelleras inte explicit i arketypen eftersom openEHRs referensmodell tillåter approximationer för kvantitativ data genom att attributet Magnitud_status sätts till värdet \"~\". Exempelvis kan det i applikationens användargränssnitt finnas en kryssruta intill vikt-fältet som klinikern kan markera för att indikera att den registrerade vikten är en uppskattning och inte en faktisk vikt. 
-
-Används för att registrera viktförändring, dvs. antingen viktförlust eller viktuppgång. Detta kan modelleras genom att begränsa \"Ospecificerad händelse\" till ett intervall med tillhörande matematisk funktion av uppgång eller förlust.">
-			misuse = <"Ska inte användas för att registrera den justerade kroppsvikten, exempelvis en uppskattning av hela kroppsvikten för en individ som saknat en eller flera lemmar. En justerad kroppsvikt kan baseras på uppmätt kroppsvikt, andra kroppsmått eller användning av en algoritm. Använd då istället OBSERVATION.body_weight-adjusted. 
-
-Ska inte användas för att registrera vikten av ett objekt eller en kroppsdel.">
-		>
 		["ru"] = <
 			language = <[ISO_639-1::ru]>
 			purpose = <"Для записи массы тела человека: фактической или приблизительной.">
@@ -185,6 +159,32 @@ Ska inte användas för att registrera vikten av ett objekt eller en kroppsdel."
 			misuse = <"Не использовать для записи первого веса младенца после рождение, которое обозначено как 'вес при рождении' - использовать специализацию этого архетипа OBSERVATION.body_weight-birth. 
 Не использовать для записи массы тела человека с протезами / приспособлениями для вычисление полной массы тела человека с ампутацией, основанной на других измерениях и алгоритме  - использовать архетип OBSERVATION.body_weight-adjusted.
 Не использовать, чтобы сделать запись веса части тела или объекта.">
+		>
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			purpose = <"Att registrera en individs kroppsvikt - både den faktiska och den uppskattade.">
+			keywords = <"vikt","uppgång","viktuppgång","ökning","viktökning","minskning","viktminskning","massa","uppskattning","faktisk">
+			use = <"Används för att registrera den faktiska kroppsvikten, även när individen saknar en kroppsdel på grund av medfödda orsaker eller till följd av kirurgiskt avlägsnande. En redogörelse av kroppens fysiska ofullständighet kan vid behov registreras i fältet \"Möjliga felkällor\". Det här är den vanliga arketypen som ska användas för en typisk vägning, exempelvis när individen väger sig själv hemma, vägs av en kliniker på en klinik eller ett sjukhus, eller vägs av en instruktör på ett gym. 
+
+Används även för att registrera en uppskattning av kroppsvikten i ett kliniskt scenario där det inte är möjligt att mäta exakt kroppsvikt, exempelvis vid vägning av ett icke samarbetsvilligt barn eller vid uppskattning av ett ofött fosters vikt (där objektet för mätningen är fostret och registreringen sker i moderns patientjournal). Detta modelleras inte explicit i arketypen eftersom openEHRs referensmodell tillåter approximationer för kvantitativ data genom att attributet Magnitud_status sätts till värdet \"~\". Exempelvis kan det i applikationens användargränssnitt finnas en kryssruta intill vikt-fältet som klinikern kan markera för att indikera att den registrerade vikten är en uppskattning och inte en faktisk vikt. 
+
+Används för att registrera viktförändring, dvs. antingen viktförlust eller viktuppgång. Detta kan modelleras genom att begränsa \"Ospecificerad händelse\" till ett intervall med tillhörande matematisk funktion av uppgång eller förlust.">
+			misuse = <"Ska inte användas för att registrera den justerade kroppsvikten, exempelvis en uppskattning av hela kroppsvikten för en individ som saknat en eller flera lemmar. En justerad kroppsvikt kan baseras på uppmätt kroppsvikt, andra kroppsmått eller användning av en algoritm. Använd då istället OBSERVATION.body_weight-adjusted. 
+
+Ska inte användas för att registrera vikten av ett objekt eller en kroppsdel.">
+		>
+		["fi"] = <
+			language = <[ISO_639-1::fi]>
+			purpose = <"Yksilön painon kirjaamista varten - sekä mitatun että arvioidun.">
+			keywords = <"paino, massa, kasvu, arvio", ...>
+			use = <"Käytetään todellisen painon mittaamiseen, myös silloin, kun yksilöstä puuttuu kehonosa synnynnäisen syyn tai kirurgisen poiston jälkeen. Huomautus, joka identifioi kehon fyysisen epätäydellisyyden, voidaan tallentaa tarvittaessa \"Sekoittavat tekijätr\" -dataelementtiin. Tämä on tavanomainen arkkityyppi, jota käytetään tyypilliseen painon mittaamiseen, esimerkiksi yksilön itsensä mittaamana kotona tai kliinikon mittaus klinikalla / sairaalassa.
+
+Voidaan käyttää myös kehon painonmittauksen arvioimiseen kliinisessä skenaariossa, jossa ei ole mahdollista mitata tarkasti painoa - esimerkiksi yhteistyökyvyttömän lapsen painon mittaaminen tai arvioimalla syntymättömän sikiön painoa (sikiön painon tallennus tapahtuu äidin terveystietoihin). Tätä ei mallinneta nimenomaisesti arkkityypissä, koska openEHR-referenssimalli mahdollistaa likiarvot minkä tahansa määrällisen datatyypin määrittämiseksi määrittelemällä attribuutin Magnitude_status arvoon '~'. Sovelluksen käyttöliittymä voisi antaa lääkäreille mahdollisuuden valita asianmukaisesti merkitty valintaruutu Paino-datakentän viereen osoittaakseen, että tallennettu paino on likiarvio eikä todellinen.
+
+Käytetään painonmuutoksen tallentamiseen eli painonpudotukseen tai painonnousuun. Tätä voidaan nykyisin mallinnuttaa rajoittamalla \"mikä tahansa tapahtuma\" väliajoin, johon liittyy matemaattinen funktion lisäys tai pieneneminen.">
+			misuse = <"Ei saa käyttää säädetyn painotiedon tallentamiseen, esim. laskemalla raajan amputointia suorittavan henkilön koko kehon paino muiden kehon osien mittausten ja algoritmin perusteella - käytä OBSERVATION.body_weight-adjusted tähän tarkoitukseen.
+
+Ei saa käyttää ruumiinosan painon tallentamiseen.">
 		>
 		["pt-br"] = <
 			language = <[ISO_639-1::pt-br]>
@@ -203,20 +203,6 @@ Usada para gravar a mudança de peso, ou seja, qualquer perda ou ganho de peso. 
 Não deve ser usado para registrar o peso do corpo ajustado por exemplo, um cálculo do peso de corpo inteiro de uma pessoa com amputação de membros, com base em medições de outro corpo e um algoritmo -OBSERVATION.body_weight-adjusted.
 
 Não deve ser usado para registrar o peso de um objeto ou parte do corpo.">
-		>
-		["en"] = <
-			language = <[ISO_639-1::en]>
-			purpose = <"To record the body weight of an individual - both actual and approximate.">
-			keywords = <"weight","gain","loss","increase","decrease","mass","estimate","actual">
-			copyright = <"© openEHR Foundation">
-			use = <"To be used for recording the actual measurement of body weight, including when the individual is missing a body part due to a congenital cause or after surgical removal.   A statement identifying the physical incompleteness of the body can be recorded in the 'Confounding factors' data element, if required. This is the usual archetype to be used for a typical measurement of weight, for example self-measured by the individual at home, a clinician measurement in a clinic/hospital, or a fitness instructor in a gymnasium.  
-
-Can also be used for recording an approximation of body weight measurement in a clinical scenario where it is not possible to measure accurately body weight - for example, weighing an uncooperative child, or estimating the weight of an unborn fetus (where the 'subject of data' is the Fetus and recording occurs within the mother's health record).  This is not modelled explicitly in the archetype as the openEHR Reference model allows approximations  for any Quantity data type by setting the attribute Magnitude_status to the value '~'.  At implementation, for example, an application user interface could allow clinicians to select an appropriately labelled check box adjacent to the Weight data field to indicate that the recorded weight is an approximation, rather than actual.
-
-To be used for recording weight change, that is, either weight loss or weight gain.  This can currently be modelled by constraining the 'any event' to an interval with associated mathematical function of increase or decrease, as appropriate.">
-			misuse = <"Not to be used to record a calculated body weight, such as an estimation of the body weight of a person with one or more limbs missing. A calculated body weight may be based on, some or all of, the measured body weight, other body measurements and an algorithm. Use other OBSERVATION archetypes for this purpose.
-
-Not to be used to record the weight of a body part or other object.">
 		>
 		["ar-sy"] = <
 			language = <[ISO_639-1::ar-sy]>
@@ -238,6 +224,20 @@ openEHR
 لا يستخدم لتسجيل وزن الجسم المُصحَّح مثل قياس الوزن الكلي للجسم لشخص يعاني من بتر في أحد الأطراف, بناءا على قياسات أخرى من الجسم باستخدام خُوارزمية - استخدم بدلا من ذلك نموذج ملاحظة.وزن الجسم المُصحَّح.
 
 لا يستخدم لتسجيل وزن شيئ أو جزء من أجزاء الجسم.">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To record the body weight of an individual - both actual and approximate.">
+			keywords = <"weight","gain","loss","increase","decrease","mass","estimate","actual">
+			copyright = <"© openEHR Foundation">
+			use = <"To be used for recording the actual measurement of body weight, including when the individual is missing a body part due to a congenital cause or after surgical removal.   A statement identifying the physical incompleteness of the body can be recorded in the 'Confounding factors' data element, if required. This is the usual archetype to be used for a typical measurement of weight, for example self-measured by the individual at home, a clinician measurement in a clinic/hospital, or a fitness instructor in a gymnasium.  
+
+Can also be used for recording an approximation of body weight measurement in a clinical scenario where it is not possible to measure accurately body weight - for example, weighing an uncooperative child, or estimating the weight of an unborn fetus (where the 'subject of data' is the Fetus and recording occurs within the mother's health record).  This is not modelled explicitly in the archetype as the openEHR Reference model allows approximations  for any Quantity data type by setting the attribute Magnitude_status to the value '~'.  At implementation, for example, an application user interface could allow clinicians to select an appropriately labelled check box adjacent to the Weight data field to indicate that the recorded weight is an approximation, rather than actual.
+
+To be used for recording weight change, that is, either weight loss or weight gain.  This can currently be modelled by constraining the 'any event' to an interval with associated mathematical function of increase or decrease, as appropriate.">
+			misuse = <"Not to be used to record a calculated body weight, such as an estimation of the body weight of a person with one or more limbs missing. A calculated body weight may be based on, some or all of, the measured body weight, other body measurements and an algorithm. Use other OBSERVATION archetypes for this purpose.
+
+Not to be used to record the weight of a body part or other object.">
 		>
 		["fr"] = <
 			language = <[ISO_639-1::fr]>
@@ -324,6 +324,20 @@ OBSERVATION.weight-adjusted
 برای ثبت وزن یک شی یا بخشهایی از بدن استفاده نکنید
 ">
 		>
+		["nl"] = <
+			language = <[ISO_639-1::nl]>
+			purpose = <"Om het lichaamsgewicht van een persoon te registreren - zowel exact als geschat gewicht.">
+			keywords = <"gewicht","stijging","verlies","toename","daling","massa","schatting","werkelijk","afname">
+			copyright = <"© openEHR Foundation">
+			use = <"Registreren van een actuele meting van het lichaamsgewicht, ook als deze persoon een lichaamsdeel mist, door een geboorteafwijking of na een chirurgische ingreep. Een verklaring over de fysieke inclompleetheid van het lichaam, kan zo nodig opgeslagen worden in het data element 'beïnvloedende factoren'. Dit is het gebruikelijke archetype voor gewichtmetingen, bij voorbeeld thuis gemeten door de persoon zelf, een klinische meting in een kliniek/ziekenhuis, of door een fitness instructeur in een sportschool.
+
+Kan ook gebruikt worden om een geschat lichaamsgewicht te registreren in een klinische setting als het niet mogelijk is om het exacte lichaamsgewicht te meten - bijvoorbeeld, het wegen van een tegenwerkend kind, of een schatting van het gewicht van een ongeboren kind (waar het onderwerp van de gegevens de foetus is en de opslag in het patiënten dossier van de moeder plaatsvindt). Dit is niet expliciet gemodelleerd in het archetype, omdat het openEHR Referentie model een schatting in ieder kwantitatief data type toestaat. Bij de uitvoering, bijvoorbeeld, zou een applicatie gebruikersinterface, clinici een adequaat geëtiketteerd selectievakje kunnen aanbieden, naast de gegevens over het gewicht, waarin door selecteren aangegeven kan worden dat het opgenomen gewicht een schatting is, in plaats van het werkelijke gewicht.
+
+Dient te worden gebruikt om gewichtsverandering op te slaan, zowel gewichtsverlies als gewichtstoename. Dit kan gemodelleerd worden door 'any event' - elke gebeurtenis - in voorkomende gevallen, te beperken tot een interval met met bijbehorende rekenkundige functie van stijging of daling.">
+			misuse = <"Dient niet te worden gebruikt voor het registreren van het eerste gewicht van een kind, na geboorte, welke wordt aangewezen als geboortegewicht. Gebruik hiervoor de specialisatie van dit archetype, OBSERVATION.body_weight-birth (OBSERVATION.lichaamsgewicht-geboorte.
+Dient niet te worden gebruikt voor het registreren van het aangepaste lichaamsgewicht, bijvoorbeeld een berekening van het volledige lichaamsgewicht van een persoon met een amputatie van ledematen, gebaseerd op metingen van lichaamsdelen en een algoritme - gebruik hiervoor OBSERVATION.body_weight-adjusted. (OBSERVATION.lichaamsgewicht-aangepast).
+Dient niet te worden gebruikt voor het vastleggen van het gewicht van een object of lichaamsdeel.">
+		>
 		["ca"] = <
 			language = <[ISO_639-1::ca]>
 			purpose = <"Registrar el pes corporal d'un individu, tant real com aproximat.">
@@ -338,20 +352,6 @@ S'usarà per reflectir el canvi de registre de pes, és a dir, augment o pèrdua
 No s'ha de fer servir per registrar el pes corporal ajustat mitjançant algorismes.
 
 No s'ha de fer servir per registrar el pes d'un objecte o part del cos.">
-		>
-		["nl"] = <
-			language = <[ISO_639-1::nl]>
-			purpose = <"Om het lichaamsgewicht van een persoon te registreren - zowel exact als geschat gewicht.">
-			keywords = <"gewicht","stijging","verlies","toename","daling","massa","schatting","werkelijk","afname">
-			copyright = <"© openEHR Foundation">
-			use = <"Registreren van een actuele meting van het lichaamsgewicht, ook als deze persoon een lichaamsdeel mist, door een geboorteafwijking of na een chirurgische ingreep. Een verklaring over de fysieke inclompleetheid van het lichaam, kan zo nodig opgeslagen worden in het data element 'beïnvloedende factoren'. Dit is het gebruikelijke archetype voor gewichtmetingen, bij voorbeeld thuis gemeten door de persoon zelf, een klinische meting in een kliniek/ziekenhuis, of door een fitness instructeur in een sportschool.
-
-Kan ook gebruikt worden om een geschat lichaamsgewicht te registreren in een klinische setting als het niet mogelijk is om het exacte lichaamsgewicht te meten - bijvoorbeeld, het wegen van een tegenwerkend kind, of een schatting van het gewicht van een ongeboren kind (waar het onderwerp van de gegevens de foetus is en de opslag in het patiënten dossier van de moeder plaatsvindt). Dit is niet expliciet gemodelleerd in het archetype, omdat het openEHR Referentie model een schatting in ieder kwantitatief data type toestaat. Bij de uitvoering, bijvoorbeeld, zou een applicatie gebruikersinterface, clinici een adequaat geëtiketteerd selectievakje kunnen aanbieden, naast de gegevens over het gewicht, waarin door selecteren aangegeven kan worden dat het opgenomen gewicht een schatting is, in plaats van het werkelijke gewicht.
-
-Dient te worden gebruikt om gewichtsverandering op te slaan, zowel gewichtsverlies als gewichtstoename. Dit kan gemodelleerd worden door 'any event' - elke gebeurtenis - in voorkomende gevallen, te beperken tot een interval met met bijbehorende rekenkundige functie van stijging of daling.">
-			misuse = <"Dient niet te worden gebruikt voor het registreren van het eerste gewicht van een kind, na geboorte, welke wordt aangewezen als geboortegewicht. Gebruik hiervoor de specialisatie van dit archetype, OBSERVATION.body_weight-birth (OBSERVATION.lichaamsgewicht-geboorte.
-Dient niet te worden gebruikt voor het registreren van het aangepaste lichaamsgewicht, bijvoorbeeld een berekening van het volledige lichaamsgewicht van een persoon met een amputatie van ledematen, gebaseerd op metingen van lichaamsdelen en een algoritme - gebruik hiervoor OBSERVATION.body_weight-adjusted. (OBSERVATION.lichaamsgewicht-aangepast).
-Dient niet te worden gebruikt voor het vastleggen van het gewicht van een object of lichaamsdeel.">
 		>
 	>
 	other_details = <
