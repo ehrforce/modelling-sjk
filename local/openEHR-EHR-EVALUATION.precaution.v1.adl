@@ -75,27 +75,6 @@ Exempel på tillstånd som berättigar skapandet av en försiktighetsåtgärder 
 
 Not to be used to record decisions about limitations on the individuals care or future interventions or the individuals preferences of future medical treatment and care. Use EVALUATION.advance_intervention_decisions and EVALUATION.advance_care_directive respectively for this purpose.(en)">
 		>
-		["es-ar"] = <
-			language = <[ISO_639-1::es-ar]>
-			purpose = <"El registro de una condición o estado del individuo que es clínicamente significativa y única o idiosincrática para con este individuo, y que se considera información vital al momento de la toma de decisiones.">
-			keywords = <"precaución","prevenir","evitar","evento adverso","prevención","precaución","advertencia">
-			use = <"Utilizado para el registro de una condición o estado del individuo que es clínicamente significativa y única o idiosincrática para con este individuo, y que se considera información vital al momento de la toma de decisiones.
-
-Este arquetipo debe ser considerado crítico por parte de cualquier sistema de apoyo a la decisión clínica y para cualquier precaución terapéuticamente relevante cuando un médico comienza una nueva intervención clínica para con un individuo.
-
-Los ejemplos de afecciones que ameritan la creación de una precaución incluyen, pero no se limitan a:
-- estado de inmunosupresión o terapia inmunosupresora asociada a una orden de medicamento para quimioterapia o esteroides, o diagnóstico de leucemia;
-- fallo renal, asociado a pruebas de función renal y/o el diagnóstico formal de fallo renal;
-- en espera de trasplante de órgano;
-- bajo tratamiento radiante o diálisis;
-- trasplantado de órgano o sujeto de implante metálico;
-- bajo estudio o bajo seguimiento de enfermedad maligna presuntiva o confirmada;
-- participante de ensayo farmacológico;
-- anticoagulado.">
-			misuse = <"*Not to be used to record a clinical intervention (including, but not limited to, use of a treatment or performance of a test or procedure) that should not be carried out due to the likelihood, or possibility, of harm being caused to an individual. Use the EVALUATION.contraindication for this purpose.
-
-Not to be used to record decisions about limitations on the individuals care or future interventions or the individuals preferences of future medical treatment and care. Use EVALUATION.advance_intervention_decisions and EVALUATION.advance_care_directive respectively for this purpose. (en)">
-		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			purpose = <"For å registrere en klinisk tilstand eller status som er unik eller særegen for et individ, og som regnes som viktig informasjon i forbindelse med beslutninger om behandling.">
@@ -116,6 +95,27 @@ Eksempler på tilstander som kan være grunnlag for å registrere forholdsregler
 			misuse = <"Skal ikke brukes for å registrere en klinisk intervensjon (f.eks. en undersøkelse eller behandling) som ikke må utføres på grunn av sannsynligheten eller muligheten for skade på individet. Bruk EVALUATION.contraindication (Norsk: Kontraindikasjon) for dette formålet.
 
 Skal ikke brukes for beslutninger om avgrensing av behandling eller fremtidige intervensjoner, eller for å registrere individets preferanser om fremtidig behandling og omsorg. Bruk henholdsvis EVALUATION.advance_intervention_decisions (Behandlingsbegrensning) og EVALUATION.advance_care_directive (Fremtidig behandlingsvalg) for dette formålet.">
+		>
+		["es-ar"] = <
+			language = <[ISO_639-1::es-ar]>
+			purpose = <"El registro de una condición o estado del individuo que es clínicamente significativa y única o idiosincrática para con este individuo, y que se considera información vital al momento de la toma de decisiones.">
+			keywords = <"precaución","prevenir","evitar","evento adverso","prevención","precaución","advertencia">
+			use = <"Utilizado para el registro de una condición o estado del individuo que es clínicamente significativa y única o idiosincrática para con este individuo, y que se considera información vital al momento de la toma de decisiones.
+
+Este arquetipo debe ser considerado crítico por parte de cualquier sistema de apoyo a la decisión clínica y para cualquier precaución terapéuticamente relevante cuando un médico comienza una nueva intervención clínica para con un individuo.
+
+Los ejemplos de afecciones que ameritan la creación de una precaución incluyen, pero no se limitan a:
+- estado de inmunosupresión o terapia inmunosupresora asociada a una orden de medicamento para quimioterapia o esteroides, o diagnóstico de leucemia;
+- fallo renal, asociado a pruebas de función renal y/o el diagnóstico formal de fallo renal;
+- en espera de trasplante de órgano;
+- bajo tratamiento radiante o diálisis;
+- trasplantado de órgano o sujeto de implante metálico;
+- bajo estudio o bajo seguimiento de enfermedad maligna presuntiva o confirmada;
+- participante de ensayo farmacológico;
+- anticoagulado.">
+			misuse = <"*Not to be used to record a clinical intervention (including, but not limited to, use of a treatment or performance of a test or procedure) that should not be carried out due to the likelihood, or possibility, of harm being caused to an individual. Use the EVALUATION.contraindication for this purpose.
+
+Not to be used to record decisions about limitations on the individuals care or future interventions or the individuals preferences of future medical treatment and care. Use EVALUATION.advance_intervention_decisions and EVALUATION.advance_care_directive respectively for this purpose. (en)">
 		>
 		["pt-br"] = <
 			language = <[ISO_639-1::pt-br]>
