@@ -32,7 +32,8 @@ a|
 * Symptom (no.onk.kartlegging: 05)
 
 
-Designkommentar: Det er valgt et kodesett for kartleggingsformål for SJK som finnes her: https://github.com/ehrforce/modelling-sjk/wiki/Generelle-kodeverk#kartleggingsform%C3%A5l-i-kartleggingsarketyper
+Designkommentar: Det er valgt et kodesett for kartleggingsformål for SJK som finnes her: 
+https://github.com/ehrforce/modelling-sjk/wiki/Generelle-kodeverk#kartleggingsform%C3%A5l-i-kartleggingsarketyper
 |at0028| 0..1| DV_CODED_TEXT | Symptomer eller sykdomstegn?
 a|
 * at0031 -> Ja 
@@ -41,7 +42,8 @@ a|
 
 
 Designkommentar:
-Hvis det er svart ja på symptom så kan legge inn hvilke symptom ved å gjenta elementet "spesifikk symptom/sykdomstegn" for hvert symptom. Det lagres da ja/bekreftende og det legges i tillegg  inn den spesifikke arketypen CLUSTER.symptom_sign.v2 med navnet til symptomet som man har svar ja på.
+Hvis det er svart ja på symptom så kan legge inn hvilke symptom ved å gjenta elementet "spesifikk symptom/sykdomstegn" for hvert symptom. 
+Det lagres da ja/bekreftende og det legges i tillegg  inn den spesifikke arketypen CLUSTER.symptom_sign.v2 med navnet til symptomet som man har svar ja på.
 
 Hvis man har brukt "Henvisningsårsak" og et av valgene er symptom vil lokikken vanligvis være at hvis det er krysset av for symptomer skal denne automatisk settes til ja. 
 |at0029| 0..1| DV_DATE_TIME | Debut første symptom/sykdomstegn
@@ -71,7 +73,7 @@ a|
 * at0024 -> Nei 
 
 
- Detsignkommentar:
+Detsignkommentar:
 Her er spørsmålet om det spesifikke symptomet/sykdomstegnet er tilstede, dvs. endre elementnavnet til det spesifikke spørsmålet ("Er xxx tilsede?"). 
 Vanligvis er dette skjult og automatisk sette ja hvis symptomet/sykdomstegnet er krysset av. 
 Det er også mulig å få en bekreftelse ja/nei om tilstedeværelse av symptom/sykdomstegn, ved å vise alternativene ja/nei. 
@@ -92,9 +94,4 @@ a|
 
 
 Hvis man velger "annet" på symptom så kan man legge inn tekst i dette feltet. 
-|at0200| 0..1| DV_DATE_TIME | *Nadir (en)
-|
-
-
-*For example: the date when neurological signs in Guillain-Barre disease was at its worst. (en)
 |====
