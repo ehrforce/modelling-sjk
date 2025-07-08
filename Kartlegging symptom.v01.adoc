@@ -1,0 +1,100 @@
+= Kartlegging symptom
+
+
+== Metadata
+
+
+TemplateId:: Kartlegging symptom.v01
+
+
+Archetype:: openEHR-EHR-SECTION.adhoc.v1
+
+
+
+
+:toc:
+
+
+
+
+== Kartlegging symptom
+== Kartlegging  av symptomer/sykdomstegn
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Kartlegging  av symptomer/sykdomstegn* + 
+OBSERVATION: _openEHR-EHR-OBSERVATION.symptom_sign_screening.v1_
+
+
+Svarene kan være selvrapporterte.
+|at0034| 0..1| DV_CODED_TEXT | Kartleggingsformål
+a|
+* Symptom (no.onk.kartlegging: 05)
+
+
+Designkommentar: Det er valgt et kodesett for kartleggingsformål for SJK som finnes her: https://github.com/ehrforce/modelling-sjk/wiki/Generelle-kodeverk#kartleggingsform%C3%A5l-i-kartleggingsarketyper
+|at0028| 0..1| DV_CODED_TEXT | Symptomer eller sykdomstegn?
+a|
+* at0031 -> Ja 
+* at0032 -> Nei 
+* at0033 -> Ukjent 
+
+
+Designkommentar:
+Hvis det er svart ja på symptom så kan legge inn hvilke symptom ved å gjenta elementet "spesifikk symptom/sykdomstegn" for hvert symptom. Det lagres da ja/bekreftende og det legges i tillegg  inn den spesifikke arketypen CLUSTER.symptom_sign.v2 med navnet til symptomet som man har svar ja på.
+
+Hvis man har brukt "Henvisningsårsak" og et av valgene er symptom vil lokikken vanligvis være at hvis det er krysset av for symptomer skal denne automatisk settes til ja. 
+|at0029| 0..1| DV_DATE_TIME | Debut første symptom/sykdomstegn
+|
+
+
+Tidspunktet for når det første symptomet/sykdomstegnet oppsto.
+5+a|*Spesifikt symptom/sykdomstegn* + 
+CLUSTER: _at0022_
+
+
+Designkommentar:
+Dette clusteret gjentas for hvert symptom.
+|at0004| 1..1| DV_CODED_TEXT | Navn på symptom/sykdomstegn
+a|
+* Smerter (finding) (SNOMED-CT: 22253000)
+* Ubehag (finding) (SNOMED-CT: 247347003)
+
+
+Designkommentar:
+Navnet på symptomet/sykdomstegnet. 
+Kod med SNOMED-CT om mulig. 
+ 
+|at0005| 0..1| DV_CODED_TEXT | Tilstede?
+a|
+* at0023 -> Ja 
+* at0024 -> Nei 
+
+
+ Detsignkommentar:
+Her er spørsmålet om det spesifikke symptomet/sykdomstegnet er tilstede, dvs. endre elementnavnet til det spesifikke spørsmålet ("Er xxx tilsede?"). 
+Vanligvis er dette skjult og automatisk sette ja hvis symptomet/sykdomstegnet er krysset av. 
+Det er også mulig å få en bekreftelse ja/nei om tilstedeværelse av symptom/sykdomstegn, ved å vise alternativene ja/nei. 
+Hvis ja, skal dette symptomet/sykdomstegnet arves til "Navn på symptom/sykdomstegn i symptom_sign cluster arketyepn. 
+5+a|*Symptom/Sykdomstegn* + 
+CLUSTER: _openEHR-EHR-CLUSTER.symptom_sign.v2_
+|at0001| 1..1| DV_CODED_TEXT | Navn på symptom/sykdomstegn
+a|
+* Smerter (finding) (SNOMED-CT: 22253000)
+* Ubehag (finding) (SNOMED-CT: 247347003)
+
+
+Designkommentar: 
+Hvis man har svart ja i "spesifikt symptom/sykdomstegn" i kartleggingsarketypen, arves navnet ned til dette elementet.
+Kodes med SNOMED-CT hvis mulig.
+|at0002| 0..1| DV_TEXT | Beskrivelse
+a|
+
+
+Hvis man velger "annet" på symptom så kan man legge inn tekst i dette feltet. 
+|at0200| 0..1| DV_DATE_TIME | *Nadir (en)
+|
+
+
+*For example: the date when neurological signs in Guillain-Barre disease was at its worst. (en)
+|====
