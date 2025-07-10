@@ -1,0 +1,3411 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "fd31682d-1f7f-462d-90b4-5a5945c91ef3",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "date" : "2025-05-06",
+      "name" : "Liv Laugen",
+      "organisation" : "SJK-prosjektet"
+    },
+    "otherContributors" : [ ],
+    "lifecycleState" : {
+      "codeString" : "rejected"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "licence" : "This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.",
+      "custodian_organisation" : "openEHR Foundation",
+      "original_namespace" : "org.openehr",
+      "original_publisher" : "openEHR Foundation",
+      "custodian_namespace" : "org.openehr",
+      "MD5-CAM-1.0.1" : "95d107fcc67e3c5894822845a8b0a44f",
+      "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73",
+      "sem_ver" : "11.2.0",
+      "build_uid" : ""
+    },
+    "details" : {
+      "de" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "de"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "sv" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "sv"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "ru" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ru"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "purpose" : "For å registrere tidligere bildediagnostiske svar i forbindelse med prosjektet Strukturert kreftjournal.",
+        "keywords" : [ ],
+        "use" : "Brukes for å registrere bildediagnostiske svar i forbindelse med prosjektet Strukturert kreftjournal.\nDet består av OBSERVATION.investigation_screening.v1 (Kartleggingsspørsmål om diagnostiske undersøkelser) for å høre om selve bildediagnostiske us er utført. \nVed positivt svar, kan resultat av den bildediagnostiske analysen legges inn i arketypen OBSERVATION.imaging_exam_result.v1 (Bildediagnostisk svar). \nHer er det også satt inn mulighet for å legge inn anatomisk lokalisasjon(er) for bildediagnosen.\n\nSmåtemplatet kan benyttes utenfor Strukturert kreftjournal hvor det lagres data om bildediagnostiske svar.\n",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "es-ar" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es-ar"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "pt-br" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "pt-br"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "en" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "en"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "sl" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "sl"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "it" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "it"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "fr" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "fr"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-SECTION.adhoc.v1",
+  "differential" : true,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-SECTION.bildediagnostikk.v1"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "SECTION",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "items",
+      "existence" : "0..1",
+      "children" : [ {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "OBSERVATION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.22",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-investigation_screening-001.v1",
+        "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "OBSERVATION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.59",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-imaging_exam_result-007.v1",
+        "referenceType" : "archetypeOverlay"
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "en" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Bildediagnostikk",
+          "description" : "A generic section header which should be renamed in a template to suit a specific clinical context."
+        }
+      },
+      "ru" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Bildediagnostikk",
+          "description" : "Образец заголовка раздела"
+        }
+      },
+      "es-ar" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Bildediagnostikk",
+          "description" : "Un encabezado de sección de tipo genérico que será renombrado en una plantilla para su empleo en un contexto clínico específico."
+        }
+      },
+      "sl" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Bildediagnostikk",
+          "description" : "Naslov sekcije"
+        }
+      },
+      "nb" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Bildediagnostikk",
+          "description" : "Oppsummering av bildediagnostiske undersøkelser."
+        }
+      },
+      "pt-br" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Bildediagnostikk",
+          "description" : "Um cabeçalho de sessão genérico que deve ser renomeado no template para adequar-se a um contexto clínico específico."
+        }
+      },
+      "sv" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Bildediagnostikk",
+          "description" : "En allmän avsnittsrubrik som döps om i en openEHR-mall för att passa in i en specifik klinisk kontext."
+        }
+      },
+      "de" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Bildediagnostikk",
+          "description" : "Eine generische Abschnittsüberschrift eines Templates, welche entsprechend dem spezifischen klinischen Kontext umbenannt werden sollte."
+        }
+      },
+      "it" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Bildediagnostikk",
+          "description" : "Un'intestazione di sezione generica che dovrebbe essere rinominata in un template per adattarsi ad uno specifico contesto clinico."
+        }
+      },
+      "fr" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Bildediagnostikk",
+          "description" : "Un en-tête de section générique qui doit être renommé dans un modèle pour s'adapter à un contexte clinique spécifique."
+        }
+      }
+    },
+    "termBindings" : { },
+    "terminologyExtracts" : { },
+    "valueSets" : { }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "1251e859-2484-355e-b942-f116453a0071",
+  "rmName" : "openehr",
+  "rmRelease" : "1.1.0",
+  "generated" : true,
+  "templateId" : "Bildediagnostikk_kartlegging_resultat_alt2",
+  "otherMetaData" : { },
+  "templateOverlays" : [ {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "39ddf0b7-9126-47e9-b705-4875d7efe577",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : {
+        "date" : "2025-05-06"
+      },
+      "otherContributors" : [ ],
+      "lifecycleState" : {
+        "codeString" : "unmanaged"
+      },
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "licence" : "This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.",
+        "custodian_organisation" : "openEHR Foundation",
+        "original_namespace" : "org.openehr",
+        "original_publisher" : "openEHR Foundation",
+        "custodian_namespace" : "org.openehr",
+        "MD5-CAM-1.0.1" : "31a4248971d4f9fe090ca55d21770817",
+        "PARENT:MD5-CAM-1.0.1" : "4303915A919C8B6D98E44B6105250000",
+        "ip_acknowledgements" : "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org."
+      },
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "annotations" : {
+      "@type" : "RESOURCE_ANNOTATIONS",
+      "documentation" : {
+        "en" : {
+          "/data[at0022]/events[at0023]/data[at0001]/items[at0026.1]/items[at0021.1]" : {
+            "Kodeverk" : "NCRP"
+          }
+        },
+        "de" : {
+          "/data[at0022]/events[at0023]/data[at0001]/items[at0026.1]/items[at0021.1]" : {
+            "Kodeverk" : "NCRP"
+          }
+        },
+        "nb" : { },
+        "es" : {
+          "/data[at0022]/events[at0023]/data[at0001]/items[at0026.1]/items[at0021.1]" : {
+            "Kodeverk" : "NCRP"
+          }
+        },
+        "ca" : {
+          "/data[at0022]/events[at0023]/data[at0001]/items[at0026.1]/items[at0021.1]" : {
+            "Kodeverk" : "NCRP"
+          }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-OBSERVATION.investigation_screening.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-OBSERVATION.ovl-investigation_screening-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "OBSERVATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "HISTORY",
+          "nodeId" : "at0022",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "events",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "POINT_EVENT",
+              "occurrences" : "0..1",
+              "nodeId" : "at0023.2",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "data",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "nodeId" : "at0001",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0040.2",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "0..1",
+                              "terminologyId" : {
+                                "value" : "no.onk.kartlegging"
+                              },
+                              "constraint" : [ ],
+                              "selectedTerminologies" : [ "no.onk.kartlegging" ],
+                              "includedExternalTerminologyCodes" : [ {
+                                "terminologyId" : "no.onk.kartlegging",
+                                "code" : "02",
+                                "value" : "Bildediagnostikk"
+                              } ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..1",
+                      "nodeId" : "at0027.2",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "1..1",
+                              "terminologyId" : {
+                                "value" : "local"
+                              },
+                              "constraint" : [ "ac0.70" ],
+                              "selectedTerminologies" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0043.2",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "occurrences" : "0..1",
+                      "nodeId" : "at0026.7",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0021.7",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "occurrences" : "1..1",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "0..1",
+                                  "terminologyId" : {
+                                    "value" : "DICOM_modality"
+                                  },
+                                  "constraint" : [ ],
+                                  "selectedTerminologies" : [ "DICOM_modality" ],
+                                  "includedExternalTerminologyCodes" : [ {
+                                    "terminologyId" : "DICOM_modality",
+                                    "code" : "RG",
+                                    "value" : "Røntgen"
+                                  }, {
+                                    "terminologyId" : "DICOM_modality",
+                                    "code" : "MG",
+                                    "value" : "Mammografi"
+                                  }, {
+                                    "terminologyId" : "DICOM_modality",
+                                    "code" : "US",
+                                    "value" : "Ultralyd"
+                                  }, {
+                                    "terminologyId" : "DICOM_modality",
+                                    "code" : "CT",
+                                    "value" : "CT"
+                                  }, {
+                                    "terminologyId" : "DICOM_modality",
+                                    "code" : "MR",
+                                    "value" : "MR"
+                                  }, {
+                                    "terminologyId" : "DICOM_modality",
+                                    "code" : "NM",
+                                    "value" : "Nukleærmedisin"
+                                  }, {
+                                    "terminologyId" : "DICOM_modality",
+                                    "code" : "PT",
+                                    "value" : "PET"
+                                  }, {
+                                    "terminologyId" : "DICOM_modality",
+                                    "code" : "PTCT",
+                                    "value" : "PET-CT"
+                                  }, {
+                                    "terminologyId" : "DICOM_modality",
+                                    "code" : "PTMR",
+                                    "value" : "PET-MR"
+                                  }, {
+                                    "terminologyId" : "DICOM_modality",
+                                    "code" : "OT",
+                                    "value" : "Annen modalitet"
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0024.7",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "1..1",
+                                  "terminologyId" : {
+                                    "value" : "local"
+                                  },
+                                  "constraint" : [ "ac0.201" ],
+                                  "selectedTerminologies" : [ ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0003.7",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_DATE_TIME",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0002.7",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0025.7",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Kartlegging bildediagnostikk",
+            "description" : "Series of questions and associated answers used to screen whether diagnostic investigations have been carried out.",
+            "comment" : "The answers may be self-reported."
+          },
+          "at0023.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023.2",
+            "text" : "Uspesifikk hendelse (alt 2)",
+            "description" : "Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."
+          },
+          "at0027.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0027.2",
+            "text" : "Er bildediagnostiske undersøkelser gjennomført?",
+            "description" : "Is there a history of any diagnostic tests or investigations related to the screening purpose?",
+            "comment" : "In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
+          },
+          "at0043.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0043.2",
+            "text" : "Overordnet beskrivelse bildediagnostiske undersøkelse",
+            "description" : "Narrative description about the history of any investigations relevant for the screening purpose."
+          },
+          "ac0.70" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.70",
+            "description" : ""
+          },
+          "at0026.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0026.2",
+            "text" : "MR undersøkelse (7)",
+            "description" : "Details about a specified investigation or grouping of investigations relevant for the screening purpose.",
+            "comment" : "Use separate instances of this CLUSTER to differentiate between specific investigations or groupings of investigations."
+          },
+          "at0021.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021.2",
+            "text" : "Bildeprosedyre",
+            "description" : "Name of the diagnostic investigation or grouping of investigations.",
+            "comment" : "For example: 'Blood gas', Chest Xray', 'ECG'; or 'Hearing test'.\r\nCoding of the 'Investigation name' with a terminology is preferred, where possible."
+          },
+          "at0024.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024.2",
+            "text" : "Er denne undersøkelsen utført?",
+            "description" : "Is there a history of the investigation being carried out?",
+            "comment" : "In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
+          },
+          "at0003.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.2",
+            "text" : "Dato",
+            "description" : "Indication of timing related to the investigation.",
+            "comment" : "The 'Timing' data element has deliberately been loosely modelled to support the myriad of ways that it can be used in questionnaires to capture when an investigation was carried out. The specific and intended semantics can be further clarified in a template. For example: the actual date and/or time; the start and stop time for the investigation; the interval of time during which the investigation was carried out; the duration of the investigation; the age of the individual at the time of the investigation; or the duration of time since it occurred. A partial date is valid, using the DV_DATE_TIME data type, to record only a year."
+          },
+          "at0002.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.2",
+            "text" : "Resymé",
+            "description" : "Brief description, summary or interpretation of the investigation outcome.",
+            "comment" : "For example: 'All results within normal range', 'Normal', 'Further investigations needed'. This data element is not to contain a representation of the actual results or findings. In that situation, nest an appropriate CLUSTER archetype within the following 'Additional details' SLOT."
+          },
+          "ac0.201" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.201",
+            "description" : ""
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Conclusion",
+            "description" : "Brief description, summary or interpretation of the investigation outcome.",
+            "comment" : "For example: 'All results within normal range', 'Normal', 'Further investigations needed'. This data element is not to contain a representation of the actual results or findings. In that situation, nest an appropriate CLUSTER archetype within the following 'Additional details' SLOT."
+          }
+        },
+        "de" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Kartlegging bildediagnostikk",
+            "description" : "Eine Reihe von Fragen und die dazugehörigen Antworten dienen der Überprüfung, ob diagnostische Untersuchungen durchgeführt wurden.",
+            "comment" : "Die Antworten können selbst berichtet werden."
+          },
+          "at0023.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023.2",
+            "text" : "Uspesifikk hendelse (alt 2)",
+            "description" : "Standardwert, ein undefinierter/s Zeitpunkt oder Intervallereignis, das explizit im Template oder zur Laufzeit der Anwendung definiert werden kann."
+          },
+          "at0027.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0027.2",
+            "text" : "Er bildediagnostiske undersøkelser gjennomført?",
+            "description" : "Wurden in der Vergangenheit diagnostische Tests oder Untersuchungen im Zusammenhang mit dem Screening durchgeführt?",
+            "comment" : "In einem Template würde das Datenelement normalerweise in die spezifische gestellte Frage umbenannt. Der vorgeschlagene Wertesatz kann für die lokale Verwendung angepasst werden, indem die Datentypauswahl DV_TEXT oder DV_BOOLEAN verwendet wird, um jedem spezifischen Anwendungsfall zu entsprechen."
+          },
+          "at0043.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0043.2",
+            "text" : "Overordnet beskrivelse bildediagnostiske undersøkelse",
+            "description" : "Beschreibung über die Geschichte der Durchführung von Untersuchungen, die für das Screening relevant sind."
+          },
+          "ac0.70" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.70",
+            "description" : ""
+          },
+          "at0026.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0026.2",
+            "text" : "MR undersøkelse (7)",
+            "description" : "Angaben zu einer bestimmten Untersuchung oder einer Gruppe von Untersuchungen, die für den Zweck des Screenings relevant sind.",
+            "comment" : "Verwenden Sie separate Instanzen von diesem CLUSTER, um zwischen bestimmten Untersuchungen oder Gruppierungen von Untersuchungen zu unterscheiden."
+          },
+          "at0021.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021.2",
+            "text" : "Bildeprosedyre",
+            "description" : "Name der diagnostischen Untersuchung oder der Gruppe von Untersuchungen.",
+            "comment" : "Zum Beispiel: \" Blutgas\", \" Brust-Röntgen\", \"EKG\"; oder \"Hörtest\".\r\nDie Kodierung des \"Untersuchungsnamens\" mit einer Terminologie wird, wenn möglich, bevorzugt."
+          },
+          "at0024.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024.2",
+            "text" : "Er denne undersøkelsen utført?",
+            "description" : "Gibt es eine Vorgeschichte der durchgeführten Untersuchungen?",
+            "comment" : "In einem Template würde das Datenelement normalerweise in die spezifische gestellte Frage umbenannt. Der vorgeschlagene Wertesatz kann für die lokale Verwendung angepasst werden, indem die Datentypauswahl DV_TEXT oder DV_BOOLEAN verwendet wird, um jedem spezifischen Anwendungsfall zu entsprechen."
+          },
+          "at0003.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.2",
+            "text" : "Dato",
+            "description" : "Angabe des Zeitpunktes für die Untersuchung.",
+            "comment" : "Das Datenelement \"Zeitpunkt\" wurde bewusst offen modelliert, um die unzähligen Möglichkeiten zu unterstützen, mit denen es in Fragebögen verwendet werden kann, um zu erfassen, wann eine Untersuchung durchgeführt wurde. Die spezifische und beabsichtigte Semantik kann in einer Vorlage weiter geklärt werden. Zum Beispiel: das tatsächliche Datum und/oder die Uhrzeit; die Start- und Endzeit der Untersuchung; das Zeitintervall, in dem die Untersuchung durchgeführt wurde; die Dauer der Untersuchung; das Alter der Person zum Zeitpunkt der Untersuchung; oder die Zeitdauer seit dem Ereignis. Bei Verwendung des Datentyps DV_DATE_TIME ist ein Teildatum zulässig, um nur ein Jahr zu erfassen."
+          },
+          "at0002.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.2",
+            "text" : "Resymé",
+            "description" : "Kurze Beschreibung, Zusammenfassung oder Interpretation der Untersuchungsergebnisse.",
+            "comment" : "Zum Beispiel: \"Alle Ergebnisse im Normalbereich\", \"Normal\", \"Weitere Untersuchungen erforderlich\". Dieses Datenelement darf keine Darstellung der tatsächlichen Ergebnisse oder Befunde enthalten. In diesem Fall ist ein geeigneter CLUSTER-Archetyp in den folgenden SLOT \"Zusätzliche Angaben\" einzufügen."
+          },
+          "ac0.201" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.201",
+            "description" : ""
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Schlussfolgerung",
+            "description" : "Kurze Beschreibung, Zusammenfassung oder Interpretation der Untersuchungsergebnisse.",
+            "comment" : "Zum Beispiel: \"Alle Ergebnisse im Normalbereich\", \"Normal\", \"Weitere Untersuchungen erforderlich\". Dieses Datenelement darf keine Darstellung der tatsächlichen Ergebnisse oder Befunde enthalten. In diesem Fall ist ein geeigneter CLUSTER-Archetyp in den folgenden SLOT \"Zusätzliche Angaben\" einzufügen."
+          }
+        },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Kartlegging bildediagnostikk",
+            "description" : "Spørsmål og tilhørende svar som er knyttet til kartlegging om diagnostiske undersøkelser har vært utført eller ikke.",
+            "comment" : "Svarene kan være selvrapporterte."
+          },
+          "at0023.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023.2",
+            "text" : "Uspesifikk hendelse",
+            "description" : "Standard, uspesifisert tidspunkt eller tidsintervall som kan defineres mer eksplisitt i et templat eller i en applikasjon.",
+            "comment" : "Designkommentar:\nAlternativ 2 for kartlegging av om bildediagnostisk undersøkelse er utført og om den er utført så har man mulighet til å kartlegge hvilke bildeprosedyre/modalitet som er utført. \n\nHvis man kun ønsker å legge til en overordnet resyme for alle typer bildediagnostiske undersøkelser uten å legg inn verken modalitet/type prosedyre kan man bruke den overordnet beskrivelse i kartleggingsarketypen.\n\nDet er i tillegg gjort mulighet for å legge til hvilke spesifikk prosedyre/modalitet (bekrefte/avkrefte) man har utført ved å gjenta det interne CLUSTERet til kartleggingsarketypen (spesifikk undersøkelse). \n\nVidere er det lagt til rette for å legge inn et kort resyme for bildeundersøkelsen/modaliteten,  inkludert dato og anatomisk lokalisasjon via arketypen Klinisk grunnlag, som er slottet inn i Ytterligere detaljer i det interne CLUSTERET. Denne kan komme til syne hvis det er svart bekreftende på at undersøkelstypen/modaliteten er gjort. \n\nHvis man ønsker kun å skrive dato og/eller resyme per modalitet, uten å spesifisere per anatomisk lokalisasjon, kan man bruke den øverste Klinisk grunnlags resyme og dato. Hvis man i tillegg ønsker å ramse opp anatomisk lokalisasjon per modalitet uten å skrive resyme og dato for hver anatomisk lokalisasjon kan man gjenta neste CLUSTER Klinisk grunnlag nr 2 som er slottet inn i Ytterligere detaljer, og legge til kun anatomisk lokalisering (ikke ta med resyme og dato i Kliniks grunnlag CLUSTER nr 2. For å legge til flere anatomisk lokalisering kan man gjenta Klinisk grunnlag CLUSTER nr 2. \n\nHvis man øsnker å ha med resyme og dato per undersøkelse og kroppsdel kan man legge dette inn i  Klinisk grunnlag CLUSTER nr 2. Da vil resyme og dato på overordnet Klinisk grunnlag (CLUSTER nr 1) være overflødig. For å få med flere anatomiske lokalsieringer med tilhørende resyme og dato kan man repetere Klinisk grunnlag CLUSTER nr. 2. \n"
+          },
+          "at0027.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0027.2",
+            "text" : "Er bildediagnostiske undersøkelser gjennomført?",
+            "description" : "Er det gjort noen bildediagnostiske undersøkelser i forbindelse med utredningen?",
+            "comment" : "Designkommentar:\nDette er inngangsspørsmålet om det i det hele tatt er gjort noe bildediagnostikk. \nDette har man med for å få en avkreftelse om det faktisk er tatt stilling til spm. mao. egentlig for å få med alternativet nei. "
+          },
+          "at0043.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0043.2",
+            "text" : "Overordnet beskrivelse bildediagnostiske undersøkelse",
+            "description" : "Ved behov for yttligere beskrivelse av bildediagnostikken på overordnet nivå, kan det skrives her. ",
+            "comment" : "Designkommentar:\nHer kan man skrive et resyme for alle bildediagnostiske undersøkelser uten å spesifisere nærmere hvilken modalitet man faktisk har utført. "
+          },
+          "at0040.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0040",
+            "text" : "Kartleggingsformål",
+            "description" : "Konteksten eller årsaken for kartleggingen.",
+            "comment" : "Designkommentar:\nDette feltet er navnet no.onk.kartlegging for å si at kartleggingsformålet er om det er gjort noe bildediagnostikk innenfor onkoloki (felles kreftjournalprosjektet). \n\nvalglistene for kartleggingsformål ligger her: https://github.com/bjornna/modelling-sjk/blob/main/background/kodeverk_kartlegging.adoc"
+          },
+          "ac0.70" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.70",
+            "description" : ""
+          },
+          "at0026.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0026.7",
+            "text" : "Spesifikk undersøkelse modalitet",
+            "description" : "Modaliteten til bildeundersøkelsen.",
+            "comment" : "Designkommentar:\nBruk separate instanser av dette CLUSTER'et for å skille mellom spesifikke undersøkelser/modaliteter eller gruppering av undersøkelser/modaliteter,\nHer kan man legge inn forskjellige modaliteter eller spesifikke undersøkelser man har gjort. \nF.eks. hvis man vil ha en instans av UL, MR og CT - da må dette clusteret gjentas for hver hovedgruppe/modalitet. \nDato og Resyme  i dette interne CLUSTERet er fjernet, og hvis det er svart   bekreftende på at den er utført (ja) så vil detaljene (dato og resyme samt kroppsdel) bli dokumentert i arketypen bildediagnostisk svar under denne ad hoc seksjonen = Bildediagnostikk."
+          },
+          "at0021.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021.7",
+            "text" : "Bildeprosedyre modalitet",
+            "description" : "Modaliteten til bildeundersøkelsen.",
+            "comment" : "Designkommentar:\nHer tenker man å legge inn undersøkelsesnavnet til bildeundersøkelsen. \nHer kan man f.eks. enten bruke SNOMED-CT koder for undersøkelsesprosedyren (113091000 | Magnetic resonance imaging (procedure) |) eller eventuelt DICOM kodesett for modalitet (MR -\tMagnetic Resonance). \n\nI SJK har vi valgt å legge inn DICOM modalitet i dette feltet."
+          },
+          "at0024.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024.2",
+            "text" : "Er denne undersøkelsen utført?",
+            "description" : "Er den spesifikke undersøkelsen noen gang blitt gjennomført?",
+            "comment" : "Designkommentar:\nLagres hvis man krysser av at man har gjort bildeundersøkelsen."
+          },
+          "at0003.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.2",
+            "text" : "Dato",
+            "description" : "Tidsangivelse for undersøkelsen.",
+            "comment" : "Elementet \"Tidsangivelse\" er med hensikt løst modellert for å legge til rette for myriadene av mulighetene det kan brukes i spørreskjemaer for å fange når en undersøkelse ble utført. Den spesifikke og tiltenkte semantikken kan bli ytterligere klargjort i et templat. For eksempel: Undersøkelsens faktiske dato og/eller klokkeslett, start- og slutttid for undersøkelsen, et tidsintervall for når undersøkelsen ble gjort, varigheten av en undersøkelse, individets alder på tidspunktet for undersøkelsen, eller hvor lenge det siden den ble gjort. Kan være en delvis dato, for eksempel bare år, ved å bruke datatypen DV_DATE_TIME."
+          },
+          "at0002.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.2",
+            "text" : "Resymé",
+            "description" : "Kort beskrivelse, oppsummering eller tolkning av funnene på undersøkelsen.",
+            "comment" : "For eksempel \"Alle resultater innenfor normalverdier\", \"Normal\", \"Ytterligere undersøkelser nødvendig\". Dette dataelementet er ikke tenkt å representere det faktiske resultatet eller funnet. Er det nødvendig, nøst (sett inn) en passende CLUSTER-arketype i det etterfølgende SLOT'et \"Ytterligere detaljer\"."
+          },
+          "ac0.201" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.201",
+            "description" : ""
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Konklusjon",
+            "description" : "Kort beskrivelse, oppsummering eller tolkning av funnene på undersøkelsen.",
+            "comment" : "For eksempel \"Alle resultater innenfor normalverdier\", \"Normal\", \"Ytterligere undersøkelser nødvendig\". Dette dataelementet er ikke tenkt å representere det faktiske resultatet eller funnet. Er det nødvendig, nøst (sett inn) en passende CLUSTER-arketype i det etterfølgende SLOT'et \"Ytterligere detaljer\"."
+          },
+          "at0023" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023",
+            "text" : "Uspesifisert hendelse",
+            "description" : "Standard, uspesifisert tidspunkt eller tidsintervall som kan defineres mer eksplisitt i et templat eller i en applikasjon."
+          }
+        },
+        "es" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Kartlegging bildediagnostikk",
+            "description" : "Serie de preguntas y respuestas asociadas, utilizadas para evaluar si se han realizado investigaciones diagnósticas.",
+            "comment" : "Las respuestas pueden ser autoinformadas."
+          },
+          "at0023.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023.2",
+            "text" : "Uspesifikk hendelse (alt 2)",
+            "description" : "Evento predeterminado, en un intervalo de tiempo o momento no específico, que puede ser definido de forma expresa en una plantilla o en tiempo de ejecución."
+          },
+          "at0027.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0027.2",
+            "text" : "Er bildediagnostiske undersøkelser gjennomført?",
+            "description" : "¿Existen antecedentes de alguna prueba diagnóstica o investigación relacionada con el propósito del screening?",
+            "comment" : "En un template, el nombre del elemento de datos normalmente se cambiaría según la pregunta específica formulada. El conjunto de valores propuesto se puede adaptar para uso local utilizando la opción de tipos de datos DV_TEXT o DV_BOOLEAN para que coincida con cada caso de uso específico."
+          },
+          "at0043.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0043.2",
+            "text" : "Overordnet beskrivelse bildediagnostiske undersøkelse",
+            "description" : "Descripción narrativa sobre la historia de cualquier investigación relevante para el propósito del screening."
+          },
+          "ac0.70" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.70",
+            "description" : ""
+          },
+          "at0026.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0026.2",
+            "text" : "MR undersøkelse (7)",
+            "description" : "Detalles sobre una investigación o grupo de investigaciones relevantes para el propósito del screening.",
+            "comment" : "Utilice instancias separadas de este CLUSTER para diferenciar entre investigaciones específicas o grupo de investigaciones."
+          },
+          "at0021.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021.2",
+            "text" : "Bildeprosedyre",
+            "description" : "Nombre de la investigación diagnóstica o grupo de investigaciones.",
+            "comment" : "Por ejemplo: 'Gas en sangre', Radiografía de tórax', 'ECG'; o 'Audiometría'.\r\nSiempre que sea posible, se prefiere codificar el 'nombre de la investigación' con una terminología."
+          },
+          "at0024.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024.2",
+            "text" : "Er denne undersøkelsen utført?",
+            "description" : "¿Existen antecedentes de que se haya llevado a cabo la investigación?",
+            "comment" : "En un template, el nombre del elemento de datos normalmente se cambiaría según la pregunta específica formulada. El conjunto de valores propuesto se puede adaptar para uso local utilizando la opción de tipos de datos DV_TEXT o DV_BOOLEAN para que coincida con cada caso de uso específico."
+          },
+          "at0003.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.2",
+            "text" : "Dato",
+            "description" : "Indicación del momento relacionado con la investigación.",
+            "comment" : "El elemento de datos 'Tiempo' se ha modelado deliberadamente de manera flexible para permitir la infinidad de formas en que se puede utilizar en cuestionarios, con el fin de registrar cuándo se llevó a cabo una investigación. La semántica específica y prevista se puede aclarar aún más en una template. Por ejemplo: la fecha y/u hora real; la hora de inicio y finalización de la investigación; el intervalo de tiempo durante el cual se llevó a cabo la investigación; la duración de la investigación; la edad del individuo al momento de la investigación; o el tiempo transcurrido desde que ocurrió. Una fecha parcial es válida, utilizando el tipo de datos DV_DATE_TIME, para registrar solo un año."
+          },
+          "at0002.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.2",
+            "text" : "Resymé",
+            "description" : "Breve descripción, resumen o interpretación del resultado de la investigación.",
+            "comment" : "Por ejemplo: \"Todos los resultados dentro del rango normal\", \"Normal\", \"Se necesitan más investigaciones\". Este elemento de datos no debe contener una representación de los resultados o hallazgos reales. En esa situación, se anidaría un arquetipo de tipo CLUSTER apropiado dentro del SLOT 'Detalles adicionales'."
+          },
+          "ac0.201" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.201",
+            "description" : ""
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Conclusion",
+            "description" : "Breve descripción, resumen o interpretación del resultado de la investigación.",
+            "comment" : "Por ejemplo: \"Todos los resultados dentro del rango normal\", \"Normal\", \"Se necesitan más investigaciones\". Este elemento de datos no debe contener una representación de los resultados o hallazgos reales. En esa situación, se anidaría un arquetipo de tipo CLUSTER apropiado dentro del SLOT 'Detalles adicionales'."
+          }
+        },
+        "ca" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Kartlegging bildediagnostikk",
+            "description" : "Sèrie de preguntes i respostes associades, utilitzades per avaluar si s'han fet investigacions diagnòstiques.",
+            "comment" : "Les respostes poden ser autoinformades."
+          },
+          "at0023.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023.2",
+            "text" : "Uspesifikk hendelse (alt 2)",
+            "description" : "Esdeveniment predeterminat, en un interval de temps o moment no específic, que es pot definir de forma expressa en una plantilla o en temps d'execució."
+          },
+          "at0027.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0027.2",
+            "text" : "Er bildediagnostiske undersøkelser gjennomført?",
+            "description" : "Hi ha antecedents d'alguna prova diagnòstica o investigació relacionada amb el propòsit de l'screening?",
+            "comment" : "En un template, el nom de l'element de dades normalment es canviaria segons la pregunta específica formulada. El conjunt de valors proposat es pot adaptar per a ús local utilitzant l'opció de tipus de dades DV_TEXT o DV_BOOLEAN perquè coincideixi amb cada cas d'ús específic."
+          },
+          "at0043.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0043.2",
+            "text" : "Overordnet beskrivelse bildediagnostiske undersøkelse",
+            "description" : "Descripció narrativa sobre la història de qualsevol investigació rellevant per al propòsit de l'screening."
+          },
+          "ac0.70" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.70",
+            "description" : ""
+          },
+          "at0026.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0026.2",
+            "text" : "MR undersøkelse (7)",
+            "description" : "Detalls sobre una investigació o grup d'investigacions rellevants per al propòsit de l'screening.",
+            "comment" : "Utilitzeu instàncies separades d'aquest CLUSTER per diferenciar entre investigacions específiques o grup de recerca."
+          },
+          "at0021.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021.2",
+            "text" : "Bildeprosedyre",
+            "description" : "Nom de la investigació diagnòstica o grup de recerca.",
+            "comment" : "Per exemple: 'Gas en sang', Radiografia de tòrax', 'ECG'; o 'Audiometria'.\r\nSempre que sigui possible, es prefereix codificar el 'nom de la investigació' amb una terminologia."
+          },
+          "at0024.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024.2",
+            "text" : "Er denne undersøkelsen utført?",
+            "description" : "Hi ha antecedents que s'hagi dut a terme la investigació?",
+            "comment" : "En un template, el nom de l'element de dades normalment es canviaria segons la pregunta específica formulada. El conjunt de valors proposat es pot adaptar per a ús local utilitzant lopció de tipus de dades DV_TEXT o DV_BOOLEAN perquè coincideixi amb cada cas dús específic."
+          },
+          "at0003.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.2",
+            "text" : "Dato",
+            "description" : "Indicació del moment relacionat amb la investigació.",
+            "comment" : "L'element de dades 'Temps' s'ha modelat deliberadament de manera flexible per permetre la infinitat de formes en què es pot utilitzar en qüestionaris, per tal de registrar quan es va dur a terme una investigació. La semàntica específica i prevista es pot aclarir encara més en una template. Per exemple: la data i/o hora real; l'hora d'inici i de finalització de la investigació; l'interval de temps durant el qual es va dur a terme la investigació; la durada de la investigació; l'edat de l'individu al moment de la investigació; o el temps transcorregut des que va passar. Una data parcial és vàlida, utilitzant el tipus de dades DV_DATE_TIME, per registrar només un any."
+          },
+          "at0002.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.2",
+            "text" : "Resymé",
+            "description" : "Breu descripció, resum o interpretació del resultat de la investigació.",
+            "comment" : "Per exemple: \"Tots els resultats dins del rang normal\", \"Normal\", \"Es necessiten més investigacions\". Aquest element de dades no ha de contenir una representació dels resultats o les troballes reals. En aquesta situació, s'hi aniria un arquetip de tipus CLUSTER apropiat dins del SLOT 'Detalls addicionals'."
+          },
+          "ac0.201" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.201",
+            "description" : ""
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Conclusió",
+            "description" : "Breu descripció, resum o interpretació del resultat de la investigació.",
+            "comment" : "Per exemple: \"Tots els resultats dins del rang normal\", \"Normal\", \"Es necessiten més investigacions\". Aquest element de dades no ha de contenir una representació dels resultats o les troballes reals. En aquesta situació, s'hi aniria un arquetip de tipus CLUSTER apropiat dins del SLOT 'Detalls addicionals'."
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0028", "at0029", "at0030", "at0045" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
+          "members" : [ "at0036", "at0037", "at0039", "at0046" ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
+          "members" : [ "at0036", "at0037", "at0039" ]
+        },
+        "ac0.5" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.5",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.6" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.6",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.7" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.7",
+          "members" : [ "at0028", "at0029", "at0030", "at0045" ]
+        },
+        "ac0.8" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.8",
+          "members" : [ "at0028", "at0029", "at0030", "at0045" ]
+        },
+        "ac0.9" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.9",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.10" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.10",
+          "members" : [ "at0028", "at0029" ]
+        },
+        "ac0.11" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.11",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.12" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.12",
+          "members" : [ "at0036", "at0037", "at0039", "at0046" ]
+        },
+        "ac0.13" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.13",
+          "members" : [ "at0036", "at0037", "at0039", "at0046" ]
+        },
+        "ac0.14" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.14",
+          "members" : [ "at0036", "at0037", "at0039" ]
+        },
+        "ac0.15" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.15",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.16" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.16",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.17" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.17",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.18" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.18",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.19" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.19",
+          "members" : [ "at0036" ]
+        },
+        "ac0.20" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.20",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.21" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.21",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.22" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.22",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.23" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.23",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.24" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.24",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.25" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.25",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.26" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.26",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.27" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.27",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.28" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.28",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.29" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.29",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.30" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.30",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.31" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.31",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.32" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.32",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.33" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.33",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.34" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.34",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.35" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.35",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.36" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.36",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.37" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.37",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.38" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.38",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.39" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.39",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.40" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.40",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.41" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.41",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.42" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.42",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.43" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.43",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.44" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.44",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.45" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.45",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.46" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.46",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.47" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.47",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.48" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.48",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.49" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.49",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.50" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.50",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.51" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.51",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.52" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.52",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.53" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.53",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.54" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.54",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.55" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.55",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.56" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.56",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.57" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.57",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.58" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.58",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.59" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.59",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.60" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.60",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.61" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.61",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.62" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.62",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.63" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.63",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.64" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.64",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.65" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.65",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.66" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.66",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.67" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.67",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.68" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.68",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.69" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.69",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.70" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.70",
+          "members" : [ "at0028", "at0029", "at0030" ]
+        },
+        "ac0.71" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.71",
+          "members" : [ "at0036" ]
+        },
+        "ac0.72" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.72",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.73" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.73",
+          "members" : [ "at0036" ]
+        },
+        "ac0.74" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.74",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.75" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.75",
+          "members" : [ "at0036" ]
+        },
+        "ac0.76" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.76",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.77" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.77",
+          "members" : [ "at0036" ]
+        },
+        "ac0.78" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.78",
+          "members" : [ "at0036" ]
+        },
+        "ac0.79" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.79",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.80" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.80",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.81" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.81",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.82" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.82",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.83" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.83",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.84" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.84",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.85" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.85",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.86" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.86",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.87" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.87",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.88" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.88",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.89" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.89",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.90" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.90",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.91" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.91",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.92" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.92",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.93" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.93",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.94" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.94",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.95" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.95",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.96" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.96",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.97" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.97",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.98" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.98",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.99" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.99",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.100" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.100",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.101" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.101",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.102" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.102",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.103" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.103",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.104" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.104",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.105" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.105",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.106" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.106",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.107" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.107",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.108" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.108",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.109" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.109",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.110" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.110",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.111" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.111",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.112" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.112",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.113" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.113",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.114" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.114",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.115" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.115",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.116" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.116",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.117" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.117",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.118" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.118",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.119" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.119",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.120" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.120",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.121" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.121",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.122" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.122",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.123" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.123",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.124" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.124",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.125" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.125",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.126" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.126",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.127" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.127",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.128" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.128",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.129" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.129",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.130" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.130",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.131" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.131",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.132" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.132",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.133" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.133",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.134" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.134",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.135" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.135",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.136" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.136",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.137" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.137",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.138" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.138",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.139" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.139",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.140" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.140",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.141" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.141",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.142" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.142",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.143" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.143",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.144" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.144",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.145" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.145",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.146" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.146",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.147" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.147",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.148" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.148",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.149" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.149",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.150" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.150",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.151" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.151",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.152" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.152",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.153" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.153",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.154" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.154",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.155" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.155",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.156" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.156",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.157" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.157",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.158" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.158",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.159" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.159",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.160" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.160",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.161" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.161",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.162" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.162",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.163" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.163",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.164" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.164",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.165" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.165",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.166" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.166",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.167" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.167",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.168" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.168",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.169" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.169",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.170" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.170",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.171" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.171",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.172" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.172",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.173" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.173",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.174" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.174",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.175" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.175",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.176" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.176",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.177" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.177",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.178" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.178",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.179" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.179",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.180" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.180",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.181" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.181",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.182" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.182",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.183" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.183",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.184" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.184",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.185" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.185",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.186" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.186",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.187" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.187",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.188" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.188",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.189" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.189",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.190" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.190",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.191" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.191",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.192" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.192",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.193" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.193",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.194" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.194",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.195" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.195",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.196" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.196",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.197" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.197",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.198" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.198",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.199" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.199",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.200" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.200",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.201" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.201",
+          "members" : [ "at0036", "at0037" ]
+        }
+      }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "f7d8e2f8-9a7d-353c-8aff-d0a26bec5b76",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "3e36260c-4a6f-4421-a8e3-38c90506dabe",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : {
+        "date" : "2025-05-06"
+      },
+      "otherContributors" : [ ],
+      "lifecycleState" : {
+        "codeString" : "unmanaged"
+      },
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "licence" : "This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.",
+        "custodian_organisation" : "openEHR Foundation",
+        "original_namespace" : "org.openehr",
+        "original_publisher" : "openEHR Foundation",
+        "custodian_namespace" : "org.openehr",
+        "MD5-CAM-1.0.1" : "47ee73d3c1c780c3a9fb47d7fd0a2729",
+        "PARENT:MD5-CAM-1.0.1" : "60DD7069B50AAF5B394E3F246F80BCB5",
+        "sem_ver" : "10.0.0",
+        "build_uid" : ""
+      },
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-OBSERVATION.imaging_exam_result.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-OBSERVATION.ovl-imaging_exam_result-007.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "OBSERVATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "HISTORY",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "events",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "POINT_EVENT",
+              "occurrences" : "0..1",
+              "nodeId" : "at0002.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "data",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "nodeId" : "at0003",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0004.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "0..1",
+                              "terminologyId" : {
+                                "value" : "SNOMED-CT"
+                              },
+                              "constraint" : [ ],
+                              "selectedTerminologies" : [ "SNOMED-CT" ],
+                              "includedExternalTerminologyCodes" : [ {
+                                "terminologyId" : "SNOMED-CT",
+                                "code" : "16310003",
+                                "value" : "Ultralyd"
+                              }, {
+                                "terminologyId" : "SNOMED-CT",
+                                "code" : "113091000",
+                                "value" : "MR"
+                              }, {
+                                "terminologyId" : "SNOMED-CT",
+                                "code" : "77477000",
+                                "value" : "CT"
+                              }, {
+                                "terminologyId" : "SNOMED-CT",
+                                "code" : "41747008",
+                                "value" : "Skjelettscintigrafi"
+                              }, {
+                                "terminologyId" : "SNOMED-CT",
+                                "code" : "450436003",
+                                "value" : "PET-CT-undersøkelse"
+                              }, {
+                                "terminologyId" : "SNOMED-CT",
+                                "code" : "71651007",
+                                "value" : "Mammografi"
+                              }, {
+                                "terminologyId" : "SNOMED-CT",
+                                "code" : "363679005",
+                                "value" : "Annen bildediagnostikk"
+                              }, {
+                                "terminologyId" : "SNOMED-CT",
+                                "code" : "???",
+                                "value" : "PET-MR-undersøkelse"
+                              } ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..1",
+                      "nodeId" : "at0091.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "0..1",
+                              "terminologyId" : {
+                                "value" : "DICOM-modality"
+                              },
+                              "constraint" : [ ],
+                              "selectedTerminologies" : [ "DICOM-modality" ],
+                              "includedExternalTerminologyCodes" : [ {
+                                "terminologyId" : "DICOM-modality",
+                                "code" : "RG",
+                                "value" : "Røntgen"
+                              }, {
+                                "terminologyId" : "DICOM-modality",
+                                "code" : "MG",
+                                "value" : "Mammografi"
+                              }, {
+                                "terminologyId" : "DICOM-modality",
+                                "code" : "US",
+                                "value" : "Ultralyd"
+                              }, {
+                                "terminologyId" : "DICOM-modality",
+                                "code" : "CT",
+                                "value" : "CT"
+                              }, {
+                                "terminologyId" : "DICOM-modality",
+                                "code" : "MR",
+                                "value" : "MR"
+                              }, {
+                                "terminologyId" : "DICOM-modality",
+                                "code" : "NM",
+                                "value" : "Nukleærmedisin"
+                              }, {
+                                "terminologyId" : "DICOM-modality",
+                                "code" : "PT",
+                                "value" : "PET"
+                              }, {
+                                "terminologyId" : "DICOM-modality",
+                                "code" : "PTCT",
+                                "value" : "PET-CT"
+                              }, {
+                                "terminologyId" : "DICOM-modality",
+                                "code" : "PTMR",
+                                "value" : "PET-MR"
+                              }, {
+                                "terminologyId" : "DICOM-modality",
+                                "code" : "OT",
+                                "value" : "Annen modalitet"
+                              } ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0055.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "0..1",
+                              "terminologyId" : {
+                                "value" : "SNOMED-CT"
+                              },
+                              "constraint" : [ ],
+                              "selectedTerminologies" : [ "SNOMED-CT" ],
+                              "includedExternalTerminologyCodes" : [ {
+                                "terminologyId" : "SNOMED-CT",
+                                "code" : "69536005",
+                                "value" : "Caput (hode)"
+                              }, {
+                                "terminologyId" : "SNOMED-CT",
+                                "code" : "421060004",
+                                "value" : "Columna vertebralis (ryggrad)"
+                              }, {
+                                "terminologyId" : "SNOMED-CT",
+                                "code" : "51185008",
+                                "value" : "Thorax (brystkasse)"
+                              }, {
+                                "terminologyId" : "SNOMED-CT",
+                                "code" : "76752008",
+                                "value" : "Mamma (bryst)"
+                              }, {
+                                "terminologyId" : "SNOMED-CT",
+                                "code" : "91470000",
+                                "value" : "Aksille"
+                              }, {
+                                "terminologyId" : "SNOMED-CT",
+                                "code" : "39607008",
+                                "value" : "Lunge"
+                              }, {
+                                "terminologyId" : "SNOMED-CT",
+                                "code" : "818983003",
+                                "value" : "Abdomen"
+                              }, {
+                                "terminologyId" : "SNOMED-CT",
+                                "code" : "10200004",
+                                "value" : "Lever"
+                              }, {
+                                "terminologyId" : "SNOMED-CT",
+                                "code" : "3120008",
+                                "value" : "Pleura"
+                              }, {
+                                "terminologyId" : "SNOMED-CT",
+                                "code" : "12921003",
+                                "value" : "Pelvis (bekken)"
+                              }, {
+                                "terminologyId" : "SNOMED-CT",
+                                "code" : "113192009",
+                                "value" : "Skjelett"
+                              } ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0070.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0072.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "1..1",
+                              "terminologyId" : {
+                                "value" : "local"
+                              },
+                              "constraint" : [ "ac0.1" ],
+                              "selectedTerminologies" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0071.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0061.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "0..1",
+                              "terminologyId" : {
+                                "value" : "gruppering_kreft"
+                              },
+                              "constraint" : [ ],
+                              "selectedTerminologies" : [ "gruppering_kreft" ],
+                              "includedExternalTerminologyCodes" : [ {
+                                "terminologyId" : "gruppering_kreft",
+                                "code" : "1",
+                                "value" : "Sarkom"
+                              }, {
+                                "terminologyId" : "gruppering_kreft",
+                                "code" : "2",
+                                "value" : "Kreft i hode og hals"
+                              }, {
+                                "terminologyId" : "gruppering_kreft",
+                                "code" : "3",
+                                "value" : "Hjernesvulst"
+                              }, {
+                                "terminologyId" : "gruppering_kreft",
+                                "code" : "4",
+                                "value" : "Brystkreft"
+                              }, {
+                                "terminologyId" : "gruppering_kreft",
+                                "code" : "5",
+                                "value" : "Lungekreft"
+                              }, {
+                                "terminologyId" : "gruppering_kreft",
+                                "code" : "6",
+                                "value" : "Kreft i fordøyelsessystemet"
+                              }, {
+                                "terminologyId" : "gruppering_kreft",
+                                "code" : "7",
+                                "value" : "Gynekologisk kreft"
+                              }, {
+                                "terminologyId" : "gruppering_kreft",
+                                "code" : "8",
+                                "value" : "Kreft i nyre og urinveier"
+                              }, {
+                                "terminologyId" : "gruppering_kreft",
+                                "code" : "9",
+                                "value" : "Benmargs- og blodkreft"
+                              }, {
+                                "terminologyId" : "gruppering_kreft",
+                                "code" : "10",
+                                "value" : "Lymfom"
+                              }, {
+                                "terminologyId" : "gruppering_kreft",
+                                "code" : "11",
+                                "value" : "Hudkreft"
+                              }, {
+                                "terminologyId" : "gruppering_kreft",
+                                "code" : "12",
+                                "value" : "Kreft i mannlige kjønnsorganer"
+                              }, {
+                                "terminologyId" : "gruppering_kreft",
+                                "code" : "13",
+                                "value" : "Kreft i endokrine kjertler"
+                              }, {
+                                "terminologyId" : "gruppering_kreft",
+                                "code" : "14",
+                                "value" : "Nevroendokrin kreft"
+                              }, {
+                                "terminologyId" : "gruppering_kreft",
+                                "code" : "15",
+                                "value" : "Barnekreft"
+                              }, {
+                                "terminologyId" : "gruppering_kreft",
+                                "code" : "16",
+                                "value" : "Øyekreft"
+                              }, {
+                                "terminologyId" : "gruppering_kreft",
+                                "code" : "17",
+                                "value" : "Svulst av ukjent opprinnelse / Annet"
+                              } ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0014.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0008.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_ARCHETYPE_ROOT",
+                      "rmTypeName" : "CLUSTER",
+                      "occurrences" : "0..1",
+                      "nodeId" : "at0044.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ],
+                      "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-imaging_exam-001.v1",
+                      "referenceType" : "archetypeOverlay"
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0056.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0063.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0057.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0021.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0058.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0020.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0059.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0023.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "state",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "nodeId" : "at0047",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0048.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0108.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "protocol",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0025",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0092.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_IDENTIFIER",
+                  "defaultValue" : {
+                    "@type" : "DV_IDENTIFIER"
+                  },
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0105.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0104.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_IDENTIFIER",
+                  "defaultValue" : {
+                    "@type" : "DV_IDENTIFIER"
+                  },
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0099.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.2" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0098.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_URI",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0106.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0087.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0049.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0088.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0062.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..0",
+              "nodeId" : "at0093.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..0",
+              "nodeId" : "at0027.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Spesifikk bildeundersøkelse modalitet",
+            "description" : "The result of an imaging examination performed on an individual, using radiological techniques."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.1",
+            "description" : ""
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.2",
+            "description" : ""
+          }
+        },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Spesifikk bildeundersøkelse modalitet",
+            "description" : "Resultatet av en bildediagnostisk undersøkelse av et individ, og som er gjort ved radiologiske metoder."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : ""
+          },
+          "at0091.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0091",
+            "text" : "Modalitet",
+            "description" : "Typen bildedannende utstyr.",
+            "comment" : "Designkommentar:\nI prosjektet Strukturert kreftjournal bruker bruker vi DICOM modalitet kodesett."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Undersøkelsesnavn",
+            "description" : "Navnet på den utførte bildediagnostiske undersøkelsen.",
+            "comment" : "Designkommentar:\nI prosjektet Strukturert kreftjournal bruker bruker vi SNOMED-CT diagnosekoder"
+          },
+          "at0070.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0070.1",
+            "text" : "Undersøkelsesdato",
+            "description" : "Dato/Tid da den bildedannende undersøkelsen startet."
+          },
+          "at0087.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0087",
+            "text" : "Teknikk",
+            "description" : "Tilleggsprosedyre/metode for bildeundersøkelsen.",
+            "comment" : "Designkommentar:\nTilleggsmetode, eller teknikk hvis man trenger.\nEksempler:\n726551006\tKontrast mammografi\n241058008\tForstørrelsesmammografi\n450566007\tTomosyntese (DBT)\n1331946003\tCT med kontrast\n765172009\tDoppler ultrasound (procedure)\n443631006\tUltrasonography with contrast (procedure)\n433231002\tContrast echocardiography (procedure)\n"
+          },
+          "at0021.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021.1",
+            "text" : "Resymé modalitt",
+            "description" : "Kort resymè av funn på bildeundersøkelsen.",
+            "comment" : "Designkommentar:\nResyme for den spesifikke undersøkelsen/modaliteten som helhet. \nHer kan man legge inn resyme for hele MR undersøkelse. \n\nØnsker man å legge inn resyme og dato for hver kroppsdel man har tatt bildet av vha. denne modaliteten, må man gjenta hele bildediagnostisk  svar for denne modaliteten med den spesifikke anatomisk lokalisasjonen satt."
+          },
+          "at0055.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0055",
+            "text" : "Kroppsdel",
+            "description" : "En beskrivelse av den anatomisk regionen, organet, eller organsystemet som var målet for undersøkelsen.",
+            "comment" : "Designkommentar:\nHvis det kun er et kroppssted denne bildeundersøkelsen/modaliteten beskriver, bruk dette elementet for å definere anatomisk lokalisasjon \nHvis det ønskes å legge til flere kroppssteder og /eller med tilhørende resyme for hver kroppsstruktur/kroppsdel, bruk clusteret Bildediagnostisk undersøkelse - kroppsstruktur (CLUSTER.imaging_exam.v1) for hver anatomisk lokalisasjon."
+          }
+        },
+        "de" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Bildgebendes Untersuchungsergebnis (5)",
+            "description" : "Ergebnis einer bildgebenden Untersuchung, die an einer Person mit radiologischen Verfahren durchgeführt wird."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : ""
+          }
+        },
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Bilddiagnostiskt resultat (5)",
+            "description" : "*The result of an imaging examination performed on an individual, using radiological techniques. (en)"
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : ""
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0073", "at0074", "at0075", "at0076", "at0077", "at0078", "at0079", "at0080", "at0090" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0100", "at0101", "at0102", "at0103" ]
+        }
+      }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "f353e06a-9997-353c-9197-ebd4cd6c166a",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "0f63ae30-fbdd-4255-8a3b-a7f14b70445f",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "DD19B53EA9A429417A10AB0F1AA8FE56"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.imaging_exam.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-imaging_exam-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "SNOMED-CT"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "69536005",
+                    "value" : "Caput (hode)"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "421060004",
+                    "value" : "Columna vertebralis (ryggrad)"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "51185008",
+                    "value" : "Thorax (brystkasse)"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "76752008",
+                    "value" : "Mamma (bryst)"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "91470000",
+                    "value" : "Aksille"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "39607008",
+                    "value" : "Lunge"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "818983003",
+                    "value" : "Abdomen"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "10200004",
+                    "value" : "Lever"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "3120008",
+                    "value" : "Pleura"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "12921003",
+                    "value" : "Pelvis (bekken)"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "113192009",
+                    "value" : "Skjelett"
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0002.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0004.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0006.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0007.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "nb" : {
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Kroppsstruktur",
+            "description" : "Identifisering av organet eller kroppsdelen som svaret gjelder."
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1",
+            "text" : "Resymé kroppsstruktur",
+            "description" : "Kort resymè av funn i kroppsstrukturen som er undersøkt."
+          }
+        },
+        "de" : {
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Körperstruktur",
+            "description" : "Identifizierung der untersuchten Körperstruktur oder Region.",
+            "comment" : "*For example: 'Liver', 'Right ankle' or 'Lymph node group'. Coding of the body structure with an appropriate terminology, such as SNOMED CT, is recommended. If the body structure has been fully identified in this 'Body structure' element, then the 'Body site' data element and 'Structured body site' SLOT become redundant. (en)"
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Körperstruktur",
+            "description" : "Identifizierung der untersuchten Körperstruktur oder Region.",
+            "comment" : "*For example: 'Liver', 'Right ankle' or 'Lymph node group'. Coding of the body structure with an appropriate terminology, such as SNOMED CT, is recommended. If the body structure has been fully identified in this 'Body structure' element, then the 'Body site' data element and 'Structured body site' SLOT become redundant. (en)"
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "4a6a4249-a05d-4065-b562-cbdb3667b50a",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Natalia Strauch",
+        "organisation" : "Medizinische Hochschule Hannover",
+        "email" : "Strauch.Natalia@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Vebjørn Arntzen",
+        "organisation" : "Oslo University Hospital",
+        "email" : "varntzen@ous-hf.no"
+      },
+      "otherDetails" : { }
+    } ]
+  } ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "en"
+  },
+  "translations" : [ {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "de"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ru"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "sv"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "es-ar"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "pt-br"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "sl"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "it"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "fr"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  } ]
+}

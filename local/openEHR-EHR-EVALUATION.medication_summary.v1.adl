@@ -1,9 +1,8 @@
-archetype (adl_version=1.4; uid=24f51bf9-bcc2-47e6-b035-e03d63fc6a1f)
+﻿archetype (adl_version=1.4; uid=24f51bf9-bcc2-47e6-b035-e03d63fc6a1f)
 	openEHR-EHR-EVALUATION.medication_summary.v1
 
 concept
-	[at0000]
-
+	[at0000]	-- Medication summary
 language
 	original_language = <[ISO_639-1::en]>
 	translations = <
@@ -33,21 +32,17 @@ language
 			accreditation = <"Hospital Alemão Oswaldo Cruz (HAOC)">
 		>
 	>
-
 description
 	original_author = <
-		["date"] = <"2015-12-08">
 		["name"] = <"Heather Leslie">
 		["organisation"] = <"Ocean Informatics">
 		["email"] = <"heather.leslie@oceaninformatics.com">
+		["date"] = <"2015-12-08">
 	>
-	lifecycle_state = <"published">
-	other_contributors = <"Dag Aarhus, Vestre Viken HF, Norway","Ulrich Andersen, Denmark","Ole Andreas Bjordal, Webmed, Norway","Vebjørn Arntzen, Oslo University Hospital, Norway (openEHR Editor)","Silje Ljosland Bakke, Helse Vest IKT AS, Norway (openEHR Editor)","Terje Bektesevic Holmlund, UiT Norges arktiske universitet, Norway","SB Bhattacharyya, Bhattacharyyas Clinical Records Research & Informatics LLP, India","Colin Brown, NHS Scotland SCIMP, United Kingdom","Laila Bruun, Oslo universitetssykehus HF, Norway","Greg Burch, Tiny Medical Apps, United Kingdom","Fatemeh Chalabianloo, Helse Bergen, Norway","Grant Forrest, Lunaria Ltd, United Kingdom","James Goddard, NHS Wales Informatics Service, United Kingdom","Heather Grain, Llewelyn Grain Informatics, Australia","Anca Heyd, DIPS ASA, Norway","Joost Holslag, Nedap, Netherlands","Evelyn Hovenga, EJSH Consulting, Australia","Mikkel Johan Gaup Grønmo, Regional forvaltning EPJ, Helse Nord, Norway (Nasjonal IKT redaktør)","Nils Kolstrup, Skansen Legekontor og Nasjonalt Senter for samhandling og telemedisin, Norway","Kanika Kuwelker, Helse Vest IKT, Norway (Nasjonal IKT redaktør)","Jörgen Kuylenstierna, eWeave AB, Sweden","Tomi Laptoš, Marand, Slovenia","Liv Laugen, Oslo universitetssykehus, Norway (Nasjonal IKT redaktør)","Heather Leslie, Atomica Informatics, Australia (openEHR Editor)","Pramil Liyanage, Ministry of Health, Sri Lanka","Colin Macfarlane, Elsevier, United Kingdom","James McClay, University of Nebraska Medical Center, United States","Ian McNicoll, freshEHR Clinical Informatics, United Kingdom (openEHR Editor)","Lars Morgan Karlsen, Nordlandssykehuset Bodø, Norway","Svenne Naumann, Finnmarkssykehuset, Norway","Bjørn Næss, DIPS ASA, Norway","Ana Pereira, CINTESIS, CUF-Porto, Portugal","Natalia Strauch, Medizinische Hochschule Hannover, Germany","Norwegian Review Summary, Norwegian Public Hospitals, Norway","Rowan Thomas, St. Vincent's Hospital Melbourne, Australia","Anders Thurin, VGR, Sweden","Pencho Tonchev, Medical University- Pleven, Bulgaria","John Tore Valand, Helse Bergen, Norway (openEHR Editor)","Marit Alice Venheim, Helse Vest IKT, Norway","Thomas Wilson, Finnmarkssykehuset HF Klinikk Hammerfest, Norway","Michael Zampaglione, Australia">
 	details = <
 		["de"] = <
 			language = <[ISO_639-1::de]>
 			purpose = <"Zur Darstellung von zusammenfassenden oder dauerhaften Informationen über alle Anwendungen eines bestimmten Medikaments oder einer Medikamentengruppe oder -klasse, insbesondere wenn das Anwendungsmuster oder die kumulative Dosierung überwacht werden muss.">
-			keywords = <"Medikament, Arzneimittel, Arznei, lebenslang, Medikation, Sebstmedikation, Medizin, Anamnese, Lebenszeit, kumulativ, Dosis, Anwendung, Verabreichung, Verbrauch", ...>
 			use = <"Zur Darstellung zusammenfassender Informationen über die Anrwendung eines einzelnen Medikaments oder einer Medikamentengruppe oder -klasse, insbesondere wenn das Anwendungsmuster oder die kumulative Dosierung überwacht werden muss.
 
 Dieser Archetyp wurde entwickelt, um einen Überblick über die Anrwendung von Medikamenten nur in bestimmten Situationen darzustellen, in denen es einen Mehrwert für die Gesundheitsakte darstellt, z. B. eine einzelne Instanz des Archetyps wird verwendet, um eine oder mehrere Anwendungsepisoden zu erfassen, sodass ein Anwendungsmuster identifiziert und/oder eine kumulative Dosis berechnet werden kann.
@@ -63,6 +58,7 @@ Auslöser für das Beenden einer Episode und das Beginnen einer neuen spiegeln w
 - das Medikament für einen längeren Zeitraum (der wahrscheinlich lokal definiert ist) nicht mehr einnimmt.
 - die angewendete Menge oder ihr Anwendungsmuster erheblich verändert.
 - die Art und Weise, wie das Medikament verabreicht wurde, ändert.">
+			keywords = <"Medikament, Arzneimittel, Arznei, lebenslang, Medikation, Sebstmedikation, Medizin, Anamnese, Lebenszeit, kumulativ, Dosis, Anwendung, Verabreichung, Verbrauch", ...>
 			misuse = <"Der Archetyp darf nicht zur Darstellung einer „Medikamentenliste“ verwendet werden. Verwenden Sie für diesen Zweck den Archetyp COMPOSITION.medication_list. Darüber hinaus darf er nicht verwendet werden, um ein Medikament innerhalb einer „Medikamentenliste“ darzustellen – verwenden Sie zu diesem Zweck entweder den INSTRUCTION.medication_order oder den ACTION.medication Archetyp.
 
 Nicht zur Darstellung einer Verordnung von einem zu verabreichenden oder einzunehmenden Medikament - verwenden Sie zu diesem Zweck den Archetyp INSTRUCTION.medication_order.
@@ -76,7 +72,6 @@ Nicht zu verwenden, um eine Beobachtung über die Verwendung eines Medikaments d
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			purpose = <"For å registrere et sammendrag eller varig (persistent) informasjon om all bruk av ett spesifisert legemiddel, gruppe eller klasse av legemidler, spesielt der bruksmønsteret eller kumulativ mengde må overvåkes.">
-			keywords = <"medisin, livslang, medikament, kur, legemiddel, historikk, levetid, kumulativ, dose, administrasjon, behandling", ...>
 			use = <"Brukes for å registrere et sammendrag eller varig (persistent) informasjon om all bruk av ett spesifisert legemiddel, gruppe eller klasse av legemidler, spesielt der bruksmønsteret eller kumulativ mengde må overvåkes.
 
 Denne arketypen er utviklet for å representere en oversikt over bruken av legemidler kun i tilfeller der det gir verdi for pasientjournalen, for eksempel hvor den kumulative dosen av et legemiddel har betydelige toksiske effekter eller langtidsbruk har negative helseeffekter. For hver periode et legemiddel er brukt oppdateres samme instans av arketypen, slik at man kan følge bruken over tid og kumulativ mengde kan regnes ut.
@@ -92,6 +87,7 @@ Det som skal trigge en avslutning av en periode og starte en ny avhenger av loka
 - individet har opphold i bruken av legemiddelet i en vesentlig tidsperiode.
 - stor endring i mengde eller bruksmønster.
 - endringer i administreringsvei for legemiddelet.">
+			keywords = <"medisin, livslang, medikament, kur, legemiddel, historikk, levetid, kumulativ, dose, administrasjon, behandling", ...>
 			misuse = <"Brukes ikke for å representere en legemiddeliste, bruk COMPOSITION.medication_list for dette formålet. Brukes heller ikke for å representere et legemiddel i en \"Legemiddelliste\". Bruk arketypen INSTRUCTION.medication_order (Legemiddelordinering) eller arketypen ACTION.medication (Legemiddelhåndtering) til dette formålet.
 
 Brukes ikke for å dokumentere forordningen av et legemiddel - bruk arketypen INSTRUCTION.medication_order (Legemiddelordinering) til dette formålet.
@@ -105,7 +101,6 @@ Brukes ikke for å registrere status på bruken av ett spesifikt legemiddel på 
 		["pt-br"] = <
 			language = <[ISO_639-1::pt-br]>
 			purpose = <"*To record summary or persistent information about the use of a single medication or group or class of medications, especially where the pattern of use or cumulative dosage needs to be monitored. (en)">
-			keywords = <"*drug, lifelong, medication, self-medicate, medicine, history, lifetime, cumulative, dose, use, administration, consumption (en)", ...>
 			use = <"*Use to record summary information about the use of a single medication or group or class of medications, especially where the pattern of use or cumulative dosage needs to be monitored.
  
 This archetype has been designed to represent an overview of the use of medication only in specific situations where it adds value to the health record, such as where the cumulative dose of the medication has significant toxic effects or long term use has adverse health impacts. A single instance of the archetype will be used to capture one or more episodes of use, so that a pattern of use can be identified and/or a cumulative dose can be calculated.
@@ -121,6 +116,7 @@ Triggers for closing one episode and commencing a new one will largely reflect l
 - stops using the medication for a significant period of time (which will likely be locally defined).
 - significantly changes their amount or pattern of use.
 - changes in the route by which the medication was administed. (en)">
+			keywords = <"*drug, lifelong, medication, self-medicate, medicine, history, lifetime, cumulative, dose, use, administration, consumption (en)", ...>
 			misuse = <"*Not to be used to represent a 'Medication list' - use COMPOSITION.medication_list for this purpose. In addition, not to be used to represent a medication within a 'Medication list' - use either an INSTRUCTION.medication_order or ACTION.medication for this purpose.
 
 Not to be used for recording an order for a medication to be administered or consumed - use INSTRUCTION.medication_order for this purpose.
@@ -134,8 +130,6 @@ Not to be used to record an observation about the use of a medication - use OBSE
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To record summary or persistent information about the use of a single medication or group or class of medications, especially where the pattern of use or cumulative dosage needs to be monitored.">
-			keywords = <"drug, lifelong, medication, self-medicate, medicine, history, lifetime, cumulative, dose, use, administration, consumption", ...>
-			copyright = <"© openEHR Foundation">
 			use = <"Use to record summary information about the use of a single medication or group or class of medications, especially where the pattern of use or cumulative dosage needs to be monitored.
  
 This archetype has been designed to represent an overview of the use of medication only in specific situations where it adds value to the health record, such as where the cumulative dose of the medication has significant toxic effects or long term use has adverse health impacts. A single instance of the archetype will be used to capture one or more episodes of use, so that a pattern of use can be identified and/or a cumulative dose can be calculated.
@@ -151,6 +145,7 @@ Triggers for closing one episode and commencing a new one will largely reflect l
 - stops using the medication for a significant period of time (which will likely be locally defined).
 - significantly changes their amount or pattern of use.
 - changes in the route by which the medication was administered.">
+			keywords = <"drug, lifelong, medication, self-medicate, medicine, history, lifetime, cumulative, dose, use, administration, consumption", ...>
 			misuse = <"Not to be used to represent a 'Medication list' - use COMPOSITION.medication_list for this purpose. In addition, not to be used to represent a medication within a 'Medication list' - use either an INSTRUCTION.medication_order or ACTION.medication for this purpose.
 
 Not to be used for recording an order for a medication to be administered or consumed - use INSTRUCTION.medication_order for this purpose.
@@ -160,8 +155,11 @@ Not to be used for documenting the actual administration or consumption of a med
 Not to be used for recording the status of use or screening question/answer pairs regarding the medication - use OBSERVATION.medication_screening for this purpose.
 
 Not to be used to record an observation about the use of a medication - use OBSERVATION.medication_statement for this purpose.">
+			copyright = <"© openEHR Foundation">
 		>
 	>
+	lifecycle_state = <"published">
+	other_contributors = <"Dag Aarhus, Vestre Viken HF, Norway", "Ulrich Andersen, Denmark", "Ole Andreas Bjordal, Webmed, Norway", "Vebjørn Arntzen, Oslo University Hospital, Norway (openEHR Editor)", "Silje Ljosland Bakke, Helse Vest IKT AS, Norway (openEHR Editor)", "Terje Bektesevic Holmlund, UiT Norges arktiske universitet, Norway", "SB Bhattacharyya, Bhattacharyyas Clinical Records Research & Informatics LLP, India", "Colin Brown, NHS Scotland SCIMP, United Kingdom", "Laila Bruun, Oslo universitetssykehus HF, Norway", "Greg Burch, Tiny Medical Apps, United Kingdom", "Fatemeh Chalabianloo, Helse Bergen, Norway", "Grant Forrest, Lunaria Ltd, United Kingdom", "James Goddard, NHS Wales Informatics Service, United Kingdom", "Heather Grain, Llewelyn Grain Informatics, Australia", "Anca Heyd, DIPS ASA, Norway", "Joost Holslag, Nedap, Netherlands", "Evelyn Hovenga, EJSH Consulting, Australia", "Mikkel Johan Gaup Grønmo, Regional forvaltning EPJ, Helse Nord, Norway (Nasjonal IKT redaktør)", "Nils Kolstrup, Skansen Legekontor og Nasjonalt Senter for samhandling og telemedisin, Norway", "Kanika Kuwelker, Helse Vest IKT, Norway (Nasjonal IKT redaktør)", "Jörgen Kuylenstierna, eWeave AB, Sweden", "Tomi Laptoš, Marand, Slovenia", "Liv Laugen, Oslo universitetssykehus, Norway (Nasjonal IKT redaktør)", "Heather Leslie, Atomica Informatics, Australia (openEHR Editor)", "Pramil Liyanage, Ministry of Health, Sri Lanka", "Colin Macfarlane, Elsevier, United Kingdom", "James McClay, University of Nebraska Medical Center, United States", "Ian McNicoll, freshEHR Clinical Informatics, United Kingdom (openEHR Editor)", "Lars Morgan Karlsen, Nordlandssykehuset Bodø, Norway", "Svenne Naumann, Finnmarkssykehuset, Norway", "Bjørn Næss, DIPS ASA, Norway", "Ana Pereira, CINTESIS, CUF-Porto, Portugal", "Natalia Strauch, Medizinische Hochschule Hannover, Germany", "Norwegian Review Summary, Norwegian Public Hospitals, Norway", "Rowan Thomas, St. Vincent's Hospital Melbourne, Australia", "Anders Thurin, VGR, Sweden", "Pencho Tonchev, Medical University- Pleven, Bulgaria", "John Tore Valand, Helse Bergen, Norway (openEHR Editor)", "Marit Alice Venheim, Helse Vest IKT, Norway", "Thomas Wilson, Finnmarkssykehuset HF Klinikk Hammerfest, Norway", "Michael Zampaglione, Australia">
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
@@ -300,6 +298,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <

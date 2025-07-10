@@ -1,0 +1,435 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "8b33b88b-0fe4-497c-9e89-4536ab40d7c8",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "date" : "2025-06-17"
+    },
+    "otherContributors" : [ ],
+    "lifecycleState" : {
+      "codeString" : "unmanaged"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "licence" : "This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.",
+      "custodian_organisation" : "openEHR Foundation",
+      "original_namespace" : "org.openehr",
+      "original_publisher" : "openEHR Foundation",
+      "custodian_namespace" : "org.openehr",
+      "MD5-CAM-1.0.1" : "87f96dd25063ec7d02bdc5ac453aa10b",
+      "PARENT:MD5-CAM-1.0.1" : "ea5b465518e56b18fab006cbf773f94d"
+    },
+    "details" : {
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-CLUSTER.oncology_biomarker_reference_dips.v1",
+  "differential" : true,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-CLUSTER.t_oncology_biomarker_reference_dips.v1"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "CLUSTER",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "items",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ELEMENT",
+        "nodeId" : "at0018.1",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "value",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "DV_CODED_TEXT",
+            "occurrences" : "1..1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "defining_code",
+              "children" : [ {
+                "@type" : "C_TERMINOLOGY_CODE",
+                "rmTypeName" : "TERMINOLOGY_CODE",
+                "occurrences" : "0..1",
+                "terminologyId" : {
+                  "value" : "SNOMED-CT"
+                },
+                "constraint" : [ ],
+                "selectedTerminologies" : [ "SNOMED-CT" ],
+                "includedExternalTerminologyCodes" : [ {
+                  "terminologyId" : "SNOMED-CT",
+                  "code" : "9336009",
+                  "value" : "Kjemisk analyse (kvalitativ og kvantativ)"
+                }, {
+                  "terminologyId" : "SNOMED-CT",
+                  "code" : "405824009",
+                  "value" : "Genetisk test"
+                } ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ELEMENT",
+        "nodeId" : "at0004.1",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "value",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "DV_CODED_TEXT",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "defining_code",
+              "children" : [ {
+                "@type" : "C_TERMINOLOGY_CODE",
+                "rmTypeName" : "TERMINOLOGY_CODE",
+                "occurrences" : "0..1",
+                "terminologyId" : {
+                  "value" : "SNOMED-CT"
+                },
+                "constraint" : [ ],
+                "selectedTerminologies" : [ "SNOMED-CT" ],
+                "includedExternalTerminologyCodes" : [ {
+                  "terminologyId" : "SNOMED-CT",
+                  "code" : "122548005",
+                  "value" : "Sylinder-, grovnål-, pistol-, tru-cut-, eller stansebiopsi av mamma"
+                }, {
+                  "terminologyId" : "SNOMED-CT",
+                  "code" : "771625002",
+                  "value" : "Vakuumbiopsi av lesjon i mamma"
+                }, {
+                  "terminologyId" : "SNOMED-CT",
+                  "code" : "274331003",
+                  "value" : "Kirurgisk biopsi av mamma"
+                }, {
+                  "terminologyId" : "SNOMED-CT",
+                  "code" : "10940003",
+                  "value" : "Eksisjonsbiopsi av mamma med preoperativ lokalisering (Diagnostisk kirurgisk merkebiopsi)"
+                }, {
+                  "terminologyId" : "SNOMED-CT",
+                  "code" : "234271004",
+                  "value" : "Biopsi av aksillær lymfeknute (grovnål)"
+                }, {
+                  "terminologyId" : "SNOMED-CT",
+                  "code" : "58347006",
+                  "value" : "Kirurgisk eksisjon av lymfeknute (tilfeldig funn av lymfeknute) (lymfadenektomi)"
+                }, {
+                  "terminologyId" : "SNOMED-CT",
+                  "code" : "387736007",
+                  "value" : "FNAC (finnålsaspirasjon) av mamma"
+                }, {
+                  "terminologyId" : "SNOMED-CT",
+                  "code" : "234282007",
+                  "value" : "FNAC (finnålsaspirasjon) av lymfeknute i aksille"
+                }, {
+                  "terminologyId" : "SNOMED-CT",
+                  "code" : "82078001",
+                  "value" : "Blodprøvetaking"
+                }, {
+                  "terminologyId" : "SNOMED-CT",
+                  "code" : "277762005",
+                  "value" : "Spinalpunksjon"
+                }, {
+                  "terminologyId" : "SNOMED-CT",
+                  "code" : "86273004",
+                  "value" : "Biopsi"
+                }, {
+                  "terminologyId" : "SNOMED-CT",
+                  "code" : "14766002",
+                  "value" : "Aspirasjon"
+                } ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ELEMENT",
+        "nodeId" : "at0005.1",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "value",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "DV_CODED_TEXT",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "defining_code",
+              "children" : [ {
+                "@type" : "C_TERMINOLOGY_CODE",
+                "rmTypeName" : "TERMINOLOGY_CODE",
+                "occurrences" : "0..1",
+                "terminologyId" : {
+                  "value" : "SNOMED-CT"
+                },
+                "constraint" : [ ],
+                "selectedTerminologies" : [ "SNOMED-CT" ],
+                "includedExternalTerminologyCodes" : [ {
+                  "terminologyId" : "SNOMED-CT",
+                  "code" : "119297000",
+                  "value" : "Blodprøve"
+                }, {
+                  "terminologyId" : "SNOMED-CT",
+                  "code" : "258450006",
+                  "value" : "Spinalvæskeprøve"
+                }, {
+                  "terminologyId" : "SNOMED-CT",
+                  "code" : "119376003",
+                  "value" : "Vevsprøve"
+                }, {
+                  "terminologyId" : "SNOMED-CT",
+                  "code" : "119359002",
+                  "value" : "Benmargsprøve"
+                } ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "CLUSTER",
+        "nodeId" : "at0010",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "items",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0006.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "rmTypeName" : "TERMINOLOGY_CODE",
+                    "terminologyId" : {
+                      "value" : "HGNC"
+                    },
+                    "constraint" : [ ],
+                    "selectedTerminologies" : [ "HGNC" ],
+                    "includedExternalTerminologyCodes" : [ {
+                      "terminologyId" : "HGNC",
+                      "code" : "x",
+                      "value" : "Erstattes med koder fra script"
+                    } ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0007.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "rmTypeName" : "TERMINOLOGY_CODE",
+                    "occurrences" : "0..1",
+                    "terminologyId" : {
+                      "value" : "SNOMED-CT"
+                    },
+                    "constraint" : [ ],
+                    "selectedTerminologies" : [ "SNOMED-CT" ],
+                    "includedExternalTerminologyCodes" : [ {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "52101004",
+                      "value" : "Påvist (tilstede)"
+                    }, {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "2667000",
+                      "value" : "Ikke påvist (ikke tilstede)"
+                    }, {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "385660001",
+                      "value" : "Ikke utført"
+                    } ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "CLUSTER",
+        "nodeId" : "at0011",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "items",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0008.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "rmTypeName" : "TERMINOLOGY_CODE",
+                    "occurrences" : "0..1",
+                    "terminologyId" : {
+                      "value" : "NLK"
+                    },
+                    "constraint" : [ ],
+                    "selectedTerminologies" : [ "NLK" ],
+                    "includedExternalTerminologyCodes" : [ {
+                      "terminologyId" : "NLK",
+                      "code" : "x",
+                      "value" : "Erstattes med kode fra script"
+                    } ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0009.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_QUANTITY",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "property",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "occurrences" : "0..1",
+                    "terminologyId" : {
+                      "value" : "openehr"
+                    },
+                    "constraint" : [ "380" ]
+                  } ]
+                } ],
+                "attributeTuples" : [ {
+                  "@type" : "C_ATTRIBUTE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "units",
+                    "children" : [ ]
+                  }, {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "magnitude",
+                    "children" : [ ]
+                  } ],
+                  "tuples" : [ {
+                    "@type" : "C_PRIMITIVE_TUPLE",
+                    "members" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "1" ]
+                    }, {
+                      "@type" : "C_REAL",
+                      "rmTypeName" : "REAL",
+                      "constraint" : [ {
+                        "lowerIncluded" : false,
+                        "upperIncluded" : false,
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : true
+                      } ]
+                    } ]
+                  } ]
+                } ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "CLUSTER",
+        "nodeId" : "at0012.1",
+        "attributes" : [ ],
+        "attributeTuples" : [ ]
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "nb" : {
+        "at0018.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0018.1",
+          "text" : "Type laboratorieundersøkelse",
+          "description" : ""
+        }
+      }
+    },
+    "termBindings" : { },
+    "terminologyExtracts" : { },
+    "valueSets" : { }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "c3afe34b-fdf2-3681-80cf-7dcca6960bd8",
+  "rmName" : "openehr",
+  "rmRelease" : "1.1.0",
+  "generated" : true,
+  "templateId" : "oncology_biomarker_reference_dips_v0.0.1",
+  "otherMetaData" : { },
+  "templateOverlays" : [ ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "nb"
+  },
+  "translations" : [ ]
+}

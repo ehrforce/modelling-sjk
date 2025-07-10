@@ -1,0 +1,32 @@
+= Følgende koder innføres for kartleggingsformål 
+
+
+== Samlivsform
+no.onk.sosiale_forhold	
+- SAM	Samlivsform
+- OA Omsorgsansvar
+
+
+== Kartlegging komorbiditet	
+
+no.onk.screening.problem	
+- Kom	Komorbiditet
+
+== Bivirkningsregistrering	
+no.onk.kart.tidligere_komplikasjoner_kreftbehandling
+- 1 Baseline
+- 2 Under behandling
+
+== Generelle kartlegging 
+no.onk.kartlegging	
+
+- 01	Tidligere_kreftbehandling
+- 02	Bildediagnostikk
+- 03	Tumorhendelse
+- 04 	Biomarkor
+- 05	Symptom_onk
+- 06	Henvist_fra
+- 07	Predisponerende_tilstand
+- 08	Tidligere_kreft
+- 09	Urort_primaertumor
+

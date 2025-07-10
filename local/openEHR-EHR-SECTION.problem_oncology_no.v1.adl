@@ -1,4 +1,4 @@
-archetype (adl_version=1.4; uid=15dc2f8c-700b-4eb1-a919-ebce75724ce4)
+archetype (adl_version=1.4; uid=ff78135e-e4a0-4167-ae46-3318f3d27e90)
 	openEHR-EHR-SECTION.problem_oncology_no.v1
 
 concept
@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"2805a49bf0fdfa1f033dddff91994ab8">
+		["MD5-CAM-1.0.1"] = <"5d98ed99cda6cf206f976ad44b8b4a2b">
 		["build_uid"] = <"fa3fd3ae-e110-3be2-943a-544095567374">
 	>
 
@@ -37,11 +37,10 @@ definition
 				include
 					archetype_id/value matches {/.*/}
 			}
-			SECTION[at0018] occurrences matches {0..1} matches {*}    -- Primærtumor
-			SECTION[at0019] occurrences matches {0..1} matches {*}    -- Lokalt residiv
-			SECTION[at0007] occurrences matches {0..1} matches {*}    -- Lymfeknutemetastase
-			SECTION[at0008] occurrences matches {0..1} matches {*}    -- Annen regional metastase
-			SECTION[at0009] occurrences matches {0..1} matches {*}    -- Fjernmetastase
+			allow_archetype SECTION[at0022] occurrences matches {0..*} matches {    -- Seksjonsinndeling
+				include
+					archetype_id/value matches {/.*/}
+			}
 		}
 	}
 
@@ -53,28 +52,12 @@ ontology
 					text = <"problem_oncology_no">
 					description = <"Kreftdiagnose">
 				>
-				["at0007"] = <
-					text = <"Lymfeknutemetastase">
-					description = <"">
-				>
-				["at0008"] = <
-					text = <"Annen regional metastase">
-					description = <"">
-				>
-				["at0009"] = <
-					text = <"Fjernmetastase">
-					description = <"">
-				>
-				["at0018"] = <
-					text = <"Primærtumor">
-					description = <"">
-				>
-				["at0019"] = <
-					text = <"Lokalt residiv">
-					description = <"">
-				>
 				["at0021"] = <
 					text = <"Overordnet diagnostisk informasjon">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Seksjonsinndeling">
 					description = <"">
 				>
 			>

@@ -1,0 +1,221 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "17226d7c-3cf2-4a72-8095-2ae0421d45a5",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "date" : "2025-06-17"
+    },
+    "otherContributors" : [ ],
+    "lifecycleState" : {
+      "codeString" : "unmanaged"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "licence" : "This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.",
+      "custodian_organisation" : "openEHR Foundation",
+      "original_namespace" : "org.openehr",
+      "original_publisher" : "openEHR Foundation",
+      "custodian_namespace" : "org.openehr",
+      "MD5-CAM-1.0.1" : "ec67b00d0bbcfd1a9893b1652389c24e",
+      "PARENT:MD5-CAM-1.0.1" : "8cfdd7a3ed97c8116d098843016dfe55"
+    },
+    "details" : {
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-CLUSTER.tumor_hendelse_dips.v1",
+  "differential" : true,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-CLUSTER.tumorhendelse.v1"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "CLUSTER",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "items",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ELEMENT",
+        "occurrences" : "0..0",
+        "nodeId" : "at0001.1",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "value",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "DV_CODED_TEXT",
+            "occurrences" : "1..1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "defining_code",
+              "children" : [ {
+                "@type" : "C_TERMINOLOGY_CODE",
+                "rmTypeName" : "TERMINOLOGY_CODE",
+                "occurrences" : "0..1",
+                "terminologyId" : {
+                  "value" : "no.onc.tumorevent.hendelse"
+                },
+                "constraint" : [ ],
+                "selectedTerminologies" : [ "no.onc.tumorevent.hendelse" ],
+                "includedExternalTerminologyCodes" : [ {
+                  "terminologyId" : "no.onc.tumorevent.hendelse",
+                  "code" : "01",
+                  "value" : "Lokalt"
+                }, {
+                  "terminologyId" : "no.onc.tumorevent.hendelse",
+                  "code" : "02",
+                  "value" : "Regionalt"
+                }, {
+                  "terminologyId" : "no.onc.tumorevent.hendelse",
+                  "code" : "03",
+                  "value" : "Metastasert"
+                }, {
+                  "terminologyId" : "no.onc.tumorevent.hendelse",
+                  "code" : "04",
+                  "value" : "Biokjemisk"
+                } ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ELEMENT",
+        "nodeId" : "at0002.1",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "value",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "DV_CODED_TEXT",
+            "occurrences" : "1..1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "defining_code",
+              "children" : [ {
+                "@type" : "C_TERMINOLOGY_CODE",
+                "rmTypeName" : "TERMINOLOGY_CODE",
+                "occurrences" : "0..1",
+                "terminologyId" : {
+                  "value" : "SNOMED-CT"
+                },
+                "constraint" : [ ],
+                "selectedTerminologies" : [ "SNOMED-CT" ],
+                "includedExternalTerminologyCodes" : [ {
+                  "terminologyId" : "SNOMED-CT",
+                  "code" : "41289000",
+                  "value" : "Biokjemisk test"
+                }, {
+                  "terminologyId" : "SNOMED-CT",
+                  "code" : "5880005",
+                  "value" : "Klinisk (fysisk) undersøkelse"
+                }, {
+                  "terminologyId" : "SNOMED-CT",
+                  "code" : "363679005",
+                  "value" : "Bildediagnostikk"
+                }, {
+                  "terminologyId" : "SNOMED-CT",
+                  "code" : "714797009",
+                  "value" : "Histologisk test"
+                } ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ELEMENT",
+        "nodeId" : "at0006.1",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "value",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "DV_CODED_TEXT",
+            "occurrences" : "1..1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "defining_code",
+              "children" : [ {
+                "@type" : "C_TERMINOLOGY_CODE",
+                "rmTypeName" : "TERMINOLOGY_CODE",
+                "occurrences" : "0..1",
+                "terminologyId" : {
+                  "value" : "no.onc.tumorevent.hendelse"
+                },
+                "constraint" : [ ],
+                "selectedTerminologies" : [ "no.onc.tumorevent.hendelse" ],
+                "includedExternalTerminologyCodes" : [ {
+                  "terminologyId" : "no.onc.tumorevent.hendelse",
+                  "code" : "01",
+                  "value" : "Lokalt"
+                }, {
+                  "terminologyId" : "no.onc.tumorevent.hendelse",
+                  "code" : "02",
+                  "value" : "Regionalt"
+                }, {
+                  "terminologyId" : "no.onc.tumorevent.hendelse",
+                  "code" : "03",
+                  "value" : "Metastasert"
+                }, {
+                  "terminologyId" : "no.onc.tumorevent.hendelse",
+                  "code" : "04",
+                  "value" : "Biokjemisk"
+                } ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "nb" : { }
+    },
+    "termBindings" : { },
+    "terminologyExtracts" : { },
+    "valueSets" : { }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "7435fa60-35c1-3cc8-99c4-6119940d1b13",
+  "rmName" : "openehr",
+  "rmRelease" : "1.1.0",
+  "generated" : true,
+  "templateId" : "tumorhendelse_v0.0.1",
+  "otherMetaData" : { },
+  "templateOverlays" : [ ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "nb"
+  },
+  "translations" : [ ]
+}

@@ -1,0 +1,582 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "ce220e25-ea64-4094-95f5-3f8cd40aa131",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "date" : "2025-06-17"
+    },
+    "otherContributors" : [ ],
+    "lifecycleState" : {
+      "codeString" : "unmanaged"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "licence" : "This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.",
+      "custodian_organisation" : "openEHR Foundation",
+      "original_namespace" : "org.openehr",
+      "original_publisher" : "openEHR Foundation",
+      "custodian_namespace" : "org.openehr",
+      "MD5-CAM-1.0.1" : "5c0bf5dc371883059a504d9d5d1f5e29",
+      "PARENT:MD5-CAM-1.0.1" : "b6b2ffdd757f721418798cf9f7c2ddf5"
+    },
+    "details" : {
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-CLUSTER.oncology_treatment_summary_reference_dips.v1",
+  "differential" : true,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-CLUSTER.t_oncology_treatment_summary_reference_dips.v1"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "CLUSTER",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "items",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ELEMENT",
+        "nodeId" : "at0001.1",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "value",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "DV_CODED_TEXT",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "defining_code",
+              "children" : [ {
+                "@type" : "C_TERMINOLOGY_CODE",
+                "rmTypeName" : "TERMINOLOGY_CODE",
+                "occurrences" : "0..1",
+                "terminologyId" : {
+                  "value" : "no.onk.behandlingsintensjon"
+                },
+                "constraint" : [ ],
+                "selectedTerminologies" : [ "no.onk.behandlingsintensjon" ],
+                "includedExternalTerminologyCodes" : [ {
+                  "terminologyId" : "no.onk.behandlingsintensjon",
+                  "code" : "K1",
+                  "value" : "Kurativt"
+                }, {
+                  "terminologyId" : "no.onk.behandlingsintensjon",
+                  "code" : "K2",
+                  "value" : "Aktiv overvåkning"
+                }, {
+                  "terminologyId" : "no.onk.behandlingsintensjon",
+                  "code" : "K3",
+                  "value" : "Livsforlengende - ikke kurativ"
+                }, {
+                  "terminologyId" : "no.onk.behandlingsintensjon",
+                  "code" : "K4",
+                  "value" : "Symptomlindrende - ikke kurativ"
+                }, {
+                  "terminologyId" : "no.onk.behandlingsintensjon",
+                  "code" : "K5",
+                  "value" : "Lokal kontroll - ikke kurativ"
+                }, {
+                  "terminologyId" : "no.onk.behandlingsintensjon",
+                  "code" : "K6",
+                  "value" : "Ukjent"
+                } ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ELEMENT",
+        "nodeId" : "at0002.1",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "value",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "DV_CODED_TEXT",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "defining_code",
+              "children" : [ {
+                "@type" : "C_TERMINOLOGY_CODE",
+                "rmTypeName" : "TERMINOLOGY_CODE",
+                "occurrences" : "0..1",
+                "terminologyId" : {
+                  "value" : "SNOMED-CT"
+                },
+                "constraint" : [ ],
+                "selectedTerminologies" : [ "SNOMED-CT" ],
+                "includedExternalTerminologyCodes" : [ {
+                  "terminologyId" : "SNOMED-CT",
+                  "code" : "373846009",
+                  "value" : "Adjuvant hensikt"
+                }, {
+                  "terminologyId" : "SNOMED-CT",
+                  "code" : "373847000",
+                  "value" : "Neoadjuvant hensikt"
+                }, {
+                  "terminologyId" : "SNOMED-CT",
+                  "code" : "421974008",
+                  "value" : "Konkomitant (adjunkt) hensikt)"
+                } ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "CLUSTER",
+        "nodeId" : "at0021",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "items",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0004.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "rmTypeName" : "TERMINOLOGY_CODE",
+                    "occurrences" : "0..1",
+                    "terminologyId" : {
+                      "value" : "SNOMED-CT"
+                    },
+                    "constraint" : [ ],
+                    "selectedTerminologies" : [ "SNOMED-CT" ],
+                    "includedExternalTerminologyCodes" : [ {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "1156506007",
+                      "value" : "Fotonterapi - Stråle (ekstern)"
+                    }, {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "10611004",
+                      "value" : "Protonterapi -Stråle (ekstern)"
+                    }, {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "45643008",
+                      "value" : "Elektronterapi - Stråle (ekstern)"
+                    }, {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "152198000",
+                      "value" : "Brakyterapi - Stråle (intern)"
+                    }, {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "399315003",
+                      "value" : "Radioisotope/systemisk radionuklidebehandling - Stråle (intern)"
+                    }, {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "113117004",
+                      "value" : "Partikkelstråleterapi (karbon eller proton)"
+                    }, {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "1156505006",
+                      "value" : "Karbonterapi"
+                    }, {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "33195004",
+                      "value" : "Ekstern stråleterapi"
+                    }, {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "1287742003",
+                      "value" : "Stråleterapi (alle typer)"
+                    } ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0008.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "rmTypeName" : "TERMINOLOGY_CODE",
+                    "occurrences" : "0..1",
+                    "terminologyId" : {
+                      "value" : "no.dips.onk.proton.rebestraaling"
+                    },
+                    "constraint" : [ ],
+                    "selectedTerminologies" : [ "no.dips.onk.proton.rebestraaling" ],
+                    "includedExternalTerminologyCodes" : [ {
+                      "terminologyId" : "no.dips.onk.proton.rebestraaling",
+                      "code" : "RS01",
+                      "value" : "Rebestråling i overlappende volum (type I)"
+                    }, {
+                      "terminologyId" : "no.dips.onk.proton.rebestraaling",
+                      "code" : "RS02",
+                      "value" : "Rebestråling i samme organ med fare for økt toksisitet fra kumulative doser (type II)"
+                    }, {
+                      "terminologyId" : "no.dips.onk.proton.rebestraaling",
+                      "code" : "RS03",
+                      "value" : "Rebestråling i samme organ uten fare for økt toksisitet fra kumulative doser"
+                    }, {
+                      "terminologyId" : "no.dips.onk.proton.rebestraaling",
+                      "code" : "RS04",
+                      "value" : "Rebestråling i ulikt organ"
+                    }, {
+                      "terminologyId" : "no.dips.onk.proton.rebestraaling",
+                      "code" : "RS05",
+                      "value" : "Nei"
+                    } ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0009.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "rmTypeName" : "TERMINOLOGY_CODE",
+                    "occurrences" : "0..1",
+                    "terminologyId" : {
+                      "value" : "no.dips.onk.proton.komparativ_plan"
+                    },
+                    "constraint" : [ ],
+                    "selectedTerminologies" : [ "no.dips.onk.proton.komparativ_plan" ],
+                    "includedExternalTerminologyCodes" : [ {
+                      "terminologyId" : "no.dips.onk.proton.komparativ_plan",
+                      "code" : "0",
+                      "value" : "Nei"
+                    }, {
+                      "terminologyId" : "no.dips.onk.proton.komparativ_plan",
+                      "code" : "1",
+                      "value" : "Ja"
+                    } ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "CLUSTER",
+        "nodeId" : "at0022",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "items",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0010.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "rmTypeName" : "TERMINOLOGY_CODE",
+                    "occurrences" : "0..1",
+                    "terminologyId" : {
+                      "value" : "NCSP"
+                    },
+                    "constraint" : [ "ac0.1" ],
+                    "selectedTerminologies" : [ "NCSP" ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0011.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "rmTypeName" : "TERMINOLOGY_CODE",
+                    "occurrences" : "0..1",
+                    "terminologyId" : {
+                      "value" : "SNOMED-CT"
+                    },
+                    "constraint" : [ ],
+                    "selectedTerminologies" : [ "SNOMED-CT" ],
+                    "includedExternalTerminologyCodes" : [ {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "372087000",
+                      "value" : "Primær malign tumor (disorder)"
+                    }, {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "1259237005",
+                      "value" : "Residiv av malign tumor (disorder)"
+                    }, {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "128462008",
+                      "value" : "Metastase malign tumor (disorder)"
+                    }, {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "35688006",
+                      "value" : "Komplikasjon av medisinsk behandling (disorder) (på norsk heter det kun metastase)"
+                    }, {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "74964007",
+                      "value" : "Annen (qualifier value)"
+                    }, {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "???",
+                      "value" : "Primærtumor (ikke malign eller beningn)"
+                    }, {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "87961000202104",
+                      "value" : "lokalt residiv av malign primær neoplasma (disorder)"
+                    } ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "CLUSTER",
+        "nodeId" : "at0024",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "items",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0014.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "rmTypeName" : "TERMINOLOGY_CODE",
+                    "occurrences" : "0..1",
+                    "terminologyId" : {
+                      "value" : "SNOMED-CT"
+                    },
+                    "constraint" : [ ],
+                    "selectedTerminologies" : [ "SNOMED-CT" ],
+                    "includedExternalTerminologyCodes" : [ {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "367336001",
+                      "value" : "Kjemoterapi"
+                    }, {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "347531000202105",
+                      "value" : "Målrettet medikamentell kreftbehandling"
+                    }, {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "76334006",
+                      "value" : "Immunterapi for kreft"
+                    }, {
+                      "terminologyId" : "SNOMED-CT",
+                      "code" : "169413002",
+                      "value" : "Hormonterapi"
+                    } ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0026.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_QUANTITY",
+                "attributes" : [ ],
+                "attributeTuples" : [ {
+                  "@type" : "C_ATTRIBUTE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "units",
+                    "children" : [ ]
+                  }, {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "magnitude",
+                    "children" : [ ]
+                  } ],
+                  "tuples" : [ {
+                    "@type" : "C_PRIMITIVE_TUPLE",
+                    "members" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "mg" ]
+                    }, {
+                      "@type" : "C_REAL",
+                      "rmTypeName" : "REAL",
+                      "constraint" : [ {
+                        "lowerIncluded" : false,
+                        "upperIncluded" : false,
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : true
+                      } ]
+                    } ]
+                  }, {
+                    "@type" : "C_PRIMITIVE_TUPLE",
+                    "members" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "[iU]" ]
+                    }, {
+                      "@type" : "C_REAL",
+                      "rmTypeName" : "REAL",
+                      "constraint" : [ {
+                        "lowerIncluded" : false,
+                        "upperIncluded" : false,
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : true
+                      } ]
+                    } ]
+                  }, {
+                    "@type" : "C_PRIMITIVE_TUPLE",
+                    "members" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "ng" ]
+                    }, {
+                      "@type" : "C_REAL",
+                      "rmTypeName" : "REAL",
+                      "constraint" : [ {
+                        "lowerIncluded" : false,
+                        "upperIncluded" : false,
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : true
+                      } ]
+                    } ]
+                  }, {
+                    "@type" : "C_PRIMITIVE_TUPLE",
+                    "members" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "ug" ]
+                    }, {
+                      "@type" : "C_REAL",
+                      "rmTypeName" : "REAL",
+                      "constraint" : [ {
+                        "lowerIncluded" : false,
+                        "upperIncluded" : false,
+                        "upperUnbounded" : true,
+                        "lowerUnbounded" : true
+                      } ]
+                    } ]
+                  } ]
+                } ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "nb" : { }
+    },
+    "termBindings" : {
+      "NCSP" : {
+        "ac0.1" : "terminology:NCSP"
+      }
+    },
+    "terminologyExtracts" : { },
+    "valueSets" : { }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "5902ea52-e974-33a9-9922-9a8d0b6990a1",
+  "rmName" : "openehr",
+  "rmRelease" : "1.1.0",
+  "generated" : true,
+  "templateId" : "oncology_treatment_summary_reference_dips_v0.0.1",
+  "otherMetaData" : { },
+  "templateOverlays" : [ ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "nb"
+  },
+  "translations" : [ ]
+}

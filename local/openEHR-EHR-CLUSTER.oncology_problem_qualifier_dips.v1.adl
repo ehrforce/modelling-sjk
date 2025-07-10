@@ -1,0 +1,77 @@
+archetype (adl_version=1.4; uid=a4dad428-ffd1-43cf-92eb-5f987db389bc)
+	openEHR-EHR-CLUSTER.oncology_problem_qualifier_dips.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["date"] = <"2025-05-20">
+		["name"] = <"Bjørn Næss">
+		["organisation"] = <"DIPS AS">
+		["email"] = <"bna@dips.no">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"e732663188a8ffce4f44b091f08ed574">
+		["build_uid"] = <"ea8f43ef-5bfa-382a-93d7-0e155ac11917">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Problem/diagnose-kvalifikator for kreftsykdom
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Klassifisering
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0002,    -- Primærtumor
+							at0003,    -- Regional metastase
+							at0004]    -- Fjernmetastase
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Problem/diagnose-kvalifikator for kreftsykdom">
+					description = <"oncology_problem_qualifier_dips">
+				>
+				["at0001"] = <
+					text = <"Klassifisering">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Primærtumor">
+					description = <"Beskrivelsen gjelder primærtumoren.">
+				>
+				["at0003"] = <
+					text = <"Regional metastase">
+					description = <"Kreften har spredt seg til organ nær primærtumor. Vanligvis en regional lymfeknute.">
+				>
+				["at0004"] = <
+					text = <"Fjernmetastase">
+					description = <"Kreften har spredt seg til et fjernt organ fra primærtumor.">
+				>
+			>
+		>
+	>

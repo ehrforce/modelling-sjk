@@ -1,0 +1,227 @@
+archetype (adl_version=1.4; uid=62df278e-52dd-4b36-af62-b9af30a8dc4d)
+	openEHR-EHR-CLUSTER.oncology_treatment_summary_reference_dips.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["date"] = <"2025-06-10">
+		["name"] = <"Morten Hørthe">
+		["organisation"] = <"DIPS AS">
+		["email"] = <"mho@dips.no">
+	>
+	lifecycle_state = <"unmanaged">
+	other_contributors = <"Bjørn Næss <bna@dips.no>", ...>
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"b6b2ffdd757f721418798cf9f7c2ddf5">
+		["build_uid"] = <"14e5e94b-b0ca-3439-a84a-883d45d483b1">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Behandlingssammendrag
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Behandlingsintensjon ved MDT
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Behandlingkategori (relativt til kirurgi)
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Ytterligere beskrivelse
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			CLUSTER[at0021] occurrences matches {0..*} matches {    -- Stråleterapi
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0004] occurrences matches {0..1} matches {    -- Type stråleterapi
+						value matches {
+							DV_CODED_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0005] occurrences matches {0..1} matches {    -- Date for første fraksjon
+						value matches {
+							DV_DATE_TIME matches {*}
+						}
+					}
+					ELEMENT[at0006] occurrences matches {0..1} matches {    -- Dato for siste fraksjon
+						value matches {
+							DV_DATE_TIME matches {*}
+						}
+					}
+					ELEMENT[at0007] occurrences matches {0..1} matches {    -- Oppsummering av dose og fraksjonering
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0008] occurrences matches {0..1} matches {    -- Er nåværende behandling en rebestråling?
+						value matches {
+							DV_CODED_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0009] occurrences matches {0..1} matches {    -- Er det gjort en komparativ protonplan?
+						value matches {
+							DV_CODED_TEXT matches {*}
+						}
+					}
+				}
+			}
+			CLUSTER[at0022] occurrences matches {0..*} matches {    -- Kirurgi
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0010] occurrences matches {0..1} matches {    -- Prosedyrekode (NCSP)
+						value matches {
+							DV_CODED_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0011] occurrences matches {0..1} matches {    -- Operasjon utført for
+						value matches {
+							DV_CODED_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0012] occurrences matches {0..1} matches {    -- Dato for utført operasjon
+						value matches {
+							DV_DATE_TIME matches {*}
+						}
+					}
+				}
+			}
+			CLUSTER[at0024] occurrences matches {0..*} matches {    -- Medikamentell behandling
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0013] occurrences matches {0..1} matches {    -- Navn på legemiddel / virkestoff / kur
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0014] occurrences matches {0..1} matches {    -- Behandlingskategori / type MKB
+						value matches {
+							DV_CODED_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0026] occurrences matches {0..1} matches {    -- Totalmengde i perioden mengde/enhet
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0016] occurrences matches {0..1} matches {    -- Startdato for bruk
+						value matches {
+							DV_DATE_TIME matches {*}
+						}
+					}
+					ELEMENT[at0017] occurrences matches {0..1} matches {    -- Sluttdato for bruk
+						value matches {
+							DV_DATE_TIME matches {*}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Behandlingssammendrag">
+					description = <"Struktur for å summere opp relevant behandling i pasientforløpet for kreft. ">
+				>
+				["at0001"] = <
+					text = <"Behandlingsintensjon ved MDT">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Behandlingkategori (relativt til kirurgi)">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Ytterligere beskrivelse">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Type stråleterapi">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Date for første fraksjon">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Dato for siste fraksjon">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Oppsummering av dose og fraksjonering">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Er nåværende behandling en rebestråling?">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Er det gjort en komparativ protonplan?">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Prosedyrekode (NCSP)">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Operasjon utført for">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"Dato for utført operasjon">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"Navn på legemiddel / virkestoff / kur">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Behandlingskategori / type MKB">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"Startdato for bruk">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Sluttdato for bruk">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"Stråleterapi">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Kirurgi">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"Medikamentell behandling">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"Totalmengde i perioden mengde/enhet">
+					description = <"">
+				>
+			>
+		>
+	>
